@@ -130,8 +130,8 @@ nav#nav p {
 	background: var(--linksLink) center / contain no-repeat;
 }
 
-.navLink > #guestbook {
-	background: var(--guestbookLink) center / contain no-repeat;
+.navLink > #microblog {
+	background: var(--microblogLink) center / contain no-repeat;
 }
 
 .navLink > #library {

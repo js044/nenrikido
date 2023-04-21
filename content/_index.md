@@ -29,7 +29,7 @@ try dragging a window by its header!
 <div id="aList"> <p style="text-decoration:underline;"> <i class="fa-solid fa-music"></i> PLAYLIST</p></div>
 {{< /card-medium >}}
 
-{{< card-medium title="#TAMANOTCHI" >}} 
+{{< card-medium title="#TAMA" >}} 
 <p align="center"><a href="http://tamanotchi.world/4251c"><img src="http://tamanotchi.world/i2/4251" alt="It's tamaNOTchi! Click to feed!"></a></p>
 {{< /card-medium >}}
 
@@ -52,8 +52,6 @@ try dragging a window by its header!
 <iframe title="gifypet" class="pet" width="345" height="250" scrolling="yes" src="https://gifypet.neocities.org/pet/pet.html?name=aurelia&dob=1678660983&gender=f&element=Water&pet=https%3A%2F%2Fimg.pokemondb.net%2Fsprites%2Fblack-white%2Fanim%2Fshiny%2Ffrillish-f.gif&map=tree.jpg&background=transparent" frameborder="0"></iframe>
 {{< /card-medium >}}
 
-
-
 {{< card-medium title="#BLOG POSTS" >}} 
 Sorted by recent. Read the rest of the blog [here](/blog).
 {{< blog-feed >}} 
@@ -61,6 +59,7 @@ Sorted by recent. Read the rest of the blog [here](/blog).
 
 {{< card-medium title="#UPDATES" >}} 
 {{< scrollbox >}}
+* **4-21-23**: site's finally up on [github](https://github.com/js044/nenrikido) and there's a [microblog](/microblog) now! elon could never
 * **4-20-23**: added a tamanotchi and a lunar tracker to the home page & added a weblisting, added some sites to the button wall
 * **4-19-23**: added two new webrings!
 * **4-18-23**: there is now a digital [library](/library) and an actual [shrines](/shrines) page! also some font changes. check today's [blog](/blog) post for details.
@@ -99,11 +98,12 @@ Sorted by recent. Read the rest of the blog [here](/blog).
 *   ~~create library~~ ![](images/pixels/new.gif)
 *   ~~create shrine page~~ ![](images/pixels/new.gif)
 *   open commissions
-*   replace guestbook w a microblog
+*   ~~create microblog~~ ![](images/pixels/new.gif)
 *   make search functional
 *   fix theme flickering
 *   add library content
 *   make neocities theme
+*   add microblog feed to index
 {{< /scrollbox >}}
 {{< /card-medium >}}
 

@@ -1,0 +1,201 @@
+:root {
+    --white: #fceaff;
+    --darkpurple: #3b084c;
+    --darkestpurple: #1b052391;
+    --purple: #b76fffcd;
+    --lightblue: #bbbdffcd;
+    --blue: #8f93ffcd;
+    --brightpurple: #e0acff;
+    --bg: #101026;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  margin: 0;
+	background-color: var(--bg);
+	color: var(--white);
+}
+
+#microblog {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+max-width: 30em;
+margin-left: auto;
+margin-right: auto;
+filter: drop-shadow(0 0 85px #8000ff79);
+}
+
+#header {
+  width: 100%;
+  height: 14.5em;
+  background-image: url("/images/microblog/header.jpg");
+  background-size: cover;
+  padding: 1em;
+  margin: 3em 1em 1em 1em;
+  border: 2px solid var(--darkpurple);
+}
+
+#header .profilePic {
+  height: 100px; 
+  width: 100px; 
+  border-radius: 50px;
+}
+
+#header #name {
+  color:  var(--white);
+  text-shadow: 0px 0px 20px var(--brightpurple);
+}
+
+#header #username {
+  color: var(--purple);
+  text-shadow: 0px 0px 20px var(--brightpurple);
+  margin-top: -1.5em;
+}
+
+#bio {
+  color:  var(--white);
+  text-shadow: 0px 0px 20px var(--brightpurple);
+}
+
+.subscribeButton {
+  background-color: var(--darkestpurple);
+  color: var(--brightpurple);
+  border: 2px solid var(--darkpurple);
+  text-decoration: none;
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 0em 0em 1.75em 1em;
+}
+
+.subscribeButton:hover {
+  color: var(--lightblue);
+}
+
+.post {
+  display: flex;
+  justify-content: flex-start;
+  width: 30em;
+  margin: 1em;
+  padding: 1em;
+  border: 2px solid var(--darkpurple);
+  background-color: var(--darkestpurple);
+}
+
+.profilePic {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid var(--darkpurple);
+}
+
+.profilePic:hover {
+  filter: drop-shadow(0px 0px 20px var(--purple));
+}
+
+.postContent {
+  display: inline-block;
+  margin-left: 1em;
+  width: 100%;
+}
+
+.authorDate {
+  display: flex;
+  justify-content: space-between;
+}
+
+.authorDate .authorName {
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.authorDate img {
+  max-height: 20px;
+  display: inline;
+}
+
+.authorDate .username {
+    color: var(--purple);
+}
+
+.postDate {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.postDate:hover {
+  color: var(--lightblue);
+}
+
+.postText, .postContent p {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 0;
+  color: var(--white);
+}
+
+.postText a {
+    color: var(--blue);
+}
+
+.postText a:hover {
+    color: var(--lightblue);
+}
+
+.postImage {
+  display: block;
+  max-width: 100%;
+  margin-top: 5px;
+  border-radius: 5px;
+  color: rgb(138, 138, 138);
+}
+
+.interactions {
+  color: var(--white);
+  cursor: default;
+  float: right;
+  margin-top: 5px;
+  user-select: none;
+}
+
+.reblogCount, .likeCount {
+  margin-left: 4px;
+}
+.likeButton {
+  margin-left: 7px;
+}
+
+#particles-js canvas {
+	display: block;
+	vertical-align: bottom;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+	-webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+	transition: opacity .8s ease, transform 1.4s ease;
+}
+
+#particles-js {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: -10;
+	top: 0;
+	left: 0;
+}
+
+#preloader {
+	align-items: center;
+	width: 100%;
+	display: flex;
+	position: fixed;
+	height: 100vh;
+	justify-content: center;
+	left: 0;
+	top: 0;
+	background: var(--bg) url("../images/icons/three-dots.svg") no-repeat center;
+  transition: opacity 1s;
+	z-index: 9999;
+  }

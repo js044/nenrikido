@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+	<title>rio's feed</title>
+	<link>/microblog</link>
+	<description>GIRLS IN MY COMPUTER. WE CAN DO IT</description>
+	<webMaster>ravrioli <img src="/images/microblog/space1.gif" style="width:0.85em; height:0.85em;" /></webMaster>
+	<generator>@guillotineworld</generator>
+	<image>
+		<url>/images/microblog/icon.jpg</url>
+		<link>https://nenrikido.neocities.org</link>
+	</image>
+
+	<item>
+		<guid>0</guid>
+		<title>using this <a href="https://github.com/22ru/microblog" target="_blank" rel="noopener noreferrer">microblog rss script</a> so i can finally post to my heart's content...i am at peace.</title>
+		<pubDate>Fri, 21 Apr 2023 01:18:54 +0000</pubDate>
+		<link>/microblog#0</link>
+		<description></description>
+	</item>
+
+</channel>
+</rss> 

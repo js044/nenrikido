@@ -12,11 +12,11 @@ var MicroblogDivID = "";
 var DisplaySubscribe = 1;
 var SubscribeText = "Follow";
 var DisplayLikes = 1;
-var LikeSymbol = "❤️";
-var UnlikeSymbol = "🤍";
+var LikeSymbol = "&#9829;";
+var UnlikeSymbol = "&#9825;";
 var DisplayReblog = 1;
-var ReblogSymbol = "♻️";
-var NoReblogSymbol = "♼";
+var ReblogSymbol = "&#x2673;";
+var NoReblogSymbol = "&#x267A;";
 
 // I hate to do this with a global
 // but I don't have any better ideas right now.

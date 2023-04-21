@@ -13,7 +13,7 @@
     --codeLink: url("../images/icons/nav/pink/code.png");
     --blogLink: url("../images/icons/nav/pink/blog.png");
     --linksLink: url("../images/icons/nav/pink/links.png");
-    --guestbookLink: url("../images/icons/nav/pink/guestbook.png");
+    --microblogLink: url("../images/icons/nav/pink/microblog.png");
     --libraryLink: url("../images/icons/nav/pink/library.png");
     --shrinesLink: url("../images/icons/nav/pink/shrines.png");
   }
@@ -32,7 +32,7 @@
     --codeLink: url("../images/icons/nav/blue/code.png");
     --blogLink: url("../images/icons/nav/blue/blog.png");
     --linksLink: url("../images/icons/nav/blue/links.png");
-    --guestbookLink: url("../images/icons/nav/blue/guestbook.png");
+    --microblogLink: url("../images/icons/nav/blue/microblog.png");
     --libraryLink: url("../images/icons/nav/blue/library.png");
     --shrinesLink: url("../images/icons/nav/blue/shrines.png");
   }
@@ -51,7 +51,7 @@
     --codeLink: url("../images/icons/nav/yellow/code.png");
     --blogLink: url("../images/icons/nav/yellow/blog.png");
     --linksLink: url("../images/icons/nav/yellow/links.png");
-    --guestbookLink: url("../images/icons/nav/yellow/guestbook.png");
+    --microblogLink: url("../images/icons/nav/yellow/microblog.png");
     --libraryLink: url("../images/icons/nav/yellow/library.png");
     --shrinesLink: url("../images/icons/nav/yellow/shrines.png");
   }
@@ -70,7 +70,7 @@
     --codeLink: url("../images/icons/nav/black/code.png");
     --blogLink: url("../images/icons/nav/black/blog.png");
     --linksLink: url("../images/icons/nav/black/links.png");
-    --guestbookLink: url("../images/icons/nav/black/guestbook.png");
+    --microblogLink: url("../images/icons/nav/black/microblog.png");
     --libraryLink: url("../images/icons/nav/black/library.png");
     --shrinesLink: url("../images/icons/nav/black/shrines.png");
   }

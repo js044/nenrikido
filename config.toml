@@ -49,8 +49,8 @@ url = "/links/"
 weight = 7
 
 [[menu.main]]
-name = "Guestbook"
-url = "/guestbook/"
+name = "Microblog"
+url = "/microblog/"
 weight = 8
 
 [[menu.main]]
