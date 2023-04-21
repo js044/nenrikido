@@ -1,0 +1,26 @@
+<div class="row justify-content-center">
+    <div class="col-8 col-lg-12 py-2">
+        <div id='musicplayer'>
+            <div id='musicpixel'> <img src="/images/pixels/music.gif" style="max-width: 40px;">
+                <div class='overlay'>
+                    <div class='playpause'><i class="fas fa-play"></i></div>
+                </div>
+            </div>
+            <div id='musictitle'> <span class='marquee'> wind chimes</span> </div>
+        </div> <audio id='musicsrc' loop src='https://dl.dropbox.com/s/i6dhvmccuas7dxp/wind_chimes.mp3?dl=0'></audio>
+    </div>
+</div>
+
+<script>
+    document.querySelector('.playpause').addEventListener('click', playpause);
+    
+    function playpause() {
+      if (document.querySelector('.playpause').innerHTML == '<i class="fas fa-play"></i>') {
+        document.querySelector('#musicsrc').play();
+        document.querySelector('.playpause').innerHTML = '<i class="fas fa-pause"></i>';
+      } else {
+        document.querySelector('#musicsrc').pause();
+        document.querySelector('.playpause').innerHTML = '<i class="fas fa-play"></i>';
+      }
+    }
+</script>

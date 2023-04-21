@@ -1,0 +1,15 @@
+<div class="col py-2 sticky-lg-top">
+<nav id="navAlt">
+    <div class="row justify-content-center">
+        <div class="col-8 col-lg-12 py-2">    
+            <div class="navWrapper">  <a class="navLink" href="#">
+                 <div id="{{ .Get "id" }}"><br><br></div>{{ .Get "title" }}
+                </a><br> <i class="fa-regular fa-circle-down"></i><br>
+                <p> {{ .Inner | markdownify | safeHTML }} </p>
+        </div>
+        </div>
+    </div> 
+    {{- partial "mini-music.html" . -}} 
+    {{- partial "search-bar.html" . -}}
+</nav>
+</div>

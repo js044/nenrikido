@@ -1,0 +1,36 @@
+{{ define "main" }}
+<div class="col py-2 sticky-lg-top">
+    <nav id="navAlt">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-8 col-lg-12 py-2 ">
+                <div class="navWrapper"> <a class="navLink" href="/blog">
+                        <div id="blog"><br><br></div>Blog
+                    </a><br> <i class="fa-regular fa-circle-down"></i><br> <i class="fa-solid fa-hashtag"></i> <a href="#"> {{.Title}} </a> <br> <i class="fa-solid fa-hashtag"></i> <a href="#comments"> Comments </a> </div>
+            </div>
+        </div> {{- partial "arrows.html" . -}} {{- partial "mini-music.html" . -}} {{- partial "search-bar.html" . -}}
+    </nav>
+</div>
+<main>
+    <article>
+        <div class="row justify-content-center">
+            <div class="grid">
+                <div class="item large">
+                    <div class="cards"> {{- partial "card-header.html" . -}}
+                        <div class="cardsBody">
+                            <h4>{{.Title}}</h4>
+                            <blockquote>{{ .PublishDate.Format "January 02, 2006" }}</blockquote> {{.Content}}
+                        </div>
+                    </div>
+                </div>
+                <div class="item large">
+                    <div class="cards"> {{- partial "card-header.html" . -}}
+                        <div class="cardsBody">
+                            <div id="comments"> {{- partial "comments.html" . -}} </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+</main>
+{{ end }}

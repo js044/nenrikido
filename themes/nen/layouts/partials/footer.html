@@ -1,0 +1,17 @@
+{{- partial "start-menu.html" . -}}
+<footer id="footer">
+    <ul>
+      <li>
+        <button type="button" class="footer-button" data-bs-toggle="modal" data-bs-target="#start">
+          START
+        </button>
+        </li>
+      <li> 
+      <div id="clock" class="clock" onload="showTime()"></div>
+      </li>
+    </ul>
+  </footer>
+  <script type="text/javascript" src="/js/clock.js"></script>
+  <script>
+    twemoji.parse(document.body)
+</script>

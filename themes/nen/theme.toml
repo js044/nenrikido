@@ -1,0 +1,17 @@
+description = ""
+features = [ ]
+homepage = "http://example.com/"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+min_version = "0.41.0"
+name = "Nen"
+tags = [ ]
+
+[author]
+homepage = ""
+name = ""
+
+[original]
+homepage = ""
+name = ""
+repo = ""

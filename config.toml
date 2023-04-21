@@ -1,0 +1,64 @@
+baseURL = "https://nenrikido.neocities.org/"
+defaultContentLanguage = "en"
+languageCode = "en-us"
+relativeURLS = true
+theme = "nen"
+title = "NENRIKIDO"
+
+[frontmatter]
+date = [ "date", "publishDate", "lastmod" ]
+lastmod = [ "lastmod", ":fileModTime", ":default" ]
+sectionPagesMenu = "main"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "About"
+url = "/about/"
+weight = 2
+
+[[menu.main]]
+name = "Gallery"
+url = "/gallery/"
+weight = 3
+
+[[menu.main]]
+name = "Commissions"
+url = "/commissions/"
+weight = 4
+
+[[menu.main]]
+name = "Code"
+url = "/code/"
+weight = 5
+
+[[menu.main]]
+name = "Blog"
+url = "/blog/"
+weight = 6
+
+[[menu.main]]
+name = "Links"
+url = "/links/"
+weight = 7
+
+[[menu.main]]
+name = "Guestbook"
+url = "/guestbook/"
+weight = 8
+
+[[menu.main]]
+name = "Library"
+url = "/library/"
+weight = 9
+
+[[menu.main]]
+name = "Shrines"
+url = "/shrines/"
+weight = 10

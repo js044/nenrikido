@@ -1,0 +1,41 @@
+<div class="modal fade" id="start" tabindex="-1" aria-labelledby="startLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h1 class="modal-title fs-2" id="startLabel">Start Menu</h1> <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <div class="row">
+                  <div class="col-6 px-2"> <img src="/images/pixels/strovi_pixel_2.gif" loading="lazy" style="max-width: 210px;"> </div>
+                  <div class="col-6">
+                      <div class="row justify-content-between">
+                          <div class="col"> {{ range .Site.Menus.main }}
+                              <p> <a class="nav-link {{ if $.IsMenuCurrent "main" . }} $active" aria-current="page{{ end }}" href="{{ .URL }}">{{ .Pre }} <span>{{ .Name }}</span></a> </p> {{ end }}
+                          </div>
+                          <div class="col-auto">
+                              <p><i class="fa-solid fa-chevron-right"></i></p>
+                              <p><i class="fa-solid fa-chevron-right"></i></p>
+                              <p><i class="fa-solid fa-chevron-right"></i></p>
+                              <p><i class="fa-solid fa-chevron-right"></i></p>
+                              <p><i class="fa-solid fa-chevron-right"></i></p>
+                              <p><i class="fa-solid fa-chevron-right"></i></p>
+                              <p><i class="fa-solid fa-chevron-right"></i></p>
+                              <p><i class="fa-solid fa-chevron-right"></i></p>
+                              <p><i class="fa-solid fa-chevron-right"></i></p>
+                              <p><i class="fa-solid fa-chevron-right"></i></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+              <div class="row">
+                  <div class="col"> <button id="pink" class="btn-start theme-button" onclick="handleThemeButtonClick('pink', this)" title="pink">💗</button> </div>
+                  <div class="col"> <button id="blue" class="btn-start theme-button" onclick="handleThemeButtonClick('blue', this)" title="blue">🫧</button> </div>
+                  <div class="col"> <button id="yellow" class="btn-start theme-button" onclick="handleThemeButtonClick('yellow', this)" title="yellow">🪐</button> </div>
+                  <div class="col"> <button id="black" class="btn-start theme-button" onclick="handleThemeButtonClick('black', this)" title="black">💤</button> </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

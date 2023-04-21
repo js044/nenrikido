@@ -1,0 +1,169 @@
+:root,
+  :root.pink {
+    --primary: #ffc8ea;
+    --secondary: #3d03fc;
+    --secondary_muted: #3d03fca0;
+    --tertiary: #f3f3f3;
+    --body-font: "National Park", "Helvetica";
+    --header-font: "Reglisse Fill", "Arial Black";
+    --homeLink: url("../images/icons/nav/pink/home.png");
+    --aboutLink: url("../images/icons/nav/pink/about.png");
+    --galleryLink: url("../images/icons/nav/pink/gallery.png");
+    --commissionsLink: url("../images/icons/nav/pink/commissions.png");
+    --codeLink: url("../images/icons/nav/pink/code.png");
+    --blogLink: url("../images/icons/nav/pink/blog.png");
+    --linksLink: url("../images/icons/nav/pink/links.png");
+    --guestbookLink: url("../images/icons/nav/pink/guestbook.png");
+    --libraryLink: url("../images/icons/nav/pink/library.png");
+    --shrinesLink: url("../images/icons/nav/pink/shrines.png");
+  }
+
+  :root.blue {
+    --primary: #c8f0ff;
+    --secondary: #ff58a0;
+    --secondary_muted: #ff58a0ac;
+    --tertiary: #f8edfb;
+    --body-font: "VAGRounded", "Helvetica";
+    --header-font: "PORKYS", "Arial Black";
+    --homeLink: url("../images/icons/nav/blue/home.png");
+    --aboutLink: url("../images/icons/nav/blue/about.png");
+    --galleryLink: url("../images/icons/nav/blue/gallery.png");
+    --commissionsLink: url("../images/icons/nav/blue/commissions.png");
+    --codeLink: url("../images/icons/nav/blue/code.png");
+    --blogLink: url("../images/icons/nav/blue/blog.png");
+    --linksLink: url("../images/icons/nav/blue/links.png");
+    --guestbookLink: url("../images/icons/nav/blue/guestbook.png");
+    --libraryLink: url("../images/icons/nav/blue/library.png");
+    --shrinesLink: url("../images/icons/nav/blue/shrines.png");
+  }
+
+  :root.yellow {
+    --primary: #ffebc8;
+    --secondary: #fc6203;
+    --secondary_muted: #fc62039c;
+    --tertiary: #fcf6ef;
+    --body-font: "Marxiana Grotesque", "Helvetica";
+    --header-font: "Vogue", "Arial Black";
+    --homeLink: url("../images/icons/nav/yellow/home.png");
+    --aboutLink: url("../images/icons/nav/yellow/about.png");
+    --galleryLink: url("../images/icons/nav/yellow/gallery.png");
+    --commissionsLink: url("../images/icons/nav/yellow/commissions.png");
+    --codeLink: url("../images/icons/nav/yellow/code.png");
+    --blogLink: url("../images/icons/nav/yellow/blog.png");
+    --linksLink: url("../images/icons/nav/yellow/links.png");
+    --guestbookLink: url("../images/icons/nav/yellow/guestbook.png");
+    --libraryLink: url("../images/icons/nav/yellow/library.png");
+    --shrinesLink: url("../images/icons/nav/yellow/shrines.png");
+  }
+
+  :root.black {
+    --primary: #171717;
+    --secondary: #ac35e8;
+    --secondary_muted: #b638ffbc;
+    --tertiary: #ffffffea;
+    --body-font: "VT323", "Helvetica";
+    --header-font: "RPGSystem", "Arial Black";
+    --homeLink: url("../images/icons/nav/black/home.png");
+    --aboutLink: url("../images/icons/nav/black/about.png");
+    --galleryLink: url("../images/icons/nav/black/gallery.png");
+    --commissionsLink: url("../images/icons/nav/black/commissions.png");
+    --codeLink: url("../images/icons/nav/black/code.png");
+    --blogLink: url("../images/icons/nav/black/blog.png");
+    --linksLink: url("../images/icons/nav/black/links.png");
+    --guestbookLink: url("../images/icons/nav/black/guestbook.png");
+    --libraryLink: url("../images/icons/nav/black/library.png");
+    --shrinesLink: url("../images/icons/nav/black/shrines.png");
+  }
+
+/* Fonts */
+
+@font-face {
+  font-family: "Reglisse Fill";
+  src: url(../fonts/Reglisse_Fill.otf);
+}
+
+
+@font-face {
+	font-family: "National Park";
+  src: url(../fonts/NationalPark-Regular.otf);
+}
+
+@font-face {
+  font-family: "National Park";
+  src: url(../fonts/NationalPark-Heavy.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "PORKYS";
+  src: url(../fonts/PORKH.ttf);
+}
+
+@font-face {
+  font-family: "VAGRounded";
+  src: url(../fonts/VAGRounded-Thin.otf);
+}
+
+@font-face {
+  font-family: "Marxiana Grotesque"; 
+  src: url(../fonts/Marxiana%20Grotesque.ttf);
+}
+
+@font-face {
+  font-family: "Vogue"; 
+  src: url(../fonts/Vogue.ttf);
+}
+
+@font-face {
+  font-family: "RPGSystem"; 
+  src: url(../fonts/RPGSystem.ttf);
+}
+
+@font-face {
+  font-family: "VT323"; 
+  src: url(../fonts/VT323.ttf);
+}
+
+.theme-button {
+  height: 3.5em;
+  width: 3.5em;
+  border-radius: 50%;
+  border: none;
+}
+
+.btn-start {
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  border: none;
+}
+
+.btn:hover {
+  color: var(--secondary);
+}
+
+.btn:active,
+.btn:focus {
+  border: 1px solid var(--secondary);
+}
+
+.btn-border {
+  border: 1px solid var(--secondary)!important;
+}
+
+#pink {
+  background-color: #ffd5ed;
+}
+
+#blue {
+  background-color: #d7e6ff;
+}
+
+#yellow {
+  background-color: #ffe0b8;
+}
+
+#black {
+  background-color: #dfc9ff;
+}
+
