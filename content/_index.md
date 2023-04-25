@@ -29,10 +29,6 @@ try dragging a window by its header!
 <div id="aList"> <p style="text-decoration:underline;"> <i class="fa-solid fa-music"></i> PLAYLIST</p></div>
 {{< /card-medium >}}
 
-{{< card-medium title="#TAMA" >}} 
-<p align="center"><a href="http://tamanotchi.world/4251c"><img src="http://tamanotchi.world/i2/4251" alt="It's tamaNOTchi! Click to feed!"></a></p>
-{{< /card-medium >}}
-
 {{< card-medium title="#COUNTERS" >}} 
 <p align="center"> all visits: <script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=38931944&main=1"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=38931944&main=1" /></noscript> </p>
 <p align="center"> current viewers: <script language="javascript" type="text/javascript" src="//counter1.fc2.com/views.php?id=38931944&main=1"></script><noscript><img src="//counter1.fc2.com/counter_now.php?id=38931944&main=1" /></noscript> </p>
@@ -40,6 +36,10 @@ try dragging a window by its header!
 
 {{< card-medium title="#GUESTBOOK" >}} 
 <iframe title="chatbox" src="https://www3.cbox.ws/box/?boxid=3526482&boxtag=h3SRws" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+{{< /card-medium >}}
+
+{{< card-medium title="#TAMA" >}} 
+<p align="center"><a href="http://tamanotchi.world/4251c" target="_blank" rel="noopener noreferrer"><img src="http://tamanotchi.world/i2/4251" alt="It's tamaNOTchi! Click to feed!"></a></p>
 {{< /card-medium >}}
 
 {{< card-medium title="#LUNAR" >}} 
@@ -90,7 +90,9 @@ Sorted by recent. Read the rest of the blog [here](/blog).
 
 {{< card-medium title="#DREAM" >}} 
 <p align="center"><img src="/images/pixels/Madotsuki_Chair_Spin.gif" style="max-width: 100px;" loading="lazy" width="100" height="100" alt="Madotsuki spinning in her chair."></p>
-<p align="center"> <a href="https://ynoproject.net/">Yume Nikki Online Project</a></p>
+<p align="center"> <a href="https://ynoproject.net/" target="_blank" rel="noopener noreferrer">Yume Nikki Online Project</a></p>
+<p align="center"> <a href="https://archive.ymbr.site/play/" target="_blank" rel="noopener noreferrer">Play Yume Nikki fangames online</a></p>
+
 {{< /card-medium >}}
 
 {{< card-medium title="#TO-DO" >}} 

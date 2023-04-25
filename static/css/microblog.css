@@ -24,6 +24,7 @@ max-width: 30em;
 margin-left: auto;
 margin-right: auto;
 filter: drop-shadow(0 0 85px #8000ff79);
+padding-bottom: 2em;
 }
 
 #header {
