@@ -6,10 +6,38 @@ draft: false
 {{< nav title="CODE" id="code" >}} 
 {{< filter >}} 
 <li class="tumblr themes">Tumblr themes</li>
+<li class="page themes">Page themes</li>
 {{< /filter >}} 
 {{< /nav >}}
 
 {{< muuri >}}
+
+
+{{< card-mll filter="page themes" >}}
+{{< row-centered >}}
+<div class="col-9">
+{{< lightbox-image link="/images/code/page-themes/sunflower-1.jpeg" lightbox-id="sunflower" img-src="/images/code/page-themes/thumb/sunflower-1.jpeg" loading="lazy" width="393" height="200" alt="A theme preview. It's a profile page with a background image of sunflowers. A foggy box with text is in the center. A PNG of a girl is sitting next to the box." >}}
+</div>
+<div class="col-3">
+{{< lightbox-image link="/images/code/page-themes/sunflower-2.png" lightbox-id="sunflower" img-src="/images/code/page-themes/thumb/sunflower-2.png" loading="lazy" width="200" height="445" alt="A mobile preview of the theme." >}}
+</div>
+{{< /row-centered >}}
+
+{{< box-small  title="Sunflower Page Theme" >}}
+> completely re-coded and re-vamped a page theme from 2018 i made for tumblr. (original is [here](https://negg.tumblr.com/post/712181004039766016/tomba2-sunflower-about-page).) added a few features, made it behave on mobile, and it is now published for use anywhere.
+
+features:
+*   up to 2 side images (left & right)
+*   customizable fonts, images, and colors
+*   mobile responsive (built with flexbox)
+
+notes:
+*   this theme uses CSS variables to allow the user to customize the theme. if you find them confusing, [this](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) may offer some clarity.
+{{< /box-small >}}
+
+{{< gist js044 e726caf2f2adc9374b14716e34527f37 >}}    
+{{< /card-mll >}}
+
 
 {{< card-mll filter="tumblr themes" >}}
 

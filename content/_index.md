@@ -59,6 +59,7 @@ Sorted by recent. Read the rest of the blog [here](/blog).
 
 {{< card-medium title="#UPDATES" >}} 
 {{< scrollbox >}}
+* **5-1-23**: new page theme is up on the [code](/code) page! i think it's cute.
 * **4-21-23**: site's finally up on [github](https://github.com/js044/nenrikido) and there's a [microblog](/microblog) now! elon could never
 * **4-20-23**: added a tamanotchi and a lunar tracker to the home page & added a weblisting, added some sites to the button wall
 * **4-19-23**: added two new webrings!

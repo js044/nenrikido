@@ -115,7 +115,7 @@ draft: false
 {{< buttons img-src="/images/buttons/nyanseong-wink.png" link="https://nyanseong.neocities.org/">}} 
 {{< buttons img-src="/images/buttons/starbage_button_3.gif" link="https://starbage.neocities.org/">}} 
 {{< buttons img-src="/images/buttons/xn-neko-btn.gif" link="https://猫.移动/">}} 
-{{< buttons img-src="/images/buttons/kakashi.gif" link="https://kakashi.neocities.org/">}}   
+{{< buttons img-src="/images/buttons/kakashi.gif" link="https://kakashi.neocities.org/">}}    
 {{< buttons img-src="/images/buttons/strovi.png" link="https://strovi.neocities.org/">}}
 {{< buttons img-src="/images/buttons/devils.gif" link="https://devils.neocities.org/">}}                                
 {{< buttons img-src="/images/buttons/macchiato.png" link="https://macchiato.neocities.org/">}} 
@@ -153,7 +153,6 @@ draft: false
 {{< buttons img-src="/images/buttons/jellyworld.gif" link="https://jellyworld.neocities.org/">}}
 {{< buttons img-src="/images/buttons/gifypet.gif" link="https://gifypet.neocities.org/">}}
 {{< buttons img-src="/images/buttons/itzrex.gif" link="https://itzrex.neocities.org/">}}
-
 {{< buttons img-src="/images/buttons/repth.png" link="https://repth.neocities.org/" >}}  
 {{< buttons img-src="/images/buttons/ranfren.gif" link="https://ranfren.neocities.org/">}}      
 {{< buttons img-src="/images/buttons/affbanner-taffy.gif" link="https://dreamy.neocities.org/universe/">}}      
@@ -163,6 +162,7 @@ draft: false
 {{< buttons img-src="/images/buttons/fwoofies.gif" link="https://fwoofies.neocities.org/">}}  
 {{< buttons img-src="/images/buttons/middlepot.png" link="https://middlepot.com/">}} 
 {{< buttons img-src="/images/buttons/ryanpeikou.png" link="https://ryanpeikou.neocities.org/">}} 
+{{< buttons img-src="/images/buttons/simone.gif" link="https://simone.computer/">}}  
 {{< /row-centered >}}
 {{< /large-scrollbox >}}
 {{< /box-small >}}
