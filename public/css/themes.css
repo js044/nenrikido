@@ -5,6 +5,7 @@
     --secondary_muted: #3d03fca0;
     --tertiary: #f3f3f3;
     --body-font: "National Park", "Helvetica";
+    --body-font-size: 0.9rem;
     --header-font: "Reglisse Fill", "Arial Black";
     --homeLink: url("../images/icons/nav/pink/home.png");
     --aboutLink: url("../images/icons/nav/pink/about.png");
@@ -24,6 +25,7 @@
     --secondary_muted: #ff58a0ac;
     --tertiary: #f8edfb;
     --body-font: "VAGRounded", "Helvetica";
+    --body-font-size: 0.95rem;
     --header-font: "PORKYS", "Arial Black";
     --homeLink: url("../images/icons/nav/blue/home.png");
     --aboutLink: url("../images/icons/nav/blue/about.png");
@@ -43,6 +45,7 @@
     --secondary_muted: #fc62039c;
     --tertiary: #fcf6ef;
     --body-font: "Marxiana Grotesque", "Helvetica";
+    --body-font-size: 1rem;
     --header-font: "Vogue", "Arial Black";
     --homeLink: url("../images/icons/nav/yellow/home.png");
     --aboutLink: url("../images/icons/nav/yellow/about.png");
@@ -62,6 +65,7 @@
     --secondary_muted: #b638ffbc;
     --tertiary: #ffffffea;
     --body-font: "VT323", "Helvetica";
+    --body-font-size: 1rem;
     --header-font: "RPGSystem", "Arial Black";
     --homeLink: url("../images/icons/nav/black/home.png");
     --aboutLink: url("../images/icons/nav/black/about.png");
@@ -85,12 +89,13 @@
 
 @font-face {
 	font-family: "National Park";
-  src: url(../fonts/NationalPark-Regular.otf);
+  src: url(../fonts/NationalPark-Medium.otf);
+  
 }
 
 @font-face {
   font-family: "National Park";
-  src: url(../fonts/NationalPark-Heavy.otf);
+  src: url(../fonts/NationalPark-Bold.otf);
   font-weight: bold;
 }
 

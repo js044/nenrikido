@@ -5,7 +5,7 @@ draft: false
 
 {{< nav title="GALLERY" id="gallery" >}} 
 {{< filter >}} 
-<li class="digil">Digital illustrations</li>
+<li class="digil">Digital illustration</li>
 <li class="grdesign">Graphic design</li>
 <li class="objects">Objects</li>
 <li class="painting">Paintings</li>
@@ -14,6 +14,7 @@ draft: false
 {{< /nav >}}
 
 {{< muuri >}}
+
 {{< card-small filter="digil" id="yiseul1" >}}
 {{< lightbox-image link="/images/gallery/ys_1.png" lightbox-id="yiseulref" img-src="/images/gallery/thumbnails/ys_1.png" loading="" width="300" height="250" alt="A woman standing in a heavy coat on the left. There is text exposition explaining her history as a mudang who had her heart eaten by a kumiho. On the right there are two images. One is of her shoulders-up, looking at the viewer, ostensibly naked. The other is of her staring forward." >}}
 
@@ -126,6 +127,13 @@ draft: false
 > Oil on canvas
 {{< /card-small >}}
 
+{{< card-small filter="objects" id="heart-lollipop-earrings" >}}
+{{< lightbox-image link="/images/gallery/heart.png" lightbox-id="heart" img-src="/images/gallery/thumbnails/heart.png" loading="" width="300" height="403" alt="A sets of glittery yellow heart shaped lollipop earrings.">}}
+##### ***Heart Lollipop Earrings (Yellow)***
+> Aug. 2022  
+> UV Resin, Toothpicks
+{{< /card-small >}}
+
 {{< card-small filter="photos" id="seattle-garden" >}}
 {{< lightbox-image link="/images/gallery/seattle.jpg" lightbox-id="seattle" img-src="/images/gallery/thumbnails/seattle.jpg" loading="lazy" width="300" height="225" alt="A brightly lit, very green garden. The light flares into something resembling a rainbow. There is a green pond and several trees." >}}
 ##### ***Garden***
@@ -223,6 +231,7 @@ draft: false
 > Clip Studio Paint  
 > One Punch Man fanart
 {{< /card-small >}}
+
 
 {{< card-small filter="digil" id="senshi-tatsumaki" >}}
 {{< lightbox-image link="/images/gallery/tatsu final.png" lightbox-id="tats" img-src="/images/gallery/thumbnails/tatsu final.png" loading="lazy" width="300" height="270" alt="Tatsumaki dressed as a sailor senshi, smiling brightly as she asserts her will to battle for justice.">}}

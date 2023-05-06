@@ -1,4 +1,4 @@
-*, *:before, *:after {
+html, *, *:before, *:after {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
@@ -8,8 +8,7 @@ body {
 	background-color: var(--primary);
 	color: var(--secondary);
 	font-family: var(--body-font);
-	font-size: 0.9em;
-	max-width: 95%;
+	overflow-x: hidden;
 }
 
 body a, body a:visited {
@@ -21,6 +20,11 @@ body a:hover {
 	color: var(--secondary_muted);
 	text-decoration: none;
 }
+  
+  ::selection {
+	color: var(--primary);
+	background: var(--secondary_muted);
+  }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: var(--header-font);
@@ -30,6 +34,10 @@ blockquote {
 	margin: 0 0 10px 10px;
 	padding: 0 0 0 10px;
 	border-left: solid 1px var(--secondary);
+}
+
+p, ul, li, span, .sort-btn, #aWrap, #aPlay, #aList, .aRow, .gist {
+	font-size: var(--body-font-size);
 }
 
 /* Loading */
@@ -51,10 +59,13 @@ blockquote {
 
 
 /* Nav */
+nav {
+	text-align: center;
+}
+
 nav#nav {
 	float: left;
 	width: 15em;
-	text-align: center;
 	padding: 10px;
 	margin: 1em -1em 0em 1em;
 }
@@ -62,7 +73,6 @@ nav#nav {
 nav#navAlt {
 	float: right;
 	width: 15em;
-	text-align: center;
 	margin: 5em 5em 0em 0em;
 }
 
@@ -70,11 +80,12 @@ nav#nav a {
 	text-decoration: none;
 }
 
-nav#nav p {
-	font-size: 0.95em;
-}
 
 @media screen and (max-width:768px) {
+	body {
+		width: 95%;
+	}
+
 	nav#nav {
 		float: none;
 		width: 80vw;
@@ -85,7 +96,7 @@ nav#nav p {
 
 	nav#navAlt {
 		float: none;
-		width: 24em;
+		width: 23em;
 		justify-content: center;
 		margin: 10px auto;
 		height: 100%;
@@ -94,12 +105,18 @@ nav#nav p {
 
 .navLink {
 	overflow: hidden;
-	margin: 0 0 30px 0;
-	font-size: 0.8em;
-	padding: 0px 0px 0px 20px;
-	word-wrap: break-word;
+	font-size: calc(var(--body-font-size) / 1.2);
+	padding-left: 1em;
 	text-transform: uppercase;
 	color: var(--secondary);
+}
+
+.navLink > div {
+	height: 5vh;
+	max-width: 8vw;
+	text-align: center;
+	justify-content: center;
+	margin: 0 auto;
 }
 
 .navLink > #home {
@@ -154,7 +171,7 @@ nav#nav p {
 	position: relative;
 	width:90%;
 	justify-content: center;
-	margin:1em 0em 5em 1em;
+	margin:1em 0em 5em 0em;
   }
 
   .item {
@@ -163,7 +180,6 @@ nav#nav p {
 	z-index: 1;
   }
 
-  
   .item.muuri-item-hidden {
 	z-index: 0;
   }
@@ -181,7 +197,7 @@ nav#nav p {
   }
 
   .item.medium {
-	width: 30%;
+	width: 28%;
   }
 
   .item.mediumlarge {
@@ -200,7 +216,7 @@ nav#nav p {
 @media screen and (max-width:768px) {
 	.item.small, .item.medium, .item.mediumlarge, .item.smallarge, .item.large {
 		width: 80vw;
-		margin-left: 5%;
+		margin-left: 6vw;
 	}
   }
 
@@ -274,7 +290,6 @@ img.emoji {
 	width: 100%;
 	padding: 10px;
 	background: var(--tertiary);
-	font-size: 0.9em;
 	border: 2px solid var(--secondary);
 }
   
@@ -350,7 +365,6 @@ img.emoji {
 	overflow: scroll;
 	margin-top: 10px;
 	padding: 10px;
-	font-size: 0.9em;
 	color: var(--secondary);
 	background-color: var(--tertiary);
 	border: 2px solid var(--secondary);
@@ -366,7 +380,6 @@ img.emoji {
 .aRow.now {
 	color: var(--secondary);
 	background-color: var(--primary);
-	font-size: 1em;
 	width: 100%;
 }
 
@@ -376,7 +389,7 @@ img.emoji {
 	grid-template-columns: 20px auto;
 	align-items: center;
 	width: 100%;
-	font-size: 0.8em;
+	font-size: 0.8rem;
 	line-height: 140%;
 	background: var(--tertiary);
 	border: 2px solid var(--secondary);
@@ -427,13 +440,13 @@ img.emoji {
 	display: inline-block;
 	width: calc(100% - 10px - 1px);
 	margin-left: calc(10px + 1px);
-	font-size: 1em;
 }
 
 .marquee {
 	display: inline-block;
 	padding-left: 100%;
 	animation: marquee 8s linear infinite;
+	font-size: 0.8rem;
 }
 
 @keyframes marquee {
@@ -539,12 +552,13 @@ img.emoji {
 
 /* Tag filters */
 .sort-btn{
-	font-size: 0.8em;
 	text-align: center;
-	padding: 5px;
+	padding: 0 5px;
+	margin-top: -1em;
 }
 
 .sort-btn li{
+	font-size: 0.8rem;
 	display: inline-block;
 	padding: 5px;
 	margin: 5px;
@@ -609,6 +623,18 @@ img.emoji {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+/*Code img*/
+.preview {
+     display: flex;
+     flex-wrap: nowrap;
+	 max-width: 100%;
+	 gap: 1em;
+}
+
+.preview > img {
+     margin: 5px;
 }
 
 /*Scrollbar*/

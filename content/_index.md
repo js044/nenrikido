@@ -59,6 +59,7 @@ Sorted by recent. Read the rest of the blog [here](/blog).
 
 {{< card-medium title="#UPDATES" >}} 
 {{< scrollbox >}}
+* **5-6-23**: lots & lots of changes, some big and some small. there's also a new page theme up! and now there are theme previews!
 * **5-1-23**: new page theme is up on the [code](/code) page! i think it's cute.
 * **4-21-23**: site's finally up on [github](https://github.com/js044/nenrikido) and there's a [microblog](/microblog) now! elon could never
 * **4-20-23**: added a tamanotchi and a lunar tracker to the home page & added a weblisting, added some sites to the button wall
@@ -105,8 +106,8 @@ Sorted by recent. Read the rest of the blog [here](/blog).
 *   make search functional
 *   fix theme flickering
 *   add library content
-*   make neocities theme
 *   add microblog feed to index
+*   re-design start menu
 {{< /scrollbox >}}
 {{< /card-medium >}}
 

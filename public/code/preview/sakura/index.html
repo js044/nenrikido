@@ -1,0 +1,401 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='shortcut icon' type='image/x-icon' href='https://dl.dropbox.com/s/y8dfpdr0zioe8jd/cb1.gif' />
+    <title>Sakura</title>
+    <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+<style>
+
+:root {
+	--title-color: #ffc1d8;
+	--title-border: #ff4b78;
+	--title-font-size: 6em;
+	--title-font: 'Darumadrop One';
+	--body-font: 'National Park';
+	--body-font-color: #671d5c;
+	--box-color: #fff4f4e8;
+	--box-border-color: #ff5fa4;
+	--header-image: url('https://dl.dropbox.com/s/q8yecsdxvctnz1g/sakura.gif');
+	--bg-image: url('https://dl.dropbox.com/s/m9k6hfosjlww8na/bg.jpg');
+	--left-pixel: url('https://dl.dropbox.com/s/kgqiw9lk5yb8eos/abt.gif');
+	--right-pixel: url('https://dl.dropbox.com/s/yoqvxhwhek1btdq/bm.gif');
+}
+
+body, html {
+	scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	background: var(--bg-image) center / cover no-repeat;
+	font: 0.9em var(--body-font);
+	color: var(--body-font-color);
+}
+
+ 
+body > iframe:first-child { display: none !important; }
+
+@font-face {
+	font-family: 'National Park';
+  src: url('https://dl.dropbox.com/s/jox00bymodcheoy/NationalPark-Regular.otf');
+}
+
+a {
+	color: var(--title-border);
+}
+
+a:hover {
+    color: var(--title-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--title-font);
+	color: var(--title-border);
+}
+
+::selection {
+	color: var(--title-border);
+	background: var(--title-color);
+}
+
+code {
+	background-color: var(--title-color);
+	color: var(--title-border);
+	padding: 0 5px;
+	border: 1px solid  var(--title-border);
+	border-radius: 5px;
+}
+
+#title {
+	font-family: var(--title-font);
+	color: var(--title-color);
+	font-size: var(--title-font-size);
+	-webkit-text-stroke: 2px var(--title-border);
+	text-align: center;
+	letter-spacing: 5px;
+}
+
+#header {
+	height: 45vh;
+	max-width: 100%;
+	margin: 1em;
+	background: var(--header-image) center / contain no-repeat;
+}
+
+::-webkit-scrollbar {
+	width: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--title-color);
+	outline: 1px solid var(--title-border);
+}
+
+.container {
+	max-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	gap: 1em;
+}
+
+.container > div {
+	flex: 0 1 auto;
+}
+
+#middle {
+	width: 33vw;
+}
+
+#box {
+	background-color: var(--box-color);
+	border: 2px dashed var(--title-border);
+	overflow-y: scroll;
+	max-height: 10em;
+	width: 30vw;
+	padding: 0em 1em;
+	margin: auto;
+}
+
+#right-pixel, #left-pixel {
+	width: 4em;
+	height: 4em;
+}
+
+#right-pixel {
+	float: left;
+	background: var(--right-pixel) center / contain no-repeat;
+}
+
+#left-pixel {
+	float: right;
+	background: var(--left-pixel) center / contain no-repeat;
+}
+
+#right-pixel > p, #left-pixel > p {
+	text-align: center;
+	font-style: italic;
+	background-color: var(--box-color);
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding: 10em 0;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+	position: relative;
+	background-color: var(--box-color);
+	margin: auto;
+	overflow: auto;
+	padding: 0;
+	border: 2px solid var(--title-border);
+	width: 36vw;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.4s;
+	animation-name: animatetop;
+	animation-duration: 0.4s;
+}
+
+@-webkit-keyframes animatetop {
+	from {
+		top: -30vh;
+		opacity: 0;
+	}
+
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes animatetop {
+	from {
+		top: -30vh;
+		opacity: 0;
+	}
+
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+.modal-header {
+	padding: 0 1.5em;
+	border-bottom: 1px solid var(--title-border);
+}
+
+.modal-body {
+	overflow-y: scroll;
+	padding: 0.5em 1em;
+	max-height: 45vh;
+}
+
+.modal-button {
+    padding: 1em;
+	background: none;
+	color: inherit;
+	outline: inherit;
+	border: none;
+	cursor: pointer;
+	height: inherit;
+	width: inherit;
+}
+
+.modal-img {
+	max-height: 30vh;
+	max-width: 100%;
+	padding: 5px;
+	float: right;
+}
+
+.close {
+	color: var(--title-border);
+	float: right;
+	font-size: 2.5em;
+	font-weight: bold;
+}
+
+.close:hover, .close:focus {
+	color: var(--title-color);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+   
+@media only screen and (max-width: 800px) {
+	.container {
+		max-width: 100%;
+		padding: 1em;
+		margin: 0 auto;
+		flex-wrap: wrap;
+	}
+
+	.container > div {
+		max-width: 90vw;
+	}
+
+	#header {
+		max-height: 30vh;
+		max-width: 100%;
+	}
+
+    .modal-content {
+        width: 90vw;
+    }
+
+    .modal-img {
+	height: 100%;
+	max-width: 35vw;
+	}
+
+	#box {
+		width: 85vw;
+	}
+
+	#middle {
+		order: 1;
+		width: 90vw;
+	}
+
+	#left {
+		order: 2;
+	}
+
+	#right {
+		order: 3;
+	}
+
+	#right-pixel, #left-pixel {
+		width: 3.5em;
+		height: 3.5em;
+	}
+}
+  </style>
+  <div class="container">
+	<div id="left">
+		
+		<div id="left-pixel"><button class="modal-button" href="#left-modal"></button> 
+		</div> 
+		<div id="left-modal" class="modal">
+			<div class="modal-content">
+				<div class="modal-header"> <span class="close">×</span>
+					<h2>About this theme</h2>
+				</div>
+				<div class="modal-body">
+					<p>a theme for people who want an uncluttered layout, but also have a lot to say! check the code for full instructions and notes. <img class="modal-img" src="https://dl.dropbox.com/s/fwtvge3o467bc2v/snoopy1.png">
+					<ul>
+						<li>this theme uses CSS variables to control your settings.</li>
+						<li>the title font supports english and japanese (but not kanji)</li>
+						<li>the header dimensions are intended for a 4:3 ratio image.</li>
+						<li>you can use the <code>modal-img</code> class to include right-aligned images in your modals.</li>
+						<li>this preview does not use captions for the modal icons, but you can add them by searching for <code>caption 1</code> and <code>caption 2</code> and deleting the HTML comment tags (<code>&lt;-- --></code>)</li>
+					</ul> if you have any questions, you can email me at <a href="mailto:nenrikido@pm.me">nenrikido@pm.me</a> <img src="https://dl.dropbox.com/s/gmwv7ibxfjb0ry9/cb2.gif"> </p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="middle">
+		
+		<div id="title">さくら </div>
+		<div id="header"></div>
+		<div id="box">
+			<p align="center">welcome to the <strong>sakura page theme</strong>! <img src="https://dl.dropbox.com/s/y8dfpdr0zioe8jd/cb1.gif"></p>
+			<p>click the icons to the left and right to open the modals (pop-up boxes). the left modal displays information about this theme and the right contains a list of credits.</p>
+			<p>this box grows as you type, and once you hit the max height, it will automatically scroll. the same is true for the modal boxes.</p>
+		</div>
+	</div>
+	<div id="right">
+		
+		<div id="right-pixel"><button class="modal-button" href="#right-modal"></button> 
+		</div> 
+		<div id="right-modal" class="modal">
+			<div class="modal-content">
+				<div class="modal-header"> <span class="close">×</span>
+					<h1>Credits</h1>
+				</div>
+				<div class="modal-body">
+					<p> <img class="modal-img" src="https://dl.dropbox.com/s/82bs65tjlesbjgf/snoopy2.png" alt="A transparent PNG of Snoopy and Woodstock lounging in a watering can with yellow gardening hats."> it takes a village to craft a theme...and all tools used in the creation of this theme are free for public use, so go check them out.
+					<ul>
+						<li>Body font: <a href="https://nationalparktypeface.com/">National Park</a></li>
+						<li>Header font: <a href="https://fonts.google.com/specimen/Darumadrop+One">Darumadrop One</a></li>
+						<li>Cardcaptor Sakura gif: <a href="https://yonkou.tumblr.com/">Yonkou</a></li>
+						<li>Theme pixels: <a href="https://foollovers.com/mat/i-s-sp02.html">Fool Lovers</a></li>
+						<li>Background photo: <a href="https://unsplash.com/photos/NMLv5HQZnK4">Mark Tegethoff</a></li>
+						<li>Modal base code: <a href="https://www.w3schools.com/howto/howto_css_modals.asp">W3 Schools</a></li>
+						<li>Modal images: my renders of <a href="https://www.re-ment.co.jp/product/r25109">Snoopy's life in a bottle</a> products</li>
+					</ul>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+
+var btn = document.querySelectorAll("button.modal-button");
+
+
+var modals = document.querySelectorAll('.modal');
+
+
+var spans = document.getElementsByClassName("close");
+
+
+for (var i = 0; i < btn.length; i++) {
+ btn[i].onclick = function(e) {
+    e.preventDefault();
+    modal = document.querySelector(e.target.getAttribute("href"));
+    modal.style.display = "block";
+ }
+}
+
+
+for (var i = 0; i < spans.length; i++) {
+ spans[i].onclick = function() {
+    for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+    }
+ }
+}
+
+
+window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+     for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+     }
+    }
+}
+
+</script>
+  </body>
+</html>

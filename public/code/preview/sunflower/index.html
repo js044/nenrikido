@@ -1,0 +1,215 @@
+
+
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel='shortcut icon' type='image/x-icon' href='https://dl.dropbox.com/s/bssyspzas71kdhq/m02-flower-sunflower.gif' />
+      <title>Sunflower</title>
+    </head>
+    <body>
+    
+    <style>
+  
+   
+  
+  :root {
+    --title-color: #ffe14b;
+    --title-border: #d69721;
+    --title-font-size: 4.5em;
+    --title-font: 'PORKYS'; 
+    --body-font: 'National Park'; 
+    --body-font-color: #20550f;
+    --box-color: #effae7ee;
+    --bg-image: url('https://dl.dropbox.com/s/sdsvmkz4mus7pn4/sunflower.jpg');
+    --left-image: url(''); 
+    --right-image: url('https://dl.dropbox.com/s/8s4n1o0yneyd2rs/rm7.png');
+    --divider-image: url('https://dl.dropbox.com/s/hw0ihvypgg4vjwr/s10-sunflower-line.gif');
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *, *::before, *::after {
+      box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    background: var(--bg-image) top / cover no-repeat;
+    text-align: justify;
+    font: 1em var(--body-font);
+    color: var(--body-font-color);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--title-font);
+    color: var(--title-color);
+    -webkit-text-stroke: 1px var(--title-border);
+  }
+  
+  a {
+    color: var(--title-border);
+  }
+  
+  @font-face {
+    font-family: 'PORKYS';
+    src: url('https://dl.dropbox.com/s/o15z0l76kqbi8jq/PORKH.ttf');
+  }
+  
+  @font-face {
+    font-family: 'National Park';
+    src: url('https://dl.dropbox.com/s/jox00bymodcheoy/NationalPark-Regular.otf');
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0.5em;
+  }
+   
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 8px var(--title-color);
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--title-color);
+    outline: 1px solid var(--title-border);
+  }
+  
+  .container {
+    height: 100vh;
+    padding: 15px;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  
+  .container > div {
+    flex: 1 1 auto;
+    width: 33vw;
+  }
+  
+  #divider {
+    height: 2.5em;
+    max-width: 100%;
+    margin: 1em;
+    background: var(--divider-image) center / contain no-repeat;
+   }
+  
+  #title {
+    font-family: var(--title-font);
+    color: var(--title-color);
+    font-size: var(--title-font-size);
+    text-align: center;
+    letter-spacing: 5px;
+  }
+  
+  #title a {
+    text-decoration: none;
+    color: inherit;
+    -webkit-text-stroke: 2px var(--title-border);
+  }
+  
+  #title a:hover {
+    filter: drop-shadow(2px 2px 5px var(--title-border));
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-left: -3vw;
+  }
+  
+  nav ul li {
+  padding: 10px;
+  }
+  
+  #left {
+    transform: translateX(15%);
+    z-index: 1;
+    background: var(--left-image) center / contain no-repeat;
+  }
+  
+  #main {
+    z-index: 0;
+  }
+  
+  #box {
+    margin: 5em auto;
+    width: 25vw;
+    height: 35vh;
+    padding: 5px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-radius: 5px;
+    background-color: var(--box-color);
+    box-shadow: 0px 0px 20px 50px var(--box-color);
+  }
+  
+  #right {
+    transform: translateX(-10%);
+    z-index: 1;
+    background: var(--right-image) center / contain no-repeat;
+  }
+  
+  
+   
+  @media only screen and (max-width: 800px) {
+  #title {
+    font-size: calc(var(--title-font-size) / 1.4);
+  }
+    
+  #left, #right {
+    display: none;
+  }
+  
+  #box {
+    width: 70vw;
+    height: 40vh;
+  }
+  }
+  </style>
+  
+  <div class="container">
+    <div id="left"></div>
+    <div id="main">
+        <div id="divider"></div>
+        
+        <div id="title"><a href="#">SUNFLOWER</a></div>
+        <nav>
+            <ul>
+                <li><a href="#"> <img src="https://dl.dropbox.com/s/gr7s5m60dgxqr74/63a-home.gif"> </a></li>
+                <li><a href="#"> <img src="https://dl.dropbox.com/s/r2uobnug7specsf/63a-about.gif"> </a></li>
+                <li><a href="#"> <img src="https://dl.dropbox.com/s/x8wr60d165c88md/63a-mail.gif"> </a></li>
+            </ul>
+        </nav>
+        <div id="box">
+          <h2 align="center">welcome! <img src="https://dl.dropbox.com/s/x6cnnyiah2pa0gx/mb06-flower-sunflower.gif" alt="A small sunflower pixel"> </h2> 
+            <p>this is a preview for the <strong>sunflower page theme.</strong> </p>
+            <p> this is some sample text. if you keep typing, the box will become scrollable. check the code for more details on how to use this theme.</p>
+            <p> credits:
+            <ul>
+              <li>background image - <a href="https://unsplash.com/photos/MQAtUT_TJpU">Olga Subach</a></li>
+              <li>right side image - <a href="https://www.pseweb.com/">Range Murata</a></li>
+              <li>sunflower pixels - <a href="https://foollovers.com/mat/index.html">Fool Lovers</a></li>
+              <li>header font - <a href="https://www.dafont.com/porky-s.font">Porky's</a></li>
+              <li>body font - <a href="https://nationalparktypeface.com/">National park</a></li>
+            </ul>  
+            </p>
+        </div>
+    </div>
+    <div id="right"></div>
+  </div>
+  
+  </body>
+  
+  </html>

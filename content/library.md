@@ -29,7 +29,7 @@ This page is a collection of media that I have personally found interesting and/
 - This library is best perused with a warm beverage in hand, preferably while it's raining.
 
 If you have library recommendations, want to report broken links, or have any thoughts on the selection, feel free to leave a comment.
-{{< guestbook >}}
+{{< comments >}}
 {{< /card-mll >}}
 
 {{< library-card filter="books" title="Stone Butch Blues" author="Leslie Feinberg" date="March 1, 1993" category="Books" length="308 pages" genre="LGBT, Historical fiction" summary="Woman or man? This internationally acclaimed novel looks at the world through the eyes of Jess Goldberg, a masculine girl growing up in the 'Ozzie and Harriet' McCarthy era and coming out as a young butch lesbian in the pre-Stonewall gay drag bars of a blue-collar town." link="http://www.lesliefeinberg.net/download/661/" >}}

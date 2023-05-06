@@ -3,7 +3,7 @@
     <div class="row justify-content-center">
         <div class="col-8 col-lg-12 py-2">    
             <div class="navWrapper">  <a class="navLink" href="#">
-                 <div id="{{ .Get "id" }}"><br><br></div>{{ .Get "title" }}
+                 <div id="{{ .Get "id" }}"> </div>{{ .Get "title" }}
                 </a><br> <i class="fa-regular fa-circle-down"></i><br>
                 <p> {{ .Inner | markdownify | safeHTML }} </p>
         </div>
