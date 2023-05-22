@@ -8,15 +8,15 @@ layout: single
 {{< filter >}} 
 <li class="tumblr themes">Tumblr themes</li>
 <li class="page themes">Page themes</li>
+<li class="snippets">Snippets</li>
 {{< /filter >}} 
 {{< /nav >}}
 
 {{< muuri >}}
 
 {{< card-mll title="#Code Guide" >}}
-<base target="_blank">
 
-This is a repository of pre-made layouts that are free for you to use (non-commercially). Check individual themes for details. A few notes about these themes:
+This is a repository of pre-made layouts and code snippets that are free for you to use (non-commercially). Check individual posts for details. A few notes:
 
 - Page themes are platform agnostic layouts and can be used anywhere that supports (modern) HTML/CSS. They use CSS variables to manage user settings so you can swap out colors, images, fonts, etc. These variables are located in the :root element. If you'd like to know more about CSS variables, you can read [this guide](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties). 
 - Page themes are meant to look identical to previews out-of-the-box, so they come shipped with web URL images rather than local links. I encourage you to link your content locally.
@@ -30,13 +30,13 @@ Feel free to email me ([nenrikido@pm.me](mailto:nenrikido@pm.me)) with any quest
 {{< card-mll filter="page themes" >}}
 
 {{< preview >}}
-{{< lightbox-image link="/images/code/page-themes/sakura.gif" lightbox-id="sakura" img-src="/images/code/page-themes/thumb/sakura.gif" loading="lazy" width="394" height="200" alt="A theme preview. It's a profile page with a background image of sunflowers. A foggy box with text is in the center. A PNG of a girl is sitting next to the box." >}}
+{{< lightbox-image link="/images/code/page-themes/sakura.gif" lightbox-id="sakura" img-src="/images/code/page-themes/thumb/sakura.gif" loading="lazy" width="394" height="200" alt="A theme preview. It's a gif of a standalone page. It has a header of Sakura from Cardcaptor Sakura and a background image of cherry blossoms over a river. Two pixels are to the right and left of the header image. The gif shows someone clicking on the left pixel, which opens a pop-up box with more text." >}}
 
-{{< lightbox-image link="/images/code/page-themes/sakura-1.png" lightbox-id="sakura" img-src="/images/code/page-themes/thumb/sakura-1.png" loading="lazy" width="93" height="200" alt="A mobile preview of the theme." >}}
+{{< lightbox-image link="/images/code/page-themes/sakura-1.png" lightbox-id="sakura" img-src="/images/code/page-themes/thumb/sakura-1.png" loading="lazy" width="93" height="200" alt="A mobile preview of the theme. The pixels, rather than sitting besides the header image, rest beneath the main content." >}}
 {{< /preview >}}
 
 {{< preview >}}
-{{< lightbox-image link="/images/code/page-themes/sakura-2.png" lightbox-id="sakura" img-src="/images/code/page-themes/thumb/sakura-2.png" loading="lazy" width="407" height="200" alt="A theme preview. It's a profile page with a background image of sunflowers. A foggy box with text is in the center. A PNG of a girl is sitting next to the box." >}}
+{{< lightbox-image link="/images/code/page-themes/sakura-2.png" lightbox-id="sakura" img-src="/images/code/page-themes/thumb/sakura-2.png" loading="lazy" width="407" height="200" alt="An alternate theme preview, with brighter pinks and blues. The theme uses a different gif of Sakura." >}}
 
 {{< lightbox-image link="/images/code/page-themes/sakura-3.png" lightbox-id="sakura" img-src="/images/code/page-themes/thumb/sakura-3.png" loading="lazy" width="93" height="200" alt="A mobile preview of the theme." >}}
 {{< /preview >}}
@@ -56,7 +56,6 @@ features:
 {{< gist js044 7b74c883a7fc091f1eb68614b6ea6e28 >}}    
 {{< /card-mll >}}
 
-
 {{< card-mll filter="page themes" >}}
 
 {{< preview >}}
@@ -66,7 +65,7 @@ features:
 {{< /preview >}}
 
 {{< preview >}}
-{{< lightbox-image link="/images/code/page-themes/sunflower-3.jpeg" lightbox-id="sunflower" img-src="/images/code/page-themes/thumb/sunflower-3.jpeg" loading="lazy" width="393" height="200" alt="A theme preview. It's a profile page with a background image of sunflowers. A foggy box with text is in the center. A PNG of a girl is sitting next to the box." >}}
+{{< lightbox-image link="/images/code/page-themes/sunflower-3.jpeg" lightbox-id="sunflower" img-src="/images/code/page-themes/thumb/sunflower-3.jpeg" loading="lazy" width="393" height="200" alt="A theme preview. It's a profile page with a background image of a city road. On the left, there are storefronts with flowers and the background shows a distant mountainous forest. A PNG of an anime-styled girl stands next to the foggy text box. She is holding a green bag behind her, smiling, and wearing cat ears." >}}
 
 {{< lightbox-image link="/images/code/page-themes/sunflower-4.png" lightbox-id="sunflower" img-src="/images/code/page-themes/thumb/sunflower-4.png" loading="lazy" width="94" height="200" alt="A mobile preview of the theme." >}}
 {{< /preview >}}
@@ -83,6 +82,16 @@ features:
 {{< /box-small >}}
 
 {{< gist js044 e726caf2f2adc9374b14716e34527f37 >}}    
+{{< /card-mll >}}
+
+{{< card-mll filter="snippets" >}}
+{{< lightbox-image link="/images/code/snippets/preload.gif" lightbox-id="preloader" img-src="/images/code/snippets/thumb/preload.gif" loading="lazy" width="400" height="191" alt="A gif of a loading screen as the home page for Nenrikido loads." >}}
+
+{{< box-small  title="Preloader" >}}
+[blog post + codepen](/blog/post/making-a-preloader/)   
+> "I recently decided it might improve user experience to get a loading screen instead of watching the grid unceremoniously disentangle itself. A few experiments later, and here we are."
+{{< /box-small >}}
+{{< gist js044 a7c2e7c6ae4bd015366bf7a06e33ae23 >}} 
 {{< /card-mll >}}
 
 {{< card-mll filter="tumblr themes" >}}
@@ -115,6 +124,7 @@ features:
 {{< box-small  title="Pudding Theme" >}}
 [live preview](preview/pudding) / [tumblr post](https://negg.tumblr.com/post/710997721242353664/pudding-theme-plain-times-edit-by-negg-i-3-the)
 > i love the plain times theme and have made lots of customizations over the years. so i decided to finally tidy it up and release it as a formal edit.
+
 features:
 *   500px posts
 *   left or center aligned posts

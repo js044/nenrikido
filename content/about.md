@@ -26,12 +26,9 @@ draft: false
 {{< box >}} 
 hi, i'm a multimedia artist located in the US. i love experimental art & creating things. i also run an interdisciplinary [publication](https://www.cicadacreativemag.com/). (u should submit something!)
 
-i made this site as both a repository for my work and as its own creative project. i chose neocities to host this site because i think the communal aspect makes it special, so feel free to reach out!
+i made this site as both a repository for my work and as its own creative project. i'm still learning, so expect the site to change over time. feel free to reach out; i love email!
 {{< /box >}} 
-<div id="stats"><i class="fa-brands fa-twitter"></i> <a href="https://twitter.com/nenrikido">nenrikido</a></div>
-<div id="stats"> <i class="fa-brands fa-tumblr"></i> <a href="https://nenrikido-art.tumblr.com/"> nenrikido-art</a></div>
-<div id="stats"> <i class="fa-solid fa-envelope"></i> <a href="mailto:nenrikido@pm.me"> nenrikido</a></div>
-<div id="stats"><i class="fa-solid fa-mug-hot"></i> <a href="https://ko-fi.com/nenrikido_">nenrikido_</a></div>
+
 </div>
 </div>
 {{< /card-large >}}
@@ -60,7 +57,6 @@ i made this site as both a repository for my work and as its own creative projec
 {{< icons/heart >}} Spirited Away  
 {{< icons/heart >}} Ghost in the Shell  
 
-[myanimelist](https://myanimelist.net/profile/kujara)
 {{< /box-small >}} 
 </div>
 
@@ -70,6 +66,7 @@ i made this site as both a repository for my work and as its own creative projec
 *HORROR*  
 {{< icons/star >}} Yume Nikki (& fangames)  
 {{< icons/star >}} Silent Hill  
+{{< icons/star >}} Resident Evil    
 {{< icons/star >}} Ib  
 {{< icons/star >}} The Cat Lady  
 {{< icons/star >}} Forest of Drizzling Rain  
@@ -78,13 +75,11 @@ i made this site as both a repository for my work and as its own creative projec
 {{< icons/star >}} Fran Bow  
 
 *RPGS*  
-{{< icons/star >}} Tomba! 2: The Evil Swine Return  
+{{< icons/star >}} Tomba! 2  
 {{< icons/star >}} Stardew Valley  
-{{< icons/star >}} Disco Elysium  
 {{< icons/star >}} Animal Crossing  
 {{< icons/star >}} Pokemon  
 
-[steam](https://steamcommunity.com/id/kujara/)
 {{< /box-small >}}    
 </div>         
 
@@ -93,17 +88,15 @@ i made this site as both a repository for my work and as its own creative projec
 {{< icons/star >}} Mr. Robot  
 {{< icons/star >}} Hannibal  
 {{< icons/star >}} Killing Eve  
-{{< icons/star >}} IASIP  
 {{< icons/star >}} Grey's Anatomy :(  
 {{< /box-small >}} 
 
 {{< box-small title="HOBBIES:" >}} 
-{{< icons/rainbow >}} Front end coding  
+{{< icons/rainbow >}} Front end development  
 {{< icons/rainbow >}} Digital illustration  
-{{< icons/rainbow >}} Resin art  
+{{< icons/rainbow >}} Resin & clay art  
 {{< icons/rainbow >}} Fishkeeping  
 {{< icons/rainbow >}} Knitting  
-{{< icons/rainbow >}} Polymer clay art  
 {{< icons/rainbow >}} Cooking  
 {{< icons/rainbow >}} 3D printing & digfab  
 {{< icons/rainbow >}} Writing    
@@ -124,7 +117,6 @@ i made this site as both a repository for my work and as its own creative projec
 {{< icons/moon >}} The Age of Surveillance Capitalism - Shoshana Zuboff   
 {{< icons/moon >}} Understanding Power - Noam Chomsky  
 {{< icons/moon >}} The Body in Pain: the making and unmaking of the world - Elaine Scarry  
-{{< icons/moon >}} The State and Revolution - Vladimir Lenin   
 
 *AUTOBIOGRAPHIES*  
 {{< icons/moon >}} Assata: an autobiography - Assata Shakur  
@@ -134,7 +126,6 @@ i made this site as both a repository for my work and as its own creative projec
 {{< icons/moon >}} Chronology of Water - Lidia Yuknavitch  
 {{< icons/moon >}} Crying in H mart - Michelle Zauner  
 
-[goodreads](https://www.goodreads.com/user/show/93276013-jay)
 {{< /box-small >}}
 </div>         
 
@@ -147,8 +138,8 @@ i made this site as both a repository for my work and as its own creative projec
 {{< icons/music >}} Magdalena Bay  
 {{< icons/music >}} Ethel Cain  
 {{< icons/music >}} Mitski  
-{{< icons/music >}} Alice Glass  
-{{< icons/music >}} FKA Twigs  
+{{< icons/music >}} Fiona Apple  
+{{< icons/music >}} Kero Kero Bonito      
 
 *JAPANESE*  
 {{< icons/music >}} Soutaiseiriron (相対性理論)  
@@ -163,7 +154,6 @@ i made this site as both a repository for my work and as its own creative projec
 {{< icons/music >}} Clazziquai Project (클래지콰이)  
 {{< icons/music >}} Dareharu (달의하루)  
 
-[spotify](https://open.spotify.com/user/amayado)
 {{< /box-small >}}
 </div>                            
 </div>
@@ -193,9 +183,9 @@ i made this site as both a repository for my work and as its own creative projec
 
 {{< card-large title="#MY CAT" id="gaia" >}}
 {{< large-scrollbox >}}
-{{< lightbox-image link="/images/gaia/gaia.png" lightbox-id="gaia" img-src="/images/gaia/thumbnails/gaia.png" loading="" width="800" height="449" alt="A fluffy cat sitting by a laptop that was used to tweet about her moments prior." >}}  
+{{< lightbox-image link="/images/gaia/gaia.png" lightbox-id="gaia" img-src="/images/gaia/thumbnails/gaia.png" loading="" width="800" height="449" alt="A fluffy Tortoiseshell cat sitting by a laptop that was used to tweet about her moments prior. She is crouched under a bed. The tweet is one of her sitting on top of the bed." >}}  
 
-{{< lightbox-image link="/images/gaia/gaia_1.jpg" lightbox-id="gaia" img-src="/images/gaia/thumbnails/gaia_1.jpg" loading="lazy" width="800" height="1009" alt="A fluffy cat flopped on her back." >}}  
+{{< lightbox-image link="/images/gaia/gaia_1.jpg" lightbox-id="gaia" img-src="/images/gaia/thumbnails/gaia_1.jpg" loading="lazy" width="800" height="1009" alt="A fluffy Tortoiseshell cat flopped on her back." >}}  
 
 {{< lightbox-image link="/images/gaia/gaia_2.jpg" lightbox-id="gaia" img-src="/images/gaia/thumbnails/gaia_2.jpg" loading="lazy" width="800" height="592" alt="A fluffy cat sprawled out dramatically on a pillow." >}}  
 

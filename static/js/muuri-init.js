@@ -16,8 +16,13 @@ var grid = new Muuri('.grid', {
 	}
 
 });
+ 
 window.addEventListener('load', function() {
-	grid.refreshItems().layout();
+	grid.refreshItems();
+
+	grid.layout(function (items, hasLayoutChanged) {
+
+	  });
 });
 
 //=== sort button setting

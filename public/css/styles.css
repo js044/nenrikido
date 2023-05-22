@@ -36,7 +36,7 @@ blockquote {
 	border-left: solid 1px var(--secondary);
 }
 
-p, ul, li, span, .sort-btn, #aWrap, #aPlay, #aList, .aRow, .gist {
+p, ul, li, span, .sort-btn, #aWrap, #aPlay, #aList, .aRow, .gist, #microblog_recent .postText, .home-desc{
 	font-size: var(--body-font-size);
 }
 
@@ -65,21 +65,20 @@ nav {
 
 nav#nav {
 	float: left;
-	width: 15em;
+	width: 15vw;
 	padding: 10px;
-	margin: 1em -1em 0em 1em;
+	margin: 1em;
 }
 
 nav#navAlt {
 	float: right;
-	width: 15em;
+	width: 17vw;
 	margin: 5em 5em 0em 0em;
 }
 
 nav#nav a {
 	text-decoration: none;
 }
-
 
 @media screen and (max-width:768px) {
 	body {
@@ -90,15 +89,14 @@ nav#nav a {
 		float: none;
 		width: 80vw;
 		justify-content: center;
-		margin-left: auto;
-		margin-right: auto;
+		margin: 0 auto;
 	}
 
 	nav#navAlt {
 		float: none;
-		width: 23em;
+		width: 95vw;
 		justify-content: center;
-		margin: 10px auto;
+		margin: 2vh auto;
 		height: 100%;
 	}
 }
@@ -113,7 +111,7 @@ nav#nav a {
 
 .navLink > div {
 	height: 5vh;
-	max-width: 8vw;
+	max-width: 10vw;
 	text-align: center;
 	justify-content: center;
 	margin: 0 auto;
@@ -169,7 +167,7 @@ nav#nav a {
 /* Muuri */
 .grid {
 	position: relative;
-	width:90%;
+	width: 90%;
 	justify-content: center;
 	margin:1em 0em 5em 0em;
   }
@@ -197,7 +195,7 @@ nav#nav a {
   }
 
   .item.medium {
-	width: 28%;
+	width: 29%;
   }
 
   .item.mediumlarge {
@@ -284,7 +282,7 @@ img.emoji {
   /* (B) WRAPPER */
 #aWrap {
 	display: flex;
-	flex-wrap: no-wrap;
+	flex-wrap: nowrap;
 	align-items: center;
 	box-sizing: border-box;
 	width: 100%;
@@ -361,7 +359,7 @@ img.emoji {
 #aList {
 	position: relative;
 	width: 100%;
-	height: 26em;
+	height: 28rem;
 	overflow: scroll;
 	margin-top: 10px;
 	padding: 10px;
@@ -617,12 +615,8 @@ img.emoji {
 	width: 40px;
 }
 
-.wrap {
-	width: 20%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.summary-title-link, .read-more-link, .summary {
+font-size: 0.9em	
 }
 
 /*Code img*/
@@ -788,6 +782,43 @@ height: 4px;
 	padding: 10px;
 	margin: 10px 0px 10px 0px;
 	word-wrap: break-word;
+}
+
+/*Microblog*/
+#microblog_recent {
+	display: flex;
+	flex-wrap: wrap;
+	border: var(--secondary) 1px solid;
+	padding: 5px;
+	
+}
+
+#microblog_recent .profilePic {
+	float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+	margin: 5px 10px;
+}
+
+#microblog_recent .profilePic:hover {
+	filter: drop-shadow(0px 0px 20px var(--secondary));
+}
+
+#microblog_recent .postContent {
+	display: block;
+	margin-bottom: 0;
+  } 
+ 
+  #microblog_recent .postText {
+	padding: 0.5em;
+  }
+
+#microblog_recent .postImage { 
+	display: flex;
+	align-content: center;
+	max-width: 100%;   
+	padding: 0.5em;
 }
 
 /* Footer */

@@ -6,7 +6,7 @@
     <meta name="description"
         content="A special world." />
     <meta name="dc.relation" content="https://nenrikido.neocities.org/" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='shortcut icon' type='image/x-icon' href='./images/icons/favicon-32x32.png' />
 
     <link rel="alternate" type="application/rss+xml" href="https://nenrikido.neocities.org/index.xml" title="NENRIKIDO" />
@@ -14,44 +14,43 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/lightbox.css">
     <link rel="stylesheet" type="text/css" href="./css/themes.css">
-    <link rel="stylesheet" type="text/css" href="./css/styles.css">
-<div id="preloader"></div><body><a href="#" id="btn-back-to-top"><span></span><i class="fa-solid fa-circle-chevron-up"></i></a>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css"><div id="preloader"></div><body><a href="#" id="btn-back-to-top"><span></span><i class="fa-solid fa-circle-chevron-up"></i></a>
 <nav id="nav">
     <div class="row justify-content-center">
         <div class="col-3 col-lg-6"> <a class="navLink" href="./">
-                <div id="home"><br><br></div>Home
+                <div id="home"></div>Home
             </a> </div>
         <div class="col-3 col-lg-6"> <a class="navLink" href="./about">
-                <div id="about"><br><br></div>About
+                <div id="about"></div>About
             </a> </div>
         <div class="col-3 col-lg-6"> <a class="navLink" href="./gallery">
-                <div id="gallery"><br><br></div>Gallery
+                <div id="gallery"></div>Gallery
             </a> </div>
         <div class="col-3 col-lg-6"> <a class="navLink" href="./commissions">
-                <div id="commissions"><br><br></div>Commissions
+                <div id="commissions"></div>Commissions
             </a> </div>
         <div class="col-3 col-lg-6"> <a class="navLink" href="./code">
-                <div id="code"><br><br></div>Code
+                <div id="code"></div>Code
             </a> </div>
         <div class="col-3 col-lg-6"> <a class="navLink" href="./blog">
-                <div id="blog"><br><br></div>Blog
+                <div id="blog"></div>Blog
             </a> </div>
         <div class="col-3 col-lg-6"> <a class="navLink" href="./links">
-                <div id="links"><br><br></div>Links
+                <div id="links"></div>Links
             </a> </div>
         <div class="col-3 col-lg-6"> <a class="navLink" href="./microblog">
-                <div id="microblog"><br><br></div>Microblog
+                <div id="microblog"></div>Microblog
             </a> </div>
             <div class="col-3 col-lg-6"> <a class="navLink" href="./library">
-                <div id="library"><br><br></div>Library
+                <div id="library"></div>Library
             </a> </div>
             <div class="col-3 col-lg-6"> <a class="navLink" href="./shrines">
-                <div id="shrines"><br><br></div>Shrines
+                <div id="shrines"></div>Shrines
             </a> </div>
     </div> 
     <div class="row justify-content-center">
         <div class="col-12 col-lg-auto py-3">
-            <div class="search"> <input type="text" class="searchTerm" placeholder="Search..."> <button type="submit" class="searchButton"> <i class="fa fa-search"></i> </button> </div>
+            <form class="search"> <input type="text" class="searchTerm" placeholder="Search..."> <button type="submit" class="searchButton"> <i class="fa fa-search"></i> </button> </form>
         </div>
     </div>
 </nav>
@@ -89,10 +88,10 @@ this is a personal site and a place for me to experiment with front-end developm
             <h1>#THEMES</h1>
             <p> <p>click on an emoji to toggle a theme.</p>
 <div class="row justify-content-center">
-<div class="col-3 col-lg-3 p-2"> <button id="pink" title="pink theme" class="theme-button" onclick="handleThemeButtonClick('pink', this)" >💗</button></div>
-<div class="col-3 col-lg-3 p-2"> <button id="blue" title="blue theme" class="theme-button" onclick="handleThemeButtonClick('blue', this)" >🫧</button></div>
-<div class="col-3 col-lg-3 p-2"> <button id="yellow" title="yellow theme" class="theme-button" onclick="handleThemeButtonClick('yellow', this)" >🪐</button></div>
-<div class="col-3 col-lg-3 p-2"> <button id="black" title="black theme" class="theme-button" onclick="handleThemeButtonClick('black', this)" >💤</button></div>
+<div class="col-3 p-2"> <button id="pink" title="pink theme" class="theme-button" onclick="handleThemeButtonClick('pink', this)" >💗</button></div>
+<div class="col-3 p-2"> <button id="blue" title="blue theme" class="theme-button" onclick="handleThemeButtonClick('blue', this)" >🫧</button></div>
+<div class="col-3 p-2"> <button id="yellow" title="yellow theme" class="theme-button" onclick="handleThemeButtonClick('yellow', this)" >🪐</button></div>
+<div class="col-3 p-2"> <button id="black" title="black theme" class="theme-button" onclick="handleThemeButtonClick('black', this)" >💤</button></div>
 </div>
  </p>
         </div>
@@ -195,6 +194,23 @@ this is a personal site and a place for me to experiment with front-end developm
             </div>
         </div>
         <div class="cardsBody">
+            <h1>#MICROBLOG</h1>
+            <p> <div id="microblog_recent"></div>
+ </p>
+        </div>
+    </div>
+</div>
+<div class="item medium ">
+    <div class="cards">
+        <div class="cardsHeader">
+            <div class="cardsControls">
+                <div class="row justify-content-between">
+                    <div class="col-4"> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+                    <div class="col-auto"> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="cardsBody">
             <h1>#LUNAR</h1>
             <p> <!-- © wdisseny -->
 <div id="contain_moon" style="text-align:center;padding-top:5px;padding-bottom:5px;margin:10px;width:auto;height:17em;"><div style="font-weight:bold">the moon today</div><div style="margin-bottom:3em;padding:2em;filter:drop-shadow(0 0 30px hsl(220,100%,15%))"></div><div>.</div><div style="font-size:small">.</div></div>
@@ -232,13 +248,11 @@ this is a personal site and a place for me to experiment with front-end developm
         </div>
         <div class="cardsBody">
             <h1>#BLOG POSTS</h1>
-            <p> <p>Sorted by recent. Read the rest of the blog <a href="./blog">here</a>.</p>
-<ul>
-<li>Apr 18: <a href="https://nenrikido.neocities.org/blog/post/site-updates-3/"> Site Updates </a> - new library with 61 current entries! (and a shrines page!)  </li>
-</ul>
-<ul>
-<li>Apr 11: <a href="https://nenrikido.neocities.org/blog/post/evangelion-learning-moving/"> Evangelion, Learning, &amp; … </a> - late night rambling  </li>
-</ul>
+            <p> <p>Read the rest of the blog <a href="./blog">here</a>.</p>
+<p>✦May 21: <strong><a href="https://nenrikido.neocities.org/blog/post/neocities-reflection/"> 2 months later: A Neocities Reflection </a></strong> - Some observations about the community aspect of Neocities and online communities in general.</p>
+<p>✦Apr 18: <strong><a href="https://nenrikido.neocities.org/blog/post/site-updates-3/"> Site Updates </a></strong> - new library with 61 current entries! (and a shrines page!)</p>
+<p>✦Apr 11: <strong><a href="https://nenrikido.neocities.org/blog/post/evangelion-learning-moving/"> Evangelion, Learning, &amp; Moving </a></strong> - late night rambling</p>
+<p>✦Apr 05: <strong><a href="https://nenrikido.neocities.org/blog/post/making-a-preloader/"> Making a Preloader </a></strong> - How to make a simple full-page loading screen for your site.</p>
  </p>
         </div>
     </div>
@@ -256,6 +270,7 @@ this is a personal site and a place for me to experiment with front-end developm
         <div class="cardsBody">
             <h1>#UPDATES</h1>
             <p> <div class="scrollbox"><ul>
+<li><strong>5-21-23</strong>: new <a href="./blog">blog</a> post &amp; now there&rsquo;s a microblog feed on the index page. thank you hors</li>
 <li><strong>5-6-23</strong>: lots &amp; lots of changes, some big and some small. there&rsquo;s also a new page theme up! and now there are theme previews!</li>
 <li><strong>5-1-23</strong>: new page theme is up on the <a href="./code">code</a> page! i think it&rsquo;s cute.</li>
 <li><strong>4-21-23</strong>: site&rsquo;s finally up on <a href="https://github.com/js044/nenrikido">github</a> and there&rsquo;s a <a href="./microblog">microblog</a> now! elon could never</li>
@@ -335,15 +350,19 @@ this is a personal site and a place for me to experiment with front-end developm
         <div class="cardsBody">
             <h1>#TO-DO</h1>
             <p> <div class="scrollbox"><ul>
-<li><del>create library</del> <img src="images/pixels/new.gif" alt=""></li>
-<li><del>create shrine page</del> <img src="images/pixels/new.gif" alt=""></li>
+<li><del>add microblog feed to index</del> <img src="images/pixels/new.gif" alt=""></li>
 <li>open commissions</li>
-<li><del>create microblog</del> <img src="images/pixels/new.gif" alt=""></li>
-<li>make search functional</li>
+<li>make OC page (!!!)</li>
+<li>fix search script</li>
 <li>fix theme flickering</li>
-<li>add library content</li>
-<li>add microblog feed to index</li>
+<li>add library genre drop-down</li>
+<li>add microblog pagination</li>
 <li>re-design start menu</li>
+<li>create zonelets theme</li>
+<li>move scrollbar behind footer</li>
+<li>soutaiseiriron shrine</li>
+<li>fix firefox microblog bug</li>
+<li>ditch bootstrap (someday)</li>
 </ul>
 </div>
  </p>
@@ -451,6 +470,7 @@ this is a personal site and a place for me to experiment with front-end developm
 </div>
  </div>
     </div> 
+    <script src="./js/microblog_recent.js"></script>
     <script type="text/javascript" src="./js/audioPlayer.js" defer></script>
 </body>
 <div class="modal fade" id="start" tabindex="-1" aria-labelledby="startLabel" aria-hidden="true">
@@ -521,24 +541,27 @@ this is a personal site and a place for me to experiment with front-end developm
 <script src="./js/theme.js" ></script>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
-<script src="./js/muuri-init.js"></script>
+<script defer src="./js/muuri-init.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous" ></script>
 <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
 <script defer src="./js/back-to-top.js" ></script>
 <script defer src="./js/lightbox.js" ></script>
 <script defer src="./js/yt_lite.js" ></script>
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script src="./js/search.js" ></script>
+<script>
+  var loader = document.getElementById("preloader");
+  window.addEventListener("load", function () {
+    loader.style.display = "none";
+  });
+  var s = document.getElementById("preloader").style;
+  s.opacity = 1;
+  (function fade() {
+    (s.opacity -= 0.1) < 0 ? (s.display = "none") : setTimeout(fade, 40);
+  })();
+  </script>
 <script>
   twemoji.parse(document.body)
 </script>
-<script>
-var loader = document.getElementById("preloader");
-window.addEventListener("load", function () {
-  loader.style.display = "none";
-});
-var s = document.getElementById("preloader").style;
-s.opacity = 1;
-(function fade() {
-  (s.opacity -= 0.1) < 0 ? (s.display = "none") : setTimeout(fade, 40);
-})();
-</script></body>
+</body>
 </html>

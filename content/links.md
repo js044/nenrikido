@@ -18,7 +18,6 @@ draft: false
 {{< icons/email >}} [email](mailto:@nenrikido@pm.me)  
 {{< icons/mug >}} [ko-fi](https://ko-fi.com/nenrikido_)  
 {{< icons/tumblr >}} [art blog](https://nenrikido-art.tumblr.com/)  
-{{< icons/tumblr >}} [theme blog](https://negg.tumblr.com/)  
 {{< icons/twitter >}} [art twitter](https://twitter.com/nenrikido)  
 {{< icons/discord >}} ask me   
 {{< icons/card >}} [neocities profile](https://neocities.org/site/nenrikido)  
@@ -78,8 +77,7 @@ draft: false
 {{< buttons img-src="/images/buttons/turd.png" link="https://turd.neocities.org/">}}      
 {{< buttons img-src="/images/buttons/zenmai.gif" link="https://zenmai.neocities.org/">}}      
 {{< buttons img-src="/images/buttons/sunmiflowers.png" link="https://sunmiflowers.neocities.org/">}}     
-{{< buttons img-src="/images/buttons/ita.gif" link="https://ita.toys/">}}      
-{{< buttons img-src="/images/buttons/dokodemobutton3.gif" link="https://dokode.moe/">}}                                  
+{{< buttons img-src="/images/buttons/ita.gif" link="https://ita.toys/">}}                           
 {{< buttons img-src="/images/buttons/bearwinky.gif" link="https://myfancybear.neocities.org/">}}  
 {{< buttons img-src="/images/buttons/LostLetters88x31.gif" link="https://lostletters.neocities.org/">}}    
 {{< buttons img-src="/images/buttons/zucchini.gif" link="https://zucchini.cc/">}}                                
@@ -125,7 +123,6 @@ draft: false
 {{< buttons img-src="/images/buttons/link_malta.gif" link="https://daikonet.neocities.org/" >}}
 {{< buttons img-src="/images/buttons/cyberoccultismbutton.gif" link="https://cyberoccultism.online/">}}
 {{< buttons img-src="/images/buttons/cpnk.gif" link="https://seapunk.xyz/">}}  
-{{< buttons img-src="/images/buttons/dimden.gif" link="https://dimden.dev/">}}  
 {{< buttons img-src="/images/buttons/nostalgic.gif" link="https://nostalgic.neocities.org/">}} 
 {{< buttons img-src="/images/buttons/doghouse1.gif" link="https://dog-house.neocities.org/">}}
 {{< buttons img-src="/images/buttons/sadgrlonline.gif" link="https://sadgrl.online/">}} 
@@ -161,7 +158,6 @@ draft: false
 {{< buttons img-src="/images/buttons/cloverbellbanner.gif" link="https://cloverbell.neocities.org/" >}}  
 {{< buttons img-src="/images/buttons/fwoofies.gif" link="https://fwoofies.neocities.org/">}}  
 {{< buttons img-src="/images/buttons/middlepot.png" link="https://middlepot.com/">}} 
-{{< buttons img-src="/images/buttons/ryanpeikou.png" link="https://ryanpeikou.neocities.org/">}} 
 {{< buttons img-src="/images/buttons/simone.gif" link="https://simone.computer/">}}  
 {{< /row-centered >}}
 {{< /large-scrollbox >}}
@@ -186,25 +182,26 @@ draft: false
 {{< icons/right-arrow >}} [freecodecamp](https://www.freecodecamp.org/)  
 {{< icons/right-arrow >}} [mdn web docs](https://developer.mozilla.org/en-US/)  
 {{< icons/right-arrow >}} [neocities web guide](https://webguide.neocities.org/)  
-{{< icons/right-arrow >}} [sadgrl webmaster guides](https://sadgrl.online/learn/)  
 {{< icons/right-arrow >}} [stack overflow](https://stackoverflow.com/)  
 {{< icons/right-arrow >}} [w3schools](https://www.w3schools.com/)  
-{{< icons/right-arrow >}} [css grid generator](https://cssgrid-generator.netlify.app/)  
+{{< icons/right-arrow >}} [sadgrl guides](https://sadgrl.online/learn/)  
+{{< icons/right-arrow >}} [sadgrl webmaster links](https://sadgrl.online/webmastery/webmaster-links) 
 {{< /box-small >}}
 {{< /col-6 >}}
 {{< col-6 >}}
 {{< box-small title="QUICK TOOLS:">}}
+{{< icons/right-arrow >}} [css grid generator](https://cssgrid-generator.netlify.app/)  
+{{< icons/right-arrow >}} [flex generator](https://angrytools.com/css-flex/)  
 {{< icons/right-arrow >}} [HTML formatter](https://smalldev.tools/html-formatter-online)  
 {{< icons/right-arrow >}} [CSS formatter](https://beautifytools.com/css-beautifier.php)  
 {{< icons/right-arrow >}} [HTML validator](https://validator.w3.org/)     
 {{< icons/right-arrow >}} [CSS validator](https://jigsaw.w3.org/css-validator/)  
 {{< icons/right-arrow >}} [find unclosed divs](https://www.aliciaramirez.com/closing-tags-checker/)     
-{{< icons/right-arrow >}} [markdown to HTML](https://markdowntohtml.com/)  
 {{< icons/right-arrow >}} [HTML to markdown](https://codebeautify.org/html-to-markdown/)  
 {{< icons/right-arrow >}} [accessibility tools](https://www.w3.org/WAI/ER/tools/)  
-{{< icons/right-arrow >}} [sadgrl webmaster tools](https://sadgrl.online/webmastery/webmaster-links) 
 {{< /box-small >}}
 {{< /col-6 >}}
+
 {{< col-6 >}}
 {{< box-small title="CODE EDITORS:">}}
 {{< icons/right-arrow >}} [brackets](https://brackets.io/)  
@@ -231,7 +228,7 @@ _UI_:
 _GALLERIES & CAROUSELS_:  
 {{< icons/right-arrow >}} [lightbox v2](https://lokeshdhakar.com/projects/lightbox2/) {{< icons/star >}}    
 {{< icons/right-arrow >}} [lightGallery](https://www.lightgalleryjs.com/)  
-{{< icons/right-arrow >}} [glide](hhttps://glidejs.com/)  
+{{< icons/right-arrow >}} [glide](https://glidejs.com/)  
 {{< icons/right-arrow >}} [flickity](https://flickity.metafizzy.co/)
 {{< /box-small >}}
 {{< /col-6 >}}

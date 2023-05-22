@@ -2,39 +2,39 @@
 <nav id="nav">
     <div class="row justify-content-center">
         <div class="col-3 col-lg-6"> <a class="navLink" href="/">
-                <div id="home"><br><br></div>Home
+                <div id="home"></div>Home
             </a> </div>
         <div class="col-3 col-lg-6"> <a class="navLink" href="/about">
-                <div id="about"><br><br></div>About
+                <div id="about"></div>About
             </a> </div>
         <div class="col-3 col-lg-6"> <a class="navLink" href="/gallery">
-                <div id="gallery"><br><br></div>Gallery
+                <div id="gallery"></div>Gallery
             </a> </div>
         <div class="col-3 col-lg-6"> <a class="navLink" href="/commissions">
-                <div id="commissions"><br><br></div>Commissions
+                <div id="commissions"></div>Commissions
             </a> </div>
         <div class="col-3 col-lg-6"> <a class="navLink" href="/code">
-                <div id="code"><br><br></div>Code
+                <div id="code"></div>Code
             </a> </div>
         <div class="col-3 col-lg-6"> <a class="navLink" href="/blog">
-                <div id="blog"><br><br></div>Blog
+                <div id="blog"></div>Blog
             </a> </div>
         <div class="col-3 col-lg-6"> <a class="navLink" href="/links">
-                <div id="links"><br><br></div>Links
+                <div id="links"></div>Links
             </a> </div>
         <div class="col-3 col-lg-6"> <a class="navLink" href="/microblog">
-                <div id="microblog"><br><br></div>Microblog
+                <div id="microblog"></div>Microblog
             </a> </div>
             <div class="col-3 col-lg-6"> <a class="navLink" href="/library">
-                <div id="library"><br><br></div>Library
+                <div id="library"></div>Library
             </a> </div>
             <div class="col-3 col-lg-6"> <a class="navLink" href="/shrines">
-                <div id="shrines"><br><br></div>Shrines
+                <div id="shrines"></div>Shrines
             </a> </div>
     </div> 
     <div class="row justify-content-center">
         <div class="col-12 col-lg-auto py-3">
-            <div class="search"> <input type="text" class="searchTerm" placeholder="Search..."> <button type="submit" class="searchButton"> <i class="fa fa-search"></i> </button> </div>
+            <form class="search"> <input type="text" class="searchTerm" placeholder="Search..."> <button type="submit" class="searchButton"> <i class="fa fa-search"></i> </button> </form>
         </div>
     </div>
 </nav>
@@ -42,6 +42,7 @@
 <div class="row justify-content-center">
     <div class="grid"> {{.Content}} </div>
     </div> 
+    <script src="/js/microblog_recent.js"></script>
     <script type="text/javascript" src="/js/audioPlayer.js" defer></script>
 </body>
 {{ end }}

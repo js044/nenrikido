@@ -1,23 +1,25 @@
 <script src="/js/theme.js" ></script>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
-<script src="/js/muuri-init.js"></script>
+<script defer src="/js/muuri-init.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous" ></script>
 <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
 <script defer src="/js/back-to-top.js" ></script>
 <script defer src="/js/lightbox.js" ></script>
 <script defer src="/js/yt_lite.js" ></script>
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script src="/js/search.js" ></script>
+<script>
+  var loader = document.getElementById("preloader");
+  window.addEventListener("load", function () {
+    loader.style.display = "none";
+  });
+  var s = document.getElementById("preloader").style;
+  s.opacity = 1;
+  (function fade() {
+    (s.opacity -= 0.1) < 0 ? (s.display = "none") : setTimeout(fade, 40);
+  })();
+  </script>
 <script>
   twemoji.parse(document.body)
-</script>
-<script>
-var loader = document.getElementById("preloader");
-window.addEventListener("load", function () {
-  loader.style.display = "none";
-});
-var s = document.getElementById("preloader").style;
-s.opacity = 1;
-(function fade() {
-  (s.opacity -= 0.1) < 0 ? (s.display = "none") : setTimeout(fade, 40);
-})();
 </script>

@@ -43,8 +43,11 @@
   }
   
   body, html {
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
   }
   
   *, *::before, *::after {
@@ -52,7 +55,6 @@
   }
   
   body {
-    height: 100vh;
     background: var(--bg-image) top / cover no-repeat;
     text-align: justify;
     font: 1em var(--body-font);
@@ -93,7 +95,6 @@
   }
   
   .container {
-    height: 100vh;
     padding: 15px;
     display: flex;
     align-items: stretch;
@@ -137,7 +138,7 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
-    margin-left: -3vw;
+    padding: 0;
   }
   
   nav ul li {

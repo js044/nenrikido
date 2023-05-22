@@ -12,10 +12,10 @@ this is a personal site and a place for me to experiment with front-end developm
 {{< card-medium title="#THEMES"  >}} 
 click on an emoji to toggle a theme.
 <div class="row justify-content-center">
-<div class="col-3 col-lg-3 p-2"> <button id="pink" title="pink theme" class="theme-button" onclick="handleThemeButtonClick('pink', this)" >💗</button></div>
-<div class="col-3 col-lg-3 p-2"> <button id="blue" title="blue theme" class="theme-button" onclick="handleThemeButtonClick('blue', this)" >🫧</button></div>
-<div class="col-3 col-lg-3 p-2"> <button id="yellow" title="yellow theme" class="theme-button" onclick="handleThemeButtonClick('yellow', this)" >🪐</button></div>
-<div class="col-3 col-lg-3 p-2"> <button id="black" title="black theme" class="theme-button" onclick="handleThemeButtonClick('black', this)" >💤</button></div>
+<div class="col-3 p-2"> <button id="pink" title="pink theme" class="theme-button" onclick="handleThemeButtonClick('pink', this)" >💗</button></div>
+<div class="col-3 p-2"> <button id="blue" title="blue theme" class="theme-button" onclick="handleThemeButtonClick('blue', this)" >🫧</button></div>
+<div class="col-3 p-2"> <button id="yellow" title="yellow theme" class="theme-button" onclick="handleThemeButtonClick('yellow', this)" >🪐</button></div>
+<div class="col-3 p-2"> <button id="black" title="black theme" class="theme-button" onclick="handleThemeButtonClick('black', this)" >💤</button></div>
 </div>
 {{< /card-medium >}}
 
@@ -42,6 +42,10 @@ try dragging a window by its header!
 <p align="center"><a href="http://tamanotchi.world/4251c" target="_blank" rel="noopener noreferrer"><img src="http://tamanotchi.world/i2/4251" alt="It's tamaNOTchi! Click to feed!"></a></p>
 {{< /card-medium >}}
 
+{{< card-medium title="#MICROBLOG" >}} 
+<div id="microblog_recent"></div>
+{{< /card-medium >}}
+
 {{< card-medium title="#LUNAR" >}} 
 <!-- © wdisseny -->
 <div id="contain_moon" style="text-align:center;padding-top:5px;padding-bottom:5px;margin:10px;width:auto;height:17em;"><div style="font-weight:bold">the moon today</div><div style="margin-bottom:3em;padding:2em;filter:drop-shadow(0 0 30px hsl(220,100%,15%))"></div><div>.</div><div style="font-size:small">.</div></div>
@@ -52,13 +56,15 @@ try dragging a window by its header!
 <iframe title="gifypet" class="pet" width="345" height="250" scrolling="yes" src="https://gifypet.neocities.org/pet/pet.html?name=aurelia&dob=1678660983&gender=f&element=Water&pet=https%3A%2F%2Fimg.pokemondb.net%2Fsprites%2Fblack-white%2Fanim%2Fshiny%2Ffrillish-f.gif&map=tree.jpg&background=transparent" frameborder="0"></iframe>
 {{< /card-medium >}}
 
+
 {{< card-medium title="#BLOG POSTS" >}} 
-Sorted by recent. Read the rest of the blog [here](/blog).
+Read the rest of the blog [here](/blog).
 {{< blog-feed >}} 
 {{< /card-medium >}}
 
 {{< card-medium title="#UPDATES" >}} 
 {{< scrollbox >}}
+* **5-21-23**: new [blog](/blog) post & now there's a microblog feed on the index page. thank you hors 
 * **5-6-23**: lots & lots of changes, some big and some small. there's also a new page theme up! and now there are theme previews!
 * **5-1-23**: new page theme is up on the [code](/code) page! i think it's cute.
 * **4-21-23**: site's finally up on [github](https://github.com/js044/nenrikido) and there's a [microblog](/microblog) now! elon could never
@@ -94,20 +100,23 @@ Sorted by recent. Read the rest of the blog [here](/blog).
 <p align="center"><img src="/images/pixels/Madotsuki_Chair_Spin.gif" style="max-width: 100px;" loading="lazy" width="100" height="100" alt="Madotsuki spinning in her chair."></p>
 <p align="center"> <a href="https://ynoproject.net/" target="_blank" rel="noopener noreferrer">Yume Nikki Online Project</a></p>
 <p align="center"> <a href="https://archive.ymbr.site/play/" target="_blank" rel="noopener noreferrer">Play Yume Nikki fangames online</a></p>
-
 {{< /card-medium >}}
 
 {{< card-medium title="#TO-DO" >}} 
 {{< scrollbox >}}
-*   ~~create library~~ ![](images/pixels/new.gif)
-*   ~~create shrine page~~ ![](images/pixels/new.gif)
+*   ~~add microblog feed to index~~ ![](images/pixels/new.gif)
 *   open commissions
-*   ~~create microblog~~ ![](images/pixels/new.gif)
-*   make search functional
+*   make OC page (!!!)
+*   fix search script
 *   fix theme flickering
-*   add library content
-*   add microblog feed to index
+*   add library genre drop-down
+*   add microblog pagination
 *   re-design start menu
+*   create zonelets theme
+*   move scrollbar behind footer
+*   soutaiseiriron shrine
+*   fix firefox microblog bug
+*   ditch bootstrap (someday)
 {{< /scrollbox >}}
 {{< /card-medium >}}
 
