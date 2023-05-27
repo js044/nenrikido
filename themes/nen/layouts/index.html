@@ -1,47 +1,22 @@
 {{ define "main" }}
 <nav id="nav">
-    <div class="row justify-content-center">
-        <div class="col-3 col-lg-6"> <a class="navLink" href="/">
-                <div id="home"></div>Home
-            </a> </div>
-        <div class="col-3 col-lg-6"> <a class="navLink" href="/about">
-                <div id="about"></div>About
-            </a> </div>
-        <div class="col-3 col-lg-6"> <a class="navLink" href="/gallery">
-                <div id="gallery"></div>Gallery
-            </a> </div>
-        <div class="col-3 col-lg-6"> <a class="navLink" href="/commissions">
-                <div id="commissions"></div>Commissions
-            </a> </div>
-        <div class="col-3 col-lg-6"> <a class="navLink" href="/code">
-                <div id="code"></div>Code
-            </a> </div>
-        <div class="col-3 col-lg-6"> <a class="navLink" href="/blog">
-                <div id="blog"></div>Blog
-            </a> </div>
-        <div class="col-3 col-lg-6"> <a class="navLink" href="/links">
-                <div id="links"></div>Links
-            </a> </div>
-        <div class="col-3 col-lg-6"> <a class="navLink" href="/microblog">
-                <div id="microblog"></div>Microblog
-            </a> </div>
-            <div class="col-3 col-lg-6"> <a class="navLink" href="/library">
-                <div id="library"></div>Library
-            </a> </div>
-            <div class="col-3 col-lg-6"> <a class="navLink" href="/shrines">
-                <div id="shrines"></div>Shrines
-            </a> </div>
-    </div> 
-    <div class="row justify-content-center">
-        <div class="col-12 col-lg-auto py-3">
-            <form class="search"> <input type="text" class="searchTerm" placeholder="Search..."> <button type="submit" class="searchButton"> <i class="fa fa-search"></i> </button> </form>
-        </div>
+    <div class="row">
+        <a class="navLink" href="/"><div id="home"></div>Home</a> 
+        <a class="navLink" href="/about"><div id="about"></div>About</a> 
+        <a class="navLink" href="/gallery"> <div id="gallery"></div>Gallery</a>
+        <a class="navLink" href="/commissions"> <div id="commissions"></div>Commissions </a> 
+        <a class="navLink" href="/code"> <div id="code"></div>Code </a> 
+        <a class="navLink" href="/blog"> <div id="blog"></div>Blog  </a> 
+        <a class="navLink" href="/links"> <div id="links"></div>Links </a> 
+        <a class="navLink" href="/microblog"> <div id="microblog"></div>Microblog</a> 
+        <a class="navLink" href="/library"> <div id="library"></div>Library</a> 
+        <a class="navLink" href="/shrines"><div id="shrines"></div>Shrines</a>
     </div>
+  
+      <form class="search"> <input type="text" class="searchTerm" placeholder="Search..."> <button type="submit" class="searchButton"> <i class="fa fa-search"></i> </button> </form>  
 </nav>
 <body>
-<div class="row justify-content-center">
-    <div class="grid"> {{.Content}} </div>
-    </div> 
+    <div class="grid-wrapper"> <div class="grid"> {{.Content}} </div> </div>
     <script src="/js/microblog_recent.js"></script>
     <script type="text/javascript" src="/js/audioPlayer.js" defer></script>
 </body>

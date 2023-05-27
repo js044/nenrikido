@@ -1,5 +1,4 @@
 {{ define "main" }}
-<div class="col py-2 sticky-lg-top">
     <nav id="navAlt">
         <div class="row justify-content-center">
             <div class="col-8 col-lg-12 py-4">
@@ -11,10 +10,10 @@
             </div>
         </div> {{- partial "mini-music.html" . -}} {{- partial "search-bar.html" . -}}
     </nav>
-</div>
+
 <main>
     <article>
-        <div class="row justify-content-center">
+        <div class="grid-wrapper-page">
             <div class="grid"> {{.Content}} {{ range .Pages }}
                     <div class="item medium">
                         <div class="cards">
@@ -26,7 +25,7 @@
                         </div>
                     </div>
                 </div> {{ end }}
-            </div>
+         </div>
         </div>
     </article>
 </main> 

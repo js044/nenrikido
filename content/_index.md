@@ -11,12 +11,12 @@ this is a personal site and a place for me to experiment with front-end developm
 
 {{< card-medium title="#THEMES"  >}} 
 click on an emoji to toggle a theme.
-<div class="row justify-content-center">
+{{< row >}}
 <div class="col-3 p-2"> <button id="pink" title="pink theme" class="theme-button" onclick="handleThemeButtonClick('pink', this)" >💗</button></div>
 <div class="col-3 p-2"> <button id="blue" title="blue theme" class="theme-button" onclick="handleThemeButtonClick('blue', this)" >🫧</button></div>
 <div class="col-3 p-2"> <button id="yellow" title="yellow theme" class="theme-button" onclick="handleThemeButtonClick('yellow', this)" >🪐</button></div>
 <div class="col-3 p-2"> <button id="black" title="black theme" class="theme-button" onclick="handleThemeButtonClick('black', this)" >💤</button></div>
-</div>
+{{< /row >}}
 {{< /card-medium >}}
 
 {{< card-medium title="#DRAG N DROP" >}} 
@@ -143,12 +143,12 @@ Read the rest of the blog [here](/blog).
 {{< /card-medium >}}
 
 {{< card-medium title="#CONTACT" >}} 
-{{< icons/email >}} Email: [nenrikido@pm.me](mailto:nenrikido@pm.me)  
-{{< icons/tumblr >}} Tumblr: [nenrikido-art](https://nenrikido-art.tumblr.com/)  
-{{< icons/twitter >}} Twitter: [@nenrikido](https://twitter.com/nenrikido)  
-{{< icons/discord >}} Discord: ask me
+<img src="/images/pixels/gotmail.gif" loading="lazy" alt="A pixel of two computers sending an email between them." style="float: right; margin-top: 15px; ">
 
-<p align="center"><img src="/images/pixels/gotmail.gif" loading="lazy" alt="A pixel of two computers sending an email between them." ></p>
+{{< icons/email >}} [nenrikido@pm.me](mailto:nenrikido@pm.me)  
+{{< icons/tumblr >}} [nenrikido-art](https://nenrikido-art.tumblr.com/)  
+{{< icons/twitter >}} [@nenrikido](https://twitter.com/nenrikido)  
+
 {{< /card-medium >}}
 
 

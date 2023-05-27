@@ -16,47 +16,23 @@
     <link rel="stylesheet" type="text/css" href="./css/themes.css">
     <link rel="stylesheet" type="text/css" href="./css/styles.css"><div id="preloader"></div><body><a href="#" id="btn-back-to-top"><span></span><i class="fa-solid fa-circle-chevron-up"></i></a>
 <nav id="nav">
-    <div class="row justify-content-center">
-        <div class="col-3 col-lg-6"> <a class="navLink" href="./">
-                <div id="home"></div>Home
-            </a> </div>
-        <div class="col-3 col-lg-6"> <a class="navLink" href="./about">
-                <div id="about"></div>About
-            </a> </div>
-        <div class="col-3 col-lg-6"> <a class="navLink" href="./gallery">
-                <div id="gallery"></div>Gallery
-            </a> </div>
-        <div class="col-3 col-lg-6"> <a class="navLink" href="./commissions">
-                <div id="commissions"></div>Commissions
-            </a> </div>
-        <div class="col-3 col-lg-6"> <a class="navLink" href="./code">
-                <div id="code"></div>Code
-            </a> </div>
-        <div class="col-3 col-lg-6"> <a class="navLink" href="./blog">
-                <div id="blog"></div>Blog
-            </a> </div>
-        <div class="col-3 col-lg-6"> <a class="navLink" href="./links">
-                <div id="links"></div>Links
-            </a> </div>
-        <div class="col-3 col-lg-6"> <a class="navLink" href="./microblog">
-                <div id="microblog"></div>Microblog
-            </a> </div>
-            <div class="col-3 col-lg-6"> <a class="navLink" href="./library">
-                <div id="library"></div>Library
-            </a> </div>
-            <div class="col-3 col-lg-6"> <a class="navLink" href="./shrines">
-                <div id="shrines"></div>Shrines
-            </a> </div>
-    </div> 
-    <div class="row justify-content-center">
-        <div class="col-12 col-lg-auto py-3">
-            <form class="search"> <input type="text" class="searchTerm" placeholder="Search..."> <button type="submit" class="searchButton"> <i class="fa fa-search"></i> </button> </form>
-        </div>
+    <div class="row">
+        <a class="navLink" href="./"><div id="home"></div>Home</a> 
+        <a class="navLink" href="./about"><div id="about"></div>About</a> 
+        <a class="navLink" href="./gallery"> <div id="gallery"></div>Gallery</a>
+        <a class="navLink" href="./commissions"> <div id="commissions"></div>Commissions </a> 
+        <a class="navLink" href="./code"> <div id="code"></div>Code </a> 
+        <a class="navLink" href="./blog"> <div id="blog"></div>Blog  </a> 
+        <a class="navLink" href="./links"> <div id="links"></div>Links </a> 
+        <a class="navLink" href="./microblog"> <div id="microblog"></div>Microblog</a> 
+        <a class="navLink" href="./library"> <div id="library"></div>Library</a> 
+        <a class="navLink" href="./shrines"><div id="shrines"></div>Shrines</a>
     </div>
+  
+      <form class="search"> <input type="text" class="searchTerm" placeholder="Search..."> <button type="submit" class="searchButton"> <i class="fa fa-search"></i> </button> </form>  
 </nav>
 <body>
-<div class="row justify-content-center">
-    <div class="grid"> <div class="item medium ">
+    <div class="grid-wrapper"> <div class="grid"> <div class="item medium ">
     <div class="cards">
         <div class="cardsHeader">
             <div class="cardsControls">
@@ -87,8 +63,7 @@ this is a personal site and a place for me to experiment with front-end developm
         <div class="cardsBody">
             <h1>#THEMES</h1>
             <p> <p>click on an emoji to toggle a theme.</p>
-<div class="row justify-content-center">
-<div class="col-3 p-2"> <button id="pink" title="pink theme" class="theme-button" onclick="handleThemeButtonClick('pink', this)" >💗</button></div>
+<div class="row"><div class="col-3 p-2"> <button id="pink" title="pink theme" class="theme-button" onclick="handleThemeButtonClick('pink', this)" >💗</button></div>
 <div class="col-3 p-2"> <button id="blue" title="blue theme" class="theme-button" onclick="handleThemeButtonClick('blue', this)" >🫧</button></div>
 <div class="col-3 p-2"> <button id="yellow" title="yellow theme" class="theme-button" onclick="handleThemeButtonClick('yellow', this)" >🪐</button></div>
 <div class="col-3 p-2"> <button id="black" title="black theme" class="theme-button" onclick="handleThemeButtonClick('black', this)" >💤</button></div>
@@ -459,17 +434,14 @@ this is a personal site and a place for me to experiment with front-end developm
         </div>
         <div class="cardsBody">
             <h1>#CONTACT</h1>
-            <p> <p><i class="fa-solid fa-envelope"></i>  Email: <a href="mailto:nenrikido@pm.me">nenrikido@pm.me</a><br>
-<i class="fa-brands fa-tumblr"></i> Tumblr: <a href="https://nenrikido-art.tumblr.com/">nenrikido-art</a><br>
-<i class="fa-brands fa-twitter"></i> Twitter: <a href="https://twitter.com/nenrikido">@nenrikido</a><br>
-<i class="fa-brands fa-discord"></i> Discord: ask me</p>
-<p align="center"><img src="./images/pixels/gotmail.gif" loading="lazy" alt="A pixel of two computers sending an email between them." ></p>
- </p>
+            <p> <img src="./images/pixels/gotmail.gif" loading="lazy" alt="A pixel of two computers sending an email between them." style="float: right; margin-top: 15px; ">
+<p><i class="fa-solid fa-envelope"></i>  <a href="mailto:nenrikido@pm.me">nenrikido@pm.me</a><br>
+<i class="fa-brands fa-tumblr"></i> <a href="https://nenrikido-art.tumblr.com/">nenrikido-art</a><br>
+<i class="fa-brands fa-twitter"></i> <a href="https://twitter.com/nenrikido">@nenrikido</a> </p>
         </div>
     </div>
 </div>
- </div>
-    </div> 
+ </div> </div>
     <script src="./js/microblog_recent.js"></script>
     <script type="text/javascript" src="./js/audioPlayer.js" defer></script>
 </body>

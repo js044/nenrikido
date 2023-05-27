@@ -1,3 +1,9 @@
+window.addEventListener('load', function() {
+	grid.refreshItems().layout()
+// Buggy on Mozilla
+grid.layout(function (items, hasLayoutChanged) {});
+});
+
 var grid = new Muuri('.grid', {
 	dragEnabled: true,
 	dragHandle: '.cardsHeader',
@@ -14,16 +20,8 @@ var grid = new Muuri('.grid', {
 	layout: {
 		fillGaps: true,
 	}
-
 });
- 
-window.addEventListener('load', function() {
-	grid.refreshItems();
 
-	grid.layout(function (items, hasLayoutChanged) {
-
-	  });
-});
 
 //=== sort button setting
 $('.sort-btn li').on('click', function() { //After clicking the sort button
