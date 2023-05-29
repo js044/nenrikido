@@ -230,7 +230,6 @@ nav#nav {
 /* Muuri */
 .grid {
 	position: relative;
-	justify-content: center;
 	margin: 1em 0em 5em 0em;
   }
 
@@ -681,6 +680,10 @@ font-size: 0.9em
 
 .preview > img {
      margin: 5px;
+}
+
+.preview p {
+	margin: 0.5em 0;
 }
 
 /*Scrollbar*/
