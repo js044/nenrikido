@@ -1,14 +1,9 @@
-
 <nav id="navAlt">
-    <div class="row justify-content-center">
-        <div class="col-8 col-lg-12 py-2">    
-            <div class="navWrapper">  <a class="navLink" href="#">
-                 <div id="{{ .Get "id" }}"> </div>{{ .Get "title" }}
-                </a><br> <i class="fa-regular fa-circle-down"></i><br>
-                <p> {{ .Inner | markdownify | safeHTML }} </p>
-        </div>
-        </div>
-    </div> 
+ <div class="navWrapper">  
+    <a class="navLink" href="#"><div id="{{ .Get "id" }}"> </div> {{ .Get "title" }}</a>
+    <p> <i class="fa-regular fa-circle-down"></i></p>
+    <p> {{ .Inner | markdownify | safeHTML }} </p>
+</div>
     {{- partial "mini-music.html" . -}} 
     {{- partial "search-bar.html" . -}}
 </nav>

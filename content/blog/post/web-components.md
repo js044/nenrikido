@@ -46,7 +46,7 @@ a lot of people on neocities seem to like iframes, but i don't think they're wel
 
 cue...[web components](https://www.freecodecamp.org/news/reusable-html-components-how-to-reuse-a-header-and-footer-on-a-website/)!! mdn docs cover web components [here](https://developer.mozilla.org/en-US/docs/Web/Web_Components) as well. long story short, web components are a suite of tools you can utilize with vanilla javascript to create all sorts of repeatable code. i've been told they funtion a lot like react.js components. here's a crash course video on web components and the accompanying [codepen](https://codepen.io/bradtraversy/pen/wvaXKoK).
 
- <div class="col-8  mx-auto"> <iframe class="yt" src="https://www.youtube.com/embed/PCWaFLy3VUo" title="Web Components Crash Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </div>
+<iframe class="yt" src="https://www.youtube.com/embed/PCWaFLy3VUo" title="Web Components Crash Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 as of writing this, i've only needed to use custom elements, which are fairly simple to use:
 

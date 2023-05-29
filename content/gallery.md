@@ -129,7 +129,7 @@ draft: false
 
 {{< card-small filter="objects" id="heart-lollipop-earrings" >}}
 {{< lightbox-image link="/images/gallery/heart.png" lightbox-id="heart" img-src="/images/gallery/thumbnails/heart.png" loading="" width="300" height="403" alt="A sets of glittery yellow heart shaped lollipop earrings.">}}
-##### ***Heart Lollipop Earrings (Yellow)***
+##### ***Heart Lollipop Earrings***
 > Aug. 2022  
 > UV Resin, Toothpicks
 {{< /card-small >}}
@@ -184,17 +184,12 @@ draft: false
 
 {{< card-small filter="grdesign" id="epa" >}}
 {{< lightbox-image link="/images/gallery/epa_mask.png" lightbox-id="epa" img-src="/images/gallery/thumbnails/epa_mask.png" loading="lazy" width="300" height="151" alt="A display of interpretive Epa masks made of polymer clay.">}}
-
 {{< lightbox-image link="/images/gallery/epa_mask_4.png" lightbox-id="epa" img-src="/images/gallery/thumbnails/epa_mask_4.png" loading="lazy" width="300" height="155" alt="Mock-ups of boxes that one could get at a hypothetical exhibit of these masks.">}}
-
-{{< row-centered >}}
-{{< col-6 >}}
+{{< preview >}}
 {{< lightbox-image link="/images/gallery/epa_mask_1.png" lightbox-id="epa" img-src="/images/gallery/thumbnails/epa_mask_1.png" loading="lazy" width="300" height="446" alt="One interpretive poster. It depicts a mask in orange with abstracted shapes surrounding it. The mask's mouth is open.">}}
-{{< /col-6 >}}
-{{< col-6 >}}
+
 {{< lightbox-image link="/images/gallery/epa_mask_2.png" lightbox-id="epa" img-src="/images/gallery/thumbnails/epa_mask_2.png" loading="lazy" width="300" height="449" alt="The other interpretive poster. It depicts a purple-toned mask with abstracted shapes surrounding it.">}}
-{{< /col-6 >}}
-{{< /row-centered >}}
+{{< /preview >}}
 
 ##### ***Epa Mask Exhibit Project***
 > May 2020  

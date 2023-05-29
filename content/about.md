@@ -12,10 +12,11 @@ draft: false
 
 {{< muuri >}}
 {{< card-large >}}
-<div class="row align-items-center">
-<div class="col col-lg-4"><img src="/images/pixels/13mo_mado.gif" style="max-width: 210px;"></div>
-<div class="col col-lg-8">
-<h1 id="about-me">#ABOUT ME</h1>
+
+<img src="/images/pixels/13mo_mado.gif" style="max-width: 210px; float: left;"> 
+
+<h1 id="about-me">#ABOUT ME</h1> <br>
+
 {{< stats stat="NAME: rio / jay" >}}
 {{< stats stat="BORN: 1997" >}}
 {{< stats stat="🇵🇷 🇰🇷" >}}
@@ -27,17 +28,14 @@ draft: false
 hi, i'm a multimedia artist located in the US. i love experimental art & creating things. i also run an interdisciplinary [publication](https://www.cicadacreativemag.com/). (u should submit something!)
 
 i made this site as both a repository for my work and as its own creative project. i'm still learning, so expect the site to change over time. feel free to reach out; i love email!
-{{< /box >}} 
-
-</div>
-</div>
+{{< /box >}}
+ 
 {{< /card-large >}}
 
 {{< card-large title="#INTERESTS" id="interests" >}}
 {{< large-scrollbox >}}
-<div class="row align-items-center">
-
-<div class="col-sm-4">
+{{< row >}}
+{{< blocks >}}
 {{< box-small title="ANIME:" >}}
 
 *SERIES*  
@@ -55,24 +53,21 @@ i made this site as both a repository for my work and as its own creative projec
 {{< icons/heart >}} Akira  
 {{< icons/heart >}} Angel's Egg  
 {{< icons/heart >}} Spirited Away  
+{{< icons/heart >}} Princess Mononoke    
 {{< icons/heart >}} Ghost in the Shell  
 
 {{< /box-small >}} 
-</div>
 
-<div class="col-sm-4">
 {{< box-small  title="VIDEO GAMES:" >}}
 
 *HORROR*  
 {{< icons/star >}} Yume Nikki (& fangames)  
 {{< icons/star >}} Silent Hill  
-{{< icons/star >}} Resident Evil    
 {{< icons/star >}} Ib  
 {{< icons/star >}} The Cat Lady  
 {{< icons/star >}} Forest of Drizzling Rain  
 {{< icons/star >}} Angels of Death  
 {{< icons/star >}} The Path  
-{{< icons/star >}} Fran Bow  
 
 *RPGS*  
 {{< icons/star >}} Tomba! 2  
@@ -80,58 +75,39 @@ i made this site as both a repository for my work and as its own creative projec
 {{< icons/star >}} Animal Crossing  
 {{< icons/star >}} Pokemon  
 
-{{< /box-small >}}    
-</div>         
-
-<div class="col-sm-4">
-{{< box-small title="SHOWS:" >}} 
-{{< icons/star >}} Mr. Robot  
-{{< icons/star >}} Hannibal  
-{{< icons/star >}} Killing Eve  
-{{< icons/star >}} Grey's Anatomy :(  
-{{< /box-small >}} 
-
-{{< box-small title="HOBBIES:" >}} 
-{{< icons/rainbow >}} Front end development  
-{{< icons/rainbow >}} Digital illustration  
-{{< icons/rainbow >}} Resin & clay art  
-{{< icons/rainbow >}} Fishkeeping  
-{{< icons/rainbow >}} Knitting  
-{{< icons/rainbow >}} Cooking  
-{{< icons/rainbow >}} 3D printing & digfab  
-{{< icons/rainbow >}} Writing    
-{{< /box-small >}} 
-</div>         
-
-<div class="col-sm-6">
+{{< /box-small >}}  
+ 
 {{< box-small title="BOOKS:" >}} 
+Check out the [library](/library) for more!
 
 *FICTION*  
 {{< icons/moon >}} The Vegetarian - Han Kang  
 {{< icons/moon >}} Beloved - Toni Morrison  
 {{< icons/moon >}} Água Viva - Clarice Lispector  
 {{< icons/moon >}} Pachinko - Min Jin Lee  
-{{< icons/moon >}} Crime and Punishment - Fyodor Dostoevsky  
 
 *NONFICTION*  
-{{< icons/moon >}} The Age of Surveillance Capitalism - Shoshana Zuboff   
 {{< icons/moon >}} Understanding Power - Noam Chomsky  
 {{< icons/moon >}} The Body in Pain: the making and unmaking of the world - Elaine Scarry  
 
-*AUTOBIOGRAPHIES*  
-{{< icons/moon >}} Assata: an autobiography - Assata Shakur  
-{{< icons/moon >}} Diaries, 1910-1923 - Franz Kafka  
-
-*MEMOIRS*  
-{{< icons/moon >}} Chronology of Water - Lidia Yuknavitch  
-{{< icons/moon >}} Crying in H mart - Michelle Zauner  
-
 {{< /box-small >}}
-</div>         
+{{< /blocks >}}
 
-<div class="col-sm-6">
+{{< blocks >}}
+
+{{< box-small title="HOBBIES:" >}} 
+{{< icons/rainbow >}} Front end development  
+{{< icons/rainbow >}} Digital illustration  
+{{< icons/rainbow >}} Resin art  
+{{< icons/rainbow >}} Polymer clay art  
+{{< icons/rainbow >}} Fishkeeping  
+{{< icons/rainbow >}} Knitting  
+{{< icons/rainbow >}} Cooking  
+{{< icons/rainbow >}} 3D printing & digfab  
+{{< icons/rainbow >}} Writing    
+{{< /box-small >}} 
+
 {{< box-small title="MUSIC:" >}} 
-
 *ENGLISH*  
 {{< icons/music >}} Cibo Matto  
 {{< icons/music >}} Japanese Breakfast  
@@ -153,10 +129,23 @@ i made this site as both a repository for my work and as its own creative projec
 {{< icons/music >}} WJSN (우주소녀)  
 {{< icons/music >}} Clazziquai Project (클래지콰이)  
 {{< icons/music >}} Dareharu (달의하루)  
-
 {{< /box-small >}}
-</div>                            
-</div>
+
+{{< box-small title="SHOWS:" >}} 
+{{< icons/sun >}} Mr. Robot  
+{{< icons/sun >}} Hannibal  
+{{< icons/sun >}} Killing Eve  
+{{< icons/sun >}} Grey's Anatomy :(  
+{{< /box-small >}} 
+
+{{< box-small title="MOVIES:" >}} 
+{{< icons/sun >}} The Handmaiden  
+{{< icons/sun >}} But I'm a Cheerleader  
+{{< icons/sun >}} Heathers   
+{{< icons/sun >}} Battle Royale  
+{{< /box-small >}} 
+{{< /blocks >}}
+{{< /row >}}
 {{< /large-scrollbox >}}
 {{< /card-large >}}
 

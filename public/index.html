@@ -11,12 +11,11 @@
 
     <link rel="alternate" type="application/rss+xml" href="https://nenrikido.neocities.org/index.xml" title="NENRIKIDO" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/lightbox.css">
     <link rel="stylesheet" type="text/css" href="./css/themes.css">
     <link rel="stylesheet" type="text/css" href="./css/styles.css"><div id="preloader"></div><body><a href="#" id="btn-back-to-top"><span></span><i class="fa-solid fa-circle-chevron-up"></i></a>
 <nav id="nav">
-    <div class="row">
+    <div class="row centered">
         <a class="navLink" href="./"><div id="home"></div>Home</a> 
         <a class="navLink" href="./about"><div id="about"></div>About</a> 
         <a class="navLink" href="./gallery"> <div id="gallery"></div>Gallery</a>
@@ -28,24 +27,24 @@
         <a class="navLink" href="./library"> <div id="library"></div>Library</a> 
         <a class="navLink" href="./shrines"><div id="shrines"></div>Shrines</a>
     </div>
-  
-      <form class="search"> <input type="text" class="searchTerm" placeholder="Search..."> <button type="submit" class="searchButton"> <i class="fa fa-search"></i> </button> </form>  
+    
+<form class="search"> <input type="text" class="searchTerm" placeholder="Search..."> <button aria-label="submit" type="submit" class="searchButton"> <i class="fa fa-search"></i> </button> </form>
+
+
 </nav>
-<body>
+
     <div class="grid-wrapper"> <div class="grid"> <div class="item medium ">
     <div class="cards">
         <div class="cardsHeader">
-            <div class="cardsControls">
-                <div class="row justify-content-between">
-                    <div class="col-4"> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-                    <div class="col-auto"> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-                </div>
-            </div>
-        </div>
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div>
         <div class="cardsBody">
             <h1>#WELCOME</h1>
-            <p> <img src="./images/pixels/strovi_pixel.gif" width="80" height="125" alt="A blue pixel catgirl blinking and kicking her feet gently." style="float: right; max-width: 80px;">
-this is a personal site and a place for me to experiment with front-end development. it is a perpetual work in progress, so please excuse anything unfinished.
+            <p> <img src="./images/pixels/strovi_pixel.gif" alt="A blue pixel catgirl blinking and kicking her feet gently." style="float: right; max-width: 70px;">
+this is my personal site and a place for me to experiment with front-end code. it is a work in progress, so please excuse anything unfinished.
 <p align="center"><i class="fa-solid fa-rss"></i> <a href="./index.xml">RSS feed</a> &nbsp <i class="fa-solid fa-mobile-screen-button"></i> responsive </p>
         </div>
     </div>
@@ -53,20 +52,19 @@ this is a personal site and a place for me to experiment with front-end developm
 <div class="item medium ">
     <div class="cards">
         <div class="cardsHeader">
-            <div class="cardsControls">
-                <div class="row justify-content-between">
-                    <div class="col-4"> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-                    <div class="col-auto"> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-                </div>
-            </div>
-        </div>
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div>
         <div class="cardsBody">
             <h1>#THEMES</h1>
             <p> <p>click on an emoji to toggle a theme.</p>
-<div class="row"><div class="col-3 p-2"> <button id="pink" title="pink theme" class="theme-button" onclick="handleThemeButtonClick('pink', this)" >💗</button></div>
-<div class="col-3 p-2"> <button id="blue" title="blue theme" class="theme-button" onclick="handleThemeButtonClick('blue', this)" >🫧</button></div>
-<div class="col-3 p-2"> <button id="yellow" title="yellow theme" class="theme-button" onclick="handleThemeButtonClick('yellow', this)" >🪐</button></div>
-<div class="col-3 p-2"> <button id="black" title="black theme" class="theme-button" onclick="handleThemeButtonClick('black', this)" >💤</button></div>
+<div class="row">
+    <button id="pink" title="pink theme" class="theme-button" onclick="handleThemeButtonClick('pink', this)" >💗</button>
+    <button id="blue" title="blue theme" class="theme-button" onclick="handleThemeButtonClick('blue', this)" >🫧</button> 
+    <button id="yellow" title="yellow theme" class="theme-button" onclick="handleThemeButtonClick('yellow', this)" >🪐</button> 
+    <button id="black" title="black theme" class="theme-button" onclick="handleThemeButtonClick('black', this)" >💤</button>
 </div>
  </p>
         </div>
@@ -75,13 +73,11 @@ this is a personal site and a place for me to experiment with front-end developm
 <div class="item medium ">
     <div class="cards">
         <div class="cardsHeader">
-            <div class="cardsControls">
-                <div class="row justify-content-between">
-                    <div class="col-4"> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-                    <div class="col-auto"> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-                </div>
-            </div>
-        </div>
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div>
         <div class="cardsBody">
             <h1>#DRAG N DROP</h1>
             <p> try dragging a window by its header! </p>
@@ -91,13 +87,11 @@ this is a personal site and a place for me to experiment with front-end developm
 <div class="item medium ">
     <div class="cards">
         <div class="cardsHeader">
-            <div class="cardsControls">
-                <div class="row justify-content-between">
-                    <div class="col-4"> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-                    <div class="col-auto"> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-                </div>
-            </div>
-        </div>
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div>
         <div class="cardsBody">
             <h1>#MUSIC</h1>
             <p> <div id="aWrap"> <button id="aPlay" disabled> <span id="aPlayIco" class="material-icons"> play_arrow </span></button> <input id="aSeek" type="range" min="0" value="0" step="1" disabled>
@@ -110,13 +104,11 @@ this is a personal site and a place for me to experiment with front-end developm
 <div class="item medium ">
     <div class="cards">
         <div class="cardsHeader">
-            <div class="cardsControls">
-                <div class="row justify-content-between">
-                    <div class="col-4"> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-                    <div class="col-auto"> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-                </div>
-            </div>
-        </div>
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div>
         <div class="cardsBody">
             <h1>#COUNTERS</h1>
             <p> <p align="center"> all visits: <script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=38931944&main=1"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=38931944&main=1" /></noscript> </p>
@@ -128,13 +120,11 @@ this is a personal site and a place for me to experiment with front-end developm
 <div class="item medium ">
     <div class="cards">
         <div class="cardsHeader">
-            <div class="cardsControls">
-                <div class="row justify-content-between">
-                    <div class="col-4"> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-                    <div class="col-auto"> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-                </div>
-            </div>
-        </div>
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div>
         <div class="cardsBody">
             <h1>#GUESTBOOK</h1>
             <p> <iframe title="chatbox" src="https://www3.cbox.ws/box/?boxid=3526482&boxtag=h3SRws" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
@@ -145,13 +135,11 @@ this is a personal site and a place for me to experiment with front-end developm
 <div class="item medium ">
     <div class="cards">
         <div class="cardsHeader">
-            <div class="cardsControls">
-                <div class="row justify-content-between">
-                    <div class="col-4"> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-                    <div class="col-auto"> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-                </div>
-            </div>
-        </div>
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div>
         <div class="cardsBody">
             <h1>#TAMA</h1>
             <p> <p align="center"><a href="http://tamanotchi.world/4251c" target="_blank" rel="noopener noreferrer"><img src="http://tamanotchi.world/i2/4251" alt="It's tamaNOTchi! Click to feed!"></a> </p>
@@ -161,13 +149,11 @@ this is a personal site and a place for me to experiment with front-end developm
 <div class="item medium ">
     <div class="cards">
         <div class="cardsHeader">
-            <div class="cardsControls">
-                <div class="row justify-content-between">
-                    <div class="col-4"> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-                    <div class="col-auto"> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-                </div>
-            </div>
-        </div>
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div>
         <div class="cardsBody">
             <h1>#MICROBLOG</h1>
             <p> <div id="microblog_recent"></div>
@@ -178,13 +164,11 @@ this is a personal site and a place for me to experiment with front-end developm
 <div class="item medium ">
     <div class="cards">
         <div class="cardsHeader">
-            <div class="cardsControls">
-                <div class="row justify-content-between">
-                    <div class="col-4"> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-                    <div class="col-auto"> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-                </div>
-            </div>
-        </div>
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div>
         <div class="cardsBody">
             <h1>#LUNAR</h1>
             <p> <!-- © wdisseny -->
@@ -197,13 +181,11 @@ this is a personal site and a place for me to experiment with front-end developm
 <div class="item medium ">
     <div class="cards">
         <div class="cardsHeader">
-            <div class="cardsControls">
-                <div class="row justify-content-between">
-                    <div class="col-4"> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-                    <div class="col-auto"> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-                </div>
-            </div>
-        </div>
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div>
         <div class="cardsBody">
             <h1>#GIFYPET</h1>
             <p> <iframe title="gifypet" class="pet" width="345" height="250" scrolling="yes" src="https://gifypet.neocities.org/pet/pet.html?name=aurelia&dob=1678660983&gender=f&element=Water&pet=https%3A%2F%2Fimg.pokemondb.net%2Fsprites%2Fblack-white%2Fanim%2Fshiny%2Ffrillish-f.gif&map=tree.jpg&background=transparent" frameborder="0"></iframe>
@@ -214,20 +196,18 @@ this is a personal site and a place for me to experiment with front-end developm
 <div class="item medium ">
     <div class="cards">
         <div class="cardsHeader">
-            <div class="cardsControls">
-                <div class="row justify-content-between">
-                    <div class="col-4"> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-                    <div class="col-auto"> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-                </div>
-            </div>
-        </div>
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div>
         <div class="cardsBody">
             <h1>#BLOG POSTS</h1>
             <p> <p>Read the rest of the blog <a href="./blog">here</a>.</p>
+<p>✦May 28: <strong><a href="https://nenrikido.neocities.org/blog/post/bye-bye-bootstrap/"> Bye-bye Bootstrap </a></strong> - Bootstrap gets the boot, my hair gets a trim, and the site gets a map.</p>
 <p>✦May 21: <strong><a href="https://nenrikido.neocities.org/blog/post/neocities-reflection/"> 2 months later: A Neocities Reflection </a></strong> - Some observations about the community aspect of Neocities and online communities in general.</p>
 <p>✦Apr 18: <strong><a href="https://nenrikido.neocities.org/blog/post/site-updates-3/"> Site Updates </a></strong> - new library with 61 current entries! (and a shrines page!)</p>
 <p>✦Apr 11: <strong><a href="https://nenrikido.neocities.org/blog/post/evangelion-learning-moving/"> Evangelion, Learning, &amp; Moving </a></strong> - late night rambling</p>
-<p>✦Apr 05: <strong><a href="https://nenrikido.neocities.org/blog/post/making-a-preloader/"> Making a Preloader </a></strong> - How to make a simple full-page loading screen for your site.</p>
  </p>
         </div>
     </div>
@@ -235,16 +215,15 @@ this is a personal site and a place for me to experiment with front-end developm
 <div class="item medium ">
     <div class="cards">
         <div class="cardsHeader">
-            <div class="cardsControls">
-                <div class="row justify-content-between">
-                    <div class="col-4"> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-                    <div class="col-auto"> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-                </div>
-            </div>
-        </div>
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div>
         <div class="cardsBody">
             <h1>#UPDATES</h1>
             <p> <div class="scrollbox"><ul>
+<li><strong>5-28-23</strong>: no more bootstrap! new <a href="./sitemap">sitemap</a>! new start menu! new <a href="./blog">blog</a> post! ctrl f5 if anything is weird.</li>
 <li><strong>5-21-23</strong>: new <a href="./blog">blog</a> post &amp; now there&rsquo;s a microblog feed on the index page. thank you hors</li>
 <li><strong>5-6-23</strong>: lots &amp; lots of changes, some big and some small. there&rsquo;s also a new page theme up! and now there are theme previews!</li>
 <li><strong>5-1-23</strong>: new page theme is up on the <a href="./code">code</a> page! i think it&rsquo;s cute.</li>
@@ -279,13 +258,11 @@ this is a personal site and a place for me to experiment with front-end developm
 <div class="item medium ">
     <div class="cards">
         <div class="cardsHeader">
-            <div class="cardsControls">
-                <div class="row justify-content-between">
-                    <div class="col-4"> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-                    <div class="col-auto"> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-                </div>
-            </div>
-        </div>
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div>
         <div class="cardsBody">
             <h1>#JELLY CAM</h1>
             <p> <div class="youtube-player" data-id="rJ6_1-E_CLU" title="Youtube embed of Monterey Bay Jelly Cam"></div>
@@ -296,13 +273,11 @@ this is a personal site and a place for me to experiment with front-end developm
 <div class="item medium ">
     <div class="cards">
         <div class="cardsHeader">
-            <div class="cardsControls">
-                <div class="row justify-content-between">
-                    <div class="col-4"> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-                    <div class="col-auto"> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-                </div>
-            </div>
-        </div>
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div>
         <div class="cardsBody">
             <h1>#DREAM</h1>
             <p> <p align="center"><img src="./images/pixels/Madotsuki_Chair_Spin.gif" style="max-width: 100px;" loading="lazy" width="100" height="100" alt="Madotsuki spinning in her chair."></p>
@@ -315,29 +290,28 @@ this is a personal site and a place for me to experiment with front-end developm
 <div class="item medium ">
     <div class="cards">
         <div class="cardsHeader">
-            <div class="cardsControls">
-                <div class="row justify-content-between">
-                    <div class="col-4"> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-                    <div class="col-auto"> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-                </div>
-            </div>
-        </div>
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div>
         <div class="cardsBody">
             <h1>#TO-DO</h1>
             <p> <div class="scrollbox"><ul>
+<li><del>add sitemap</del> <img src="images/pixels/new.gif" alt=""></li>
+<li><del>re-design start menu</del> <img src="images/pixels/new.gif" alt=""></li>
 <li><del>add microblog feed to index</del> <img src="images/pixels/new.gif" alt=""></li>
+<li><del>remove bootstrap</del> <img src="images/pixels/new.gif" alt=""></li>
 <li>open commissions</li>
+<li>fix firefox microblog bug</li>
 <li>make OC page (!!!)</li>
 <li>fix search script</li>
 <li>fix theme flickering</li>
 <li>add library genre drop-down</li>
 <li>add microblog pagination</li>
-<li>re-design start menu</li>
 <li>create zonelets theme</li>
 <li>move scrollbar behind footer</li>
-<li>soutaiseiriron shrine</li>
-<li>fix firefox microblog bug</li>
-<li>ditch bootstrap (someday)</li>
+<li>new shrines</li>
 </ul>
 </div>
  </p>
@@ -347,75 +321,27 @@ this is a personal site and a place for me to experiment with front-end developm
 <div class="item medium ">
     <div class="cards">
         <div class="cardsHeader">
-            <div class="cardsControls">
-                <div class="row justify-content-between">
-                    <div class="col-4"> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-                    <div class="col-auto"> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-                </div>
-            </div>
-        </div>
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div>
         <div class="cardsBody">
             <h1>#CREDITS</h1>
-            <p> <div class="scrollbox"><div class="row align-items-center justify-content-center"><div class="col-4 col-sm-6 col-lg-4">
-    <div class="banner"><a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer"> <img src="./images/buttons/hugo-l.svg" loading="lazy"  width="" height=""  alt="hugo logo"><p align="center"> generator </p> </a> 
-    </div>
-</div>
-<div class="col-4 col-sm-6 col-lg-4">
-    <div class="banner"><a href="https://muuri.dev/" target="_blank" rel="noopener noreferrer"> <img src="./images/buttons/muuri.svg" loading="lazy"  width="" height=""  alt="muuri logo"><p align="center"> library </p> </a> 
-    </div>
-</div>
-<div class="col-4 col-sm-6 col-lg-4">
-    <div class="banner"><a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer"> <img src="images/buttons/bootstrap-logo-shadow.png" loading="lazy"  width="48" height="40"  alt="bootstrap logo"><p align="center"> framework </p> </a> 
-    </div>
-</div>
-<div class="col-4 col-sm-6 col-lg-4">
-    <div class="banner"><a href="https://strovi.neocities.org/" target="_blank" rel="noopener noreferrer"> <img src="./images/buttons/strovi.png" loading="lazy"  width="" height=""  alt="strovi button"><p align="center"> pixels </p> </a> 
-    </div>
-</div>
-<div class="col-4 col-sm-6 col-lg-4">
-    <div class="banner"><a href="https://foollovers.com/" target="_blank" rel="noopener noreferrer"> <img src="./images/buttons/foollovers.gif" loading="lazy"  width="" height=""  alt="animated pixel for fool lovers"><p align="center"> pixels </p> </a> 
-    </div>
-</div>
-<div class="col-4 col-sm-6 col-lg-4">
-    <div class="banner"><a href="https://13mo.tumblr.com/" target="_blank" rel="noopener noreferrer"> <img src="./images/buttons/13mo.jpg" loading="lazy"  width="30" height="30"  alt=""><p align="center"> pixels </p> </a> 
-    </div>
-</div>
-<div class="col-4 col-sm-6 col-lg-4">
-    <div class="banner"><a href="https://www.flaticon.com/authors/paul-j/" target="_blank" rel="noopener noreferrer"> <img src="./images/buttons/paul-j.png" loading="lazy"  width="64" height="34"  alt="banner of stylized smiling person"><p align="center"> icons </p> </a> 
-    </div>
-</div>
-<div class="col-4 col-sm-6 col-lg-4">
-    <div class="banner"><a href="https://www.flaticon.com/authors/freepik/" target="_blank" rel="noopener noreferrer"> <img src="./images/buttons/freepik.jpg" loading="lazy"  width="" height=""  alt="robot on a button"><p align="center"> icons </p> </a> 
-    </div>
-</div>
-<div class="col-4 col-sm-6 col-lg-4">
-    <div class="banner"><a href="https://win98icons.alexmeub.com/" target="_blank" rel="noopener noreferrer"> <img src="./images/buttons/win98.png" loading="lazy"  width="38" height="30"  alt="windows 98 style computer icon"><p align="center"> icons </p> </a> 
-    </div>
-</div>
-<div class="col-4 col-sm-6 col-lg-4">
-    <div class="banner"><a href="https://fontawesome.com/" target="_blank" rel="noopener noreferrer"> <img src="./images/buttons/fontawesome.png" loading="lazy"  width="56" height="40"  alt="icon for fontawesome"><p align="center"> icons </p> </a> 
-    </div>
-</div>
-<div class="col-4 col-sm-6 col-lg-4">
-    <div class="banner"><a href="https://twemoji.twitter.com/" target="_blank" rel="noopener noreferrer"> <img src="./images/buttons/twe.png" loading="lazy"  width="" height=""  alt=""><p align="center"> icons </p> </a> 
-    </div>
-</div>
-<div class="col-4 col-sm-6 col-lg-4">
-    <div class="banner"><a href="https://gifypet.neocities.org/" target="_blank" rel="noopener noreferrer"> <img src="./images/buttons/gifypet.gif" loading="lazy"  width="" height=""  alt="animated gifypet button"><p align="center"> gifypet </p> </a> 
-    </div>
-</div>
-<div class="col-4 col-sm-6 col-lg-4">
-    <div class="banner"><a href="https://counter.fc2.com/en/index.html/" target="_blank" rel="noopener noreferrer"> <img src="./images/buttons/fc2.png" loading="lazy"  width="" height=""  alt="a button to fc2 counters"><p align="center"> counter </p> </a> 
-    </div>
-</div>
-<div class="col-4 col-sm-6 col-lg-4">
-    <div class="banner"><a href="https://www.cbox.ws/" target="_blank" rel="noopener noreferrer"> <img src="./images/buttons/cbox.png" loading="lazy"  width="" height=""  alt="speech bubble button saying CBOX"><p align="center"> chatbox </p> </a> 
-    </div>
-</div>
-<div class="col-4 col-sm-6 col-lg-4">
-    <div class="banner"><a href="https://code-boxx.com/custom-audio-player-playlist/" target="_blank" rel="noopener noreferrer"> <img src="./images/buttons/code-boxx.png" loading="lazy"  width="" height=""  alt="logo for code boxx website"><p align="center"> playlist </p> </a> 
-    </div>
-</div>
+            <p> <div class="scrollbox"><div class="columns small"><div class="banner"><a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer"> <img src="./images/buttons/hugo-l.svg" loading="lazy"  width="" height=""  alt="hugo logo"><p align="center"> generator </p> </a> </div>
+<div class="banner"><a href="https://muuri.dev/" target="_blank" rel="noopener noreferrer"> <img src="./images/buttons/muuri.svg" loading="lazy"  width="" height=""  alt="muuri logo"><p align="center"> library </p> </a> </div>  
+<div class="banner"><a href="https://strovi.neocities.org/" target="_blank" rel="noopener noreferrer"> <img src="./images/buttons/strovi.png" loading="lazy"  width="" height=""  alt="strovi button"><p align="center"> pixels </p> </a> </div> 
+<div class="banner"><a href="https://foollovers.com/" target="_blank" rel="noopener noreferrer"> <img src="./images/buttons/foollovers.gif" loading="lazy"  width="" height=""  alt="animated pixel for fool lovers"><p align="center"> pixels </p> </a> </div> 
+<div class="banner"><a href="https://13mo.tumblr.com/" target="_blank" rel="noopener noreferrer"> <img src="./images/buttons/13mo.jpg" loading="lazy"  width="30" height="30"  alt=""><p align="center"> pixels </p> </a> </div> 
+<div class="banner"><a href="https://www.flaticon.com/authors/paul-j/" target="_blank" rel="noopener noreferrer"> <img src="./images/buttons/paul-j.png" loading="lazy"  width="64" height="34"  alt="banner of stylized smiling person"><p align="center"> icons </p> </a> </div>
+<div class="banner"><a href="https://www.flaticon.com/authors/freepik/" target="_blank" rel="noopener noreferrer"> <img src="./images/buttons/freepik.jpg" loading="lazy"  width="" height=""  alt="robot on a button"><p align="center"> icons </p> </a> </div> 
+<div class="banner"><a href="https://win98icons.alexmeub.com/" target="_blank" rel="noopener noreferrer"> <img src="./images/buttons/win98.png" loading="lazy"  width="38" height="30"  alt="windows 98 style computer icon"><p align="center"> icons </p> </a> </div> 
+<div class="banner"><a href="https://fontawesome.com/" target="_blank" rel="noopener noreferrer"> <img src="./images/buttons/fontawesome.png" loading="lazy"  width="56" height="40"  alt="icon for fontawesome"><p align="center"> icons </p> </a> </div>
+<div class="banner"><a href="https://twemoji.twitter.com/" target="_blank" rel="noopener noreferrer"> <img src="./images/buttons/twe.png" loading="lazy"  width="" height=""  alt=""><p align="center"> icons </p> </a> </div>
+<div class="banner"><a href="https://gifypet.neocities.org/" target="_blank" rel="noopener noreferrer"> <img src="./images/buttons/gifypet.gif" loading="lazy"  width="" height=""  alt="animated gifypet button"><p align="center"> gifypet </p> </a> </div> 
+<div class="banner"><a href="https://counter.fc2.com/en/index.html/" target="_blank" rel="noopener noreferrer"> <img src="./images/buttons/fc2.png" loading="lazy"  width="" height=""  alt="a button to fc2 counters"><p align="center"> counter </p> </a> </div> 
+<div class="banner"><a href="https://www.cbox.ws/" target="_blank" rel="noopener noreferrer"> <img src="./images/buttons/cbox.png" loading="lazy"  width="" height=""  alt="speech bubble button saying CBOX"><p align="center"> chatbox </p> </a> </div> 
+<div class="banner"><a href="https://code-boxx.com/custom-audio-player-playlist/" target="_blank" rel="noopener noreferrer"> <img src="./images/buttons/code-boxx.png" loading="lazy"  width="" height=""  alt="logo for code boxx website"><p align="center"> playlist </p> </a> </div> 
 </div>
 </div>
  </p>
@@ -425,13 +351,11 @@ this is a personal site and a place for me to experiment with front-end developm
 <div class="item medium ">
     <div class="cards">
         <div class="cardsHeader">
-            <div class="cardsControls">
-                <div class="row justify-content-between">
-                    <div class="col-4"> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-                    <div class="col-auto"> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-                </div>
-            </div>
-        </div>
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div>
         <div class="cardsBody">
             <h1>#CONTACT</h1>
             <p> <img src="./images/pixels/gotmail.gif" loading="lazy" alt="A pixel of two computers sending an email between them." style="float: right; margin-top: 15px; ">
@@ -444,83 +368,59 @@ this is a personal site and a place for me to experiment with front-end developm
  </div> </div>
     <script src="./js/microblog_recent.js"></script>
     <script type="text/javascript" src="./js/audioPlayer.js" defer></script>
-</body>
-<div class="modal fade" id="start" tabindex="-1" aria-labelledby="startLabel" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h1 class="modal-title fs-2" id="startLabel">Start Menu</h1> <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-              <div class="row">
-                  <div class="col-6 px-2"> <img src="./images/pixels/strovi_pixel_2.gif" loading="lazy" style="max-width: 210px;"> </div>
-                  <div class="col-6">
-                      <div class="row justify-content-between">
-                          <div class="col"> 
-                              <p> <a class="nav-link " href="./"> <span>Home</span></a> </p> 
-                              <p> <a class="nav-link " href="./about/"> <span>About</span></a> </p> 
-                              <p> <a class="nav-link " href="./gallery/"> <span>Gallery</span></a> </p> 
-                              <p> <a class="nav-link " href="./commissions/"> <span>Commissions</span></a> </p> 
-                              <p> <a class="nav-link " href="./code/"> <span>Code</span></a> </p> 
-                              <p> <a class="nav-link " href="./blog/"> <span>Blog</span></a> </p> 
-                              <p> <a class="nav-link " href="./links/"> <span>Links</span></a> </p> 
-                              <p> <a class="nav-link " href="./microblog/"> <span>Microblog</span></a> </p> 
-                              <p> <a class="nav-link " href="./library/"> <span>Library</span></a> </p> 
-                              <p> <a class="nav-link " href="./shrines/"> <span>Shrines</span></a> </p> 
-                          </div>
-                          <div class="col-auto">
-                              <p><i class="fa-solid fa-chevron-right"></i></p>
-                              <p><i class="fa-solid fa-chevron-right"></i></p>
-                              <p><i class="fa-solid fa-chevron-right"></i></p>
-                              <p><i class="fa-solid fa-chevron-right"></i></p>
-                              <p><i class="fa-solid fa-chevron-right"></i></p>
-                              <p><i class="fa-solid fa-chevron-right"></i></p>
-                              <p><i class="fa-solid fa-chevron-right"></i></p>
-                              <p><i class="fa-solid fa-chevron-right"></i></p>
-                              <p><i class="fa-solid fa-chevron-right"></i></p>
-                              <p><i class="fa-solid fa-chevron-right"></i></p>
-                          </div>
-                      </div>
-                  </div>
+
+<footer id="footer">
+  <ul>
+      <li> <button id="footer-button">START</button> </li>
+      <li>
+          <div id="clock" class="clock" onload="showTime()"></div>
+      </li>
+  </ul>
+</footer> 
+<div id="start-menu" class="modal">
+  
+  <div class="modal-content">
+      <div class="modal-header">
+          <h1>Start Menu</h1> <span class="close">&times;</span>
+      </div>
+      <div class="modal-body">
+          <div class="modal-columns">
+              <div class="modal-bio">
+                  <p><img class="modal-bio img" src="./images/icons/sh.jpg"></p>
+                  <h6>Rio's desktop</h6>
+                  <p align="center"><i class="fa-regular fa-map"></i> <a href="./sitemap">Sitemap</a></p>
+
+               <ul style="font-style: italic;"> 
+                <li>OS: NENRIKIDO</li> 
+                <li>Version: 1.4</li> 
+                <li>Host: Neocities</li> 
+                <li>Processor: Hugo</li> 
+                <li>Size: 84.48 MB</li> 
+                <li>Since: 03-13-23</li> 
+               </ul>
               </div>
-          </div>
-          <div class="modal-footer">
-              <div class="row">
-                  <div class="col"> <button id="pink" class="btn-start theme-button" onclick="handleThemeButtonClick('pink', this)" title="pink">💗</button> </div>
-                  <div class="col"> <button id="blue" class="btn-start theme-button" onclick="handleThemeButtonClick('blue', this)" title="blue">🫧</button> </div>
-                  <div class="col"> <button id="yellow" class="btn-start theme-button" onclick="handleThemeButtonClick('yellow', this)" title="yellow">🪐</button> </div>
-                  <div class="col"> <button id="black" class="btn-start theme-button" onclick="handleThemeButtonClick('black', this)" title="black">💤</button> </div>
-              </div>
+              <div class="modal-list">  <a class="modal-menu " href="./" >  <span>Home </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./about/" >  <span>About </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./gallery/" >  <span>Gallery </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./commissions/" >  <span>Commissions </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./code/" >  <span>Code </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./blog/" >  <span>Blog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./links/" >  <span>Links </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./microblog/" >  <span>Microblog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./library/" >  <span>Library </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./shrines/" >  <span>Shrines </span> <i class="fa-solid fa-chevron-right"></i></a>  </div>
           </div>
       </div>
+      <div class="modal-footer"><div class="row">
+    <button id="pink" title="pink theme" class="theme-button" onclick="handleThemeButtonClick('pink', this)" >💗</button>
+    <button id="blue" title="blue theme" class="theme-button" onclick="handleThemeButtonClick('blue', this)" >🫧</button> 
+    <button id="yellow" title="yellow theme" class="theme-button" onclick="handleThemeButtonClick('yellow', this)" >🪐</button> 
+    <button id="black" title="black theme" class="theme-button" onclick="handleThemeButtonClick('black', this)" >💤</button>
+</div></div>
   </div>
-</div><footer id="footer">
-    <ul>
-      <li>
-        <button type="button" class="footer-button" data-bs-toggle="modal" data-bs-target="#start">
-          START
-        </button>
-        </li>
-      <li> 
-      <div id="clock" class="clock" onload="showTime()"></div>
-      </li>
-    </ul>
-  </footer>
+
   <script type="text/javascript" src="./js/clock.js"></script>
-  <script>
-    twemoji.parse(document.body)
-</script>
-<script src="./js/theme.js" ></script>
+  <script defer type="text/javascript" src="./js/start.js"></script><script src="./js/theme.js" ></script>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
 <script defer src="./js/muuri-init.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous" ></script>
 <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
 <script defer src="./js/back-to-top.js" ></script>
 <script defer src="./js/lightbox.js" ></script>
 <script defer src="./js/yt_lite.js" ></script>
-<script src="https://unpkg.com/lunr/lunr.js"></script>
-<script src="./js/search.js" ></script>
+<script defer src="https://unpkg.com/lunr/lunr.js"></script>
+<script defer src="./js/search.js" ></script>
 <script>
   var loader = document.getElementById("preloader");
   window.addEventListener("load", function () {

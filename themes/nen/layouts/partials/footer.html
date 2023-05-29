@@ -1,17 +1,38 @@
-{{- partial "start-menu.html" . -}}
 <footer id="footer">
-    <ul>
+  <ul>
+      <li> <button id="footer-button">START</button> </li>
       <li>
-        <button type="button" class="footer-button" data-bs-toggle="modal" data-bs-target="#start">
-          START
-        </button>
-        </li>
-      <li> 
-      <div id="clock" class="clock" onload="showTime()"></div>
+          <div id="clock" class="clock" onload="showTime()"></div>
       </li>
-    </ul>
-  </footer>
+  </ul>
+</footer> <!-- The Modal -->
+<div id="start-menu" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+      <div class="modal-header">
+          <h1>Start Menu</h1> <span class="close">&times;</span>
+      </div>
+      <div class="modal-body">
+          <div class="modal-columns">
+              <div class="modal-bio">
+                  <p><img class="modal-bio img" src="/images/icons/sh.jpg"></p>
+                  <h6>Rio's desktop</h6>
+                  <p align="center"><i class="fa-regular fa-map"></i> <a href="/sitemap">Sitemap</a></p>
+
+               <ul style="font-style: italic;"> 
+                <li>OS: NENRIKIDO</li> 
+                <li>Version: 1.4</li> 
+                <li>Host: Neocities</li> 
+                <li>Processor: Hugo</li> 
+                <li>Size: 84.48 MB</li> 
+                <li>Since: 03-13-23</li> 
+               </ul>
+              </div>
+              <div class="modal-list"> {{ range .Site.Menus.main }} <a class="modal-menu " href="{{ .URL }}" > {{ .Pre }} <span>{{ .Name }} </span> <i class="fa-solid fa-chevron-right"></i></a> {{ end }} </div>
+          </div>
+      </div>
+      <div class="modal-footer"> {{- partial "theme-switcher.html" . -}} </div>
+  </div>
+
   <script type="text/javascript" src="/js/clock.js"></script>
-  <script>
-    twemoji.parse(document.body)
-</script>
+  <script defer type="text/javascript" src="/js/start.js"></script>

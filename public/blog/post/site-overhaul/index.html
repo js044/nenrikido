@@ -10,22 +10,17 @@
     <link rel='shortcut icon' type='image/x-icon' href='../../../images/icons/favicon-32x32.png' />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../../../css/lightbox.css">
     <link rel="stylesheet" type="text/css" href="../../../css/themes.css">
     <link rel="stylesheet" type="text/css" href="../../../css/styles.css"><div id="preloader"></div><body><a href="#" id="btn-back-to-top"><span></span><i class="fa-solid fa-circle-chevron-up"></i></a>
-<div class="col py-2 sticky-lg-top">
+
     <nav id="navAlt">
-        <div class="row align-items-center justify-content-center">
-            <div class="col-8 col-lg-12 py-2 ">
-                <div class="navWrapper"> <a class="navLink" href="../../../blog">
-                        <div id="blog"><br><br></div>Blog
-                    </a><br> <i class="fa-regular fa-circle-down"></i><br> <i class="fa-solid fa-hashtag"></i> <a href="#"> Site Overhaul </a> <br> <i class="fa-solid fa-hashtag"></i> <a href="#comments"> Comments </a> </div>
-            </div>
-        </div><div class="row justify-content-center">
-    <div class="col-8 col-lg-12 py-2">
-        <div class="arrows">
-            
+                <div class="navWrapper"> <a class="navLink" href="../../../blog"><div id="blog"> </div>Blog </a>
+                    <p><i class="fa-regular fa-circle-down"></i></p>
+                    <p><i class="fa-solid fa-hashtag"></i> <a href="#"> Site Overhaul </a></p> 
+                    <p><i class="fa-solid fa-hashtag"></i> <a href="#comments"> Comments </a></p> 
+                </div><div class="arrows">
+      
             <a href="https://nenrikido.neocities.org/blog/post/site-updates-1/"> <i class="fas fa-long-arrow-alt-left"> </i></a>
             
             
@@ -36,9 +31,7 @@
             <a href="https://nenrikido.neocities.org/blog/post/site-updates-2/"> <i class="fas fa-long-arrow-alt-right"> </i></a>
             
         </div>
-    </div>
-</div><div class="row justify-content-center">
-    <div class="col-8 col-lg-12 py-2">
+
         <div id='musicplayer'>
             <div id='musicpixel'> <img src="../../../images/pixels/music.gif" style="max-width: 40px;">
                 <div class='overlay'>
@@ -47,8 +40,7 @@
             </div>
             <div id='musictitle'> <span class='marquee'>summer rain</span> </div>
         </div> <audio id='musicsrc' loop src='https://dl.dropbox.com/s/seanb1ogmdoezmr/cricket-rain.mp3'></audio>
-    </div>
-</div>
+
 
 <script>
     document.querySelector('.playpause').addEventListener('click', playpause);
@@ -62,31 +54,14 @@
         document.querySelector('.playpause').innerHTML = '<i class="fas fa-play"></i>';
       }
     }
-</script><div class="row justify-content-center">
-    <div class="col-8 col-lg-12 py-2">
-        <form class="search"> <input type="text" class="searchTerm" placeholder="Search..."> <button aria-label="submit" type="submit" class="searchButton"> <i class="fa fa-search"></i> </button> </form>
-          
-    </div>
-</div>
+</script>
+<form class="search"> <input type="text" class="searchTerm" placeholder="Search..."> <button aria-label="submit" type="submit" class="searchButton"> <i class="fa fa-search"></i> </button> </form>
 
-<div id="search-result" hidden>
-<div class="item medium">
-  <div class="cards"><div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div><div class="cardsBody">
-    <h2 class="post-title"><a class="summary-title-link"></a></h2>
-    <summary class="summary"></summary>
-  </div>
-</div>
-</div>
-</div></nav>
-</div>
+</nav>
+
 <main>
     <article>
-        <div class="row justify-content-center">
+        <div class="grid-wrapper-page">
             <div class="grid">
                 <div class="item large">
                     <div class="cards"><div class="cardsHeader">
@@ -95,14 +70,14 @@
             <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
     </div>
 </div><div class="cardsBody">
-                            <h4>Site Overhaul</h4>
+                            <h2>Site Overhaul</h2>
                             <blockquote>April 04, 2023</blockquote> <p>i started making this website around 3 weeks ago. if you told me then that within that time, i&rsquo;d write the site, then re-write it with web components, then re-write it again except with a static site generator, i&rsquo;d believe you. i have a near-pathological need for clear, simple, clean things. my closet is sorted by color and item type. i buy little desk dividers to keep my drawers tidy. the only icon on my desktop is the recycle bin.</p>
 <p>so yes, i have marie kondo&rsquo;d the site. this has happened before, so i probably should have anticipated it. i was already planning to make some changes, and then one thing just led to another.</p>
-<h4 id="hahahugoshortcode-s0-hbhb-new-library"><i class="fa-regular fa-moon"></i> new library</h4>
+<h4 id="hahahugoshortcodes0hbhb-new-library"><i class="fa-regular fa-moon"></i> new library</h4>
 <p>i have broken up with a few frameworks for <a href="https://github.com/haltu/muuri">muuri</a>, an extremely versatile javascript library layout engine. seriously, it combines 3 (!!) frameworks i was using. AND enables the draggable windows. i&rsquo;m still pretty intimidated by muuri as it requires a bit more configuration than i&rsquo;m comfortable with yet, but i&rsquo;m working it out. big thanks to <a href="https://codepen.io/ugokuweb/pen/yLaxBNE">this codepen</a> for the gallery filter. anyways, look, drag and drop!
 <a href="../../../images/blog/dragndrop.gif" data-lightbox="dragndrop "> <img src="../../../images/blog/dragndrop.gif" class="img-fluid" loading=""  width="" height="" alt="">  </a></p>
 <p>expect things to be buggy, especially on mobile. but what are you doing on mobile anyways&hellip;grow up! just kidding. i&rsquo;ll debug it eventually. probably.</p>
-<h4 id="hahahugoshortcode-s2-hbhb-now-built-with-hugo"><i class="fa-regular fa-star"></i>  now built with hugo</h4>
+<h4 id="hahahugoshortcodes2hbhb-now-built-with-hugo"><i class="fa-regular fa-star"></i>  now built with hugo</h4>
 <p>you may also notice blog posts are different! that&rsquo;s actually what started this whole endeavor. i finally decided that hugo is famous for building blogs for a reason and i&rsquo;ve been wanting to learn more about <a href="https://gohugo.io/content-management/taxonomies/">taxonomies</a> anyways. (now blog posts have tags and this lowkey looks like a tumblr blog. can&rsquo;t help wandering home&hellip;)</p>
 <p>moving the site to hugo was pretty agonizing at times, but i feel good about it. with the help of shortcodes and partials, i shrank my code to something much more manageable and legible. my gallery page went from 452 lines to 266 lines! the markup is shorter and much easier to understand. and markdown is just soo much easier to deal with than HTML. plus i finally finished moving (most of) my files off of dropbox and can rest assured they&rsquo;re easier to sort.</p>
 <p>before:
@@ -119,11 +94,11 @@
 <img src="../../../images/blog/after-1.png" class="img-fluid" >
 </p>
 <p>see what i mean&hellip;that&rsquo;s hugo baby&hellip;</p>
-<h4 id="hahahugoshortcode-s7-hbhb-comment-sections--new-guestbook"><i class="fa-regular fa-sun"></i>  comment sections &amp; new guestbook</h4>
+<h4 id="hahahugoshortcodes7hbhb-comment-sections--new-guestbook"><i class="fa-regular fa-sun"></i>  comment sections &amp; new guestbook</h4>
 <p>there are also now comment sections for blog posts!! i don&rsquo;t really know how they work since they&rsquo;re untested, but feel free to leave one? yeah. i also replaced the guestbook. i think the old guestbook service was cute and stuff, but it&rsquo;s (1) not responsive, (2) not very customizable, (3) has ads, (4) an external site, and (5) has poor security practices. so we&rsquo;ll see how that goes? yeah!</p>
-<h4 id="hahahugoshortcode-s8-hbhb-new-content--rss-feed"><i class="fa-solid fa-music"></i> new content &amp; RSS feed</h4>
+<h4 id="hahahugoshortcodes8hbhb-new-content--rss-feed"><i class="fa-solid fa-music"></i> new content &amp; RSS feed</h4>
 <p>i added a few windows to the home page! it now has a blog feed (btw, the RSS feed has been <a href="../../../index.xml">updated</a>! old one is deprecated.) a few new links here and there, some formatting updates, the commissions page is slooowly in progress.</p>
-<h4 id="hahahugoshortcode-s9-hbhb-closing"><i class="fa-solid fa-rainbow"></i> closing</h4>
+<h4 id="hahahugoshortcodes9hbhb-closing"><i class="fa-solid fa-rainbow"></i> closing</h4>
 <p>anyways, it&rsquo;ll be good to get this over with for now. i get really fixated on tasks and it&rsquo;s hard to step away until it&rsquo;s over with. (although, i did find the time to <a href="https://www.cicadacreativemag.com/submit/">open submissions for cicada</a>. blinks slowly at you.) i&rsquo;ve been learning a ton about hugo and javascript lately and i think i want to pivot back to writing and drawing for a bit. oh, and i&rsquo;m still moving technically LMAO.</p>
 <p>hopefully the neocities <a href="https://neocities.org/cli">CLI tool</a> is actually easy to use and i don&rsquo;t die. i know Nothing about ruby. i might make a few tutorials in the future, but i guess i worry about giving bad information since i suspect there&rsquo;s still lots that i&rsquo;m doing wrong. still, whatever works, works, so you can expect Something. i&rsquo;ll get this site up on github soon enough. blegh. i&rsquo;m tired.</p>
 <p>ok talk to you later. here is a song for you.</p>
@@ -143,7 +118,7 @@
                             <div id="comments">
 <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
 <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
-<script type="text/javascript" id="hcb">   if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24wVz3xOOc.ZF1mLS1sR.Mp0"+"&opts=16782&num=10&ts=1680596795074");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})();   </script>
+<script type="text/javascript" id="hcb">   if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24wVz3xOOc.ZF1mLS1sR.Mp0"+"&opts=16782&num=10&ts=1680596795074");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); </script>
 </div>
                         </div>
                     </div>
@@ -152,82 +127,58 @@
         </div>
     </article>
 </main>
-<div class="modal fade" id="start" tabindex="-1" aria-labelledby="startLabel" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h1 class="modal-title fs-2" id="startLabel">Start Menu</h1> <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-              <div class="row">
-                  <div class="col-6 px-2"> <img src="../../../images/pixels/strovi_pixel_2.gif" loading="lazy" style="max-width: 210px;"> </div>
-                  <div class="col-6">
-                      <div class="row justify-content-between">
-                          <div class="col"> 
-                              <p> <a class="nav-link " href="../../../"> <span>Home</span></a> </p> 
-                              <p> <a class="nav-link " href="../../../about/"> <span>About</span></a> </p> 
-                              <p> <a class="nav-link " href="../../../gallery/"> <span>Gallery</span></a> </p> 
-                              <p> <a class="nav-link " href="../../../commissions/"> <span>Commissions</span></a> </p> 
-                              <p> <a class="nav-link " href="../../../code/"> <span>Code</span></a> </p> 
-                              <p> <a class="nav-link " href="../../../blog/"> <span>Blog</span></a> </p> 
-                              <p> <a class="nav-link " href="../../../links/"> <span>Links</span></a> </p> 
-                              <p> <a class="nav-link " href="../../../microblog/"> <span>Microblog</span></a> </p> 
-                              <p> <a class="nav-link " href="../../../library/"> <span>Library</span></a> </p> 
-                              <p> <a class="nav-link " href="../../../shrines/"> <span>Shrines</span></a> </p> 
-                          </div>
-                          <div class="col-auto">
-                              <p><i class="fa-solid fa-chevron-right"></i></p>
-                              <p><i class="fa-solid fa-chevron-right"></i></p>
-                              <p><i class="fa-solid fa-chevron-right"></i></p>
-                              <p><i class="fa-solid fa-chevron-right"></i></p>
-                              <p><i class="fa-solid fa-chevron-right"></i></p>
-                              <p><i class="fa-solid fa-chevron-right"></i></p>
-                              <p><i class="fa-solid fa-chevron-right"></i></p>
-                              <p><i class="fa-solid fa-chevron-right"></i></p>
-                              <p><i class="fa-solid fa-chevron-right"></i></p>
-                              <p><i class="fa-solid fa-chevron-right"></i></p>
-                          </div>
-                      </div>
-                  </div>
+<footer id="footer">
+  <ul>
+      <li> <button id="footer-button">START</button> </li>
+      <li>
+          <div id="clock" class="clock" onload="showTime()"></div>
+      </li>
+  </ul>
+</footer> 
+<div id="start-menu" class="modal">
+  
+  <div class="modal-content">
+      <div class="modal-header">
+          <h1>Start Menu</h1> <span class="close">&times;</span>
+      </div>
+      <div class="modal-body">
+          <div class="modal-columns">
+              <div class="modal-bio">
+                  <p><img class="modal-bio img" src="../../../images/icons/sh.jpg"></p>
+                  <h6>Rio's desktop</h6>
+                  <p align="center"><i class="fa-regular fa-map"></i> <a href="../../../sitemap">Sitemap</a></p>
+
+               <ul style="font-style: italic;"> 
+                <li>OS: NENRIKIDO</li> 
+                <li>Version: 1.4</li> 
+                <li>Host: Neocities</li> 
+                <li>Processor: Hugo</li> 
+                <li>Size: 84.48 MB</li> 
+                <li>Since: 03-13-23</li> 
+               </ul>
               </div>
-          </div>
-          <div class="modal-footer">
-              <div class="row">
-                  <div class="col"> <button id="pink" class="btn-start theme-button" onclick="handleThemeButtonClick('pink', this)" title="pink">💗</button> </div>
-                  <div class="col"> <button id="blue" class="btn-start theme-button" onclick="handleThemeButtonClick('blue', this)" title="blue">🫧</button> </div>
-                  <div class="col"> <button id="yellow" class="btn-start theme-button" onclick="handleThemeButtonClick('yellow', this)" title="yellow">🪐</button> </div>
-                  <div class="col"> <button id="black" class="btn-start theme-button" onclick="handleThemeButtonClick('black', this)" title="black">💤</button> </div>
-              </div>
+              <div class="modal-list">  <a class="modal-menu " href="../../../" >  <span>Home </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../about/" >  <span>About </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../gallery/" >  <span>Gallery </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../commissions/" >  <span>Commissions </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../code/" >  <span>Code </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../blog/" >  <span>Blog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../links/" >  <span>Links </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../microblog/" >  <span>Microblog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../library/" >  <span>Library </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../shrines/" >  <span>Shrines </span> <i class="fa-solid fa-chevron-right"></i></a>  </div>
           </div>
       </div>
+      <div class="modal-footer"><div class="row">
+    <button id="pink" title="pink theme" class="theme-button" onclick="handleThemeButtonClick('pink', this)" >💗</button>
+    <button id="blue" title="blue theme" class="theme-button" onclick="handleThemeButtonClick('blue', this)" >🫧</button> 
+    <button id="yellow" title="yellow theme" class="theme-button" onclick="handleThemeButtonClick('yellow', this)" >🪐</button> 
+    <button id="black" title="black theme" class="theme-button" onclick="handleThemeButtonClick('black', this)" >💤</button>
+</div></div>
   </div>
-</div><footer id="footer">
-    <ul>
-      <li>
-        <button type="button" class="footer-button" data-bs-toggle="modal" data-bs-target="#start">
-          START
-        </button>
-        </li>
-      <li> 
-      <div id="clock" class="clock" onload="showTime()"></div>
-      </li>
-    </ul>
-  </footer>
+
   <script type="text/javascript" src="../../../js/clock.js"></script>
-  <script>
-    twemoji.parse(document.body)
-</script>
-<script src="../../../js/theme.js" ></script>
+  <script defer type="text/javascript" src="../../../js/start.js"></script><script src="../../../js/theme.js" ></script>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
 <script defer src="../../../js/muuri-init.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous" ></script>
 <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
 <script defer src="../../../js/back-to-top.js" ></script>
 <script defer src="../../../js/lightbox.js" ></script>
 <script defer src="../../../js/yt_lite.js" ></script>
-<script src="https://unpkg.com/lunr/lunr.js"></script>
-<script src="../../../js/search.js" ></script>
+<script defer src="https://unpkg.com/lunr/lunr.js"></script>
+<script defer src="../../../js/search.js" ></script>
 <script>
   var loader = document.getElementById("preloader");
   window.addEventListener("load", function () {

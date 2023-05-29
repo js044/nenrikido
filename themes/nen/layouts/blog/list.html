@@ -1,35 +1,27 @@
 {{ define "main" }}
- 
-    <nav id="navAlt">
-        <div class="row justify-content-center">
-            <div class="col-8 col-lg-12 py-4">
-                <div class="navWrapper"> <a class="navLink" href="/blog">
-                        <div id="blog"><br><br></div>Blog
-                    </a><br> <i class="fa-regular fa-circle-down"></i><br>
-                    {{- partial "tags.html" . -}}
-                </div>
-            </div>
-        </div> {{- partial "mini-music.html" . -}} {{- partial "search-bar.html" . -}}
-    </nav>
-
+<nav id="navAlt">
+    <div class="navWrapper"> <a class="navLink" href="/blog"><div id="blog"></div>Blog</a>
+        <p><i class="fa-regular fa-circle-down"></i></p> 
+        {{- partial "tags.html" . -}}
+    </div> 
+    {{- partial "mini-music.html" . -}} 
+    {{- partial "search-bar.html" . -}}
+</nav>
 <main>
     <article>
         <div class="grid-wrapper-page">
             <div class="grid"> {{.Content}} {{ range .Pages }}
-                    <div class="item medium">
-                        <div class="cards">
-                            {{- partial "card-header.html" . -}}
+                <div class="item medium">
+                    <div class="cards"> {{- partial "card-header.html" . -}}
                         <div class="cardsBody">
                             <h4>{{.Title}}</h4>
                             <p> {{.Date.Format "Jan 02, 2006"}} </p>
-                            <blockquote> <p> {{ .Summary | truncate 300 }} </p> </blockquote>
-                            <div class="row justify-content-between">
-                                <div class="col">
-                                    <p> {{ range (.GetTerms "tags") }} <i class="fa-solid fa-hashtag"></i> <a href="{{ .Permalink }}">{{ .LinkTitle }}</a> {{ end }} </p>
-                                </div>
-                                <div class="col-auto">
-                                    <p> <a href="{{.Permalink}}"> Keep reading <i class='fa fa-long-arrow-right'></i></a> </p>
-                                </div>
+                            <blockquote>
+                                <p> {{ .Summary | truncate 300 }} </p>
+                            </blockquote>
+                            <div class="row space-between">
+                                <p> {{ range (.GetTerms "tags") }} <i class="fa-solid fa-hashtag"></i> <a href="{{ .Permalink }}">{{ .LinkTitle }}</a> {{ end }} </p>
+                                <p> <a href="{{.Permalink}}"> Keep reading <i class='fa fa-long-arrow-right'></i></a> </p>
                             </div>
                         </div>
                     </div>
@@ -37,5 +29,4 @@
             </div>
         </div>
     </article>
-</main> 
-{{ end }}
+</main> {{ end }}

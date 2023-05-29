@@ -1,0 +1,7 @@
+{{ .Scratch.Set "ancestors" .Ancestors }}
+{{ .Scratch.Set "curRelPermalink" .RelPermalink }}
+ {{ with .Site.GetPage (print "/" .Section "/_index.md") }}
+<ul class="nestedmenu">
+{{ partial "nested-menu-partial.html" (dict "curRelPermalink" ($.Scratch.Get "curRelPermalink") "ancestors" ($.Scratch.Get "ancestors") "context" . ) }}
+</ul>
+{{ end }}

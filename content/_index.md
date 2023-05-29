@@ -4,19 +4,15 @@ draft: false
 ---
 
 {{< card-medium title="#WELCOME" >}} 
-<img src="/images/pixels/strovi_pixel.gif" width="80" height="125" alt="A blue pixel catgirl blinking and kicking her feet gently." style="float: right; max-width: 80px;">
-this is a personal site and a place for me to experiment with front-end development. it is a perpetual work in progress, so please excuse anything unfinished.
+<img src="/images/pixels/strovi_pixel.gif" alt="A blue pixel catgirl blinking and kicking her feet gently." style="float: right; max-width: 70px;">
+this is my personal site and a place for me to experiment with front-end code. it is a work in progress, so please excuse anything unfinished.
 <p align="center"><i class="fa-solid fa-rss"></i> <a href="/index.xml">RSS feed</a> &nbsp <i class="fa-solid fa-mobile-screen-button"></i> responsive </p>
 {{< /card-medium >}}
 
 {{< card-medium title="#THEMES"  >}} 
 click on an emoji to toggle a theme.
-{{< row >}}
-<div class="col-3 p-2"> <button id="pink" title="pink theme" class="theme-button" onclick="handleThemeButtonClick('pink', this)" >💗</button></div>
-<div class="col-3 p-2"> <button id="blue" title="blue theme" class="theme-button" onclick="handleThemeButtonClick('blue', this)" >🫧</button></div>
-<div class="col-3 p-2"> <button id="yellow" title="yellow theme" class="theme-button" onclick="handleThemeButtonClick('yellow', this)" >🪐</button></div>
-<div class="col-3 p-2"> <button id="black" title="black theme" class="theme-button" onclick="handleThemeButtonClick('black', this)" >💤</button></div>
-{{< /row >}}
+{{< theme-switcher >}}
+
 {{< /card-medium >}}
 
 {{< card-medium title="#DRAG N DROP" >}} 
@@ -56,7 +52,6 @@ try dragging a window by its header!
 <iframe title="gifypet" class="pet" width="345" height="250" scrolling="yes" src="https://gifypet.neocities.org/pet/pet.html?name=aurelia&dob=1678660983&gender=f&element=Water&pet=https%3A%2F%2Fimg.pokemondb.net%2Fsprites%2Fblack-white%2Fanim%2Fshiny%2Ffrillish-f.gif&map=tree.jpg&background=transparent" frameborder="0"></iframe>
 {{< /card-medium >}}
 
-
 {{< card-medium title="#BLOG POSTS" >}} 
 Read the rest of the blog [here](/blog).
 {{< blog-feed >}} 
@@ -64,6 +59,7 @@ Read the rest of the blog [here](/blog).
 
 {{< card-medium title="#UPDATES" >}} 
 {{< scrollbox >}}
+* **5-28-23**: no more bootstrap! new [sitemap](/sitemap)! new start menu! new [blog](/blog) post! ctrl f5 if anything is weird.
 * **5-21-23**: new [blog](/blog) post & now there's a microblog feed on the index page. thank you hors 
 * **5-6-23**: lots & lots of changes, some big and some small. there's also a new page theme up! and now there are theme previews!
 * **5-1-23**: new page theme is up on the [code](/code) page! i think it's cute.
@@ -104,28 +100,28 @@ Read the rest of the blog [here](/blog).
 
 {{< card-medium title="#TO-DO" >}} 
 {{< scrollbox >}}
+*   ~~add sitemap~~ ![](images/pixels/new.gif)
+*   ~~re-design start menu~~ ![](images/pixels/new.gif)
 *   ~~add microblog feed to index~~ ![](images/pixels/new.gif)
+*   ~~remove bootstrap~~ ![](images/pixels/new.gif)
 *   open commissions
+*   fix firefox microblog bug
 *   make OC page (!!!)
 *   fix search script
 *   fix theme flickering
 *   add library genre drop-down
 *   add microblog pagination
-*   re-design start menu
 *   create zonelets theme
 *   move scrollbar behind footer
-*   soutaiseiriron shrine
-*   fix firefox microblog bug
-*   ditch bootstrap (someday)
+*   new shrines
 {{< /scrollbox >}}
 {{< /card-medium >}}
 
 {{< card-medium title="#CREDITS" >}} 
 {{< scrollbox >}}
-{{< row-centered >}}
+{{< col-sm >}}
 {{< banner img-src="/images/buttons/hugo-l.svg" link="https://gohugo.io/" loading="lazy" width="" height="" alt="hugo logo" descr="generator" >}}
-{{< banner img-src="/images/buttons/muuri.svg" link="https://muuri.dev/" loading="lazy" width="" height="" alt="muuri logo"  descr="library" >}} 
-{{< banner img-src="images/buttons/bootstrap-logo-shadow.png" link="https://getbootstrap.com/" loading="lazy" width="48" height="40" alt="bootstrap logo" descr="framework" >}}
+{{< banner img-src="/images/buttons/muuri.svg" link="https://muuri.dev/" loading="lazy" width="" height="" alt="muuri logo"  descr="library" >}}  
 {{< banner img-src="/images/buttons/strovi.png" link="https://strovi.neocities.org/" loading="lazy" width="" height="" alt="strovi button" descr="pixels" >}} 
 {{< banner img-src="/images/buttons/foollovers.gif" link="https://foollovers.com/" loading="lazy" width="" height="" alt="animated pixel for fool lovers" descr="pixels" >}} 
 {{< banner img-src="/images/buttons/13mo.jpg" link="https://13mo.tumblr.com/" loading="lazy" width="30" height="30" descr="pixels" >}} 
@@ -138,7 +134,7 @@ Read the rest of the blog [here](/blog).
 {{< banner img-src="/images/buttons/fc2.png" link="https://counter.fc2.com/en/index.html/" loading="lazy" width="" height="" alt="a button to fc2 counters" descr="counter" >}} 
 {{< banner img-src="/images/buttons/cbox.png" link="https://www.cbox.ws/" loading="lazy" width="" height="" alt="speech bubble button saying CBOX" descr="chatbox" >}} 
 {{< banner img-src="/images/buttons/code-boxx.png" link="https://code-boxx.com/custom-audio-player-playlist/" loading="lazy" width="" height="" alt="logo for code boxx website" descr="playlist" >}} 
-{{< /row-centered >}}
+{{< /col-sm >}}
 {{< /scrollbox >}}
 {{< /card-medium >}}
 

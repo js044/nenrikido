@@ -1,6 +1,6 @@
 {{ define "main" }}
 <nav id="nav">
-    <div class="row">
+    <div class="row centered">
         <a class="navLink" href="/"><div id="home"></div>Home</a> 
         <a class="navLink" href="/about"><div id="about"></div>About</a> 
         <a class="navLink" href="/gallery"> <div id="gallery"></div>Gallery</a>
@@ -12,12 +12,11 @@
         <a class="navLink" href="/library"> <div id="library"></div>Library</a> 
         <a class="navLink" href="/shrines"><div id="shrines"></div>Shrines</a>
     </div>
-  
-      <form class="search"> <input type="text" class="searchTerm" placeholder="Search..."> <button type="submit" class="searchButton"> <i class="fa fa-search"></i> </button> </form>  
+    {{ partial "search-bar.html"}}
 </nav>
-<body>
+
     <div class="grid-wrapper"> <div class="grid"> {{.Content}} </div> </div>
     <script src="/js/microblog_recent.js"></script>
     <script type="text/javascript" src="/js/audioPlayer.js" defer></script>
-</body>
+
 {{ end }}
