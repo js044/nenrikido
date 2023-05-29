@@ -993,15 +993,19 @@ footer#footer ul li a:hover, footer#footer ul li a.selected {
 		display: grid;
 		margin: auto auto;
 		grid-template-columns: 40% auto;
-		grid-column-gap: 6px;
 		align-items: center;
 	   justify-items: center;
+	  }
+
+	  .modal-bio {
+		text-align: center;
 	  }
 
 	  .modal-bio li, .modal-bio ul {
 		padding: 0;
 		margin: 0;
 		list-style: none;
+		text-align: left;
 	  }
 
 	.modal-bio img {
