@@ -10,7 +10,23 @@
 		<url>/images/microblog/icon.jpg</url>
 		<link>https://nenrikido.neocities.org</link>
 	</image>
-	
+
+	<item>
+		<guid>30</guid>
+		<title>still haven't figured out how to use git from the command line but i did just get an ounce of golden goat for $25. i heart modernity!</title>
+		<pubDate>Sun, 04 Jun 2023 19:46:58 +0000</pubDate>
+		<link>/microblog#30</link>
+		<description> </description>
+	</item>
+
+	<item>
+		<guid>29</guid>
+		<title>i am so busy. it should be against the law. i complete a task and then you know what happens? there are more tasks. fucked up!</title>
+		<pubDate>Sun, 04 Jun 2023 19:22:31 +0000</pubDate>
+		<link>/microblog#29</link>
+		<description> </description>
+	</item>
+
 	<item>
 		<guid>28</guid>
 		<title>can people stop being annoying online i want to be nice on the computer but then someone is like 'hi neurospicy queers let me tell you a thing!! (misinfo)' and due to my empath nature i am crushed by 8000000 PSI of cringe. you're hurting me. youare killing me. do you hate me? do you want women to die?</title>

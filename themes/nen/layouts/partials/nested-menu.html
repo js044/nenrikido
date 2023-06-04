@@ -1,4 +1,3 @@
-{{ .Scratch.Set "ancestors" .Ancestors }}
 {{ .Scratch.Set "curRelPermalink" .RelPermalink }}
  {{ with .Site.GetPage (print "/" .Section "/_index.md") }}
 <ul class="nestedmenu">

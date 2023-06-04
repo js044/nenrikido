@@ -59,12 +59,15 @@ draft: false
 {{< buttons img-src="/images/buttons/whimsical.gif" link="http://whimsical.heartette.net/">}} 
 {{< buttons img-src="/images/buttons/leusyth.png" link="https://leusyth.neocities.org/">}}         
 {{< buttons img-src="/images/buttons/nonkiru.gif" link="https://nonkiru.art/">}}  
-{{< buttons img-src="/images/buttons/arunyi.gif" link="https://www.arunyi.art/">}}                
+{{< buttons img-src="/images/buttons/arunyi.gif" link="https://www.arunyi.art/">}}    
+{{< buttons img-src="/images/buttons/mn1ca.gif" link="https://mn1ca.neocities.org/">}}    
 {{< buttons img-src="/images/buttons/Eggdev.gif" link="https://eggdev.neocities.org/">}}    
 {{< buttons img-src="/images/buttons/turd.png" link="https://turd.neocities.org/">}}      
 {{< buttons img-src="/images/buttons/zenmai.gif" link="https://zenmai.neocities.org/">}}      
 {{< buttons img-src="/images/buttons/sunmiflowers.png" link="https://sunmiflowers.neocities.org/">}}     
-{{< buttons img-src="/images/buttons/ita.gif" link="https://ita.toys/">}}                           
+{{< buttons img-src="/images/buttons/ita.gif" link="https://ita.toys/">}}    
+{{< buttons img-src="/images/buttons/aoi.gif" link="https://a0i.neocities.org/">}}    
+{{< buttons img-src="/images/buttons/dokodemobutton3.gif" link="https://dokode.moe/">}}     
 {{< buttons img-src="/images/buttons/bearwinky.gif" link="https://myfancybear.neocities.org/">}}  
 {{< buttons img-src="/images/buttons/LostLetters88x31.gif" link="https://lostletters.neocities.org/">}}    
 {{< buttons img-src="/images/buttons/zucchini.gif" link="https://zucchini.cc/">}}                                
@@ -98,6 +101,7 @@ draft: false
 {{< buttons img-src="/images/buttons/hat.gif" link="https://hat.neocities.org/">}}      
 {{< buttons img-src="/images/buttons/denpa.gif" link="https://denpa.neocities.org/">}}     
 {{< buttons img-src="/images/buttons/nyanseong-wink.png" link="https://nyanseong.neocities.org/">}} 
+{{< buttons img-src="/images/buttons/spiders.gif" link="https://spiders.neocities.org/">}}   
 {{< buttons img-src="/images/buttons/starbage_button_3.gif" link="https://starbage.neocities.org/">}} 
 {{< buttons img-src="/images/buttons/xn-neko-btn.gif" link="https://猫.移动/">}} 
 {{< buttons img-src="/images/buttons/kakashi.gif" link="https://kakashi.neocities.org/">}}    
@@ -106,9 +110,10 @@ draft: false
 {{< buttons img-src="/images/buttons/macchiato.png" link="https://macchiato.neocities.org/">}} 
 {{< buttons img-src="/images/buttons/ratpilled.gif" link="https://ratpilled.neocities.org/">}}  
 {{< buttons img-src="/images/buttons/grossgirl94.gif" link="https://grossgirl94.neocities.org/">}} 
-{{< buttons img-src="/images/buttons/laika.jpg" link="https://voyager.neocities.org/">}}    
+{{< buttons img-src="/images/buttons/laika.jpg" link="https://voyager.neocities.org/">}}  
+{{< buttons img-src="/images/buttons/doqmeat.png" link="https://doqmeat.neocities.org/">}}  
 {{< buttons img-src="/images/buttons/link_malta.gif" link="https://daikonet.neocities.org/" >}}
-{{< buttons img-src="/images/buttons/cyberoccultismbutton.gif" link="https://cyberoccultism.online/">}}
+{{< buttons img-src="/images/buttons/dimden.gif" link="https://dimden.dev/">}}
 {{< buttons img-src="/images/buttons/cpnk.gif" link="https://seapunk.xyz/">}}  
 {{< buttons img-src="/images/buttons/nostalgic.gif" link="https://nostalgic.neocities.org/">}} 
 {{< buttons img-src="/images/buttons/doghouse1.gif" link="https://dog-house.neocities.org/">}}
@@ -118,7 +123,8 @@ draft: false
 {{< buttons img-src="/images/buttons/joebuck.gif" link="https://joebuck.neocities.org/">}}
 {{< buttons img-src="/images/buttons/marzka_cafe_88x31.png" link="https://marzka.cafe/">}} 
 {{< buttons img-src="/images/buttons/rgbteahouse.jpg" link="https://rgbteahouse.neocities.org/">}}   
-{{< buttons img-src="/images/buttons/onio.gif" link="https://onio.cafe/">}}
+{{< buttons img-src="/images/buttons/onio.gif" link="https://onio.cafe/">}}  
+{{< buttons img-src="/images/buttons/simone.gif" link="https://simone.computer/">}}  
 {{< buttons img-src="/images/buttons/MELON-BADGE-2.GIF" link="https://melonking.net">}} 
 {{< buttons img-src="/images/buttons/dizzy.gif" link="https://doctordizzy.space/">}}   
 {{< buttons img-src="/images/buttons/kiko-banner.gif" link="https://cosmic-kiko.neocities.org/">}}   
@@ -145,7 +151,6 @@ draft: false
 {{< buttons img-src="/images/buttons/cloverbellbanner.gif" link="https://cloverbell.neocities.org/" >}}  
 {{< buttons img-src="/images/buttons/fwoofies.gif" link="https://fwoofies.neocities.org/">}}  
 {{< buttons img-src="/images/buttons/middlepot.png" link="https://middlepot.com/">}} 
-{{< buttons img-src="/images/buttons/simone.gif" link="https://simone.computer/">}}  
 {{< /col-sm >}}
 {{< /large-scrollbox >}}
 {{< /box-small >}}
