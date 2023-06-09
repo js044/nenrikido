@@ -1,0 +1,484 @@
+<!--RAINBOW PAGE THEME by nenrikido.neocities.org-->
+<!--NOTES
+    1. This theme assumes you're already comfortable with HTML and CSS. CTRL F 'SAFE TO EDIT' to quickly jump to places for you to customize.
+    2. I've left notes throughout the CSS in case anyone wants to heavy edit. Hopefully it's fairly readable.
+    3. If you use this page theme for a full website (not just one page), be sure to separate the Javascript and CSS and then link them.
+    4. HAPPY PRIDE!!!!
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--SAFE TO EDIT - TITLE & SHORTCUT ICON-->
+    <link rel='shortcut icon' type='image/x-icon' href='https://dl.dropbox.com/s/qklbio07u9m3aiw/rainbow.png?dl=0' />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pride theme</title>
+    <style>
+
+/* SAFE TO EDIT - CSS VARIABLES */
+:root {
+    --title-font-size: 7vw;
+    --bg-image: url('https://dl.dropbox.com/s/uilkov5ayv3bizh/70s-rainbow-wave-retro-wallpaper-mural-Plain-scaled.webp?dl=0');
+    --side-image: url('https://dl.dropbox.com/s/j87r8p2iqerrl8y/rb.jpeg?dl=0');
+    --box-bg: #f5ecdfe5;
+    --background: #f5e2df;
+}
+
+/* THEME SETTINGS */
+:root,
+:root.red {
+    --main: #d92f38;
+    --muted: #d92f38b0;
+}
+
+:root.hotpink {
+    --main: #cf3480;
+    --muted: #cf347fbd;
+}
+
+:root.orange {
+    --main: #f8601a;
+    --muted: #f76e2ec5;
+}
+
+:root.yellow {
+    --main: #dfa505;
+    --muted: #e9da68d7;
+}
+
+:root.green {
+    --main: #439d81;
+    --muted: #439d81c0;
+}
+
+:root.turquoise {
+    --main: #0e8ea5;
+    --muted: #0fa8c3c5;
+}
+
+:root.indigo {
+    --main: #0269a4;
+    --muted: #0269a4ce;
+}
+
+:root.violet {
+    --main: #533664;
+    --muted: #3e254db9;
+}
+
+/* THEME SWITCHER */
+#flag {
+    display: flex;
+    flex-direction: column;
+    width: 12vw;
+    margin: 0.5em auto;
+}
+
+.theme-button {
+    height: 1.2em;
+    border: none;
+}
+
+#hotpink { background-color: #cf3480; }
+
+#red { background-color: #d92f38; }
+
+#orange { background-color: #f76d2e; }
+
+#yellow { background-color: #e9d968; }
+
+#green { background-color: #439d81; }
+
+#turquoise { background-color: #0fa9c3; }
+
+#indigo { background-color: #0269a4; }
+
+#violet { background-color: #3e254d; }
+
+@font-face {
+    font-family: Pretty Kelly;
+    src: url(https://dl.dropbox.com/s/rqxfzjivgousq18/PrettyKelly.ttf?dl=0);
+}
+
+@font-face {
+    font-family: National Park;
+    src: url(https://dl.dropbox.com/s/jox00bymodcheoy/NationalPark-Regular.otf?dl=0);
+}
+
+/* BASE STYLING */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    line-height: 1.15;
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    background: var(--bg-image) top / cover no-repeat;
+    font-family: National Park, sans-serif;
+    color: var(--main);
+    font-size: 0.95em;
+    scrollbar-color: var(--main) var(--background); /* Mozilla scrollbar fallback */
+}
+
+blockquote {
+    border-left: 1px solid var(--main);
+    padding-left: 0.5em;
+    margin-left: 1em;
+    font-style: italic;
+}
+
+button {
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+button:hover, button.active {
+    filter: brightness(140%);
+}
+
+mark {
+    background-color: var(--main);
+    color: var(--background);
+    padding: 0 5px;
+    border-radius: 2px;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: smaller;
+}
+
+a {
+    color: var(--main);
+}
+
+a:hover {
+    filter: brightness(130%);
+}
+
+ul {
+    margin: 0;
+}
+
+hr {
+    border: 1px solid var(--muted);
+}
+
+code {
+    background-color: var(--main);
+    color: var(--background);
+    padding: 0 3px;
+    border-radius: 3px;
+}
+
+.img-fluid {
+    max-width: 25rem;
+    height: auto;
+}
+
+p {
+    margin: 5px 0 10px 5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0.2em;
+    font-family: Pretty Kelly;
+}
+
+::selection {
+    background-color: var(--muted);
+    color: var(--background)
+}
+
+audio,
+audio::-webkit-media-controls-panel {
+    max-width: 12vw;
+    background-color: var(--main);
+    filter: brightness(120%);
+    border-radius: 30px;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+	position: fixed;
+	right: 12px;
+	z-index: 1;
+}
+
+::-webkit-scrollbar-track {
+	box-shadow: 0;
+	border-radius: 0px;
+	background-color: var(--background);
+}
+
+.post ::-webkit-scrollbar-track {
+	border-left: 0px solid var(--main);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--muted);
+	border-radius: 0px;
+}
+
+/* WRAPPERS */
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    margin: 0 auto 5vh auto;
+    width: 50vw;
+    padding: 15px;
+    gap: 2em;
+}
+
+.side-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 15em;
+    gap: 2em;
+}
+
+/* BOXES & SIDEBAR */
+.side-wrapper>div, .main {
+    background-color: var(--box-bg);
+    border: 2px solid var(--main);
+    box-shadow: 0.5em 0.5em var(--muted);
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.side p {
+    text-align: center;
+    margin: 0.5em;
+}
+
+#side-img {
+    height: 11em;
+    max-width: 100%;
+    background: var(--side-image) center / contain no-repeat;
+    margin: 0.5em auto;
+}
+
+/* NAVLINKS */
+#navlinks {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+#navlinks a {
+    background-color: var(--main);
+    color: var(--background);
+    padding: 8px;
+    margin: 5px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/* PAGE TITLE */
+ul#title {
+    padding-left: 0;
+    margin: 0 auto;
+    width: 55vw;
+    font-size: var(--title-font-size);
+    flex-wrap: wrap;
+    display: flex;
+    flex: auto 1 1;
+    justify-content: center;
+    font-family: Pretty Kelly;
+    -webkit-text-stroke: 1px var(--main);
+}
+
+#title li {
+    display: inline-flex;
+    margin: 0.25em;
+    background-size: 200vw auto;
+    background-image: repeating-linear-gradient(to right, #cf3480, #d92f38, #f76d2e, #e9d968, #439d81, #0fa9c3, #3e254d);
+    -webkit-animation: rainbow 10s linear reverse infinite;
+    animation: rainbow 10s linear reverse infinite;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text; 
+}
+
+#title li:nth-child(3n + 0) { transform: rotate(20deg) }
+
+#title li:nth-child(3n + 1) { transform: rotate(-20deg) }
+
+#title li:nth-child(3n + 2) { transform: rotate(10deg) }
+
+@keyframes rainbow { 0% { background-position: 0% 50% } 50% { background-position: 100% 50% } 100% { background-position: 0% 50% } }
+
+/* BADGES */
+#badge-img {
+    display: grid;
+    margin: auto auto;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    grid-column-gap: 6px;
+    grid-row-gap: 6px;
+    align-items: center;
+    justify-items: center;
+}
+
+  /* MOBILE STYLING */
+  @media only screen and (max-width: 768px) {
+      .wrapper {
+          flex-direction: column;
+          width: 100%;
+          padding: 0;
+      }
+
+      audio, audio::-webkit-media-controls-panel {
+          max-width: 100%;
+      }
+
+      #flag {
+          width: 50vw;
+      }
+
+      figure {
+          margin: 0;
+      }
+
+      .img-fluid {
+          max-width: 100%;
+      }
+
+      .side-wrapper, .main {
+          width: 80vw;
+          margin: 0 auto;
+      }
+
+      ul#title {
+          width: 100vw;
+          font-size: calc(var(--title-font-size) * 1.6);
+          margin: 3vh auto;
+      }
+  }
+    </style>
+</head>
+
+<body>
+    <!--SAFE TO EDIT - to make a space just leave empty <li> tags. title wraps when it gets too long -->
+    <ul id="title">
+        <li>R</li>
+        <li>A</li>
+        <li>I</li>
+        <li>N</li>
+        <li>B</li>
+        <li>O</li>
+        <li>W</li>
+    </ul>
+    <div class="wrapper">
+        <div class="main">  
+            <!--SAFE TO EDIT
+                Note: theme only supports one main class. if you'd like to add more "main" boxes you can add a main-wrapper class that uses flex columns (like the side-wrapper) -->
+            <h1>Celebrating pride</h1>
+            <blockquote>June 09, 2023</blockquote>
+            <p>Welcome to the <mark>Rainbow page theme</mark> preview! This theme is based on the original 1978 rainbow flag designed by Gilbert Baker. It has eight stripes, two more than the popular modern iteration.</p>
+            <figure> <img class="img-fluid" src="https://images.squarespace-cdn.com/content/v1/5b53b13285ede173115cb784/1623105145619-H2XVFVY8R1T9EPC1WADE/Rainbow+flag+courtesey+of+Baker+estate.jpg">
+                <figcaption>An image of the original flag, courtesy of the Baker estate.</figcaption>
+            </figure>            
+            <p>Each stripe's color is symbolic: Hot pink is for sex, red for life, orange for healing, yellow for sunlight, green for nature, turquoise for magic/art, indigo for serenity, and violet for spirit. </p>
+            <p>Due to dye cost issues that prevented mass production of the flag and subsequent practical considerations, the hot pink and turquoise stripes were both dropped. But this is the internet, where these are non-issues, so long live sex and magic!</p>
+            <hr>
+            <h1>Theme features</h1>            
+            <ul>
+                <li>Pride flag theme switcher (uses Javascript)</li>
+                <li>Mobile responsive layout</li>
+                <li>Customizable sidebar image</li>
+                <li>Customizable background image</li>
+                <li>Customizable box background color</li>
+                <li>Custom responsive image class <code>img-fluid</code></li>
+                <li>Styling of default HTML elements such as the blockquote, hr, code, audio, and mark tags.</li>
+                <li>Make new sidebar boxes by creating a div within the side-wrapper class. You can name it whatever you want; it will inherit the sidebar box styling.</li>
+            </ul>
+            <hr>
+            <h1>Credits</h1>
+            <ul>
+                <li>Body font: <a href="https://nationalparktypeface.com/">National Park</a></li>
+                <li>Title font: <a href="https://www.fontspace.com/pretty-kelly-font-f93692">Pretty Kelly</a></li>
+                <li>Background mural: <a href="https://www.hovia.com/products/70s-rainbow-wave-retro-wallpaper-mural-m/">Hovia</a></li>
+                <li>Jukebox song: <a href="https://youtu.be/Nm-ISatLDG0">"I Feel Love"</a> - Donna Summer</li>
+                <li>Pride badge: <a href="https://web.badges.world/">Web Badges World</a></li>
+                <li>Favicon emoji: <a href="https://twemoji.twitter.com/">Twemoji</a></li>
+            </ul>            
+        </div>
+        <div class="side-wrapper">
+            <div class="side">
+		<!--SAFE TO EDIT - add your sidebar title, bio, and links here-->
+                <h1>Navigation</h1>
+                <div id="side-img"></div>
+                <p>Some sidebar text</p> 
+                <div id="navlinks"> <a href="#">home</a> <a href="#">about</a> <a href="#">blog</a> <a href="#">gallery</a> <a href="#">guestbook</a> </div>
+            </div>
+            <div id="theme">
+                <h1>Theme</h1>
+                <p>Click a flag stripe.</p>
+                <div id="flag"> <button id="hotpink" title="hot pink (sex)" class="theme-button" onclick="handleThemeButtonClick('hotpink', this)"></button> <button id="red" title="red (life)" class="theme-button" onclick="handleThemeButtonClick('red', this)"></button> <button id="orange" title="orange (healing)" class="theme-button" onclick="handleThemeButtonClick('orange', this)"></button> <button id="yellow" title="yellow (sunlight)" class="theme-button" onclick="handleThemeButtonClick('yellow', this)"></button> <button id="green" title="green (nature)" class="theme-button" onclick="handleThemeButtonClick('green', this)"></button> <button id="turquoise" title="turquoise (magic/art)" class="theme-button" onclick="handleThemeButtonClick('turquoise', this)"></button> <button id="indigo" title="indigo (serenity)" class="theme-button" onclick="handleThemeButtonClick('indigo', this)"></button> <button id="violet" title="violet (spirit)" class="theme-button" onclick="handleThemeButtonClick('violet', this)"></button> </div>
+            </div>
+            <div id="audio">
+                <h1>Jukebox</h1> <audio controls> <!--SAFE TO EDIT - replace with a link to any song you like.-->
+                    <source src="https://dl.dropbox.com/s/upv9nfvx2b9gfpo/ifeellove.mp3?dl=0" type="audio/mp3">
+                </audio>
+            </div>
+            <div id="badges"> <!--SAFE TO EDIT - you can add as many badges as you want.-->
+                <h1>Badges</h1>
+                <div id="badge-img"> 
+                    <img src="https://dl.dropbox.com/s/5nkjlo83yf3lgpi/lesbianbadge.jpg?dl=0"> 
+                    <img src="https://dl.dropbox.com/s/toxufxxsmazls83/pride2.gif?dl=0">  </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+        const theme = getTheme();
+        applyTheme(theme);
+        }); 
+        function applyTheme(color) {
+        console.log(`Applying theme "${color}".`);
+        const button = getColorButton(color);
+        document.documentElement.className = color;
+        }
+        function handleThemeButtonClick(color, element) {
+        element.blur();  
+        saveThemeToLocalStorage(color);
+        applyTheme(color);
+        }
+        function getTheme() {
+        return localStorage.getItem("theme") || "red"; // SAFE TO EDIT - can change red to any color you want to be default
+        }
+        function getColorButton(color) {
+        return document.getElementById(color);
+        }
+        function saveThemeToLocalStorage(color) {
+        localStorage.setItem("theme", color);
+        }
+    </script>
+</body>
+
+</html>

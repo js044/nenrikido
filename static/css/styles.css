@@ -71,7 +71,7 @@ body a:hover {
 
 
 blockquote {
-	margin: 20px 0 10px 10px;
+	margin: 10px 0 10px 10px;
 	padding: 0 0 0 10px;
 	border-left: solid 1px var(--secondary);
 }
@@ -92,7 +92,7 @@ p, ul, li, span, .sort-btn, #aWrap, #aPlay, #aList, .aRow, .gist, #microblog_rec
   }
 
   .small {
-	grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(65px, 1fr));
   }
 
 .row {

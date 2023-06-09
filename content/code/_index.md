@@ -38,9 +38,15 @@ Feel free to email me ([nenrikido@pm.me](mailto:nenrikido@pm.me)) with any quest
 {{< lightbox-image link="/images/code/page-themes/rainbow-1.png" lightbox-id="rainbow" img-src="/images/code/page-themes/thumb/rainbow-1.png" loading="lazy" width="94" height="200" alt="A mobile preview of the theme." >}}
 {{< /preview >}}
  
+{{< preview >}}
+{{< lightbox-image link="/images/code/page-themes/rainbow-2.png" lightbox-id="rainbow" img-src="/images/code/page-themes/thumb/rainbow-2.png" loading="lazy" width="397" height="200" alt="An alternate theme preview. This one has a sky background with a rainbow and an icon of Michiru Kaioh from Sailor Moon." >}}
+
+{{< lightbox-image link="/images/code/page-themes/rainbow-3.png" lightbox-id="rainbow" img-src="/images/code/page-themes/thumb/rainbow-3.png" loading="lazy" width="89" height="200" alt="A zoomed-in preview of the sidebar boxes." >}}
+{{< /preview >}}
+
 {{< box-small  title="Rainbow Page Theme" >}}
 [live preview](preview/rainbow) 
-> made a theme for pride month based on the original 70s pride flag! you can click on stripes of the flag to swap color schemes.
+> made a theme for pride month based on the original 70s rainbow flag! you can click on stripes of the flag to swap color schemes.
 
 features:
 *   customizable background & sidebar images

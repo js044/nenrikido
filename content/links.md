@@ -77,7 +77,6 @@ draft: false
 {{< buttons img-src="/images/buttons/cinni-88x31-hamham.gif" link="https://cinni.net/">}}                            
 {{< buttons img-src="/images/buttons/osaka.gif" link="https://osaka.neocities.org/">}}
 {{< buttons img-src="/images/buttons/lovesick-button1.png" link="https://www.lovesick.cafe/">}}
-{{< buttons img-src="/images/buttons/virtualdreamlandbutton.png" link="https://strawberryreverie.neocities.org/">}}
 {{< buttons img-src="/images/buttons/teddybearhalo.gif" link="https://teddybear-halo.neocities.org/">}}                                
 {{< buttons img-src="/images/buttons/zanarkland.gif" link="https://zanarkand.neocities.org/">}}   
 {{< buttons img-src="/images/buttons/krowena.png" link="https://kayleerowena.com/">}}         
@@ -130,7 +129,8 @@ draft: false
 {{< buttons img-src="/images/buttons/simone.gif" link="https://simone.computer/">}}  
 {{< buttons img-src="/images/buttons/MELON-BADGE-2.GIF" link="https://melonking.net">}} 
 {{< buttons img-src="/images/buttons/dizzy.gif" link="https://doctordizzy.space/">}}   
-{{< buttons img-src="/images/buttons/kiko-banner.gif" link="https://cosmic-kiko.neocities.org/">}}   
+{{< buttons img-src="/images/buttons/kiko-banner.gif" link="https://cosmic-kiko.neocities.org/">}} 
+{{< buttons img-src="/images/buttons/virtualdreamlandbutton.png" link="https://strawberryreverie.neocities.org/">}}  
 {{< buttons img-src="/images/buttons/koinuko.gif" link="https://koinuko.pink/">}}   
 {{< buttons img-src="/images/buttons/fizzsea8831.gif" link="https://fizzsea.neocities.org/">}}  
 {{< buttons img-src="/images/buttons/eve.png" link="https://evemarie.neocities.org/">}}   
