@@ -10,6 +10,8 @@ draft: false
 {{< icons/hashtag >}} [resources](#resources)  
 {{< /nav >}}
 
+<link rel="stylesheet" type="text/css" href="/css/webrings.css">
+
 {{< muuri >}}
 {{< card-large title="#FIND ME" id="find-me">}}
 {{< box-small >}}
@@ -75,6 +77,7 @@ draft: false
 {{< buttons img-src="/images/buttons/cinni-88x31-hamham.gif" link="https://cinni.net/">}}                            
 {{< buttons img-src="/images/buttons/osaka.gif" link="https://osaka.neocities.org/">}}
 {{< buttons img-src="/images/buttons/lovesick-button1.png" link="https://www.lovesick.cafe/">}}
+{{< buttons img-src="/images/buttons/virtualdreamlandbutton.png" link="https://strawberryreverie.neocities.org/">}}
 {{< buttons img-src="/images/buttons/teddybearhalo.gif" link="https://teddybear-halo.neocities.org/">}}                                
 {{< buttons img-src="/images/buttons/zanarkland.gif" link="https://zanarkand.neocities.org/">}}   
 {{< buttons img-src="/images/buttons/krowena.png" link="https://kayleerowena.com/">}}         
@@ -148,6 +151,7 @@ draft: false
 {{< buttons img-src="/images/buttons/affbanner-taffy.gif" link="https://dreamy.neocities.org/universe/">}}      
 {{< buttons img-src="/images/buttons/nokocchi.gif" link="https://nokocchi.com/">}} 
 {{< buttons img-src="/images/buttons/wiggle.gif" link="https://crypticcryptid.neocities.org/" >}} 
+{{< buttons img-src="/images/buttons/scarecrowkid.gif" link="https://scarecrowkid.net/">}} 
 {{< buttons img-src="/images/buttons/cloverbellbanner.gif" link="https://cloverbell.neocities.org/" >}}  
 {{< buttons img-src="/images/buttons/fwoofies.gif" link="https://fwoofies.neocities.org/">}}  
 {{< buttons img-src="/images/buttons/middlepot.png" link="https://middlepot.com/">}} 

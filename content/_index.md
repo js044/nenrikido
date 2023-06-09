@@ -59,6 +59,7 @@ Read the rest of the blog [here](/blog).
 
 {{< card-medium title="#UPDATES" >}} 
 {{< scrollbox >}}
+* **6-09-23**: happy pride! made a [theme](/code/preview/rainbow) to celebrate. updated a few pages and messed w/ some site css also.
 * **5-28-23**: no more bootstrap! new [sitemap](/sitemap)! new start menu! new [blog](/blog) post! ctrl f5 if anything is weird.
 * **5-21-23**: new [blog](/blog) post & now there's a microblog feed on the index page. thank you hors 
 * **5-6-23**: lots & lots of changes, some big and some small. there's also a new page theme up! and now there are theme previews!

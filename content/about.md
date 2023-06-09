@@ -25,9 +25,9 @@ draft: false
 {{< stats stat="MBTI: INTP" >}} 
 {{< stats stat="ENNEAGRAM: 5w4" >}}
 {{< box >}} 
-hi, i'm a multimedia artist located in the US. i love experimental art & creating things. i also run an interdisciplinary [publication](https://www.cicadacreativemag.com/). (u should submit something!)
+hi, i'm a multimedia artist located in the US. i love experimental art and creating things. i also love horror games, spicy noodles, and fish trivia. feel free to reach out about any of these topics; i love [email](mailto:@nenrikido@pm.me)!
 
-i made this site as both a repository for my work and as its own creative project. i'm still learning, so expect the site to change over time. feel free to reach out; i love email!
+i made this site both to host my creative projects and also to function as its own creative project. i'm still learning, so expect the site to change over time. you can find the github repo [here](https://github.com/js044/nenrikido/).
 {{< /box >}}
  
 {{< /card-large >}}

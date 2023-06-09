@@ -10,7 +10,13 @@
 		<url>/images/microblog/icon.jpg</url>
 		<link>https://nenrikido.neocities.org</link>
 	</image>
-
+	<item>
+		<guid>31</guid>
+		<title>started stress coding a pride page theme and now suddenly it's 5AM and the sun is rising?! love loses. AGAIN.</title>
+		<pubDate>Thu, 08 Jun 2023 11:10:43 +0000</pubDate>
+		<link>/microblog#31</link>
+		<description> </description>
+	</item>
 	<item>
 		<guid>30</guid>
 		<title>still haven't figured out how to use git from the command line but i did just get an ounce of golden goat for $25. i heart modernity!</title>

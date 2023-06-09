@@ -20,11 +20,39 @@ This is a repository of pre-made layouts and code snippets that are free for you
 
 - Page themes are platform agnostic layouts and can be used anywhere that supports (modern) HTML/CSS. They use CSS variables to manage user settings so you can swap out colors, images, fonts, etc. These variables are located in the :root element. If you'd like to know more about CSS variables, you can read [this guide](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties). 
 - Page themes are meant to look identical to previews out-of-the-box, so they come shipped with web URL images rather than local links. I encourage you to link your content locally.
+- Page themes are stored in one messy file for ease of use, but it's not best practice. If you plan to use any themes across multiple pages, please separate the CSS and JS into their own files.
+- Themes are tested on Mozilla and Chrome on a variety of displays, but there's no way I'll catch all bugs. If anything is weird, let me know.
 - For instructions on installing a Tumblr theme, you can read their [official documentation](https://help.tumblr.com/hc/en-us/articles/230775027-Customizing-Your-Theme#h_01GWSSBWHMQT08V15J7ZJTMDJX).
 - Attribution is nice, but not required. 
 
 Feel free to email me ([nenrikido@pm.me](mailto:nenrikido@pm.me)) with any questions/comments or leave a comment here.
 {{< comments >}}
+{{< /card-mll >}}
+
+
+{{< card-mll filter="page themes" >}}
+
+{{< preview >}}
+{{< lightbox-image link="/images/code/page-themes/rainbow.gif" lightbox-id="rainbow" img-src="/images/code/page-themes/thumb/rainbow.gif" loading="lazy" width="375" height="192" alt="A theme preview. A retro style background with boxes overlaid. There is an 8 striped flag in the corner. As the user clicks each stripe, the color scheme of the box shadows, border, and text changes to match." >}}
+
+{{< lightbox-image link="/images/code/page-themes/rainbow-1.png" lightbox-id="rainbow" img-src="/images/code/page-themes/thumb/rainbow-1.png" loading="lazy" width="94" height="200" alt="A mobile preview of the theme." >}}
+{{< /preview >}}
+ 
+{{< box-small  title="Rainbow Page Theme" >}}
+[live preview](preview/rainbow) 
+> made a theme for pride month based on the original 70s pride flag! you can click on stripes of the flag to swap color schemes.
+
+features:
+*   customizable background & sidebar images
+*   pride flag theme toggler (uses javascript)
+*   animated rainbow title
+*   lightly styled audio player
+*   responsive image class
+*   ...and other cool stuff!
+
+{{< /box-small >}}
+
+{{< gist js044 213429dbb42e8c852d6747c24c6097ac >}}    
 {{< /card-mll >}}
 
 {{< card-mll filter="page themes" >}}
@@ -42,7 +70,7 @@ Feel free to email me ([nenrikido@pm.me](mailto:nenrikido@pm.me)) with any quest
 {{< /preview >}}
 
 {{< box-small  title="Sakura Page Theme" >}}
-[live preview](preview/sakura) 
+[live preview](preview/sakura) / [tumblr post](https://negg.tumblr.com/post/717605261468123136/sakura-page-theme)
 > re-coded an unreleased page theme an anon asked me to release like 5 years ago ([example](https://tomba2.tumblr.com/four) of the original). realized i actually hated a lot of how it was originally handled and now...it is ready to be unfurled!
 
 features:
@@ -70,7 +98,7 @@ features:
 {{< lightbox-image link="/images/code/page-themes/sunflower-4.png" lightbox-id="sunflower" img-src="/images/code/page-themes/thumb/sunflower-4.png" loading="lazy" width="94" height="200" alt="A mobile preview of the theme." >}}
 {{< /preview >}}
 {{< box-small  title="Sunflower Page Theme" >}}
-[live preview](preview/sunflower) 
+[live preview](preview/sunflower) / [tumblr post](https://negg.tumblr.com/post/716650921639198720/redesigned-recoded-the-sunflower-about-page)
 > completely re-coded and re-vamped a page theme from 2018 i made for tumblr. (original is [here](https://negg.tumblr.com/post/712181004039766016/tomba2-sunflower-about-page).) added a few features, made it behave on mobile, and it is now published for use anywhere.
 
 features:
