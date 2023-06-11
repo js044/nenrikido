@@ -13,6 +13,70 @@
     <link rel="stylesheet" type="text/css" href="../css/lightbox.css">
     <link rel="stylesheet" type="text/css" href="../css/themes.css">
     <link rel="stylesheet" type="text/css" href="../css/styles.css"><div id="preloader"></div><body><a href="#" id="btn-back-to-top"><span></span><i class="fa-solid fa-circle-chevron-up"></i></a>
+<style>
+     
+ul.nestedmenu {
+	margin-left: 0;
+}
+
+ul.nestedmenu li {
+	list-style: none;
+}
+
+ul.nestedmenu li>a::before {
+	content: "•";
+	display: inline-block;
+	margin-right: 0.25rem;
+	width: 0.5rem;
+	text-align: center;
+}
+
+ul.nestedmenu li.haschildren>a::before {
+	content: "›";
+}
+
+ul.nestedmenu li.active>ul {
+	display: block;
+}
+
+ul.nestedmenu li.active>a {
+	background-color: var(--secondary_muted);
+	color: var(--primary);
+}
+</style>
+
+<nav id="navAlt">
+    <div class="navWrapper"> <a class="navLink" href="../sitemap"><div id="links"></div>Sitemap</a>
+        <p><i class="fa-regular fa-circle-down"></i></p> 
+        A list of every content page on the site.
+    </div>
+        <div id='musicplayer'>
+            <div id='musicpixel'> <img src="../images/pixels/music.gif" style="max-width: 40px;">
+                <div class='overlay'>
+                    <div class='playpause'><i class="fas fa-play"></i></div>
+                </div>
+            </div>
+            <div id='musictitle'> <span class='marquee'>summer rain</span> </div>
+        </div> <audio id='musicsrc' loop src='https://dl.dropbox.com/s/seanb1ogmdoezmr/cricket-rain.mp3'></audio>
+
+
+<script>
+    document.querySelector('.playpause').addEventListener('click', playpause);
+    
+    function playpause() {
+      if (document.querySelector('.playpause').innerHTML == '<i class="fas fa-play"></i>') {
+        document.querySelector('#musicsrc').play();
+        document.querySelector('.playpause').innerHTML = '<i class="fas fa-pause"></i>';
+      } else {
+        document.querySelector('#musicsrc').pause();
+        document.querySelector('.playpause').innerHTML = '<i class="fas fa-play"></i>';
+      }
+    }
+</script>
+<form class="search"> <input type="text" class="searchTerm" placeholder="Search..."> <button aria-label="submit" type="submit" class="searchButton"> <i class="fa fa-search"></i> </button> </form>
+
+</nav>
+
 <main>
     <article>
         <div class="grid-wrapper-page">
@@ -28,10 +92,17 @@
  
 <ul class="nestedmenu">
 
-    <li class=" ">
+    <li class=" haschildren">
         <a href="../about/">About</a>
         <ul>
             
+    <li class=" ">
+        <a href="../about/styleguide/">Style Guide</a>
+        <ul>
+            
+        </ul>
+    </li>
+
         </ul>
     </li>
 

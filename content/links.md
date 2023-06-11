@@ -65,7 +65,8 @@ draft: false
 {{< buttons img-src="/images/buttons/mn1ca.gif" link="https://mn1ca.neocities.org/">}}    
 {{< buttons img-src="/images/buttons/Eggdev.gif" link="https://eggdev.neocities.org/">}}    
 {{< buttons img-src="/images/buttons/turd.png" link="https://turd.neocities.org/">}}      
-{{< buttons img-src="/images/buttons/zenmai.gif" link="https://zenmai.neocities.org/">}}      
+{{< buttons img-src="/images/buttons/zenmai.gif" link="https://zenmai.neocities.org/">}}   
+{{< buttons img-src="/images/buttons/kyu.gif" link="https://kyu.neocities.org/">}}      
 {{< buttons img-src="/images/buttons/sunmiflowers.png" link="https://sunmiflowers.neocities.org/">}}     
 {{< buttons img-src="/images/buttons/ita.gif" link="https://ita.toys/">}}    
 {{< buttons img-src="/images/buttons/aoi.gif" link="https://a0i.neocities.org/">}}    
@@ -117,6 +118,7 @@ draft: false
 {{< buttons img-src="/images/buttons/link_malta.gif" link="https://daikonet.neocities.org/" >}}
 {{< buttons img-src="/images/buttons/dimden.gif" link="https://dimden.dev/">}}
 {{< buttons img-src="/images/buttons/cpnk.gif" link="https://seapunk.xyz/">}}  
+{{< buttons img-src="/images/buttons/cloverbellbanner.gif" link="https://cloverbell.neocities.org/" >}}  
 {{< buttons img-src="/images/buttons/nostalgic.gif" link="https://nostalgic.neocities.org/">}} 
 {{< buttons img-src="/images/buttons/doghouse1.gif" link="https://dog-house.neocities.org/">}}
 {{< buttons img-src="/images/buttons/sadgrlonline.gif" link="https://sadgrl.online/">}} 
@@ -152,7 +154,6 @@ draft: false
 {{< buttons img-src="/images/buttons/nokocchi.gif" link="https://nokocchi.com/">}} 
 {{< buttons img-src="/images/buttons/wiggle.gif" link="https://crypticcryptid.neocities.org/" >}} 
 {{< buttons img-src="/images/buttons/scarecrowkid.gif" link="https://scarecrowkid.net/">}} 
-{{< buttons img-src="/images/buttons/cloverbellbanner.gif" link="https://cloverbell.neocities.org/" >}}  
 {{< buttons img-src="/images/buttons/fwoofies.gif" link="https://fwoofies.neocities.org/">}}  
 {{< buttons img-src="/images/buttons/middlepot.png" link="https://middlepot.com/">}} 
 {{< /col-sm >}}

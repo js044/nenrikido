@@ -1,6 +1,7 @@
 ---
 title: "About"
 draft: false
+layout: single
 ---
 
 {{< nav title="ABOUT" id="about" >}} 

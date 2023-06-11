@@ -1,30 +1,30 @@
 :root {
-    --white: #fceaff;
-    --darkpurple: #3b084c;
-    --darkestpurple: #1b052391;
-    --purple: #b76fffcd;
-    --lightblue: #bbbdffcd;
-    --blue: #8f93ffcd;
-    --brightpurple: #e0acff;
-    --bg: #101026;
+  --white: #fceaff;
+  --darkpurple: #3b084c;
+  --darkestpurple: #1b052391;
+  --purple: #b76fffcd;
+  --lightblue: #bbbdffcd;
+  --blue: #8f93ffcd;
+  --brightpurple: #e0acff;
+  --bg: #101026;
 }
 
 body {
   font-family: 'PT Sans', sans-serif;
   margin: 0;
-	background-color: var(--bg);
-	color: var(--white);
+  background-color: var(--bg);
+  color: var(--white);
 }
 
 #microblog {
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
-max-width: 30em;
-margin-left: auto;
-margin-right: auto;
-filter: drop-shadow(0 0 85px #8000ff79);
-padding-bottom: 2em;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 30em;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow(0 0 85px #8000ff79);
+  padding-bottom: 2em;
 }
 
 #header {
@@ -38,13 +38,13 @@ padding-bottom: 2em;
 }
 
 #header .profilePic {
-  height: 100px; 
-  width: 100px; 
+  height: 100px;
+  width: 100px;
   border-radius: 50px;
 }
 
 #header #name {
-  color:  var(--white);
+  color: var(--white);
   text-shadow: 0px 0px 20px var(--brightpurple);
 }
 
@@ -55,7 +55,7 @@ padding-bottom: 2em;
 }
 
 #bio {
-  color:  var(--white);
+  color: var(--white);
   text-shadow: 0px 0px 20px var(--brightpurple);
 }
 
@@ -117,7 +117,7 @@ padding-bottom: 2em;
 }
 
 .authorDate .username {
-    color: var(--purple);
+  color: var(--purple);
 }
 
 .postDate {
@@ -129,7 +129,8 @@ padding-bottom: 2em;
   color: var(--lightblue);
 }
 
-.postText, .postContent p {
+.postText,
+.postContent p {
   display: block;
   margin-top: 5px;
   margin-bottom: 0;
@@ -137,11 +138,11 @@ padding-bottom: 2em;
 }
 
 .postText a {
-    color: var(--blue);
+  color: var(--blue);
 }
 
 .postText a:hover {
-    color: var(--lightblue);
+  color: var(--lightblue);
 }
 
 .postImage {
@@ -160,42 +161,44 @@ padding-bottom: 2em;
   user-select: none;
 }
 
-.reblogCount, .likeCount {
+.reblogCount,
+.likeCount {
   margin-left: 4px;
 }
+
 .likeButton {
   margin-left: 7px;
 }
 
 #particles-js canvas {
-	vertical-align: bottom;
-	-webkit-transform: scale(1);
-	-ms-transform: scale(1);
-	transform: scale(1);
-	opacity: 1;
-	-webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
-	transition: opacity .8s ease, transform 1.4s ease;
+  vertical-align: bottom;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+  transition: opacity .8s ease, transform 1.4s ease;
 }
 
 #particles-js {
-	width: 100%;
-	height: 100%;
-	position: fixed;
-	z-index: -10;
-	top: 0;
-	left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -10;
+  top: 0;
+  left: 0;
 }
 
 #preloader {
-	align-items: center;
-	width: 100%;
-	display: flex;
-	position: fixed;
-	height: 100vh;
-	justify-content: center;
-	left: 0;
-	top: 0;
-	background: var(--bg) url("../images/icons/three-dots.svg") no-repeat center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  background: var(--bg) url("../images/icons/three-dots.svg") no-repeat center;
   transition: opacity 1s;
-	z-index: 9999;
-  }
+  z-index: 9999;
+}
