@@ -7,8 +7,8 @@
 
 // Config
 var DisplayLatestPosts = 0;
-var RSSLink = "microblog.xml";
-var MicroblogDivID = "";
+var RSSLink = "/microblog.xml";
+var MicroblogDivID = "microblog";
 var DisplaySubscribe = 1;
 var SubscribeText = "Follow";
 var DisplayLikes = 1;
@@ -288,4 +288,3 @@ function unreblogPost(guid) {
   post.getElementsByClassName("reblogButton")[0].innerHTML = NoReblogSymbol;
   post.getElementsByClassName("reblogCount")[0].innerHTML = "0";
 }
-

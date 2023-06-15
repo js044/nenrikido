@@ -638,7 +638,6 @@ nav#navAlt p {
 }
 
 button {
-	font-size: 1em;
 	transition: all .3s ease-in-out;
 	color: var(--secondary);
 	background-color: var(--tertiary);
