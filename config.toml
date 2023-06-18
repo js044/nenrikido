@@ -17,6 +17,9 @@ sectionPagesMenu = "main"
 [markup.goldmark.renderer]
 unsafe = true
 
+[permalinks]
+blog = "/blog/post/:filename/"
+
 [[menu.main]]
 name = "Home"
 url = "/"
