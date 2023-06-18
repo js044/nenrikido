@@ -1,5 +1,5 @@
 ---
-title: "Garage Sale"
+title: "Yard Sale"
 date: 2023-06-17T21:24:01-06:00
 tags: personal
 summary: A diary entry. Featuring Hot Topic fashion and a sandwich.
