@@ -4,19 +4,20 @@ draft: false
 ---
 
 {{< card-medium title="#WELCOME" >}} 
-<img src="/images/pixels/strovi_pixel.gif" alt="A blue pixel catgirl blinking and kicking her feet gently." style="float: right; max-width: 70px;">
-this is my personal site and a place for me to experiment with front-end code. it is a work in progress, so please excuse anything unfinished.
+
+<img src="/images/pixels/strovi_pixel.gif" alt="A blue pixel catgirl blinking and kicking her feet gently." style="float: right; max-width: 80px;">
+This is my personal site and a place for me to share my work. It is a work in progress, so please excuse anything unfinished.
 <p align="center"><i class="fa-solid fa-rss"></i> <a href="/index.xml">RSS feed</a> &nbsp <i class="fa-solid fa-mobile-screen-button"></i> responsive </p>
 {{< /card-medium >}}
 
 {{< card-medium title="#THEMES"  >}} 
-click on an emoji to toggle a theme.
+Pick an emoji. You may need to tap it twice for the grid to refresh correctly.
 {{< theme-switcher >}}
 
 {{< /card-medium >}}
 
 {{< card-medium title="#DRAG N DROP" >}} 
-try dragging a window by its header! 
+Try dragging a window by its header! 
 {{< /card-medium >}}
 
 {{< card-medium title="#MUSIC" >}} 
@@ -44,7 +45,7 @@ try dragging a window by its header!
 
 {{< card-medium title="#LUNAR" >}} 
 <!-- © wdisseny -->
-<div id="contain_moon" style="text-align:center;padding-top:5px;padding-bottom:5px;margin:10px;width:auto;height:17em;"><div style="font-weight:bold">the moon today</div><div style="margin-bottom:3em;padding:2em;filter:drop-shadow(0 0 30px hsl(220,100%,15%))"></div><div>.</div><div style="font-size:small">.</div></div>
+<div id="contain_moon" style="text-align:center;padding-top:5px;padding-bottom:5px;margin:10px;width:auto;height:17em;"><div style="font-weight:bold">the moon today</div><div style="margin-bottom:3em;padding:2em;filter:drop-shadow(0 0 20px hsl(220,100%,15%))"></div><div>.</div><div style="font-size:small">.</div></div>
 <script>(function(){var d=new Date().getDate();var m=document.querySelectorAll("#contain_moon div");var a=new XMLHttpRequest();var url="https://www.icalendar37.net/lunar/api/?lang=en&month="+(new Date().getMonth()+1)+"&year="+(new Date().getFullYear())+"&size=100&lightColor=rgb(255,249,253)&shadeColor=rgb(56,56,141)&LDZ="+new Date(new Date().getFullYear(),new Date().getMonth(),1)/1000+"";m[1].style.height="100px";a.onreadystatechange=function(){if(a.readyState==4&&a.status==200){var b=JSON.parse(a.responseText);m[1].innerHTML=b.phase[d].svg;if(typeof moon_widget_loaded=="function")moon_widget_loaded(b);m[2].innerHTML=b.phase[d].npWidget;m[3].innerHTML="next full moon<br>"+b.nextFullMoon}};a.open("GET",url,true);a.send()})()</script>
 {{< /card-medium >}}
 
@@ -59,9 +60,10 @@ Read the rest of the blog [here](/blog).
 
 {{< card-medium title="#UPDATES" >}} 
 {{< scrollbox >}}
+* **6-17-23**: changed up a lot of CSS (ctrl + f5 if anything is weird), tweaked a few scripts, made a new blog post, joined the surf club webring & added the widget, separated fanlistings, etc.
 * **6-10-23**: made a [style guide](/about/styleguide) after i saw [10kph](https://10kph.neocities.org/) do it. also added a few buttons to the [links](/links) page.
 * **6-09-23**: happy pride! made a [theme](/code/preview/rainbow) to celebrate. updated a few pages and messed w/ some site css also.
-* **5-28-23**: no more bootstrap! new [sitemap](/sitemap)! new start menu! new [blog](/blog) post! ctrl f5 if anything is weird.
+* **5-28-23**: no more bootstrap! new [sitemap](/sitemap)! new start menu! new [blog](/blog) post!
 * **5-21-23**: new [blog](/blog) post & now there's a microblog feed on the index page. thank you hors 
 * **5-6-23**: lots & lots of changes, some big and some small. there's also a new page theme up! and now there are theme previews!
 * **5-1-23**: new page theme is up on the [code](/code) page! i think it's cute.
@@ -91,8 +93,8 @@ Read the rest of the blog [here](/blog).
 {{< /card-medium >}}
 
 {{< card-medium title="#JELLY CAM" >}} 
-<div class="youtube-player" data-id="rJ6_1-E_CLU" title="Youtube embed of Monterey Bay Jelly Cam"></div>
-{{< /card-medium >}}
+<div class="youtube-player" data-id="OMlf71t2oV0" title="Youtube embed of Monterey Bay Jelly Cam"></div>
+{{< /card-medium >}} 
 
 {{< card-medium title="#DREAM" >}} 
 <p align="center"><img src="/images/pixels/Madotsuki_Chair_Spin.gif" style="max-width: 100px;" loading="lazy" width="100" height="100" alt="Madotsuki spinning in her chair."></p>
@@ -102,19 +104,17 @@ Read the rest of the blog [here](/blog).
 
 {{< card-medium title="#TO-DO" >}} 
 {{< scrollbox >}}
-*   ~~add sitemap~~ ![](images/pixels/new.gif)
+*   ~~force grid refresh when theme is switched~~ ![](images/pixels/new.gif)
 *   ~~re-design start menu~~ ![](images/pixels/new.gif)
-*   ~~add microblog feed to index~~ ![](images/pixels/new.gif)
 *   ~~remove bootstrap~~ ![](images/pixels/new.gif)
 *   open commissions
-*   fix firefox microblog bug
-*   make OC page (!!!)
+*   fix firefox microblog index bug
+*   make OC pages
 *   fix search script
+*   RSS updates
 *   fix theme flickering
 *   add library genre drop-down
 *   add microblog pagination
-*   create zonelets theme
-*   move scrollbar behind footer
 *   new shrines
 {{< /scrollbox >}}
 {{< /card-medium >}}
@@ -139,15 +139,3 @@ Read the rest of the blog [here](/blog).
 {{< /col-sm >}}
 {{< /scrollbox >}}
 {{< /card-medium >}}
-
-{{< card-medium title="#CONTACT" >}} 
-<img src="/images/pixels/gotmail.gif" loading="lazy" alt="A pixel of two computers sending an email between them." style="float: right; margin-top: 15px; ">
-
-{{< icons/email >}} [nenrikido@pm.me](mailto:nenrikido@pm.me)  
-{{< icons/tumblr >}} [nenrikido-art](https://nenrikido-art.tumblr.com/)  
-{{< icons/twitter >}} [@nenrikido](https://twitter.com/nenrikido)  
-
-{{< /card-medium >}}
-
-
-

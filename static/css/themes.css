@@ -4,9 +4,9 @@
   --secondary: #3d03fc;
   --secondary_muted: #3d03fca0;
   --tertiary: #f3f3f3;
-  --body-font: "National Park", "Helvetica";
+  --body-font: "National Park", "Arial";
   --body-font-size: 0.9rem;
-  --header-font: "Reglisse Fill", "Arial Black";
+  --header-font: "Reglisse Fill", "Georgia";
   --homeLink: url("../images/icons/nav/pink/home.png");
   --aboutLink: url("../images/icons/nav/pink/about.png");
   --galleryLink: url("../images/icons/nav/pink/gallery.png");
@@ -16,7 +16,7 @@
   --linksLink: url("../images/icons/nav/pink/links.png");
   --microblogLink: url("../images/icons/nav/pink/microblog.png");
   --libraryLink: url("../images/icons/nav/pink/library.png");
-  --shrinesLink: url("../images/icons/nav/pink/shrines.png");
+  --nexusLink: url("../images/icons/nav/pink/nexus.png");
 }
 
 :root.blue {
@@ -24,7 +24,7 @@
   --secondary: #ff58a0;
   --secondary_muted: #ff58a0ac;
   --tertiary: #f8edfb;
-  --body-font: "VAGRounded", "Helvetica";
+  --body-font: "VAGRounded", "Arial";
   --body-font-size: 0.95rem;
   --header-font: "PORKYS", "Arial Black";
   --homeLink: url("../images/icons/nav/blue/home.png");
@@ -36,7 +36,7 @@
   --linksLink: url("../images/icons/nav/blue/links.png");
   --microblogLink: url("../images/icons/nav/blue/microblog.png");
   --libraryLink: url("../images/icons/nav/blue/library.png");
-  --shrinesLink: url("../images/icons/nav/blue/shrines.png");
+  --nexusLink: url("../images/icons/nav/blue/nexus.png");
 }
 
 :root.yellow {
@@ -44,9 +44,9 @@
   --secondary: #fc6203;
   --secondary_muted: #fc62039c;
   --tertiary: #fcf6ef;
-  --body-font: "Marxiana Grotesque", "Helvetica";
+  --body-font: "Marxiana Grotesque", "Arial";
   --body-font-size: 1rem;
-  --header-font: "Vogue", "Arial Black";
+  --header-font: "Vogue", "Arial";
   --homeLink: url("../images/icons/nav/yellow/home.png");
   --aboutLink: url("../images/icons/nav/yellow/about.png");
   --galleryLink: url("../images/icons/nav/yellow/gallery.png");
@@ -56,7 +56,7 @@
   --linksLink: url("../images/icons/nav/yellow/links.png");
   --microblogLink: url("../images/icons/nav/yellow/microblog.png");
   --libraryLink: url("../images/icons/nav/yellow/library.png");
-  --shrinesLink: url("../images/icons/nav/yellow/shrines.png");
+  --nexusLink: url("../images/icons/nav/yellow/nexus.png");
 }
 
 :root.black {
@@ -64,9 +64,9 @@
   --secondary: #ac35e8;
   --secondary_muted: #b638ffbc;
   --tertiary: #ffffffea;
-  --body-font: "VT323", "Helvetica";
+  --body-font: "VT323", "Arial";
   --body-font-size: 1rem;
-  --header-font: "RPGSystem", "Arial Black";
+  --header-font: "RPGSystem", "Courier";
   --homeLink: url("../images/icons/nav/black/home.png");
   --aboutLink: url("../images/icons/nav/black/about.png");
   --galleryLink: url("../images/icons/nav/black/gallery.png");
@@ -76,57 +76,62 @@
   --linksLink: url("../images/icons/nav/black/links.png");
   --microblogLink: url("../images/icons/nav/black/microblog.png");
   --libraryLink: url("../images/icons/nav/black/library.png");
-  --shrinesLink: url("../images/icons/nav/black/shrines.png");
+  --nexusLink: url("../images/icons/nav/black/nexus.png");
 }
-
-/* Fonts */
 
 @font-face {
   font-family: "Reglisse Fill";
   src: url(../fonts/Reglisse_Fill.otf);
+  font-display: fallback;
 }
-
 
 @font-face {
   font-family: "National Park";
   src: url(../fonts/NationalPark-Medium.otf);
-
+  font-display: fallback;
 }
 
 @font-face {
   font-family: "National Park";
   src: url(../fonts/NationalPark-Bold.otf);
   font-weight: bold;
+  font-display: fallback;
 }
 
 @font-face {
   font-family: "PORKYS";
   src: url(../fonts/PORKH.ttf);
+  font-display: fallback;
 }
 
 @font-face {
   font-family: "VAGRounded";
   src: url(../fonts/VAGRounded-Thin.otf);
+  font-display: fallback;
 }
 
 @font-face {
   font-family: "Marxiana Grotesque";
   src: url(../fonts/Marxiana%20Grotesque.ttf);
+  font-display: fallback;
 }
 
 @font-face {
   font-family: "Vogue";
   src: url(../fonts/Vogue.ttf);
+  font-display: fallback;
 }
 
 @font-face {
   font-family: "RPGSystem";
   src: url(../fonts/RPGSystem.ttf);
+  font-display: fallback;
 }
 
 @font-face {
   font-family: "VT323";
   src: url(../fonts/VT323.ttf);
+  font-display: fallback;
 }
 
 .theme-button {

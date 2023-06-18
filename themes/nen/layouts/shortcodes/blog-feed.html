@@ -1,3 +1,5 @@
-{{- range ( where site.RegularPages "Section" "blog" | first 4 ) }} 
-<p>✦{{.Date.Format "Jan 02"}}: <strong><a href="{{.Permalink}}"> {{.Title | truncate 40 }} </a></strong> - {{.Summary | truncate 100 }}</p>
+{{- range ( where site.RegularPages "Section" "blog" | first 3 ) }} 
+<ul>
+    <li>{{.Date.Format "Jan 02"}}: <strong><a href="{{.Permalink}}"> {{.Title | truncate 40 }} </a></strong> - {{.Summary | truncate 100 }}</li>
+</ul>
 {{ end }}

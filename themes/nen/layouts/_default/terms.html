@@ -1,13 +1,12 @@
 {{ define "main" }}
-
 <main>
     <article>
-        <div class="row justify-content-center">
-            <div class="grid"> 
+        <div class="wrapper">
+            <div class="grid">
                     <div class="item mediumlarge">
                         <div class="cards">
                             {{- partial "card-header.html" . -}}
-                        <div class="cardsBody">
+                        <div class="cardsBody"> 
                             <h2>#{{.Title}}</h2>
                             {{- partial "tags.html" . -}}
                         </div>

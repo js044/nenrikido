@@ -1,5 +1,5 @@
 window.addEventListener('load', function() {
-	grid.refreshItems().layout()
+	grid.refreshItems().layout();
 // Buggy on Mozilla
 grid.layout(function (items, hasLayoutChanged) {});
 });

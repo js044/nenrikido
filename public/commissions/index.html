@@ -9,10 +9,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='shortcut icon' type='image/x-icon' href='../images/icons/favicon-32x32.png' />
 
+    <link rel="stylesheet" type="text/css" href="../css/themes.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> 
     <link rel="stylesheet" type="text/css" href="../css/lightbox.css">
-    <link rel="stylesheet" type="text/css" href="../css/themes.css">
-    <link rel="stylesheet" type="text/css" href="../css/styles.css"><div id="preloader"></div><body><a href="#" id="btn-back-to-top"><span></span><i class="fa-solid fa-circle-chevron-up"></i></a><nav id="navAlt">
+    
+    <div id="preloader"></div><body>
+    <div class="wrapper"> 
+    <nav id="navAlt">
  <div class="navWrapper">  
     <a class="navLink" href="#"><div id="commissions"> </div> COMMISSIONS</a>
     <p> <i class="fa-regular fa-circle-down"></i></p>
@@ -48,9 +52,8 @@
 
 </nav>
 
-<div class="grid-wrapper-page"> 
-    <div class="grid"> 
-        <div class="item large ">
+<div class="grid"> 
+ <div class="item large ">
     <div class="cards">
         <div class="cardsHeader">
     <div class="cardsControls">
@@ -109,56 +112,59 @@
     </div>
 </div>
 
-    </div>
 </div>
-<footer id="footer">
-  <ul>
-      <li> <button id="footer-button">START</button> </li>
-      <li>
-          <div id="clock" class="clock" onload="showTime()"></div>
-      </li>
-  </ul>
-</footer> 
-<div id="start-menu" class="modal">
-  
-  <div class="modal-content">
-      <div class="modal-header">
-          <h1>Start Menu</h1> <span class="close">&times;</span>
-      </div>
-      <div class="modal-body">
-          <div class="modal-columns">
-              <div class="modal-bio">
-                  <p><img class="modal-bio img" src="../images/icons/sh.jpg"></p>
-                  <h6>Rio's desktop</h6>
-                  <p align="center"><i class="fa-regular fa-map"></i> <a href="../sitemap">Sitemap</a></p>
 
-               <ul style="font-style: italic;"> 
-                <li>OS: NENRIKIDO</li> 
-                <li>Version: 1.4</li> 
-                <li>Host: Neocities</li> 
-                <li>Processor: Hugo</li> 
-                <li>Size: 88.18 MB</li> 
-                <li>Since: 03-13-23</li> 
-               </ul>
-              </div>
-              <div class="modal-list">  <a class="modal-menu " href="../" >  <span>Home </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../about/" >  <span>About </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../gallery/" >  <span>Gallery </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../commissions/" >  <span>Commissions </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../code/" >  <span>Code </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../blog/" >  <span>Blog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../links/" >  <span>Links </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../microblog/" >  <span>Microblog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../library/" >  <span>Library </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../shrines/" >  <span>Shrines </span> <i class="fa-solid fa-chevron-right"></i></a>  </div>
-          </div>
-      </div>
-      <div class="modal-footer"><div class="row centered">
-    <button id="pink" title="pink theme" class="theme-button" onclick="handleThemeButtonClick('pink', this)" >💗</button>
+ 
+    </div><footer id="footer">
+    <ul>
+        <li> <button id="footer-button">START</button> </li>
+        <li> <a href="#" id="btn-back-to-top" onclick="call()"><i class="fa-solid fa-circle-chevron-up"></i></a></li>
+        <li><div id="clock" class="clock" onload="showTime()"></div></li>
+    </ul>
+</footer>
+
+<div id="start-menu" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h1>Start Menu</h1> <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+            
+                <div class="modal-bio">
+                    <img class="modal-bio img" src="../images/icons/sh.jpg">
+                    <h6>Rio's desktop</h6>
+                    <p align="center"><i class="fa-regular fa-map"></i> <a href="../sitemap">Sitemap</a></p>
+
+                    <ul style="font-style: italic;">
+                        <li>OS: NENRIKIDO</li>
+                        <li>Version: 1.5</li>
+                        <li>Host: Neocities</li>
+                        <li>Processor: Hugo</li>
+                        <li>Since: 03-13-23</li>
+                    </ul>
+                </div>
+                <div class="modal-list">  <a class="modal-menu " href="../">  <span>Home </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../about/">  <span>About </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../gallery/">  <span>Gallery </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../commissions/">  <span>Commissions </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../code/">  <span>Code </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../blog/">  <span>Blog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../links/">  <span>Links </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../microblog/">  <span>Microblog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../library/">  <span>Library </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../nexus/">  <span>Nexus </span> <i class="fa-solid fa-chevron-right"></i></a>  </div>
+            
+        </div>
+        <div class="modal-footer"><div class="row centered">
+    <button id="pink" title="pink theme" class="theme-button" onclick="handleThemeButtonClick('pink', this)">💗</button>
     <button id="blue" title="blue theme" class="theme-button" onclick="handleThemeButtonClick('blue', this)" >🫧</button> 
     <button id="yellow" title="yellow theme" class="theme-button" onclick="handleThemeButtonClick('yellow', this)" >🪐</button> 
     <button id="black" title="black theme" class="theme-button" onclick="handleThemeButtonClick('black', this)" >💤</button>
 </div></div>
-  </div>
-
-  <script type="text/javascript" src="../js/clock.js"></script>
-  <script defer type="text/javascript" src="../js/start.js"></script><script src="../js/theme.js" ></script>
+    </div>
+<script>
+function call() {
+    var body = $("html, body");
+    body.stop().animate({scrollTop:0}, 500, 'swing', function() {
+    });
+}</script>
+    <script type="text/javascript" src="../js/clock.js"></script>
+    <script defer type="text/javascript" src="../js/start.js"></script><script src="../js/theme.js" ></script>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
 <script defer src="../js/muuri-init.js"></script>
 <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
-<script defer src="../js/back-to-top.js" ></script>
 <script defer src="../js/lightbox.js" ></script>
 <script defer src="../js/yt_lite.js" ></script>
 <script defer src="https://unpkg.com/lunr/lunr.js"></script>
@@ -174,8 +180,7 @@
     (s.opacity -= 0.1) < 0 ? (s.display = "none") : setTimeout(fade, 40);
   })();
   </script>
-<script>
-  twemoji.parse(document.body)
-</script>
-</body>
+  <script>
+    twemoji.parse(document.body)
+  </script></body>
 </html>

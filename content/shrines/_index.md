@@ -1,4 +1,0 @@
----
-title: "Shrines"
-draft: false
----

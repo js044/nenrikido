@@ -1,0 +1,29 @@
+{{ define "main" }}
+<div class="wrapper">
+
+    <nav id="navAlt">
+        <div class="navWrapper"> <a class="navLink" href="/nexus">
+                <div id="nexus"></div>Nexus
+            </a>
+            <p><i class="fa-regular fa-circle-down"></i></p>
+            <p>New worlds to explore...</p>
+        </div>
+        {{- partial "mini-music.html" . -}}
+        {{- partial "search-bar.html" . -}}
+    </nav>
+    
+    <div class="grid"> {{.Content}} {{ range .Pages }}
+        <div class="item medium">
+            <div class="cards">
+                {{- partial "card-header.html" . -}}
+                <div class="cardsBody">
+                    <img class="img-fluid" src="{{ .Param `img` }}" alt="{{ .Param `imgalt` }}">
+                    <h2 align="center"><a href="{{.Permalink}}"> {{.Title}} </a> </h2>
+                    <p align="center"> {{.Date.Format "Jan 02, 2006"}} </p>
+                </div>
+            </div>
+        </div> {{ end }}
+    </div>
+</div>
+
+{{ end }}

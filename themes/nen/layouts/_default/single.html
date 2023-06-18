@@ -4,8 +4,9 @@
     {{- partial "preloader.html" . -}}
     <body> 
     {{- block "main" . }}{{- end }}
-    {{- partial "back-to-top.html" . -}} 
+    <div class="wrapper"> 
     {{.Content}} 
+    </div>
     {{- partial "footer.html" . -}}
     {{- partial "scripts.html" . -}} 
 </body>

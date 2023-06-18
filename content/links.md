@@ -6,6 +6,7 @@ draft: false
 {{< nav title="LINKS" id="links" >}}  
 {{< icons/hashtag >}} [find me](#find-me)  
 {{< icons/hashtag >}} [webrings](#webrings)  
+{{< icons/hashtag >}} [fanlistings](#fanlistings)  
 {{< icons/hashtag >}} [button wall](#button-wall)   
 {{< icons/hashtag >}} [resources](#resources)  
 {{< /nav >}}
@@ -16,7 +17,7 @@ draft: false
 {{< card-large title="#FIND ME" id="find-me">}}
 {{< box-small >}}
 
-<img src="/images/pixels/13mo_nekjiru3.gif" alt="Two identical pixel cats smiling at each other and curling their paws." style="float: right; width: 200px;">
+<img src="/images/pixels/13mo_nekjiru3.gif" alt="Two identical pixel cats smiling at each other and curling their paws." style="float: right; width: 220px;">
 
 {{< icons/email >}} [nenrikido@pm.me](mailto:@nenrikido@pm.me)  
 {{< icons/mug >}} [nenrikido_](https://ko-fi.com/nenrikido_)  
@@ -28,7 +29,7 @@ draft: false
 {{< /box-small >}}
 {{< /card-large >}}
 
-{{< card-large title="#WEBRINGS + WEBLISTINGS" id="webrings">}}
+{{< card-large title="#WEBRINGS" id="webrings">}}
 {{< box-small >}}
 {{< large-scrollbox >}}
 {{< col >}}
@@ -43,11 +44,20 @@ draft: false
 
 <div id='safont'><script src="https://xandra.cc/safonts/webring.js"></script><ring-900 site="https://nenrikido.neocities.org/"></ring-900></div>
 
-<a href="https://fujofans.scumsuck.com/"><img src="/images/buttons/button_fujofans_5.png" width="88" height="31"> </a>
-
-<a href="http://frshery.info/onepunch/"><img src="/images/buttons/opm.gif" width="75" height="50"> </a>
+<div><object id="melonland-surf-club" data="https://melonland.net/surf-badge.svg?fill=#3d03fc" type="image/svg+xml" style="width: 100px; height: 100px;"></object></div> 
 
 {{< /col >}}
+{{< /large-scrollbox >}}
+{{< /box-small >}}
+{{< /card-large >}}
+
+{{< card-large title="#FANLISTINGS" id="fanlistings">}}
+{{< box-small >}}
+{{< large-scrollbox >}}
+{{< col-sm >}}
+{{< fanlistings img-src="/images/buttons/fujofans.png" link="https://fujofans.scumsuck.com/">}} 
+{{< fanlistings img-src="/images/buttons/opm.gif" link="http://frshery.info/onepunch/">}} 
+{{< /col-sm >}}
 {{< /large-scrollbox >}}
 {{< /box-small >}}
 {{< /card-large >}}
@@ -165,7 +175,7 @@ draft: false
 {{< col-sm >}}
 
 <h5>MY BUTTON:</h5> <br>
-{{< buttons img-src="/images/buttons/nenrikido_button.gif" >}}  
+{{< buttons img-src="/images/buttons/nenrikido_button.gif" link="/">}}  
 
 <textarea><a href="https://nenrikido.neocities.org/"><img src="https://dl.dropbox.com/s/265wg2om8bjr5g6/nenrikido_button.gif"></img></a></textarea>
 {{< /col-sm >}} 

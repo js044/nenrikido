@@ -1,27 +1,24 @@
-function showTime(){
-    var date = new Date();
-    var h = date.getHours(); // 0 - 23
-    var m = date.getMinutes(); // 0 - 59
-    var session = "AM";
+function showTime() {
+  let date = new Date(); 
+  let hh = date.getHours();
+  let mm = date.getMinutes();
+  let session = "AM";
+
+  if(hh === 0){
+      hh = 12;
+  }
+  if(hh > 12){
+      hh = hh - 12;
+      session = "PM";
+   }
+
+   hh = (hh < 10) ? "0" + hh : hh;
+   mm = (mm < 10) ? "0" + mm : mm;
     
-    if(h == 0){
-        h = 12;
-    }
-    
-    if(h > 12){
-        h = h - 12;
-        session = "PM";
-    }
-    
-    h = (h < 10) ? "0" + h : h;
-    m = (m < 10) ? "0" + m : m;
-    
-    var time = h + ":" + m + " " + session;
-    document.getElementById("clock").innerText = time;
-    document.getElementById("clock").textContent = time;
-    
-    setTimeout(showTime, 1000);
-    
+   let time = hh + ":" + mm + " " + session;
+
+  document.getElementById("clock").innerText = time; 
+  let t = setTimeout(function(){ showTime() }, 1000);
 }
 
 showTime();

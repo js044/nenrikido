@@ -1,48 +1,49 @@
 {{ define "main" }}
 <style>
     /* Nested Menu */
-ul.nestedmenu {
-	margin-left: 0;
-}
+    ul.nestedmenu {
+        margin-left: 0;
+    }
 
-ul.nestedmenu li {
-	list-style: none;
-}
+    ul.nestedmenu li {
+        list-style: none;
+    }
 
-ul.nestedmenu li>a::before {
-	content: "•";
-	display: inline-block;
-	margin-right: 0.25rem;
-	width: 0.5rem;
-	text-align: center;
-}
+    ul.nestedmenu li>a::before {
+        content: "•";
+        display: inline-block;
+        margin-right: 0.25rem;
+        width: 0.5rem;
+        text-align: center;
+    }
 
-ul.nestedmenu li.haschildren>a::before {
-	content: "›";
-}
+    ul.nestedmenu li.haschildren>a::before {
+        content: "›";
+    }
 
-ul.nestedmenu li.active>ul {
-	display: block;
-}
+    ul.nestedmenu li.active>ul {
+        display: block;
+    }
 
-ul.nestedmenu li.active>a {
-	background-color: var(--secondary_muted);
-	color: var(--primary);
-}
+    ul.nestedmenu li.active>a {
+        background-color: var(--secondary_muted);
+        color: var(--primary);
+    }
 </style>
+<div class="wrapper">
+    <nav id="navAlt">
+        <div class="navWrapper"> <a class="navLink" href="/sitemap">
+                <div id="links"></div>Sitemap
+            </a>
+            <p><i class="fa-regular fa-circle-down"></i></p>
+            <p>A list of every page on the site.</p>
+        </div>
+        {{- partial "mini-music.html" . -}}
+        {{- partial "search-bar.html" . -}}
+    </nav>
 
-<nav id="navAlt">
-    <div class="navWrapper"> <a class="navLink" href="/sitemap"><div id="links"></div>Sitemap</a>
-        <p><i class="fa-regular fa-circle-down"></i></p> 
-        A list of every content page on the site.
-    </div> 
-    {{- partial "mini-music.html" . -}} 
-    {{- partial "search-bar.html" . -}}
-</nav>
-
-<main>
-    <article>
-        <div class="grid-wrapper-page">
+    <main>
+        <article>
             <div class="grid">
                 <div class="item large">
                     <div class="cards"> {{- partial "card-header.html" . -}}
@@ -53,7 +54,7 @@ ul.nestedmenu li.active>a {
                     </div>
                 </div>
             </div>
-        </div>
-    </article>
-</main>
+        </article>
+    </main>
+</div>
 {{ end }}

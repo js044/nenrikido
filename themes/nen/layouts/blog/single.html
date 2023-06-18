@@ -1,17 +1,18 @@
 {{ define "main" }}
-
+<div class="wrapper">
     <nav id="navAlt">
-                <div class="navWrapper"> <a class="navLink" href="/blog"><div id="blog"> </div>Blog </a>
-                    <p><i class="fa-regular fa-circle-down"></i></p>
-                    <p><i class="fa-solid fa-hashtag"></i> <a href="#"> {{.Title}} </a></p> 
-                    <p><i class="fa-solid fa-hashtag"></i> <a href="#comments"> Comments </a></p> 
-                </div>
-       {{- partial "arrows.html" . -}} {{- partial "mini-music.html" . -}} {{- partial "search-bar.html" . -}}
+        <div class="navWrapper"> <a class="navLink" href="/blog">
+                <div id="blog"> </div>Blog
+            </a>
+            <p><i class="fa-regular fa-circle-down"></i></p>
+            <p><i class="fa-solid fa-hashtag"></i> <a href="#"> {{.Title}} </a></p>
+            <p><i class="fa-solid fa-hashtag"></i> <a href="#comments"> Comments </a></p>
+        </div>
+        {{- partial "arrows.html" . -}} {{- partial "mini-music.html" . -}} {{- partial "search-bar.html" . -}}
     </nav>
 
-<main>
-    <article>
-        <div class="grid-wrapper-page">
+    <main>
+        <article>
             <div class="grid">
                 <div class="item large">
                     <div class="cards"> {{- partial "card-header.html" . -}}
@@ -29,7 +30,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </article>
-</main>
+        </article>
+    </main>
+</div>
 {{ end }}

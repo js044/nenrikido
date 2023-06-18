@@ -63,6 +63,6 @@ url = "/library/"
 weight = 9
 
 [[menu.main]]
-name = "Shrines"
-url = "/shrines/"
+name = "Nexus"
+url = "/nexus/"
 weight = 10

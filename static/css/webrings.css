@@ -10,8 +10,7 @@
   }
 
 #safont {
-	width: 145px;
-	height: 81px;
+	width: 160px;
 }
 
 #neossg {
@@ -51,7 +50,6 @@
 
 #neossg table tr td {
 	padding: 5px;
-	/* creates some space between the links and text inside the widget */
 }
 
 #neossg .webring-prev {

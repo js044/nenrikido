@@ -10,11 +10,14 @@
     <link rel='shortcut icon' type='image/x-icon' href='./images/icons/favicon-32x32.png' />
 
     <link rel="alternate" type="application/rss+xml" href="https://nenrikido.neocities.org/index.xml" title="NENRIKIDO" />
+    <link rel="stylesheet" type="text/css" href="./css/themes.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> 
     <link rel="stylesheet" type="text/css" href="./css/lightbox.css">
-    <link rel="stylesheet" type="text/css" href="./css/themes.css">
-    <link rel="stylesheet" type="text/css" href="./css/styles.css"><div id="preloader"></div><body><a href="#" id="btn-back-to-top"><span></span><i class="fa-solid fa-circle-chevron-up"></i></a>
+    
+    <div id="preloader"></div><body>
 <link rel="stylesheet" type="text/css" href="./css/index.css">
+<div class="wrapper"> 
 <nav id="nav">
     <div class="row centered">
         <a class="navLink" href="./"><div id="home"></div>Home</a> 
@@ -26,7 +29,7 @@
         <a class="navLink" href="./links"> <div id="links"></div>Links </a> 
         <a class="navLink" href="./microblog"> <div id="microblog"></div>Microblog</a> 
         <a class="navLink" href="./library"> <div id="library"></div>Library</a> 
-        <a class="navLink" href="./shrines"><div id="shrines"></div>Shrines</a>
+        <a class="navLink" href="./nexus"><div id="nexus"></div>Nexus</a>
     </div>
     
 <form class="search"> <input type="text" class="searchTerm" placeholder="Search..."> <button aria-label="submit" type="submit" class="searchButton"> <i class="fa fa-search"></i> </button> </form>
@@ -34,7 +37,7 @@
 
 </nav>
 
-    <div class="grid-wrapper"> <div class="grid"> <div class="item medium ">
+    <div class="grid"> <div class="item medium ">
     <div class="cards">
         <div class="cardsHeader">
     <div class="cardsControls">
@@ -44,8 +47,8 @@
 </div>
         <div class="cardsBody">
             <h1>#WELCOME</h1>
-            <p> <img src="./images/pixels/strovi_pixel.gif" alt="A blue pixel catgirl blinking and kicking her feet gently." style="float: right; max-width: 70px;">
-this is my personal site and a place for me to experiment with front-end code. it is a work in progress, so please excuse anything unfinished.
+            <p> <img src="./images/pixels/strovi_pixel.gif" alt="A blue pixel catgirl blinking and kicking her feet gently." style="float: right; max-width: 80px;">
+This is my personal site and a place for me to share my work. It is a work in progress, so please excuse anything unfinished.
 <p align="center"><i class="fa-solid fa-rss"></i> <a href="./index.xml">RSS feed</a> &nbsp <i class="fa-solid fa-mobile-screen-button"></i> responsive </p>
         </div>
     </div>
@@ -60,9 +63,9 @@ this is my personal site and a place for me to experiment with front-end code. i
 </div>
         <div class="cardsBody">
             <h1>#THEMES</h1>
-            <p> <p>click on an emoji to toggle a theme.</p>
+            <p> <p>Pick an emoji. You may need to tap it twice for the grid to refresh correctly.</p>
 <div class="row centered">
-    <button id="pink" title="pink theme" class="theme-button" onclick="handleThemeButtonClick('pink', this)" >💗</button>
+    <button id="pink" title="pink theme" class="theme-button" onclick="handleThemeButtonClick('pink', this)">💗</button>
     <button id="blue" title="blue theme" class="theme-button" onclick="handleThemeButtonClick('blue', this)" >🫧</button> 
     <button id="yellow" title="yellow theme" class="theme-button" onclick="handleThemeButtonClick('yellow', this)" >🪐</button> 
     <button id="black" title="black theme" class="theme-button" onclick="handleThemeButtonClick('black', this)" >💤</button>
@@ -81,7 +84,7 @@ this is my personal site and a place for me to experiment with front-end code. i
 </div>
         <div class="cardsBody">
             <h1>#DRAG N DROP</h1>
-            <p> try dragging a window by its header! </p>
+            <p> Try dragging a window by its header! </p>
         </div>
     </div>
 </div>
@@ -173,7 +176,7 @@ this is my personal site and a place for me to experiment with front-end code. i
         <div class="cardsBody">
             <h1>#LUNAR</h1>
             <p> <!-- © wdisseny -->
-<div id="contain_moon" style="text-align:center;padding-top:5px;padding-bottom:5px;margin:10px;width:auto;height:17em;"><div style="font-weight:bold">the moon today</div><div style="margin-bottom:3em;padding:2em;filter:drop-shadow(0 0 30px hsl(220,100%,15%))"></div><div>.</div><div style="font-size:small">.</div></div>
+<div id="contain_moon" style="text-align:center;padding-top:5px;padding-bottom:5px;margin:10px;width:auto;height:17em;"><div style="font-weight:bold">the moon today</div><div style="margin-bottom:3em;padding:2em;filter:drop-shadow(0 0 20px hsl(220,100%,15%))"></div><div>.</div><div style="font-size:small">.</div></div>
 <script>(function(){var d=new Date().getDate();var m=document.querySelectorAll("#contain_moon div");var a=new XMLHttpRequest();var url="https://www.icalendar37.net/lunar/api/?lang=en&month="+(new Date().getMonth()+1)+"&year="+(new Date().getFullYear())+"&size=100&lightColor=rgb(255,249,253)&shadeColor=rgb(56,56,141)&LDZ="+new Date(new Date().getFullYear(),new Date().getMonth(),1)/1000+"";m[1].style.height="100px";a.onreadystatechange=function(){if(a.readyState==4&&a.status==200){var b=JSON.parse(a.responseText);m[1].innerHTML=b.phase[d].svg;if(typeof moon_widget_loaded=="function")moon_widget_loaded(b);m[2].innerHTML=b.phase[d].npWidget;m[3].innerHTML="next full moon<br>"+b.nextFullMoon}};a.open("GET",url,true);a.send()})()</script>
  </p>
         </div>
@@ -205,10 +208,15 @@ this is my personal site and a place for me to experiment with front-end code. i
         <div class="cardsBody">
             <h1>#BLOG POSTS</h1>
             <p> <p>Read the rest of the blog <a href="./blog">here</a>.</p>
-<p>✦May 28: <strong><a href="https://nenrikido.neocities.org/blog/post/bye-bye-bootstrap/"> Bye-bye Bootstrap </a></strong> - Bootstrap gets the boot, my hair gets a trim, and the site gets a map.</p>
-<p>✦May 21: <strong><a href="https://nenrikido.neocities.org/blog/post/neocities-reflection/"> 2 months later: A Neocities Reflection </a></strong> - Some observations about the community aspect of Neocities and online communities in general.</p>
-<p>✦Apr 18: <strong><a href="https://nenrikido.neocities.org/blog/post/site-updates-3/"> Site Updates </a></strong> - new library with 61 current entries! (and a shrines page!)</p>
-<p>✦Apr 11: <strong><a href="https://nenrikido.neocities.org/blog/post/evangelion-learning-moving/"> Evangelion, Learning, &amp; Moving </a></strong> - late night rambling</p>
+<ul>
+    <li>Jun 17: <strong><a href="https://nenrikido.neocities.org/blog/post/2023/garage-sale/"> Garage Sale </a></strong> - A diary entry. Featuring Hot Topic fashion and a sandwich.</li>
+</ul>
+<ul>
+    <li>May 28: <strong><a href="https://nenrikido.neocities.org/blog/post/2023/bye-bye-bootstrap/"> Bye-bye Bootstrap </a></strong> - Bootstrap gets the boot, my hair gets a trim, and the site gets a map.</li>
+</ul>
+<ul>
+    <li>May 21: <strong><a href="https://nenrikido.neocities.org/blog/post/neocities-reflection/"> 2 months later: A Neocities Reflection </a></strong> - Some observations about the community aspect of Neocities and online communities in general.</li>
+</ul>
  </p>
         </div>
     </div>
@@ -224,9 +232,10 @@ this is my personal site and a place for me to experiment with front-end code. i
         <div class="cardsBody">
             <h1>#UPDATES</h1>
             <p> <div class="scrollbox"><ul>
+<li><strong>6-17-23</strong>: changed up a lot of CSS (ctrl + f5 if anything is weird), tweaked a few scripts, made a new blog post, joined the surf club webring &amp; added the widget, separated fanlistings, etc.</li>
 <li><strong>6-10-23</strong>: made a <a href="./about/styleguide">style guide</a> after i saw <a href="https://10kph.neocities.org/">10kph</a> do it. also added a few buttons to the <a href="./links">links</a> page.</li>
 <li><strong>6-09-23</strong>: happy pride! made a <a href="./code/preview/rainbow">theme</a> to celebrate. updated a few pages and messed w/ some site css also.</li>
-<li><strong>5-28-23</strong>: no more bootstrap! new <a href="./sitemap">sitemap</a>! new start menu! new <a href="./blog">blog</a> post! ctrl f5 if anything is weird.</li>
+<li><strong>5-28-23</strong>: no more bootstrap! new <a href="./sitemap">sitemap</a>! new start menu! new <a href="./blog">blog</a> post!</li>
 <li><strong>5-21-23</strong>: new <a href="./blog">blog</a> post &amp; now there&rsquo;s a microblog feed on the index page. thank you hors</li>
 <li><strong>5-6-23</strong>: lots &amp; lots of changes, some big and some small. there&rsquo;s also a new page theme up! and now there are theme previews!</li>
 <li><strong>5-1-23</strong>: new page theme is up on the <a href="./code">code</a> page! i think it&rsquo;s cute.</li>
@@ -268,7 +277,7 @@ this is my personal site and a place for me to experiment with front-end code. i
 </div>
         <div class="cardsBody">
             <h1>#JELLY CAM</h1>
-            <p> <div class="youtube-player" data-id="rJ6_1-E_CLU" title="Youtube embed of Monterey Bay Jelly Cam"></div>
+            <p> <div class="youtube-player" data-id="OMlf71t2oV0" title="Youtube embed of Monterey Bay Jelly Cam"></div>
  </p>
         </div>
     </div>
@@ -301,19 +310,17 @@ this is my personal site and a place for me to experiment with front-end code. i
         <div class="cardsBody">
             <h1>#TO-DO</h1>
             <p> <div class="scrollbox"><ul>
-<li><del>add sitemap</del> <img src="images/pixels/new.gif" alt=""></li>
+<li><del>force grid refresh when theme is switched</del> <img src="images/pixels/new.gif" alt=""></li>
 <li><del>re-design start menu</del> <img src="images/pixels/new.gif" alt=""></li>
-<li><del>add microblog feed to index</del> <img src="images/pixels/new.gif" alt=""></li>
 <li><del>remove bootstrap</del> <img src="images/pixels/new.gif" alt=""></li>
 <li>open commissions</li>
-<li>fix firefox microblog bug</li>
-<li>make OC page (!!!)</li>
+<li>fix firefox microblog index bug</li>
+<li>make OC pages</li>
 <li>fix search script</li>
+<li>RSS updates</li>
 <li>fix theme flickering</li>
 <li>add library genre drop-down</li>
 <li>add microblog pagination</li>
-<li>create zonelets theme</li>
-<li>move scrollbar behind footer</li>
 <li>new shrines</li>
 </ul>
 </div>
@@ -351,75 +358,60 @@ this is my personal site and a place for me to experiment with front-end code. i
         </div>
     </div>
 </div>
-<div class="item medium ">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h1>#CONTACT</h1>
-            <p> <img src="./images/pixels/gotmail.gif" loading="lazy" alt="A pixel of two computers sending an email between them." style="float: right; margin-top: 15px; ">
-<p><i class="fa-solid fa-envelope"></i>  <a href="mailto:nenrikido@pm.me">nenrikido@pm.me</a><br>
-<i class="fa-brands fa-tumblr"></i> <a href="https://nenrikido-art.tumblr.com/">nenrikido-art</a><br>
-<i class="fa-brands fa-twitter"></i> <a href="https://twitter.com/nenrikido">@nenrikido</a> </p>
-        </div>
-    </div>
-</div>
  </div> </div>
     <script src="./js/microblog_recent.js"></script>
     <script type="text/javascript" src="./js/audioPlayer.js" defer></script>
 
 <footer id="footer">
-  <ul>
-      <li> <button id="footer-button">START</button> </li>
-      <li>
-          <div id="clock" class="clock" onload="showTime()"></div>
-      </li>
-  </ul>
-</footer> 
-<div id="start-menu" class="modal">
-  
-  <div class="modal-content">
-      <div class="modal-header">
-          <h1>Start Menu</h1> <span class="close">&times;</span>
-      </div>
-      <div class="modal-body">
-          <div class="modal-columns">
-              <div class="modal-bio">
-                  <p><img class="modal-bio img" src="./images/icons/sh.jpg"></p>
-                  <h6>Rio's desktop</h6>
-                  <p align="center"><i class="fa-regular fa-map"></i> <a href="./sitemap">Sitemap</a></p>
+    <ul>
+        <li> <button id="footer-button">START</button> </li>
+        <li> <a href="#" id="btn-back-to-top" onclick="call()"><i class="fa-solid fa-circle-chevron-up"></i></a></li>
+        <li><div id="clock" class="clock" onload="showTime()"></div></li>
+    </ul>
+</footer>
 
-               <ul style="font-style: italic;"> 
-                <li>OS: NENRIKIDO</li> 
-                <li>Version: 1.4</li> 
-                <li>Host: Neocities</li> 
-                <li>Processor: Hugo</li> 
-                <li>Size: 88.18 MB</li> 
-                <li>Since: 03-13-23</li> 
-               </ul>
-              </div>
-              <div class="modal-list">  <a class="modal-menu " href="./" >  <span>Home </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./about/" >  <span>About </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./gallery/" >  <span>Gallery </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./commissions/" >  <span>Commissions </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./code/" >  <span>Code </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./blog/" >  <span>Blog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./links/" >  <span>Links </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./microblog/" >  <span>Microblog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./library/" >  <span>Library </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./shrines/" >  <span>Shrines </span> <i class="fa-solid fa-chevron-right"></i></a>  </div>
-          </div>
-      </div>
-      <div class="modal-footer"><div class="row centered">
-    <button id="pink" title="pink theme" class="theme-button" onclick="handleThemeButtonClick('pink', this)" >💗</button>
+<div id="start-menu" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h1>Start Menu</h1> <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+            
+                <div class="modal-bio">
+                    <img class="modal-bio img" src="./images/icons/sh.jpg">
+                    <h6>Rio's desktop</h6>
+                    <p align="center"><i class="fa-regular fa-map"></i> <a href="./sitemap">Sitemap</a></p>
+
+                    <ul style="font-style: italic;">
+                        <li>OS: NENRIKIDO</li>
+                        <li>Version: 1.5</li>
+                        <li>Host: Neocities</li>
+                        <li>Processor: Hugo</li>
+                        <li>Since: 03-13-23</li>
+                    </ul>
+                </div>
+                <div class="modal-list">  <a class="modal-menu " href="./">  <span>Home </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./about/">  <span>About </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./gallery/">  <span>Gallery </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./commissions/">  <span>Commissions </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./code/">  <span>Code </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./blog/">  <span>Blog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./links/">  <span>Links </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./microblog/">  <span>Microblog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./library/">  <span>Library </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./nexus/">  <span>Nexus </span> <i class="fa-solid fa-chevron-right"></i></a>  </div>
+            
+        </div>
+        <div class="modal-footer"><div class="row centered">
+    <button id="pink" title="pink theme" class="theme-button" onclick="handleThemeButtonClick('pink', this)">💗</button>
     <button id="blue" title="blue theme" class="theme-button" onclick="handleThemeButtonClick('blue', this)" >🫧</button> 
     <button id="yellow" title="yellow theme" class="theme-button" onclick="handleThemeButtonClick('yellow', this)" >🪐</button> 
     <button id="black" title="black theme" class="theme-button" onclick="handleThemeButtonClick('black', this)" >💤</button>
 </div></div>
-  </div>
-
-  <script type="text/javascript" src="./js/clock.js"></script>
-  <script defer type="text/javascript" src="./js/start.js"></script><script src="./js/theme.js" ></script>
+    </div>
+<script>
+function call() {
+    var body = $("html, body");
+    body.stop().animate({scrollTop:0}, 500, 'swing', function() {
+    });
+}</script>
+    <script type="text/javascript" src="./js/clock.js"></script>
+    <script defer type="text/javascript" src="./js/start.js"></script><script src="./js/theme.js" ></script>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
 <script defer src="./js/muuri-init.js"></script>
 <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
-<script defer src="./js/back-to-top.js" ></script>
 <script defer src="./js/lightbox.js" ></script>
 <script defer src="./js/yt_lite.js" ></script>
 <script defer src="https://unpkg.com/lunr/lunr.js"></script>
@@ -435,8 +427,8 @@ this is my personal site and a place for me to experiment with front-end code. i
     (s.opacity -= 0.1) < 0 ? (s.display = "none") : setTimeout(fade, 40);
   })();
   </script>
-<script>
-  twemoji.parse(document.body)
-</script>
-</body>
+  <script>
+    twemoji.parse(document.body)
+  </script></body>
+
 </html>

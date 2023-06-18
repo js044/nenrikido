@@ -18,17 +18,19 @@ layout: single
 
 <h1 id="about-me">#ABOUT ME</h1> <br>
 
-{{< stats stat="NAME: rio / jay" >}}
+{{< stats-box >}}
+{{< stats stat="NAME: Rio / Jay" >}}
 {{< stats stat="BORN: 1997" >}}
 {{< stats stat="🇵🇷 🇰🇷" >}}
 {{< stats stat="🏳️‍🌈" >}}
 {{< stats stat="ASTRO: ♓︎☉ ♏︎☽ ♓︎↑" >}}
 {{< stats stat="MBTI: INTP" >}} 
 {{< stats stat="ENNEAGRAM: 5w4" >}}
+{{< /stats-box >}}
 {{< box >}} 
-hi, i'm a multimedia artist located in the US. i love experimental art and creating things. i also love horror games, spicy noodles, and fish trivia. feel free to reach out about any of these topics; i love [email](mailto:@nenrikido@pm.me)!
+Hi, I'm a multimedia artist located in the US. I love experimental art and creating things. I also love horror games, spicy noodles, and fish trivia. Feel free to reach out about any of these topics; I love [email](mailto:@nenrikido@pm.me)!
 
-i made this site both to host my creative projects and also to function as its own creative project. i'm still learning, so expect the site to change over time. you can find the github repo [here](https://github.com/js044/nenrikido/).
+I made this site both to host my creative projects and also to function as its own creative project. I'm still learning, so expect the site to change over time. You can find the Github repo [here](https://github.com/js044/nenrikido/).
 {{< /box >}}
  
 {{< /card-large >}}
