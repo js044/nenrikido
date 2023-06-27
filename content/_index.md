@@ -60,6 +60,7 @@ Read the rest of the blog [here](/blog).
 
 {{< card-medium title="#UPDATES" >}} 
 {{< scrollbox >}}
+* **6-21-23**: added a few new fanlistings...most are still pending but wooo
 * **6-17-23**: changed up a lot of CSS (ctrl + f5 if anything is weird), tweaked a few scripts, made a new blog post, joined the surf club webring & added the widget, separated fanlistings, etc.
 * **6-10-23**: made a [style guide](/about/styleguide) after i saw [10kph](https://10kph.neocities.org/) do it. also added a few buttons to the [links](/links) page.
 * **6-09-23**: happy pride! made a [theme](/code/preview/rainbow) to celebrate. updated a few pages and messed w/ some site css also.
@@ -105,6 +106,7 @@ Read the rest of the blog [here](/blog).
 {{< card-medium title="#TO-DO" >}} 
 {{< scrollbox >}}
 *   ~~force grid refresh when theme is switched~~ ![](images/pixels/new.gif)
+*   ~~ease theme switch~~ ![](images/pixels/new.gif)
 *   ~~re-design start menu~~ ![](images/pixels/new.gif)
 *   ~~remove bootstrap~~ ![](images/pixels/new.gif)
 *   open commissions

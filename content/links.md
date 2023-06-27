@@ -34,17 +34,17 @@ draft: false
 {{< large-scrollbox >}}
 {{< col >}}
 
-<div><script src="https://nuthead.neocities.org/ring/ring.js"></script> </div>
-
 <div id='RPGMaker'> <script type="text/javascript" src="https://ophanimkei.neocities.org/onionring/onionring-variables.js"></script> <script type="text/javascript" src="https://ophanimkei.neocities.org/onionring/onionring-widget.js"></script>  </div> 
 
+<div><script src="https://nuthead.neocities.org/ring/ring.js"></script> </div>
+
 <div id='women-web'><script type="text/javascript" src="https://womenoftheinternet.neocities.org/files/onionring-variables.js"></script><script type="text/javascript" src="https://womenoftheinternet.neocities.org/files/onionring-widget.js"></script></div>
+
+<div><object id="melonland-surf-club" data="https://melonland.net/surf-badge.svg?fill=#3d03fc" type="image/svg+xml" style="width: 100px; height: 100px;"></object></div> 
 
 <div id='neossg'><script type="text/javascript" src="https://neossg.neocities.org/onionring-variables.js"></script><script type="text/javascript" src="https://neossg.neocities.org/onionring-widget.js"></script></div>
 
 <div id='safont'><script src="https://xandra.cc/safonts/webring.js"></script><ring-900 site="https://nenrikido.neocities.org/"></ring-900></div>
-
-<div><object id="melonland-surf-club" data="https://melonland.net/surf-badge.svg?fill=#3d03fc" type="image/svg+xml" style="width: 100px; height: 100px;"></object></div> 
 
 {{< /col >}}
 {{< /large-scrollbox >}}
@@ -56,7 +56,13 @@ draft: false
 {{< large-scrollbox >}}
 {{< col-sm >}}
 {{< fanlistings img-src="/images/buttons/fujofans.png" link="https://fujofans.scumsuck.com/">}} 
+{{< fanlistings img-src="/images/buttons/azumanga.png" link="https://akiba.flirt-wind.net/azumanga">}} 
+{{< fanlistings img-src="/images/buttons/bssm.gif" link="https://www.moon-prism.net/">}} 
+{{< fanlistings img-src="/images/buttons/ua5.png" link="https://anthy.net/love/index.php">}} 
+{{< fanlistings img-src="/images/buttons/lain.jpg" link="http://lain.angelic-trust.net/">}} 
+{{< fanlistings img-src="/images/buttons/deathnote.png" link="https://fan.enamour.nu/deathnote/">}} 
 {{< fanlistings img-src="/images/buttons/opm.gif" link="http://frshery.info/onepunch/">}} 
+{{< fanlistings img-src="/images/buttons/hxh.jpg" link="https://afl.hakumei.org/hxh/">}} 
 {{< /col-sm >}}
 {{< /large-scrollbox >}}
 {{< /box-small >}}
