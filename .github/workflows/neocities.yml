@@ -1,10 +1,10 @@
 name: Deploy to neocities
 
-# only run on changes to master
+# only run on changes to main
 on:
   push:
     branches:
-      - master
+      - main
 
 concurrency: # prevent concurrent deploys doing strange things
   group: deploy-to-neocities
