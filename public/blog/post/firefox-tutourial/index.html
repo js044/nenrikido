@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    
+    <title>Firefox Tree Tabs Tu(tour)ial</title>
+    <meta charset="utf-8">
+    <meta name="description"
+        content="A special world." />
+    <meta name="dc.relation" content="https://nenrikido.neocities.org/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='shortcut icon' type='image/x-icon' href='../../../images/icons/favicon-32x32.png' />
+
+    <link rel="stylesheet" type="text/css" href="../../../css/themes.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> 
+    <link rel="stylesheet" type="text/css" href="../../../css/lightbox.css">
+    
+    <div id="preloader"></div><body>
+<div class="wrapper">
+    <nav id="navAlt">
+        <div class="navWrapper"> <a class="navLink" href="../../../blog">
+                <div id="blog"> </div>Blog
+            </a>
+            <p><i class="fa-regular fa-circle-down"></i></p>
+            <p><i class="fa-solid fa-hashtag"></i> <a href="#"> Firefox Tree Tabs Tu(tour)ial </a></p>
+            <p><i class="fa-solid fa-hashtag"></i> <a href="#comments"> Comments </a></p>
+        </div><div class="arrows">
+      
+            <a href="https://nenrikido.neocities.org/blog/post/yard-sale/"> <i class="fas fa-long-arrow-alt-left"> </i></a>
+            
+            
+                <a href="../../../blog/"><i class="fas fa-home"> 
+                </i></a>
+            
+            
+        </div>
+
+        <div id='musicplayer'>
+            <div id='musicpixel'> <img src="../../../images/pixels/music.gif" style="max-width: 40px;">
+                <div class='overlay'>
+                    <div class='playpause'><i class="fas fa-play"></i></div>
+                </div>
+            </div>
+            <div id='musictitle'> <span class='marquee'>summer rain</span> </div>
+        </div> <audio id='musicsrc' loop src='https://dl.dropbox.com/s/seanb1ogmdoezmr/cricket-rain.mp3'></audio>
+
+
+<script>
+    document.querySelector('.playpause').addEventListener('click', playpause);
+    
+    function playpause() {
+      if (document.querySelector('.playpause').innerHTML == '<i class="fas fa-play"></i>') {
+        document.querySelector('#musicsrc').play();
+        document.querySelector('.playpause').innerHTML = '<i class="fas fa-pause"></i>';
+      } else {
+        document.querySelector('#musicsrc').pause();
+        document.querySelector('.playpause').innerHTML = '<i class="fas fa-play"></i>';
+      }
+    }
+</script>
+<form class="search"> <input type="text" class="searchTerm" placeholder="Search..."> <button aria-label="submit" type="submit" class="searchButton"> <i class="fa fa-search"></i> </button> </form>
+
+</nav>
+
+    <main>
+        <article>
+            <div class="grid">
+                <div class="item large">
+                    <div class="cards"><div class="cardsHeader">
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div><div class="cardsBody">
+                            <h2>Firefox Tree Tabs Tu(tour)ial</h2>
+                            <blockquote>June 27, 2023</blockquote> <p>This is the first installment of my &ldquo;FOSS recommendations&rdquo; series (or something.) It started off as a single post, but I ended up having so much to say about each recommendation that I decided they&rsquo;d be better off with their own dedicated posts.</p>
+<p>First on the list, of course, is <a href="https://www.mozilla.org/en-US/firefox/new/">Mozilla Firefox</a>, an internet browser you&rsquo;ve probably heard of. It is widely beloved for its consideration of user privacy and customization, earning it a loyal fanbase. Although its privacy settings are very configurable out of the box, the more staunchly data-protective user might prefer <a href="https://librewolf.net/">Librewolf</a>, a privacy-oriented Firefox fork.</p>
+<p>As for customization, you can directly edit the browser CSS to make it look however you want. Firefox has also introduced tools like <a href="https://color.firefox.com/">Firefox Color</a> to allow you to easily modify your color scheme. There are also a plethora of add-ons for Firefox, many of which also allow for CSS tweaking.</p>
+<p>Here&rsquo;s a demo of my current Firefox setup:</p>
+<a href="../../../images/blog/070223/firefox.webp" data-lightbox="ff "> <img src="../../../images/blog/070223/firefox.webp" class="img-fluid" loading=""  width="" height="" alt="">  </a>
+<p>I&rsquo;ve achieved this look with some CSS and a few add-ons. My setup features:</p>
+<ul>
+<li>Collapsible sidebar (expands on hover)</li>
+<li>Active/inactive tab counter that functions as a new tab button</li>
+<li>Italicized inactive/unread tabs</li>
+<li>Click tab favicon to expand/collapse tab tree</li>
+<li>Tab titles and close button disappear when sidebar is collapsed</li>
+<li>Top (horizontal) tabs are hidden in favor of tree tabs</li>
+<li>Window control buttons (minimize, maximize, close) are merged with the toolbar</li>
+<li>Active tab highlight color is selected from your Firefox theme</li>
+<li>Purple/pink/blue color scheme</li>
+<li>See what number a tab is when you hover</li>
+</ul>
+<p>If you&rsquo;re a tab addict who cares deeply about screen real estate, continue reading for instructions on how to recreate my setup! This tutorial presumes you&rsquo;ve already downloaded Mozilla.</p>
+<hr>
+<h2 id="step-1-customize-firefox-color">Step 1: Customize Firefox Color</h2>
+<ol>
+<li>Get the Firefox Color <a href="https://addons.mozilla.org/en-US/firefox/addon/firefox-color/">extension</a>.</li>
+<li>Head to the <a href="https://color.firefox.com/">website</a>.</li>
+<li>Select whatever theme you want. Or make your own. <a href="https://color.firefox.com/?theme=XQAAAAI0AQAAAAAAAABBqYhm849SCia2CaaEGccwS-xNKlhhT7FcjMwJkEgE5uIU5XaaD-dDbJMXbYZiL9mB2eGL-22JKioNeP3kvNUGuFv85O6OCkMLhqTiAoy9NAf0li2BqE7IH_5i9zdkfuV24Q3C7VoAKA0TvFqaSMgczr6T5EO2b9XMA1WbCYMMRQEwU00jlqBbM35zYK5Hq7odbTonreJyxRSKaDyzFUdABtPZVnYYbjQmlZ1tNwHmYR-LPEU_frmNaxCV9Y3sRkWYzc3p-Y3GgElyLPb75YSX_z2cpQA">Mine</a> is a slightly modified version of a pre-existing theme.</li>
+</ol>
+<a href="../../../images/blog/070223/ffcolor.webp" data-lightbox="ff "> <img src="../../../images/blog/070223/ffcolor.webp" class="img-fluid" loading=""  width="" height="" alt="">  </a>
+<hr>
+<h2 id="step-2-get-tree-vertical-tabs">Step 2: Get tree (vertical) tabs</h2>
+<ol>
+<li>Download Piro&rsquo;s <a href="https://addons.mozilla.org/en-US/firefox/addon/tree-style-tab/">Tree Style Tab</a> add-on from the official Mozilla repository.</li>
+<li>From your add-on list, you can right click and select &ldquo;<em>Manage extension</em>&rdquo;.</li>
+<li>Click the tab that says &ldquo;<em>Preferences</em>&rdquo;.</li>
+<li>Select the <strong>Photon</strong> theme. The Proton theme will also work.</li>
+<li>Scroll down and reveal the &ldquo;<em>Advanced</em>&rdquo; options. Copy and paste the following Gist code into the code box. Note that your vertical tab text might vanish. Don&rsquo;t worry about it!</li>
+<li>Note: Most of the changes I&rsquo;ve made here are pulled from this <a href="https://github.com/piroor/treestyletab/wiki/Code-snippets-for-custom-style-rules">Github page</a> full of tweaks.</li>
+</ol>
+<script type="application/javascript" src="https://gist.github.com/js044/38d41c375b07075e1dbdae519d08bb8c.js"></script>
+
+<hr>
+<h2 id="step-3-access-your-firefox-css">Step 3: Access your Firefox CSS</h2>
+<ol>
+<li>In the taskbar, type <code>about:config</code>, press enter, and accept the risk.</li>
+<li>Copy and paste <code>toolkit.legacyUserProfileCustomizations.stylesheets</code> in the searchbar. Make sure it&rsquo;s set to <strong>true</strong>. If not, click it twice.</li>
+<li>Type <code>about:profiles</code> in the taskbar and press enter.</li>
+<li>Under <em>&ldquo;Profile: default-release&rdquo;</em> (your default profile), locate the <em>&ldquo;Root Directory&rdquo;</em> tab and click <em>&ldquo;Open Directory&rdquo;</em>.</li>
+<li>Create a folder called <em>&ldquo;chrome&rdquo;</em>.</li>
+<li>Create a file within that folder called <code>userChrome.css</code></li>
+<li>Copy and paste the following Gist into the code box. You can refresh Firefox to see changes.</li>
+<li>Note that line 14 may require you to make alterations based on your viewport.</li>
+</ol>
+<script type="application/javascript" src="https://gist.github.com/js044/618a3ec1181a548dc88dd6bab0cd91f3.js"></script>
+
+<hr>
+<h2 id="step-4-customizing-tabliss">Step 4: Customizing Tabliss</h2>
+<ol>
+<li>For my new tab page, I use a FOSS add-on called <a href="https://addons.mozilla.org/en-US/firefox/addon/tabliss/">Tabliss</a>. You can download it at that link.</li>
+<li>Tabliss lets you fine-tune what backgrounds you want to display. I made a custom collection of photos <a href="https://unsplash.com/collections/_zqqJaaI4YQ/neon-purple">here</a>, which you can reference in the Tabliss background settings by adding &ldquo;_zqqJaaI4YQ&rdquo; under &ldquo;Collection.&rdquo; You can also add any other collection you find on Tabliss, or do something else entirely.</li>
+<li>Add a new widget for &ldquo;Custom CSS&rdquo; and add this snippet. It adds Fira Sans, a translucent background box for the center, and modifies the search bar a bit.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">@<span style="color:#66d9ef">import</span> <span style="color:#f92672">url</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#39;https://fonts.googleapis.com/css2?family=Fira+Sans&amp;display=swap&#39;</span><span style="color:#f92672">)</span>;
+
+.<span style="color:#a6e22e">Slot</span>.<span style="color:#a6e22e">middleCentre</span> {
+<span style="color:#66d9ef">background-color</span>: rgba(<span style="color:#ae81ff">90</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">90</span>, <span style="color:#ae81ff">0.75</span>); <span style="color:#75715e">/* can change this */</span>
+<span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span>;
+<span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span>;
+<span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">3</span><span style="color:#66d9ef">em</span>;
+}
+
+.<span style="color:#a6e22e">Search</span> <span style="color:#f92672">input</span>{
+<span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">0</span>;
+<span style="color:#66d9ef">font-size</span>:<span style="color:#ae81ff">0.8</span><span style="color:#66d9ef">em</span>; 
+<span style="color:#66d9ef">outline</span>:<span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span>; 
+<span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span>;
+<span style="color:#66d9ef">padding</span>:<span style="color:#ae81ff">0.5</span><span style="color:#66d9ef">em</span>; 
+}
+</code></pre></div><hr>
+<p>Congrats, you are me! If all has gone well, your browser should look very cool and sexy like so:</p>
+<a href="../../../images/blog/070223/newtab.webp" data-lightbox="ff "> <img src="../../../images/blog/070223/newtab.webp" class="img-fluid" loading=""  width="" height="" alt="">  </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item large">
+                    <div class="cards"><div class="cardsHeader">
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div><div class="cardsBody">
+                            <div id="comments">
+<div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
+<link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+<script type="text/javascript" id="hcb">   if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24wVz3xOOc.ZF1mLS1sR.Mp0"+"&opts=16782&num=10&ts=1680596795074");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); </script>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+</div>
+<footer id="footer">
+    <ul>
+        <li> <button id="footer-button">START</button> </li>
+        <li> <a href="#" id="btn-back-to-top" onclick="call()"><i class="fa-solid fa-circle-chevron-up"></i></a></li>
+        <li><div id="clock" class="clock" onload="showTime()"></div></li>
+    </ul>
+</footer>
+
+<div id="start-menu" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h1>Start Menu</h1> <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+            
+                <div class="modal-bio">
+                    <img class="modal-bio img" src="../../../images/icons/sh.jpg">
+                    <h6>Rio's desktop</h6>
+                    <p align="center"><i class="fa-regular fa-map"></i> <a href="../../../sitemap">Sitemap</a></p>
+
+                    <ul style="font-style: italic;">
+                        <li>OS: NENRIKIDO</li>
+                        <li>Version: 1.5</li>
+                        <li>Host: Neocities</li>
+                        <li>Processor: Hugo</li>
+                        <li>Since: 03-13-23</li>
+                    </ul>
+                </div>
+                <div class="modal-list">  <a class="modal-menu " href="../../../">  <span>Home </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../about/">  <span>About </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../gallery/">  <span>Gallery </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../commissions/">  <span>Commissions </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../code/">  <span>Code </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../blog/">  <span>Blog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../links/">  <span>Links </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../microblog/">  <span>Microblog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../library/">  <span>Library </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../nexus/">  <span>Nexus </span> <i class="fa-solid fa-chevron-right"></i></a>  </div>
+            
+        </div>
+        <div class="modal-footer"><div class="row centered">
+    <button id="pink" title="pink theme" class="theme-button" onclick="handleThemeButtonClick('pink', this)">💗</button>
+    <button id="blue" title="blue theme" class="theme-button" onclick="handleThemeButtonClick('blue', this)" >🫧</button> 
+    <button id="yellow" title="yellow theme" class="theme-button" onclick="handleThemeButtonClick('yellow', this)" >🪐</button> 
+    <button id="black" title="black theme" class="theme-button" onclick="handleThemeButtonClick('black', this)" >💤</button>
+</div></div>
+    </div>
+<script>
+function call() {
+    var body = $("html, body");
+    body.stop().animate({scrollTop:0}, 500, 'swing', function() {
+    });
+}</script>
+    <script type="text/javascript" src="../../../js/clock.js"></script>
+    <script defer type="text/javascript" src="../../../js/start.js"></script><script src="../../../js/theme.js" ></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
+<script defer src="../../../js/muuri-init.js"></script>
+<script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+<script defer src="../../../js/lightbox.js" ></script>
+<script defer src="../../../js/yt_lite.js" ></script>
+<script defer src="https://unpkg.com/lunr/lunr.js"></script>
+<script defer src="../../../js/search.js" ></script>
+<script>
+  var loader = document.getElementById("preloader");
+  window.addEventListener("load", function () {
+    loader.style.display = "none";
+  });
+  var s = document.getElementById("preloader").style;
+  s.opacity = 1;
+  (function fade() {
+    (s.opacity -= 0.1) < 0 ? (s.display = "none") : setTimeout(fade, 40);
+  })();
+  </script>
+  <script>
+    twemoji.parse(document.body)
+  </script></body>
+
+</html>

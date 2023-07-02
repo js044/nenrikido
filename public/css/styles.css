@@ -535,6 +535,17 @@ img.emoji {
 }
 
 /* Code boxes */
+pre code {
+	background-color: transparent;
+}
+
+code {
+	font-size: smaller;
+	color: var(--tertiary);
+	background-color: var(--secondary_muted);
+	padding: 0 3px;
+}
+
 textarea {
 	resize: vertical;
 	width: 100%;

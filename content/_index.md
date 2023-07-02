@@ -16,19 +16,22 @@ Pick an emoji. You may need to tap it twice for the grid to refresh correctly.
 
 {{< /card-medium >}}
 
-{{< card-medium title="#DRAG N DROP" >}} 
-Try dragging a window by its header! 
+{{< card-medium title="#THEME POLL" >}} 
+Which theme is your favorite?
+<form method="post" action="https://poll.pollcode.com/75268219">
+<div style="background-color: transparent; padding:10px; width:15rem; color: var(--secondary);">
+<input type="radio" name="answer" value="1" id="answer752682191" style="float:left;" /><label for="answer752682191" style="float:left; padding-left: 5px; width:10rem;"> 💗</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="2" id="answer752682192" style="float:left;" /><label for="answer752682192" style="float:left; padding-left: 5px; width:10rem;"> 🫧</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="3" id="answer752682193" style="float:left;" /><label for="answer752682193"  style="float:left; padding-left: 5px; width:10rem;"> 🪐</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="4" id="answer752682194" style="float:left;" /><label for="answer752682194" style="float:left; padding-left: 5px; width:10rem;"> 💤</label><div style="clear:both;height:2px;"></div><div align="center" style="padding:3px;"><input type="submit" value=" Vote ">&nbsp;<input type="submit" name="view" value=" View "></div></div></form>
+{{< /card-medium >}}
+
+{{< card-medium title="#COUNTERS" >}} 
+<p align="center"> all visits: <script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=38931944&main=1"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=38931944&main=1" /></noscript> </p>
+<p align="center"> current viewers: <script language="javascript" type="text/javascript" src="//counter1.fc2.com/views.php?id=38931944&main=1"></script><noscript><img src="//counter1.fc2.com/counter_now.php?id=38931944&main=1" /></noscript> </p>
 {{< /card-medium >}}
 
 {{< card-medium title="#MUSIC" >}} 
 <div id="aWrap"> <button id="aPlay" disabled> <span id="aPlayIco" class="material-icons"> play_arrow </span></button> <input id="aSeek" type="range" min="0" value="0" step="1" disabled>
 <div id="aCron"> <span id="aNow"></span> / <span id="aTime"></span> </div> </div>
 <div id="aList"> <p style="text-decoration:underline;"> <i class="fa-solid fa-music"></i> PLAYLIST</p></div>
-{{< /card-medium >}}
-
-{{< card-medium title="#COUNTERS" >}} 
-<p align="center"> all visits: <script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=38931944&main=1"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=38931944&main=1" /></noscript> </p>
-<p align="center"> current viewers: <script language="javascript" type="text/javascript" src="//counter1.fc2.com/views.php?id=38931944&main=1"></script><noscript><img src="//counter1.fc2.com/counter_now.php?id=38931944&main=1" /></noscript> </p>
 {{< /card-medium >}}
 
 {{< card-medium title="#GUESTBOOK" >}} 
@@ -60,6 +63,7 @@ Read the rest of the blog [here](/blog).
 
 {{< card-medium title="#UPDATES" >}} 
 {{< scrollbox >}}
+* **7-2-23**: new blog post & a theme poll!!
 * **6-21-23**: added a few new fanlistings...most are still pending but wooo
 * **6-17-23**: changed up a lot of CSS (ctrl + f5 if anything is weird), tweaked a few scripts, made a new blog post, joined the surf club webring & added the widget, separated fanlistings, etc.
 * **6-10-23**: made a [style guide](/about/styleguide) after i saw [10kph](https://10kph.neocities.org/) do it. also added a few buttons to the [links](/links) page.
