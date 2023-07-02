@@ -3,9 +3,11 @@
     <article>
         <div class="wrapper">
             <nav id="navAlt">
-                <div class="navWrapper"> <a class="navLink" href="/tags">
+                <div class="navWrapper"> <a class="navLink" href="{{ .Permalink }}">
                         <div id="blog"> </div>Tags
-                    </a>               
+                    </a>              
+                    <p><i class="fa-regular fa-circle-down"></i></p> 
+                    <p><i class="fas fa-home"> </i> <a href="/blog/">Blog </a></p>
                 </div>
             {{- partial "mini-music.html" . -}} {{- partial "search-bar.html" . -}}
             </nav>

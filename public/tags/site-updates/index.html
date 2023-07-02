@@ -16,111 +16,149 @@
     <link rel="stylesheet" type="text/css" href="../../css/lightbox.css">
     
     <div id="preloader"></div><body>
-    <div class="wrapper">
-        <div class="grid"> 
-            
-            <div class="item medium">
-                <div class="cards"><div class="cardsHeader">
+<main>
+    <article>
+        <div class="wrapper">
+            <nav id="navAlt">
+                <div class="navWrapper"> <a class="navLink" href="../../tags/">
+                        <div id="blog"> </div>Tags
+                    </a>                           
+            <p><i class="fa-regular fa-circle-down"></i></p>
+            <p><i class="fa-solid fa-hashtag"></i> <a href="#"> site updates </a></p>        
+                </div>
+        <div id='musicplayer'>
+            <div id='musicpixel'> <img src="../../images/pixels/music.gif" style="max-width: 40px;">
+                <div class='overlay'>
+                    <div class='playpause'><i class="fas fa-play"></i></div>
+                </div>
+            </div>
+            <div id='musictitle'> <span class='marquee'>summer rain</span> </div>
+        </div> <audio id='musicsrc' loop src='https://dl.dropbox.com/s/seanb1ogmdoezmr/cricket-rain.mp3'></audio>
+
+
+<script>
+    document.querySelector('.playpause').addEventListener('click', playpause);
+    
+    function playpause() {
+      if (document.querySelector('.playpause').innerHTML == '<i class="fas fa-play"></i>') {
+        document.querySelector('#musicsrc').play();
+        document.querySelector('.playpause').innerHTML = '<i class="fas fa-pause"></i>';
+      } else {
+        document.querySelector('#musicsrc').pause();
+        document.querySelector('.playpause').innerHTML = '<i class="fas fa-play"></i>';
+      }
+    }
+</script>
+<form class="search"> <input type="text" class="searchTerm" placeholder="Search..."> <button aria-label="submit" type="submit" class="searchButton"> <i class="fa fa-search"></i> </button> </form>
+
+</nav>
+            <div class="grid"> 
+                
+                <div class="item medium">
+                    <div class="cards"><div class="cardsHeader">
     <div class="cardsControls">
             <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
             <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
     </div>
 </div><div class="cardsBody">
-                        <h4>Bye-bye Bootstrap</h4>
-                        <p> May 28, 2023 </p>
-                        <blockquote>
-                            <p> Bootstrap gets the boot, my hair gets a trim, and the site gets a map. </p>
-                        </blockquote>
-                        <div class="row space-between">
-                            <p>  <i class="fa-solid fa-hashtag"></i> <a
-                                    href="https://nenrikido.neocities.org/tags/site-updates/">site updates</a>  </p>
-                            <p> <a href="https://nenrikido.neocities.org/blog/post/bye-bye-bootstrap/"> Keep reading <i class='fa fa-long-arrow-right'></i></a> </p>
+                            <h4>Bye-bye Bootstrap</h4>
+                            <p> May 28, 2023 </p>
+                            <blockquote>
+                                <p> Bootstrap gets the boot, my hair gets a trim, and the site gets a map. </p>
+                            </blockquote>
+                            <div class="row space-between">
+                                <p>  <i class="fa-solid fa-hashtag"></i> <a
+                                        href="https://nenrikido.neocities.org/tags/site-updates/">site updates</a>  </p>
+                                <p> <a href="https://nenrikido.neocities.org/blog/post/bye-bye-bootstrap/"> Keep reading <i class='fa fa-long-arrow-right'></i></a> </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div> 
-            <div class="item medium">
-                <div class="cards"><div class="cardsHeader">
+                </div> 
+                <div class="item medium">
+                    <div class="cards"><div class="cardsHeader">
     <div class="cardsControls">
             <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
             <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
     </div>
 </div><div class="cardsBody">
-                        <h4>Site Updates</h4>
-                        <p> Apr 18, 2023 </p>
-                        <blockquote>
-                            <p> new library with 61 current entries! (and a shrines page!) </p>
-                        </blockquote>
-                        <div class="row space-between">
-                            <p>  <i class="fa-solid fa-hashtag"></i> <a
-                                    href="https://nenrikido.neocities.org/tags/site-updates/">site updates</a>  </p>
-                            <p> <a href="https://nenrikido.neocities.org/blog/post/site-updates-3/"> Keep reading <i class='fa fa-long-arrow-right'></i></a> </p>
+                            <h4>Site Updates</h4>
+                            <p> Apr 18, 2023 </p>
+                            <blockquote>
+                                <p> new library with 61 current entries! (and a shrines page!) </p>
+                            </blockquote>
+                            <div class="row space-between">
+                                <p>  <i class="fa-solid fa-hashtag"></i> <a
+                                        href="https://nenrikido.neocities.org/tags/site-updates/">site updates</a>  </p>
+                                <p> <a href="https://nenrikido.neocities.org/blog/post/site-updates-3/"> Keep reading <i class='fa fa-long-arrow-right'></i></a> </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div> 
-            <div class="item medium">
-                <div class="cards"><div class="cardsHeader">
+                </div> 
+                <div class="item medium">
+                    <div class="cards"><div class="cardsHeader">
     <div class="cardsControls">
             <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
             <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
     </div>
 </div><div class="cardsBody">
-                        <h4>Site Updates ...Continued!</h4>
-                        <p> Apr 04, 2023 </p>
-                        <blockquote>
-                            <p> is the site running any faster? it should be running faster. </p>
-                        </blockquote>
-                        <div class="row space-between">
-                            <p>  <i class="fa-solid fa-hashtag"></i> <a
-                                    href="https://nenrikido.neocities.org/tags/site-updates/">site updates</a>  </p>
-                            <p> <a href="https://nenrikido.neocities.org/blog/post/site-updates-2/"> Keep reading <i class='fa fa-long-arrow-right'></i></a> </p>
+                            <h4>Site Updates ...Continued!</h4>
+                            <p> Apr 04, 2023 </p>
+                            <blockquote>
+                                <p> is the site running any faster? it should be running faster. </p>
+                            </blockquote>
+                            <div class="row space-between">
+                                <p>  <i class="fa-solid fa-hashtag"></i> <a
+                                        href="https://nenrikido.neocities.org/tags/site-updates/">site updates</a>  </p>
+                                <p> <a href="https://nenrikido.neocities.org/blog/post/site-updates-2/"> Keep reading <i class='fa fa-long-arrow-right'></i></a> </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div> 
-            <div class="item medium">
-                <div class="cards"><div class="cardsHeader">
+                </div> 
+                <div class="item medium">
+                    <div class="cards"><div class="cardsHeader">
     <div class="cardsControls">
             <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
             <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
     </div>
 </div><div class="cardsBody">
-                        <h4>Site Overhaul</h4>
-                        <p> Apr 04, 2023 </p>
-                        <blockquote>
-                            <p> lots and lots and lots of new things. </p>
-                        </blockquote>
-                        <div class="row space-between">
-                            <p>  <i class="fa-solid fa-hashtag"></i> <a
-                                    href="https://nenrikido.neocities.org/tags/site-updates/">site updates</a>  </p>
-                            <p> <a href="https://nenrikido.neocities.org/blog/post/site-overhaul/"> Keep reading <i class='fa fa-long-arrow-right'></i></a> </p>
+                            <h4>Site Overhaul</h4>
+                            <p> Apr 04, 2023 </p>
+                            <blockquote>
+                                <p> lots and lots and lots of new things. </p>
+                            </blockquote>
+                            <div class="row space-between">
+                                <p>  <i class="fa-solid fa-hashtag"></i> <a
+                                        href="https://nenrikido.neocities.org/tags/site-updates/">site updates</a>  </p>
+                                <p> <a href="https://nenrikido.neocities.org/blog/post/site-overhaul/"> Keep reading <i class='fa fa-long-arrow-right'></i></a> </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div> 
-            <div class="item medium">
-                <div class="cards"><div class="cardsHeader">
+                </div> 
+                <div class="item medium">
+                    <div class="cards"><div class="cardsHeader">
     <div class="cardsControls">
             <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
             <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
     </div>
 </div><div class="cardsBody">
-                        <h4>Site Updates</h4>
-                        <p> Mar 29, 2023 </p>
-                        <blockquote>
-                            <p> new stuff </p>
-                        </blockquote>
-                        <div class="row space-between">
-                            <p>  <i class="fa-solid fa-hashtag"></i> <a
-                                    href="https://nenrikido.neocities.org/tags/site-updates/">site updates</a>  </p>
-                            <p> <a href="https://nenrikido.neocities.org/blog/post/site-updates-1/"> Keep reading <i class='fa fa-long-arrow-right'></i></a> </p>
+                            <h4>Site Updates</h4>
+                            <p> Mar 29, 2023 </p>
+                            <blockquote>
+                                <p> new stuff </p>
+                            </blockquote>
+                            <div class="row space-between">
+                                <p>  <i class="fa-solid fa-hashtag"></i> <a
+                                        href="https://nenrikido.neocities.org/tags/site-updates/">site updates</a>  </p>
+                                <p> <a href="https://nenrikido.neocities.org/blog/post/site-updates-1/"> Keep reading <i class='fa fa-long-arrow-right'></i></a> </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div> 
+                </div> 
+            </div>
         </div>
-    </div><footer id="footer">
+    </article>
+</main> 
+<footer id="footer">
     <ul>
         <li> <button id="footer-button">START</button> </li>
         <li> <a href="#" id="btn-back-to-top" onclick="call()"><i class="fa-solid fa-circle-chevron-up"></i></a></li>
