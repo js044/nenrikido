@@ -74,39 +74,39 @@
                             <h2>Firefox Tree Tabs Tu(tour)ial</h2>
                             <blockquote>July 02, 2023</blockquote> <p>This is the first installment of my &ldquo;FOSS recommendations&rdquo; series (or something.) It started off as a single post, but I ended up having so much to say about each recommendation that I decided they&rsquo;d be better off with their own dedicated posts.</p>
 <p>First on the list, of course, is <a href="https://www.mozilla.org/en-US/firefox/new/">Mozilla Firefox</a>, an internet browser you&rsquo;ve probably heard of. It is widely beloved for its consideration of user privacy and customization, earning it a loyal fanbase. Although its privacy settings are very configurable out of the box, the more staunchly data-protective user might prefer <a href="https://librewolf.net/">Librewolf</a>, a privacy-oriented Firefox fork.</p>
-<p>As for customization, you can directly edit the browser CSS to make it look however you want. Firefox has also introduced tools like <a href="https://color.firefox.com/">Firefox Color</a> to allow you to easily modify your color scheme. There are also a plethora of add-ons for Firefox, many of which also allow for CSS tweaking.</p>
+<p>As for customization, you can directly edit the browser CSS to make it look however you want. Firefox has also introduced tools like <a href="https://color.firefox.com/">Firefox Color</a> to allow you to easily modify your color scheme. There are also a plethora of add-ons for Firefox, many of which allow for CSS tweaking.</p>
 <p>Here&rsquo;s a demo of my current Firefox setup:</p>
 <a href="../../../images/blog/070223/firefox.webp" data-lightbox="ff "> <img src="../../../images/blog/070223/firefox.webp" class="img-fluid" loading=""  width="" height="" alt="">  </a>
 <p>I&rsquo;ve achieved this look with some CSS and a few add-ons. My setup features:</p>
 <ul>
-<li>Collapsible sidebar (expands on hover)</li>
-<li>Active/inactive tab counter that functions as a new tab button</li>
+<li>A collapsible sidebar (expands on hover)</li>
+<li>An active/inactive tab counter that functions as a new tab button</li>
 <li>Italicized inactive/unread tabs</li>
-<li>Click tab favicon to expand/collapse tab tree</li>
+<li>Clickable favicon to expand/collapse tab tree</li>
+<li>Hover to see what tab number you&rsquo;re on</li>
 <li>Tab titles and close button disappear when sidebar is collapsed</li>
 <li>Top (horizontal) tabs are hidden in favor of tree tabs</li>
 <li>Window control buttons (minimize, maximize, close) are merged with the toolbar</li>
 <li>Active tab highlight color is selected from your Firefox theme</li>
-<li>Purple/pink/blue color scheme</li>
-<li>See what number a tab is when you hover</li>
+<li>Purple/pink color scheme</li>
 </ul>
-<p>If you&rsquo;re a tab addict who cares deeply about screen real estate, continue reading for instructions on how to recreate my setup! This tutorial presumes you&rsquo;ve already downloaded Mozilla.</p>
+<p>If you&rsquo;re a tab addict who cares deeply about screen real estate, continue reading for instructions on how to recreate my setup! This tutorial presumes you&rsquo;ve already downloaded Firefox.</p>
 <hr>
 <h2 id="step-1-customize-firefox-color">Step 1: Customize Firefox Color</h2>
 <ol>
 <li>Get the Firefox Color <a href="https://addons.mozilla.org/en-US/firefox/addon/firefox-color/">extension</a>.</li>
 <li>Head to the <a href="https://color.firefox.com/">website</a>.</li>
-<li>Select whatever theme you want. Or make your own. <a href="https://color.firefox.com/?theme=XQAAAAI0AQAAAAAAAABBqYhm849SCia2CaaEGccwS-xNKlhhT7FcjMwJkEgE5uIU5XaaD-dDbJMXbYZiL9mB2eGL-22JKioNeP3kvNUGuFv85O6OCkMLhqTiAoy9NAf0li2BqE7IH_5i9zdkfuV24Q3C7VoAKA0TvFqaSMgczr6T5EO2b9XMA1WbCYMMRQEwU00jlqBbM35zYK5Hq7odbTonreJyxRSKaDyzFUdABtPZVnYYbjQmlZ1tNwHmYR-LPEU_frmNaxCV9Y3sRkWYzc3p-Y3GgElyLPb75YSX_z2cpQA">Mine</a> is a slightly modified version of a pre-existing theme.</li>
+<li>Select whatever theme you want. Or make your own. You can also use <a href="https://color.firefox.com/?theme=XQAAAAI0AQAAAAAAAABBqYhm849SCia2CaaEGccwS-xNKlhhT7FcjMwJkEgE5uIU5XaaD-dDbJMXbYZiL9mB2eGL-22JKioNeP3kvNUGuFv85O6OCkMLhqTiAoy9NAf0li2BqE7IH_5i9zdkfuV24Q3C7VoAKA0TvFqaSMgczr6T5EO2b9XMA1WbCYMMRQEwU00jlqBbM35zYK5Hq7odbTonreJyxRSKaDyzFUdABtPZVnYYbjQmlZ1tNwHmYR-LPEU_frmNaxCV9Y3sRkWYzc3p-Y3GgElyLPb75YSX_z2cpQA">mine</a>, a slightly modified version of a pre-existing theme.</li>
 </ol>
 <a href="../../../images/blog/070223/ffcolor.webp" data-lightbox="ff "> <img src="../../../images/blog/070223/ffcolor.webp" class="img-fluid" loading=""  width="" height="" alt="">  </a>
 <hr>
 <h2 id="step-2-get-tree-vertical-tabs">Step 2: Get tree (vertical) tabs</h2>
 <ol>
-<li>Download Piro&rsquo;s <a href="https://addons.mozilla.org/en-US/firefox/addon/tree-style-tab/">Tree Style Tab</a> add-on from the official Mozilla repository.</li>
+<li>Download Piro&rsquo;s <a href="https://addons.mozilla.org/en-US/firefox/addon/tree-style-tab/">Tree Style Tab</a> add-on.</li>
 <li>From your add-on list, you can right click and select &ldquo;<em>Manage extension</em>&rdquo;.</li>
 <li>Click the tab that says &ldquo;<em>Preferences</em>&rdquo;.</li>
 <li>Select the <strong>Photon</strong> theme. The Proton theme will also work.</li>
-<li>Scroll down and reveal the &ldquo;<em>Advanced</em>&rdquo; options. Copy and paste the following Gist code into the code box. Note that your vertical tab text might vanish. Don&rsquo;t worry about it!</li>
+<li>Scroll down and reveal the &ldquo;<em>Advanced</em>&rdquo; options. Copy and paste the following Gist code into the code box. Note that your vertical tab text might vanish. Don&rsquo;t worry about it! We&rsquo;ll deal with the collapsing sidebar in step 3.</li>
 <li>Note: Most of the changes I&rsquo;ve made here are pulled from this <a href="https://github.com/piroor/treestyletab/wiki/Code-snippets-for-custom-style-rules">Github page</a> full of tweaks.</li>
 </ol>
 <script type="application/javascript" src="https://gist.github.com/js044/38d41c375b07075e1dbdae519d08bb8c.js"></script>
@@ -120,17 +120,18 @@
 <li>Under <em>&ldquo;Profile: default-release&rdquo;</em> (your default profile), locate the <em>&ldquo;Root Directory&rdquo;</em> tab and click <em>&ldquo;Open Directory&rdquo;</em>.</li>
 <li>Create a folder called <em>&ldquo;chrome&rdquo;</em>.</li>
 <li>Create a file within that folder called <code>userChrome.css</code></li>
-<li>Copy and paste the following Gist into the code box. You can refresh Firefox to see changes.</li>
-<li>Note that line 14 may require you to make alterations based on your viewport.</li>
+<li>Copy and paste the following Gist into the code box. Restart Firefox to see changes.</li>
+<li>*Note that line 14 may require you to make alterations based on your viewport.</li>
 </ol>
 <script type="application/javascript" src="https://gist.github.com/js044/618a3ec1181a548dc88dd6bab0cd91f3.js"></script>
 
 <hr>
 <h2 id="step-4-customizing-tabliss">Step 4: Customizing Tabliss</h2>
 <ol>
-<li>For my new tab page, I use a FOSS add-on called <a href="https://addons.mozilla.org/en-US/firefox/addon/tabliss/">Tabliss</a>. You can download it at that link.</li>
-<li>Tabliss lets you fine-tune what backgrounds you want to display. I made a custom collection of photos <a href="https://unsplash.com/collections/_zqqJaaI4YQ/neon-purple">here</a>, which you can reference in the Tabliss background settings by adding &ldquo;_zqqJaaI4YQ&rdquo; under &ldquo;Collection.&rdquo; You can also add any other collection you find on Tabliss, or do something else entirely.</li>
-<li>Add a new widget for &ldquo;Custom CSS&rdquo; and add this snippet. It adds Fira Sans, a translucent background box for the center, and modifies the search bar a bit.</li>
+<li>For my new tab page, I use a FOSS add-on called <a href="https://addons.mozilla.org/en-US/firefox/addon/tabliss/">Tabliss</a>. Grab it for yourself!</li>
+<li>Tabliss lets you fine-tune what backgrounds you want to display. They use the Unsplash API to allow you to select custom collections of photographs (along many other options). I made my own collection <a href="https://unsplash.com/collections/_zqqJaaI4YQ/neon-purple">here</a>, which you can reference in the Tabliss background settings by adding &ldquo;_zqqJaaI4YQ&rdquo; under &ldquo;Collection.&rdquo;</li>
+<li>You should add similar widgets, such as &ldquo;Quick Links,&rdquo; &ldquo;Search,&rdquo; and &ldquo;Greeting&rdquo;.</li>
+<li>After you&rsquo;re done, select a new widget for &ldquo;Custom CSS&rdquo; and add this snippet. It adds Fira Sans, a translucent background box for the center, and modifies the search bar a bit.</li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">@<span style="color:#66d9ef">import</span> <span style="color:#f92672">url</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#39;https://fonts.googleapis.com/css2?family=Fira+Sans&amp;display=swap&#39;</span><span style="color:#f92672">)</span>;
 
