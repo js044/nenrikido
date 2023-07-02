@@ -1,6 +1,6 @@
 ---
 title: "Firefox Tree Tabs Tu(tour)ial"
-date: 2023-06-27T00:34:17-06:00
+date: 2023-07-02T00:34:17-06:00
 tags: tutorials
 summary: Welcome to my crib, Mozilla Firefox edition. With instructions on how to recreate it!
 draft: false
