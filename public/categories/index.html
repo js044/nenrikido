@@ -19,8 +19,39 @@
 <main>
     <article>
         <div class="wrapper">
+            <nav id="navAlt">
+                <div class="navWrapper"> <a class="navLink" href="../blog">
+                        <div id="blog"> </div>Tags
+                    </a>               
+                </div>
+        <div id='musicplayer'>
+            <div id='musicpixel'> <img src="../images/pixels/music.gif" style="max-width: 40px;">
+                <div class='overlay'>
+                    <div class='playpause'><i class="fas fa-play"></i></div>
+                </div>
+            </div>
+            <div id='musictitle'> <span class='marquee'>summer rain</span> </div>
+        </div> <audio id='musicsrc' loop src='https://dl.dropbox.com/s/seanb1ogmdoezmr/cricket-rain.mp3'></audio>
+
+
+<script>
+    document.querySelector('.playpause').addEventListener('click', playpause);
+    
+    function playpause() {
+      if (document.querySelector('.playpause').innerHTML == '<i class="fas fa-play"></i>') {
+        document.querySelector('#musicsrc').play();
+        document.querySelector('.playpause').innerHTML = '<i class="fas fa-pause"></i>';
+      } else {
+        document.querySelector('#musicsrc').pause();
+        document.querySelector('.playpause').innerHTML = '<i class="fas fa-play"></i>';
+      }
+    }
+</script>
+<form class="search"> <input type="text" class="searchTerm" placeholder="Search..."> <button aria-label="submit" type="submit" class="searchButton"> <i class="fa fa-search"></i> </button> </form>
+
+</nav>
             <div class="grid">
-                    <div class="item mediumlarge">
+                    <div class="item smallarge">
                         <div class="cards"><div class="cardsHeader">
     <div class="cardsControls">
             <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>

@@ -536,6 +536,7 @@ img.emoji {
 
 /* Code boxes */
 pre code {
+	font-size: smaller;
 	background-color: transparent;
 }
 
@@ -938,7 +939,7 @@ footer#footer ul li a.selected {
 }
 
 @media screen and (max-width:768px) {
-	.item.small, .item.medium, .item.mediumlarge, .item.smallarge, .item.large {
+	.item.small, .item.medium, .item.smallarge, .item.large {
 		width: 80vw;
 		margin: 1.2rem auto;		
 	}

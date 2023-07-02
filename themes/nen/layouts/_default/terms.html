@@ -2,8 +2,15 @@
 <main>
     <article>
         <div class="wrapper">
+            <nav id="navAlt">
+                <div class="navWrapper"> <a class="navLink" href="/blog">
+                        <div id="blog"> </div>Tags
+                    </a>               
+                </div>
+            {{- partial "mini-music.html" . -}} {{- partial "search-bar.html" . -}}
+            </nav>
             <div class="grid">
-                    <div class="item mediumlarge">
+                    <div class="item smallarge">
                         <div class="cards">
                             {{- partial "card-header.html" . -}}
                         <div class="cardsBody"> 
