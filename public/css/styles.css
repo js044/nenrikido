@@ -295,14 +295,14 @@ nav#nav {
 
 .cardsHeader {
 	cursor: grab;
-	height: 2.5em;
+	height: 2.5rem;
 	background-color: var(--secondary);
 	color: var(--tertiary);
 }
 
 .cardsControls {
-	font-size: 14px;
-	padding: 7px;
+	font-size: 1em;
+	padding: 3px;
 	color: var(--tertiary);
 	display: flex;
 	justify-content: space-between;
