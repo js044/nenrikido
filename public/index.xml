@@ -147,11 +147,10 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nenrikido.neocities.org/commissions/</guid>
-      <description>COMMISSIONS  
-  status
- pricing
- terms
- ko-fi     summer rain     document.querySelector(&#39;.playpause&#39;).addEventListener(&#39;click&#39;, playpause); function playpause() { if (document.querySelector(&#39;.playpause&#39;).innerHTML == &#39;&#39;) { document.querySelector(&#39;#musicsrc&#39;).play(); document.querySelector(&#39;.playpause&#39;).innerHTML = &#39;&#39;; } else { document.querySelector(&#39;#musicsrc&#39;).pause(); document.querySelector(&#39;.playpause&#39;).innerHTML = &#39;&#39;; } }              #COMMISSION STATUS  Commissions are currently closed but are planned to open over the summer.</description>
+      <description>COMMISSIONSstatus
+pricing
+terms
+ko-fi summer rain #COMMISSION STATUSCommissions are currently closed but are planned to open over the summer. #PRICINGWIP #TERMSWIP #KOFIall tips &amp;amp; donations appreciated!</description>
     </item>
     
     <item>
@@ -160,10 +159,20 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nenrikido.neocities.org/gallery/</guid>
-      <description>GALLERY  
- Show all Digital illustration Graphic design Objects Paintings Photos      summer rain     document.querySelector(&#39;.playpause&#39;).addEventListener(&#39;click&#39;, playpause); function playpause() { if (document.querySelector(&#39;.playpause&#39;).innerHTML == &#39;&#39;) { document.querySelector(&#39;#musicsrc&#39;).play(); document.querySelector(&#39;.playpause&#39;).innerHTML = &#39;&#39;; } else { document.querySelector(&#39;#musicsrc&#39;).pause(); document.querySelector(&#39;.playpause&#39;).innerHTML = &#39;&#39;; } }                
-
-Yiseul References  Jan. 2023</description>
+      <description>GALLERYShow allDigital illustrationGraphic designObjectsPaintingsPhotossummer rain Yiseul References Jan. 2023
+Clip Studio Paint
+Moo-yu Product Mockup Oct. 2019
+Adobe Illustrator, Adobe InDesign
+Star &amp;amp; Moon Earrings Dec. 2022
+UV Resin
+Cole birthday gift Feb. 2023
+Clip Studio Paint
+OC belongs to my neopet @velveteas_
+Madotsuki Sketches Sep. 2021 Clip Studio Paint
+Yume Nikki fanart
+Clouds July 2022
+UV Resin, air dry clay
+Lavender Waters June 2019 Digital photography, taken at Aqua Planet 63 in Seoul</description>
     </item>
     
     <item>
@@ -172,8 +181,9 @@ Yiseul References  Jan. 2023</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nenrikido.neocities.org/library/</guid>
-      <description>LIBRARY  
- Show all Books Essays Video Audio Zines Poetry Archives      summer rain     document.querySelector(&#39;.playpause&#39;).addEventListener(&#39;click&#39;, playpause); function playpause() { if (document.querySelector(&#39;.playpause&#39;).innerHTML == &#39;&#39;) { document.querySelector(&#39;#musicsrc&#39;).play(); document.querySelector(&#39;.playpause&#39;).innerHTML = &#39;&#39;; } else { document.querySelector(&#39;#musicsrc&#39;).pause(); document.querySelector(&#39;.playpause&#39;).innerHTML = &#39;&#39;; } }              #Library Bulletin  Current Number of Library Entries: 72</description>
+      <description>LIBRARYShow allBooksEssaysVideoAudioZinesPoetryArchivessummer rain #Library BulletinCurrent Number of Library Entries: 72
+This page is a collection of media that I have personally found interesting and/or useful. As such, it should not be treated as a neutral or unbiased selection.
+In the spirit of maintaining a digital &amp;ldquo;library,&amp;rdquo; items listed are free. All posts have a &amp;ldquo;Check out&amp;rdquo; link that allows you to download or view the content.</description>
     </item>
     
     <item>
@@ -182,12 +192,32 @@ Yiseul References  Jan. 2023</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nenrikido.neocities.org/links/</guid>
-      <description>LINKS  
-  find me
- webrings
- fanlistings
- button wall
- resources     summer rain     document.querySelector(&#39;.playpause&#39;).addEventListener(&#39;click&#39;, playpause); function playpause() { if (document.querySelector(&#39;.playpause&#39;).innerHTML == &#39;&#39;) { document.querySelector(&#39;#musicsrc&#39;).play(); document.querySelector(&#39;.playpause&#39;).innerHTML = &#39;&#39;; } else { document.querySelector(&#39;#musicsrc&#39;).pause(); document.querySelector(&#39;.playpause&#39;).innerHTML = &#39;&#39;; } }              #FIND ME     nenrikido@pm.me</description>
+      <description>LINKSfind me
+webrings
+fanlistings
+button wall
+resources summer rain #FIND MEnenrikido@pm.me
+nenrikido_
+nenrikido-art
+nenrikido
+neocities profile
+ask me #WEBRINGS#FANLISTINGS#BUTTON WALLMY BUTTON: &lt;a href=&#34;https://nenrikido.neocities.org/&#34;&gt;&lt;img src=&#34;https://dl.dropbox.com/s/265wg2om8bjr5g6/nenrikido_button.gif&#34;&gt;&lt;/img&gt;#WEB DEV RESOURCES= used for this site
+GENERAL:codepen jsfiddle
+freecodecamp
+mdn web docs
+neocities web guide
+stack overflow
+w3schools
+css tricks
+svg editor
+sadgrl guides
+sadgrl webmaster links JAVASCRIPT LIBRARIES:LAYOUTS:
+isotope
+masonry
+muuri packery
+ANIMATION:
+three
+anime</description>
     </item>
     
     <item>
@@ -241,8 +271,8 @@ Yiseul References  Jan. 2023</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nenrikido.neocities.org/about/styleguide/</guid>
-      <description>STYLE GUIDE  
- Based on the Poor Man&amp;rsquo;s styleguide.     summer rain     document.querySelector(&#39;.playpause&#39;).addEventListener(&#39;click&#39;, playpause); function playpause() { if (document.querySelector(&#39;.playpause&#39;).innerHTML == &#39;&#39;) { document.querySelector(&#39;#musicsrc&#39;).play(); document.querySelector(&#39;.playpause&#39;).innerHTML = &#39;&#39;; } else { document.querySelector(&#39;#musicsrc&#39;).pause(); document.querySelector(&#39;.playpause&#39;).innerHTML = &#39;&#39;; } }              #STYLE GUIDE  Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6  Heading 1 Lorem ipsum dolor sit amet, adipiscing elit.</description>
+      <description>STYLE GUIDEBased on the Poor Man&amp;rsquo;s styleguide. summer rain #STYLE GUIDEHeading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Heading 1 Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.
+Heading 2 Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est.</description>
     </item>
     
     <item>

@@ -12,8 +12,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nenrikido.neocities.org/about/styleguide/</guid>
-      <description>STYLE GUIDE  
- Based on the Poor Man&amp;rsquo;s styleguide.     summer rain     document.querySelector(&#39;.playpause&#39;).addEventListener(&#39;click&#39;, playpause); function playpause() { if (document.querySelector(&#39;.playpause&#39;).innerHTML == &#39;&#39;) { document.querySelector(&#39;#musicsrc&#39;).play(); document.querySelector(&#39;.playpause&#39;).innerHTML = &#39;&#39;; } else { document.querySelector(&#39;#musicsrc&#39;).pause(); document.querySelector(&#39;.playpause&#39;).innerHTML = &#39;&#39;; } }              #STYLE GUIDE  Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6  Heading 1 Lorem ipsum dolor sit amet, adipiscing elit.</description>
+      <description>STYLE GUIDEBased on the Poor Man&amp;rsquo;s styleguide. summer rain #STYLE GUIDEHeading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Heading 1 Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.
+Heading 2 Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est.</description>
     </item>
     
   </channel>
