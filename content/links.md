@@ -34,7 +34,10 @@ draft: false
 {{< large-scrollbox >}}
 {{< col >}}
 
-<div id='RPGMaker'> <script type="text/javascript" src="https://ophanimkei.neocities.org/onionring/onionring-variables.js"></script> <script type="text/javascript" src="https://ophanimkei.neocities.org/onionring/onionring-widget.js"></script>  </div> 
+<div id='RPGMaker'>
+                    <script type="text/javascript" src="https://mal.ophanimkei.com/onionring-variables.js"></script>
+                    <script type="text/javascript" src="https://mal.ophanimkei.com/onionring-widget.js"></script>
+                  </div>
 
 <div><script src="https://nuthead.neocities.org/ring/ring.js"></script> </div>
 
