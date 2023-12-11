@@ -3,7 +3,7 @@ title: "'why'd you make this site?', 'how did you start coding?', and other ques
 date: 2023-03-17T22:59:17-06:00
 tags: personal
 summary: my 26th birthday was earlier this month.
-draft: false
+draft: true
 ---
 
 my 26th birthday was earlier this month.

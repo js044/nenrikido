@@ -3,6 +3,7 @@ title: "Making a Preloader"
 date: 2023-04-05T01:38:00-06:00
 tags: tutorials
 summary: How to make a simple full-page loading screen for your site.
+thumbnail: /images/blog/preload.gif
 draft: false
 ---
 

@@ -1,0 +1,19 @@
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+	position: fixed;
+	right: 12px;
+	z-index: 1;
+	&-track {
+		box-shadow: 0;
+		border-radius: 0px;
+		background-color: var(--tertiary);
+	}
+	&-thumb {
+		background: var(--secondary);
+		border-radius: 0px;
+	}
+}
+.post ::-webkit-scrollbar-track {
+	border-left: 0px solid var(--secondary);
+}

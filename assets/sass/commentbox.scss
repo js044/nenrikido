@@ -1,0 +1,33 @@
+#HCB_comment_box,
+.btn,
+input#hcb_submit,
+.hcb-comment-tb button,
+#HCB_comment_box input,
+#HCB_comment_box input.btn,
+#HCB_comment_box select,
+#HCB_comment_box textarea,
+span.date {
+    font-family: var(--body-font) !important;
+}
+
+.home-desc,
+.hcb-icon {
+    display: none !important;
+}
+
+.hcb-comment-tb button {
+    color: var(--secondary) !important;
+}
+
+#hcb_submit,
+input#hcb_submit {
+    color: var(--tertiary) !important;
+    background-color: var(--secondary) !important;
+    border: none !important;
+}
+
+#HCB_comment_box .comment a img {
+    margin: 0 0 8px;
+    border-left: 1px solid !important;
+    padding-left: 5px !important;
+}

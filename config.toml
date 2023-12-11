@@ -2,13 +2,18 @@ baseURL = "https://nenrikido.neocities.org/"
 defaultContentLanguage = "en"
 languageCode = "en-us"
 relativeURLS = true
-theme = "nen"
 title = "NENRIKIDO"
 
 [frontmatter]
 date = [ "date", "publishDate", "lastmod" ]
 lastmod = [ "lastmod", ":fileModTime", ":default" ]
 sectionPagesMenu = "main"
+
+  [build]
+    writeStats = true
+  [build.processing.css]
+  enable = true
+  filetype = "scss"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

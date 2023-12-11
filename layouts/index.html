@@ -1,0 +1,46 @@
+{{ define "main" }}
+<link rel="stylesheet" type="text/css" href="/css/index.css">
+<div class="wrapper">
+    <nav id="nav">
+        <div class="row centered">
+            <a class="navLink" href="/">
+                <div id="home"></div>Home
+            </a>
+            <a class="navLink" href="/about">
+                <div id="about"></div>About
+            </a>
+            <a class="navLink" href="/gallery">
+                <div id="gallery"></div>Gallery
+            </a>
+            <a class="navLink" href="/commissions">
+                <div id="commissions"></div>Commissions
+            </a>
+            <a class="navLink" href="/code">
+                <div id="code"></div>Code
+            </a>
+            <a class="navLink" href="/blog">
+                <div id="blog"></div>Blog
+            </a>
+            <a class="navLink" href="/links">
+                <div id="links"></div>Links
+            </a>
+            <a class="navLink" href="/microblog">
+                <div id="microblog"></div>Microblog
+            </a>
+            <a class="navLink" href="/library">
+                <div id="library"></div>Library
+            </a>
+            <a class="navLink" href="/nexus">
+                <div id="nexus"></div>Nexus
+            </a>
+        </div>
+        {{ partial "search-bar.html"}}
+    </nav>
+
+    <div class="grid">
+        {{.Content}} </div>
+</div>
+<script src="/js/microblog_recent.js"></script>
+<script type="text/javascript" src="/js/audioPlayer.js" defer></script>
+
+{{ end }}

@@ -12,7 +12,7 @@ draft: false
 
 {{< muuri >}}
 {{< card-large title="#COMMISSION STATUS" id="status" >}}
-Commissions are currently **closed** but are planned to open over the summer.
+Commissions are currently **closed**. Opening soon!
 {{< /card-large >}}
 
 {{< card-large title="#PRICING" id="pricing" >}}

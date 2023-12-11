@@ -1,0 +1,44 @@
+<footer id="footer">
+    <ul>
+        <li> <button id="footer-button">START</button> </li>
+        <li> <a href="#" id="btn-back-to-top" onclick="call()"><i class="fa-solid fa-circle-chevron-up"></i></a></li>
+        <li>
+            <div id="clock" class="clock" onload="showTime()"></div>
+        </li>
+    </ul>
+</footer>
+
+<div id="start-menu" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h1>START MENU</h1> <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+
+            <div class="modal-bio">
+                <img class="modal-bio img" src="/images/icons/sh.jpg">
+                <p style="font-size:large; font-weight:bold;">Rio's desktop</p>
+                <p align="center"><i class="fa-regular fa-map"></i> <a href="/sitemap">Sitemap</a></p>
+
+                <ul style="font-style: italic;">
+                    <li>OS: NENRIKIDO</li>
+                    <li>Version: 1.6</li>
+                    <li>Host: Neocities</li>
+                    <li>Processor: Hugo</li>
+                    <li>Since: 03-13-23</li>
+                </ul>
+            </div>
+            <div class="modal-list"> {{ range .Site.Menus.main }} <a class="modal-menu " href="{{ .URL }}"> {{ .Pre
+                    }} <span>{{ .Name }} </span> <i class="fa-solid fa-chevron-right"></i></a> {{ end }} </div>
+
+        </div>
+        <div class="modal-footer"> {{- partial "theme-switcher.html" . -}} </div>
+    </div>
+    <script>
+        function call() {
+            var body = $("html, body");
+            body.stop().animate({ scrollTop: 0 }, 500, 'swing', function () {
+            });
+        }</script>
+    <script type="text/javascript" src="/js/clock.js"></script>
+    <script defer type="text/javascript" src="/js/start.js"></script>

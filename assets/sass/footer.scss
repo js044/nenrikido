@@ -1,0 +1,210 @@
+footer {
+    z-index: 9000;
+    position: fixed;
+
+    &#footer {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--tertiary);
+        border-top: 2px solid var(--secondary);
+
+        ul {
+            list-style: none;
+            display: flex;
+            padding: 0 5px;
+            margin: 0;
+            height: 2.6rem;
+
+            li {
+                margin: auto 0;
+
+                &:first-child {
+                    flex: 1;
+                }
+
+                a {
+                    padding: 0px 10px;
+                    display: inline-flex;
+                    text-decoration: none;
+
+                    &:hover,
+                    &.selected {
+                        color: var(--secondary_muted);
+                    }
+                }
+            }
+        }
+    }
+}
+
+#footer-button {
+    font: var(--body-font);
+    font-size: 1rem;
+    padding: 0px 20px;
+    border: 2px solid var(--secondary);
+    color: var(--secondary);
+
+    &:hover,
+    &:focus {
+        background-color: var(--secondary);
+        color: var(--tertiary);
+    }
+}
+
+.modal {
+    background-color: var(--secondary_muted);
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+
+    &-content {
+        position: fixed;
+        bottom: 35px;
+        background-color: var(--tertiary);
+        width: 400px;
+        border: 1px solid var(--secondary);
+        border-radius: 10px;
+        -webkit-animation-name: slideIn;
+        -webkit-animation-duration: 0.4s;
+        animation-name: slideIn;
+        animation-duration: 0.4s;
+    }
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid var(--secondary_muted);
+    }
+
+    &-body {
+        display: flex;
+    }
+
+    &-bio {
+        text-align: center;
+        margin: 1rem;
+
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-align: left;
+        }
+
+        img {
+            width: 100px;
+            border-radius: 50px;
+            border: 1px solid var(--secondary_muted);
+
+            &:hover {
+                filter: drop-shadow(0px 0px 20px var(--secondary_muted));
+            }
+        }
+    }
+
+    &-list {
+        border-left: 1px solid var(--secondary_muted);
+        flex: 1;
+
+        &>a+a {
+            border-top: 1px solid var(--secondary_muted);
+        }
+
+        a:hover {
+            color: var(--primary);
+            background-color: var(--secondary_muted);
+        }
+    }
+
+    &-menu a:active {
+        background-color: var(--secondary_muted);
+        color: var(--primary);
+    }
+
+    &-menu {
+        display: flex;
+        justify-content: space-between;
+        line-height: 1;
+        padding: 10px 20px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    &-footer {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem;
+        border-top: 1px solid var(--secondary_muted);
+    }
+}
+
+.close {
+    color: var(--secondary);
+    float: right;
+    font-size: 3rem;
+    font-weight: bold;
+
+    &:hover,
+    &:focus {
+        color: var(--secondary_muted);
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+
+@-webkit-keyframes slideIn {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@keyframes slideIn {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}

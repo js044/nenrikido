@@ -5,51 +5,42 @@
     <link>https://nenrikido.neocities.org/code/</link>
     <description>Recent content in Code on NENRIKIDO</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://nenrikido.neocities.org/code/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://nenrikido.neocities.org/code/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pudding</title>
       <link>https://nenrikido.neocities.org/code/preview/pudding/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://nenrikido.neocities.org/code/preview/pudding/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Rainbow</title>
       <link>https://nenrikido.neocities.org/code/preview/rainbow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://nenrikido.neocities.org/code/preview/rainbow/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Sakura</title>
       <link>https://nenrikido.neocities.org/code/preview/sakura/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://nenrikido.neocities.org/code/preview/sakura/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Sunflower</title>
       <link>https://nenrikido.neocities.org/code/preview/sunflower/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://nenrikido.neocities.org/code/preview/sunflower/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Toothache</title>
       <link>https://nenrikido.neocities.org/code/preview/toothache/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://nenrikido.neocities.org/code/preview/toothache/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

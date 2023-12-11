@@ -3,7 +3,7 @@ title: "misogyny online"
 date: 2023-03-27T03:24:27-06:00
 tags: personal
 summary: a 3AM rant. as one does 
-draft: false
+draft: true
 ---
 
 i wasn't really planning on posting about discourse, esp. since a lot of people seem to use this part of the web to escape it, but oh well. i was pretty much born on tumblr; it's where i learned to code, and alas, it is also where i learned to get irritated during 3AM scrolling sessions. and lord forgive me for i have scrolled.

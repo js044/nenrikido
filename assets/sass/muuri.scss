@@ -1,0 +1,39 @@
+.grid {
+    position: relative;
+    width: 80%;
+    margin: 1rem auto 5rem auto;
+
+    .item {
+        position: absolute;
+        margin: 1rem;
+        z-index: 1;
+
+        &.muuri-item-hidden {
+            z-index: 0;
+        }
+
+        &.muuri-item-releasing {
+            z-index: 2;
+        }
+
+        &.muuri-item-dragging {
+            z-index: 3;
+        }
+
+        &.small {
+            width: clamp(15rem, 15vw, 17rem);
+        }
+
+        &.medium {
+            width: clamp(16rem, 16vw, 20rem);
+        }
+
+        &.smallarge {
+            width: clamp(22rem, 22vw, 29rem);
+        }
+
+        &.large {
+            width: clamp(42rem, 42vw, 44rem);
+        }
+    }
+}

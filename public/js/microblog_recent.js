@@ -25,17 +25,7 @@ var firstLoad = 1;
 
 // stolen shamelessly from w3schools
 // https://www.w3schools.com/xml/xml_parser.asp
-window.addEventListener("DOMContentLoaded", (event) => {
-	var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      buildPage(this);
-    }
-  };
-  xhttp.open("GET", RSSLink, true);
-  xhttp.send();
-});
-
+ 
 function buildPage(xml) {
   var xmlDoc;
   var authorName, username, iconLink, rootLink, bioText;
@@ -176,3 +166,4 @@ function loadSingle(rssItem, authorName, username, iconLink, rootLink) {
   
   document.getElementById(MicroblogDivID).appendChild(post); 
 }
+

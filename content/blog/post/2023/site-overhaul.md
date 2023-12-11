@@ -3,6 +3,7 @@ title: "Site Overhaul"
 date: 2023-04-04T02:28:14-06:00
 tags: site updates
 summary: lots and lots and lots of new things.
+thumbnail: /images/blog/dragndrop.gif
 draft: false
 ---
 

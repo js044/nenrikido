@@ -10,9 +10,12 @@
     <link rel='shortcut icon' type='image/x-icon' href='../images/icons/favicon-32x32.png' />
 
     <link rel="alternate" type="application/rss+xml" href="https://nenrikido.neocities.org/code/index.xml" title="NENRIKIDO" />
+    
+    <link href="../sass/main.min.1b0e385727321aa6c9ab2363ec685359981762b2071f3e202a2f21d92393162a.css" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="../css/themes.css">
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
     <link rel="stylesheet" type="text/css" href="../css/lightbox.css">
     
     <div id="preloader"></div><body>
@@ -54,7 +57,7 @@
 </script>
 <form class="search"> <input type="text" class="searchTerm" placeholder="Search..."> <button aria-label="submit" type="submit" class="searchButton"> <i class="fa fa-search"></i> </button> </form>
 
-</nav>
+<ul class="searchResults"></ul></nav>
 
 <div class="grid"> 
  <div class="item smallarge ">
@@ -67,14 +70,14 @@
 </div>
         <div class="cardsBody">
             <h1>#Code Guide</h1>
-            <p> <p>This is a repository of pre-made layouts and code snippets that are free for you to use (non-commercially). Check individual posts for details. A few notes:</p>
+            <p> <p>This is a list of pre-made layouts and code snippets that are free for you to use. Check individual posts for details on how to use them. There&rsquo;s also a Github repository listing them <a href="https://github.com/js044/freebies/tree/main">here</a>. A few notes:</p>
 <ul>
+<li>All themes are licensed under the <a href="https://github.com/js044/freebies/blob/main/LICENSE">MIT License</a>, which means they&rsquo;re free for you to use however you want. The only stipulation is that you retain attribution to me, which can be as simple as leaving credit in the HTML/CSS comments (hidden from public view.)</li>
 <li>Page themes are platform agnostic layouts and can be used anywhere that supports (modern) HTML/CSS. They use CSS variables to manage user settings so you can swap out colors, images, fonts, etc. These variables are located in the :root element. If you&rsquo;d like to know more about CSS variables, you can read <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">this guide</a>.</li>
 <li>Page themes are meant to look identical to previews out-of-the-box, so they come shipped with web URL images rather than local links. I encourage you to link your content locally.</li>
-<li>Page themes are stored in one messy file for ease of use, but it&rsquo;s not best practice. If you plan to use any themes across multiple pages, please separate the CSS and JS into their own files.</li>
+<li>Page themes are stored in one messy file so you can easily drop it in and test it out, but this is <strong>not</strong> best practice. If you plan to use any themes across multiple pages, I strongly recommend separating the CSS and JS into their own files.</li>
 <li>Themes are tested on Mozilla and Chrome on a variety of displays, but there&rsquo;s no way I&rsquo;ll catch all bugs. If anything is weird, let me know.</li>
 <li>For instructions on installing a Tumblr theme, you can read their <a href="https://help.tumblr.com/hc/en-us/articles/230775027-Customizing-Your-Theme#h_01GWSSBWHMQT08V15J7ZJTMDJX">official documentation</a>.</li>
-<li>Attribution is nice, but not required.</li>
 </ul>
 <p>Feel free to email me (<a href="mailto:nenrikido@pm.me">nenrikido@pm.me</a>) with any questions/comments or leave a comment here.</p>
 <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
@@ -301,32 +304,34 @@
     <ul>
         <li> <button id="footer-button">START</button> </li>
         <li> <a href="#" id="btn-back-to-top" onclick="call()"><i class="fa-solid fa-circle-chevron-up"></i></a></li>
-        <li><div id="clock" class="clock" onload="showTime()"></div></li>
+        <li>
+            <div id="clock" class="clock" onload="showTime()"></div>
+        </li>
     </ul>
 </footer>
 
 <div id="start-menu" class="modal">
     <div class="modal-content">
         <div class="modal-header">
-            <h1>Start Menu</h1> <span class="close">&times;</span>
+            <h1>START MENU</h1> <span class="close">&times;</span>
         </div>
         <div class="modal-body">
-            
-                <div class="modal-bio">
-                    <img class="modal-bio img" src="../images/icons/sh.jpg">
-                    <h6>Rio's desktop</h6>
-                    <p align="center"><i class="fa-regular fa-map"></i> <a href="../sitemap">Sitemap</a></p>
 
-                    <ul style="font-style: italic;">
-                        <li>OS: NENRIKIDO</li>
-                        <li>Version: 1.5</li>
-                        <li>Host: Neocities</li>
-                        <li>Processor: Hugo</li>
-                        <li>Since: 03-13-23</li>
-                    </ul>
-                </div>
-                <div class="modal-list">  <a class="modal-menu " href="../">  <span>Home </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../about/">  <span>About </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../gallery/">  <span>Gallery </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../commissions/">  <span>Commissions </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../code/">  <span>Code </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../blog/">  <span>Blog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../links/">  <span>Links </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../microblog/">  <span>Microblog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../library/">  <span>Library </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../nexus/">  <span>Nexus </span> <i class="fa-solid fa-chevron-right"></i></a>  </div>
-            
+            <div class="modal-bio">
+                <img class="modal-bio img" src="../images/icons/sh.jpg">
+                <p style="font-size:large; font-weight:bold;">Rio's desktop</p>
+                <p align="center"><i class="fa-regular fa-map"></i> <a href="../sitemap">Sitemap</a></p>
+
+                <ul style="font-style: italic;">
+                    <li>OS: NENRIKIDO</li>
+                    <li>Version: 1.6</li>
+                    <li>Host: Neocities</li>
+                    <li>Processor: Hugo</li>
+                    <li>Since: 03-13-23</li>
+                </ul>
+            </div>
+            <div class="modal-list">  <a class="modal-menu " href="../">  <span>Home </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../about/">  <span>About </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../gallery/">  <span>Gallery </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../commissions/">  <span>Commissions </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../code/">  <span>Code </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../blog/">  <span>Blog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../links/">  <span>Links </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../microblog/">  <span>Microblog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../library/">  <span>Library </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../nexus/">  <span>Nexus </span> <i class="fa-solid fa-chevron-right"></i></a>  </div>
+
         </div>
         <div class="modal-footer"><div class="row centered">
     <button id="pink" title="pink theme" class="theme-button" onclick="handleThemeButtonClick('pink', this)">💗</button>
@@ -335,12 +340,12 @@
     <button id="black" title="black theme" class="theme-button" onclick="handleThemeButtonClick('black', this)" >💤</button>
 </div></div>
     </div>
-<script>
-function call() {
-    var body = $("html, body");
-    body.stop().animate({scrollTop:0}, 500, 'swing', function() {
-    });
-}</script>
+    <script>
+        function call() {
+            var body = $("html, body");
+            body.stop().animate({ scrollTop: 0 }, 500, 'swing', function () {
+            });
+        }</script>
     <script type="text/javascript" src="../js/clock.js"></script>
     <script defer type="text/javascript" src="../js/start.js"></script><script src="../js/theme.js" ></script>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>

@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v140/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--secondary);
+}
+
+#aWrap {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    background: var(--tertiary);
+    border: 2px solid var(--secondary);
+
+    input[type="range"] {
+        box-sizing: border-box;
+        width: 60%;
+        appearance: none;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        background: 0;
+
+        &::-webkit-slider-thumb {
+            appearance: none;
+        }
+    }
+
+    input[type=range]::-webkit-slider-runnable-track {
+        background: var(--secondary);
+    }
+
+    input[type=range]::-moz-range-track {
+        background: var(--secondary);
+    }
+
+    input[type=range]::-webkit-slider-thumb {
+        width: 16px;
+        height: 16px;
+        margin: 1px;
+        border-radius: 50%;
+        border: 1px solid var(--secondary);
+        background: var(--tertiary);
+    }
+
+    input[type=range]::-moz-range-thumb {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 2px solid var(--secondary);
+        background: var(--tertiary);
+    }
+}
+
+#aPlay {
+    padding: 0;
+    margin-top: 5px;
+    border: 0;
+    cursor: pointer;
+
+    &:hover {
+        background: transparent;
+    }
+}
+
+#aCron {
+    color: var(--secondary);
+    margin: 0px 10px;
+}
+
+#aList {
+    position: relative;
+    width: 100%;
+    height: 22rem;
+    overflow: scroll;
+    margin-top: 10px;
+    padding: 10px;
+    color: var(--secondary);
+    background-color: var(--tertiary);
+    border: 2px solid var(--secondary);
+}
+
+.aRow {
+    word-wrap: break-word;
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+
+    &.now {
+        color: var(--secondary);
+        background-color: var(--primary);
+        width: 100%;
+    }
+}

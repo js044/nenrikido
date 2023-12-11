@@ -1,0 +1,46 @@
+@media screen and (max-width: 768px) {
+
+  .item.small, .item.medium, .item.smallarge, .item.large {
+		width: 80vw  !important;
+		margin: 1.2rem auto;		
+	}
+
+  nav {
+    padding: 1.5rem 0;
+  }
+
+  nav#nav {
+    float: none;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .navLink {
+    width: 25vw;
+  }
+
+  nav#navAlt {
+    float: none;
+    position: relative;
+    width: 60vw;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .wrapper {
+    display: block;
+  }
+
+  .theme-button {
+    height: 3.3rem !important;
+    width: 3.3rem !important;
+  }
+
+  .modal-content {
+    width: 90vw;
+  }
+
+  .banner img {
+		justify-content: center;
+	}
+}

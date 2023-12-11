@@ -1,0 +1,101 @@
+/* Microblog and Youtube thumb */
+
+#microblog_recent {
+    display: flex;
+    flex-wrap: wrap;
+    border: var(--secondary) 1px solid;
+    padding: 5px;
+
+    .profilePic {
+        float: left;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin: 1px 10px;
+
+        &:hover {
+            filter: drop-shadow(0px 0px 20px var(--secondary));
+        }
+    }
+
+    .postContent {
+        display: block;
+        margin-bottom: 0;
+
+        .postText {
+            padding: 0.5em;
+        }
+
+        .postImage {
+            display: flex;
+            align-content: center;
+            max-width: 100%;
+            padding: 0.5em;
+        }
+    }
+}
+
+
+.youtube-player {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin: 5px;
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        background: transparent;
+    }
+
+    img {
+        object-fit: cover;
+        display: block;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        max-width: 100%;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border: none;
+        height: auto;
+        cursor: pointer;
+        transition: 0.4s all;
+
+        &:hover {
+            filter: brightness(75%);
+        }
+    }
+
+    .play {
+        height: 48px;
+        width: 68px;
+        left: 50%;
+        top: 50%;
+        margin-left: -34px;
+        margin-top: -24px;
+        position: absolute;
+        background: url('https://i.ibb.co/j3jcJKv/yt.png') no-repeat;
+        cursor: pointer;
+    }
+}
+
+iframe.pet {
+    width: 100%;
+    height: 24em;
+    color: var(--secondary);
+}
+
+iframe.yt {
+    height: 100%;
+    width: 100%;
+}

@@ -5,132 +5,84 @@
     <link>https://nenrikido.neocities.org/blog/</link>
     <description>Recent content in Blog on NENRIKIDO</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://nenrikido.neocities.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://nenrikido.neocities.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mega Site Update</title>
+      <link>https://nenrikido.neocities.org/blog/post/mega-site-update/</link>
+      <pubDate>Sun, 10 Dec 2023 20:14:19 -0400</pubDate>
+      <guid>https://nenrikido.neocities.org/blog/post/mega-site-update/</guid>
+      <description>Brand new fonts, search finally works, new blog tag filter, site got SASS&amp;rsquo;ed, microblog bug is squashed, and more!</description>
+    </item>
     <item>
       <title>Firefox Tree Tabs Tu(tour)ial</title>
       <link>https://nenrikido.neocities.org/blog/post/firefox-tutourial/</link>
       <pubDate>Sun, 02 Jul 2023 00:34:17 -0600</pubDate>
-      
       <guid>https://nenrikido.neocities.org/blog/post/firefox-tutourial/</guid>
       <description>Welcome to my crib, Mozilla Firefox edition. With instructions on how to recreate it!</description>
     </item>
-    
     <item>
       <title>Yard Sale</title>
       <link>https://nenrikido.neocities.org/blog/post/yard-sale/</link>
       <pubDate>Sat, 17 Jun 2023 21:24:01 -0600</pubDate>
-      
       <guid>https://nenrikido.neocities.org/blog/post/yard-sale/</guid>
       <description>A diary entry. Featuring Hot Topic fashion and a sandwich.</description>
     </item>
-    
     <item>
       <title>Bye-bye Bootstrap</title>
       <link>https://nenrikido.neocities.org/blog/post/bye-bye-bootstrap/</link>
       <pubDate>Sun, 28 May 2023 18:42:10 -0600</pubDate>
-      
       <guid>https://nenrikido.neocities.org/blog/post/bye-bye-bootstrap/</guid>
       <description>Bootstrap gets the boot, my hair gets a trim, and the site gets a map.</description>
     </item>
-    
     <item>
       <title>2 months later: A Neocities Reflection</title>
       <link>https://nenrikido.neocities.org/blog/post/neocities-reflection/</link>
       <pubDate>Sun, 21 May 2023 21:50:10 -0600</pubDate>
-      
       <guid>https://nenrikido.neocities.org/blog/post/neocities-reflection/</guid>
       <description>Some observations about the community aspect of Neocities and online communities in general.</description>
     </item>
-    
     <item>
       <title>Site Updates</title>
       <link>https://nenrikido.neocities.org/blog/post/site-updates-3/</link>
       <pubDate>Tue, 18 Apr 2023 02:29:14 -0600</pubDate>
-      
       <guid>https://nenrikido.neocities.org/blog/post/site-updates-3/</guid>
       <description>new library with 61 current entries! (and a shrines page!)</description>
     </item>
-    
-    <item>
-      <title>Evangelion, Learning, &amp; Moving</title>
-      <link>https://nenrikido.neocities.org/blog/post/evangelion-learning-moving/</link>
-      <pubDate>Tue, 11 Apr 2023 03:51:21 -0600</pubDate>
-      
-      <guid>https://nenrikido.neocities.org/blog/post/evangelion-learning-moving/</guid>
-      <description>late night rambling</description>
-    </item>
-    
     <item>
       <title>Making a Preloader</title>
       <link>https://nenrikido.neocities.org/blog/post/making-a-preloader/</link>
       <pubDate>Wed, 05 Apr 2023 01:38:00 -0600</pubDate>
-      
       <guid>https://nenrikido.neocities.org/blog/post/making-a-preloader/</guid>
       <description>How to make a simple full-page loading screen for your site.</description>
     </item>
-    
     <item>
       <title>Site Updates ...Continued!</title>
       <link>https://nenrikido.neocities.org/blog/post/site-updates-2/</link>
       <pubDate>Tue, 04 Apr 2023 20:41:23 -0600</pubDate>
-      
       <guid>https://nenrikido.neocities.org/blog/post/site-updates-2/</guid>
       <description>is the site running any faster? it should be running faster.</description>
     </item>
-    
     <item>
       <title>Site Overhaul</title>
       <link>https://nenrikido.neocities.org/blog/post/site-overhaul/</link>
       <pubDate>Tue, 04 Apr 2023 02:28:14 -0600</pubDate>
-      
       <guid>https://nenrikido.neocities.org/blog/post/site-overhaul/</guid>
       <description>lots and lots and lots of new things.</description>
     </item>
-    
-    <item>
-      <title>Site Updates</title>
-      <link>https://nenrikido.neocities.org/blog/post/site-updates-1/</link>
-      <pubDate>Wed, 29 Mar 2023 02:34:47 -0600</pubDate>
-      
-      <guid>https://nenrikido.neocities.org/blog/post/site-updates-1/</guid>
-      <description>new stuff</description>
-    </item>
-    
     <item>
       <title>Reusable HTML Snippets: Web Components</title>
       <link>https://nenrikido.neocities.org/blog/post/web-components/</link>
       <pubDate>Tue, 28 Mar 2023 02:32:33 -0600</pubDate>
-      
       <guid>https://nenrikido.neocities.org/blog/post/web-components/</guid>
       <description>A small tutorial on using Javascript to reuse HTML snippets.</description>
     </item>
-    
-    <item>
-      <title>misogyny online</title>
-      <link>https://nenrikido.neocities.org/blog/post/misogyny-online/</link>
-      <pubDate>Mon, 27 Mar 2023 03:24:27 -0600</pubDate>
-      
-      <guid>https://nenrikido.neocities.org/blog/post/misogyny-online/</guid>
-      <description>a 3AM rant. as one does</description>
-    </item>
-    
     <item>
       <title>Making a Website (Part 1): The Planning Stage</title>
       <link>https://nenrikido.neocities.org/blog/post/making-a-website-pt-1/</link>
       <pubDate>Thu, 23 Mar 2023 03:22:37 -0600</pubDate>
-      
       <guid>https://nenrikido.neocities.org/blog/post/making-a-website-pt-1/</guid>
       <description>The blog got a bit of a makeover! Anyways, this is the first post in a series I&amp;rsquo;ve planned about building websites. It&amp;rsquo;s aimed towards the absolute beginner, but hopefully, it&amp;rsquo;ll still be interesting or useful for people with more experience.</description>
     </item>
-    
-    <item>
-      <title>&#39;why&#39;d you make this site?&#39;, &#39;how did you start coding?&#39;, and other questions</title>
-      <link>https://nenrikido.neocities.org/blog/post/whyd-you-make-this/</link>
-      <pubDate>Fri, 17 Mar 2023 22:59:17 -0600</pubDate>
-      
-      <guid>https://nenrikido.neocities.org/blog/post/whyd-you-make-this/</guid>
-      <description>my 26th birthday was earlier this month.</description>
-    </item>
-    
   </channel>
 </rss>

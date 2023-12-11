@@ -17,12 +17,13 @@ draft: false
 {{< card-large title="#FIND ME" id="find-me">}}
 {{< box-small >}}
 
-<img src="/images/pixels/13mo_nekjiru3.gif" alt="Two identical pixel cats smiling at each other and curling their paws." style="float: right; width: 220px;">
+<img src="/images/pixels/13mo_nekjiru3.gif" alt="Two identical pixel cats smiling at each other and curling their paws." style="float: right; width: 230px;">
 
 {{< icons/email >}} [nenrikido@pm.me](mailto:@nenrikido@pm.me)  
 {{< icons/mug >}} [nenrikido_](https://ko-fi.com/nenrikido_)  
 {{< icons/tumblr >}} [nenrikido-art](https://nenrikido-art.tumblr.com/)  
-{{< icons/twitter >}} [nenrikido](https://twitter.com/nenrikido)  
+{{< icons/twitter >}} [nenrikido](https://x.com/nenrikido)  
+{{< icons/bluesky >}} [nenrikido](https://bsky.app/profile/nenrikido.bsky.social)  
 {{< icons/card >}} [neocities profile](https://neocities.org/site/nenrikido)  
 {{< icons/discord >}} ask me   
 

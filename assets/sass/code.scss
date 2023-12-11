@@ -1,0 +1,53 @@
+.preview {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    gap: 1em;
+
+    &>img {
+        margin: 5px;
+    }
+
+    p {
+        margin: 5px 0;
+    }
+}
+
+pre code {
+    font-size: smaller;
+    background-color: transparent;
+}
+
+code {
+    font-size: smaller;
+    color: var(--tertiary);
+    background-color: var(--secondary_muted);
+    padding: 0 3px;
+}
+
+textarea {
+    resize: vertical;
+    width: 100%;
+    min-height: 8vh;
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+    font-size: 0.8em;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.gist {
+    max-width: 100%;
+
+    .blob-wrapper.data {
+        max-height: 15em;
+        overflow: auto;
+    }
+
+    ::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+    }
+}

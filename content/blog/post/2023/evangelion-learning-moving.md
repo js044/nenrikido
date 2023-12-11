@@ -3,7 +3,7 @@ title: "Evangelion, Learning, & Moving"
 date: 2023-04-11T03:51:21-06:00
 tags: personal
 summary: late night rambling
-draft: false
+draft: true
 ---
 
 i've been really struggling to articulate my thoughts lately, so i'm hoping that some late night blogging can get my brain unstuck. 

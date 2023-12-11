@@ -5,15 +5,14 @@
     <link>https://nenrikido.neocities.org/nexus/</link>
     <description>Recent content in Nexus on NENRIKIDO</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://nenrikido.neocities.org/nexus/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://nenrikido.neocities.org/nexus/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cole (small and kittified)</title>
       <link>https://nenrikido.neocities.org/nexus/cole/</link>
       <pubDate>Fri, 07 Apr 2023 03:01:53 -0600</pubDate>
-      
       <guid>https://nenrikido.neocities.org/nexus/cole/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

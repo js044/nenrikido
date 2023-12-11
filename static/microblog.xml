@@ -5,18 +5,29 @@
 	<link>/microblog</link>
 	<description>GIRLS IN MY COMPUTER. WE CAN DO IT</description>
 	<webMaster>ravrioli <img src="/images/microblog/space1.gif" style="width:0.85em; height:0.85em;" /></webMaster>
-	<generator>@guillotineworld</generator>
+	<generator>@nenrikido</generator>
 	<image>
 		<url>/images/microblog/icon.jpg</url>
 		<link>https://nenrikido.neocities.org</link>
 	</image>
+
+
+		<item>
+		<guid>39</guid>
+		<title>every time i start working on this site it gets so out of hand so quickly lol</title>
+		<pubDate>Sun, 10 Dec 2023 23:26:12 +0000</pubDate>
+		<link>/microblog#39</link>
+		<description> </description>
+		</item>		
+
 		<item>
 		<guid>38</guid>
 		<title>pondering the merits of making a webring for marine bio enthusiasts and appreciators...🤔</title>
 		<pubDate>Wed, 01 Nov 2023 20:19:38 +0000</pubDate>
 		<link>/microblog#38</link>
 		<description> </description>
-	</item>
+		</item>
+
 		<item>
 		<guid>37</guid>
 		<title>life is crazayyy (twirls around)</title>
@@ -159,14 +170,6 @@
 		<title>people keep trying to uminekopill me which is so scary because i can vividly envision the reality where it works.</title>
 		<pubDate>Sat, 20 May 2023 01:16:20 +0000</pubDate>
 		<link>/microblog#19</link>
-		<description> </description>
-	</item>
-
-	<item>
-		<guid>18</guid>
-		<title>someone i know used the word 'scrote' offhandedly and it was so unexpected i gasped. something something devil's sacrament</title>
-		<pubDate>Sat, 20 May 2023 01:07:12 +0000</pubDate>
-		<link>/microblog#18</link>
 		<description> </description>
 	</item>
 

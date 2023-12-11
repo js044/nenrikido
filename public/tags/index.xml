@@ -6,33 +6,28 @@
     <description>Recent content in Tags on NENRIKIDO</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Jul 2023 00:34:17 -0600</lastBuildDate><atom:link href="https://nenrikido.neocities.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Dec 2023 20:14:19 -0400</lastBuildDate>
+    <atom:link href="https://nenrikido.neocities.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>site updates</title>
+      <link>https://nenrikido.neocities.org/tags/site-updates/</link>
+      <pubDate>Sun, 10 Dec 2023 20:14:19 -0400</pubDate>
+      <guid>https://nenrikido.neocities.org/tags/site-updates/</guid>
+      <description></description>
+    </item>
     <item>
       <title>tutorials</title>
       <link>https://nenrikido.neocities.org/tags/tutorials/</link>
       <pubDate>Sun, 02 Jul 2023 00:34:17 -0600</pubDate>
-      
       <guid>https://nenrikido.neocities.org/tags/tutorials/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>personal</title>
       <link>https://nenrikido.neocities.org/tags/personal/</link>
       <pubDate>Sat, 17 Jun 2023 21:24:01 -0600</pubDate>
-      
       <guid>https://nenrikido.neocities.org/tags/personal/</guid>
       <description></description>
     </item>
-    
-    <item>
-      <title>site updates</title>
-      <link>https://nenrikido.neocities.org/tags/site-updates/</link>
-      <pubDate>Sun, 28 May 2023 18:42:10 -0600</pubDate>
-      
-      <guid>https://nenrikido.neocities.org/tags/site-updates/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>

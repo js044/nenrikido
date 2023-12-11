@@ -9,9 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='shortcut icon' type='image/x-icon' href='../../../images/icons/favicon-32x32.png' />
 
+    
+    <link href="../../../sass/main.min.1b0e385727321aa6c9ab2363ec685359981762b2071f3e202a2f21d92393162a.css" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="../../../css/themes.css">
     <link rel="stylesheet" type="text/css" href="../../../css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
     <link rel="stylesheet" type="text/css" href="../../../css/lightbox.css">
     
     <div id="preloader"></div><body>
@@ -25,7 +28,7 @@
             <p><i class="fa-solid fa-hashtag"></i> <a href="#comments"> Comments </a></p>
         </div><div class="arrows">
       
-            <a href="https://nenrikido.neocities.org/blog/post/site-updates-1/"> <i class="fas fa-long-arrow-alt-left"> </i></a>
+            <a href="https://nenrikido.neocities.org/blog/post/web-components/"> <i class="fas fa-long-arrow-alt-left"> </i></a>
             
             
                 <a href="../../../blog/"><i class="fas fa-home"> 
@@ -61,7 +64,7 @@
 </script>
 <form class="search"> <input type="text" class="searchTerm" placeholder="Search..."> <button aria-label="submit" type="submit" class="searchButton"> <i class="fa fa-search"></i> </button> </form>
 
-</nav>
+<ul class="searchResults"></ul></nav>
 
     <main>
         <article>
@@ -76,11 +79,11 @@
                             <h2>Site Overhaul</h2>
                             <blockquote>April 04, 2023</blockquote> <p>i started making this website around 3 weeks ago. if you told me then that within that time, i&rsquo;d write the site, then re-write it with web components, then re-write it again except with a static site generator, i&rsquo;d believe you. i have a near-pathological need for clear, simple, clean things. my closet is sorted by color and item type. i buy little desk dividers to keep my drawers tidy. the only icon on my desktop is the recycle bin.</p>
 <p>so yes, i have marie kondo&rsquo;d the site. this has happened before, so i probably should have anticipated it. i was already planning to make some changes, and then one thing just led to another.</p>
-<h4 id="hahahugoshortcode21s0hbhb-new-library"><i class="fa-regular fa-moon"></i> new library</h4>
+<h4 id="hahahugoshortcode22s0hbhb-new-library"><i class="fa-regular fa-moon"></i> new library</h4>
 <p>i have broken up with a few frameworks for <a href="https://github.com/haltu/muuri">muuri</a>, an extremely versatile javascript library layout engine. seriously, it combines 3 (!!) frameworks i was using. AND enables the draggable windows. i&rsquo;m still pretty intimidated by muuri as it requires a bit more configuration than i&rsquo;m comfortable with yet, but i&rsquo;m working it out. big thanks to <a href="https://codepen.io/ugokuweb/pen/yLaxBNE">this codepen</a> for the gallery filter. anyways, look, drag and drop!
 <a href="../../../images/blog/dragndrop.gif" data-lightbox="dragndrop "> <img src="../../../images/blog/dragndrop.gif" class="img-fluid" loading=""  width="" height="" alt="">  </a></p>
 <p>expect things to be buggy, especially on mobile. but what are you doing on mobile anyways&hellip;grow up! just kidding. i&rsquo;ll debug it eventually. probably.</p>
-<h4 id="hahahugoshortcode21s2hbhb-now-built-with-hugo"><i class="fa-regular fa-star"></i>  now built with hugo</h4>
+<h4 id="hahahugoshortcode22s2hbhb-now-built-with-hugo"><i class="fa-regular fa-star"></i>  now built with hugo</h4>
 <p>you may also notice blog posts are different! that&rsquo;s actually what started this whole endeavor. i finally decided that hugo is famous for building blogs for a reason and i&rsquo;ve been wanting to learn more about <a href="https://gohugo.io/content-management/taxonomies/">taxonomies</a> anyways. (now blog posts have tags and this lowkey looks like a tumblr blog. can&rsquo;t help wandering home&hellip;)</p>
 <p>moving the site to hugo was pretty agonizing at times, but i feel good about it. with the help of shortcodes and partials, i shrank my code to something much more manageable and legible. my gallery page went from 452 lines to 266 lines! the markup is shorter and much easier to understand. and markdown is just soo much easier to deal with than HTML. plus i finally finished moving (most of) my files off of dropbox and can rest assured they&rsquo;re easier to sort.</p>
 <p>before:
@@ -97,11 +100,11 @@
 <img src="../../../images/blog/after-1.png" class="img-fluid" >
 </p>
 <p>see what i mean&hellip;that&rsquo;s hugo baby&hellip;</p>
-<h4 id="hahahugoshortcode21s7hbhb-comment-sections--new-guestbook"><i class="fa-regular fa-sun"></i>  comment sections &amp; new guestbook</h4>
+<h4 id="hahahugoshortcode22s7hbhb-comment-sections--new-guestbook"><i class="fa-regular fa-sun"></i>  comment sections &amp; new guestbook</h4>
 <p>there are also now comment sections for blog posts!! i don&rsquo;t really know how they work since they&rsquo;re untested, but feel free to leave one? yeah. i also replaced the guestbook. i think the old guestbook service was cute and stuff, but it&rsquo;s (1) not responsive, (2) not very customizable, (3) has ads, (4) an external site, and (5) has poor security practices. so we&rsquo;ll see how that goes? yeah!</p>
-<h4 id="hahahugoshortcode21s8hbhb-new-content--rss-feed"><i class="fa-solid fa-music"></i> new content &amp; RSS feed</h4>
+<h4 id="hahahugoshortcode22s8hbhb-new-content--rss-feed"><i class="fa-solid fa-music"></i> new content &amp; RSS feed</h4>
 <p>i added a few windows to the home page! it now has a blog feed (btw, the RSS feed has been <a href="../../../index.xml">updated</a>! old one is deprecated.) a few new links here and there, some formatting updates, the commissions page is slooowly in progress.</p>
-<h4 id="hahahugoshortcode21s9hbhb-closing"><i class="fa-solid fa-rainbow"></i> closing</h4>
+<h4 id="hahahugoshortcode22s9hbhb-closing"><i class="fa-solid fa-rainbow"></i> closing</h4>
 <p>anyways, it&rsquo;ll be good to get this over with for now. i get really fixated on tasks and it&rsquo;s hard to step away until it&rsquo;s over with. (although, i did find the time to <a href="https://www.cicadacreativemag.com/submit/">open submissions for cicada</a>. blinks slowly at you.) i&rsquo;ve been learning a ton about hugo and javascript lately and i think i want to pivot back to writing and drawing for a bit. oh, and i&rsquo;m still moving technically LMAO.</p>
 <p>hopefully the neocities <a href="https://neocities.org/cli">CLI tool</a> is actually easy to use and i don&rsquo;t die. i know Nothing about ruby. i might make a few tutorials in the future, but i guess i worry about giving bad information since i suspect there&rsquo;s still lots that i&rsquo;m doing wrong. still, whatever works, works, so you can expect Something. i&rsquo;ll get this site up on github soon enough. blegh. i&rsquo;m tired.</p>
 <p>ok talk to you later. here is a song for you.</p>
@@ -134,32 +137,34 @@
     <ul>
         <li> <button id="footer-button">START</button> </li>
         <li> <a href="#" id="btn-back-to-top" onclick="call()"><i class="fa-solid fa-circle-chevron-up"></i></a></li>
-        <li><div id="clock" class="clock" onload="showTime()"></div></li>
+        <li>
+            <div id="clock" class="clock" onload="showTime()"></div>
+        </li>
     </ul>
 </footer>
 
 <div id="start-menu" class="modal">
     <div class="modal-content">
         <div class="modal-header">
-            <h1>Start Menu</h1> <span class="close">&times;</span>
+            <h1>START MENU</h1> <span class="close">&times;</span>
         </div>
         <div class="modal-body">
-            
-                <div class="modal-bio">
-                    <img class="modal-bio img" src="../../../images/icons/sh.jpg">
-                    <h6>Rio's desktop</h6>
-                    <p align="center"><i class="fa-regular fa-map"></i> <a href="../../../sitemap">Sitemap</a></p>
 
-                    <ul style="font-style: italic;">
-                        <li>OS: NENRIKIDO</li>
-                        <li>Version: 1.5</li>
-                        <li>Host: Neocities</li>
-                        <li>Processor: Hugo</li>
-                        <li>Since: 03-13-23</li>
-                    </ul>
-                </div>
-                <div class="modal-list">  <a class="modal-menu " href="../../../">  <span>Home </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../about/">  <span>About </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../gallery/">  <span>Gallery </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../commissions/">  <span>Commissions </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../code/">  <span>Code </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../blog/">  <span>Blog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../links/">  <span>Links </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../microblog/">  <span>Microblog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../library/">  <span>Library </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../nexus/">  <span>Nexus </span> <i class="fa-solid fa-chevron-right"></i></a>  </div>
-            
+            <div class="modal-bio">
+                <img class="modal-bio img" src="../../../images/icons/sh.jpg">
+                <p style="font-size:large; font-weight:bold;">Rio's desktop</p>
+                <p align="center"><i class="fa-regular fa-map"></i> <a href="../../../sitemap">Sitemap</a></p>
+
+                <ul style="font-style: italic;">
+                    <li>OS: NENRIKIDO</li>
+                    <li>Version: 1.6</li>
+                    <li>Host: Neocities</li>
+                    <li>Processor: Hugo</li>
+                    <li>Since: 03-13-23</li>
+                </ul>
+            </div>
+            <div class="modal-list">  <a class="modal-menu " href="../../../">  <span>Home </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../about/">  <span>About </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../gallery/">  <span>Gallery </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../commissions/">  <span>Commissions </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../code/">  <span>Code </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../blog/">  <span>Blog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../links/">  <span>Links </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../microblog/">  <span>Microblog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../library/">  <span>Library </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../nexus/">  <span>Nexus </span> <i class="fa-solid fa-chevron-right"></i></a>  </div>
+
         </div>
         <div class="modal-footer"><div class="row centered">
     <button id="pink" title="pink theme" class="theme-button" onclick="handleThemeButtonClick('pink', this)">💗</button>
@@ -168,12 +173,12 @@
     <button id="black" title="black theme" class="theme-button" onclick="handleThemeButtonClick('black', this)" >💤</button>
 </div></div>
     </div>
-<script>
-function call() {
-    var body = $("html, body");
-    body.stop().animate({scrollTop:0}, 500, 'swing', function() {
-    });
-}</script>
+    <script>
+        function call() {
+            var body = $("html, body");
+            body.stop().animate({ scrollTop: 0 }, 500, 'swing', function () {
+            });
+        }</script>
     <script type="text/javascript" src="../../../js/clock.js"></script>
     <script defer type="text/javascript" src="../../../js/start.js"></script><script src="../../../js/theme.js" ></script>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>

@@ -3,6 +3,7 @@ title: "Yard Sale"
 date: 2023-06-17T21:24:01-06:00
 tags: personal
 summary: A diary entry. Featuring Hot Topic fashion and a sandwich.
+thumbnail: /images/blog/061723/sandwich.jpg
 draft: false
 ---
 
@@ -30,7 +31,7 @@ Speaking of which, due to some mattress musical chairs, I somehow ended up with 
 
 No longer! We got a mattress (which was so much drama it'd require another post...) that is far more respectable, so I decided to set that up for tomorrow's inevitable rain induced nap.
 
-It's...comically tall? But comfortable, so who gives a shit. 
+It's...comically tall? But comfortable, so it's fine! 
 
 {{< lightbox-image link="/images/blog/061723/bed.jpg" lightbox-id="gs" img-src="/images/blog/061723/bed.jpg" >}}
 

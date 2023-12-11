@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    
+    <title>Mega Site Update</title>
+    <meta charset="utf-8">
+    <meta name="description"
+        content="A special world." />
+    <meta name="dc.relation" content="https://nenrikido.neocities.org/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='shortcut icon' type='image/x-icon' href='../../../images/icons/favicon-32x32.png' />
+
+    
+    <link href="../../../sass/main.min.1b0e385727321aa6c9ab2363ec685359981762b2071f3e202a2f21d92393162a.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../../../css/themes.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+    <link rel="stylesheet" type="text/css" href="../../../css/lightbox.css">
+    
+    <div id="preloader"></div><body>
+<div class="wrapper">
+    <nav id="navAlt">
+        <div class="navWrapper"> <a class="navLink" href="../../../blog">
+                <div id="blog"> </div>Blog
+            </a>
+            <p><i class="fa-regular fa-circle-down"></i></p>
+            <p><i class="fa-solid fa-hashtag"></i> <a href="#"> Mega Site Update </a></p>
+            <p><i class="fa-solid fa-hashtag"></i> <a href="#comments"> Comments </a></p>
+        </div><div class="arrows">
+      
+            <a href="https://nenrikido.neocities.org/blog/post/firefox-tutourial/"> <i class="fas fa-long-arrow-alt-left"> </i></a>
+            
+            
+                <a href="../../../blog/"><i class="fas fa-home"> 
+                </i></a>
+            
+            
+        </div>
+
+        <div id='musicplayer'>
+            <div id='musicpixel'> <img src="../../../images/pixels/music.gif" style="max-width: 40px;">
+                <div class='overlay'>
+                    <div class='playpause'><i class="fas fa-play"></i></div>
+                </div>
+            </div>
+            <div id='musictitle'> <span class='marquee'>summer rain</span> </div>
+        </div> <audio id='musicsrc' loop src='https://dl.dropbox.com/s/seanb1ogmdoezmr/cricket-rain.mp3'></audio>
+
+
+<script>
+    document.querySelector('.playpause').addEventListener('click', playpause);
+    
+    function playpause() {
+      if (document.querySelector('.playpause').innerHTML == '<i class="fas fa-play"></i>') {
+        document.querySelector('#musicsrc').play();
+        document.querySelector('.playpause').innerHTML = '<i class="fas fa-pause"></i>';
+      } else {
+        document.querySelector('#musicsrc').pause();
+        document.querySelector('.playpause').innerHTML = '<i class="fas fa-play"></i>';
+      }
+    }
+</script>
+<form class="search"> <input type="text" class="searchTerm" placeholder="Search..."> <button aria-label="submit" type="submit" class="searchButton"> <i class="fa fa-search"></i> </button> </form>
+
+<ul class="searchResults"></ul></nav>
+
+    <main>
+        <article>
+            <div class="grid">
+                <div class="item large">
+                    <div class="cards"><div class="cardsHeader">
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div><div class="cardsBody">
+                            <h2>Mega Site Update</h2>
+                            <blockquote>December 10, 2023</blockquote> <p>Wow! It&rsquo;s been awhile. I apologize for how long it&rsquo;s been. To tell you the truth, this site got a lot more ambitious than I ever meant for it to. I definitely bit off more than I could chew, and when that happens, I tend to avoid the project until I can get no-lifer obsessed with it.</p>
+<p>Well it happened! I got no-lifer obsessed and now there are many new things going on.</p>
+<h4 id="blog-updates">Blog Updates:</h4>
+<ul>
+<li>A long-term struggle I&rsquo;ve had is figuring out how to integrate native Hugo taxonomies with JS libraries that handle filtering. As a bandaid solution, I created a /tags/ page to host all tagged blog posts, and so each had its own page (ie: /tagged/personal). Which is very Tumblr-esque and not inherently bad, but I disliked that it functioned so much differently from the rest of the site. No more! The blog is now one page without 3 separate tag pages to maintain (and so this should make Neocities updates a lot less tedious also&hellip;when will we be allowed to set our own previews btw?)</li>
+<li>Another thing that was much easier than I realized was conditional thumbnails. I didn&rsquo;t want to commit to every single post having an image, but always assumed this would be super hard. It&rsquo;s not. Literally all you need to do is put this in your HTML: <code>{{ if .Params.thumbnail }} &lt;img class=&quot;thumbnail&quot; src=&quot;{{ .Params.thumbnail }}&quot; alt=&quot;Thumbnail Image&quot;&gt; {{ end }}</code> and throw a thumbnail parameter in the front matter for posts you want an image for. I&rsquo;m seriously so bad at comprehending documentation. I also think I want to make alt text a parameter that can be updated, but I think making this site more accessible will be its own wild project, so I will table that for another time&hellip;</li>
+</ul>
+<h4 id="search-updates">Search Updates:</h4>
+<ul>
+<li>Really not too much much to say here. Using <a href="https://lunrjs.com/">Lunr.js</a>, I finally got the search feature working! Third time&rsquo;s the charm, as they say. <del>Plus I asked ChatGPT to debug my janky Javascript.</del></li>
+</ul>
+<h4 id="font-updates">Font Updates:</h4>
+<ul>
+<li>You may notice that the fonts are pretty different! I swapped out every single font that I did not have a commercial license for and/or was not 100% free. Fly high Porkys. You will be missed. This was surprisingly time consuming. It turns out I am not an easy woman to please when it comes to typography. But I&rsquo;m actually very fond of my selections. The fonts I&rsquo;m using for headers are <a href="https://www.1001fonts.com/distro-font.html">Distro (Heavy)</a> (free), <a href="https://www.fontspace.com/franxurter-totally-font-f42042">Franxurter Totally Fat</a> (free), <a href="https://elements.envato.com/kirom-modern-futuristic-sans-serif-font-H42FCRW">Kirom</a> (paid), and <a href="https://elements.envato.com/pixel-gamer-NAM5T2Z">Pixel Gamer</a> (paid). Shout out to my mother for letting me hijack her Envato Elements account!</li>
+<li>I suppose this is as good a place as any to shoehorn in the announcement that I do plan to open web development commissions pretty soon. I think I&rsquo;ll do simple one-pagers, and I&rsquo;m not sure how much I want to charge, but I think it&rsquo;ll probably go over better than digital art commissions? Or not. I&rsquo;m not fully decided yet. If you want to weigh in, feel free to do so in the comments. But since that changes the scope of this site from personal to squarely commercial, I do want to cross my t&rsquo;s and dot my i&rsquo;s. Plus, it&rsquo;s nice to change things up sometimes!</li>
+</ul>
+<h4 id="microblog-updates">Microblog Updates:</h4>
+<ul>
+<li>Well, update, singular, I guess. This is a huge win for me because it was just extremely annoying to fix, but it is. It should now definitively load BEFORE the grid and prevent any overlapping. You have no idea how happy this makes me.</li>
+<li>But, just to stretch out this section: I&rsquo;ve been thinking about updating my microblog CSS for awhile and posting my old CSS on the code page. I think it&rsquo;d be fun to share skins for Hat&rsquo;s <a href="https://github.com/22ru/microblog">super wonderful RSS microblog script</a> to psyop more people into using it.</li>
+</ul>
+<h4 id="behind-the-scenes-updates">Behind the Scenes Updates:</h4>
+<ul>
+<li>This probably isn&rsquo;t relevant to anyone but me, but I also finally fulfilled a long-term dream and played around with <a href="https://gohugo.io/hugo-pipes/">Hugo Pipes</a> to transpile <a href="https://gohugo.io/hugo-pipes/transpile-sass-to-css/">SASS to CSS</a>. My CSS files were abominations. Crimes against humanity. I love bite sized file chunks and I&rsquo;ve long admired the elegance of SASS nesting! And so I have taken it for myself. Whether this will work smoothly enough to actually deploy to Neocities without disaster remains to be seen, but I choose to believe everything will be fine&ndash;for my own sanity!</li>
+<li>Someday, I&rsquo;d like to revamp the SASS/CSS further to add color maps for theme switching (something like <a href="https://www.sitepoint.com/sass-theming-neverending-story/">this</a>), but I got started, realized how much work it&rsquo;d be, and decided to table it for another day when I&rsquo;m feeling masochistic.</li>
+<li>Speaking of CSS stuff, I also have updated some of the font handling and card sizing CSS. I&rsquo;m using <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clamp">clamp</a> now, which I&rsquo;m admittedly still getting the hang of. If anything looks weird on your display, please let me know!</li>
+</ul>
+<h4 id="misc-updates">Misc Updates</h4>
+<ul>
+<li>I&rsquo;ve hidden a few blog posts, and will probably update the site to clean it up a bit over the next few weeks. I&rsquo;m working on a Professional Portfolio Website for web/graphic design stuff, and I think it&rsquo;d be a huge loss to not include this website after all the work I&rsquo;ve put into it. It&rsquo;s also been an incredible learning experience for me. But it&rsquo;s also not super professional at the moment&ndash;to an extent, that&rsquo;s fine, but I do want to make it a little more presentable for display.</li>
+<li>And as a final note, I want to make a smaller, more private diary website to actually just be as unprofessional as I want to be. I want to get started on that site sometime this month. I&rsquo;ll probably host it on Neocities. If you want the URL&hellip;perhaps email me? I&rsquo;m going to make it public facing most likely, I don&rsquo;t plan to say anything crazy, I just want to create a small separation here. And I&rsquo;ll try to keep the scope of that site limited, lest I invest so much into it I get tempted to put it on another portfolio.</li>
+<li>OH, also&ndash;thinking about adding new themes sometime. Are there any themes/color schemes you&rsquo;d all be interested in? Let me know if you do!</li>
+<li>Final thing&ndash;you guys hatched my Tamanotchi!! Thank you so much.</li>
+</ul>
+<p>Okay, is that everything? Honestly, it felt like more. Going to go wrestle with Hugo and Neocities some more to make sure this actually gets posted the way I want it to. It&rsquo;s very likely this blog post will be buried underneath all the other pages getting updated, but if so, I&rsquo;ll just post a link on my feed.</p>
+<p>I&rsquo;ve missed you all! Talk to you soon. Hope everyone has been doing well.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item large">
+                    <div class="cards"><div class="cardsHeader">
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div><div class="cardsBody">
+                            <div id="comments">
+<div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
+<link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+<script type="text/javascript" id="hcb">   if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24wVz3xOOc.ZF1mLS1sR.Mp0"+"&opts=16782&num=10&ts=1680596795074");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); </script>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+</div>
+<footer id="footer">
+    <ul>
+        <li> <button id="footer-button">START</button> </li>
+        <li> <a href="#" id="btn-back-to-top" onclick="call()"><i class="fa-solid fa-circle-chevron-up"></i></a></li>
+        <li>
+            <div id="clock" class="clock" onload="showTime()"></div>
+        </li>
+    </ul>
+</footer>
+
+<div id="start-menu" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h1>START MENU</h1> <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+
+            <div class="modal-bio">
+                <img class="modal-bio img" src="../../../images/icons/sh.jpg">
+                <p style="font-size:large; font-weight:bold;">Rio's desktop</p>
+                <p align="center"><i class="fa-regular fa-map"></i> <a href="../../../sitemap">Sitemap</a></p>
+
+                <ul style="font-style: italic;">
+                    <li>OS: NENRIKIDO</li>
+                    <li>Version: 1.6</li>
+                    <li>Host: Neocities</li>
+                    <li>Processor: Hugo</li>
+                    <li>Since: 03-13-23</li>
+                </ul>
+            </div>
+            <div class="modal-list">  <a class="modal-menu " href="../../../">  <span>Home </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../about/">  <span>About </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../gallery/">  <span>Gallery </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../commissions/">  <span>Commissions </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../code/">  <span>Code </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../blog/">  <span>Blog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../links/">  <span>Links </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../microblog/">  <span>Microblog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../library/">  <span>Library </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../nexus/">  <span>Nexus </span> <i class="fa-solid fa-chevron-right"></i></a>  </div>
+
+        </div>
+        <div class="modal-footer"><div class="row centered">
+    <button id="pink" title="pink theme" class="theme-button" onclick="handleThemeButtonClick('pink', this)">💗</button>
+    <button id="blue" title="blue theme" class="theme-button" onclick="handleThemeButtonClick('blue', this)" >🫧</button> 
+    <button id="yellow" title="yellow theme" class="theme-button" onclick="handleThemeButtonClick('yellow', this)" >🪐</button> 
+    <button id="black" title="black theme" class="theme-button" onclick="handleThemeButtonClick('black', this)" >💤</button>
+</div></div>
+    </div>
+    <script>
+        function call() {
+            var body = $("html, body");
+            body.stop().animate({ scrollTop: 0 }, 500, 'swing', function () {
+            });
+        }</script>
+    <script type="text/javascript" src="../../../js/clock.js"></script>
+    <script defer type="text/javascript" src="../../../js/start.js"></script><script src="../../../js/theme.js" ></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
+<script defer src="../../../js/muuri-init.js"></script>
+<script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+<script defer src="../../../js/lightbox.js" ></script>
+<script defer src="../../../js/yt_lite.js" ></script>
+<script defer src="https://unpkg.com/lunr/lunr.js"></script>
+<script defer src="../../../js/search.js" ></script>
+<script>
+  var loader = document.getElementById("preloader");
+  window.addEventListener("load", function () {
+    loader.style.display = "none";
+  });
+  var s = document.getElementById("preloader").style;
+  s.opacity = 1;
+  (function fade() {
+    (s.opacity -= 0.1) < 0 ? (s.display = "none") : setTimeout(fade, 40);
+  })();
+  </script>
+  <script>
+    twemoji.parse(document.body)
+  </script></body>
+
+</html>

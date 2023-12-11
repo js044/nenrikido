@@ -1,37 +1,60 @@
-window.addEventListener('load', function() {
-	grid.refreshItems().layout();
-// Buggy on Mozilla
-grid.layout(function (items, hasLayoutChanged) {});
-});
+var grid; // Declare grid in the global scope
 
-var grid = new Muuri('.grid', {
-	dragEnabled: true,
-	dragHandle: '.cardsHeader',
-	showDuration: 600,
-	showEasing: 'cubic-bezier(0.215, 0.61, 0.355, 1)',
-	visibleStyles: {
-		opacity: '1',
-		transform: 'scale(1)'
-	},
-	hiddenStyles: {
-		opacity: '0',
-		transform: 'scale(0.5)'
-	},
-	layout: {
-		fillGaps: true,
-	}
-});
+// Muuri Initialization
+function initMuuri() {
+    grid = new Muuri('.grid', {
+        dragEnabled: true,
+        dragHandle: '.cardsHeader',
+        showDuration: 600,
+        showEasing: 'cubic-bezier(0.215, 0.61, 0.355, 1)',
+        visibleStyles: {
+            opacity: '1',
+            transform: 'scale(1)'
+        },
+        hiddenStyles: {
+            opacity: '0',
+            transform: 'scale(0.5)'
+        },
+        layout: {
+            fillGaps: true,
+        }
+    });
+    grid.refreshItems().layout(); // Optionally refresh and layout Muuri after initialization
+}
+
+// Function to handle Muuri filtering
+function handleMuuriFiltering() {
+    $('.sort-btn li').on('click', function() {
+        $('.sort-btn li').removeClass('active'); // Remove 'active' class from all tags
+        $(this).addClass('active'); // Add 'active' class to the clicked tag
+
+        var className = $(this).attr('class').split(' ')[0]; // Get the class name of the clicked tag
+        if (className === 'sort00') {
+            grid.filter('*'); // Show all elements if 'Show all' is clicked
+        } else {
+            grid.filter('.' + className); // Filter elements based on the clicked tag class
+        }
+    });
+}
 
 
-//=== sort button setting
-$('.sort-btn li').on('click', function() { //After clicking the sort button
-	$(".sort-btn .active").removeClass("active"); //Remove all active classes assigned to sort buttons
-	var className = $(this).attr("class"); // Get class name
-	className = className.split(' '); //Split the class name of 「sortXX active」 into an array
-	$("." + className[0]).addClass("active"); //Give the active class to the button with the same class name given to the sort button and the class name of the list in the gallery
-	if (className[0] == "sort00") { //If the class name is a button with sort00 (all),
-		grid.filter('*'); // show all elements
-	} else { // else
-		grid.filter("." + className[0]); //run the filter
-	}
-});
+// Fetch XML and build microblog feed only on the index page
+if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+    window.addEventListener("DOMContentLoaded", (event) => {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                buildPage(this); // Function to build the microblog feed
+                initMuuri(); // Call Muuri initialization after the microblog feed is built
+                handleMuuriFiltering(); // Call function to handle Muuri filtering
+            }
+        };
+        xhttp.open("GET", RSSLink, true);
+        xhttp.send();
+    });
+} else {
+    window.addEventListener("DOMContentLoaded", (event) => {
+        initMuuri(); // Call Muuri initialization on other pages
+        handleMuuriFiltering(); // Call function to handle Muuri filtering
+    });
+}

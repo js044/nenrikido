@@ -3,7 +3,7 @@ title: "Site Updates"
 date: 2023-03-29T02:34:47-06:00
 tags: site updates
 summary: new stuff
-draft: false
+draft: true
 ---
 
 i'm still thinking on potential blog layout ideas (at some point, i want each blog post to be its own page so i can link to specific blog posts), but the site is actually coming together much quicker than i thought it would.

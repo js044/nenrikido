@@ -1,0 +1,8 @@
+<ul class="sort-btn">
+    <li class="sort00 active">Show all</li>
+    {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+    {{ $cnt := $taxonomy.Count }}
+    {{ $cleanName := $name | replaceRE "-|_" " " | title }}
+      <li class="{{ $name }}" data-count="{{ $cnt }}">{{ $cleanName }} <sup>{{ $cnt }}</sup></li>
+    {{ end }}
+</ul>

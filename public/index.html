@@ -10,34 +10,58 @@
     <link rel='shortcut icon' type='image/x-icon' href='./images/icons/favicon-32x32.png' />
 
     <link rel="alternate" type="application/rss+xml" href="https://nenrikido.neocities.org/index.xml" title="NENRIKIDO" />
+    
+    <link href="./sass/main.min.1b0e385727321aa6c9ab2363ec685359981762b2071f3e202a2f21d92393162a.css" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="./css/themes.css">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
     <link rel="stylesheet" type="text/css" href="./css/lightbox.css">
     
     <div id="preloader"></div><body>
 <link rel="stylesheet" type="text/css" href="./css/index.css">
-<div class="wrapper"> 
-<nav id="nav">
-    <div class="row centered">
-        <a class="navLink" href="./"><div id="home"></div>Home</a> 
-        <a class="navLink" href="./about"><div id="about"></div>About</a> 
-        <a class="navLink" href="./gallery"> <div id="gallery"></div>Gallery</a>
-        <a class="navLink" href="./commissions"> <div id="commissions"></div>Commissions </a> 
-        <a class="navLink" href="./code"> <div id="code"></div>Code </a> 
-        <a class="navLink" href="./blog"> <div id="blog"></div>Blog  </a> 
-        <a class="navLink" href="./links"> <div id="links"></div>Links </a> 
-        <a class="navLink" href="./microblog"> <div id="microblog"></div>Microblog</a> 
-        <a class="navLink" href="./library"> <div id="library"></div>Library</a> 
-        <a class="navLink" href="./nexus"><div id="nexus"></div>Nexus</a>
-    </div>
-    
+<div class="wrapper">
+    <nav id="nav">
+        <div class="row centered">
+            <a class="navLink" href="./">
+                <div id="home"></div>Home
+            </a>
+            <a class="navLink" href="./about">
+                <div id="about"></div>About
+            </a>
+            <a class="navLink" href="./gallery">
+                <div id="gallery"></div>Gallery
+            </a>
+            <a class="navLink" href="./commissions">
+                <div id="commissions"></div>Commissions
+            </a>
+            <a class="navLink" href="./code">
+                <div id="code"></div>Code
+            </a>
+            <a class="navLink" href="./blog">
+                <div id="blog"></div>Blog
+            </a>
+            <a class="navLink" href="./links">
+                <div id="links"></div>Links
+            </a>
+            <a class="navLink" href="./microblog">
+                <div id="microblog"></div>Microblog
+            </a>
+            <a class="navLink" href="./library">
+                <div id="library"></div>Library
+            </a>
+            <a class="navLink" href="./nexus">
+                <div id="nexus"></div>Nexus
+            </a>
+        </div>
+        
 <form class="search"> <input type="text" class="searchTerm" placeholder="Search..."> <button aria-label="submit" type="submit" class="searchButton"> <i class="fa fa-search"></i> </button> </form>
 
+<ul class="searchResults"></ul>
+    </nav>
 
-</nav>
-
-    <div class="grid"> <div class="item medium ">
+    <div class="grid">
+        <div class="item medium ">
     <div class="cards">
         <div class="cardsHeader">
     <div class="cardsControls">
@@ -47,8 +71,8 @@
 </div>
         <div class="cardsBody">
             <h1>#WELCOME</h1>
-            <p> <img src="./images/pixels/strovi_pixel.gif" alt="A blue pixel catgirl blinking and kicking her feet gently." style="float: right; max-width: 80px;">
-This is my personal site and a place for me to share my work. It is a work in progress, so please excuse anything unfinished.
+            <p> <img src="./images/pixels/strovi_pixel.gif" alt="A blue pixel catgirl blinking and kicking her feet gently." style="float: right; max-width: 80px; margin: 2px;">
+This is my personal site and a place for me to share my work. It is perpetually in-progress, so please excuse anything unfinished.
 <p align="center"><i class="fa-solid fa-rss"></i> <a href="./index.xml">RSS feed</a> &nbsp <i class="fa-solid fa-mobile-screen-button"></i> responsive </p>
         </div>
     </div>
@@ -63,7 +87,7 @@ This is my personal site and a place for me to share my work. It is a work in pr
 </div>
         <div class="cardsBody">
             <h1>#THEMES</h1>
-            <p> <p>Pick an emoji. You may need to tap it twice for the grid to refresh correctly.</p>
+            <p> <p>Pick an emoji to change the theme. You may need to tap it twice for the grid to refresh correctly.</p>
 <div class="row centered">
     <button id="pink" title="pink theme" class="theme-button" onclick="handleThemeButtonClick('pink', this)">💗</button>
     <button id="blue" title="blue theme" class="theme-button" onclick="handleThemeButtonClick('blue', this)" >🫧</button> 
@@ -71,6 +95,20 @@ This is my personal site and a place for me to share my work. It is a work in pr
     <button id="black" title="black theme" class="theme-button" onclick="handleThemeButtonClick('black', this)" >💤</button>
 </div>
  </p>
+        </div>
+    </div>
+</div>
+<div class="item medium ">
+    <div class="cards">
+        <div class="cardsHeader">
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div>
+        <div class="cardsBody">
+            <h1>#DRAG N DROP</h1>
+            <p> Grab a card by its header and drag it wherever you want! </p>
         </div>
     </div>
 </div>
@@ -101,22 +139,6 @@ This is my personal site and a place for me to share my work. It is a work in pr
     </div>
 </div>
         <div class="cardsBody">
-            <h1>#COUNTERS</h1>
-            <p> <p align="center"> all visits: <script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=38931944&main=1"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=38931944&main=1" /></noscript> </p>
-<p align="center"> current viewers: <script language="javascript" type="text/javascript" src="//counter1.fc2.com/views.php?id=38931944&main=1"></script><noscript><img src="//counter1.fc2.com/counter_now.php?id=38931944&main=1" /></noscript> </p>
- </p>
-        </div>
-    </div>
-</div>
-<div class="item medium ">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
             <h1>#MUSIC</h1>
             <p> <div id="aWrap"> <button id="aPlay" disabled> <span id="aPlayIco" class="material-icons"> play_arrow </span></button> <input id="aSeek" type="range" min="0" value="0" step="1" disabled>
 <div id="aCron"> <span id="aNow"></span> / <span id="aTime"></span> </div> </div>
@@ -134,23 +156,10 @@ This is my personal site and a place for me to share my work. It is a work in pr
     </div>
 </div>
         <div class="cardsBody">
-            <h1>#GUESTBOOK</h1>
-            <p> <iframe title="chatbox" src="https://www3.cbox.ws/box/?boxid=3526482&boxtag=h3SRws" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+            <h1>#COUNTERS</h1>
+            <p> <p align="center"> all visits: <script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=38931944&main=1"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=38931944&main=1" /></noscript> </p>
+<p align="center"> current viewers: <script language="javascript" type="text/javascript" src="//counter1.fc2.com/views.php?id=38931944&main=1"></script><noscript><img src="//counter1.fc2.com/counter_now.php?id=38931944&main=1" /></noscript> </p>
  </p>
-        </div>
-    </div>
-</div>
-<div class="item medium ">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h1>#TAMA</h1>
-            <p> <p align="center"><a href="http://tamanotchi.world/4251c" target="_blank" rel="noopener noreferrer"><img src="http://tamanotchi.world/i2/4251" alt="It's tamaNOTchi! Click to feed!"></a> </p>
         </div>
     </div>
 </div>
@@ -165,6 +174,89 @@ This is my personal site and a place for me to share my work. It is a work in pr
         <div class="cardsBody">
             <h1>#MICROBLOG</h1>
             <p> <div id="microblog_recent"></div>
+ </p>
+        </div>
+    </div>
+</div>
+<div class="item medium ">
+    <div class="cards">
+        <div class="cardsHeader">
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div>
+        <div class="cardsBody">
+            <h1>#TAMANOTCHI</h1>
+            <p> <p align="center" style="height:85px;"><a href="http://tamanotchi.world/4251c" target="_blank" rel="noopener noreferrer"><img src="http://tamanotchi.world/i2/4251" alt="It's tamaNOTchi! Click to feed!"></a> </p>
+        </div>
+    </div>
+</div>
+<div class="item medium ">
+    <div class="cards">
+        <div class="cardsHeader">
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div>
+        <div class="cardsBody">
+            <h1>#GUESTBOOK</h1>
+            <p> <iframe title="chatbox" src="https://www3.cbox.ws/box/?boxid=3526482&boxtag=h3SRws" width="100%" height="400" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+ </p>
+        </div>
+    </div>
+</div>
+<div class="item medium ">
+    <div class="cards">
+        <div class="cardsHeader">
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div>
+        <div class="cardsBody">
+            <h1>#GIFYPET</h1>
+            <p> <iframe title="gifypet" class="pet" width="345" height="250" scrolling="yes" src="https://gifypet.neocities.org/pet/pet.html?name=aurelia&dob=1678660983&gender=f&element=Water&pet=https%3A%2F%2Fimg.pokemondb.net%2Fsprites%2Fblack-white%2Fanim%2Fshiny%2Ffrillish-f.gif&map=tree.jpg&background=transparent" frameborder="0"></iframe>
+ </p>
+        </div>
+    </div>
+</div>
+<div class="item medium ">
+    <div class="cards">
+        <div class="cardsHeader">
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div>
+        <div class="cardsBody">
+            <h1>#JELLY CAM</h1>
+            <p> <div class="youtube-player" data-id="OMlf71t2oV0" title="Youtube embed of Monterey Bay Jelly Cam"></div>
+ </p>
+        </div>
+    </div>
+</div>
+<div class="item medium ">
+    <div class="cards">
+        <div class="cardsHeader">
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div>
+        <div class="cardsBody">
+            <h1>#BLOG POSTS</h1>
+            <p> <p>Read the rest of the blog <a href="./blog">here</a>.</p>
+<ul>
+    <li>Dec 10: <strong><a href="https://nenrikido.neocities.org/blog/post/mega-site-update/"> Mega Site Update </a></strong> - Brand new fonts, search finally works, new blog tag filter, site got SASS&rsquo;ed, microblog bug is …</li>
+</ul>
+<ul>
+    <li>Jul 02: <strong><a href="https://nenrikido.neocities.org/blog/post/firefox-tutourial/"> Firefox Tree Tabs Tu(tour)ial </a></strong> - Welcome to my crib, Mozilla Firefox edition. With instructions on how to recreate it!</li>
+</ul>
+<ul>
+    <li>Jun 17: <strong><a href="https://nenrikido.neocities.org/blog/post/yard-sale/"> Yard Sale </a></strong> - A diary entry. Featuring Hot Topic fashion and a sandwich.</li>
+</ul>
  </p>
         </div>
     </div>
@@ -195,47 +287,9 @@ This is my personal site and a place for me to share my work. It is a work in pr
     </div>
 </div>
         <div class="cardsBody">
-            <h1>#GIFYPET</h1>
-            <p> <iframe title="gifypet" class="pet" width="345" height="250" scrolling="yes" src="https://gifypet.neocities.org/pet/pet.html?name=aurelia&dob=1678660983&gender=f&element=Water&pet=https%3A%2F%2Fimg.pokemondb.net%2Fsprites%2Fblack-white%2Fanim%2Fshiny%2Ffrillish-f.gif&map=tree.jpg&background=transparent" frameborder="0"></iframe>
- </p>
-        </div>
-    </div>
-</div>
-<div class="item medium ">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h1>#BLOG POSTS</h1>
-            <p> <p>Read the rest of the blog <a href="./blog">here</a>.</p>
-<ul>
-    <li>Jul 02: <strong><a href="https://nenrikido.neocities.org/blog/post/firefox-tutourial/"> Firefox Tree Tabs Tu(tour)ial </a></strong> - Welcome to my crib, Mozilla Firefox edition. With instructions on how to recreate it!</li>
-</ul>
-<ul>
-    <li>Jun 17: <strong><a href="https://nenrikido.neocities.org/blog/post/yard-sale/"> Yard Sale </a></strong> - A diary entry. Featuring Hot Topic fashion and a sandwich.</li>
-</ul>
-<ul>
-    <li>May 28: <strong><a href="https://nenrikido.neocities.org/blog/post/bye-bye-bootstrap/"> Bye-bye Bootstrap </a></strong> - Bootstrap gets the boot, my hair gets a trim, and the site gets a map.</li>
-</ul>
- </p>
-        </div>
-    </div>
-</div>
-<div class="item medium ">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
             <h1>#UPDATES</h1>
             <p> <div class="scrollbox"><ul>
+<li><strong>12-11-23</strong>: too many to list!! check out the blog!!</li>
 <li><strong>7-2-23</strong>: new blog post and a theme poll.</li>
 <li><strong>6-21-23</strong>: added a few new fanlistings&hellip;most are still pending but wooo</li>
 <li><strong>6-17-23</strong>: changed up a lot of CSS (ctrl + f5 if anything is weird), tweaked a few scripts, made a new blog post, joined the surf club webring &amp; added the widget, separated fanlistings, etc.</li>
@@ -282,21 +336,6 @@ This is my personal site and a place for me to share my work. It is a work in pr
     </div>
 </div>
         <div class="cardsBody">
-            <h1>#JELLY CAM</h1>
-            <p> <div class="youtube-player" data-id="OMlf71t2oV0" title="Youtube embed of Monterey Bay Jelly Cam"></div>
- </p>
-        </div>
-    </div>
-</div>
-<div class="item medium ">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
             <h1>#DREAM</h1>
             <p> <p align="center"><img src="./images/pixels/Madotsuki_Chair_Spin.gif" style="max-width: 100px;" loading="lazy" width="100" height="100" alt="Madotsuki spinning in her chair."></p>
 <p align="center"> <a href="https://ynoproject.net/" target="_blank" rel="noopener noreferrer">Yume Nikki Online Project</a></p>
@@ -316,19 +355,15 @@ This is my personal site and a place for me to share my work. It is a work in pr
         <div class="cardsBody">
             <h1>#TO-DO</h1>
             <p> <div class="scrollbox"><ul>
-<li><del>force grid refresh when theme is switched</del> <img src="images/pixels/new.gif" alt=""></li>
-<li><del>ease theme switch</del> <img src="images/pixels/new.gif" alt=""></li>
-<li><del>re-design start menu</del> <img src="images/pixels/new.gif" alt=""></li>
-<li><del>remove bootstrap</del> <img src="images/pixels/new.gif" alt=""></li>
+<li><del>fix microblog index bug</del> <img src="images/pixels/new.gif" alt=""></li>
+<li><del>fix search script</del> <img src="images/pixels/new.gif" alt=""></li>
+<li><del>add blog thumbnails</del> <img src="images/pixels/new.gif" alt=""></li>
+<li><del>fix blog filter</del> <img src="images/pixels/new.gif" alt=""></li>
 <li>open commissions</li>
-<li>fix firefox microblog index bug</li>
-<li>make OC pages</li>
-<li>fix search script</li>
-<li>RSS updates</li>
-<li>fix theme flickering</li>
 <li>add library genre drop-down</li>
 <li>add microblog pagination</li>
-<li>new shrines</li>
+<li>new nexus pages</li>
+<li>y2k f2u layout</li>
 </ul>
 </div>
  </p>
@@ -365,40 +400,43 @@ This is my personal site and a place for me to share my work. It is a work in pr
         </div>
     </div>
 </div>
- </div> </div>
-    <script src="./js/microblog_recent.js"></script>
-    <script type="text/javascript" src="./js/audioPlayer.js" defer></script>
+ </div>
+</div>
+<script src="./js/microblog_recent.js"></script>
+<script type="text/javascript" src="./js/audioPlayer.js" defer></script>
 
 <footer id="footer">
     <ul>
         <li> <button id="footer-button">START</button> </li>
         <li> <a href="#" id="btn-back-to-top" onclick="call()"><i class="fa-solid fa-circle-chevron-up"></i></a></li>
-        <li><div id="clock" class="clock" onload="showTime()"></div></li>
+        <li>
+            <div id="clock" class="clock" onload="showTime()"></div>
+        </li>
     </ul>
 </footer>
 
 <div id="start-menu" class="modal">
     <div class="modal-content">
         <div class="modal-header">
-            <h1>Start Menu</h1> <span class="close">&times;</span>
+            <h1>START MENU</h1> <span class="close">&times;</span>
         </div>
         <div class="modal-body">
-            
-                <div class="modal-bio">
-                    <img class="modal-bio img" src="./images/icons/sh.jpg">
-                    <h6>Rio's desktop</h6>
-                    <p align="center"><i class="fa-regular fa-map"></i> <a href="./sitemap">Sitemap</a></p>
 
-                    <ul style="font-style: italic;">
-                        <li>OS: NENRIKIDO</li>
-                        <li>Version: 1.5</li>
-                        <li>Host: Neocities</li>
-                        <li>Processor: Hugo</li>
-                        <li>Since: 03-13-23</li>
-                    </ul>
-                </div>
-                <div class="modal-list">  <a class="modal-menu " href="./">  <span>Home </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./about/">  <span>About </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./gallery/">  <span>Gallery </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./commissions/">  <span>Commissions </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./code/">  <span>Code </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./blog/">  <span>Blog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./links/">  <span>Links </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./microblog/">  <span>Microblog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./library/">  <span>Library </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./nexus/">  <span>Nexus </span> <i class="fa-solid fa-chevron-right"></i></a>  </div>
-            
+            <div class="modal-bio">
+                <img class="modal-bio img" src="./images/icons/sh.jpg">
+                <p style="font-size:large; font-weight:bold;">Rio's desktop</p>
+                <p align="center"><i class="fa-regular fa-map"></i> <a href="./sitemap">Sitemap</a></p>
+
+                <ul style="font-style: italic;">
+                    <li>OS: NENRIKIDO</li>
+                    <li>Version: 1.6</li>
+                    <li>Host: Neocities</li>
+                    <li>Processor: Hugo</li>
+                    <li>Since: 03-13-23</li>
+                </ul>
+            </div>
+            <div class="modal-list">  <a class="modal-menu " href="./">  <span>Home </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./about/">  <span>About </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./gallery/">  <span>Gallery </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./commissions/">  <span>Commissions </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./code/">  <span>Code </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./blog/">  <span>Blog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./links/">  <span>Links </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./microblog/">  <span>Microblog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./library/">  <span>Library </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="./nexus/">  <span>Nexus </span> <i class="fa-solid fa-chevron-right"></i></a>  </div>
+
         </div>
         <div class="modal-footer"><div class="row centered">
     <button id="pink" title="pink theme" class="theme-button" onclick="handleThemeButtonClick('pink', this)">💗</button>
@@ -407,12 +445,12 @@ This is my personal site and a place for me to share my work. It is a work in pr
     <button id="black" title="black theme" class="theme-button" onclick="handleThemeButtonClick('black', this)" >💤</button>
 </div></div>
     </div>
-<script>
-function call() {
-    var body = $("html, body");
-    body.stop().animate({scrollTop:0}, 500, 'swing', function() {
-    });
-}</script>
+    <script>
+        function call() {
+            var body = $("html, body");
+            body.stop().animate({ scrollTop: 0 }, 500, 'swing', function () {
+            });
+        }</script>
     <script type="text/javascript" src="./js/clock.js"></script>
     <script defer type="text/javascript" src="./js/start.js"></script><script src="./js/theme.js" ></script>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>

@@ -16,14 +16,14 @@ layout: single
 
 {{< card-mll title="#Code Guide" >}}
 
-This is a repository of pre-made layouts and code snippets that are free for you to use (non-commercially). Check individual posts for details. A few notes:
+This is a list of pre-made layouts and code snippets that are free for you to use. Check individual posts for details on how to use them. There's also a Github repository listing them [here](https://github.com/js044/freebies/tree/main). A few notes:
 
+- All themes are licensed under the [MIT License](https://github.com/js044/freebies/blob/main/LICENSE), which means they're free for you to use however you want. The only stipulation is that you retain attribution to me, which can be as simple as leaving credit in the HTML/CSS comments (hidden from public view.) 
 - Page themes are platform agnostic layouts and can be used anywhere that supports (modern) HTML/CSS. They use CSS variables to manage user settings so you can swap out colors, images, fonts, etc. These variables are located in the :root element. If you'd like to know more about CSS variables, you can read [this guide](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties). 
 - Page themes are meant to look identical to previews out-of-the-box, so they come shipped with web URL images rather than local links. I encourage you to link your content locally.
-- Page themes are stored in one messy file for ease of use, but it's not best practice. If you plan to use any themes across multiple pages, please separate the CSS and JS into their own files.
+- Page themes are stored in one messy file so you can easily drop it in and test it out, but this is **not** best practice. If you plan to use any themes across multiple pages, I strongly recommend separating the CSS and JS into their own files.
 - Themes are tested on Mozilla and Chrome on a variety of displays, but there's no way I'll catch all bugs. If anything is weird, let me know.
 - For instructions on installing a Tumblr theme, you can read their [official documentation](https://help.tumblr.com/hc/en-us/articles/230775027-Customizing-Your-Theme#h_01GWSSBWHMQT08V15J7ZJTMDJX).
-- Attribution is nice, but not required. 
 
 Feel free to email me ([nenrikido@pm.me](mailto:nenrikido@pm.me)) with any questions/comments or leave a comment here.
 {{< comments >}}

@@ -19,13 +19,13 @@ layout: single
 <h1 id="about-me">#ABOUT ME</h1> <br>
 
 {{< stats-box >}}
-{{< stats stat="NAME: Rio / Jay" >}}
+{{< stats stat="NAME: Jay / Rio" >}}
 {{< stats stat="BORN: 1997" >}}
 {{< stats stat="🇵🇷 🇰🇷" >}}
 {{< stats stat="🏳️‍🌈" >}}
 {{< stats stat="ASTRO: ♓︎☉ ♏︎☽ ♓︎↑" >}}
 {{< stats stat="MBTI: INTP" >}} 
-{{< stats stat="ENNEAGRAM: 5w4" >}}
+{{< stats stat="ENNEAGRAM: 6w5" >}}
 {{< /stats-box >}}
 {{< box >}} 
 Hi, I'm a multimedia artist located in the US. I love experimental art and creating things. I also love horror games, spicy noodles, and fish trivia. Feel free to reach out about any of these topics; I love [email](mailto:@nenrikido@pm.me)!

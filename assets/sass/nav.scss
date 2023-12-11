@@ -1,0 +1,93 @@
+nav {
+    text-align: center;
+}
+
+nav#navAlt {
+    width: 15rem;
+    position: sticky;
+    align-self: flex-start;
+    top: 0;
+    margin: 3rem;
+
+    &>div {
+        margin: 15px auto;
+    }
+}
+
+nav#nav {
+    width: 18rem;
+    padding: 5px;
+    margin: 1em;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.wrapper {
+    display: flex;
+}
+
+.navLink {
+    overflow: hidden;
+    font-size: calc(var(--body-font-size) / 1.2);
+    margin: 1em 0;
+    text-transform: uppercase;
+    color: var(--secondary);
+    width: 8rem;
+
+    &>div {
+        height: 40px;
+        max-width: 50px;
+        text-align: center;
+        justify-content: center;
+        margin: 5px auto;
+    }
+
+    &>#home {
+        background: var(--homeLink) center / contain no-repeat;
+    }
+
+    &>#about {
+        background: var(--aboutLink) center / contain no-repeat;
+    }
+
+    &>#gallery {
+        background: var(--galleryLink) center / contain no-repeat;
+    }
+
+    &>#commissions {
+        background: var(--commissionsLink) center / contain no-repeat;
+    }
+
+    &>#code {
+        background: var(--codeLink) center / contain no-repeat;
+    }
+
+    &>#blog {
+        background: var(--blogLink) center / contain no-repeat;
+    }
+
+    &>#links {
+        background: var(--linksLink) center / contain no-repeat;
+    }
+
+    &>#microblog {
+        background: var(--microblogLink) center / contain no-repeat;
+    }
+
+    &>#library {
+        background: var(--libraryLink) center / contain no-repeat;
+    }
+
+    &>#nexus {
+        background: var(--nexusLink) center / contain no-repeat;
+    }
+}
+
+.navWrapper {
+    border: 2px solid var(--secondary);
+    padding: 1em 0.2em;
+    background-color: var(--tertiary);
+    box-shadow: 6px 6px var(--secondary_muted);
+}

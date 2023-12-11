@@ -10,46 +10,52 @@
     <link rel='shortcut icon' type='image/x-icon' href='../images/icons/favicon-32x32.png' />
 
     <link rel="alternate" type="application/rss+xml" href="https://nenrikido.neocities.org/categories/index.xml" title="NENRIKIDO" />
+    
+    <link href="../sass/main.min.1b0e385727321aa6c9ab2363ec685359981762b2071f3e202a2f21d92393162a.css" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="../css/themes.css">
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
     <link rel="stylesheet" type="text/css" href="../css/lightbox.css">
     
     <div id="preloader"></div><body>
     <div class="wrapper">
-        <div class="grid"> 
+        <div class="grid">                 
+            
             
         </div>
     </div><footer id="footer">
     <ul>
         <li> <button id="footer-button">START</button> </li>
         <li> <a href="#" id="btn-back-to-top" onclick="call()"><i class="fa-solid fa-circle-chevron-up"></i></a></li>
-        <li><div id="clock" class="clock" onload="showTime()"></div></li>
+        <li>
+            <div id="clock" class="clock" onload="showTime()"></div>
+        </li>
     </ul>
 </footer>
 
 <div id="start-menu" class="modal">
     <div class="modal-content">
         <div class="modal-header">
-            <h1>Start Menu</h1> <span class="close">&times;</span>
+            <h1>START MENU</h1> <span class="close">&times;</span>
         </div>
         <div class="modal-body">
-            
-                <div class="modal-bio">
-                    <img class="modal-bio img" src="../images/icons/sh.jpg">
-                    <h6>Rio's desktop</h6>
-                    <p align="center"><i class="fa-regular fa-map"></i> <a href="../sitemap">Sitemap</a></p>
 
-                    <ul style="font-style: italic;">
-                        <li>OS: NENRIKIDO</li>
-                        <li>Version: 1.5</li>
-                        <li>Host: Neocities</li>
-                        <li>Processor: Hugo</li>
-                        <li>Since: 03-13-23</li>
-                    </ul>
-                </div>
-                <div class="modal-list">  <a class="modal-menu " href="../">  <span>Home </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../about/">  <span>About </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../gallery/">  <span>Gallery </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../commissions/">  <span>Commissions </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../code/">  <span>Code </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../blog/">  <span>Blog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../links/">  <span>Links </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../microblog/">  <span>Microblog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../library/">  <span>Library </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../nexus/">  <span>Nexus </span> <i class="fa-solid fa-chevron-right"></i></a>  </div>
-            
+            <div class="modal-bio">
+                <img class="modal-bio img" src="../images/icons/sh.jpg">
+                <p style="font-size:large; font-weight:bold;">Rio's desktop</p>
+                <p align="center"><i class="fa-regular fa-map"></i> <a href="../sitemap">Sitemap</a></p>
+
+                <ul style="font-style: italic;">
+                    <li>OS: NENRIKIDO</li>
+                    <li>Version: 1.6</li>
+                    <li>Host: Neocities</li>
+                    <li>Processor: Hugo</li>
+                    <li>Since: 03-13-23</li>
+                </ul>
+            </div>
+            <div class="modal-list">  <a class="modal-menu " href="../">  <span>Home </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../about/">  <span>About </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../gallery/">  <span>Gallery </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../commissions/">  <span>Commissions </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../code/">  <span>Code </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../blog/">  <span>Blog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../links/">  <span>Links </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../microblog/">  <span>Microblog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../library/">  <span>Library </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../nexus/">  <span>Nexus </span> <i class="fa-solid fa-chevron-right"></i></a>  </div>
+
         </div>
         <div class="modal-footer"><div class="row centered">
     <button id="pink" title="pink theme" class="theme-button" onclick="handleThemeButtonClick('pink', this)">💗</button>
@@ -58,12 +64,12 @@
     <button id="black" title="black theme" class="theme-button" onclick="handleThemeButtonClick('black', this)" >💤</button>
 </div></div>
     </div>
-<script>
-function call() {
-    var body = $("html, body");
-    body.stop().animate({scrollTop:0}, 500, 'swing', function() {
-    });
-}</script>
+    <script>
+        function call() {
+            var body = $("html, body");
+            body.stop().animate({ scrollTop: 0 }, 500, 'swing', function () {
+            });
+        }</script>
     <script type="text/javascript" src="../js/clock.js"></script>
     <script defer type="text/javascript" src="../js/start.js"></script><script src="../js/theme.js" ></script>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>

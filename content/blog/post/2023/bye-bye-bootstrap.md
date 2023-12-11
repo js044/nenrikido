@@ -3,6 +3,7 @@ title: "Bye-bye Bootstrap"
 date: 2023-05-28T18:42:10-06:00
 tags: site updates
 summary: Bootstrap gets the boot, my hair gets a trim, and the site gets a map.
+thumbnail: /images/blog/052823/start.gif
 draft: false
 ---
 

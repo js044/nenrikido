@@ -1,0 +1,41 @@
+.cards {
+    border: 2px solid var(--secondary);
+    background-color: var(--tertiary);
+    box-shadow: 6px 6px var(--secondary_muted);
+    word-wrap: break-word;
+    overflow: hidden;
+  
+    &Title {
+      font-weight: bold;
+      font-style: italic;
+      word-wrap: break-word;
+      color: var(--secondary);
+    }
+  
+    &Body {
+      padding: 1.25em;
+    }
+  
+    &Header {
+      cursor: grab;
+      height: 2.5rem;
+      background-color: var(--secondary);
+      color: var(--tertiary);
+    }
+  
+    &Controls {
+      font-size: 1em;
+      padding: 3px;
+      color: var(--tertiary);
+      display: flex;
+      justify-content: space-between;
+  
+      > div {
+        padding: 5px;
+      }
+    }
+  }
+  
+.thumbnail {
+  max-width: 100%;
+}

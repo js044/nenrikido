@@ -1,0 +1,75 @@
+// Selecting multiple IDs
+#RPGMaker table, #neossg table {
+    color: var(--secondary);
+    background: none;
+    border: none;
+  }
+  
+  #RPGMaker table td, #neossg table td {
+    padding: 0;
+    border: none;
+  }
+  
+  // ID selectors with specific styles
+  #safont {
+    width: 160px;
+  }
+  
+  #neossg {
+    margin: 0 auto;
+    padding: 5px;
+    background-image: linear-gradient(
+      -225deg,
+      #522aff 0%,
+      #d916eb 50%,
+      #522aff 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #44107a;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    text-shadow: none;
+    text-decoration: none;
+    vertical-align: baseline;
+  
+    @keyframes textclip {
+      to {
+        background-position: 200% center;
+      }
+    }
+  
+    table {
+      margin: 0 auto;
+  
+      tr td {
+        padding: 5px;
+      }
+    }
+  
+    .webring-prev {
+      text-align: right;
+    }
+  
+    .webring-info {
+      text-align: center;
+    }
+  
+    .webring-next {
+      text-align: left;
+    }
+  
+    .webring-links {
+      font-size: small;
+    }
+  
+    a {
+      text-decoration: none;
+    }
+  }
+  

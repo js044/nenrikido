@@ -1,0 +1,36 @@
+.theme-button {
+    height: clamp(2.75rem, 2vw, 1vw);
+    width: clamp(2.75rem, 2vw, 1vw);
+    border-radius: 50%;
+    border: none;
+  
+    &:hover {
+      color: var(--secondary);
+    }
+  
+    &:active,
+    &:focus {
+      border: 1px solid var(--secondary);
+    }
+  }
+  
+  .btn-border {
+    border: 1px solid var(--secondary) !important;
+  }
+  
+  #pink {
+    background-color: #ffd5ed;
+  }
+  
+  #blue {
+    background-color: #d7e6ff;
+  }
+  
+  #yellow {
+    background-color: #ffe0b8;
+  }
+  
+  #black {
+    background-color: #dfc9ff;
+  }
+  
