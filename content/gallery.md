@@ -15,6 +15,14 @@ draft: false
 
 {{< muuri >}}
 
+
+{{< card-small filter="digil" id="chibi" >}}
+{{< lightbox-image link="/images/gallery/chibi.png" lightbox-id="chibi" img-src="/images/gallery/thumbnails/chibi.png" loading="" width="300" height="420" alt="A chibi girl surrounded by stars.">}}
+##### ***Starry Girl***
+> Dec. 2023  
+> Clip Studio Paint
+{{< /card-small >}}
+
 {{< card-small filter="digil" id="yiseul1" >}}
 {{< lightbox-image link="/images/gallery/ys_1.png" lightbox-id="yiseulref" img-src="/images/gallery/thumbnails/ys_1.png" loading="" width="300" height="250" alt="A woman standing in a heavy coat on the left. There is text exposition explaining her history as a mudang who had her heart eaten by a kumiho. On the right there are two images. One is of her shoulders-up, looking at the viewer, ostensibly naked. The other is of her staring forward." >}}
 
@@ -148,6 +156,13 @@ draft: false
 > Jan. 2022  
 > Clip Studio Paint  
 > Genshin Impact OC created for the Goku Battle Royale (fan OC tournament)
+{{< /card-small >}}
+
+{{< card-small filter="digil" id="woo" >}}
+{{< lightbox-image link="/images/gallery/woo.png" lightbox-id="woo" img-src="/images/gallery/thumbnails/woo.png" loading="lazy" width="300" height="452" alt="A smug looking anime boy tilting his hat." >}}
+##### ***Woojin Cameo***
+> Aug. 2023  
+> Clip Studio Paint  
 {{< /card-small >}}
 
 {{< card-small filter="digil" id="garou-genos" >}}
