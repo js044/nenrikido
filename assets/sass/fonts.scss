@@ -64,3 +64,15 @@
     src: url(../fonts/Tickerbit-regular.otf);
     font-display: fallback;
   }
+
+  @font-face {
+    font-family: "Delius";
+    src: url(../fonts/Delius-Regular.ttf);
+    font-display: fallback;
+  }
+
+  @font-face {
+    font-family: "Relmond";
+    src: url(../fonts/Relmond.woff);
+    font-display: fallback;
+  }

@@ -21,9 +21,11 @@ Grab a card by its header and drag it wherever you want!
 
 {{< card-medium title="#THEME POLL" >}} 
 Which theme is your favorite?
-<form method="post" action="https://poll.pollcode.com/75268219">
-<div style="background-color: transparent; padding:10px; width:15rem; color: var(--secondary);">
-<input type="radio" name="answer" value="1" id="answer752682191" style="float:left;" /><label for="answer752682191" style="float:left; padding-left: 5px; width:10rem;"> 💗</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="2" id="answer752682192" style="float:left;" /><label for="answer752682192" style="float:left; padding-left: 5px; width:10rem;"> 🫧</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="3" id="answer752682193" style="float:left;" /><label for="answer752682193"  style="float:left; padding-left: 5px; width:10rem;"> 🪐</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="4" id="answer752682194" style="float:left;" /><label for="answer752682194" style="float:left; padding-left: 5px; width:10rem;"> 💤</label><div style="clear:both;height:2px;"></div><div align="center" style="padding:3px;"><input type="submit" value=" Vote ">&nbsp;<input type="submit" name="view" value=" View "></div></div></form>
+<form method="post" action="https://poll.pollcode.com/62524344">
+<div style="background-color:transparent;padding: 0 10px;width:15rem;color: var(--secondary);"> 
+<input type="radio" name="answer" value="1" id="answer625243441" style="float:left;" /><label for="answer625243441" style="float:left;padding-left: 5px; width:10rem;">💗</label>
+<div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="2" id="answer625243442" style="float:left;" /><label for="answer625243442" style="float:left; padding-left: 5px; width:10rem;">🫧</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="3" id="answer625243443" style="float:left;" /><label for="answer625243443" style="float:left;padding-left: 5px; width:10rem;">🪐</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="4" id="answer625243444" style="float:left;" /><label for="answer625243444" style="float:left;padding-left: 5px; width:10rem;">💤</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="5" id="answer625243445" style="float:left;" /><label for="answer625243445" style="float:left;padding-left: 5px; width:10rem;">🌷</label><div style="clear:both;height:2px;"></div><div align="center" style="padding:3px;"><input type="submit" value="Vote" style="border: 1px solid var(--secondary); color: var(--secondary); padding: 3px; cursor: pointer; background-color: transparent;">&nbsp;<input type="submit" name="view" value="View" style="border: 1px solid var(--secondary); color: var(--secondary); padding: 3px; cursor: pointer; background-color: transparent;"></div></div></form>
+
 {{< /card-medium >}}
 
 {{< card-medium title="#MUSIC" >}} 
@@ -70,6 +72,7 @@ Read the rest of the blog [here](/blog).
 
 {{< card-medium title="#UPDATES" >}} 
 {{< scrollbox >}}
+* **12-23-23**: new theme, thanks mima! there's also a new poll to go along with it, the last was capped at 400 votes...
 * **12-11-23**: too many to list!! check out the blog!!
 * **7-2-23**: new blog post and a theme poll. 
 * **6-21-23**: added a few new fanlistings...most are still pending but wooo

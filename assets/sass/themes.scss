@@ -7,7 +7,7 @@
   --body-font: "National Park", "Arial";
   --body-font-size: 0.85rem;
   --header-font: "Distro", "Georgia";
-  --header-font-size: clamp(2rem, 1.8vw, 1.2vw);
+  --header-font-size: clamp(1.9rem, 1.8vw, 1.2vw);
   --homeLink: url("../images/icons/nav/pink/home.png");
   --aboutLink: url("../images/icons/nav/pink/about.png");
   --galleryLink: url("../images/icons/nav/pink/gallery.png");
@@ -64,8 +64,8 @@
 
 :root.black {
   --primary: #171717;
-  --secondary: #ac35e8;
-  --secondary_muted: #b638ffbc;
+  --secondary: #903db9;
+  --secondary_muted: #8a45acbb;
   --tertiary: #ffffffea;
   --body-font: "Tickerbit", "Arial";
   --body-font-size: 0.78rem;
@@ -81,4 +81,25 @@
   --microblogLink: url("../images/icons/nav/black/microblog.png");
   --libraryLink: url("../images/icons/nav/black/library.png");
   --nexusLink: url("../images/icons/nav/black/nexus.png");
+}
+
+:root.green {
+  --primary: #cef8d2;
+  --secondary: #dd3a78;
+  --secondary_muted: #f14c8ba5;
+  --tertiary: #fef2f9;
+  --body-font: "Delius", "Arial";
+  --body-font-size: 0.85rem;
+  --header-font: "Relmond", "Arial Black";
+  --header-font-size: clamp(1.7rem, 3.6766rem + -6.325vw, 0.11875rem);
+  --homeLink: url("../images/icons/nav/green/home.png");
+  --aboutLink: url("../images/icons/nav/green/about.png");
+  --galleryLink: url("../images/icons/nav/green/gallery.png");
+  --commissionsLink: url("../images/icons/nav/green/commissions.png");
+  --codeLink: url("../images/icons/nav/green/code.png");
+  --blogLink: url("../images/icons/nav/green/blog.png");
+  --linksLink: url("../images/icons/nav/green/links.png");
+  --microblogLink: url("../images/icons/nav/green/microblog.png");
+  --libraryLink: url("../images/icons/nav/green/library.png");
+  --nexusLink: url("../images/icons/nav/green/nexus.png");
 }

@@ -1,6 +1,6 @@
 .theme-button {
-    height: clamp(2.75rem, 2vw, 1vw);
-    width: clamp(2.75rem, 2vw, 1vw);
+    height: clamp(2.85rem, 2vw, 1vw);
+    width: clamp(2.85rem, 2vw, 1vw);
     border-radius: 50%;
     border: none;
   
@@ -34,3 +34,6 @@
     background-color: #dfc9ff;
   }
   
+  #green {
+    background-color: #cbf5d3;
+  }
