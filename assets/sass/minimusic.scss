@@ -28,8 +28,8 @@
 }
 
 #musicpixel {
-    width: 33px;
-    padding: 6px;
+    width: 34px;
+    padding: 8px;
     position: relative;
     min-height: 20px;
     background: var(--tertiary);
@@ -65,7 +65,7 @@
     white-space: nowrap;
     display: inline-block;
     width: calc(100% - 10px - 1px);
-    margin-left: calc(10px + 1px);
+    margin-left: calc(10px + 3px);
 }
 
 .marquee {
