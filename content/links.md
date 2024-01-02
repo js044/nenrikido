@@ -137,6 +137,8 @@ draft: false
 {{< buttons img-src="/images/buttons/doqmeat.png" link="https://doqmeat.neocities.org/">}}  
 {{< buttons img-src="/images/buttons/link_malta.gif" link="https://daikonet.neocities.org/" >}}
 {{< buttons img-src="/images/buttons/dimden.gif" link="https://dimden.dev/">}}
+{{< buttons img-src="/images/buttons/lonelyjulybutton.gif" link="https://lonelyjuly.online/">}}
+{{< buttons img-src="/images/buttons/lunospace.gif" link="https://lostlove.neocities.org/">}}
 {{< buttons img-src="/images/buttons/cpnk.gif" link="https://seapunk.xyz/">}}  
 {{< buttons img-src="/images/buttons/cloverbellbanner.gif" link="https://cloverbell.neocities.org/" >}}  
 {{< buttons img-src="/images/buttons/nostalgic.gif" link="https://nostalgic.neocities.org/">}} 
