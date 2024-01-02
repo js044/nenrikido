@@ -85,16 +85,10 @@ class JournalRing extends HTMLElement {
                         buttonDiv.appendChild(nextButton);
 
                         // Handle the previous button click
-                        prevButton.addEventListener('click', () => {
-                            currentIndex = currentIndex === 0 ? data.length - 1 : currentIndex - 1;
-                            window.location.href = data[currentIndex].url;
-                        });
+                        prevButton.href = data[currentIndex === 0 ? data.length - 1 : currentIndex - 1].url;
 
                         // Handle the next button click
-                        nextButton.addEventListener('click', () => {
-                            currentIndex = (currentIndex + 1) % data.length;
-                            window.location.href = data[currentIndex].url;
-                        });
+                        nextButton.href = data[(currentIndex + 1) % data.length].url;
 
                         const randomButton = document.createElement('button');
                         randomButton.classList.add('random-button');
