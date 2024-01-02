@@ -367,6 +367,10 @@
       "images",
       "indigo",
       "interests",
+      "iseul--the-bead",
+      "iseul-references",
+      "iseul1",
+      "iseul2",
       "join-content",
       "join-right-content",
       "keqing",
@@ -469,7 +473,6 @@
       "tldr",
       "top",
       "topBar",
-      "toska-tap",
       "trust",
       "turquoise",
       "unordered-list",
@@ -482,11 +485,7 @@
       "woo",
       "woojin-cameo",
       "wrapper",
-      "yellow",
-      "yiseul--the-bead",
-      "yiseul-references",
-      "yiseul1",
-      "yiseul2"
+      "yellow"
     ]
   }
 }

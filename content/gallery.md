@@ -23,11 +23,11 @@ draft: false
 > Clip Studio Paint
 {{< /card-small >}}
 
-{{< card-small filter="digil" id="yiseul1" >}}
-{{< lightbox-image link="/images/gallery/ys_1.png" lightbox-id="yiseulref" img-src="/images/gallery/thumbnails/ys_1.png" loading="" width="300" height="250" alt="A woman standing in a heavy coat on the left. There is text exposition explaining her history as a mudang who had her heart eaten by a kumiho. On the right there are two images. One is of her shoulders-up, looking at the viewer, ostensibly naked. The other is of her staring forward." >}}
+{{< card-small filter="digil" id="iseul1" >}}
+{{< lightbox-image link="/images/gallery/ys_1.png" lightbox-id="iseulref" img-src="/images/gallery/thumbnails/ys_1.png" loading="" width="300" height="250" alt="A woman standing in a heavy coat on the left. There is text exposition explaining her history as a mudang who had her heart eaten by a kumiho. On the right there are two images. One is of her shoulders-up, looking at the viewer, ostensibly naked. The other is of her staring forward." >}}
 
-{{< lightbox-image link="/images/gallery/ys_2.png" lightbox-id="yiseulref" img-src="/images/gallery/thumbnails/ys_2.png" loading="" width="300" height="424" alt="Yiseul standing in her work uniform. She wears dark long sleeves and pants with a modified jeogori top." >}}
-##### ***Yiseul References***
+{{< lightbox-image link="/images/gallery/ys_2.png" lightbox-id="iseulref" img-src="/images/gallery/thumbnails/ys_2.png" loading="" width="300" height="424" alt="Yiseul standing in her work uniform. She wears dark long sleeves and pants with a modified jeogori top." >}}
+##### ***Iseul References***
 > Jan. 2023  
 > Clip Studio Paint
 {{< /card-small >}}
@@ -98,9 +98,9 @@ draft: false
 > Digital photography
 {{< /card-small >}}
 
-{{< card-small filter="digil" id="yiseul2" >}}
-{{< lightbox-image link="/images/gallery/ys_3.png" lightbox-id="yiseul3" img-src="/images/gallery/thumbnails/ys_3.png" loading="lazy" width="300" height="388" alt="A woman with a ponytail shrouded in shadow against a bright red backdrop. A glowing bead floats before her hand, as if she is holding it." >}}
-##### ***Yiseul & the bead***
+{{< card-small filter="digil" id="iseul2" >}}
+{{< lightbox-image link="/images/gallery/ys_3.png" lightbox-id="iseul2" img-src="/images/gallery/thumbnails/ys_3.png" loading="lazy" width="300" height="388" alt="A woman with a ponytail shrouded in shadow against a bright red backdrop. A glowing bead floats before her hand, as if she is holding it." >}}
+##### ***Iseul & the bead***
 > Jan. 2022  
 > Clip Studio Paint  
 {{< /card-small >}}
@@ -275,13 +275,6 @@ draft: false
 > Nov. 2021  
 > Clip Studio Paint  
 > One Punch Man fanart
-{{< /card-small >}}
-
-{{< card-small filter="grdesign" id="toska-tap" >}}
-{{< lightbox-image link="/images/gallery/toska tap1.png" lightbox-id="toska" img-src="/images/gallery/thumbnails/toska tap1.png" loading="lazy" width="300" height="337" alt="A poem.">}}
-##### ***Toska Tap***
-> Fall 2018    
-> Adobe Illustrator 
 {{< /card-small >}}
 
 {{< card-small filter="photos" id="storm" >}}
