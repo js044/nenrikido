@@ -56,6 +56,20 @@ class JournalRing extends HTMLElement {
                     if (currentIndex !== -1) {
                         const member = data[currentIndex];
 
+                        // Create tooltip element for showing URL
+                        const tooltip = document.createElement('div');
+                        tooltip.classList.add('tooltip');
+                        tooltip.style.display = 'none'; // Initially hide the tooltip
+                        widgetContainer.appendChild(tooltip);
+
+                        // Function to show tooltip at a specific position
+                        function showTooltip(text, x, y) {
+                            tooltip.textContent = text;
+                            tooltip.style.display = 'block';
+                            tooltip.style.top = `${y}px`;
+                            tooltip.style.left = `${x}px`;
+                        }
+
                         // Create and style buttons with arrow images
                         const prevButton = document.createElement('button');
                         prevButton.classList.add('prev-button');
@@ -146,6 +160,28 @@ class JournalRing extends HTMLElement {
         };
 
         fetchData(); // Call the fetchData function
+         // Event listeners for showing tooltips on hover
+    prevButton.addEventListener('mouseover', () => {
+        if (currentIndex !== -1) {
+            const prevURL = data[currentIndex === 0 ? data.length - 1 : currentIndex - 1].url;
+            showTooltip(prevURL, prevButton.getBoundingClientRect().right, prevButton.getBoundingClientRect().top);
+        }
+    });
+
+    prevButton.addEventListener('mouseout', () => {
+        tooltip.style.display = 'none'; // Hide tooltip when not hovering
+    });
+
+    nextButton.addEventListener('mouseover', () => {
+        if (currentIndex !== -1) {
+            const nextURL = data[(currentIndex + 1) % data.length].url;
+            showTooltip(nextURL, nextButton.getBoundingClientRect().left, nextButton.getBoundingClientRect().top);
+        }
+    });
+
+    nextButton.addEventListener('mouseout', () => {
+        tooltip.style.display = 'none'; // Hide tooltip when not hovering
+    });
     }
 
     getIndexFromURL(data, currentURL) {
