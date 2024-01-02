@@ -87,7 +87,20 @@ class JournalRing extends HTMLElement {
                         randomButton.classList.add('random-button');
                         randomButton.textContent = 'Random';
                         randomButton.addEventListener('click', () => {
-                            // Implement logic for random button
+                            fetch('/json/members.json')
+                                .then(response => response.json())
+                                .then(data => {
+                                    // Get a random index within the data array length
+                                    const randomIndex = Math.floor(Math.random() * data.length);
+                                    const randomWebsite = data[randomIndex];
+
+                                    // Navigate to the random website URL
+                                    window.location.href = randomWebsite.url;
+                                })
+                                .catch(error => {
+                                    console.error('Error fetching JSON:', error);
+                                    // Handle errors if the JSON data retrieval fails
+                                });
                         });
 
                         // Create a div for the random button
