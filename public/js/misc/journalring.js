@@ -39,19 +39,18 @@ class JournalRing extends HTMLElement {
         `;
     }
 
-    connectedCallback() {
+    connectedCallback() {        
         const widgetContainer = document.createElement('div');
         widgetContainer.classList.add('widget-container');
 
         const fetchData = () => {
             const iconType = this.getAttribute('icon') || 'default'; // Define iconType within fetchData function scope
-            let currentIndex; // Declare currentIndex in a wider scope to access it in event listeners
 
             // Fetch the JSON data
             fetch('/json/members.json')
                 .then(response => response.json())
                 .then(data => {
-                    currentIndex = this.getIndexFromURL(data, window.location.href);
+                    const currentIndex = this.getIndexFromURL(data, window.location.href);
 
                     if (currentIndex !== -1) {
                         const member = data[currentIndex];
@@ -95,11 +94,6 @@ class JournalRing extends HTMLElement {
                             currentIndex = (currentIndex + 1) % data.length;
                             window.location.href = data[currentIndex].url;
                         });
-
-                        // Set href attributes for hover preview
-                        prevButton.href = data[currentIndex === 0 ? data.length - 1 : currentIndex - 1].url;
-                        nextButton.href = data[(currentIndex + 1) % data.length].url;
-
 
                         const randomButton = document.createElement('button');
                         randomButton.classList.add('random-button');
