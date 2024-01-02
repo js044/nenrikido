@@ -11,8 +11,6 @@ draft: false
 {{< icons/hashtag >}} [resources](#resources)  
 {{< /nav >}}
 
-<link rel="stylesheet" type="text/css" href="/css/webrings.css">
-
 {{< muuri >}}
 {{< card-large title="#FIND ME" id="find-me">}}
 {{< box-small >}}
