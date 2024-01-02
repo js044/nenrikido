@@ -39,7 +39,7 @@ class JournalRing extends HTMLElement {
         `;
     }
 
-    connectedCallback() {
+    connectedCallback() {        
         const widgetContainer = document.createElement('div');
         widgetContainer.classList.add('widget-container');
 
@@ -84,34 +84,57 @@ class JournalRing extends HTMLElement {
                         buttonDiv.appendChild(iconLink);
                         buttonDiv.appendChild(nextButton);
 
-                        // Append the buttonDiv to the widget container
-                        widgetContainer.appendChild(buttonDiv);
-
-                        // Apply default styles to the shadow DOM
-                        const style = document.createElement('style');
-                        style.textContent = this.defaultStyles;
-                        this.shadowRoot.appendChild(style);
-
-                        return { prevButton, nextButton, currentIndex, data };
-                    } else {
-                        const pendingMessage = document.createElement('p');
-                        pendingMessage.textContent = "This user's application to JournalRing is pending.";
-                        this.shadowRoot.appendChild(pendingMessage);
-                        return {};
-                    }
-                })
-                .then(({ prevButton, nextButton, currentIndex, data }) => {
-                    if (prevButton && nextButton && currentIndex !== undefined && data) {
-                        // Event listeners for previous and next buttons
+                        // Handle the previous button click
                         prevButton.addEventListener('click', () => {
                             currentIndex = currentIndex === 0 ? data.length - 1 : currentIndex - 1;
                             window.location.href = data[currentIndex].url;
                         });
 
+                        // Handle the next button click
                         nextButton.addEventListener('click', () => {
                             currentIndex = (currentIndex + 1) % data.length;
                             window.location.href = data[currentIndex].url;
                         });
+
+                        const randomButton = document.createElement('button');
+                        randomButton.classList.add('random-button');
+                        randomButton.textContent = 'Random';
+                        randomButton.addEventListener('click', () => {
+                            fetch('/json/members.json')
+                                .then(response => response.json())
+                                .then(data => {
+                                    // Get a random index within the data array length
+                                    const randomIndex = Math.floor(Math.random() * data.length);
+                                    const randomWebsite = data[randomIndex];
+
+                                    // Navigate to the random website URL
+                                    window.location.href = randomWebsite.url;
+                                })
+                                .catch(error => {
+                                    console.error('Error fetching JSON:', error);
+                                    // Handle errors if the JSON data retrieval fails
+                                });
+                        });
+
+                        // Create a div for the random button
+                        const randomDiv = document.createElement('div');
+                        randomDiv.appendChild(randomButton);
+
+                        // Append the buttonDiv and randomDiv to the widget container
+                        widgetContainer.appendChild(buttonDiv);
+                        widgetContainer.appendChild(randomDiv);
+
+                        // Append the container to the shadow DOM
+                        this.shadowRoot.appendChild(widgetContainer);
+
+                        // Apply default styles to the shadow DOM
+                        const style = document.createElement('style');
+                        style.textContent = this.defaultStyles;
+                        this.shadowRoot.appendChild(style);
+                    } else {
+                        const pendingMessage = document.createElement('p');
+                        pendingMessage.textContent = "This user's application to JournalRing is pending.";
+                        this.shadowRoot.appendChild(pendingMessage);
                     }
                 })
                 .catch(error => {
@@ -161,6 +184,28 @@ class JournalRing extends HTMLElement {
 
         // Return the arrow image source based on the direction and iconType
         return arrowImageMap[direction][iconType] || arrowImageMap[direction]['default'];
+    }
+
+    // Method to periodically check for dead links in the JSON data
+    checkDeadLinks(data) {
+        setInterval(() => {
+            data.forEach(member => {
+                fetch(member.url, { method: 'HEAD' })
+                    .then(response => {
+                        if (!response.ok) {
+                            this.handleDeadLink(member.url);
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error checking link:', error);
+                    });
+            });
+        }, 60000);
+    }
+
+    // Placeholder function to handle dead links
+    handleDeadLink(deadURL) {
+        console.log(`Dead link detected: ${deadURL}`);
     }
 }
 
