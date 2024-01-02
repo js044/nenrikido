@@ -36,48 +36,24 @@ class JournalRing extends HTMLElement {
             .icon {
                 padding: 0 0.5em;
             }
-
-            .tooltip {
-                position: absolute;
-                background-color: rgba(0, 0, 0, 0.7);
-                color: white;
-                padding: 4px 8px;
-                border-radius: 4px;
-                font-size: 12px;
-            }
         `;
     }
 
-    connectedCallback() {
+    connectedCallback() {        
         const widgetContainer = document.createElement('div');
         widgetContainer.classList.add('widget-container');
 
         const fetchData = () => {
             const iconType = this.getAttribute('icon') || 'default'; // Define iconType within fetchData function scope
-            let currentIndex; // Declare currentIndex in a wider scope to access it in event listeners
 
             // Fetch the JSON data
             fetch('/json/members.json')
                 .then(response => response.json())
                 .then(data => {
-                    currentIndex = this.getIndexFromURL(data, window.location.href);
+                    const currentIndex = this.getIndexFromURL(data, window.location.href);
 
                     if (currentIndex !== -1) {
                         const member = data[currentIndex];
-
-                        // Create tooltip element for showing URL
-                        const tooltip = document.createElement('div');
-                        tooltip.classList.add('tooltip');
-                        tooltip.style.display = 'none'; // Initially hide the tooltip
-                        widgetContainer.appendChild(tooltip);
-
-                        // Function to show tooltip at a specific position
-                        function showTooltip(text, x, y) {
-                            tooltip.textContent = text;
-                            tooltip.style.display = 'block';
-                            tooltip.style.top = `${y}px`;
-                            tooltip.style.left = `${x}px`;
-                        }
 
                         // Create and style buttons with arrow images
                         const prevButton = document.createElement('button');
@@ -107,46 +83,57 @@ class JournalRing extends HTMLElement {
                         buttonDiv.appendChild(iconLink);
                         buttonDiv.appendChild(nextButton);
 
-                        // Append the buttonDiv to the widget container
+                        // Handle the previous button click
+                        prevButton.addEventListener('click', () => {
+                            currentIndex = currentIndex === 0 ? data.length - 1 : currentIndex - 1;
+                            window.location.href = data[currentIndex].url;
+                        });
+
+                        // Handle the next button click
+                        nextButton.addEventListener('click', () => {
+                            currentIndex = (currentIndex + 1) % data.length;
+                            window.location.href = data[currentIndex].url;
+                        });
+
+                        const randomButton = document.createElement('button');
+                        randomButton.classList.add('random-button');
+                        randomButton.textContent = 'Random';
+                        randomButton.addEventListener('click', () => {
+                            fetch('/json/members.json')
+                                .then(response => response.json())
+                                .then(data => {
+                                    // Get a random index within the data array length
+                                    const randomIndex = Math.floor(Math.random() * data.length);
+                                    const randomWebsite = data[randomIndex];
+
+                                    // Navigate to the random website URL
+                                    window.location.href = randomWebsite.url;
+                                })
+                                .catch(error => {
+                                    console.error('Error fetching JSON:', error);
+                                    // Handle errors if the JSON data retrieval fails
+                                });
+                        });
+
+                        // Create a div for the random button
+                        const randomDiv = document.createElement('div');
+                        randomDiv.appendChild(randomButton);
+
+                        // Append the buttonDiv and randomDiv to the widget container
                         widgetContainer.appendChild(buttonDiv);
+                        widgetContainer.appendChild(randomDiv);
+
+                        // Append the container to the shadow DOM
+                        this.shadowRoot.appendChild(widgetContainer);
 
                         // Apply default styles to the shadow DOM
                         const style = document.createElement('style');
                         style.textContent = this.defaultStyles;
                         this.shadowRoot.appendChild(style);
-
-                        return { prevButton, nextButton, currentIndex, data, tooltip };
                     } else {
                         const pendingMessage = document.createElement('p');
                         pendingMessage.textContent = "This user's application to JournalRing is pending.";
                         this.shadowRoot.appendChild(pendingMessage);
-                        return {};
-                    }
-                })
-                .then(({ prevButton, nextButton, currentIndex, data, tooltip }) => {
-                    if (prevButton && nextButton && currentIndex !== undefined && data && tooltip) {
-                        // Event listeners for showing tooltips on hover
-                        prevButton.addEventListener('mouseover', () => {
-                            if (currentIndex !== -1) {
-                                const prevURL = data[currentIndex === 0 ? data.length - 1 : currentIndex - 1].url;
-                                showTooltip(prevURL, prevButton.getBoundingClientRect().right, prevButton.getBoundingClientRect().top);
-                            }
-                        });
-
-                        prevButton.addEventListener('mouseout', () => {
-                            tooltip.style.display = 'none'; // Hide tooltip when not hovering
-                        });
-
-                        nextButton.addEventListener('mouseover', () => {
-                            if (currentIndex !== -1) {
-                                const nextURL = data[(currentIndex + 1) % data.length].url;
-                                showTooltip(nextURL, nextButton.getBoundingClientRect().left, nextButton.getBoundingClientRect().top);
-                            }
-                        });
-
-                        nextButton.addEventListener('mouseout', () => {
-                            tooltip.style.display = 'none'; // Hide tooltip when not hovering
-                        });
                     }
                 })
                 .catch(error => {
