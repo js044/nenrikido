@@ -39,7 +39,7 @@ class JournalRing extends HTMLElement {
         `;
     }
 
-    connectedCallback() {        
+    connectedCallback() {
         const widgetContainer = document.createElement('div');
         widgetContainer.classList.add('widget-container');
 
@@ -85,10 +85,21 @@ class JournalRing extends HTMLElement {
                         buttonDiv.appendChild(nextButton);
 
                         // Handle the previous button click
-                        prevButton.href = data[currentIndex === 0 ? data.length - 1 : currentIndex - 1].url;
+                        prevButton.addEventListener('click', () => {
+                            currentIndex = currentIndex === 0 ? data.length - 1 : currentIndex - 1;
+                            window.location.href = data[currentIndex].url;
+                        });
 
                         // Handle the next button click
+                        nextButton.addEventListener('click', () => {
+                            currentIndex = (currentIndex + 1) % data.length;
+                            window.location.href = data[currentIndex].url;
+                        });
+
+                        // Set href attributes for hover preview
+                        prevButton.href = data[currentIndex === 0 ? data.length - 1 : currentIndex - 1].url;
                         nextButton.href = data[(currentIndex + 1) % data.length].url;
+
 
                         const randomButton = document.createElement('button');
                         randomButton.classList.add('random-button');
