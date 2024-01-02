@@ -24,7 +24,7 @@ class JournalRing extends HTMLElement {
                 border: none;                
                 cursor: pointer; 
                 background-color: transparent;
-                padding: 0.2em;                               
+                padding: 0.2em;                                            
             }         
 
             .random-button {

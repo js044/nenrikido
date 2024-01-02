@@ -19,7 +19,9 @@ function initMuuri() {
             fillGaps: true,
         }
     });
-    grid.refreshItems().layout(); // Optionally refresh and layout Muuri after initialization
+    window.addEventListener('load', function () {
+        grid.refreshItems().layout();
+        });
 }
 
 // Function to handle Muuri filtering

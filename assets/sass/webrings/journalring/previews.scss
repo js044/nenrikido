@@ -22,17 +22,21 @@
     }
     .button-container {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
+        align-items: center;        
+        justify-content: center;        
     }
+
+    .arrow-image {
+        max-width: 1.25em;  
+    }
+
     button {
         border: none;                
         cursor: pointer; 
         background-color: transparent;
-        padding: 0.2em;  
-
+        padding: 0.2em;         
     }
+
     .random-button-container {        
         text-align: center;        
     }

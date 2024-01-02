@@ -13,11 +13,12 @@
   // ID selectors with specific styles
   #safont {
     width: 160px;
+    height: 65px;
   }
   
   #neossg {
     margin: 0 auto;
-    padding: 5px;
+    padding: 5px; 
     background-image: linear-gradient(
       -225deg,
       #522aff 0%,
@@ -37,12 +38,25 @@
     text-shadow: none;
     text-decoration: none;
     vertical-align: baseline;
+  }
   
-    @keyframes textclip {
-      to {
-        background-position: 200% center;
-      }
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
     }
+  }
+  
+  #neossg .webring-prev {
+    text-align:right;
+  }
+  
+  #neossg .webring-info {
+     text-align:center;
+  }
+  
+  #neossg .webring-next {
+    text-align:left;
+  }
   
     table {
       margin: 0 auto;
@@ -71,5 +85,5 @@
     a {
       text-decoration: none;
     }
-  }
+
   
