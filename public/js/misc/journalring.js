@@ -39,8 +39,7 @@ class JournalRing extends HTMLElement {
         `;
     }
 
-    connectedCallback() {
-        let currentIndex; 
+    connectedCallback() {        
         const widgetContainer = document.createElement('div');
         widgetContainer.classList.add('widget-container');
 
