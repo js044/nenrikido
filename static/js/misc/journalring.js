@@ -45,6 +45,7 @@ class JournalRing extends HTMLElement {
 
         const fetchData = () => {
             const iconType = this.getAttribute('icon') || 'default'; // Define iconType within fetchData function scope
+            let currentIndex; // Declare currentIndex in a wider scope to access it in event listeners
 
             // Fetch the JSON data
             fetch('/json/members.json')
