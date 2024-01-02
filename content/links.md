@@ -107,16 +107,19 @@ draft: false
 {{< buttons img-src="/images/buttons/gd.gif" link="https://garbagedeity.neocities.org/">}}                 
 {{< buttons img-src="/images/buttons/soulbyte.png" link="https://soulbyte.neocities.org/">}}                          
 {{< buttons img-src="/images/buttons/ip.gif" link="https://incessantpain.neocities.org/">}} 
+{{< buttons img-src="/images/buttons/tigercarnival1.png" link="https://bisuko.neocities.org/">}} 
 {{< buttons img-src="/images/buttons/kie.gif" link="https://ophanimkei.com/" >}}    
 {{< buttons img-src="/images/buttons/allyrat.png" link="https://allyratworld.com/">}}   
 {{< buttons img-src="/images/buttons/sugarvamp.png" link="https://sugarvamp.neocities.org/">}}
 {{< buttons img-src="/images/buttons/lovetinybutton.gif" link="https://www.lovetiny.art/">}}  
 {{< buttons img-src="/images/buttons/nefbutton.gif" link="https://nef.neocities.org/">}}   
-{{< buttons img-src="/images/buttons/sanguineroyalbutton.gif" link="https://sanguineroyal.com/">}}    
+{{< buttons img-src="/images/buttons/sanguineroyalbutton.gif" link="https://sanguineroyal.com/">}}  
+{{< buttons img-src="/images/buttons/vivarism_02.png" link="https://vivarism.net/">}}    
 {{< buttons img-src="/images/buttons/bikobatanari.png" link="https://www.bikobatanari.art/">}} 
 {{< buttons img-src="/images/buttons/nyaa.gif" link="https://nyaa.neocities.org/">}}      
 {{< buttons img-src="/images/buttons/vencake.png" link="https://vencake.neocities.org/">}} 
-{{< buttons img-src="/images/buttons/retasubutton.png" link="https://retasu.neocities.org/">}}       
+{{< buttons img-src="/images/buttons/retasubutton.png" link="https://retasu.neocities.org/">}}  
+{{< buttons img-src="/images/buttons/pom.gif" link="https://pomelo.lol/">}}       
 {{< buttons img-src="/images/buttons/claeiy.gif" link="https://claeiy.neocities.org/">}}   
 {{< buttons img-src="/images/buttons/fuchi.jpeg" link="https://fuchi.neocities.org/">}}  
 {{< buttons img-src="/images/buttons/hat.gif" link="https://hat.neocities.org/">}}      
@@ -125,6 +128,7 @@ draft: false
 {{< buttons img-src="/images/buttons/spiders.gif" link="https://spiders.neocities.org/">}}   
 {{< buttons img-src="/images/buttons/starbage_button_3.gif" link="https://starbage.neocities.org/">}} 
 {{< buttons img-src="/images/buttons/xn-neko-btn.gif" link="https://猫.移动/">}} 
+{{< buttons img-src="/images/buttons/jeith.jpg" link="https://jeith.neocities.org/">}}    
 {{< buttons img-src="/images/buttons/kakashi.gif" link="https://kakashi.neocities.org/">}}    
 {{< buttons img-src="/images/buttons/strovi.png" link="https://strovi.neocities.org/">}}
 {{< buttons img-src="/images/buttons/devils.gif" link="https://devils.neocities.org/">}}                                
@@ -148,7 +152,7 @@ draft: false
 {{< buttons img-src="/images/buttons/onio.gif" link="https://onio.cafe/">}}  
 {{< buttons img-src="/images/buttons/simone.gif" link="https://simone.computer/">}}  
 {{< buttons img-src="/images/buttons/MELON-BADGE-2.GIF" link="https://melonking.net">}} 
-{{< buttons img-src="/images/buttons/dizzy.gif" link="https://doctordizzy.space/">}}   
+{{< buttons img-src="/images/buttons/inkcapsbutton.gif" link="https://inkcaps.neocities.org/">}}   
 {{< buttons img-src="/images/buttons/kiko-banner.gif" link="https://cosmic-kiko.neocities.org/">}} 
 {{< buttons img-src="/images/buttons/virtualdreamlandbutton.png" link="https://strawberryreverie.neocities.org/">}}  
 {{< buttons img-src="/images/buttons/koinuko.gif" link="https://koinuko.pink/">}}   
