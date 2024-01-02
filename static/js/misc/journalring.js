@@ -51,7 +51,7 @@ class JournalRing extends HTMLElement {
             fetch('/json/members.json')
                 .then(response => response.json())
                 .then(data => {
-                    const currentIndex = this.getIndexFromURL(data, window.location.href);
+                    currentIndex = this.getIndexFromURL(data, window.location.href);
 
                     if (currentIndex !== -1) {
                         const member = data[currentIndex];
