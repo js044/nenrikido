@@ -38,6 +38,9 @@
     text-shadow: none;
     text-decoration: none;
     vertical-align: baseline;
+    a {
+      text-decoration: none;
+    }
   }
   
   @keyframes textclip {
