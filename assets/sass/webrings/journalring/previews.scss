@@ -1,0 +1,42 @@
+.previews {
+    display: flex;     
+    justify-content: center; 
+    margin: 1em 0;
+    flex-wrap: wrap;
+    gap: 1em; 
+}
+
+.preview-widget {        
+    .widget-container {    
+        max-width: 100%;       
+    }
+    .icon {
+        padding: 0 0.5em;
+        max-width: 6em;
+      
+    }
+    .button-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    button {
+        border: none;                
+        cursor: pointer; 
+        background-color: transparent;
+        padding: 0.2em;     
+    }
+    .random-button-container {        
+        text-align: center;        
+    }
+
+    .embed {
+        text-align: center;
+        margin: 0.25em 0;
+    }
+    .embed-code {
+        font-size: smaller;        
+        max-width: 90%;
+    }
+}

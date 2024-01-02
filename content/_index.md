@@ -72,6 +72,7 @@ Read the rest of the blog [here](/blog).
 
 {{< card-medium title="#UPDATES" >}} 
 {{< scrollbox >}}
+* **1-2-24**: surprise!! i made a [webring](/webrings/journalring). hopefully it's not broken. blog post upcoming! happy new year!! 
 * **12-23-23**: new theme, thanks mima! there's also a new poll to go along with it, the last was capped at 400 votes...
 * **12-11-23**: too many to list!! check out the blog!!
 * **7-2-23**: new blog post and a theme poll. 

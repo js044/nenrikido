@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<title>{{ .Title }}</title>
+<meta charset="utf-8">
+<meta name="description" content="A special world." />
+<meta name="dc.relation" content="{{ .Site.BaseURL }}" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='shortcut icon' type='image/x-icon' href='/images/icons/favicon-32x32.png' />
+
+{{ with .OutputFormats.Get "rss" -}}
+{{ printf `
+<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+  integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+{{ $style := resources.Get "/sass/webrings/journalring.scss" | toCSS | minify | fingerprint }}
+<link href="{{ $style.RelPermalink }}" rel="stylesheet">
+
+<body>
+  <div class="journal-container">
+    <div class="pages">
+
+      <div class="left-page">
+
+        <div class="tab-content" id="about-content">
+        <div class="sticker-container">          
+          <img src="/images/webrings/journalring/J05.png" class="sticker" alt="Sticker 1">
+          <img src="/images/webrings/journalring/J06.png" class="sticker" alt="Sticker 2">
+          <img src="/images/webrings/journalring/J02.png" class="sticker" alt="Sticker 3">        
+        </div>
+
+        <div class="page-header"><span class="page-title">About</span></div>
+
+        <article class="content">
+          <p>Welcome to <span class="highlight">JournalRing</span>, a webring for people who, well...like to journal!
+            This layout is based on a Hobonichi Techo planner, but you don't have to use any specific brand to qualify.
+            As long as you enjoy writing things down in a notebook or journal and have a website, you're eligible to join.
+            Head over to the "Join" tab for a list of rules and a sign-up form, or check out the "Members" tab to view
+            our roster. </p>
+          <p>
+          <ul><span class="highlight">Credits</span>
+            <li>Planner: <a href="https://www.1101.com/store/techo/en/2024/pc/detail_cover/oc22_colorsdsoda/">Hobonichi
+                Techo</a></li>
+            <li>Grid paper: <a href="https://stickerrificstore.com/products/hobonichi-grid-notebook">Stickerrific</a>
+            </li>
+            <li>Background: <a href="https://foollovers.com/mat/plaid24.html">Fool Lovers</a></li>
+            <li>Stickers: <a href="https://vivarism.net/toybox">Vivarism</a></li>
+            <li>Body font: <a href="https://font.spicy-sweet.com/">Kawaii</a></li>
+            <li>Label/Number font: <a href="https://dafontfamily.com/din-pro-font-free-download/">Din Pro</a></li>
+            <li>Header/Box Font: <a
+                href="https://www.dafontfree.net/universal-light-regular-font/f146646.htm">Universal Light</a></li>
+          </ul>
+
+          </p>
+        </article>
+        <div class="quote-box">
+          <ul>
+            <li>Webring started: <span class="written highlight">1/1/24</span> </li>
+            <li>Last updated: <span id="last-updated-date" class="written highlight"></span></li>
+            <li id="memberCount">Member count: </li>            
+            <li>Sticker count: <span class="written highlight">10</span> </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tab-content" id="members-content" style="display: none;">
+        <div class="sticker-container-4">          
+          <img src="/images/webrings/journalring/U04.png" class="sticker" alt="Sticker 1">                                  
+        </div>
+        <div class="page-header"><span class="page-title">Members</span></div>
+
+        <div class="members-page"></div>     
+      </div>
+
+      <div class="tab-content" id="join-content" style="display: none;">
+        <div class="sticker-container-2">          
+          <img src="/images/webrings/journalring/T04.png" class="sticker" alt="Sticker 1">                
+        </div>
+
+        <div class="page-header"><span class="page-title">Rules</span></div>
+
+        <article class="content">
+        <p>
+          <ol>
+            <li> You must <span class="highlight">enjoy journalling</span>, whether you're a bujo influencer with a prolific arsenal of fountain pens or someone who just scribbles in a random notebook you found.</li>
+            <li> You have to <span class="highlight">run a website</span> to join JournalRing. It can be hosted wherever you like, but you need somewhere to actually post the code. </li>
+            <li>Websites will be periodically scanned for <span class="highlight">dead links</span>. If your site is taken down, you'll be removed from the webring. If you ever return, feel free to re-apply. </li>
+            <li>No websites that are specifically dedicated to <span class="highlight">NSFW content</span> will be accepted. This webring is not currently age restricted, so keep this in mind before submitting your site.</li>
+            <li>All sites must follow <span class="highlight">US law</span>. Nothing illegal!</li>            
+            <li>These rules are all <span class="highlight">subject to change</span> if necessary.</li>
+          </ol>
+        </p>
+        </article>
+      </div>
+
+      </div>
+      <div class="right-page">
+        <div class="tab-content" id="about-right-content">
+          <div class="sticker-container-6">          
+            <img src="/images/webrings/journalring/W05.png" class="sticker" alt="Sticker 1">                                
+          </div>          
+        <div class="page-header"><span class="page-title">Widgets</span></div>
+
+        <article class="content">
+          <p>Once you've applied, you can add a widget of your choice to your site. Before you're accepted, the widget will display a pending notice.</p>
+        </article>
+
+        <div class="previews">
+          <div class="preview-widget">
+              <div class="widget-container">                               
+                  <div class="button-container">
+                      <button class="prev-button">
+                          <img src="/images/webrings/journalring/icons/lavender-prev-arrow.png" alt="Previous" class="arrow-image">
+                      </button>
+                      <a href="/webrings/journalring" class="icon-link">
+                          <img src="/images/webrings/journalring/icons/lavender-icon.png" alt="Icon" class="icon">
+                      </a>
+                      <button class="next-button">
+                          <img src="/images/webrings/journalring/icons/lavender-next-arrow.png" alt="Next" class="arrow-image">
+                      </button>
+                  </div>
+                  <div class="random-button-container">
+                      <button class="random-button">Random</button>
+                  </div>
+                  <div class="embed">
+                  <textarea class="embed-code" readonly><journal-ring icon="lavender"></journal-ring><script async src="https://raw.githubusercontent.com/js044/nenrikido/main/static/js/misc/journalring.js"></script> </textarea>
+                </div>
+              </div>
+              
+          </div>
+          <div class="preview-widget">
+            <div class="widget-container">                               
+                <div class="button-container">
+                    <button class="prev-button">
+                        <img src="/images/webrings/journalring/icons/green-prev-arrow.png" alt="Previous" class="arrow-image">
+                    </button>
+                    <a href="/webrings/journalring" class="icon-link">
+                        <img src="/images/webrings/journalring/icons/green-icon.png" alt="Icon" class="icon">
+                    </a>
+                    <button class="next-button">
+                        <img src="/images/webrings/journalring/icons/green-next-arrow.png" alt="Next" class="arrow-image">
+                    </button>
+                </div>
+                <div class="random-button-container">
+                    <button class="random-button">Random</button>
+                </div>
+                <div class="embed">
+                  
+            <textarea class="embed-code" readonly><journal-ring icon="green"></journal-ring><script async src="https://raw.githubusercontent.com/js044/nenrikido/main/static/js/misc/journalring.js"></script> </textarea>
+                </div>
+            </div>
+        </div>
+        <div class="preview-widget">
+          <div class="widget-container">                               
+              <div class="button-container">
+                  <button class="prev-button">
+                      <img src="/images/webrings/journalring/icons/blue-prev-arrow.png" alt="Previous" class="arrow-image">
+                  </button>
+                  <a href="/webrings/journalring" class="icon-link">
+                      <img src="/images/webrings/journalring/icons/blue-icon.png" alt="Icon" class="icon">
+                  </a>
+                  <button class="next-button">
+                      <img src="/images/webrings/journalring/icons/blue-next-arrow.png" alt="Next" class="arrow-image">
+                  </button>
+              </div>
+              <div class="random-button-container">
+                  <button class="random-button">Random</button>
+              </div>
+              <div class="embed">
+                
+          <textarea class="embed-code" readonly><journal-ring icon="blue"></journal-ring><script async src="https://raw.githubusercontent.com/js044/nenrikido/main/static/js/misc/journalring.js"></script> </textarea>
+              </div>
+          </div>
+      </div>
+      <div class="preview-widget">
+        <div class="widget-container">                               
+            <div class="button-container">
+                <button class="prev-button">
+                    <img src="/images/webrings/journalring/icons/pink-prev-arrow.png" alt="Previous" class="arrow-image">
+                </button>
+                <a href="/webrings/journalring" class="icon-link">
+                    <img src="/images/webrings/journalring/icons/pink-icon.png" alt="Icon" class="icon">
+                </a>
+                <button class="next-button">
+                    <img src="/images/webrings/journalring/icons/pink-next-arrow.png" alt="Next" class="arrow-image">
+                </button>
+            </div>
+            <div class="random-button-container">
+                <button class="random-button">Random</button>
+            </div>
+            <div class="embed">
+              
+        <textarea class="embed-code" readonly><journal-ring icon="pink"></journal-ring><script async src="https://raw.githubusercontent.com/js044/nenrikido/main/static/js/misc/journalring.js"></script> </textarea>
+            </div>
+        </div>
+    </div>
+      </div>    
+
+     
+      </div>
+
+      <div class="tab-content" id="members-right-content" style="display: none;">   
+        <div class="sticker-container-5">          
+          <img src="/images/webrings/journalring/U05.png" class="sticker" alt="Sticker 1">     
+          <img src="/images/webrings/journalring/U06.png" class="sticker" alt="Sticker 1">                                  
+        </div>     
+        <div class="page-header">
+          <span class="page-title">Members</span>
+        </div>
+        <div class="members-page"></div>
+        <div class="navbuttons">
+        <button id="prevButton">Previous</button>
+        <button id="nextButton">Next</button>
+      </div>
+      </div>
+      <div class="tab-content" id="join-right-content" style="display: none;">
+        <div class="sticker-container-3">          
+          <img src="/images/webrings/journalring/A06.png" class="sticker" alt="Sticker 1">
+          <img src="/images/webrings/journalring/A05.png" class="sticker" alt="Sticker 2">          
+        </div>
+        <div class="page-header">
+          <span class="page-title">Form</span>
+          
+        </div>
+        <article class="content">
+          <p>Interested? Sign up here!</p>        
+        </article>
+
+        <form action="https://formspree.io/f/mdoqogae" method="POST">
+          <input type="text" id="name" name="name" required placeholder="Name">
+          <input type="email" id="email" name="email" required placeholder="Email (for contact only)">
+          <input type="text" id="website_title" name="website_title" required placeholder="Website Title">
+          <input type="url" id="website_url" name="website_url" required placeholder="Website URL">
+          <textarea id="description" name="description" rows="4" required placeholder="Website Description"></textarea>
+          <button type="submit">Submit</button>
+        </form>        
+
+      </div>
+      <div class="tabs">
+        <div class="tab" onclick="showContent('about')" id="tab-about">About</div>
+        <div class="tab" onclick="showContent('members')" id="tab-members">Members</div>
+        <div class="tab" onclick="showContent('join')" id="tab-join">Join</div>        
+      </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/misc/journalring-display.js"></script>
+
+</body>
+</html>

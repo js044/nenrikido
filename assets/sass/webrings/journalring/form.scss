@@ -1,0 +1,43 @@
+form {
+    width: 85%;
+    border: 1px solid;
+    margin: 1em;
+    padding: 1em;
+    background-color: $boxColor;
+
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    textarea {
+      width: 100%;
+      padding: 0.5em;
+      margin-bottom: 0.5em;
+      border: 1px solid;
+      font-family: $bodyFont;
+      box-sizing: border-box;
+
+      &::placeholder {
+        font-family: $headerFont;
+        font-size: 0.9vw;
+      }
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      width: 100%;
+      padding: 0.8em;
+      background-color: $buttonColor;
+      color: #fff;
+      border: none;
+      border-radius: 0.5em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        filter: brightness(120%);
+      }
+    }
+  }

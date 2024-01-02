@@ -1,0 +1,29 @@
+$labelFont: "Din Pro";
+$headerFont: "Universal Light";
+$bodyFont: "Kawaii";
+$bodyColor: #393939;
+$linkColor: #b09606;
+$boxColor: #f9f6ee;
+$highlightColor: #ffeea9;
+$tab1Color: #ff4756;
+$tab2Color: #f3f04a;
+$tab3Color: #47dbb4;
+$buttonColor: #6686dd;
+$mobileFontSize: 0.85vh;
+
+
+@font-face {
+    font-family: "Universal Light";
+    src: url(/fonts/misc/UniversalLight.ttf);
+  }
+  
+  @font-face {
+    font-family: "Din Pro";
+    src: url(/fonts/misc/DINPro400.otf);
+  }
+  
+  @font-face {
+    font-family: "Kawaii";
+    src: url(/fonts/misc/KTEGAKI.ttf);
+  }
+  

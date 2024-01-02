@@ -36,9 +36,9 @@ draft: false
 {{< col >}}
 
 <div id='RPGMaker'>
-                    <script type="text/javascript" src="https://mal.ophanimkei.com/onionring-variables.js"></script>
-                    <script type="text/javascript" src="https://mal.ophanimkei.com/onionring-widget.js"></script>
-                  </div>
+<script type="text/javascript" src="https://mal.ophanimkei.com/onionring-variables.js"></script>
+<script type="text/javascript" src="https://mal.ophanimkei.com/onionring-widget.js"></script>
+</div>
 
 <div><script src="https://nuthead.neocities.org/ring/ring.js"></script> </div>
 
@@ -47,6 +47,8 @@ draft: false
 <div id='neossg'><script type="text/javascript" src="https://neossg.neocities.org/onionring-variables.js"></script><script type="text/javascript" src="https://neossg.neocities.org/onionring-widget.js"></script></div>
 
 <div id='safont'><script src="https://xandra.cc/safonts/webring.js"></script><ring-900 site="https://nenrikido.neocities.org/"></ring-900></div>
+
+<journal-ring icon="lavender"></journal-ring> <script async src="/js/misc/journalring.js"></script>
 
 {{< /col >}}
 {{< /large-scrollbox >}}
