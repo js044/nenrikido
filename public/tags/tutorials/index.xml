@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tutorials on NENRIKIDO</title>
+    <link>https://nenrikido.neocities.org/tags/tutorials/</link>
+    <description>Recent content in tutorials on NENRIKIDO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 02 Jul 2023 00:34:17 -0600</lastBuildDate>
+    <atom:link href="https://nenrikido.neocities.org/tags/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Firefox Tree Tabs Tu(tour)ial</title>
+      <link>https://nenrikido.neocities.org/blog/post/firefox-tutourial/</link>
+      <pubDate>Sun, 02 Jul 2023 00:34:17 -0600</pubDate>
+      <guid>https://nenrikido.neocities.org/blog/post/firefox-tutourial/</guid>
+      <description>Welcome to my crib, Mozilla Firefox edition. With instructions on how to recreate it!</description>
+    </item>
+    <item>
+      <title>Making a Preloader</title>
+      <link>https://nenrikido.neocities.org/blog/post/making-a-preloader/</link>
+      <pubDate>Wed, 05 Apr 2023 01:38:00 -0600</pubDate>
+      <guid>https://nenrikido.neocities.org/blog/post/making-a-preloader/</guid>
+      <description>How to make a simple full-page loading screen for your site.</description>
+    </item>
+    <item>
+      <title>Reusable HTML Snippets: Web Components</title>
+      <link>https://nenrikido.neocities.org/blog/post/web-components/</link>
+      <pubDate>Tue, 28 Mar 2023 02:32:33 -0600</pubDate>
+      <guid>https://nenrikido.neocities.org/blog/post/web-components/</guid>
+      <description>A small tutorial on using Javascript to reuse HTML snippets.</description>
+    </item>
+    <item>
+      <title>Making a Website (Part 1): The Planning Stage</title>
+      <link>https://nenrikido.neocities.org/blog/post/making-a-website-pt-1/</link>
+      <pubDate>Thu, 23 Mar 2023 03:22:37 -0600</pubDate>
+      <guid>https://nenrikido.neocities.org/blog/post/making-a-website-pt-1/</guid>
+      <description>The blog got a bit of a makeover! Anyways, this is the first post in a series I&amp;rsquo;ve planned about building websites. It&amp;rsquo;s aimed towards the absolute beginner, but hopefully, it&amp;rsquo;ll still be interesting or useful for people with more experience.</description>
+    </item>
+  </channel>
+</rss>

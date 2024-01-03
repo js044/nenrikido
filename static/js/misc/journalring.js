@@ -1,3 +1,30 @@
+window.membersData = [
+    {
+        "name": "Rio",
+        "websiteTitle": "Nenrikido",
+        "url": "https://nenrikido.neocities.org/",
+        "description": "A multi-purpose personal site."
+    },
+    {
+        "name": "Hors",
+        "websiteTitle": "zucchini.cc",
+        "url": "https://zucchini.cc/",
+        "description": "Enthusiastic doll and pen blogging."
+    },
+    {
+        "name": "Orin",
+        "websiteTitle": "cable world",
+        "url": "https://22yk01.neocities.org/",
+        "description": "Personal blog"
+    },
+    {
+        "name": "Jessy",
+        "websiteTitle": "LittleCloud",
+        "url": "https://littlecloud.neocities.org/",
+        "description": "Personal, cute"
+    }
+];        
+
 class JournalRing extends HTMLElement {
     constructor() {
         super();
@@ -37,45 +64,20 @@ class JournalRing extends HTMLElement {
             .icon {
                 padding: 0 0.5em;
             }
-        `;
-        this.jsonData = [
-            {
-                "name": "Rio",
-                "websiteTitle": "Nenrikido",
-                "url": "https://nenrikido.neocities.org/",
-                "description": "A multi-purpose personal site."
-            },
-            {
-                "name": "Hors",
-                "websiteTitle": "zucchini.cc",
-                "url": "https://zucchini.cc/",
-                "description": "Enthusiastic doll and pen blogging."
-            },
-            {
-                "name": "Orin",
-                "websiteTitle": "cable world",
-                "url": "https://22yk01.neocities.org/",
-                "description": "Personal blog"
-            },
-            {
-                "name": "Jessy",
-                "websiteTitle": "LittleCloud",
-                "url": "https://littlecloud.neocities.org/",
-                "description": "Personal, cute"
-            }
-        ];
+        `;                    
     }
 
     connectedCallback() {
         const widgetContainer = document.createElement('div');
         widgetContainer.classList.add('widget-container');
 
+
         const fetchData = () => {
             const iconType = this.getAttribute('icon') || 'default'; // Define iconType within fetchData function scope
             let currentIndex; // Declare currentIndex in a wider scope to access it in event listeners
 
             // Use embedded JSON data directly
-            const data = this.jsonData;
+            const data = window.membersData;
 
             currentIndex = this.getIndexFromURL(data, window.location.href);
 

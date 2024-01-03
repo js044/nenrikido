@@ -52,9 +52,7 @@ if (lastTab) {
 }
 
 // Add members to Members list from JSON file
-fetch('/json/members.json')
-.then(response => response.json())
-.then(data => {
+const data = window.membersData;
 const pageSize = 10; // Number of items per page
 let currentPage = 1; // Current page
 const totalEntries = data.length; // Total entries from JSON
@@ -199,8 +197,5 @@ function displayMembersForPage(page) {
     }
   });
   
-})
 
-
-.catch(error => console.error('Error fetching members data:', error));
 
