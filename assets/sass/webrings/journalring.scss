@@ -94,6 +94,7 @@ body {
     
   }
 
+
   .pages {
     margin-top: 3.75%;
     display: flex;
@@ -103,6 +104,11 @@ body {
     @media screen and (max-width: 768px) {   
       width: calc(45vh - 3.5vh);
       height: 100%;      
+    }
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1180px) {
+      font-size: $tabletFontSize;
+      margin-top: 6%;
+      width: calc(100vh - 8vw);
     }
   
 
@@ -170,6 +176,10 @@ body {
           max-height: 53vw;
         }
 
+        @media only screen and (min-device-width : 768px) and (max-device-width : 1180px) {
+          font-size: $tabletFontSize;
+        }
+
         .member-box {
           border: 1px solid #000;
           background-color: $boxColor;
@@ -212,6 +222,10 @@ body {
         @media screen and (max-width: 768px) {   
           font-size: $mobileFontSize;
         }
+        @media only screen and (min-device-width : 768px) and (max-device-width : 1180px) {
+          font-size: $tabletFontSize;
+        }
+      
         ul {
           list-style-type: "\2661";
 
