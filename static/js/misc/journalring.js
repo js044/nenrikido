@@ -37,6 +37,26 @@ class JournalRing extends HTMLElement {
                 padding: 0 0.5em;
             }
         `;
+        this.jsonData = [
+            {
+                "name": "Rio",
+                "websiteTitle": "Nenrikido",
+                "url": "https://nenrikido.neocities.org/",
+                "description": "A multi-purpose site where I share my art, free code, tutorials, a digital library, etc. "
+            },
+            {
+                "name": "Hors",
+                "websiteTitle": "zucchini.cc",
+                "url": "https://zucchini.cc/",
+                "description": "Enthusiastic doll and pen blogging."
+            },
+            {
+                "name": "Orin",
+                "websiteTitle": "cable world",
+                "url": "https://22yk01.neocities.org/",
+                "description": "Personal blog"
+            }
+        ];
     }
 
     connectedCallback() {
@@ -47,107 +67,92 @@ class JournalRing extends HTMLElement {
             const iconType = this.getAttribute('icon') || 'default'; // Define iconType within fetchData function scope
             let currentIndex; // Declare currentIndex in a wider scope to access it in event listeners
 
-            // Fetch the JSON data
-            fetch('https://nenrikido.neocities.org/json/members.json')
-                .then(response => response.json())
-                .then(data => {
-                    currentIndex = this.getIndexFromURL(data, window.location.href);
+            // Use embedded JSON data directly
+            const data = this.jsonData;
 
-                    if (currentIndex !== -1) {
-                        const member = data[currentIndex];
+            currentIndex = this.getIndexFromURL(data, window.location.href);
 
-                        // Create and style anchor elements for previous and next
-                        const prevLink = document.createElement('a');
-                        prevLink.classList.add('prev-button');
-                        prevLink.href = data[currentIndex === 0 ? data.length - 1 : currentIndex - 1].url;
-                        const prevArrowImage = document.createElement('img');
-                        prevArrowImage.src = this.getArrowImageSrc('prev', iconType);
-                        prevLink.appendChild(prevArrowImage);
+            if (currentIndex !== -1) {
+                const member = data[currentIndex];
 
-                        const nextLink = document.createElement('a');
-                        nextLink.classList.add('next-button');
-                        nextLink.href = data[(currentIndex + 1) % data.length].url;
-                        const nextArrowImage = document.createElement('img');
-                        nextArrowImage.src = this.getArrowImageSrc('next', iconType);
-                        nextLink.appendChild(nextArrowImage);
+                // Create and style anchor elements for previous and next
+                const prevLink = document.createElement('a');
+                prevLink.classList.add('prev-button');
+                prevLink.href = data[currentIndex === 0 ? data.length - 1 : currentIndex - 1].url;
+                const prevArrowImage = document.createElement('img');
+                prevArrowImage.src = this.getArrowImageSrc('prev', iconType);
+                prevLink.appendChild(prevArrowImage);
 
-                        // Create and style icon
-                        const iconLink = document.createElement('a');
-                        iconLink.href = '/webrings/journalring'; // Change this to your specific page
-                        const buttonImage = document.createElement('img');
-                        buttonImage.src = this.getIconSrc(iconType);
-                        buttonImage.classList.add('icon', `icon-${iconType}`);
-                        iconLink.appendChild(buttonImage);
+                const nextLink = document.createElement('a');
+                nextLink.classList.add('next-button');
+                nextLink.href = data[(currentIndex + 1) % data.length].url;
+                const nextArrowImage = document.createElement('img');
+                nextArrowImage.src = this.getArrowImageSrc('next', iconType);
+                nextLink.appendChild(nextArrowImage);
 
-                        // Create a div for buttons (prev, next, icon)
-                        const buttonDiv = document.createElement('div');
-                        buttonDiv.classList.add('button-container');
-                        buttonDiv.appendChild(prevLink); 
-                        buttonDiv.appendChild(iconLink);
-                        buttonDiv.appendChild(nextLink); 
+                // Create and style icon
+                const iconLink = document.createElement('a');
+                iconLink.href = '/webrings/journalring'; // Change this to your specific page
+                const buttonImage = document.createElement('img');
+                buttonImage.src = this.getIconSrc(iconType);
+                buttonImage.classList.add('icon', `icon-${iconType}`);
+                iconLink.appendChild(buttonImage);
 
-                        // Handle the previous and next link clicks
-                        prevLink.addEventListener('click', (event) => {
-                            event.preventDefault();
-                            window.location.href = event.currentTarget.href;
-                        });
+                // Create a div for buttons (prev, next, icon)
+                const buttonDiv = document.createElement('div');
+                buttonDiv.classList.add('button-container');
+                buttonDiv.appendChild(prevLink);
+                buttonDiv.appendChild(iconLink);
+                buttonDiv.appendChild(nextLink);
 
-                        nextLink.addEventListener('click', (event) => {
-                            event.preventDefault();
-                            window.location.href = event.currentTarget.href;
-                        });
-
-                        const randomLink = document.createElement('a');
-                        randomLink.classList.add('random-button');
-                        randomLink.textContent = 'Random';
-
-                        // Handle the click on the random link
-                        randomLink.addEventListener('click', (event) => {
-                            event.preventDefault();
-                            fetch('/json/members.json')
-                                .then(response => response.json())
-                                .then(data => {
-                                    const randomIndex = Math.floor(Math.random() * data.length);
-                                    const randomWebsite = data[randomIndex];
-                                    window.location.href = randomWebsite.url;
-                                })
-                                .catch(error => {
-                                    console.error('Error fetching JSON:', error);
-                                    // Handle errors if the JSON data retrieval fails
-                                });
-                        });
-
-                        // Create a div for the random button
-                        const randomDiv = document.createElement('div');
-                        randomDiv.appendChild(randomLink);
-
-                        // Append the buttonDiv and randomDiv to the widget container
-                        widgetContainer.appendChild(buttonDiv);
-                        widgetContainer.appendChild(randomDiv);
-
-                        // Append the container to the shadow DOM
-                        this.shadowRoot.appendChild(widgetContainer);
-
-                        // Apply default styles to the shadow DOM
-                        const style = document.createElement('style');
-                        style.textContent = this.defaultStyles;
-                        this.shadowRoot.appendChild(style);
-                    } else {
-                        const pendingMessage = document.createElement('p');
-                        pendingMessage.textContent = "This user's application to JournalRing is pending.";
-                        this.shadowRoot.appendChild(pendingMessage);
-                    }
-                })
-                .catch(error => {
-                    console.error('Error fetching JSON:', error);
-                    const errorMessage = document.createElement('p');
-                    errorMessage.textContent = 'Error fetching JSON data.';
-                    this.shadowRoot.appendChild(errorMessage);
+                // Handle the previous and next link clicks
+                prevLink.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    window.location.href = event.currentTarget.href;
                 });
+
+                nextLink.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    window.location.href = event.currentTarget.href;
+                });
+
+                const randomLink = document.createElement('a');
+                randomLink.classList.add('random-button');
+                randomLink.textContent = 'Random';
+
+                // Handle the click on the random link
+                randomLink.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    const randomIndex = Math.floor(Math.random() * data.length);
+                    const randomWebsite = data[randomIndex];
+                    window.location.href = randomWebsite.url;
+                });
+
+                // Create a div for the random button
+                const randomDiv = document.createElement('div');
+                randomDiv.appendChild(randomLink);
+
+                // Append the buttonDiv and randomDiv to the widget container
+                widgetContainer.appendChild(buttonDiv);
+                widgetContainer.appendChild(randomDiv);
+
+                // Append the container to the shadow DOM
+                this.shadowRoot.appendChild(widgetContainer);
+
+                // Apply default styles to the shadow DOM
+                const style = document.createElement('style');
+                style.textContent = this.defaultStyles;
+                this.shadowRoot.appendChild(style);
+            } else {
+                const pendingMessage = document.createElement('p');
+                pendingMessage.textContent = "This user's application to JournalRing is pending.";
+                this.shadowRoot.appendChild(pendingMessage);
+            }
         };
 
         fetchData(); // Call the fetchData function
     }
+
 
     getIndexFromURL(data, currentURL) {
         return data.findIndex(member => currentURL.includes(member.url));
