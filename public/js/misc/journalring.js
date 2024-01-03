@@ -48,7 +48,7 @@ class JournalRing extends HTMLElement {
             let currentIndex; // Declare currentIndex in a wider scope to access it in event listeners
 
             // Fetch the JSON data
-            fetch('https://raw.githubusercontent.com/js044/nenrikido/main/static/json/members.json')
+            fetch('https://nenrikido.neocities.org/json/members.json')
                 .then(response => response.json())
                 .then(data => {
                     currentIndex = this.getIndexFromURL(data, window.location.href);
