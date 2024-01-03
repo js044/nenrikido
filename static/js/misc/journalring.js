@@ -1,4 +1,3 @@
-User
 class JournalRing extends HTMLElement {
     constructor() {
         super();
