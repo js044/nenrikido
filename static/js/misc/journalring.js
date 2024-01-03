@@ -6,7 +6,7 @@ class JournalRing extends HTMLElement {
         // Define default styles for the widget
         this.defaultStyles = `
             .widget-container {                
-                max-width: 12em;
+                max-width: 100%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
