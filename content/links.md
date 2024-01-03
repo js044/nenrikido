@@ -161,7 +161,7 @@ draft: false
 {{< buttons img-src="/images/buttons/cabbagesorter.gif" link="https://cabbagesorter.neocities.org/">}}
 {{< buttons img-src="/images/buttons/gothiclolita.png" link="https://gothiclolita.neocities.org/">}}   
 {{< buttons img-src="/images/buttons/bizarrebanner.png" link="https://bizarredollhouse.neocities.org/">}} 
-{{< buttons img-src="/images/buttons/sylum.png" link="https://sylum.web.fc2.com/">}}  
+{{< buttons img-src="/images/buttons/sylum.gif" link="https://sylum.web.fc2.com/">}}  
 {{< buttons img-src="/images/buttons/arlita.gif" link="https://arlita.neocities.org/">}} 
 {{< buttons img-src="/images/buttons/taro.gif" link="https://tarocchilla.neocities.org/" >}} 
 {{< buttons img-src="/images/buttons/pazbutton2.gif" link="https://paz01997.neocities.org/" >}}  
