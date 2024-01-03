@@ -43,7 +43,7 @@ class JournalRing extends HTMLElement {
                 "name": "Rio",
                 "websiteTitle": "Nenrikido",
                 "url": "https://nenrikido.neocities.org/",
-                "description": "A multi-purpose site where I share my art, free code, tutorials, a digital library, etc. "
+                "description": "A multi-purpose personal site."
             },
             {
                 "name": "Hors",
@@ -56,6 +56,12 @@ class JournalRing extends HTMLElement {
                 "websiteTitle": "cable world",
                 "url": "https://22yk01.neocities.org/",
                 "description": "Personal blog"
+            },
+            {
+                "name": "Jessy",
+                "websiteTitle": "LittleCloud",
+                "url": "https://littlecloud.neocities.org/",
+                "description": "Personal, cute"
             }
         ];
     }
@@ -93,7 +99,7 @@ class JournalRing extends HTMLElement {
 
                 // Create and style icon
                 const iconLink = document.createElement('a');
-                iconLink.href = '/webrings/journalring'; // Change this to your specific page
+                iconLink.href = 'https://nenrikido.neocities.org/webrings/journalring/'; // Change this to your specific page
                 const buttonImage = document.createElement('img');
                 buttonImage.src = this.getIconSrc(iconType);
                 buttonImage.classList.add('icon', `icon-${iconType}`);
