@@ -46,7 +46,7 @@ draft: false
 
 <div id='safont'><script src="https://xandra.cc/safonts/webring.js"></script><ring-900 site="https://nenrikido.neocities.org/"></ring-900></div>
 
-<journal-ring icon="lavender"></journal-ring> <script async src="/js/misc/journalring.js"></script>
+<journal-ring icon="lavender"></journal-ring> <script async src="https://cdn.jsdelivr.net/gh/js044/nenrikido@main/static/js/misc/journalring.js"></script>
 
 {{< /col >}}
 {{< /large-scrollbox >}}

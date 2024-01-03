@@ -170,10 +170,10 @@ class JournalRing extends HTMLElement {
     getIconSrc(iconType) {
         // Define mapping for different icon types
         const iconMap = {
-            default: 'https://nenrikido.neocities.org/images/webrings/journalring/icons/lavender-icon.png',
-            green: 'https://nenrikido.neocities.org/images/webrings/journalring/icons/green-icon.png',
-            blue: 'https://nenrikido.neocities.org/images/webrings/journalring/icons/blue-icon.png',
-            pink: 'https://nenrikido.neocities.org/images/webrings/journalring/icons/pink-icon.png',
+            default: 'https://s6.imgcdn.dev/fIgCo.png',
+            green: 'https://s6.imgcdn.dev/fIeol.png',
+            blue: 'https://s6.imgcdn.dev/fIbRd.png',
+            pink: 'https://s6.imgcdn.dev/fIowg.png',
         };
 
         // Return the icon source based on the iconType
@@ -184,16 +184,16 @@ class JournalRing extends HTMLElement {
         // Define arrow image sources based on direction and iconType
         const arrowImageMap = {
             prev: {
-                default: 'https://nenrikido.neocities.org/images/webrings/journalring/icons/lavender-prev-arrow.png',
-                green: 'https://nenrikido.neocities.org/images/webrings/journalring/icons/green-prev-arrow.png',
-                blue: 'https://nenrikido.neocities.org/images/webrings/journalring/icons/blue-prev-arrow.png',
-                pink: 'https://nenrikido.neocities.org/images/webrings/journalring/icons/pink-prev-arrow.png',
+                default: 'https://s6.imgcdn.dev/fI8Ln.png',
+                green: 'https://s6.imgcdn.dev/fIHHK.png',
+                blue: 'https://s6.imgcdn.dev/fIqsh.png',
+                pink: 'https://s6.imgcdn.dev/fIW3e.png',
             },
             next: {
-                default: 'https://nenrikido.neocities.org/images/webrings/journalring/icons/lavender-next-arrow.png',
-                green: 'https://nenrikido.neocities.org/images/webrings/journalring/icons/green-next-arrow.png',
-                blue: 'https://nenrikido.neocities.org/images/webrings/journalring/icons/blue-next-arrow.png',
-                pink: 'https://nenrikido.neocities.org/images/webrings/journalring/icons/pink-next-arrow.png',
+                default: 'https://s6.imgcdn.dev/fIE7O.png',
+                green: 'https://s6.imgcdn.dev/fIFxV.png',
+                blue: 'https://s6.imgcdn.dev/fILUM.png',
+                pink: 'https://s6.imgcdn.dev/fI3w0.png',
             },
         };
 
