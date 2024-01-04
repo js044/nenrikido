@@ -22,6 +22,12 @@ window.membersData = [
         "websiteTitle": "LittleCloud",
         "url": "https://littlecloud.neocities.org/",
         "description": "Personal, cute"
+    },
+    {
+        "name": "Arunyi",
+        "websiteTitle": "Arunyi",
+        "url": "https://arunyi.art/",
+        "description": "My personal website!"
     }
 ];        
 
