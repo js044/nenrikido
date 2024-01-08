@@ -2,9 +2,7 @@ function checkDeadLinks(data) {
   data.forEach(member => {
     fetch(`https://api.allorigins.win/get?url=${member.url}`, { method: 'HEAD' })
       .then(response => {
-        if (response.ok) {
-          console.log(`Link is reachable: ${member.url}`);
-        } else {
+        if (!response.ok) {
           handleDeadLink(member.url);
         }
       })
@@ -80,13 +78,11 @@ const data = window.membersData;
 const pageSize = 10; // Number of items per page
 let currentPage = 1; // Current page
 const totalEntries = data.length; // Total entries from JSON
- // Get the count of members from the JSON data
- const memberCount = data.length;
 
    // Update the HTML element to display the member count with a span
    const memberCountElement = document.querySelector('#memberCount');
    if (memberCountElement) {
-     memberCountElement.innerHTML = `Member count: <span class="written highlight">${memberCount}</span>`;
+     memberCountElement.innerHTML = `Member count: <span class="written highlight">${totalEntries}</span>`;
    }
 
   // Function to format the date as "1/1/24"
@@ -176,7 +172,7 @@ function displayMembersForPage(page) {
   displayMembersForPage(currentPage);
   
   // Navigation event listeners
-  const totalPages = Math.ceil(memberCount / pageSize);
+  const totalPages = Math.ceil(totalEntries / pageSize);
   const prevButton = document.getElementById('prevButton');
   const nextButton = document.getElementById('nextButton');
 
