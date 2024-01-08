@@ -74,22 +74,6 @@ function formatDate(date) {
   return `${month}/${day}/${year}`;
 }
 
-// Update the last updated date element
-function updateLastUpdated() {
-  const lastUpdatedDate = document.getElementById('last-updated-date');
-  if (lastUpdatedDate) {
-      const currentDate = new Date();
-      const formattedDate = formatDate(currentDate);
-
-      lastUpdatedDate.textContent = formattedDate;
-  }
-}
-
-// Call the function to update the last updated date
-updateLastUpdated();
-
-
-
 function createMemberBox(member) {
   const memberBox = document.createElement('div');
   memberBox.classList.add('member-box');
