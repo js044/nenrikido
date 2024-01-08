@@ -34,12 +34,6 @@ window.membersData = [
         "websiteTitle": "Lovesick",
         "url": " https://lovesick.cafe",
         "description": "a love letter to my interests"
-    },
-    {
-        "name": "Lapin",
-        "websiteTitle": "Lovesick",
-        "url": " https://lovesi938widsjfnkfdnkjck.cafe",
-        "description": "a love letter to my interests"
     }
 ];        
 

@@ -37,51 +37,6 @@ window.membersData = [
     }
 ];        
 
-function checkDeadLinks(data) {
-    const timeout = 5000; // Timeout value for the fetch request
-
-    data.forEach(member => {
-        fetch(member.url, { method: 'HEAD' })
-            .then(response => {
-                // Check for successful response status
-                if (response.ok) {
-                    console.log(`Link is reachable: ${member.url}`);
-                } else {
-                    // Fallback using iframe if fetch indicates an issue
-                    const iframe = document.createElement('iframe');
-                    iframe.src = member.url;
-                    iframe.style.display = 'none'; // Hide the iframe
-
-                    // Listen for load/error events
-                    iframe.onload = () => {
-                        console.log(`Link is reachable: ${member.url}`);
-                        document.body.removeChild(iframe);
-                    };
-
-                    iframe.onerror = () => {
-                        console.log(`Dead link detected: ${member.url}`);
-                        document.body.removeChild(iframe);
-                    };
-
-                    // Append the iframe to the document to trigger loading
-                    document.body.appendChild(iframe);
-
-                    // Set a timeout to remove the iframe after a delay
-                    setTimeout(() => {
-                        document.body.removeChild(iframe);
-                    }, timeout);
-                }
-            })
-            .catch(() => {
-                console.log(`Dead link detected: ${member.url}`);
-            });
-    });
-}
-
-// Start checking dead links using the provided JSON data
-checkDeadLinks(window.membersData);
-
-
 class JournalRing extends HTMLElement {
     constructor() {
         super();

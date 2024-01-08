@@ -1,3 +1,27 @@
+function checkDeadLinks(data) {
+  data.forEach(member => {
+    fetch(`https://api.allorigins.win/get?url=${member.url}`, { method: 'HEAD' })
+      .then(response => {
+        if (response.ok) {
+          console.log(`Link is reachable: ${member.url}`);
+        } else {
+          handleDeadLink(member.url);
+        }
+      })
+      .catch(error => {
+        console.error('Error checking link:', error.message);
+        handleDeadLink(member.url);
+      });
+  });
+}
+
+function handleDeadLink(deadURL) {
+  console.log(`Dead link detected: ${deadURL}`);
+}
+
+// Start checking dead links using the provided JSON data
+checkDeadLinks(window.membersData);
+
 // Add page numbers and tabs
 let leftPageNumber = 1; // Initialize the left page number
 let rightPageNumber = 2; // Initialize the right page number
