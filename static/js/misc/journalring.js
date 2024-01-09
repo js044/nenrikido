@@ -32,7 +32,7 @@ window.membersData = [
     {
         "name": "Lapin",
         "websiteTitle": "Lovesick",
-        "url": " https://lovesick.cafe",
+        "url": "https://lovesick.cafe/",
         "description": "a love letter to my interests"
     }
 ];        
