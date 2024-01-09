@@ -17,6 +17,7 @@ var UnlikeSymbol = "&#9825;";
 var DisplayReblog = 1;
 var ReblogSymbol = "&#x2673;";
 var NoReblogSymbol = "&#x267A;";
+var PostsPerPage = 10;
 
 // I hate to do this with a global
 // but I don't have any better ideas right now.
@@ -123,33 +124,58 @@ function loadSubscribe(RSSLink) {
 }
 
 function loadPosts(xmlDoc, authorName, username, iconLink, rootLink) {
-  var anchor, i;
-  var postsDisplayed;
-  var items;
-  
-  items = xmlDoc.getElementsByTagName("item");
-  anchor = window.location.hash.replace("#", '');
+  var anchor = window.location.hash.replace("#", '');
 
-  // No anchor or invalid anchor, build feed
-  if (anchor == "" || isNaN(anchor)) {
-    if (DisplayLatestPosts > 0) { 
-      postsDisplayed = DisplayLatestPosts;
-    } else {
-      postsDisplayed = items.length;
-    }
-    for (i = 0; i < postsDisplayed; i++) {
+  if (anchor.startsWith("page=")) {
+    var pageNum = parseInt(anchor.split("=")[1]);
+    var items = xmlDoc.getElementsByTagName("item");
+    var start = (pageNum - 1) * PostsPerPage;
+    var end = Math.min(start + PostsPerPage, items.length);
+
+    for (var i = start; i < end; i++) {
       loadSingle(items[i], authorName, username, iconLink, rootLink);
     }
-  // Load single post with guid matching the anchor
+
+    generatePageLinks(items.length, Math.ceil(items.length / PostsPerPage));
   } else {
-    for (i = 0; i < items.length; i++) {
-      if (anchor == items[i].getElementsByTagName("guid")[0].innerHTML) {
-        loadSingle(items[i], authorName, username, iconLink, rootLink);
-        return;
-      }
+    var items = xmlDoc.getElementsByTagName("item");
+    var totalPages = Math.ceil(items.length / PostsPerPage);
+
+    var firstPageItems = Math.min(PostsPerPage, items.length);
+    for (var i = 0; i < firstPageItems; i++) {
+      loadSingle(items[i], authorName, username, iconLink, rootLink);
     }
+
+    generatePageLinks(items.length, totalPages);
   }
 }
+
+
+function generatePageLinks(totalPosts, totalPages) {
+  var paginationDiv = document.createElement("div");
+  paginationDiv.className = "pagination";
+
+  for (var i = 1; i <= totalPages; i++) {
+    var pageLink = document.createElement("a");
+    pageLink.href = "#page=" + i;
+    pageLink.innerHTML = i;
+
+    paginationDiv.appendChild(pageLink);
+  }
+
+  // Clear existing pagination links before appending new ones
+  var existingPagination = document.querySelector(".pagination");
+  if (existingPagination) {
+    existingPagination.remove();
+  }
+
+  var microblogDiv = document.getElementById(MicroblogDivID);
+  if (microblogDiv) {
+    microblogDiv.appendChild(paginationDiv);
+  }
+}
+
+
 
 function loadSingle(rssItem, authorName, username, iconLink, rootLink) {
   var post, authorLink, icon, content, authorDate, author, dateLink, text, imageLink;

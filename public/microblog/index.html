@@ -6,26 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel='shortcut icon' type='image/x-icon' href='../images/icons/favicon-32x32.png' />
     <link rel="stylesheet" type="text/css" href="../css/microblog.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
     <script src="../js/microblog.js"></script> 
 </head>
 <body onload="retrieveXML();">
     <div id="particles-js"></div>
     <div id="microblog"></div>
 </body>
-<script>
-  var loader = document.getElementById("preloader");
-  window.addEventListener("load", function () {
-    loader.style.display = "none";
-  });
-  var s = document.getElementById("preloader").style;
-  s.opacity = 1;
-  (function fade() {
-    (s.opacity -= 0.1) < 0 ? (s.display = "none") : setTimeout(fade, 40);
-  })();
-  </script>
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script>
     particlesJS("particles-js", {
