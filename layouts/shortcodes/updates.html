@@ -1,0 +1,8 @@
+{{ $updates := .Site.Data.updates.updates }}
+<ul>
+{{ range $updates }}
+<li>
+<span style="font-weight: bold;">{{ .date }}</span>: {{ .description | markdownify }}
+</li>
+{{ end }}
+</ul>

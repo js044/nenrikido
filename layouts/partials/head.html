@@ -6,7 +6,7 @@
         content="A special world." />
     <meta name="dc.relation" content="{{ .Site.BaseURL }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel='shortcut icon' type='image/x-icon' href='/images/icons/favicon-32x32.png' />
+    <link rel='icon' type='image/x-icon' href='/images/icons/pink-favicon.svg' /> 
 
     {{ with .OutputFormats.Get "rss" -}}
         {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}

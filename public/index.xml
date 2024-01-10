@@ -1,230 +1,213 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>NENRIKIDO</title>
-    <link>https://nenrikido.neocities.org/</link>
-    <description>Recent content on NENRIKIDO</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <atom:link href="https://nenrikido.neocities.org/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Mega Site Update</title>
-      <link>https://nenrikido.neocities.org/blog/post/mega-site-update/</link>
-      <pubDate>Sun, 10 Dec 2023 20:14:19 -0400</pubDate>
-      <guid>https://nenrikido.neocities.org/blog/post/mega-site-update/</guid>
-      <description>Brand new fonts, search finally works, new blog tag filter, site got SASS&amp;rsquo;ed, microblog bug is squashed, and more!</description>
-    </item>
-    <item>
-      <title>Firefox Tree Tabs Tu(tour)ial</title>
-      <link>https://nenrikido.neocities.org/blog/post/firefox-tutourial/</link>
-      <pubDate>Sun, 02 Jul 2023 00:34:17 -0600</pubDate>
-      <guid>https://nenrikido.neocities.org/blog/post/firefox-tutourial/</guid>
-      <description>Welcome to my crib, Mozilla Firefox edition. With instructions on how to recreate it!</description>
-    </item>
-    <item>
-      <title>Yard Sale</title>
-      <link>https://nenrikido.neocities.org/blog/post/yard-sale/</link>
-      <pubDate>Sat, 17 Jun 2023 21:24:01 -0600</pubDate>
-      <guid>https://nenrikido.neocities.org/blog/post/yard-sale/</guid>
-      <description>A diary entry. Featuring Hot Topic fashion and a sandwich.</description>
-    </item>
-    <item>
-      <title>Bye-bye Bootstrap</title>
-      <link>https://nenrikido.neocities.org/blog/post/bye-bye-bootstrap/</link>
-      <pubDate>Sun, 28 May 2023 18:42:10 -0600</pubDate>
-      <guid>https://nenrikido.neocities.org/blog/post/bye-bye-bootstrap/</guid>
-      <description>Bootstrap gets the boot, my hair gets a trim, and the site gets a map.</description>
-    </item>
-    <item>
-      <title>2 months later: A Neocities Reflection</title>
-      <link>https://nenrikido.neocities.org/blog/post/neocities-reflection/</link>
-      <pubDate>Sun, 21 May 2023 21:50:10 -0600</pubDate>
-      <guid>https://nenrikido.neocities.org/blog/post/neocities-reflection/</guid>
-      <description>Some observations about the community aspect of Neocities and online communities in general.</description>
-    </item>
-    <item>
-      <title>Site Updates</title>
-      <link>https://nenrikido.neocities.org/blog/post/site-updates-3/</link>
-      <pubDate>Tue, 18 Apr 2023 02:29:14 -0600</pubDate>
-      <guid>https://nenrikido.neocities.org/blog/post/site-updates-3/</guid>
-      <description>new library with 61 current entries! (and a shrines page!)</description>
-    </item>
-    <item>
-      <title>Cole (small and kittified)</title>
-      <link>https://nenrikido.neocities.org/nexus/cole/</link>
-      <pubDate>Fri, 07 Apr 2023 03:01:53 -0600</pubDate>
-      <guid>https://nenrikido.neocities.org/nexus/cole/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Making a Preloader</title>
-      <link>https://nenrikido.neocities.org/blog/post/making-a-preloader/</link>
-      <pubDate>Wed, 05 Apr 2023 01:38:00 -0600</pubDate>
-      <guid>https://nenrikido.neocities.org/blog/post/making-a-preloader/</guid>
-      <description>How to make a simple full-page loading screen for your site.</description>
-    </item>
-    <item>
-      <title>Site Updates ...Continued!</title>
-      <link>https://nenrikido.neocities.org/blog/post/site-updates-2/</link>
-      <pubDate>Tue, 04 Apr 2023 20:41:23 -0600</pubDate>
-      <guid>https://nenrikido.neocities.org/blog/post/site-updates-2/</guid>
-      <description>is the site running any faster? it should be running faster.</description>
-    </item>
-    <item>
-      <title>Site Overhaul</title>
-      <link>https://nenrikido.neocities.org/blog/post/site-overhaul/</link>
-      <pubDate>Tue, 04 Apr 2023 02:28:14 -0600</pubDate>
-      <guid>https://nenrikido.neocities.org/blog/post/site-overhaul/</guid>
-      <description>lots and lots and lots of new things.</description>
-    </item>
-    <item>
-      <title>Reusable HTML Snippets: Web Components</title>
-      <link>https://nenrikido.neocities.org/blog/post/web-components/</link>
-      <pubDate>Tue, 28 Mar 2023 02:32:33 -0600</pubDate>
-      <guid>https://nenrikido.neocities.org/blog/post/web-components/</guid>
-      <description>A small tutorial on using Javascript to reuse HTML snippets.</description>
-    </item>
-    <item>
-      <title>Making a Website (Part 1): The Planning Stage</title>
-      <link>https://nenrikido.neocities.org/blog/post/making-a-website-pt-1/</link>
-      <pubDate>Thu, 23 Mar 2023 03:22:37 -0600</pubDate>
-      <guid>https://nenrikido.neocities.org/blog/post/making-a-website-pt-1/</guid>
-      <description>The blog got a bit of a makeover! Anyways, this is the first post in a series I&amp;rsquo;ve planned about building websites. It&amp;rsquo;s aimed towards the absolute beginner, but hopefully, it&amp;rsquo;ll still be interesting or useful for people with more experience.</description>
-    </item>
-    <item>
-      <title>Commissions</title>
-      <link>https://nenrikido.neocities.org/commissions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nenrikido.neocities.org/commissions/</guid>
-      <description>COMMISSIONSstatus
-pricing
-terms
-ko-fi summer rain #COMMISSION STATUSCommissions are currently closed. Opening soon! #PRICINGWIP #TERMSWIP #KOFIall tips &amp;amp; donations appreciated!</description>
-    </item>
-    <item>
-      <title>Gallery</title>
-      <link>https://nenrikido.neocities.org/gallery/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nenrikido.neocities.org/gallery/</guid>
-      <description>GALLERYShow allDigital illustrationGraphic designObjectsPaintingsPhotossummer rain Starry Girl Dec. 2023
-Clip Studio Paint
-Iseul References Jan. 2023
-Clip Studio Paint
-Moo-yu Product Mockup Oct. 2019
-Adobe Illustrator, Adobe InDesign
-Star &amp;amp; Moon Earrings Dec. 2022
-UV Resin
-Cole birthday gift Feb. 2023
-Clip Studio Paint
-OC belongs to my neopet @velveteas_
-Madotsuki Sketches Sep. 2021 Clip Studio Paint
-Yume Nikki fanart
-Clouds July 2022</description>
-    </item>
-    <item>
-      <title>JournalRing</title>
-      <link>https://nenrikido.neocities.org/webrings/journalring/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nenrikido.neocities.org/webrings/journalring/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Library</title>
-      <link>https://nenrikido.neocities.org/library/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nenrikido.neocities.org/library/</guid>
-      <description>LIBRARYShow allBooksEssaysVideoAudioZinesPoetryArchivessummer rain #Library BulletinCurrent Number of Library Entries: 72
-This page is a collection of media that I have personally found interesting and/or useful. As such, it should not be treated as a neutral or unbiased selection.
-In the spirit of maintaining a digital &amp;ldquo;library,&amp;rdquo; items listed are free. All posts have a &amp;ldquo;Check out&amp;rdquo; link that allows you to download or view the content.</description>
-    </item>
-    <item>
-      <title>Links</title>
-      <link>https://nenrikido.neocities.org/links/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nenrikido.neocities.org/links/</guid>
-      <description>LINKSfind me
-webrings
-fanlistings
-button wall
-resources summer rain #FIND MEnenrikido@pm.me
-nenrikido_
-nenrikido-art
-nenrikido
-nenrikido
-neocities profile
-ask me #WEBRINGS#FANLISTINGS#BUTTON WALLMY BUTTON: &lt;a href=&#34;https://nenrikido.neocities.org/&#34;&gt;&lt;img src=&#34;https://dl.dropbox.com/s/265wg2om8bjr5g6/nenrikido_button.gif&#34;&gt;&lt;/img&gt;#WEB DEV RESOURCES= used for this site
-GENERAL:codepen jsfiddle
-freecodecamp
-mdn web docs
-neocities web guide
-stack overflow
-w3schools
-css tricks
-svg editor
-sadgrl guides
-sadgrl webmaster links JAVASCRIPT LIBRARIES:LAYOUTS:
-isotope
-masonry
-muuri packery
-ANIMATION:
-three</description>
-    </item>
-    <item>
-      <title>Microblog</title>
-      <link>https://nenrikido.neocities.org/microblog/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nenrikido.neocities.org/microblog/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Pudding</title>
-      <link>https://nenrikido.neocities.org/code/preview/pudding/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nenrikido.neocities.org/code/preview/pudding/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Rainbow</title>
-      <link>https://nenrikido.neocities.org/code/preview/rainbow/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nenrikido.neocities.org/code/preview/rainbow/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Sakura</title>
-      <link>https://nenrikido.neocities.org/code/preview/sakura/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nenrikido.neocities.org/code/preview/sakura/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Sitemap</title>
-      <link>https://nenrikido.neocities.org/sitemap/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nenrikido.neocities.org/sitemap/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Style Guide</title>
-      <link>https://nenrikido.neocities.org/about/styleguide/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nenrikido.neocities.org/about/styleguide/</guid>
-      <description>STYLE GUIDEBased on the Poor Man&amp;rsquo;s styleguide. summer rain #STYLE GUIDEHeading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Heading 1 Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.
-Heading 2 Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est.</description>
-    </item>
-    <item>
-      <title>Sunflower</title>
-      <link>https://nenrikido.neocities.org/code/preview/sunflower/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nenrikido.neocities.org/code/preview/sunflower/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Toothache</title>
-      <link>https://nenrikido.neocities.org/code/preview/toothache/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nenrikido.neocities.org/code/preview/toothache/</guid>
-      <description></description>
-    </item>
-  </channel>
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Nenrikido site updates</title>
+        <description>Updates delivered straight to you!</description>
+        <link>https://nenrikido.neocities.org/</link>
+        
+            <item>
+                <title>2024-01-09</title>
+                <link></link>
+                <description>added some favicon switching functionality to my theme and revamped the index.xml file quite a bit!</description>
+            </item>
+        
+            <item>
+                <title>2024-01-02</title>
+                <link></link>
+                <description>surprise!! i made a &lt;a href=&#39;https://nenrikido.neocities.org/webrings/journalring&#39;&gt;webring&lt;/a&gt;. hopefully it&#39;s not broken. blog post upcoming! happy new year!!</description>
+            </item>
+        
+            <item>
+                <title>2023-12-23</title>
+                <link></link>
+                <description>new theme, thanks mima! there&#39;s also a new poll to go along with it, the last was capped at 400 votes...</description>
+            </item>
+        
+            <item>
+                <title>2023-12-11</title>
+                <link></link>
+                <description>too many to list!! check out the blog!!</description>
+            </item>
+        
+            <item>
+                <title>2023-07-02</title>
+                <link></link>
+                <description>new blog post and a theme poll.</description>
+            </item>
+        
+            <item>
+                <title>2023-06-21</title>
+                <link></link>
+                <description>added a few new fanlistings...most are still pending but wooo</description>
+            </item>
+        
+            <item>
+                <title>2023-06-17</title>
+                <link></link>
+                <description>changed up a lot of CSS (ctrl &#43; f5 if anything is weird), tweaked a few scripts, made a new blog post, joined the surf club webring &amp; added the widget, separated fanlistings, etc.</description>
+            </item>
+        
+            <item>
+                <title>2023-06-10</title>
+                <link></link>
+                <description>made a &lt;a href=&#39;https://nenrikido.neocities.org/about/styleguide&#39;&gt;style guide&lt;/a&gt; after i saw &lt;a href=&#39;https://10kph.neocities.org/&#39;&gt;10kph&lt;/a&gt; do it. also added a few buttons to the &lt;a href=&#39;https://nenrikido.neocities.org/links&#39;&gt;links&lt;/a&gt; page.</description>
+            </item>
+        
+            <item>
+                <title>2023-06-09</title>
+                <link></link>
+                <description>happy pride! made a &lt;a href=&#39;https://nenrikido.neocities.org/code/preview/rainbow&#39;&gt;theme&lt;/a&gt; to celebrate. updated a few pages and messed w/ some site css also.</description>
+            </item>
+        
+            <item>
+                <title>2023-05-28</title>
+                <link></link>
+                <description>no more bootstrap! new &lt;a href=&#39;https://nenrikido.neocities.org/sitemap&#39;&gt;sitemap&lt;/a&gt;! new start menu! new &lt;a href=&#39;https://nenrikido.neocities.org/blog&#39;&gt;blog&lt;/a&gt; post!</description>
+            </item>
+        
+            <item>
+                <title>2023-05-21</title>
+                <link></link>
+                <description>new &lt;a href=&#39;https://nenrikido.neocities.org/blog&#39;&gt;blog&lt;/a&gt; post &amp; now there&#39;s a microblog feed on the index page. thank you hors</description>
+            </item>
+        
+            <item>
+                <title>2023-05-06</title>
+                <link></link>
+                <description>lots &amp; lots of changes, some big and some small. there&#39;s also a new page theme up! and now there are theme previews!</description>
+            </item>
+        
+            <item>
+                <title>2023-05-01</title>
+                <link></link>
+                <description>new page theme is up on the &lt;a href=&#39;https://nenrikido.neocities.org/code&#39;&gt;code&lt;/a&gt; page! i think it&#39;s cute.</description>
+            </item>
+        
+            <item>
+                <title>2023-04-21</title>
+                <link></link>
+                <description>site&#39;s finally up on &lt;a href=&#39;https://github.com/js044/nenrikido&#39;&gt;github&lt;/a&gt; and there&#39;s a &lt;a href=&#39;https://nenrikido.neocities.org/microblog&#39;&gt;microblog&lt;/a&gt; now! elon could never</description>
+            </item>
+        
+            <item>
+                <title>2023-04-20</title>
+                <link></link>
+                <description>added a tamanotchi and a lunar tracker to the home page &amp; added a weblisting, added some sites to the button wall</description>
+            </item>
+        
+            <item>
+                <title>2023-04-19</title>
+                <link></link>
+                <description>added two new webrings!</description>
+            </item>
+        
+            <item>
+                <title>2023-04-18</title>
+                <link></link>
+                <description>there is now a digital &lt;a href=&#39;https://nenrikido.neocities.org/library&#39;&gt;library&lt;/a&gt; and an actual &lt;a href=&#39;https://nenrikido.neocities.org/shrines&#39;&gt;shrines&lt;/a&gt; page! also some font changes. check today&#39;s &lt;a href=&#39;https://nenrikido.neocities.org/blog&#39;&gt;blog&lt;/a&gt; post for details.</description>
+            </item>
+        
+            <item>
+                <title>2023-04-11</title>
+                <link></link>
+                <description>debugged the theme even more and fixed the gallery filter! also new blog post.</description>
+            </item>
+        
+            <item>
+                <title>2023-04-08</title>
+                <link></link>
+                <description>debugged the theme some. shouldn&#39;t be irregular gaps anymore!</description>
+            </item>
+        
+            <item>
+                <title>2023-04-07</title>
+                <link></link>
+                <description>(shaking the table) &lt;a href=&#39;https://nenrikido.neocities.org/nexus/cole&#39;&gt;cole shrine&lt;/a&gt;?!</description>
+            </item>
+        
+            <item>
+                <title>2023-04-06</title>
+                <link></link>
+                <description>more optimization...theme should be speedier?! working out some bugs still.</description>
+            </item>
+        
+            <item>
+                <title>2023-04-05</title>
+                <link></link>
+                <description>optimized the site quite a bit, debugged mobile displays, and posted a tutorial about preloaders. u can read more on the &lt;a href=&#39;https://nenrikido.neocities.org/blog&#39;&gt;blog&lt;/a&gt;</description>
+            </item>
+        
+            <item>
+                <title>2023-04-04</title>
+                <link></link>
+                <description>so many...check &lt;a href=&#39;https://nenrikido.neocities.org/blog&#39;&gt;blog&lt;/a&gt; for details. TLDR rebuilt the site w hugo &amp; changed up the layout.</description>
+            </item>
+        
+            <item>
+                <title>2023-03-31</title>
+                <link></link>
+                <description>rolled back windows bc it was buggy. will fix when i have time</description>
+            </item>
+        
+            <item>
+                <title>2023-03-30</title>
+                <link></link>
+                <description>index page windows are draggable now! thinking about perhaps setting this site up on an SSG soon and documenting the process...</description>
+            </item>
+        
+            <item>
+                <title>2023-03-28</title>
+                <link></link>
+                <description>added a few things to the &lt;a href=&#39;https://nenrikido.neocities.org/code&#39;&gt;code&lt;/a&gt; page, posted a new tutorial &lt;a href=&#39;https://nenrikido.neocities.org/blog&#39;&gt;blog&lt;/a&gt; post, and added some credits</description>
+            </item>
+        
+            <item>
+                <title>2023-03-27</title>
+                <link></link>
+                <description>new &lt;a href=&#39;https://nenrikido.neocities.org/blog&#39;&gt;blog&lt;/a&gt; post</description>
+            </item>
+        
+            <item>
+                <title>2023-03-25</title>
+                <link></link>
+                <description>made an &lt;a href=&#39;https://nenrikido.neocities.org/index.xml&#39;&gt;RSS feed&lt;/a&gt; &amp; switched around some homepage windows. yayy</description>
+            </item>
+        
+            <item>
+                <title>2023-03-23</title>
+                <link></link>
+                <description>new &lt;a href=&#39;https://nenrikido.neocities.org/blog&#39;&gt;blog&lt;/a&gt; post &amp; added a webring to my &lt;a href=&#39;https://nenrikido.neocities.org/links&#39;&gt;links&lt;/a&gt; page! if anything looks weird, it&#39;s probably a cache issue—sorry about that.</description>
+            </item>
+        
+            <item>
+                <title>2023-03-21</title>
+                <link></link>
+                <description>swapped some pixels, debugged mobile displays, general housekeeping, etc.</description>
+            </item>
+        
+            <item>
+                <title>2023-03-20</title>
+                <link></link>
+                <description>working on &lt;a href=&#39;https://www.freecodecamp.org/news/reusable-html-components-how-to-reuse-a-header-and-footer-on-a-website/&#39;&gt;web components&lt;/a&gt; to reduce some HTML clutter 😵‍💫 1.2k lines of code deleted so far...</description>
+            </item>
+        
+            <item>
+                <title>2023-03-17</title>
+                <link></link>
+                <description>the &lt;a href=&#39;https://nenrikido.neocities.org/gallery&#39;&gt;gallery&lt;/a&gt; is up now! AND the &lt;a href=&#39;https://nenrikido.neocities.org/blog&#39;&gt;blog&lt;/a&gt;! it even has a post! wow!</description>
+            </item>
+        
+            <item>
+                <title>2023-03-16</title>
+                <link></link>
+                <description>added a &lt;a href=&#39;https://nenrikido.neocities.org/links&#39;&gt;links page&lt;/a&gt; &amp; an  &lt;a href=&#39;https://nenrikido.neocities.org/about&#39;&gt;about page&lt;/a&gt;, made a button, etc.</description>
+            </item>
+        
+            <item>
+                <title>2023-03-13</title>
+                <link></link>
+                <description>it&#39;s alive!</description>
+            </item>
+        
+    </channel>
 </rss>

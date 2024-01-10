@@ -1,6 +1,7 @@
 ---
 title: "NENRIKIDO"
 draft: false
+type: "updates"
 ---
 
 {{< card-medium title="#WELCOME" >}} 
@@ -47,6 +48,12 @@ Which theme is your favorite?
 <p align="center" style="height:85px;"><a href="http://tamanotchi.world/4251c" target="_blank" rel="noopener noreferrer"><img src="http://tamanotchi.world/i2/4251" alt="It's tamaNOTchi! Click to feed!"></a></p>
 {{< /card-medium >}}
 
+{{< card-medium title="#UPDATES" >}} 
+{{< scrollbox >}}
+{{< updates >}}
+{{< /scrollbox >}}
+{{< /card-medium >}}
+
 {{< card-medium title="#GUESTBOOK" >}} 
 <iframe title="chatbox" src="https://www3.cbox.ws/box/?boxid=3526482&boxtag=h3SRws" width="100%" height="400" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
 {{< /card-medium >}}
@@ -69,46 +76,6 @@ Read the rest of the blog [here](/blog).
 <div id="contain_moon" style="text-align:center;padding-top:5px;padding-bottom:5px;margin:10px;width:auto;height:17em;"><div style="font-weight:bold">the moon today</div><div style="margin-bottom:3em;padding:2em;filter:drop-shadow(0 0 20px hsl(220,100%,15%))"></div><div>.</div><div style="font-size:small">.</div></div>
 <script>(function(){var d=new Date().getDate();var m=document.querySelectorAll("#contain_moon div");var a=new XMLHttpRequest();var url="https://www.icalendar37.net/lunar/api/?lang=en&month="+(new Date().getMonth()+1)+"&year="+(new Date().getFullYear())+"&size=100&lightColor=rgb(255,249,253)&shadeColor=rgb(56,56,141)&LDZ="+new Date(new Date().getFullYear(),new Date().getMonth(),1)/1000+"";m[1].style.height="100px";a.onreadystatechange=function(){if(a.readyState==4&&a.status==200){var b=JSON.parse(a.responseText);m[1].innerHTML=b.phase[d].svg;if(typeof moon_widget_loaded=="function")moon_widget_loaded(b);m[2].innerHTML=b.phase[d].npWidget;m[3].innerHTML="next full moon<br>"+b.nextFullMoon}};a.open("GET",url,true);a.send()})()</script>
 {{< /card-medium >}}
-
-{{< card-medium title="#UPDATES" >}} 
-{{< scrollbox >}}
-* **1-2-24**: surprise!! i made a [webring](/webrings/journalring). hopefully it's not broken. blog post upcoming! happy new year!! 
-* **12-23-23**: new theme, thanks mima! there's also a new poll to go along with it, the last was capped at 400 votes...
-* **12-11-23**: too many to list!! check out the blog!!
-* **7-2-23**: new blog post and a theme poll. 
-* **6-21-23**: added a few new fanlistings...most are still pending but wooo
-* **6-17-23**: changed up a lot of CSS (ctrl + f5 if anything is weird), tweaked a few scripts, made a new blog post, joined the surf club webring & added the widget, separated fanlistings, etc.
-* **6-10-23**: made a [style guide](/about/styleguide) after i saw [10kph](https://10kph.neocities.org/) do it. also added a few buttons to the [links](/links) page.
-* **6-09-23**: happy pride! made a [theme](/code/preview/rainbow) to celebrate. updated a few pages and messed w/ some site css also.
-* **5-28-23**: no more bootstrap! new [sitemap](/sitemap)! new start menu! new [blog](/blog) post!
-* **5-21-23**: new [blog](/blog) post & now there's a microblog feed on the index page. thank you hors 
-* **5-6-23**: lots & lots of changes, some big and some small. there's also a new page theme up! and now there are theme previews!
-* **5-1-23**: new page theme is up on the [code](/code) page! i think it's cute.
-* **4-21-23**: site's finally up on [github](https://github.com/js044/nenrikido) and there's a [microblog](/microblog) now! elon could never
-* **4-20-23**: added a tamanotchi and a lunar tracker to the home page & added a weblisting, added some sites to the button wall
-* **4-19-23**: added two new webrings!
-* **4-18-23**: there is now a digital [library](/library) and an actual [shrines](/shrines) page! also some font changes. check today's [blog](/blog) post for details.
-* **4-11-23**: debugged the theme even more and fixed the gallery filter! also new blog post.
-* **4-8-23**: debugged the theme some. shouldn't be irregular gaps anymore!
-* **4-7-23**: (shaking the table) [cole shrine](/shrines/cole)?!
-* **4-6-23**: more optimization...theme should be speedier?! working out some bugs still.
-* **4-5-23**: optimized the site quite a bit, debugged mobile displays, and posted a tutorial about preloaders. u can read more on the [blog](/blog)
-* **4-4-23**: so many...check [blog](/blog) for details. TLDR rebuilt the site w hugo & changed up the layout.
-* **3-31-23**: rolled back windows bc it was buggy. will fix when i have time
-* **3-30-23**: index page windows are draggable now! thinking about perhaps setting this site up on an SSG soon and documenting the process...
-* **3-29-23**:  added some new [links](/links) to the cool sites section & web dev resources. and added the [fujofans](https://fujofans.scumsuck.com/) weblisting. old man yaoi will save the world btw. site is also on [github](https://github.com/js044/nenrikido) now. the [blog](/blog) post goes more in depth with updates.
-*   **3-28-23**: added a few things to the [code](/code) page, posted a new tutorial [blog](/blog) post, and added some credits
-*   **3-27-23**: new [blog](/blog) post
-*   **3-25-23**: made an [RSS feed](feed.xml) & switched around some homepage windows. yayy
-*   **3-23-23**: new [blog](/blog) post & added a webring to my [links](/links) page! if anything looks weird, it's probably a cache issue—sorry about that.
-*   **3-21-23**: swapped some pixels, debugged mobile displays, general housekeeping, etc.
-*   **3-20-23**: working on [web components](https://www.freecodecamp.org/news/reusable-html-components-how-to-reuse-a-header-and-footer-on-a-website/) to reduce some HTML clutter 😵‍💫 1.2k lines of code deleted so far...
-*   **3-17-23**: the [gallery](/gallery) is up now! AND the [blog](/blog)! it even has a post! wow!
-*   **3-16-23**: added a [links page](/links) & an [about page](/about), made a button, etc.
-*   **3-13-23**: it's alive!
-{{< /scrollbox >}}
-{{< /card-medium >}}
-
 
 {{< card-medium title="#DREAM" >}} 
 <p align="center"><img src="/images/pixels/Madotsuki_Chair_Spin.gif" style="max-width: 100px;" loading="lazy" width="100" height="100" alt="Madotsuki spinning in her chair."></p>

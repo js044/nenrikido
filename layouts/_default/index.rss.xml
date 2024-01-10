@@ -1,0 +1,15 @@
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\"?>" | safeHTML }}
+<rss version="2.0">
+    <channel>
+        <title>Nenrikido site updates</title>
+        <description>Updates delivered straight to you!</description>
+        <link>{{ .Site.BaseURL }}</link>
+        {{ range .Site.Data.updates.updates }}
+            <item>
+                <title>{{ .date }}</title>
+                <link>{{ .link | default .Page.Permalink }}</link>
+                <description>{{ .description }}</description>
+            </item>
+        {{ end }}
+    </channel>
+</rss>

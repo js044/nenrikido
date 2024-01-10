@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     activateButton(button);
     document.documentElement.className = color;
 
+    updateFavicon(color);
   }
   
   // Called when you actually click the button.
@@ -25,12 +26,20 @@ document.addEventListener("DOMContentLoaded", () => {
     grid.refreshItems().layout(); // Muuri grid reload on theme switch
   }
   
-  /* Bunch of little functions below */
-  
   // Get the theme from local storage, return "pink" if not present.
   function getTheme() { 
     return localStorage.getItem("theme") || "pink";
   }
+
+  function updateFavicon(color) {
+    const favicon = document.querySelector('link[rel="icon"]');
+    if (favicon) {
+        favicon.href = `/images/icons/${color}-favicon.svg`; // Adjust path for favicon
+    } else {
+        console.error('Favicon element not found.');
+        // Handle if favicon element is not found
+    }
+}
 
   // Get the button element that corresponds with a given color.
   function getColorButton(color) {
