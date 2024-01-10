@@ -1,212 +1,246 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
     <channel>
-        <title>Nenrikido site updates</title>
-        <description>Updates delivered straight to you!</description>
+        <title>Nenrikido Updates</title>
+        <description>Pulled from the Updates section</description>
         <link>https://nenrikido.neocities.org/</link>
         
             <item>
                 <title>2024-01-09</title>
                 <link></link>
                 <description>added some favicon switching functionality to my theme and revamped the index.xml file quite a bit!</description>
+                <pubDate>Tue, 09 Jan 2024 00:00:00 UTC</pubDate>
             </item>
         
             <item>
                 <title>2024-01-02</title>
                 <link></link>
                 <description>surprise!! i made a &lt;a href=&#39;https://nenrikido.neocities.org/webrings/journalring&#39;&gt;webring&lt;/a&gt;. hopefully it&#39;s not broken. blog post upcoming! happy new year!!</description>
+                <pubDate>Tue, 02 Jan 2024 00:00:00 UTC</pubDate>
             </item>
         
             <item>
                 <title>2023-12-23</title>
                 <link></link>
                 <description>new theme, thanks mima! there&#39;s also a new poll to go along with it, the last was capped at 400 votes...</description>
+                <pubDate>Sat, 23 Dec 2023 00:00:00 UTC</pubDate>
             </item>
         
             <item>
                 <title>2023-12-11</title>
                 <link></link>
                 <description>too many to list!! check out the blog!!</description>
+                <pubDate>Mon, 11 Dec 2023 00:00:00 UTC</pubDate>
             </item>
         
             <item>
                 <title>2023-07-02</title>
                 <link></link>
                 <description>new blog post and a theme poll.</description>
+                <pubDate>Sun, 02 Jul 2023 00:00:00 UTC</pubDate>
             </item>
         
             <item>
                 <title>2023-06-21</title>
                 <link></link>
                 <description>added a few new fanlistings...most are still pending but wooo</description>
+                <pubDate>Wed, 21 Jun 2023 00:00:00 UTC</pubDate>
             </item>
         
             <item>
                 <title>2023-06-17</title>
                 <link></link>
                 <description>changed up a lot of CSS (ctrl &#43; f5 if anything is weird), tweaked a few scripts, made a new blog post, joined the surf club webring &amp; added the widget, separated fanlistings, etc.</description>
+                <pubDate>Sat, 17 Jun 2023 00:00:00 UTC</pubDate>
             </item>
         
             <item>
                 <title>2023-06-10</title>
                 <link></link>
                 <description>made a &lt;a href=&#39;https://nenrikido.neocities.org/about/styleguide&#39;&gt;style guide&lt;/a&gt; after i saw &lt;a href=&#39;https://10kph.neocities.org/&#39;&gt;10kph&lt;/a&gt; do it. also added a few buttons to the &lt;a href=&#39;https://nenrikido.neocities.org/links&#39;&gt;links&lt;/a&gt; page.</description>
+                <pubDate>Sat, 10 Jun 2023 00:00:00 UTC</pubDate>
             </item>
         
             <item>
                 <title>2023-06-09</title>
                 <link></link>
                 <description>happy pride! made a &lt;a href=&#39;https://nenrikido.neocities.org/code/preview/rainbow&#39;&gt;theme&lt;/a&gt; to celebrate. updated a few pages and messed w/ some site css also.</description>
+                <pubDate>Fri, 09 Jun 2023 00:00:00 UTC</pubDate>
             </item>
         
             <item>
                 <title>2023-05-28</title>
                 <link></link>
                 <description>no more bootstrap! new &lt;a href=&#39;https://nenrikido.neocities.org/sitemap&#39;&gt;sitemap&lt;/a&gt;! new start menu! new &lt;a href=&#39;https://nenrikido.neocities.org/blog&#39;&gt;blog&lt;/a&gt; post!</description>
+                <pubDate>Sun, 28 May 2023 00:00:00 UTC</pubDate>
             </item>
         
             <item>
                 <title>2023-05-21</title>
                 <link></link>
                 <description>new &lt;a href=&#39;https://nenrikido.neocities.org/blog&#39;&gt;blog&lt;/a&gt; post &amp; now there&#39;s a microblog feed on the index page. thank you hors</description>
+                <pubDate>Sun, 21 May 2023 00:00:00 UTC</pubDate>
             </item>
         
             <item>
                 <title>2023-05-06</title>
                 <link></link>
                 <description>lots &amp; lots of changes, some big and some small. there&#39;s also a new page theme up! and now there are theme previews!</description>
+                <pubDate>Sat, 06 May 2023 00:00:00 UTC</pubDate>
             </item>
         
             <item>
                 <title>2023-05-01</title>
                 <link></link>
                 <description>new page theme is up on the &lt;a href=&#39;https://nenrikido.neocities.org/code&#39;&gt;code&lt;/a&gt; page! i think it&#39;s cute.</description>
+                <pubDate>Mon, 01 May 2023 00:00:00 UTC</pubDate>
             </item>
         
             <item>
                 <title>2023-04-21</title>
                 <link></link>
                 <description>site&#39;s finally up on &lt;a href=&#39;https://github.com/js044/nenrikido&#39;&gt;github&lt;/a&gt; and there&#39;s a &lt;a href=&#39;https://nenrikido.neocities.org/microblog&#39;&gt;microblog&lt;/a&gt; now! elon could never</description>
+                <pubDate>Fri, 21 Apr 2023 00:00:00 UTC</pubDate>
             </item>
         
             <item>
                 <title>2023-04-20</title>
                 <link></link>
                 <description>added a tamanotchi and a lunar tracker to the home page &amp; added a weblisting, added some sites to the button wall</description>
+                <pubDate>Thu, 20 Apr 2023 00:00:00 UTC</pubDate>
             </item>
         
             <item>
                 <title>2023-04-19</title>
                 <link></link>
                 <description>added two new webrings!</description>
+                <pubDate>Wed, 19 Apr 2023 00:00:00 UTC</pubDate>
             </item>
         
             <item>
                 <title>2023-04-18</title>
                 <link></link>
                 <description>there is now a digital &lt;a href=&#39;https://nenrikido.neocities.org/library&#39;&gt;library&lt;/a&gt; and an actual &lt;a href=&#39;https://nenrikido.neocities.org/shrines&#39;&gt;shrines&lt;/a&gt; page! also some font changes. check today&#39;s &lt;a href=&#39;https://nenrikido.neocities.org/blog&#39;&gt;blog&lt;/a&gt; post for details.</description>
+                <pubDate>Tue, 18 Apr 2023 00:00:00 UTC</pubDate>
             </item>
         
             <item>
                 <title>2023-04-11</title>
                 <link></link>
                 <description>debugged the theme even more and fixed the gallery filter! also new blog post.</description>
+                <pubDate>Tue, 11 Apr 2023 00:00:00 UTC</pubDate>
             </item>
         
             <item>
                 <title>2023-04-08</title>
                 <link></link>
                 <description>debugged the theme some. shouldn&#39;t be irregular gaps anymore!</description>
+                <pubDate>Sat, 08 Apr 2023 00:00:00 UTC</pubDate>
             </item>
         
             <item>
                 <title>2023-04-07</title>
                 <link></link>
                 <description>(shaking the table) &lt;a href=&#39;https://nenrikido.neocities.org/nexus/cole&#39;&gt;cole shrine&lt;/a&gt;?!</description>
+                <pubDate>Fri, 07 Apr 2023 00:00:00 UTC</pubDate>
             </item>
         
             <item>
                 <title>2023-04-06</title>
                 <link></link>
                 <description>more optimization...theme should be speedier?! working out some bugs still.</description>
+                <pubDate>Thu, 06 Apr 2023 00:00:00 UTC</pubDate>
             </item>
         
             <item>
                 <title>2023-04-05</title>
                 <link></link>
                 <description>optimized the site quite a bit, debugged mobile displays, and posted a tutorial about preloaders. u can read more on the &lt;a href=&#39;https://nenrikido.neocities.org/blog&#39;&gt;blog&lt;/a&gt;</description>
+                <pubDate>Wed, 05 Apr 2023 00:00:00 UTC</pubDate>
             </item>
         
             <item>
                 <title>2023-04-04</title>
                 <link></link>
                 <description>so many...check &lt;a href=&#39;https://nenrikido.neocities.org/blog&#39;&gt;blog&lt;/a&gt; for details. TLDR rebuilt the site w hugo &amp; changed up the layout.</description>
+                <pubDate>Tue, 04 Apr 2023 00:00:00 UTC</pubDate>
             </item>
         
             <item>
                 <title>2023-03-31</title>
                 <link></link>
                 <description>rolled back windows bc it was buggy. will fix when i have time</description>
+                <pubDate>Fri, 31 Mar 2023 00:00:00 UTC</pubDate>
             </item>
         
             <item>
                 <title>2023-03-30</title>
                 <link></link>
                 <description>index page windows are draggable now! thinking about perhaps setting this site up on an SSG soon and documenting the process...</description>
+                <pubDate>Thu, 30 Mar 2023 00:00:00 UTC</pubDate>
             </item>
         
             <item>
                 <title>2023-03-28</title>
                 <link></link>
                 <description>added a few things to the &lt;a href=&#39;https://nenrikido.neocities.org/code&#39;&gt;code&lt;/a&gt; page, posted a new tutorial &lt;a href=&#39;https://nenrikido.neocities.org/blog&#39;&gt;blog&lt;/a&gt; post, and added some credits</description>
+                <pubDate>Tue, 28 Mar 2023 00:00:00 UTC</pubDate>
             </item>
         
             <item>
                 <title>2023-03-27</title>
                 <link></link>
                 <description>new &lt;a href=&#39;https://nenrikido.neocities.org/blog&#39;&gt;blog&lt;/a&gt; post</description>
+                <pubDate>Mon, 27 Mar 2023 00:00:00 UTC</pubDate>
             </item>
         
             <item>
                 <title>2023-03-25</title>
                 <link></link>
                 <description>made an &lt;a href=&#39;https://nenrikido.neocities.org/index.xml&#39;&gt;RSS feed&lt;/a&gt; &amp; switched around some homepage windows. yayy</description>
+                <pubDate>Sat, 25 Mar 2023 00:00:00 UTC</pubDate>
             </item>
         
             <item>
                 <title>2023-03-23</title>
                 <link></link>
                 <description>new &lt;a href=&#39;https://nenrikido.neocities.org/blog&#39;&gt;blog&lt;/a&gt; post &amp; added a webring to my &lt;a href=&#39;https://nenrikido.neocities.org/links&#39;&gt;links&lt;/a&gt; page! if anything looks weird, it&#39;s probably a cache issue—sorry about that.</description>
+                <pubDate>Thu, 23 Mar 2023 00:00:00 UTC</pubDate>
             </item>
         
             <item>
                 <title>2023-03-21</title>
                 <link></link>
                 <description>swapped some pixels, debugged mobile displays, general housekeeping, etc.</description>
+                <pubDate>Tue, 21 Mar 2023 00:00:00 UTC</pubDate>
             </item>
         
             <item>
                 <title>2023-03-20</title>
                 <link></link>
                 <description>working on &lt;a href=&#39;https://www.freecodecamp.org/news/reusable-html-components-how-to-reuse-a-header-and-footer-on-a-website/&#39;&gt;web components&lt;/a&gt; to reduce some HTML clutter 😵‍💫 1.2k lines of code deleted so far...</description>
+                <pubDate>Mon, 20 Mar 2023 00:00:00 UTC</pubDate>
             </item>
         
             <item>
                 <title>2023-03-17</title>
                 <link></link>
                 <description>the &lt;a href=&#39;https://nenrikido.neocities.org/gallery&#39;&gt;gallery&lt;/a&gt; is up now! AND the &lt;a href=&#39;https://nenrikido.neocities.org/blog&#39;&gt;blog&lt;/a&gt;! it even has a post! wow!</description>
+                <pubDate>Fri, 17 Mar 2023 00:00:00 UTC</pubDate>
             </item>
         
             <item>
                 <title>2023-03-16</title>
                 <link></link>
                 <description>added a &lt;a href=&#39;https://nenrikido.neocities.org/links&#39;&gt;links page&lt;/a&gt; &amp; an  &lt;a href=&#39;https://nenrikido.neocities.org/about&#39;&gt;about page&lt;/a&gt;, made a button, etc.</description>
+                <pubDate>Thu, 16 Mar 2023 00:00:00 UTC</pubDate>
             </item>
         
             <item>
                 <title>2023-03-13</title>
                 <link></link>
                 <description>it&#39;s alive!</description>
+                <pubDate>Mon, 13 Mar 2023 00:00:00 UTC</pubDate>
             </item>
         
     </channel>
