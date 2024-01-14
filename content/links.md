@@ -105,7 +105,7 @@ draft: false
 {{< buttons img-src="/images/buttons/neoratz.gif" link="https://neoratz.neocities.org/">}}               
 {{< buttons img-src="/images/buttons/gd.gif" link="https://garbagedeity.neocities.org/">}}                 
 {{< buttons img-src="/images/buttons/soulbyte.png" link="https://soulbyte.neocities.org/">}}        
-{{< buttons img-src="/images/buttons/snifflebear.png" link="https://www.snifflebear.moe/">}}                      
+                  
 {{< buttons img-src="/images/buttons/ip.gif" link="https://incessantpain.neocities.org/">}} 
 {{< buttons img-src="/images/buttons/tigercarnival1.png" link="https://bisuko.neocities.org/">}} 
 {{< buttons img-src="/images/buttons/kie.gif" link="https://ophanimkei.com/" >}}    
