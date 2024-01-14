@@ -1,4 +1,6 @@
 updates:
+- date: "2024-01-14"
+  description: "new blog post about how to make a <a href='https://nenrikido.neocities.org/blog/post/journalring/'>webring</a>"
 - date: "2024-01-09"
   description: "added some favicon switching functionality to my theme and revamped the index.xml file quite a bit!"
 - date: "2024-01-02"
