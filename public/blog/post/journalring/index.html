@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    
+    <title>Making a Webring: The Creation of JournalRing</title>
+    <meta charset="utf-8">
+    <meta name="description"
+        content="A special world." />
+    <meta name="dc.relation" content="https://nenrikido.neocities.org/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='icon' type='image/x-icon' href='../../../images/icons/pink-favicon.svg' /> 
+
+    
+    <link href="../../../sass/main.min.788bf80e79dc98e7e513358fc36a406aa399a78e0265e8d91cf5bcb52bbab612.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+    
+    <div id="preloader"></div><body>
+<div class="wrapper">
+    <nav id="navAlt">
+        <div class="navWrapper"> <a class="navLink" href="../../../blog">
+                <div id="blog"> </div>Blog
+            </a>
+            <p><i class="fa-regular fa-circle-down"></i></p>
+            <p><i class="fa-solid fa-hashtag"></i> <a href="#"> Making a Webring: The Creation of JournalRing </a></p>
+            <p><i class="fa-solid fa-hashtag"></i> <a href="#comments"> Comments </a></p>
+        </div><div class="arrows">
+      
+            <a href="https://nenrikido.neocities.org/blog/post/mega-site-update/"> <i class="fas fa-long-arrow-alt-left"> </i></a>
+            
+            
+                <a href="../../../blog/"><i class="fas fa-home"> 
+                </i></a>
+            
+            
+        </div>
+
+        <div id='musicplayer'>
+            <div id='musicpixel'> <img src="../../../images/pixels/music.gif" style="max-width: 40px;">
+                <div class='overlay'>
+                    <div class='playpause'><i class="fas fa-play"></i></div>
+                </div>
+            </div>
+            <div id='musictitle'> <span class='marquee'>summer rain</span> </div>
+        </div> <audio id='musicsrc' loop src='https://dl.dropbox.com/s/seanb1ogmdoezmr/cricket-rain.mp3'></audio>
+
+
+<script>
+    document.querySelector('.playpause').addEventListener('click', playpause);
+    
+    function playpause() {
+      if (document.querySelector('.playpause').innerHTML == '<i class="fas fa-play"></i>') {
+        document.querySelector('#musicsrc').play();
+        document.querySelector('.playpause').innerHTML = '<i class="fas fa-pause"></i>';
+      } else {
+        document.querySelector('#musicsrc').pause();
+        document.querySelector('.playpause').innerHTML = '<i class="fas fa-play"></i>';
+      }
+    }
+</script>
+<form class="search"> <input type="text" class="searchTerm" placeholder="Search..."> <button aria-label="submit" type="submit" class="searchButton"> <i class="fa fa-search"></i> </button> </form>
+
+<ul class="searchResults"></ul></nav>
+
+    <main>
+        <article>
+            <div class="grid">
+                <div class="item large">
+                    <div class="cards"><div class="cardsHeader">
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div><div class="cardsBody">
+                            <h2>Making a Webring: The Creation of JournalRing</h2>
+                            <blockquote>January 13, 2024</blockquote> <p>Hello, all. In case you haven&rsquo;t heard yet, I made a <a href="../../../webrings/journalring">webring</a>! I&rsquo;ve been curious about making one for awhile, but I wasn&rsquo;t really sure what would interest people (who aren&rsquo;t me). After asking Hors about her opinion on Hobonichi planners after a long stint as a bullet journaller (alleged), it occurred to me this might be a fun topic to build a webring around. (Despite the fact I still haven&rsquo;t made my Nexus page that&rsquo;s dedicated to journals. Which is going to happen eventually. I swear!)</p>
+<a href="../../../images/blog/011324/journalring.gif" data-lightbox="journalring "> <img src="../../../images/blog/011324/journalring.gif" class="img-fluid" loading=""  width="" height="" alt="">  </a>
+<p>For anyone uninitiated, a webring is a list of people. This list can be loosely organized around whatever you want. Each member of this list puts a snippet of code on their site, which generates a forward and backwards button based on that member&rsquo;s position within the list. There&rsquo;s typically a link back to the webring home page, and sometimes also a &ldquo;Random&rdquo; button to find new sites on the list. Sounds simple enough, yeah?</p>
+<p>Kind of! There are a few considerations, including:</p>
+<ul>
+<li><a href="#the-webring-code">The webring code</a></li>
+<li><a href="#the-webring-widget">The webring widget</a></li>
+<li><a href="#the-webring-sign-up-form">The webring sign-up form</a></li>
+<li><a href="#the-webring-homepage">The webring homepage</a></li>
+</ul>
+<p>And these can all vary in complexity depending on your needs. For ease of navigation, I&rsquo;ve split this post into these four sections so you can skip to read more about how JournalRing was created and to see if you might want to make your own webring! I made a lot of mistakes along the way, and I&rsquo;ll be sure to talk a bit about those so you don&rsquo;t have to make the same.</p>
+<h2 id="the-webring-code">I. The webring code</h2>
+<p>There are a few webring scripts out there if you want to get started immediately. The most popular is probably <a href="https://garlic.garden/onionring/">onionring.js</a>, but there are others, like <a href="http://www.demon-sushi.com/ring/">RainRing</a> and <a href="https://22ru.github.io/webring/hatring.js">hatring.js</a>. There&rsquo;s also an interesting no-JS tutorial using Netlify <a href="https://github.com/mincerafter42/mincerafter42.github.io/blob/main/tutorial/webring.md">here</a> and another tutorial  with a Netlify demo <a href="https://mxb.dev/blog/webring-kit/">here</a>.  <a href="https://neorings.org/webrings">Neorings</a> also offers a backend for webrings with a convenient directory.</p>
+<p>These all have their own merits, but I thought it&rsquo;d be best to just make my own. There were a few reasons for this, but it mostly boils down to none of them quite meeting all my needs and also being curious about what it&rsquo;d be like to build a script on my own. Armed with <a href="https://css-tricks.com/how-you-might-build-a-modern-day-webring/">this</a> CSS tricks article and a dream, I persevered.</p>
+<p>There were a few features I was dead-set on implementing:</p>
+<ol>
+<li>I wanted to store members&rsquo; data in JSON for legibility and ease of maintenance.
+<ul>
+<li>This JSON list needed to be accessible enough for me to pull it to display the members list, update the member count, and scan the list for dead links.</li>
+</ul>
+</li>
+<li>Each webring member should receive a single <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Components">web component</a> and JS link as to not be too verbose.</li>
+<li>The webring should accomodate multiple different styles of widgets without having to create entirely new JS files.</li>
+<li>Naturally, all of this had to be possible with zero back-end.</li>
+</ol>
+<p>This resulted in <a href="https://gist.github.com/js044/893901d8a723bc43a938b7abd136ce9e">nenring</a> (embedded below), which consists of two JS files &ndash; one to create the webring widget and store the membership information (nenring-config.js), and one to display the webring&rsquo;s information (nenring-admin.js). In other words, one is for webring members, and one is for the admin. The admin will have to host both scripts, but only one of them is something webring members will reference within their take-home code. These files are blank, but I haven&rsquo;t tested out these blank config files myself. If you want to see how I&rsquo;ve actually implemented my JS, the notable files are in <a href="https://github.com/js044/nenrikido/tree/main/static/js/misc">this folder</a>.</p>
+<script type="application/javascript" src="https://gist.github.com/js044/893901d8a723bc43a938b7abd136ce9e.js"></script>
+
+<p>As for how it actually works: A person signs up for my webring with a form. I am emailed when this happens so I can respond quickly. After checking their application and approving them, I add their information to the config.js file. I push this update, which then makes it so the widget will show up on their site. Then, I email them to inform them they&rsquo;re approved. The admin.js file automatically adds their entry to my &ldquo;Members&rdquo; list and updates the Member count. If they ever delete their site, the console log will notify me so they can be removed.</p>
+<p>I&rsquo;ve written a bit about <a href="../../../post/web-components/">web components</a> in the past. Even though I ended up ditching my web components in favor of a static site generator after all, I still really enjoyed the idea of using web components for something like this. It just felt right&ndash;semantic, simple, easy to implement. The take-home code starts with some variation of <code>&lt;journal-ring icon=&quot;COLOR&quot;&gt;&lt;/journal-ring&gt;</code> and then includes a link to the script. It does not get cleaner, in my opinion!</p>
+<p>A few things to note:</p>
+<ol>
+<li>
+<p>I don&rsquo;t love injecting the JSON directly into the JS file, but doing so allows you to bypass Cross-origin security policies. Other people on different domains trying to reference a JSON file on your site is a big no-no, it turns out. CORS policies are useful, but when you cannot control the server headers (like if you&rsquo;re using Neocities) to allow cross-domain sharing, it can be a bit of a pain. The actual meat of this issue is a bit beyond the scope of this post, but you can read more about Cross-origin Request Sharing (CORS) <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">here</a>. There are workarounds, like proxies, but I figured I&rsquo;d just put the data directly into the JS to avoid any drama.</p>
+</li>
+<li>
+<p>When you serve up your JS for people to take to their own site, you have to make sure the MIME type of the linked script matches the file extension. If you try and hotlink the raw file from Github, this won&rsquo;t work. This is a feature, <a href="https://github.blog/2013-04-24-heads-up-nosniff-header-support-coming-to-chrome-and-firefox/">not a bug</a>, I was just nearly 11 years late to hear about it. There are workarounds, the best of which is probably using a CDN like <a href="https://www.jsdelivr.com/">jsdelivr</a>. You can also hotlink directly from your own website (which I was doing), but I don&rsquo;t like how this locks you in to your domain. I&rsquo;m a lot more likely to leave Neocities than I am to take my site off Github, so I recently (as in, like, yesterday) updated the take home widget to use a <a href="https://cdn.jsdelivr.net/gh/js044/nenrikido@main/static/js/misc/journalring.js">CDN link</a> of my Github JS, which is super simple to do on Jsdeliver. If you already put the widget on your site with the hardcoded JS file served with Neocities, don&rsquo;t worry, it&rsquo;s probably fine. I don&rsquo;t plan to leave Neocities anytime in the near future!</p>
+</li>
+<li>
+<p>The nenring template files are intended to be used with a webring that has multiple widget themes that can be assigned a different color to differentiate them. For each different theme, you should have a widget icon link and icon image links for your forward and back buttons. It also is set up to accommodate a structure for a webring that uses name, website title, website url, and site description fields. If any of this is different from your intended usecase, you&rsquo;ll have to modify the scripts to suit your needs.</p>
+</li>
+<li>
+<p>If you try to automate scanning your JSON list for dead links, you&rsquo;ll run into those pesky CORS errors again. Although I didn&rsquo;t want to use a CORS proxy in the take-home JS for everyone, I figured it&rsquo;s fine to do so in the actual admin file since it&rsquo;s for your own personal use. I chose <a href="https://allorigins.win/">allOrigins</a> because&hellip;it was the first one that actually worked. It&rsquo;s possible this tool will become obsolete at some point&ndash;if it does, you&rsquo;ll have to find a new one. I just really didn&rsquo;t want to have to manually check everyone&rsquo;s sites to make sure they&rsquo;re still there.</p>
+<ul>
+<li>If you want to log reachable sites in addition to dead links, you can change:</li>
+</ul>
+<pre tabindex="0"><code> .then(response =&gt; {
+    if (!response.ok) {
+      handleDeadLink(member.url);
+    }
+  })
+</code></pre><p>to</p>
+<pre tabindex="0"><code>.then(response =&gt; {
+    if (response.ok) {
+      console.log(`Link is reachable: ${member.url}`);
+    } else {
+      handleDeadLink(member.url);
+    }
+  })
+</code></pre><p>I mostly just removed the reachable sites bit with the thought that if someone has hundreds of sites listed, they&rsquo;ll probably get annoyed pretty quickly. But if you like to see all sites (or even just to check that it works), you can do this.</p>
+</li>
+</ol>
+<hr>
+<h2 id="the-webring-widget">II. The webring widget</h2>
+<p>My original plan for JournalRing was to create a Hobonichi widget, a Leuchtturm/Moleskin widget, a Mead widget, a Traveler&rsquo;s notebook widget, and a spiral bound notebook widget. I even made little doodles of what they were going to look like. I started with the Hobonichi widget, promptly realized how difficult pixel art is, and very rapidly abandoned the thought. Instead, I ended up making different colors for the Hobonichi widget. A stylish compromise if I say so myself.</p>
+<p>To this end, I primarily used <a href="https://libresprite.github.io">Libresprite</a>, a free and open source fork of the better known <a href="https://www.aseprite.org/">Aseprite</a>.</p>
+<a href="../../../images/blog/011324/librespriteprev.png" data-lightbox="journalring "> <img src="../../../images/blog/011324/librespriteprev.png" class="img-fluid" loading=""  width="" height="" alt="">  </a>
+<p>I&rsquo;ve been meaning to make a more in-depth post about Libresprite as part of my FOSS recommendations series. I used it to make my website button and found the experience overall very nice! I haven&rsquo;t used Aseprite for comparison, but I haven&rsquo;t found any features lacking in Libresprite that feel like a deal-breaker. That said, I&rsquo;m pretty much a pixel art n00b, as it were.</p>
+<p>Anyways, Libresprite has overlay layers, but I&rsquo;m so used to Clip Studio Paint&rsquo;s that I tossed in the pixels there for final processing. Not quite as FOSS, but what can I say. I&rsquo;m a creature of habit. I tweaked some of the colors to get different shades for the widgets. Once the widget colors were finalized, I made a forward and back button to match. I tried to get away with just using text arrows, but it didn&rsquo;t have the same pizzazz.</p>
+<p>Honestly, in retrospect, I wish I&rsquo;d made the journal widgets look more like stickers to match the journal thing I have going on. But I have even less experience making stickers than I do making pixel art, so maybe once I have a little more experience. If I ever do update the links to the widget icons in the code, it will end up updating on everyone&rsquo;s page, which is an unsettling amount of power. Theoretically, you could link it to whatever you wanted, even Sasuke doing a Fortnite dance.</p>
+<p>I swear if I ever update the widgets, they will be cute enough to justify it. I think they look fine as is, but I still don&rsquo;t have much pixel art wisdom to share. Make sure it looks good small!</p>
+<hr>
+<h2 id="the-webring-sign-up-form">III. The webring sign-up form</h2>
+<p>Not much of a webring if it&rsquo;s just you. You&rsquo;ll want to set up a form. You cannot do this natively with a static site. But don&rsquo;t fear&hellip;there are bountiful options if you have a static site. You can also use this if you don&rsquo;t have a static site, but  just don&rsquo;t want to deal with the backend. Up to you!</p>
+<ol>
+<li><strong><a href="https://formspree.io/">Formspree.io</a></strong>: This is what I used for JournalRing, and I was very happy with how simple it is to set up (even if you only get 50 submissions per month on their free tier, which is half of some of the other offerings). I love Formspree because it&rsquo;s just a backend for form management, which means you can style it however you want, which is a paid feature for many other form builders. Be aware you can&rsquo;t have file uploads on their free plan (like a site button), but you can have people input a link to files if you want a workaround.</li>
+<li><strong><a href="https://www.netlify.com/">Netlify</a></strong>: If you use Netlify to deploy your site, you should be aware that it <a href="https://docs.netlify.com/forms/setup/">ships with forms</a>! There are limited submissions on their free tier (100 per month), but that&rsquo;s more than enough for small projects like this (and double what Formspree allows).</li>
+<li><strong><a href="https://tally.so/">Tally.so</a></strong>: Tally.so is pretty cool and fairly customizable for a form generator. You embed the code of the form into your site, and you can&rsquo;t just use it as a backend like Jotform (and so there&rsquo;s more limited customizability). But you can also embed forms with file uploads pretty easily.</li>
+<li><strong><a href="https://www.airtable.com/">Airtable</a></strong>: I haven&rsquo;t used Airtable that extensively, so I can&rsquo;t really speak to its benefits, but I have seen some webrings that are using it. So I know it&rsquo;s a thing! It honestly looks a little intimidating to me though.</li>
+<li><strong><a href="https://docs.google.com/forms/u/0/">Google Forms</a></strong>: Note: you cannot embed a Google form if it also has a file upload. That said, it does the trick if you don&rsquo;t want to sign up anywhere and just want responses delivered to your inbox.</li>
+<li><strong><a href="https://www.jotform.com/">Jotform</a></strong>: Another popular WYSIWYG form builder, I believe one of the first. You can get 100 submissions per month on their free tier.</li>
+</ol>
+<p>Regardless of which of these options you choose, if you use nenring, you&rsquo;ll either want to stick with the preset fields (name, url, website title, website description, and email for contact) or modify the code to allow for things like a site button.</p>
+<p>If you do want to use Formspree, here is basically how I implemented it. You can view the <a href="https://github.com/js044/nenrikido/blob/main/assets/sass/webrings/journalring/form.scss">SCSS file</a> for my form styling as well (it&rsquo;s pretty simple!)</p>
+<pre tabindex="0"><code>&lt;form action=&#34;https://formspree.io/f/{form_id}&#34; method=&#34;POST&#34;&gt;
+&lt;input type=&#34;text&#34; id=&#34;name&#34; name=&#34;name&#34; required placeholder=&#34;Name&#34;&gt;
+&lt;input type=&#34;email&#34; id=&#34;email&#34; name=&#34;email&#34; required placeholder=&#34;Email (for contact only)&#34;&gt;
+&lt;input type=&#34;text&#34; id=&#34;website_title&#34; name=&#34;website_title&#34; required placeholder=&#34;Website Title&#34;&gt;
+&lt;input type=&#34;url&#34; id=&#34;website_url&#34; name=&#34;website_url&#34; required placeholder=&#34;Website URL&#34;&gt;
+&lt;textarea id=&#34;description&#34; name=&#34;description&#34; rows=&#34;4&#34; required placeholder=&#34;Website Description&#34;&gt;&lt;/textarea&gt;
+&lt;button type=&#34;submit&#34;&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+</code></pre><hr>
+<h2 id="the-webring-homepage">IV. The webring homepage</h2>
+<p>I thought, hey, wouldn&rsquo;t it be so cute to make a layout that emulates a journal?! With a highlighter, realistic pages, and journal tabs? So I nabbed a photo of the <a href="https://www.1101.com/store/techo/en/2024/pc/detail_cover/oc22_colorsdsoda/">Dreamy Soda case</a> from the Hobonichi Techo website and threw it into Photoshop to fix up. Then, I hunted down some graph paper to overlay on top of that picture, and voila!</p>
+<p>Well, sort of. I still had to do the actual coding part, and I hadn&rsquo;t thought all that far ahead. I just knew I really wanted to avoid using px with absolute positioning. I have a weird vendetta against px. Not very old-web of me, I know, but I wanted the journal container to behave more responsively, resizing to match the viewport at any size. This ended up being a pretty big challenge because what I fundamentally wanted was to mix responsive styling with non-responsive functioning and to break the zoom function, which was a bit&hellip;messy. The sloppy code is most noticeable with the stickers, which I will re-tool to be more code efficient someday. To make things mobile responsive, I just flipped everything 90 degrees to force a psuedo-landscape mode and called it a day (another good idea courtesy of Hors).</p>
+<p>I think it looks pretty good on most displays, except for whatever bizarre aspect ratio the Neocities screenshot tool uses to capture website updates. It looks like an atypical tablet-esque size? Whatever, it looks fine once I open it on most displays, which is good enough for me!</p>
+<a href="../../../images/blog/011324/homepage.png" data-lightbox="journalring "> <img src="../../../images/blog/011324/homepage.png" class="img-fluid" loading=""  width="" height="" alt="">  </a>
+<p>You can look at the SCSS folder <a href="https://github.com/js044/nenrikido/tree/main/assets/sass/webrings">on Github</a>. If that&rsquo;s too confusing, just know it can be broken down by the <a href="https://raw.githubusercontent.com/js044/nenrikido/main/assets/sass/webrings/journalring.scss">main SCSS</a>, and then the extra SCSS snippets which can be found <a href="https://github.com/js044/nenrikido/tree/main/assets/sass/webrings/journalring">here</a>. Fun fact: the body font has to use vw (view width) units to make any of this work.</p>
+<p>I initially set up my first spread with CSS page counters, but after implementing the journal tabs, I realized that they wouldn&rsquo;t count properly. Fundamentally, all the content on the JournalRing homepage is contained within one HTML file, specific sections for the left and right pages are just conditionally displayed or hidden depending on which tab is selected. Which confuses CSS counters. So I ended up just appending a page number to the headers with Javascript.</p>
+<p>I also wanted my &ldquo;Members&rdquo; list to resemble an address book, with pre-printed boxes to fill in. This was a little more complex than I expected because I separated the &ldquo;left&rdquo; and &ldquo;right&rdquo; pages (meaning that I had to define how many placeholder boxes should be there per page). Also, once there are more than 10 entries, there&rsquo;ll be previous and next buttons under the 10th entry, but I thought it&rsquo;d look strange to have them before then. Just generally a lot more JS logic than I&rsquo;d been anticipating!</p>
+<p>Because of how the journalring display script was developed, I ended up having to later extract the relevant script for people-who-aren&rsquo;t-me and turn it into the nenring-admin.js script. You can find the full layout js, including how I pulled the data from the other file, <a href="https://github.com/js044/nenrikido/blob/main/static/js/misc/journalring-display.js">here</a>.</p>
+<p>A big thing I discovered while attempting to access the membership data contained in the journalring.js file is that you should load both scripts on the same page, and you must load the file containing the members first. Additionally, you have to attach the JSON list to the window object. This works because if both JS files are used on the same page, they can both access the window object. So if you attach the JSON list to a window object and then load it alongside a script meant to pull that data, that other script can call it with something like  <code>window.membersData;</code> This is outlined within the nenring code comments, but it was important enough that I think it deserves its own paragraph.</p>
+<hr>
+<h2 id="conclusion">Conclusion</h2>
+<p>This was fun despite it all! I walked into the project expecting it to be difficult, but I wasn&rsquo;t expecting some of the roadblocks I hit along the way. I appreciate everyone&rsquo;s patience as I discovered crazy things about raw Github file MIME types, CORS errors, and window objects. I wanted to make sure things got ironed out before I released this blog post, but I still haven&rsquo;t done a fresh test of nenring, so use at your discretion and please do report any weirdness. I also don&rsquo;t know how clear this post is, apologies. I haven&rsquo;t proofread it all that much, and it was kind of written in one go. So if you have any questions, you&rsquo;re free to comment or email me. I hope I didn&rsquo;t leave anything too big out.</p>
+<p>I think webrings are one of the most fun aspects of the &ldquo;smallweb,&rdquo; so I highly encourage more people to make webrings. I&rsquo;m already thinking of making more&hellip;a yume webring would be fun, or maybe a shoujo one, or a marine biology one&hellip;who knows! Leave suggestions if you want, or go ahead and get started making your own. Good luck!</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item large">
+                    <div class="cards"><div class="cardsHeader">
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div><div class="cardsBody">
+                            <div id="comments">
+<div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
+<link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+<script type="text/javascript" id="hcb">   if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24wVz3xOOc.ZF1mLS1sR.Mp0"+"&opts=16782&num=10&ts=1680596795074");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); </script>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+</div>
+<footer id="footer">
+    <ul>
+        <li> <button id="footer-button">START</button> </li>
+        <li> <a href="#" id="btn-back-to-top" onclick="call()"><i class="fa-solid fa-circle-chevron-up"></i></a></li>
+        <li>
+            <div id="clock" class="clock" onload="showTime()"></div>
+        </li>
+    </ul>
+</footer>
+
+<div id="start-menu" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h1>START MENU</h1> <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+
+            <div class="modal-bio">
+                <img class="modal-bio img" src="../../../images/icons/sh.jpg">
+                <p style="font-size:large; font-weight:bold;">Rio's desktop</p>
+                <p align="center"><i class="fa-regular fa-map"></i> <a href="../../../sitemap">Sitemap</a></p>
+
+                <ul style="font-style: italic;">
+                    <li>OS: NENRIKIDO</li>
+                    <li>Version: 1.7</li>
+                    <li>Host: Neocities</li>
+                    <li>Processor: Hugo</li>
+                    <li>Since: 03-13-23</li>
+                </ul>
+            </div>
+            <div class="modal-list">  <a class="modal-menu " href="../../../">  <span>Home </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../about/">  <span>About </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../gallery/">  <span>Gallery </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../commissions/">  <span>Commissions </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../code/">  <span>Code </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../blog/">  <span>Blog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../links/">  <span>Links </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../microblog/">  <span>Microblog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../library/">  <span>Library </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../nexus/">  <span>Nexus </span> <i class="fa-solid fa-chevron-right"></i></a>  </div>
+
+        </div>
+        <div class="modal-footer"><div class="row centered">
+    <button id="pink" title="pink theme" class="theme-button" onclick="handleThemeButtonClick('pink', this)">💗</button>
+    <button id="blue" title="blue theme" class="theme-button" onclick="handleThemeButtonClick('blue', this)" >🫧</button> 
+    <button id="yellow" title="yellow theme" class="theme-button" onclick="handleThemeButtonClick('yellow', this)" >🪐</button> 
+    <button id="black" title="black theme" class="theme-button" onclick="handleThemeButtonClick('black', this)" >💤</button>
+    <button id="green" title="green theme" class="theme-button" onclick="handleThemeButtonClick('green', this)" >🌷</button>    
+</div></div>
+    </div>
+    <script>
+        function call() {
+            var body = $("html, body");
+            body.stop().animate({ scrollTop: 0 }, 500, 'swing', function () {
+            });
+        }</script>
+    <script type="text/javascript" src="../../../js/clock.js"></script>
+    <script defer type="text/javascript" src="../../../js/start.js"></script><script src="../../../js/theme.js" ></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
+<script defer src="../../../js/muuri-init.js"></script>
+<script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+<script defer src="../../../js/lightbox.js" ></script>
+<script defer src="../../../js/yt_lite.js" ></script>
+<script defer src="https://unpkg.com/lunr/lunr.js"></script>
+<script defer src="../../../js/search.js" ></script>
+<script>
+  var loader = document.getElementById("preloader");
+  window.addEventListener("load", function () {
+    loader.style.display = "none";
+  });
+  var s = document.getElementById("preloader").style;
+  s.opacity = 1;
+  (function fade() {
+    (s.opacity -= 0.1) < 0 ? (s.display = "none") : setTimeout(fade, 40);
+  })();
+  </script>
+  <script>
+    twemoji.parse(document.body)
+  </script></body>
+
+</html>

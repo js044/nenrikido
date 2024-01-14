@@ -8,6 +8,7 @@ draft: false
 {{< icons/hashtag >}} [webrings](#webrings)  
 {{< icons/hashtag >}} [fanlistings](#fanlistings)  
 {{< icons/hashtag >}} [button wall](#button-wall)   
+{{< icons/hashtag >}} [credits](#credits)   
 {{< icons/hashtag >}} [resources](#resources)  
 {{< /nav >}}
 
@@ -93,6 +94,7 @@ draft: false
 {{< buttons img-src="/images/buttons/angel99button2.gif" link="https://angel99.neocities.org/">}}                                    
 {{< buttons img-src="/images/buttons/cinni-88x31-hamham.gif" link="https://cinni.net/">}}                            
 {{< buttons img-src="/images/buttons/osaka.gif" link="https://osaka.neocities.org/">}}
+{{< buttons img-src="/images/buttons/10kph-02.png" link="https://10kph.neocities.org/">}}
 {{< buttons img-src="/images/buttons/lovesick-button1.png" link="https://www.lovesick.cafe/">}}
 {{< buttons img-src="/images/buttons/teddybearhalo.gif" link="https://teddybear-halo.neocities.org/">}}                                
 {{< buttons img-src="/images/buttons/zanarkland.gif" link="https://zanarkand.neocities.org/">}}   
@@ -193,6 +195,27 @@ draft: false
 {{< /col-sm >}} 
 {{< /row-centered >}}
 {{< /box-small >}}
+{{< /card-large >}}
+
+{{< card-large title="#CREDITS" >}} 
+{{< scrollbox >}}
+{{< col-sm >}}
+{{< banner img-src="/images/buttons/hugo-l.svg" link="https://gohugo.io/" loading="lazy" width="" height="" alt="hugo logo" descr="generator" >}}
+{{< banner img-src="/images/buttons/muuri.svg" link="https://muuri.dev/" loading="lazy" width="" height="" alt="muuri logo"  descr="library" >}}  
+{{< banner img-src="/images/buttons/strovi.png" link="https://strovi.neocities.org/" loading="lazy" width="" height="" alt="strovi button" descr="pixels" >}} 
+{{< banner img-src="/images/buttons/foollovers.gif" link="https://foollovers.com/" loading="lazy" width="" height="" alt="animated pixel for fool lovers" descr="pixels" >}} 
+{{< banner img-src="/images/buttons/13mo.jpg" link="https://13mo.tumblr.com/" loading="lazy" width="30" height="30" descr="pixels" >}} 
+{{< banner img-src="/images/buttons/paul-j.png" link="https://www.flaticon.com/authors/paul-j/" loading="lazy" width="64" height="34" alt="banner of stylized smiling person" descr="icons" >}}
+{{< banner img-src="/images/buttons/freepik.jpg" link="https://www.flaticon.com/authors/freepik/" loading="lazy" width="" height="" alt="robot on a button" descr="icons" >}} 
+{{< banner img-src="/images/buttons/win98.png" link="https://win98icons.alexmeub.com/" loading="lazy" width="38" height="30" alt="windows 98 style computer icon" descr="icons" >}} 
+{{< banner img-src="/images/buttons/fontawesome.png" link="https://fontawesome.com/" loading="lazy" width="56" height="40" alt="icon for fontawesome" descr="icons" >}}
+{{< banner img-src="/images/buttons/twe.png" link="https://twemoji.twitter.com/" loading="lazy" width="" height="" descr="icons" >}}
+{{< banner img-src="/images/buttons/gifypet.gif" link="https://gifypet.neocities.org/" loading="lazy" width="" height="" alt="animated gifypet button" descr="gifypet" >}} 
+{{< banner img-src="/images/buttons/fc2.png" link="https://counter.fc2.com/en/index.html/" loading="lazy" width="" height="" alt="a button to fc2 counters" descr="counter" >}} 
+{{< banner img-src="/images/buttons/cbox.png" link="https://www.cbox.ws/" loading="lazy" width="" height="" alt="speech bubble button saying CBOX" descr="chatbox" >}} 
+{{< banner img-src="/images/buttons/code-boxx.png" link="https://code-boxx.com/custom-audio-player-playlist/" loading="lazy" width="" height="" alt="logo for code boxx website" descr="playlist" >}} 
+{{< /col-sm >}}
+{{< /scrollbox >}}
 {{< /card-large >}}
 
 {{< card-large title="#WEB DEV RESOURCES" id="resources">}}

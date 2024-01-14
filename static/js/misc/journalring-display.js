@@ -73,7 +73,7 @@ if (lastTab) {
   showContent('about');
 }
 
-// Add members to Members list from JSON file
+// Add members to Members list from JSON
 const data = window.membersData;
 const pageSize = 10; // Number of items per page
 let currentPage = 1; // Current page
@@ -85,15 +85,7 @@ const totalEntries = data.length; // Total entries from JSON
      memberCountElement.innerHTML = `Member count: <span class="written highlight">${totalEntries}</span>`;
    }
 
-  // Function to format the date as "1/1/24"
-function formatDate(date) {
-  const day = date.getDate();
-  const month = date.getMonth() + 1; // Month is zero-based
-  const year = date.getFullYear().toString().slice(2); // Get last 2 digits of the year
-
-  return `${month}/${day}/${year}`;
-}
-
+   // Create boxes on members page
 function createMemberBox(member) {
   const memberBox = document.createElement('div');
   memberBox.classList.add('member-box');
@@ -166,8 +158,6 @@ function displayMembersForPage(page) {
   const leftMembersContainer = document.querySelector('.left-page .members-page');
   const rightMembersContainer = document.querySelector('.right-page .members-page');
 
-  
-
   // Initial setup for displaying the first page
   displayMembersForPage(currentPage);
   
@@ -201,5 +191,3 @@ function displayMembersForPage(page) {
     }
   });
   
-
-

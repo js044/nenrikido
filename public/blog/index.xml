@@ -8,6 +8,13 @@
     <language>en-us</language>
     <atom:link href="https://nenrikido.neocities.org/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Making a Webring: The Creation of JournalRing</title>
+      <link>https://nenrikido.neocities.org/blog/post/journalring/</link>
+      <pubDate>Sat, 13 Jan 2024 20:02:44 -0400</pubDate>
+      <guid>https://nenrikido.neocities.org/blog/post/journalring/</guid>
+      <description>I made a webring and so can you! Tips, tricks, and mistakes.</description>
+    </item>
+    <item>
       <title>Mega Site Update</title>
       <link>https://nenrikido.neocities.org/blog/post/mega-site-update/</link>
       <pubDate>Sun, 10 Dec 2023 20:14:19 -0400</pubDate>
