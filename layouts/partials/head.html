@@ -12,7 +12,7 @@
         {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end -}}
 
-    {{ $style := resources.Get "/sass/main.scss" | toCSS | minify | fingerprint }}
+    {{ $style := resources.Get "/sass/main.scss" | toCSS "css/main.css" | minify | fingerprint }}
     <link href="{{ $style.RelPermalink }}" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 

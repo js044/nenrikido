@@ -16,7 +16,7 @@
   integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
   crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-{{ $style := resources.Get "/sass/webrings/journalring.scss" | toCSS | minify | fingerprint }}
+{{ $style := resources.Get "/sass/webrings/journalring.scss" | toCSS "css/webrings/journalring.css" | minify | fingerprint }}
 <link href="{{ $style.RelPermalink }}" rel="stylesheet">
 
 <body>

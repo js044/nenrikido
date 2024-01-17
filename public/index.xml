@@ -6,6 +6,13 @@
         <link>https://nenrikido.neocities.org/</link>
         
             <item>
+                <title>2024-01-17</title>
+                <link></link>
+                <description>small changes. updated my hugo assets pipeline and fixed a clock error, added the neocreatives webring, reformatted my updates section.</description>
+                <pubDate>Wed, 17 Jan 2024 00:00:00 UTC</pubDate>
+            </item>
+        
+            <item>
                 <title>2024-01-14</title>
                 <link></link>
                 <description>new blog post about how to make a &lt;a href=&#39;https://nenrikido.neocities.org/blog/post/journalring/&#39;&gt;webring&lt;/a&gt;</description>

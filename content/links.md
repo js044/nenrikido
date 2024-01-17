@@ -49,6 +49,8 @@ draft: false
 
 <journal-ring icon="lavender"></journal-ring> <script async src="https://cdn.jsdelivr.net/gh/js044/nenrikido@main/static/js/misc/journalring.js"></script>
 
+<div id='ncring' style="background: none;"><script type="text/javascript" src="https://neocreatives.neocities.org/onionring-variables.js"></script><script type="text/javascript" src="https://neocreatives.neocities.org/onionring-widget.js"></script></div>
+
 {{< /col >}}
 {{< /large-scrollbox >}}
 {{< /box-small >}}

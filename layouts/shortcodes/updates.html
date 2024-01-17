@@ -2,7 +2,7 @@
 <ul>
 {{ range $updates }}
 <li>
-<span style="font-weight: bold;">{{ .date }}</span>: {{ .description | markdownify }}
+<span style="font-weight: bold;">{{ .date | dateFormat "1-2-06" }}</span>: {{ .description | markdownify }}
 </li>
 {{ end }}
 </ul>
