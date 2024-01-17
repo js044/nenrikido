@@ -199,7 +199,7 @@ draft: false
 {{< /box-small >}}
 {{< /card-large >}}
 
-{{< card-large title="#CREDITS" >}} 
+{{< card-large title="#CREDITS" id="credits">}} 
 {{< scrollbox >}}
 {{< col-sm >}}
 {{< banner img-src="/images/buttons/hugo-l.svg" link="https://gohugo.io/" loading="lazy" width="" height="" alt="hugo logo" descr="generator" >}}
