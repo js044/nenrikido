@@ -34,7 +34,55 @@ window.membersData = [
         "websiteTitle": "Lovesick",
         "url": "https://lovesick.cafe/",
         "description": "a love letter to my interests"
-    }
+    },
+    {
+        "name": "Naila Moonsi",
+        "websiteTitle": "starlit seas",
+        "url": "https://starlitseas.neocities.org/",
+        "description": "a site with notes about and artwork involving OCs"
+    },
+    {
+        "name": "Whiona",
+        "websiteTitle": "whiona.me",
+        "url": "https://whiona.me/",
+        "description": "A personal website that contains my creative works and other fun stuff!"
+    },
+    {
+        "name": "Sarah",
+        "websiteTitle": "Inkcaps",
+        "url": "https://inkcaps.neocities.org/",
+        "description": "A cottage tucked away in fairyland."
+    },
+    {
+        "name": "Mima",
+        "websiteTitle": "sylum's asylum",
+        "url": "https://sylum.web.fc2.com/",
+        "description": "A place to talk about whatever I want to!"
+    },
+    {
+        "name": "des",
+        "websiteTitle": "doqmeat",
+        "url": "https://doqmeat.neocities.org/",
+        "description": "personal website full of things i enjoy and love."
+    },
+    {
+        "name": "chronodove",
+        "websiteTitle": "→ post-apocalyptic dove",
+        "url": "https://chronodove.neocities.org/",
+        "description": "a personal damp cave, spooky 👻"
+    },
+    {
+        "name": "Liz",
+        "websiteTitle": "LizOnline",
+        "url": "https://lizonline.neocities.org/",
+        "description": "A red and white, mobile-friendly crash pad on the 'net. Stop by anytime for optimism and fandom commentary."
+    },
+    {
+        "name": "Krish",
+        "websiteTitle": "Princess Diaries",
+        "url": "https://blog.sanguineroyal.com/",
+        "description": "Princess Diaries is my (Krish's) subsite for my personal blog. It exists separately from my personal site to allow my inconsistent ramblings to breathe."
+    },
 ];        
 
 class JournalRing extends HTMLElement {
