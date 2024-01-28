@@ -12,10 +12,22 @@ window.membersData = [
         "description": "Enthusiastic doll and pen blogging."
     },
     {
+        "name": "Lapin",
+        "websiteTitle": "Lovesick",
+        "url": "https://lovesick.cafe/",
+        "description": "a love letter to my interests"
+    },
+    {
         "name": "Orin",
         "websiteTitle": "cable world",
         "url": "https://22yk01.neocities.org/",
         "description": "Personal blog"
+    },
+    {
+        "name": "Mima",
+        "websiteTitle": "sylum's asylum",
+        "url": "https://sylum.web.fc2.com/",
+        "description": "A place to talk about whatever I want to!"
     },
     {
         "name": "Jessy",
@@ -28,13 +40,13 @@ window.membersData = [
         "websiteTitle": "Arunyi",
         "url": "https://arunyi.art/",
         "description": "My personal website!"
-    },
+    },  
     {
-        "name": "Lapin",
-        "websiteTitle": "Lovesick",
-        "url": "https://lovesick.cafe/",
-        "description": "a love letter to my interests"
-    },
+        "name": "Yeger",
+        "websiteTitle": "Yeger",
+        "url": "https://yeger.neocities.org/",
+        "description": "Blog about my life, thoughts and passions (technology and languages)!"
+    },  
     {
         "name": "Naila Moonsi",
         "websiteTitle": "starlit seas",
@@ -52,13 +64,7 @@ window.membersData = [
         "websiteTitle": "Inkcaps",
         "url": "https://inkcaps.neocities.org/",
         "description": "A cottage tucked away in fairyland."
-    },
-    {
-        "name": "Mima",
-        "websiteTitle": "sylum's asylum",
-        "url": "https://sylum.web.fc2.com/",
-        "description": "A place to talk about whatever I want to!"
-    },
+    },    
     {
         "name": "des",
         "websiteTitle": "doqmeat",
