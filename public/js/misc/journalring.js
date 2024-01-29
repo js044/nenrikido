@@ -89,6 +89,12 @@ window.membersData = [
         "url": "https://blog.sanguineroyal.com/",
         "description": "Princess Diaries is my (Krish's) subsite for my personal blog. It exists separately from my personal site to allow my inconsistent ramblings to breathe."
     },
+    {
+        "name": "Beeku",
+        "websiteTitle": "Beeku's Arcade",
+        "url": "https://digibun.neocities.org/",
+        "description": "A personal site filled with my art, hobbies, and written & photo blogs. Interests include bunnies, rhythm games, journal&planner spreads, and all things cute."
+    },
 ];        
 
 class JournalRing extends HTMLElement {
