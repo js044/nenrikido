@@ -3,7 +3,7 @@ window.membersData = [
         "name": "Rio",
         "websiteTitle": "Nenrikido",
         "url": "https://nenrikido.neocities.org/",
-        "description": "A multi-purpose personal site."
+        "description": "A multi-purpose personal site with free-to-use code, an art gallery, a library, and anything else I like."
     },
     {
         "name": "Hors",
@@ -73,7 +73,7 @@ window.membersData = [
     },
     {
         "name": "chronodove",
-        "websiteTitle": "→ post-apocalyptic dove",
+        "websiteTitle": "post-apocalyptic dove",
         "url": "https://chronodove.neocities.org/",
         "description": "a personal damp cave, spooky 👻"
     },
@@ -94,6 +94,12 @@ window.membersData = [
         "websiteTitle": "Beeku's Arcade",
         "url": "https://digibun.neocities.org/",
         "description": "A personal site filled with my art, hobbies, and written & photo blogs. Interests include bunnies, rhythm games, journal&planner spreads, and all things cute."
+    },
+    {
+        "name": "mala",
+        "websiteTitle": "ophanimkei",
+        "url": "https://ophanimkei.com/",
+        "description": "A personal website filled with artworks, musings, and various other things."
     },
 ];        
 

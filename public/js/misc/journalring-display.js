@@ -165,29 +165,35 @@ function displayMembersForPage(page) {
   const totalPages = Math.ceil(totalEntries / pageSize);
   const prevButton = document.getElementById('prevButton');
   const nextButton = document.getElementById('nextButton');
-
-  if (totalPages > 1) {
-    // Show the buttons if there are more than 10 entries
-    prevButton.style.display = 'block';
-    nextButton.style.display = 'block';
-  } else {
-    // Hide the buttons if there are 10 or fewer entries
-    prevButton.style.display = 'none';
-    nextButton.style.display = 'none';
-  }
-
+  
+  updateButtonVisibility(); // Call this function to set initial button visibility
   prevButton.addEventListener('click', () => {
     if (currentPage > 1) {
       currentPage--;
       displayMembersForPage(currentPage);
+      updateButtonVisibility();
     }
   });
-
+  
   nextButton.addEventListener('click', () => {
-    const totalPages = Math.ceil(totalEntries / pageSize);
     if (currentPage < totalPages) {
       currentPage++;
       displayMembersForPage(currentPage);
+      updateButtonVisibility();
     }
   });
+  
+  function updateButtonVisibility() {
+    if (currentPage === 1) {
+      prevButton.style.display = 'none';
+    } else {
+      prevButton.style.display = 'block';
+    }
+  
+    if (currentPage === totalPages) {
+      nextButton.style.display = 'none';
+    } else {
+      nextButton.style.display = 'block';
+    }
+  }
   
