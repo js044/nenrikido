@@ -22,9 +22,6 @@ sectionPagesMenu = "main"
 [markup.goldmark.renderer]
 unsafe = true
 
-[params]
-  journalring_access_key = "{{ secrets.JOURNALRING_ACCESS_KEY }}"
-
 [permalinks]
 blog = "/blog/post/:filename/"
 
