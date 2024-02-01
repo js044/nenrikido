@@ -4,7 +4,6 @@ languageCode = "en-us"
 relativeURLS = true
 title = "NENRIKIDO"
 
-
 [frontmatter]
 date = [ "date", "publishDate", "lastmod" ]
 lastmod = [ "lastmod", ":fileModTime", ":default" ]
@@ -22,6 +21,9 @@ sectionPagesMenu = "main"
 
 [markup.goldmark.renderer]
 unsafe = true
+
+[params]
+  journalring_access_key = "{{ secrets.JOURNALRING_ACCESS_KEY }}"
 
 [permalinks]
 blog = "/blog/post/:filename/"

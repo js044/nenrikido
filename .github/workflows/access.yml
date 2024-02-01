@@ -1,0 +1,10 @@
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      - name: Set Hugo Configuration
+        run: sed -i 's/JOURNALRING_ACCESS_KEY/${{ secrets.JOURNALRING_ACCESS_KEY }}/g' config.toml
+      - name: Build Hugo Site
+        run: hugo

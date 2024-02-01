@@ -19,6 +19,10 @@ body {
   transition: background-color 0.2s ease;
   background: url('/images/webrings/journalring/x14-bg-checked.gif');
 
+  ::selection {
+    background: $highlightColor;
+  }
+
   ol {
     list-style-type: integer;
 
@@ -203,7 +207,7 @@ body {
               border-top: 1px solid;
               width: 100%;
               padding: 0 auto;
-              max-height: 3.5rem;
+              max-height: 2.2rem;
               overflow-y: auto;
             }
           }

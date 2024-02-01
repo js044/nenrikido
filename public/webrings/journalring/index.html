@@ -12,7 +12,7 @@
   crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-<link href="../../css/webrings/journalring.min.86f2f9986fd89290d962788a0e016cf3d6537feb490f392169a6fc02a742fb4f.css" rel="stylesheet">
+<link href="../../css/webrings/journalring.min.1214b8d442fa6c685f4fef08e183399c5f4b36c5a0d2f877d8f62eac499dbd7b.css" rel="stylesheet">
 
 <body>
   <div class="journal-container">
@@ -222,14 +222,17 @@
           <p>Interested? Sign up here!</p>        
         </article>
 
-        <form action="https://formspree.io/f/mdoqogae" method="POST">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="{{ secrets.JOURNALRING_ACCESS_KEY }}">
+          
           <input type="text" id="name" name="name" required placeholder="Name">
           <input type="email" id="email" name="email" required placeholder="Email (for contact only)">
           <input type="text" id="website_title" name="website_title" required placeholder="Website Title">
           <input type="url" id="website_url" name="website_url" required placeholder="Website URL">
           <textarea id="description" name="description" rows="4" required placeholder="Website Description"></textarea>
+          
           <button type="submit">Submit</button>
-        </form>        
+      </form>            
 
       </div>
       <div class="tabs">

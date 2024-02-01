@@ -101,6 +101,24 @@ window.membersData = [
         "url": "https://ophanimkei.com/",
         "description": "A personal website filled with artworks, musings, and various other things."
     },
+    {
+        "name": "M",
+        "websiteTitle": "the garden of madeline",
+        "url": "https://thegardenofmadeline.neocities.org/",
+        "description": "a personal website & little cyber sanctuary full of art, vintage archives, literature, & a myriad of random little joys."
+    },
+    {
+        "name": "Margot",
+        "websiteTitle": "Fairygore",
+        "url": "https://fairygore.neocities.org/",
+        "description": "a cute place for me to host my thoughts. re:this ring, i have a journal on the site as well as a section for my writing! i am a notebook lover <3"
+    },
+    {
+        "name": "Matt",
+        "websiteTitle": "Saddleblasters",
+        "url": "https://saddleblasters.neocities.org/",
+        "description": "Descriptions of Shanghai, people, weather, and Chinese experimental music."
+    },
 ];        
 
 class JournalRing extends HTMLElement {
