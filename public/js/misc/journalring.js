@@ -119,6 +119,12 @@ window.membersData = [
         "url": "https://saddleblasters.neocities.org/",
         "description": "Descriptions of Shanghai, people, weather, and Chinese experimental music."
     },
+    {
+        "name": "hibikimorada",
+        "websiteTitle": "tabatinga",
+        "url": "https://tabatinga.co/",
+        "description": "personal website with a blog and various creative stuff."
+    },
 ];        
 
 class JournalRing extends HTMLElement {
