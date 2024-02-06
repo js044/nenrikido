@@ -75,12 +75,12 @@ draft: false
 {{< box-small >}}
 {{< large-scrollbox >}}
 {{< col-sm >}}
-{{< buttons img-src="/images/buttons/museum.png" link="https://xandra.cc/">}} 
 {{< buttons img-src="/images/buttons/lazybgif.gif" link="https://lazybones.neocities.org/">}}  
 {{< buttons img-src="/images/buttons/whimsical.gif" link="http://whimsical.heartette.net/">}} 
 {{< buttons img-src="/images/buttons/leusyth.png" link="https://leusyth.neocities.org/">}}         
 {{< buttons img-src="/images/buttons/nonkiru.gif" link="https://nonkiru.art/">}}  
 {{< buttons img-src="/images/buttons/arunyi.gif" link="https://www.arunyi.art/">}}    
+{{< buttons img-src="/images/buttons/cloverbell.gif" link="https://cloverbell.neocities.org/" >}}  
 {{< buttons img-src="/images/buttons/mn1ca.gif" link="https://mn1ca.neocities.org/">}}    
 {{< buttons img-src="/images/buttons/Eggdev.gif" link="https://eggdev.neocities.org/">}}    
 {{< buttons img-src="/images/buttons/turd.png" link="https://turd.neocities.org/">}}      
@@ -88,11 +88,11 @@ draft: false
 {{< buttons img-src="/images/buttons/kyu.gif" link="https://kyu.neocities.org/">}}      
 {{< buttons img-src="/images/buttons/sunmiflowers.png" link="https://sunmiflowers.neocities.org/">}}     
 {{< buttons img-src="/images/buttons/ita.gif" link="https://ita.toys/">}}    
-{{< buttons img-src="/images/buttons/aoi.gif" link="https://a0i.neocities.org/">}}    
 {{< buttons img-src="/images/buttons/dokodemobutton3.gif" link="https://dokode.moe/">}}     
 {{< buttons img-src="/images/buttons/bearwinky.gif" link="https://myfancybear.neocities.org/">}}  
 {{< buttons img-src="/images/buttons/LostLetters88x31.gif" link="https://lostletters.neocities.org/">}}    
-{{< buttons img-src="/images/buttons/zucchini.gif" link="https://zucchini.cc/">}}                                
+{{< buttons img-src="/images/buttons/zucchini.gif" link="https://zucchini.cc/">}}    
+{{< buttons img-src="/images/buttons/hat.gif" link="https://hat.neocities.org/">}}                                  
 {{< buttons img-src="/images/buttons/angel99button2.gif" link="https://angel99.neocities.org/">}}                                    
 {{< buttons img-src="/images/buttons/cinni-88x31-hamham.gif" link="https://cinni.net/">}}                            
 {{< buttons img-src="/images/buttons/osaka.gif" link="https://osaka.neocities.org/">}}
@@ -113,18 +113,29 @@ draft: false
 {{< buttons img-src="/images/buttons/kie.gif" link="https://ophanimkei.com/" >}}    
 {{< buttons img-src="/images/buttons/allyrat.png" link="https://allyratworld.com/">}}   
 {{< buttons img-src="/images/buttons/sugarvamp.png" link="https://sugarvamp.neocities.org/">}}
-{{< buttons img-src="/images/buttons/lovetinybutton.gif" link="https://www.lovetiny.art/">}}  
 {{< buttons img-src="/images/buttons/nefbutton.gif" link="https://nef.neocities.org/">}}   
 {{< buttons img-src="/images/buttons/sanguineroyalbutton.gif" link="https://sanguineroyal.com/">}}  
 {{< buttons img-src="/images/buttons/vivarism_02.png" link="https://vivarism.net/">}}    
+{{< buttons img-src="/images/buttons/sylum.gif" link="https://sylum.web.fc2.com/">}}  
 {{< buttons img-src="/images/buttons/bikobatanari.png" link="https://www.bikobatanari.art/">}} 
 {{< buttons img-src="/images/buttons/nyaa.gif" link="https://nyaa.neocities.org/">}}      
 {{< buttons img-src="/images/buttons/vencake.png" link="https://vencake.neocities.org/">}} 
 {{< buttons img-src="/images/buttons/retasubutton.png" link="https://retasu.neocities.org/">}}  
 {{< buttons img-src="/images/buttons/pom.gif" link="https://pomelo.lol/">}}       
+{{< buttons img-src="/images/buttons/pastel.gif" link="https://pastelhello.com/">}}    
+{{< buttons img-src="/images/buttons/sakana.png" link="https://sakana.neocities.org/">}}       
 {{< buttons img-src="/images/buttons/claeiy.gif" link="https://claeiy.neocities.org/">}}   
 {{< buttons img-src="/images/buttons/fuchi.jpeg" link="https://fuchi.neocities.org/">}}  
-{{< buttons img-src="/images/buttons/hat.gif" link="https://hat.neocities.org/">}}      
+{{< buttons img-src="/images/buttons/coils.png" link="https://coils.neocities.org/">}} 
+{{< buttons img-src="/images/buttons/link_malta.gif" link="https://daikonet.neocities.org/" >}}
+{{< buttons img-src="/images/buttons/dimden.gif" link="https://dimden.dev/">}}
+{{< buttons img-src="/images/buttons/lonelyjulybutton.gif" link="https://lonelyjuly.online/">}}
+{{< buttons img-src="/images/buttons/lunospace.gif" link="https://lostlove.neocities.org/">}}
+{{< buttons img-src="/images/buttons/cpnk.gif" link="https://seapunk.xyz/">}}  
+{{< buttons img-src="/images/buttons/nostalgic.gif" link="https://nostalgic.neocities.org/">}} 
+{{< buttons img-src="/images/buttons/doghouse1.gif" link="https://dog-house.neocities.org/">}}
+{{< buttons img-src="/images/buttons/sadgrlonline.gif" link="https://sadgrl.online/">}} 
+{{< buttons img-src="/images/buttons/omoulo.png" link="https://omoulo.com/">}} 
 {{< buttons img-src="/images/buttons/denpa.gif" link="https://denpa.neocities.org/">}}     
 {{< buttons img-src="/images/buttons/nyanseong-wink.png" link="https://nyanseong.neocities.org/">}} 
 {{< buttons img-src="/images/buttons/spiders.gif" link="https://spiders.neocities.org/">}}   
@@ -139,19 +150,8 @@ draft: false
 {{< buttons img-src="/images/buttons/grossgirl94.gif" link="https://grossgirl94.neocities.org/">}} 
 {{< buttons img-src="/images/buttons/laika.jpg" link="https://voyager.neocities.org/">}}  
 {{< buttons img-src="/images/buttons/doqmeat.png" link="https://doqmeat.neocities.org/">}}  
-{{< buttons img-src="/images/buttons/link_malta.gif" link="https://daikonet.neocities.org/" >}}
-{{< buttons img-src="/images/buttons/dimden.gif" link="https://dimden.dev/">}}
-{{< buttons img-src="/images/buttons/lonelyjulybutton.gif" link="https://lonelyjuly.online/">}}
-{{< buttons img-src="/images/buttons/lunospace.gif" link="https://lostlove.neocities.org/">}}
-{{< buttons img-src="/images/buttons/cpnk.gif" link="https://seapunk.xyz/">}}  
-{{< buttons img-src="/images/buttons/cloverbellbanner.gif" link="https://cloverbell.neocities.org/" >}}  
-{{< buttons img-src="/images/buttons/nostalgic.gif" link="https://nostalgic.neocities.org/">}} 
-{{< buttons img-src="/images/buttons/doghouse1.gif" link="https://dog-house.neocities.org/">}}
-{{< buttons img-src="/images/buttons/sadgrlonline.gif" link="https://sadgrl.online/">}} 
-{{< buttons img-src="/images/buttons/omoulo.png" link="https://omoulo.com/">}} 
 {{< buttons img-src="/images/buttons/22yk01.png" link="https://22yk01.neocities.org/">}} 
 {{< buttons img-src="/images/buttons/joebuck.gif" link="https://joebuck.neocities.org/">}}
-{{< buttons img-src="/images/buttons/marzka_cafe_88x31.png" link="https://marzka.cafe/">}} 
 {{< buttons img-src="/images/buttons/rgbteahouse.jpg" link="https://rgbteahouse.neocities.org/">}}   
 {{< buttons img-src="/images/buttons/onio.gif" link="https://onio.cafe/">}}  
 {{< buttons img-src="/images/buttons/simone.gif" link="https://simone.computer/">}}  
@@ -163,9 +163,9 @@ draft: false
 {{< buttons img-src="/images/buttons/fizzsea8831.gif" link="https://fizzsea.neocities.org/">}}  
 {{< buttons img-src="/images/buttons/eve.png" link="https://evemarie.neocities.org/">}}   
 {{< buttons img-src="/images/buttons/cabbagesorter.gif" link="https://cabbagesorter.neocities.org/">}}
+{{< buttons img-src="/images/buttons/surf.png" link="https://surf-dream.neocities.org/">}}
 {{< buttons img-src="/images/buttons/gothiclolita.png" link="https://gothiclolita.neocities.org/">}}   
 {{< buttons img-src="/images/buttons/bizarrebanner.png" link="https://bizarredollhouse.neocities.org/">}} 
-{{< buttons img-src="/images/buttons/sylum.gif" link="https://sylum.web.fc2.com/">}}  
 {{< buttons img-src="/images/buttons/arlita.gif" link="https://arlita.neocities.org/">}} 
 {{< buttons img-src="/images/buttons/taro.gif" link="https://tarocchilla.neocities.org/" >}} 
 {{< buttons img-src="/images/buttons/pazbutton2.gif" link="https://paz01997.neocities.org/" >}}  
@@ -180,6 +180,7 @@ draft: false
 {{< buttons img-src="/images/buttons/nokocchi.gif" link="https://nokocchi.com/">}} 
 {{< buttons img-src="/images/buttons/wiggle.gif" link="https://crypticcryptid.neocities.org/" >}} 
 {{< buttons img-src="/images/buttons/scarecrowkid.gif" link="https://scarecrowkid.net/">}} 
+{{< buttons img-src="/images/buttons/museum.png" link="https://xandra.cc/">}} 
 {{< buttons img-src="/images/buttons/fwoofies.gif" link="https://fwoofies.neocities.org/">}}  
 {{< buttons img-src="/images/buttons/middlepot.png" link="https://middlepot.com/">}} 
 {{< /col-sm >}}

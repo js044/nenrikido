@@ -1,4 +1,6 @@
 updates:
+- date: "2024-01-06"
+  description: "cleaned up the button wall/outbound links section a bit, nothing major."
 - date: "2024-01-17"
   description: "small changes. updated my hugo assets pipeline and fixed a clock error, added the neocreatives webring, reformatted my updates section."
 - date: "2024-01-14"
