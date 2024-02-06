@@ -125,6 +125,12 @@ window.membersData = [
         "url": "https://tabatinga.co/",
         "description": "personal website with a blog and various creative stuff."
     },
+    {
+        "name": "Saki/Cora",
+        "websiteTitle": "Wonworld",
+        "url": "https://wonworld.neocities.org/",
+        "description": "My little corner of the internet!"
+    },
 ];        
 
 class JournalRing extends HTMLElement {
