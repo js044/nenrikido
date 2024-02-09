@@ -1,3 +1,4 @@
+
 function checkDeadLinks(data) {
   data.forEach(member => {
     fetch(`https://api.allorigins.win/get?url=${member.url}`, { method: 'HEAD' })
@@ -23,6 +24,11 @@ checkDeadLinks(window.membersData);
 // Add page numbers and tabs
 let leftPageNumber = 1; // Initialize the left page number
 let rightPageNumber = 2; // Initialize the right page number
+let currentPage = parseInt(localStorage.getItem('currentPage')) || 1;
+// Add members to Members list from JSON
+const data = window.membersData;
+const pageSize = 10; // Number of items per page
+const totalEntries = data.length; // Total entries from JSON
 
 function showContent(tab) {
   const tabContents = document.querySelectorAll('.tab-content');
@@ -49,19 +55,25 @@ function showContent(tab) {
 function updatePageNumbers() {
   const leftPageHeaders = document.querySelectorAll('.left-page .page-header');
   const rightPageHeaders = document.querySelectorAll('.right-page .page-header');
-  
-  leftPageNumber = 1; // Reset the left page number
-  rightPageNumber = 2; // Reset the right page number
 
-  leftPageHeaders.forEach((header) => {
-    header.setAttribute('data-page-number', leftPageNumber);
-    leftPageNumber += 2; // Increment by 2 for the left pages
-  });
+  // Set the page numbers for the first two pages
+  leftPageHeaders[0].setAttribute('data-page-number', 1);
+  rightPageHeaders[0].setAttribute('data-page-number', 2);
 
-  rightPageHeaders.forEach((header) => {
-    header.setAttribute('data-page-number', rightPageNumber);
-    rightPageNumber += 2; // Increment by 2 for the right pages
-  });
+  // Calculate the left and right page numbers based on the current page
+  let leftPageNumber = 3;
+  let rightPageNumber = 4;
+
+  // Update the page numbers in the headers starting from the second page
+  for (let i = 1; i < leftPageHeaders.length; i++) {
+    leftPageHeaders[i].setAttribute('data-page-number', leftPageNumber);
+    leftPageNumber += 2;
+  }
+
+  for (let i = 1; i < rightPageHeaders.length; i++) {
+    rightPageHeaders[i].setAttribute('data-page-number', rightPageNumber);
+    rightPageNumber += 2;
+  }
 }
 
 // Get the last selected tab from localStorage and set it as active
@@ -73,11 +85,6 @@ if (lastTab) {
   showContent('about');
 }
 
-// Add members to Members list from JSON
-const data = window.membersData;
-const pageSize = 10; // Number of items per page
-let currentPage = 1; // Current page
-const totalEntries = data.length; // Total entries from JSON
 
    // Update the HTML element to display the member count with a span
    const memberCountElement = document.querySelector('#memberCount');
@@ -153,6 +160,7 @@ function displayMembersForPage(page) {
         rightCount++;
       }
     }
+    updatePageNumbers();
   }
 
   const leftMembersContainer = document.querySelector('.left-page .members-page');
@@ -172,6 +180,7 @@ function displayMembersForPage(page) {
       currentPage--;
       displayMembersForPage(currentPage);
       updateButtonVisibility();
+      updatePageNumbers();
     }
   });
   
@@ -180,8 +189,10 @@ function displayMembersForPage(page) {
       currentPage++;
       displayMembersForPage(currentPage);
       updateButtonVisibility();
+      updatePageNumbers();
     }
   });
+  
   
   function updateButtonVisibility() {
     if (currentPage === 1) {
@@ -195,5 +206,8 @@ function displayMembersForPage(page) {
     } else {
       nextButton.style.display = 'block';
     }
+
+    // Store the current page in localStorage
+    localStorage.setItem('currentPage', currentPage);
   }
   

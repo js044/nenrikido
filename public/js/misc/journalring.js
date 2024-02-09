@@ -131,6 +131,18 @@ window.membersData = [
         "url": "https://wonworld.neocities.org/",
         "description": "My little corner of the internet!"
     },
+    {
+        "name": "Nia",
+        "websiteTitle": "Halcyon Days",
+        "url": "https://alcedonia.neocities.org/",
+        "description": "Personal site; book reviews, video games, art, and more!"
+    },
+    {
+        "name": "furbee",
+        "websiteTitle": "furbee",
+        "url": "https://furbee.neocities.org/",
+        "description": "Personal site to share my various interests :)"
+    },
 ];        
 
 class JournalRing extends HTMLElement {
