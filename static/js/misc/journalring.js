@@ -143,6 +143,36 @@ window.membersData = [
         "url": "https://furbee.neocities.org/",
         "description": "Personal site to share my various interests :)"
     },
+    {
+        "name": "JohnDavid",
+        "websiteTitle": "JohnDavid's Website",
+        "url": "https://johndavid.neocities.org/",
+        "description": "Thoughts on music. Personal micro-updates. Doodles from my journal."
+    },
+    {
+        "name": "Jade",
+        "websiteTitle": "Idelides",
+        "url": "https://idelides.xyz/Webring.html",
+        "description": "Webcomic write-ups (and other projects)"
+    },
+    {
+        "name": "Kyo",
+        "websiteTitle": "NORMAN.ORG",
+        "url": "https://oliscrabwife.neocities.org/",
+        "description": "Personal website where i dump everything fun and talk about life :]"
+    },
+    {
+        "name": "Finnialla Wright",
+        "websiteTitle": "Finnialla",
+        "url": "https://finn-all-uh.org/",
+        "description": "A multifaceted writer of screenplays, poetry, nonfiction articles, novels, and updates on my life."
+    },
+    {
+        "name": "Nobody",
+        "websiteTitle": "labyrinth",
+        "url": "https://labyrinth.monster/",
+        "description": "a math student's reading log & diary."
+    },
 ];        
 
 class JournalRing extends HTMLElement {
