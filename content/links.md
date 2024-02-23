@@ -66,6 +66,7 @@ draft: false
 {{< fanlistings img-src="/images/buttons/lain.jpg" link="http://lain.angelic-trust.net/">}} 
 {{< fanlistings img-src="/images/buttons/deathnote.png" link="https://fan.enamour.nu/deathnote/">}} 
 {{< fanlistings img-src="/images/buttons/opm.gif" link="http://frshery.info/onepunch/">}} 
+{{< fanlistings img-src="/images/buttons/neopets.png" link="https://inkcaps.neocities.org/links/neopets/">}} 
 {{< /col-sm >}}
 {{< /large-scrollbox >}}
 {{< /box-small >}}

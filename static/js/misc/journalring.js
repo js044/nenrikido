@@ -173,6 +173,24 @@ window.membersData = [
         "url": "https://labyrinth.monster/",
         "description": "a math student's reading log & diary."
     },
+    {
+        "name": "Chao",
+        "websiteTitle": "dotdotdot",
+        "url": "https://chao.bouvardia.blue/",
+        "description": "personal site/blog"
+    },
+    {
+        "name": "Alia",
+        "websiteTitle": "Chaoticdreamz",
+        "url": "https://chaoticdreamz.neocities.org/",
+        "description": "A cutsey webpage to express myself, theres cursing and my blog is a major tw just a heads up!!"
+    },
+    {
+        "name": "corvidae",
+        "websiteTitle": "the flames of diaster",
+        "url": "https://crisis.city/",
+        "description": "a personal blog where i just kind of exist and fool around! i have a blog, art page, resources and graphics pages, and more!"
+    },
 ];        
 
 class JournalRing extends HTMLElement {
