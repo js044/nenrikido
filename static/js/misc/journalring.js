@@ -191,6 +191,42 @@ window.membersData = [
         "url": "https://crisis.city/",
         "description": "a personal blog where i just kind of exist and fool around! i have a blog, art page, resources and graphics pages, and more!"
     },
+    {
+        "name": "sirui",
+        "websiteTitle": "wise // cursed",
+        "url": "https://melxncholyman.neocities.org/",
+        "description": "a personal site where you'll find journal entries, art, and poetry rambles among other content :)"
+    },
+    {
+        "name": "Wren",
+        "websiteTitle": "Lamb Bones",
+        "url": "https://lambbones.neocities.org/",
+        "description": "Personal website to document my coding journey, rambles, and love for all things cute :P"
+    },
+    {
+        "name": "Panacea",
+        "websiteTitle": "Traveling Healer",
+        "url": "https://travelinghealer.neocities.org/",
+        "description": "My fluffy personal site where I heal the world with kawaii cooking, art, decor, & romance. Trigger warning for eating disorder discussions."
+    },
+    {
+        "name": "Missy",
+        "websiteTitle": "The Misadventures of Missy",
+        "url": "https://missymjwrites.neocities.org/",
+        "description": "A place where I put my writings and general creative-ness."
+    },
+    {
+        "name": "Avis Spei",
+        "websiteTitle": "Flying With Quills",
+        "url": "https://flying-with-quills.neocities.org/",
+        "description": "A personal website where I blog anything I like from movie reviews to theology, have a daily productivity log, list resources I personally use and a place to publish my literary projects! :3"
+    },
+    {
+        "name": "Kraehen",
+        "websiteTitle": "literaturesandbox",
+        "url": "https://kraehen.neocities.org/",
+        "description": "simple HTML personal website powered by JavaScript"
+    },
 ];        
 
 class JournalRing extends HTMLElement {
