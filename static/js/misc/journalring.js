@@ -2,7 +2,7 @@ window.membersData = [
     {
         "name": "Rio",
         "websiteTitle": "Nenrikido",
-        "url": "https://nenrikido.neocities.org/",
+        "url": "https://nenrikido.neocities.org/links/",
         "description": "A multi-purpose personal site with free-to-use code, an art gallery, a library, and anything else I like."
     },
     {
@@ -122,7 +122,7 @@ window.membersData = [
     {
         "name": "hibikimorada",
         "websiteTitle": "tabatinga",
-        "url": "https://tabatinga.co/",
+        "url": "https://tabatinga.co/about.html",
         "description": "personal website with a blog and various creative stuff."
     },
     {
@@ -194,13 +194,13 @@ window.membersData = [
     {
         "name": "sirui",
         "websiteTitle": "wise // cursed",
-        "url": "https://melxncholyman.neocities.org/",
+        "url": "https://melxncholyman.neocities.org/about/",
         "description": "a personal site where you'll find journal entries, art, and poetry rambles among other content :)"
     },
     {
         "name": "Wren",
         "websiteTitle": "Lamb Bones",
-        "url": "https://lambbones.neocities.org/",
+        "url": "https://lambbones.neocities.org/webrings/",
         "description": "Personal website to document my coding journey, rambles, and love for all things cute :P"
     },
     {
