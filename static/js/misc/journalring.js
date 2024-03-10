@@ -122,7 +122,7 @@ window.membersData = [
     {
         "name": "hibikimorada",
         "websiteTitle": "tabatinga",
-        "url": "https://tabatinga.co/about.html",
+        "url": "https://tabatinga.co/",
         "description": "personal website with a blog and various creative stuff."
     },
     {
