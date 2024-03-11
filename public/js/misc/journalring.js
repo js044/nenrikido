@@ -2,7 +2,7 @@ window.membersData = [
     {
         "name": "Rio",
         "websiteTitle": "Nenrikido",
-        "url": "https://nenrikido.neocities.org/",
+        "url": "https://nenrikido.neocities.org/links/",
         "description": "A multi-purpose personal site with free-to-use code, an art gallery, a library, and anything else I like."
     },
     {
@@ -194,13 +194,13 @@ window.membersData = [
     {
         "name": "sirui",
         "websiteTitle": "wise // cursed",
-        "url": "https://melxncholyman.neocities.org/",
+        "url": "https://melxncholyman.neocities.org/about/",
         "description": "a personal site where you'll find journal entries, art, and poetry rambles among other content :)"
     },
     {
         "name": "Wren",
         "websiteTitle": "Lamb Bones",
-        "url": "https://lambbones.neocities.org/",
+        "url": "https://lambbones.neocities.org/webrings/",
         "description": "Personal website to document my coding journey, rambles, and love for all things cute :P"
     },
     {
@@ -216,16 +216,16 @@ window.membersData = [
         "description": "A place where I put my writings and general creative-ness."
     },
     {
-        "name": "Avis Spei",
-        "websiteTitle": "Flying With Quills",
-        "url": "https://flying-with-quills.neocities.org/",
-        "description": "A personal website where I blog anything I like from movie reviews to theology, have a daily productivity log, list resources I personally use and a place to publish my literary projects! :3"
-    },
-    {
         "name": "Kraehen",
         "websiteTitle": "literaturesandbox",
-        "url": "https://kraehen.neocities.org/",
+        "url": "https://updown.city/",
         "description": "simple HTML personal website powered by JavaScript"
+    },
+    {
+        "name": "Tyoma",
+        "websiteTitle": "TYOMA.COOL",
+        "url": "https://tyoma.cool/",
+        "description": "Silly website of an artist who really likes music... a lot!!"
     },
 ];        
 
