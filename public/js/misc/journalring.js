@@ -227,6 +227,24 @@ window.membersData = [
         "url": "https://tyoma.cool/",
         "description": "Silly website of an artist who really likes music... a lot!!"
     },
+    {
+        "name": "Kiley",
+        "websiteTitle": "Clover Atelier",
+        "url": "https://cloveratelier.neocities.org/",
+        "description": "A digital scrapbook tucked into this little nook of the internet, maintained by a woman who loves all kinds of things."
+    },
+    {
+        "name": "Ame",
+        "websiteTitle": "Neko no Kuni",
+        "url": "https://nekonokuni.neocities.org/",
+        "description": "Personal site about cats and other stuff that I like."
+    },
+    {
+        "name": "Flonne",
+        "websiteTitle": "Vivarism",
+        "url": "https://vivarism.net/",
+        "description": "Cute diary of a yumejoshi ✿"
+    },
 ];        
 
 class JournalRing extends HTMLElement {
