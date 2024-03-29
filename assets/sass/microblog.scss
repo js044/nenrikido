@@ -1,0 +1,269 @@
+@import "lightbox";
+
+$white: #fceaff;
+$darkpurple: #3b084c;
+$darkestpurple: #1b052391;
+$purple: #b76fffcd;
+$lightblue: #bbbdffcd;
+$blue: #8f93ffcd;
+$brightpurple: #e0acff;
+$bg: #101020;
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    background-color: $bg; 
+    color: $white; 
+  }
+  
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    position: fixed;
+    right: 12px;
+    z-index: 1;
+  
+    &-track {
+      box-shadow: 0;
+      border-radius: 0px;
+      background-color: $darkpurple;
+    }
+  
+    &-thumb {
+      background: $blue; 
+      border-radius: 0px;
+    }
+  }
+  
+  .post ::-webkit-scrollbar-track {
+    border-left: 0px solid $blue; 
+  }
+  
+  #microblog {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 30em;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(0 0 85px #8000ff79);
+    padding-bottom: 2em;
+  }
+  
+  #header {
+    width: 100%;
+    height: 14.5em;
+    background-image: url("/images/microblog/header.jpg");
+    background-size: cover;
+    padding: 1em;
+    margin: 3em 1em 1em 1em;
+    border: 2px solid $darkpurple;
+  
+    .profilePic {
+      height: 100px;
+      width: 100px;
+      border-radius: 50px;
+    }
+  
+    #name {
+      color: $white;
+      text-shadow: 0px 0px 20px $brightpurple;
+      margin-top: 0;
+    }
+  
+    #username {
+      color: $purple;
+      text-shadow: 0px 0px 20px $brightpurple;
+      margin-top: -1.2em;
+    }
+  }
+
+  #bio {
+    color: $white; 
+    text-shadow: 0px 0px 20px $brightpurple; 
+    margin-top: -0.5em;
+  }
+  
+  .subscribeButton {
+    background-color: $darkestpurple; 
+    color: $brightpurple; 
+    border: 2px solid $darkpurple; 
+    text-decoration: none; 
+    display: inline-block; 
+    padding: 6px 12px; 
+    margin: 0em 0em 1.75em 1em; 
+  
+    &:hover {
+      color: $lightblue; 
+    }
+  }
+  
+  .post {
+    display: flex; 
+    justify-content: flex-start; 
+    width: 30em; 
+    margin: 1em; 
+    padding: 1em; 
+    border: 2px solid $darkpurple; 
+    background-color: $darkestpurple; 
+  }
+
+  .profilePic {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid $darkpurple; 
+  
+    &:hover {
+      filter: drop-shadow(0px 0px 20px $purple); 
+    }
+  }
+  
+  .postContent {
+    display: inline-block;
+    margin-left: 1em;
+    width: 100%;
+  }
+  
+  .authorDate {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .pagination {
+    display: flex;
+    margin: auto 1em;
+    border: 2px solid $darkpurple;
+    background-color: $darkestpurple;
+    filter: drop-shadow(0 0 85px #8000ff79);
+    
+    a {
+      margin: 0.5em;
+      padding: 0.25em;
+      text-decoration: none;
+      border-radius: 20%;
+      color: $white; 
+      
+      &:hover {
+        color: $blue; 
+      }
+    }
+  }
+  
+  .authorDate {
+    .authorName {
+      color: $blue; 
+      font-weight: bold;
+    }
+  
+    img {
+      max-height: 20px;
+      display: inline;
+    }
+  
+    .username {
+      color: $purple;
+    }
+  }
+
+  .postDate {
+    color: $white;
+    text-decoration: none;
+  
+    &:hover {
+      color: $lightblue; 
+    }
+  }
+  
+  .postText,
+  .postContent p {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: $white; 
+  }
+  
+  .postText a {
+    color: $blue; 
+  
+    &:hover {
+      color: $lightblue; 
+    }
+  }
+  
+  .postImage {  
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 5px;
+    border-radius: 5px;
+  }
+  
+  .postContent {
+    .gallery {
+      display: grid;
+      grid-gap: 10px;
+      max-width: 100%;
+    }
+  
+    .gallery-1 {
+      display: inline-block;
+    }
+  
+    .gallery-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+    }
+  
+    .gallery-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px; 
+    }
+  
+    .gallery-4 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap: 10px;
+    }
+  }
+
+  .interactions {
+    color: $white;
+    cursor: default;
+    float: right;
+    margin-top: 5px;
+    user-select: none;
+  }
+  
+  .reblogCount,
+  .likeCount {
+    margin-left: 4px;
+  }
+  
+  .likeButton {
+    margin-left: 7px;
+  }
+  
+  #particles-js canvas {
+    vertical-align: bottom;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+    transition: opacity .8s ease, transform 1.4s ease;
+  }
+  
+  #particles-js {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    left: 0;
+  }
+  

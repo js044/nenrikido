@@ -5,11 +5,18 @@
   <meta name="dc.relation" content="{{ .Site.BaseURL }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel='shortcut icon' type='image/x-icon' href='/images/icons/favicon-32x32.png' />
-    <link rel="stylesheet" type="text/css" href="/css/microblog.css">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
+ 
+{{ $style := resources.Get "/sass/microblog.scss" | toCSS | minify | fingerprint }}
+<link href="{{ $style.RelPermalink }}" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="/js/lightbox.js" ></script>
     <script src="/js/microblog.js"></script> 
+  
 </head>
 <body onload="retrieveXML();">
     <div id="particles-js"></div>
@@ -128,7 +135,7 @@
   "retina_detect": true
 });
 </script>
-<script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@twemoji/api@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
 <script>
   twemoji.parse(document.body)
 </script>

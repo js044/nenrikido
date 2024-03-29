@@ -20,7 +20,7 @@ layout: single
 
 {{< stats-box >}}
 {{< stats stat="NAME: Jay / Rio" >}}
-{{< stats stat="BORN: 1997" >}}
+{{< stats stat="BORN: 1900s" >}}
 {{< stats stat="🇵🇷 🇰🇷" >}}
 {{< stats stat="🏳️‍🌈" >}}
 {{< stats stat="ASTRO: ♓︎☉ ♏︎☽ ♓︎↑" >}}

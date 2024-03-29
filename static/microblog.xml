@@ -3,13 +3,21 @@
 <channel>
 	<title>rio's feed</title>
 	<link>/microblog</link>
-	<description>GIRLS IN MY COMPUTER. WE CAN DO IT</description>
-	<webMaster>ravrioli <img src="/images/microblog/space1.gif" style="width:0.85em; height:0.85em;" /></webMaster>
+	<description>이젠 정말 같이 살거나 같이 죽겠구나.</description>
+	<webMaster>rio <img src="/images/microblog/space1.gif" style="width:0.85em; height:0.85em;" /></webMaster>
 	<generator>@nenrikido</generator>
 	<image>
-		<url>/images/microblog/icon.jpg</url>
+		<url>/images/microblog/754447.jpg</url>
 		<link>https://nenrikido.neocities.org</link>
 	</image>
+
+		<item>
+		<guid>34</guid>
+		<title>orv reread is going great</title>
+		<pubDate>Thu, 28 Mar 2024 20:42:31 +0000</pubDate>
+		<link>/microblog#34</link>
+		<description> <img src="/images/microblog/orv.jpg" /> <img src="/images/microblog/orv1.jpg" /> </description>
+		</item>
 
 		<item>
 		<guid>33</guid>
@@ -224,7 +232,7 @@
 		<title>i am dying to re-code the <a href="https://negg.tumblr.com/post/712174602618585088/tomba2-hello-world-theme-i-somehow-managed-to" target="_blank" rel="noopener noreferrer">hello world theme</a> but i'm also very very very scared to see what ungodly things i was doing to that poor code. still...i want her back...</title>
 		<pubDate>Mon, 01 May 2023 21:39:12 +0000</pubDate>
 		<link>/microblog#7</link>
-		<description> <img src="/images/microblog/hw.jpeg" loading="lazy" /> </description>
+		<description> <img src="/images/microblog/helloworld.png" loading="lazy" /> </description>
 	</item>
 
 	<item>

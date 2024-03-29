@@ -133,6 +133,7 @@ function loadPosts(xmlDoc, authorName, username, iconLink, rootLink) {
     var end = Math.min(start + PostsPerPage, items.length);
 
     for (var i = start; i < end; i++) {
+      var guid = items[i].getElementsByTagName("guid")[0].innerHTML;
       loadSingle(items[i], authorName, username, iconLink, rootLink);
     }
 
@@ -175,16 +176,14 @@ function generatePageLinks(totalPosts, totalPages) {
   }
 }
 
-
-
 function loadSingle(rssItem, authorName, username, iconLink, rootLink) {
   var post, authorLink, icon, content, authorDate, author, dateLink, text, imageLink;
   var imagesPreCount, i, images, postDate;
-    
+
   post = document.createElement("div");
   post.className = "post";
   post.id = rssItem.getElementsByTagName("guid")[0].innerHTML;
-  
+
   authorLink = document.createElement("a");
   authorLink.href = rootLink;
   icon = document.createElement("img");
@@ -192,30 +191,30 @@ function loadSingle(rssItem, authorName, username, iconLink, rootLink) {
   icon.src = iconLink;
   authorLink.appendChild(icon);
   post.appendChild(authorLink);
-  
+
   content = document.createElement("div");
   content.className = "postContent";
-  
+
   authorDate = document.createElement("div");
   authorDate.className = "authorDate";
-  
+
   author = document.createElement("div");
   author.className = "author";
   author.innerHTML = "<span class='authorName'>" + authorName + "</span>";
   // Only add a space if there is something in front of it
   if (authorName.length > 0) author.innerHTML += " ";
   author.innerHTML += "<span class='username'>" + username + "</span>";
-  
+
   dateLink = document.createElement("a");
-  dateLink.href = "#" + rssItem.getElementsByTagName("guid")[0].innerHTML;
+  dateLink.href = "#" + post.id; // Use post ID as the href
   dateLink.className = "postDate";
 
   postDate = new Date(rssItem.getElementsByTagName("pubDate")[0].innerHTML);
   if (postDate != NaN) {
-    dateLink.innerHTML = postDate.toLocaleDateString();
-    dateLink.title = postDate;
+      dateLink.innerHTML = postDate.toLocaleDateString();
+      dateLink.title = postDate;
   } else {
-    dateLink.innerHTML = rssItem.getElementsByTagName("pubDate")[0].innerHTML;
+      dateLink.innerHTML = rssItem.getElementsByTagName("pubDate")[0].innerHTML;
   }
 
   authorDate.appendChild(author);
@@ -225,28 +224,51 @@ function loadSingle(rssItem, authorName, username, iconLink, rootLink) {
   text = document.createElement("div");
   text.className = "postText";
   text.innerHTML = rssItem.getElementsByTagName("title")[0].innerHTML;
-  
+
+  // Extract image links only from the description of the post
   imageLink = rssItem.getElementsByTagName("description")[0].innerHTML;
-  // Store the number of images that may exist before the post images are appended
-  // so that we don't add the postImage class to them
-  imagesPreCount = content.getElementsByTagName("img").length;
+  var parser = new DOMParser();
+  var descriptionDoc = parser.parseFromString(imageLink, "text/html");
+  var imagesFromDescription = descriptionDoc.getElementsByTagName("img");
+  var numImages = imagesFromDescription.length;
+
+  // Create a unique identifier for the gallery
+  var galleryId = "gallery-" + post.id; // Use post ID as the gallery ID
+
+  // Create a new div element to wrap the images
+  var galleryWrapper = document.createElement("div");
+  galleryWrapper.classList.add("gallery-" + numImages);
+  galleryWrapper.id = galleryId;
+  content.appendChild(galleryWrapper);
+
+  // Loop through all images in the description
+  for (var j = 0; j < imagesFromDescription.length; j++) {
+      var image = imagesFromDescription[j];
+
+      // Create a new anchor element to wrap the image
+      var imageLinkWrapper = document.createElement("a");
+      imageLinkWrapper.href = image.getAttribute("src"); // Corrected line
+      imageLinkWrapper.setAttribute("data-lightbox", galleryId); // Set unique lightbox data attribute
+
+      // Add the "postImage" class to the image
+      image.classList.add("postImage");
+
+      // Append the image to the anchor element
+      imageLinkWrapper.appendChild(image.cloneNode(true));
+
+      // Append the wrapped image to the gallery container
+      galleryWrapper.appendChild(imageLinkWrapper);
+  }
+
   content.appendChild(text);
-  if (imageLink.length > 0) {
-    content.innerHTML += imageLink;
-    images = content.getElementsByTagName("img");
-    for (i = imagesPreCount; i < images.length; i++) {
-      images[i].className = "postImage";
-    }
-  }
-  
-  if (DisplayReblog || DisplayLikes) {
-    content.append(loadInteractions(rssItem.getElementsByTagName("guid")[0].innerHTML)); 
-  }
-  
+  content.appendChild(galleryWrapper);
+
   post.appendChild(content);
-  
-  document.getElementById(MicroblogDivID).appendChild(post); 
+
+  document.getElementById(MicroblogDivID).appendChild(post);
 }
+
+
 
 function loadInteractions(guid) {
   var interactions, reblogButton, reblogCount, likeButton, likeCount;

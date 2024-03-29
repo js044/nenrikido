@@ -68,7 +68,7 @@ window.membersData = [
     {
         "name": "des",
         "websiteTitle": "doqmeat",
-        "url": "https://doqmeat.neocities.org/",
+        "url": "https://doqmeat.com/",
         "description": "personal website full of things i enjoy and love."
     },
     {
@@ -244,6 +244,12 @@ window.membersData = [
         "websiteTitle": "Vivarism",
         "url": "https://vivarism.net/",
         "description": "Cute diary of a yumejoshi ✿"
+    },
+    {
+        "name": "Noah",
+        "websiteTitle": "SCARECROWKID",
+        "url": "https://scarecrowkid.net/",
+        "description": "A sunflower field on a previously-abandoned farm."
     },
 ];        
 

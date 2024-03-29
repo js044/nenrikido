@@ -186,13 +186,40 @@ body {
   color: var(--lightblue);
 }
 
-.postImage {
-  display: block;
+.postImage {  
   max-width: 100%;
+  height: 100%;
+  object-fit: cover;
   margin-top: 5px;
   border-radius: 5px;
-  color: rgb(138, 138, 138);
 }
+
+.postContent .gallery-1 {
+  display: inline-block; /* Or any other style for single image */
+}
+
+/* Style for two-image gallery */
+.postContent .gallery-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px; /* Adjust gap between images */
+}
+
+/* Style for three-image gallery */
+.postContent .gallery-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px; /* Adjust gap between images */
+}
+
+/* Style for four-image gallery */
+.postContent .gallery-4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns for four images */
+  grid-template-rows: repeat(2, 1fr); /* Two rows for four images */
+  grid-gap: 10px; /* Adjust gap between images */
+}
+
 
 .interactions {
   color: var(--white);
