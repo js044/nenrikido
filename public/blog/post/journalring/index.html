@@ -10,7 +10,7 @@
     <link rel='icon' type='image/x-icon' href='../../../images/icons/pink-favicon.svg' /> 
 
     
-    <link href="../../../css/main.min.7df1c87b2628a855df07fe071af9fb48392dc0222c971b52871961948b0dad18.css" rel="stylesheet">
+    <link href="../../../css/main.min.8e2177288926336c463695e94ef49986c55782f3fec974015af7065a12f8f404.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
     
@@ -40,8 +40,8 @@
                     <div class='playpause'><i class="fas fa-play"></i></div>
                 </div>
             </div>
-            <div id='musictitle'> <span class='marquee'>summer rain</span> </div>
-        </div> <audio id='musicsrc' loop src='https://dl.dropbox.com/s/seanb1ogmdoezmr/cricket-rain.mp3'></audio>
+            <div id='musictitle'> <span class='marquee'>wind chimes</span> </div>
+        </div> <audio id='musicsrc' loop src='https://dl.dropbox.com/scl/fi/207sozz1oxbnjuldcx9up/wind-chimes.mp3?rlkey=g80h8r4oygb24yl6r5ygayi9f&dl=0'></audio>
 
 
 <script>
@@ -79,7 +79,7 @@
 <ul>
 <li><a href="#the-webring-code">The webring code</a></li>
 <li><a href="#the-webring-widget">The webring widget</a></li>
-<li><a href="#the-webring-sign-up-form">The webring sign-up form</a></li>
+<li><a href="#the-webring-sign-up-form">The webring sign-up form</a> (UPDATED)</li>
 <li><a href="#the-webring-homepage">The webring homepage</a></li>
 </ul>
 <p>And these can all vary in complexity depending on your needs. For ease of navigation, I&rsquo;ve split this post into these four sections so you can skip to read more about how JournalRing was created and to see if you might want to make your own webring! I made a lot of mistakes along the way, and I&rsquo;ll be sure to talk a bit about those so you don&rsquo;t have to make the same.</p>
@@ -147,7 +147,8 @@
 <h2 id="the-webring-sign-up-form">III. The webring sign-up form</h2>
 <p>Not much of a webring if it&rsquo;s just you. You&rsquo;ll want to set up a form. You cannot do this natively with a static site. But don&rsquo;t fear&hellip;there are bountiful options if you have a static site. You can also use this if you don&rsquo;t have a static site, but  just don&rsquo;t want to deal with the backend. Up to you!</p>
 <ol>
-<li><strong><a href="https://formspree.io/">Formspree.io</a></strong>: This is what I used for JournalRing, and I was very happy with how simple it is to set up (even if you only get 50 submissions per month on their free tier, which is half of some of the other offerings). I love Formspree because it&rsquo;s just a backend for form management, which means you can style it however you want, which is a paid feature for many other form builders. Be aware you can&rsquo;t have file uploads on their free plan (like a site button), but you can have people input a link to files if you want a workaround.</li>
+<li><strong><a href="https://formspree.io/">Formspree.io</a></strong>: This is what I originally used for JournalRing, and I was very happy with how simple it is to set up (even if you only get 50 submissions per month on their free tier, which is half of some of the other offerings). Formspree is simple because it&rsquo;s just a backend for form management, which means you can style it however you want. Be aware you can&rsquo;t have file uploads on their free plan (like a site button), but you can have people input a link to files if you want a workaround. I did have some <a href="#update">issues</a> though.</li>
+<li><strong><a href="https://formkeep.com/">FormKeep</a></strong>: I now use FormKeep for JournalRing instead of Formspree. Read the <a href="#update">update</a> below for more information. Essentially, it has most of the features Formspree does (note: this means submissions per month are capped at 50), with the exception of real time notifications when you get a submission. You can get daily summaries instead, which works fine for my purposes. It&rsquo;s also very user friendly&ndash;it has an intuitive, comprehensible UI, they developed a linter to check your HTML forms for best practices, and have support for creating a blank <a href="https://www.coderslexicon.com/a-brief-overview-of-honey-pot-form-fields/">honeypot field</a> to better protect yourself from spam. You can use it as a form builder or as a backend for form management.</li>
 <li><strong><a href="https://www.netlify.com/">Netlify</a></strong>: If you use Netlify to deploy your site, you should be aware that it <a href="https://docs.netlify.com/forms/setup/">ships with forms</a>! There are limited submissions on their free tier (100 per month), but that&rsquo;s more than enough for small projects like this (and double what Formspree allows).</li>
 <li><strong><a href="https://tally.so/">Tally.so</a></strong>: Tally.so is pretty cool and fairly customizable for a form generator. You embed the code of the form into your site, and you can&rsquo;t just use it as a backend like Jotform (and so there&rsquo;s more limited customizability). But you can also embed forms with file uploads pretty easily.</li>
 <li><strong><a href="https://www.airtable.com/">Airtable</a></strong>: I haven&rsquo;t used Airtable that extensively, so I can&rsquo;t really speak to its benefits, but I have seen some webrings that are using it. So I know it&rsquo;s a thing! It honestly looks a little intimidating to me though.</li>
@@ -165,6 +166,12 @@
 &lt;button type=&#34;submit&#34;&gt;Submit&lt;/button&gt;
 &lt;/form&gt;
 </code></pre><hr>
+<h2 id="update">UPDATE (3/28/24)</h2>
+<p>Okay, so I actually meant to update this post earlier, but just haven&rsquo;t gotten around to it. Anyways, I ended up switching from Formspree to <a href="https://formkeep.com/">FormKeep</a>. Basically, Formspree had a significant problem in my case&ndash;I&rsquo;m not sure why, but it was flagging well over half of the submissions to JournalRing as spam without notifying me. So, when I realized this, I simply turned off spam detection. Which was fine for a few days&hellip;until I got randomly flooded with spam so severe that Formspree locked my account. I emailed them to get it unlocked (twice), but never heard anything back. To prevent excessive downtime, I tried out <a href="https://web3forms.com/">Web3Forms</a>, but&hellip;they don&rsquo;t allow their service on Neocities domains (you&rsquo;d think they&rsquo;d put that in the docs!) due to spam issues.</p>
+<p>So, then, I moved to FormKeep. The code is basically the same. The only difference is I added a <a href="https://www.coderslexicon.com/a-brief-overview-of-honey-pot-form-fields/">honeypot field</a> (per their suggestion), which is basically just a hidden field that&rsquo;s meant to trick bots into proving they&rsquo;re not human. It&rsquo;s also very easy to implement. Essentially, you copy and paste the value they give you under the &ldquo;Spam&rdquo; section of the broader &ldquo;Form Settings&rdquo; header and add something to your form like this:</p>
+<p><code>&lt;input type=&quot;text&quot; name=&quot;HONEYPOT_VALUE&quot; style=&quot;display:none&quot;&gt;</code></p>
+<p>So far, so good, and I&rsquo;m happy with it. Just thought I&rsquo;d update this blog post and make sure everyone has the best information I can offer.</p>
+<hr>
 <h2 id="the-webring-homepage">IV. The webring homepage</h2>
 <p>I thought, hey, wouldn&rsquo;t it be so cute to make a layout that emulates a journal?! With a highlighter, realistic pages, and journal tabs? So I nabbed a photo of the <a href="https://www.1101.com/store/techo/en/2024/pc/detail_cover/oc22_colorsdsoda/">Dreamy Soda case</a> from the Hobonichi Techo website and threw it into Photoshop to fix up. Then, I hunted down some graph paper to overlay on top of that picture, and voila!</p>
 <p>Well, sort of. I still had to do the actual coding part, and I hadn&rsquo;t thought all that far ahead. I just knew I really wanted to avoid using px with absolute positioning. I have a weird vendetta against px. Not very old-web of me, I know, but I wanted the journal container to behave more responsively, resizing to match the viewport at any size. This ended up being a pretty big challenge because what I fundamentally wanted was to mix responsive styling with non-responsive functioning and to break the zoom function, which was a bit&hellip;messy. The sloppy code is most noticeable with the stickers, which I will re-tool to be more code efficient someday. To make things mobile responsive, I just flipped everything 90 degrees to force a psuedo-landscape mode and called it a day (another good idea courtesy of Hors).</p>
@@ -220,13 +227,13 @@
         <div class="modal-body">
 
             <div class="modal-bio">
-                <img class="modal-bio img" src="../../../images/icons/sh.jpg">
-                <p style="font-size:large; font-weight:bold;">Rio's desktop</p>
+                <img class="modal-bio img" src="../../../images/icons/kt.jpg">
+                <p style="font-size:large; font-weight:bold;">NENRIKIDO</p>
                 <p align="center"><i class="fa-regular fa-map"></i> <a href="../../../sitemap">Sitemap</a></p>
 
                 <ul style="font-style: italic;">
-                    <li>OS: NENRIKIDO</li>
-                    <li>Version: 1.7</li>
+                    <li>OS: Nenrikido</li>
+                    <li>Version: 1.73</li>
                     <li>Host: Neocities</li>
                     <li>Processor: Hugo</li>
                     <li>Since: 03-13-23</li>

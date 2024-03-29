@@ -16,7 +16,7 @@ For anyone uninitiated, a webring is a list of people. This list can be loosely 
 Kind of! There are a few considerations, including:
 - [The webring code](#the-webring-code)
 - [The webring widget](#the-webring-widget)
-- [The webring sign-up form](#the-webring-sign-up-form)
+- [The webring sign-up form](#the-webring-sign-up-form) (UPDATED)
 - [The webring homepage](#the-webring-homepage)
 
 And these can all vary in complexity depending on your needs. For ease of navigation, I've split this post into these four sections so you can skip to read more about how JournalRing was created and to see if you might want to make your own webring! I made a lot of mistakes along the way, and I'll be sure to talk a bit about those so you don't have to make the same.
@@ -93,12 +93,13 @@ I swear if I ever update the widgets, they will be cute enough to justify it. I 
 
 Not much of a webring if it's just you. You'll want to set up a form. You cannot do this natively with a static site. But don't fear...there are bountiful options if you have a static site. You can also use this if you don't have a static site, but  just don't want to deal with the backend. Up to you!
 
-1. **[Formspree.io](https://formspree.io/)**: This is what I used for JournalRing, and I was very happy with how simple it is to set up (even if you only get 50 submissions per month on their free tier, which is half of some of the other offerings). I love Formspree because it's just a backend for form management, which means you can style it however you want, which is a paid feature for many other form builders. Be aware you can't have file uploads on their free plan (like a site button), but you can have people input a link to files if you want a workaround. 
-2. **[Netlify](https://www.netlify.com/)**: If you use Netlify to deploy your site, you should be aware that it [ships with forms](https://docs.netlify.com/forms/setup/)! There are limited submissions on their free tier (100 per month), but that's more than enough for small projects like this (and double what Formspree allows).
-3. **[Tally.so](https://tally.so/)**: Tally.so is pretty cool and fairly customizable for a form generator. You embed the code of the form into your site, and you can't just use it as a backend like Jotform (and so there's more limited customizability). But you can also embed forms with file uploads pretty easily.
-4. **[Airtable](https://www.airtable.com/)**: I haven't used Airtable that extensively, so I can't really speak to its benefits, but I have seen some webrings that are using it. So I know it's a thing! It honestly looks a little intimidating to me though.
-5. **[Google Forms](https://docs.google.com/forms/u/0/)**: Note: you cannot embed a Google form if it also has a file upload. That said, it does the trick if you don't want to sign up anywhere and just want responses delivered to your inbox.
-6. **[Jotform](https://www.jotform.com/)**: Another popular WYSIWYG form builder, I believe one of the first. You can get 100 submissions per month on their free tier. 
+1. **[Formspree.io](https://formspree.io/)**: This is what I originally used for JournalRing, and I was very happy with how simple it is to set up (even if you only get 50 submissions per month on their free tier, which is half of some of the other offerings). Formspree is simple because it's just a backend for form management, which means you can style it however you want. Be aware you can't have file uploads on their free plan (like a site button), but you can have people input a link to files if you want a workaround. I did have some [issues](#update) though.
+2. **[FormKeep](https://formkeep.com/)**: I now use FormKeep for JournalRing instead of Formspree. Read the [update](#update) below for more information. Essentially, it has most of the features Formspree does (note: this means submissions per month are capped at 50), with the exception of real time notifications when you get a submission. You can get daily summaries instead, which works fine for my purposes. It's also very user friendly--it has an intuitive, comprehensible UI, they developed a linter to check your HTML forms for best practices, and have support for creating a blank [honeypot field](https://www.coderslexicon.com/a-brief-overview-of-honey-pot-form-fields/) to better protect yourself from spam. You can use it as a form builder or as a backend for form management.
+3. **[Netlify](https://www.netlify.com/)**: If you use Netlify to deploy your site, you should be aware that it [ships with forms](https://docs.netlify.com/forms/setup/)! There are limited submissions on their free tier (100 per month), but that's more than enough for small projects like this (and double what Formspree allows).
+4. **[Tally.so](https://tally.so/)**: Tally.so is pretty cool and fairly customizable for a form generator. You embed the code of the form into your site, and you can't just use it as a backend like Jotform (and so there's more limited customizability). But you can also embed forms with file uploads pretty easily.
+5. **[Airtable](https://www.airtable.com/)**: I haven't used Airtable that extensively, so I can't really speak to its benefits, but I have seen some webrings that are using it. So I know it's a thing! It honestly looks a little intimidating to me though.
+6. **[Google Forms](https://docs.google.com/forms/u/0/)**: Note: you cannot embed a Google form if it also has a file upload. That said, it does the trick if you don't want to sign up anywhere and just want responses delivered to your inbox.
+7. **[Jotform](https://www.jotform.com/)**: Another popular WYSIWYG form builder, I believe one of the first. You can get 100 submissions per month on their free tier. 
 
 Regardless of which of these options you choose, if you use nenring, you'll either want to stick with the preset fields (name, url, website title, website description, and email for contact) or modify the code to allow for things like a site button. 
 
@@ -114,6 +115,16 @@ If you do want to use Formspree, here is basically how I implemented it. You can
 <button type="submit">Submit</button>
 </form>
 ```
+---
+
+## UPDATE (3/28/24) {#update}
+Okay, so I actually meant to update this post earlier, but just haven't gotten around to it. Anyways, I ended up switching from Formspree to [FormKeep](https://formkeep.com/). Basically, Formspree had a significant problem in my case--I'm not sure why, but it was flagging well over half of the submissions to JournalRing as spam without notifying me. So, when I realized this, I simply turned off spam detection. Which was fine for a few days...until I got randomly flooded with spam so severe that Formspree locked my account. I emailed them to get it unlocked (twice), but never heard anything back. To prevent excessive downtime, I tried out [Web3Forms](https://web3forms.com/), but...they don't allow their service on Neocities domains (you'd think they'd put that in the docs!) due to spam issues. 
+
+So, then, I moved to FormKeep. The code is basically the same. The only difference is I added a [honeypot field](https://www.coderslexicon.com/a-brief-overview-of-honey-pot-form-fields/) (per their suggestion), which is basically just a hidden field that's meant to trick bots into proving they're not human. It's also very easy to implement. Essentially, you copy and paste the value they give you under the "Spam" section of the broader "Form Settings" header and add something to your form like this:
+  
+`<input type="text" name="HONEYPOT_VALUE" style="display:none">`
+
+So far, so good, and I'm happy with it. Just thought I'd update this blog post and make sure everyone has the best information I can offer. 
 
 ---
 
