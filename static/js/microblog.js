@@ -263,11 +263,15 @@ function loadSingle(rssItem, authorName, username, iconLink, rootLink) {
   content.appendChild(text);
   content.appendChild(galleryWrapper);
 
+  // Append interactions container
+  var interactionsContainer = loadInteractions(post.id);
+  content.appendChild(interactionsContainer);
+
   post.appendChild(content);
+
 
   document.getElementById(MicroblogDivID).appendChild(post);
 }
-
 
 
 function loadInteractions(guid) {

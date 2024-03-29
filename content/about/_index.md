@@ -20,7 +20,7 @@ layout: single
 
 {{< stats-box >}}
 {{< stats stat="NAME: Jay / Rio" >}}
-{{< stats stat="BORN: 1900s" >}}
+{{< stats stat="BORN: 90s" >}}
 {{< stats stat="🇵🇷 🇰🇷" >}}
 {{< stats stat="🏳️‍🌈" >}}
 {{< stats stat="ASTRO: ♓︎☉ ♏︎☽ ♓︎↑" >}}
@@ -28,7 +28,7 @@ layout: single
 {{< stats stat="ENNEAGRAM: 6w5" >}}
 {{< /stats-box >}}
 {{< box >}} 
-Hi, I'm a multimedia artist located in the US. I love experimental art and creating things. I also love horror games, spicy noodles, and fish trivia. Feel free to reach out about any of these topics; I love [email](mailto:@nenrikido@pm.me)!
+Hi, I'm a multimedia artist located in the US. I love experimental art and making things. I also love horror games, reading, spicy noodles, and fish trivia. Feel free to reach out about any of these topics; I love [email](mailto:@nenrikido@pm.me)!
 
 I made this site both to host my creative projects and also to function as its own creative project. I'm still learning, so expect the site to change over time. You can find the Github repo [here](https://github.com/js044/nenrikido/).
 {{< /box >}}

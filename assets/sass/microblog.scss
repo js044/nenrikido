@@ -208,37 +208,40 @@ body {
     }
   
     .gallery-1 {
-      display: inline-block;
+      display: block;
+    }
+  
+    .gallery-2,
+    .gallery-3,
+    .gallery-4 {
+      display: grid;
+      grid-gap: 10px;
+      max-width: 100%;
     }
   
     .gallery-2 {
-      display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-gap: 10px;
     }
   
     .gallery-3 {
-      display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-gap: 10px; 
     }
   
     .gallery-4 {
-      display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
-      grid-gap: 10px;
-    }
+    } 
   }
 
+  
   .interactions {
     color: $white;
     cursor: default;
-    float: right;
-    margin-top: 5px;
+    margin-top: 10px; /* Increased margin for better separation */
     user-select: none;
+    float: right;
   }
-  
+
   .reblogCount,
   .likeCount {
     margin-left: 4px;
