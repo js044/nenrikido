@@ -269,6 +269,12 @@ window.membersData = [
         "url": "https://popisbubbles.neocities.org/",
         "description": "Online bedroom of a professional hoarder"
     },
+    {
+        "name": "Mikael",
+        "websiteTitle": "Selkie Himbo",
+        "url": "https://selkiehimbo.neocities.org/",
+        "description": "Personal website for a queer mentally ill seal in human clothing."
+    },
 ];        
 
 class JournalRing extends HTMLElement {
