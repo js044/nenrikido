@@ -194,7 +194,7 @@ window.membersData = [
     {
         "name": "sirui",
         "websiteTitle": "wise // cursed",
-        "url": "https://melxncholyman.neocities.org/about/",
+        "url": "https://melxncholyman.neocities.org/",
         "description": "a personal site where you'll find journal entries, art, and poetry rambles among other content :)"
     },
     {
@@ -206,7 +206,7 @@ window.membersData = [
     {
         "name": "Panacea",
         "websiteTitle": "Traveling Healer",
-        "url": "https://travelinghealer.neocities.org/",
+        "url": "https://travelinghealer.teacake.org/",
         "description": "My fluffy personal site where I heal the world with kawaii cooking, art, decor, & romance. Trigger warning for eating disorder discussions."
     },
     {
@@ -250,6 +250,24 @@ window.membersData = [
         "websiteTitle": "SCARECROWKID",
         "url": "https://scarecrowkid.net/",
         "description": "A sunflower field on a previously-abandoned farm."
+    },
+    {
+        "name": "censorine",
+        "websiteTitle": "censorine's homepage",
+        "url": "https://censorine.com/",
+        "description": "psychic overflow containment♡"
+    },
+    {
+        "name": "noé",
+        "websiteTitle": "sand-tower",
+        "url": "https://sand-tower.neocities.org/",
+        "description": "A personal website where I talk about things I love or happened during the day, and where I show my art !"
+    },
+    {
+        "name": "Popi",
+        "websiteTitle": "Popi's Bubbles",
+        "url": "https://popisbubbles.neocities.org/",
+        "description": "Online bedroom of a professional hoarder"
     },
 ];        
 
