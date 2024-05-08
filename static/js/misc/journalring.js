@@ -275,6 +275,60 @@ window.membersData = [
         "url": "https://selkiehimbo.neocities.org/",
         "description": "Personal website for a queer mentally ill seal in human clothing."
     },
+    {
+        "name": "Jeanette",
+        "websiteTitle": "The Forest",
+        "url": "https://smallsketch.neocities.org/",
+        "description": "The forest is an ever changing place for my characters and myself that others are welcome to explore!"
+    },
+    {
+        "name": "Semper",
+        "websiteTitle": "Mycorrhiza's Space",
+        "url": "https://mycorrhiza.space/",
+        "description": "My personal site where I share my art and thoughts."
+    },
+    {
+        "name": "Valyce Negative",
+        "websiteTitle": "Valyce Negative",
+        "url": "https://www.valycenegative.it/",
+        "description": "My personal site! I mainly post my illustrations and blog posts!"
+    },
+    {
+        "name": "Chione",
+        "websiteTitle": "chione.neocities",
+        "url": "https://chione.neocities.org/",
+        "description": "a small and cozy personal website of little significance"
+    },
+    {
+        "name": "niki",
+        "websiteTitle": "cherie",
+        "url": "https://cherie.nekoweb.org/",
+        "description": "A personal website that acts also as an archive of my different interests & hobbies. A little space in the internet where it is always spring."
+    },
+    {
+        "name": "Mei Sylvany",
+        "websiteTitle": "mei.nekoweb.org",
+        "url": "https://mei.nekoweb.org/",
+        "description": "This website is a personal project, made as a way to have a space in the internet that is truly my own. It is a compilation of my interests, hobbies, likes, etc."
+    },
+    {
+        "name": "chao",
+        "websiteTitle": "boatem hq",
+        "url": "https://boatemhq.neocities.org/",
+        "description": "this is just my personal passion project of a website !! i just put whatever i like on here :))"
+    },
+    {
+        "name": "Toast",
+        "websiteTitle": "Soya's Stuff",
+        "url": "https://soyatoast.neocities.org/",
+        "description": "a cozy spot on the net!"
+    },
+    {
+        "name": "cosmo",
+        "websiteTitle": "cosmo's corner",
+        "url": "https://mism4tchedsocks.neocities.org/",
+        "description": "it's a personal site just with things i enjoy! i have a journal page (the link is on the homepage!) where i post on frequently."
+    },
 ];        
 
 class JournalRing extends HTMLElement {
