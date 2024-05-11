@@ -24,8 +24,8 @@ layout: single
 {{< stats stat="🇵🇷 🇰🇷" >}}
 {{< stats stat="🏳️‍🌈" >}}
 {{< stats stat="ASTRO: ♓︎☉ ♏︎☽ ♓︎↑" >}}
-{{< stats stat="MBTI: INTP" >}} 
-{{< stats stat="ENNEAGRAM: 6w5" >}}
+{{< stats stat="MBTI: INTJ" >}} 
+{{< stats stat="ENNEAGRAM: 5w4" >}}
 {{< /stats-box >}}
 {{< box >}} 
 Hi, I'm a multimedia artist located in the US. I love experimental art and making things. I also love horror games, reading, spicy noodles, and fish trivia. Feel free to reach out about any of these topics; I love [email](mailto:@nenrikido@pm.me)!

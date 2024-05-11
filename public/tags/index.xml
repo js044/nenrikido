@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on NENRIKIDO</title>
+    <link>https://nenrikido.neocities.org/tags/</link>
+    <description>Recent content in Tags on NENRIKIDO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 13 Jan 2024 20:02:44 -0400</lastBuildDate>
+    <atom:link href="https://nenrikido.neocities.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>tutorials</title>
+      <link>https://nenrikido.neocities.org/tags/tutorials/</link>
+      <pubDate>Sat, 13 Jan 2024 20:02:44 -0400</pubDate>
+      <guid>https://nenrikido.neocities.org/tags/tutorials/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>site updates</title>
+      <link>https://nenrikido.neocities.org/tags/site-updates/</link>
+      <pubDate>Sun, 10 Dec 2023 20:14:19 -0400</pubDate>
+      <guid>https://nenrikido.neocities.org/tags/site-updates/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>personal</title>
+      <link>https://nenrikido.neocities.org/tags/personal/</link>
+      <pubDate>Sat, 17 Jun 2023 21:24:01 -0600</pubDate>
+      <guid>https://nenrikido.neocities.org/tags/personal/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
