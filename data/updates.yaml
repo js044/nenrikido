@@ -1,4 +1,6 @@
 updates:
+- date: "2024-05-15"
+  description: "new blog post and some light about page edits."
 - date: "2024-03-28"
   description: "added a lightbox to the microblog and sooyoung'd it, fixed the twemoji issues, etc."
 - date: "2024-02-23"

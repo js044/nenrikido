@@ -20,15 +20,16 @@ layout: single
 
 {{< stats-box >}}
 {{< stats stat="NAME: Jay / Rio" >}}
-{{< stats stat="BORN: 90s" >}}
+{{< stats stat="AGE: 20s" >}}
 {{< stats stat="🇵🇷 🇰🇷" >}}
 {{< stats stat="🏳️‍🌈" >}}
+{{< stats stat="🪼" >}}
 {{< stats stat="ASTRO: ♓︎☉ ♏︎☽ ♓︎↑" >}}
 {{< stats stat="MBTI: INTJ" >}} 
 {{< stats stat="ENNEAGRAM: 5w4" >}}
 {{< /stats-box >}}
 {{< box >}} 
-Hi, I'm a multimedia artist located in the US. I love experimental art and making things. I also love horror games, reading, spicy noodles, and fish trivia. Feel free to reach out about any of these topics; I love [email](mailto:@nenrikido@pm.me)!
+Hello, and welcome to Nenrikido, my online bedroom. I mostly dabble in digital art and web development, but I'm a big fan of making things in general. I also love horror games, reading, spicy noodles, and fish trivia. Feel free to reach out about any of these topics; I love [email](mailto:@nenrikido@pm.me).
 
 I made this site both to host my creative projects and also to function as its own creative project. I'm still learning, so expect the site to change over time. You can find the Github repo [here](https://github.com/js044/nenrikido/).
 {{< /box >}}
@@ -169,7 +170,7 @@ Check out the [library](/library) for more!
 <p align="center"> <a href="https://web.archive.org/web/20020805155344/http://home.vicnet.net.au/~kyb/rb/rainbowbrite.htm" target="new"> <img src="https://web.archive.org/web/20020805155344im_/http://home.vicnet.net.au/~kyb/rb/indigo.gif" border="0"></a> <br>
 <a href="https://web.archive.org/web/20020805155344/http://home.vicnet.net.au/~kyb/rb/rainbowbrite.htm" target="new">Which Rainbow Brite kid are you?</a> By <a href="https://web.archive.org/web/20020805155344/http://www.livejournal.com/userinfo.bml?user=girlsoldier"><img height="17" border="0" src="https://web.archive.org/web/20020805155344im_/http://img.livejournal.com/userinfo.gif" align="absmiddle" width="17"></a><a href="https://web.archive.org/web/20020805155344/http://www.livejournal.com/users/girlsoldier/">Growing</a>.</font></p>
 <p align="center"><A href="https://www.theotaku.com/quizzes/view/1078/what_lucky_star_character_are_you%3F"><img border="0" src="http://www.theotaku.com/guru_results/1078_Kagami.jpg" alt="What Lucky Star Character Are You?" /><br /></a><A href="https://www.theotaku.com/quizzes/view/1078/what_lucky_star_character_are_you%3F">What Lucky Star Character Are You?</A><br />Hosted By theOtaku.com: <a href="http://www.theotaku.com" title="Anime">Anime</a></p>
-<div align="center"><div style="border:1px solid #999;border-radius:6px;padding:6px; margin:10px;background:#fff;min-width:200px;max-width:360px;"><style scoped> .resBarOuter {width:75%;height:15px;padding:0;margin:0;background:#eee;border:1px solid;text-align:left !important;position:relative;} .resBarInner {text-indent:-9999px;height:15px;background:#d02;font-size:6px;line-height:6px;margin:0;padding:0;position:relative;background-image:linear-gradient(bottom,rgb(221,0,33) 40%,rgb(255,60,86) 74%,rgb(221,0,33) 100%);background-image:-moz-linear-gradient(bottom,rgb(221,0,33) 40%,rgb(255,60,86) 74%,rgb(221,0,33) 100%);background-image:-webkit-linear-gradient(bottom,rgb(221,0,33) 40%,rgb(255,60,86) 74%,rgb(221,0,33) 100%);background-image:-ms-linear-gradient(bottom,rgb(221,0,33) 40%,rgb(255,60,86) 74%,rgb(221,0,33) 100%);} .resBarM {width:35%;float:right;margin-right: 10px;} .resRow {background:#fff;clear:both;margin: 5px 0;} </style> <div style="font:bold 1.2em sans-serif;margin:0 0 8px 0;">  <center>What is your Animal Crossing personality?</center> </div> <center><img src="https://dl.dropbox.com/s/s4dmn9k4zd6aqhv/Fauna_NH.png" style="max-width:150px;"></center> <div style="font:bold 1.2em sans-serif;margin:0 0 4px 0;">Your Result: <strong>Normal</strong></div>  <div class="resBarOuter"> <div class="resBarInner" style="width:60%;">&nbsp;</div> </div> <div style="margin:10px 0 4px;border:none;background:#fff;">Normal villagers, despite being called normal are sweet, kind, and hospitable to many others. Although you may not think of them as risk takers, they take risks when needed. They love reading and sharing what they read to the player. Examples of normal villagers are Alice, Skye, Lily, and Stella.</div><div class="resRow"> <div class="resBarOuter resBarM"> <div class="resBarInner" style="width:44%;">&nbsp;</div></div>Smug </div><div class="resRow"> <div class="resBarOuter resBarM"> <div class="resBarInner" style="width:36%;">&nbsp;</div></div>Peppy </div><div class="resRow"> <div class="resBarOuter resBarM"> <div class="resBarInner" style="width:30%;">&nbsp;</div></div>Uchi </div><div class="resRow"> <div class="resBarOuter resBarM"> <div class="resBarInner" style="width:22%;">&nbsp;</div></div>Cranky </div><div class="resRow"> <div class="resBarOuter resBarM"> <div class="resBarInner" style="width:12%;">&nbsp;</div></div>Jock </div><div class="resRow"> <div class="resBarOuter resBarM"> <div class="resBarInner" style="width:0%;">&nbsp;</div></div>Snooty </div><div class="resRow"> <div class="resBarOuter resBarM"> <div class="resBarInner" style="width:0%;">&nbsp;</div></div>Lazy </div><div><a href="https://www.gotoquiz.com/what_is_your_animal_crossing_personality_answ">What is your Animal Crossing personality?</a></div></div> </div>
+
 {{< /large-scrollbox >}}
 {{< /card-large >}}
 

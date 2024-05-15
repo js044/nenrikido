@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    
+    <title>Deploying Your Site to Neocities</title>
+    <meta charset="utf-8">
+    <meta name="description"
+        content="A special world." />
+    <meta name="dc.relation" content="https://nenrikido.neocities.org/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='icon' type='image/x-icon' href='../../../images/icons/pink-favicon.svg' /> 
+
+    
+    <link href="../../../css/main.min.8e2177288926336c463695e94ef49986c55782f3fec974015af7065a12f8f404.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+    
+    <div id="preloader"></div><body>
+<div class="wrapper">
+    <nav id="navAlt">
+        <div class="navWrapper"> <a class="navLink" href="../../../blog">
+                <div id="blog"> </div>Blog
+            </a>
+            <p><i class="fa-regular fa-circle-down"></i></p>
+            <p><i class="fa-solid fa-hashtag"></i> <a href="#"> Deploying Your Site to Neocities </a></p>
+            <p><i class="fa-solid fa-hashtag"></i> <a href="#comments"> Comments </a></p>
+        </div><div class="arrows">
+      
+            <a href="https://nenrikido.neocities.org/blog/post/journalring/"> <i class="fas fa-long-arrow-alt-left"> </i></a>
+            
+            
+                <a href="../../../blog/"><i class="fas fa-home"> 
+                </i></a>
+            
+            
+        </div>
+
+        <div id='musicplayer'>
+            <div id='musicpixel'> <img src="../../../images/pixels/music.gif" style="max-width: 40px;">
+                <div class='overlay'>
+                    <div class='playpause'><i class="fas fa-play"></i></div>
+                </div>
+            </div>
+            <div id='musictitle'> <span class='marquee'>wind chimes</span> </div>
+        </div> <audio id='musicsrc' loop src='https://dl.dropbox.com/scl/fi/207sozz1oxbnjuldcx9up/wind-chimes.mp3?rlkey=g80h8r4oygb24yl6r5ygayi9f&dl=0'></audio>
+
+
+<script>
+    document.querySelector('.playpause').addEventListener('click', playpause);
+    
+    function playpause() {
+      if (document.querySelector('.playpause').innerHTML == '<i class="fas fa-play"></i>') {
+        document.querySelector('#musicsrc').play();
+        document.querySelector('.playpause').innerHTML = '<i class="fas fa-pause"></i>';
+      } else {
+        document.querySelector('#musicsrc').pause();
+        document.querySelector('.playpause').innerHTML = '<i class="fas fa-play"></i>';
+      }
+    }
+</script>
+<form class="search"> <input type="text" class="searchTerm" placeholder="Search..."> <button aria-label="submit" type="submit" class="searchButton"> <i class="fa fa-search"></i> </button> </form>
+
+<ul class="searchResults"></ul></nav>
+
+    <main>
+        <article>
+            <div class="grid">
+                <div class="item large">
+                    <div class="cards"><div class="cardsHeader">
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div><div class="cardsBody">
+                            <h2>Deploying Your Site to Neocities</h2>
+                            <blockquote>May 15, 2024</blockquote> <p>So, Neocities&hellip;isn&rsquo;t exactly equipped for heavy editing. The code editor is limited in its functionality and the file upload process is so simple that it actually becomes cumbersome. Its simplicity is one of its selling points, but trying to update your site can get very tedious, very fast, especially the more it grows.</p>
+<p>After a failed attempt at wrangling the native Neocities GUI and messing up my file structure, I decided I wanted to simply abstract it away. I found two primary ways to do so, but neither had a <em>ton</em> of documentation, and as someone who was still just getting started with web development, it took a bit of extra care to get everything working. I&rsquo;ll just be reiterating the instructions for both deployment methods with a bit of extra context and guidance for anyone who needs it.</p>
+<p>I&rsquo;m using a static site generator (Hugo), but the methods outlined here will work even if you aren&rsquo;t.</p>
+<hr>
+<h2 id="option-1-neocities-cli">OPTION 1: Neocities CLI</h2>
+<p>Neocities has an official, supported <a href="https://neocities.org/cli">command line interface</a> tool to upload your website. This is a good option if you want to decouple your site from GitHub, and/or if you are comfortable with the command line. Even if neither of these apply, this tool is still functional and straightforward. It&rsquo;s what I used initially, but it&rsquo;s been a year since then, so if any of this information is out-of-date, please do correct me. If you&rsquo;d like to get started, you must:</p>
+<ul>
+<li>Install Ruby. Your install method will depend on your OS.
+<ul>
+<li>On Linux, you could run <code>sudo apt-get install ruby-full</code></li>
+<li>On Windows, you&rsquo;d use <a href="https://rubyinstaller.org/">Ruby Installer</a>.</li>
+</ul>
+</li>
+<li>Open your command prompt and install the Neocities CLI with <code>gem install neocities</code></li>
+<li>Type <code>neocities</code> to pull up a list of subcommands. It should look like this:
+<a href="../../../images/blog/051524/neo.png" data-lightbox="deploy "> <img src="../../../images/blog/051524/neo.png" class="img-fluid" loading=""  width="" height="" alt="">  </a></li>
+<li>To push your site, copy the URL of your <strong>public directory</strong> (very important for SSGs) and then use the command <code>neocities push</code> to publish it via the command line.
+<ul>
+<li>In my case, whenever I wanted to push updates, the full command was <code>neocities push /home/jay/Documents/Code/nenrikido/public</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>When you first attempt to utilize any of the subcommands, it will prompt you to input your site name and password, then locally store your API key for future use.</li>
+<li>File uploads can feel pretty slow. The tool checks every single file in your folders to see if they&rsquo;re already uploaded on Neocities, and if you have hundreds of files (like if you have, say, a gallery), it can get tedious to watch. This is especially true if you only want to upload one or two files. I haven&rsquo;t quantified the time difference between uploading changes with the CLI vs. the GitHub Action, but the latter definitely seems faster.</li>
+<li>If you locally delete a file in your public directory, it won&rsquo;t automatically delete it from Neocities. This is presumably to make sure you don&rsquo;t accidentally lose data, but it can cause unexpected consequences. If you want to delete a file or folder, make sure you manually delete it locally <strong>and</strong> also on Neocities.</li>
+<li>If your site is on GitHub and you&rsquo;d like to use this tool, you can use a Git hook to deploy to Neocities whenever you push changes to GitHub. However, for this usecase, I think it&rsquo;d likely be simpler to just use the next method.</li>
+</ul>
+<hr>
+<h2 id="option-2-deply-to-neocities-github-action">OPTION 2: Deply to Neocities (GitHub Action)</h2>
+<p>Once I put my site on GitHub, it seemed natural to switch over to the popular <a href="https://github.com/marketplace/actions/deploy-to-neocities">Github Action</a> that publishes your site updates on Neocities whenever you push updates to your Github repository. Convenient! I think this is the obvious choice if your site is on GitHub, which is something I would generally recommend.</p>
+<p>These steps assume that you&rsquo;ve already 1. <strong>pushed your site to GitHub</strong> and 2. <strong>have no workflows</strong> yet. To get it up and running:</p>
+<ul>
+<li>Create a folder called <code>.github</code> in your root directory.</li>
+<li>Within this folder, create another folder called <code>workflows</code></li>
+<li>Create a file called <code>neocities.yml</code></li>
+<li>Using <a href="https://github.com/marketplace/actions/deploy-to-neocities">this basic template</a>, fill out your workflow.
+<ul>
+<li>Your usecase will likely vary from what is outlined here. For example, if you&rsquo;re not using node, you obviously won&rsquo;t need to involve those steps.</li>
+<li>You can see my very basic implementation <a href="https://github.com/js044/nenrikido/blob/main/.github/workflows/neocities.yml">here</a>.
+<a href="../../../images/blog/051524/gitac.png" data-lightbox="deploy "> <img src="../../../images/blog/051524/gitac.png" class="img-fluid" loading=""  width="" height="" alt="">  </a></li>
+<li>You can also look through <a href="https://github.com/bcomnes/deploy-to-neocities/network/dependents">all the sites</a> that are dependent on it to see how they set up their configuration if you need examples.</li>
+</ul>
+</li>
+<li>Fetch your API token from <a href="https://neocities.org/settings/%7B%7Byour-sitename%7D%7D#api_key">https://neocities.org/settings/{{your-sitename}}#api_key</a></li>
+<li>Set your API token as a <a href="https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository">GitHub secret</a> (for security reasons) and name it NEOCITIES_API_TOKEN</li>
+<li>Make sure your dist_dir is set to whatever directory you want published on Neocities and have at it!</li>
+</ul>
+<h3 id="notes-1">Notes</h3>
+<ul>
+<li>The <code>cleanup</code> field can be set to true or false. Your choice determies whether you want to delete files on Neocities that aren&rsquo;t in your Github directory. It is set to false on default, but I set it to true because I have a tendency to change up my file structures, which leaves orphaned files on Neocities.
+<ul>
+<li>Coincidentally, this is a feature that Hugo has <a href="(https://github.com/gohugoio/hugo/issues/379)">no intention</a> of implementing, much to my chagrin.</li>
+</ul>
+</li>
+<li>I believe this method, similarly to the Neocities CLI, goes through your folders and files alphabetically. This has rather annoying consequences for the automatically (and entirely unconfigurable) profile activity updates. It used to be that the last page you edited was the one that showed up as a primary thumbnail, but now it seems to be the first. This change is <a href="https://suboptimalism.neocities.org/writings/undocumented">fairly recent</a>.
+<ul>
+<li>You can try to do tricksy things like changing Hugo front matter from  <code>draft: false</code> to  <code>draft: true</code> and vice versa while generating your public directory to achieve more granular control of the order your updates show up, but it sort of defeats the purpose of a one-click solution to just update your site.</li>
+</ul>
+</li>
+<li>Updates are not instant, but my (very unscientific) measurement says that your site will reflect updates within a minute or less. It feels very efficient. I&rsquo;m sure someone more knowledgable will know why, but alas, that is not me.</li>
+</ul>
+<hr>
+<p>Hopefully, this was at least somewhat helpful. I&rsquo;m hardly an expert on GitHub, CLIs, or SSGs, so getting everything to work the way I wanted it to was (and still is!) often intimidating and unapproachable. I am the sort of person who needs lots of examples and hand-holding to feel confident in implementing something new (or, more typically, to mess it up over and over until I figure things out), so I thought it would make sense to write up the sort of guide I would have liked back then. Maybe then I wouldn&rsquo;t have tried to upload my entire root directory to Neocities with the CLI&hellip;</p>
+<p>Well, anyways. Apologies for the trickle of site updates. I am actually moving yet again, and there&rsquo;s so much to be done on this site that I often feel dizzy just thinking about it. Still, I plan to see it through to the very end. Hope you are all doing well.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item large">
+                    <div class="cards"><div class="cardsHeader">
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div><div class="cardsBody">
+                            <div id="comments">
+<div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
+<link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+<script type="text/javascript" id="hcb">   if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24wVz3xOOc.ZF1mLS1sR.Mp0"+"&opts=16782&num=10&ts=1680596795074");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); </script>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+</div>
+<footer id="footer">
+    <ul>
+        <li> <button id="footer-button">START</button> </li>
+        <li> <a href="#" id="btn-back-to-top" onclick="call()"><i class="fa-solid fa-circle-chevron-up"></i></a></li>
+        <li>
+            <div id="clock" class="clock" onload="showTime()"></div>
+        </li>
+    </ul>
+</footer>
+
+<div id="start-menu" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h1>START MENU</h1> <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+
+            <div class="modal-bio">
+                <img class="modal-bio img" src="../../../images/icons/ke.jpg">
+                <p style="font-size:large; font-weight:bold;">NENRIKIDO</p>
+                <p align="center"><i class="fa-regular fa-map"></i> <a href="../../../sitemap">Sitemap</a></p>
+
+                <ul style="font-style: italic;">
+                    <li>OS: Nenrikido</li>
+                    <li>Version: 1.73</li>
+                    <li>Host: Neocities</li>
+                    <li>Processor: Hugo</li>
+                    <li>Since: 03-13-23</li>
+                </ul>
+            </div>
+            <div class="modal-list">  <a class="modal-menu " href="../../../">  <span>Home </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../about/">  <span>About </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../gallery/">  <span>Gallery </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../commissions/">  <span>Commissions </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../code/">  <span>Code </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../blog/">  <span>Blog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../links/">  <span>Links </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../microblog/">  <span>Microblog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../library/">  <span>Library </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../nexus/">  <span>Nexus </span> <i class="fa-solid fa-chevron-right"></i></a>  </div>
+
+        </div>
+        <div class="modal-footer"><div class="row centered">
+    <button id="pink" title="pink theme" class="theme-button" onclick="handleThemeButtonClick('pink', this)">💗</button>
+    <button id="blue" title="blue theme" class="theme-button" onclick="handleThemeButtonClick('blue', this)" >🫧</button> 
+    <button id="yellow" title="yellow theme" class="theme-button" onclick="handleThemeButtonClick('yellow', this)" >🪐</button> 
+    <button id="black" title="black theme" class="theme-button" onclick="handleThemeButtonClick('black', this)" >💤</button>
+    <button id="green" title="green theme" class="theme-button" onclick="handleThemeButtonClick('green', this)" >🌷</button>    
+</div></div>
+    </div>
+    <script>
+        function call() {
+            var body = $("html, body");
+            body.stop().animate({ scrollTop: 0 }, 500, 'swing', function () {
+            });
+        }</script>
+    <script type="text/javascript" src="../../../js/clock.js"></script>
+    <script defer type="text/javascript" src="../../../js/start.js"></script><script src="../../../js/theme.js" ></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
+<script defer src="../../../js/muuri-init.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@twemoji/api@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+<script defer src="../../../js/lightbox.js" ></script>
+<script defer src="../../../js/yt_lite.js" ></script>
+<script defer src="https://unpkg.com/lunr/lunr.js"></script>
+<script defer src="../../../js/search.js" ></script>
+<script>
+  var loader = document.getElementById("preloader");
+  window.addEventListener("load", function () {
+    loader.style.display = "none";
+  });
+  var s = document.getElementById("preloader").style;
+  s.opacity = 1;
+  (function fade() {
+    (s.opacity -= 0.1) < 0 ? (s.display = "none") : setTimeout(fade, 40);
+  })();
+  </script>
+  <script>
+    twemoji.parse(document.body)
+  </script></body>
+
+</html>
