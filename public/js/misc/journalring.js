@@ -2,7 +2,7 @@ window.membersData = [
     {
         "name": "Rio",
         "websiteTitle": "Nenrikido",
-        "url": "https://nenrikido.neocities.org/links/",
+        "url": "https://nenrikido.neocities.org/",
         "description": "A multi-purpose personal site with free-to-use code, an art gallery, a library, and anything else I like."
     },
     {
@@ -152,7 +152,7 @@ window.membersData = [
     {
         "name": "Jade",
         "websiteTitle": "Idelides",
-        "url": "https://idelides.xyz/Webring.html",
+        "url": "https://idelides.xyz/",
         "description": "Webcomic write-ups (and other projects)"
     },
     {
@@ -166,12 +166,6 @@ window.membersData = [
         "websiteTitle": "Finnialla",
         "url": "https://finn-all-uh.org/",
         "description": "A multifaceted writer of screenplays, poetry, nonfiction articles, novels, and updates on my life."
-    },
-    {
-        "name": "Nobody",
-        "websiteTitle": "labyrinth",
-        "url": "https://labyrinth.monster/",
-        "description": "a math student's reading log & diary."
     },
     {
         "name": "Chao",
@@ -200,7 +194,7 @@ window.membersData = [
     {
         "name": "Wren",
         "websiteTitle": "Lamb Bones",
-        "url": "https://lambbones.neocities.org/webrings/",
+        "url": "https://lambbones.neocities.org/",
         "description": "Personal website to document my coding journey, rambles, and love for all things cute :P"
     },
     {
@@ -220,12 +214,6 @@ window.membersData = [
         "websiteTitle": "literaturesandbox",
         "url": "https://updown.city/",
         "description": "simple HTML personal website powered by JavaScript"
-    },
-    {
-        "name": "Tyoma",
-        "websiteTitle": "TYOMA.COOL",
-        "url": "https://tyoma.cool/",
-        "description": "Silly website of an artist who really likes music... a lot!!"
     },
     {
         "name": "Kiley",
@@ -328,6 +316,30 @@ window.membersData = [
         "websiteTitle": "cosmo's corner",
         "url": "https://mism4tchedsocks.neocities.org/",
         "description": "it's a personal site just with things i enjoy! i have a journal page (the link is on the homepage!) where i post on frequently."
+    },
+    {
+        "name": "Cassia",
+        "websiteTitle": "Choco Chip :P",
+        "url": "https://chocochipcookiequeen.neocities.org/",
+        "description": "The cyber gateway into the glittering kingdom of Jelly Pink!!!"
+    },
+    {
+        "name": "Azure",
+        "websiteTitle": "MACAQUE",
+        "url": "https://macaque.moe/",
+        "description": "This shadowy site houses the shrines, essays, and soul of the webmaster, and features a mirror of his personal journal!"
+    },
+    {
+        "name": "sneerful",
+        "websiteTitle": "sneerful's shelter",
+        "url": "https://sneerful.neocities.org/",
+        "description": "my personal neocities site, i do a lot of cataloging, journal work, note taking, and archiving !"
+    },
+    {
+        "name": "mika",
+        "websiteTitle": "Cashmere Crypt",
+        "url": "https://cashmerecrypt.art/",
+        "description": "cozy & spooky digital garden for my musings and hobbies"
     },
 ];        
 
