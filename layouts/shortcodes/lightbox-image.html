@@ -3,7 +3,7 @@
 {{ with $img }}
   {{ $lightboxID := $.Get "lightbox-id" }}
   {{ $altText := $.Get "alt" }}
-  {{ $loading := "lazy" }}
+  {{ $loading := "" }}
 
   {{ if eq (lower $img.MediaType.SubType) "gif" }}
     <!-- Preserve GIF animation by resizing without format conversion -->

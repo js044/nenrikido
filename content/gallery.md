@@ -76,7 +76,7 @@ draft: false
 {{< /card-small >}}
 
 {{< card-small filter="digil" id="sailor-psychic-sisters" >}}
-{{< lightbox-image lightbox-id="sailor" img-src="/images/gallery/sailor psychic sisters.png" alt="Tatsumaki and Fubuki drawn in a shoujo-esque style, dressed as sailor senshi. Fubuki is attempting to deliver a speech while Tatsumaki interrupts by taking out the enemies prematurely." >}}
+{{< lightbox-image lightbox-id="sailor" img-src="/images/gallery/spp.png" alt="Tatsumaki and Fubuki drawn in a shoujo-esque style, dressed as sailor senshi. Fubuki is attempting to deliver a speech while Tatsumaki interrupts by taking out the enemies prematurely." >}}
 ##### ***Sailor Psychic Sisters***
 > May 2021    
 > Clip Studio Paint  
@@ -182,7 +182,7 @@ draft: false
 {{< /card-small >}}
 
 {{< card-small filter="digil" id="keqing" >}}
-{{< lightbox-image lightbox-id="keqing" img-src="/images/gallery/keqing patagonia.png" alt="Keqing in a heavy winter coat set against a stylized blue, pink, and purple landscape.">}}
+{{< lightbox-image lightbox-id="keqing" img-src="/images/gallery/keq.png" alt="Keqing in a heavy winter coat set against a stylized blue, pink, and purple landscape.">}}
 ##### ***Keqing in a Patagonia ad***
 > Aug. 2021    
 > Clip Studio Paint  
@@ -242,9 +242,9 @@ draft: false
 {{< /card-small >}}
 
 {{< card-small filter="digil" id="senshi-tatsumaki" >}}
-{{< lightbox-image lightbox-id="tats" img-src="/images/gallery/tatsu final.png" alt="Tatsumaki dressed as a sailor senshi, smiling brightly as she asserts her will to battle for justice.">}}
+{{< lightbox-image lightbox-id="tats" img-src="/images/gallery/tats.png" alt="Tatsumaki dressed as a sailor senshi, smiling brightly as she asserts her will to battle for justice.">}}
 
-{{< lightbox-image lightbox-id="tats" img-src="/images/gallery/tatsu final 2.png" alt="Senshi Tatsumaki with wide eyes, causing terror as she laughs and destroys those who oppose her.">}}
+{{< lightbox-image lightbox-id="tats" img-src="/images/gallery/tatsu2.png" alt="Senshi Tatsumaki with wide eyes, causing terror as she laughs and destroys those who oppose her.">}}
 ##### ***Sailor Senshi Tatsumaki***
 > Sep. 2021    
 > Clip Studio Paint  

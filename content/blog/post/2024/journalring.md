@@ -77,7 +77,7 @@ My original plan for JournalRing was to create a Hobonichi widget, a Leuchtturm/
 
 To this end, I primarily used [Libresprite](https://libresprite.github.io), a free and open source fork of the better known [Aseprite](https://www.aseprite.org/).
 
-{{< lightbox-image link="/images/blog/011324/librespriteprev.png" lightbox-id="journalring" img-src="/images/blog/011324/librespriteprev.png" >}}
+{{< lightbox-image lightbox-id="journalring" img-src="/images/blog/011324/ls.png" alt="JournalRing widget in Libresprite." >}}
 
 I've been meaning to make a more in-depth post about Libresprite as part of my FOSS recommendations series. I used it to make my website button and found the experience overall very nice! I haven't used Aseprite for comparison, but I haven't found any features lacking in Libresprite that feel like a deal-breaker. That said, I'm pretty much a pixel art n00b, as it were.
 
@@ -136,7 +136,7 @@ Well, sort of. I still had to do the actual coding part, and I hadn't thought al
 
 I think it looks pretty good on most displays, except for whatever bizarre aspect ratio the Neocities screenshot tool uses to capture website updates. It looks like an atypical tablet-esque size? Whatever, it looks fine once I open it on most displays, which is good enough for me! 
 
-{{< lightbox-image link="/images/blog/011324/homepage.png" lightbox-id="journalring" img-src="/images/blog/011324/homepage.png" >}}
+{{< lightbox-image lightbox-id="journalring" img-src="/images/blog/011324/home.png" alt="JournalRing homepage." >}}
 
 You can look at the SCSS folder [on Github](https://github.com/js044/nenrikido/tree/main/assets/sass/webrings). If that's too confusing, just know it can be broken down by the [main SCSS](https://raw.githubusercontent.com/js044/nenrikido/main/assets/sass/webrings/journalring.scss), and then the extra SCSS snippets which can be found [here](https://github.com/js044/nenrikido/tree/main/assets/sass/webrings/journalring). Fun fact: the body font has to use vw (view width) units to make any of this work.
 
