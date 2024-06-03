@@ -341,6 +341,36 @@ window.membersData = [
         "url": "https://cashmerecrypt.art/",
         "description": "cozy & spooky digital garden for my musings and hobbies"
     },
+    {
+        "name": "foxthing",
+        "websiteTitle": "the fox den",
+        "url": "https://foxthing.neocities.org/",
+        "description": "funky lil mind palace"
+    },
+    {
+        "name": "Omen",
+        "websiteTitle": "Harvest Home",
+        "url": "https://harvest-home.neocities.org/",
+        "description": "Site where I talk about music, OCs, and nonsense"
+    },
+    {
+        "name": "Fritzi",
+        "websiteTitle": "Bohemian Sultriness",
+        "url": "https://bohemiansultriness.nekoweb.org/",
+        "description": "A collection of all the things I like: books, films, games, music and everything nice."
+    },
+    {
+        "name": "Selene",
+        "websiteTitle": "Gal's Corner",
+        "url": "https://galissia.neocities.org/",
+        "description": "a cozy lil' corner of the internet where I can be silly and let loose!"
+    },
+    {
+        "name": "haven",
+        "websiteTitle": "clowdywings site",
+        "url": "https://galissia.neocities.org/",
+        "description": "A personal website featuring various collections, writing, resources, and more. A constant wip."
+    },
 ];        
 
 class JournalRing extends HTMLElement {

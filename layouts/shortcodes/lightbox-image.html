@@ -1,1 +1,31 @@
-<a href="{{ .Get "link" }}" data-lightbox="{{ .Get "lightbox-id" }} "> <img src="{{ .Get "img-src" }}" class="img-fluid" loading="{{ .Get "loading" }}"  width="{{ .Get "width" }}" height="{{ .Get "height" }}" alt="{{ .Get "alt" }}">  </a>
+{{ $img := resources.Get (.Get "img-src") }}
+
+{{ with $img }}
+  {{ $lightboxID := $.Get "lightbox-id" }}
+  {{ $altText := $.Get "alt" }}
+  {{ $loading := "lazy" }}
+
+  {{ if eq (lower $img.MediaType.SubType) "gif" }}
+    <!-- Preserve GIF animation by resizing without format conversion -->
+    {{ $resizedImage := $img.Resize "x420" }}
+    {{ if $resizedImage }}
+<a href="{{ $img.RelPermalink }}" data-lightbox="{{ $lightboxID }}">
+<img src="{{ $resizedImage.RelPermalink }}" class="img-fluid" loading="{{ $loading }}" alt="{{ $altText }}">
+</a>
+    {{ else }}
+      <p>Error: GIF couldn't be resized.</p>
+    {{ end }}
+  {{ else }}
+    <!-- Convert other image formats to WebP with a maximum height of 400px -->
+    {{ $resizedImage := $img.Resize "x420 webp" }}
+    {{ if $resizedImage }}
+<a href="{{ $img.RelPermalink }}" data-lightbox="{{ $lightboxID }}">
+<img src="{{ $resizedImage.RelPermalink }}" class="img-fluid" loading="{{ $loading }}" alt="{{ $altText }}">
+</a>
+    {{ else }}
+      <p>Error: Image couldn't be resized.</p>
+    {{ end }}
+  {{ end }}
+{{ else }}
+  <p>Error: Image not found.</p>
+{{ end }}

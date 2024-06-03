@@ -176,29 +176,40 @@ Check out the [library](/library) for more!
 
 {{< card-large title="#MY CAT" id="gaia" >}}
 {{< large-scrollbox >}}
-{{< lightbox-image link="/images/gaia/gaia.png" lightbox-id="gaia" img-src="/images/gaia/thumbnails/gaia.png" loading="" width="800" height="449" alt="A fluffy Tortoiseshell cat sitting by a laptop that was used to tweet about her moments prior. She is crouched under a bed. The tweet is one of her sitting on top of the bed." >}}  
+{{< lightbox-image lightbox-id="gaia" img-src="/images/gaia/gaia.png" alt="A fluffy Tortoiseshell cat sitting by a laptop that was used to tweet about her moments prior. She is crouched under a bed. The tweet is one of her sitting on top of the bed." >}}
 
-{{< lightbox-image link="/images/gaia/gaia_1.jpg" lightbox-id="gaia" img-src="/images/gaia/thumbnails/gaia_1.jpg" loading="lazy" width="800" height="1009" alt="A fluffy Tortoiseshell cat flopped on her back." >}}  
+{{< preview >}}
+{{< lightbox-image lightbox-id="gaia" img-src="/images/gaia/gaia_1.jpg" alt="A fluffy Tortoiseshell cat flopped on her back." >}}
 
-{{< lightbox-image link="/images/gaia/gaia_2.jpg" lightbox-id="gaia" img-src="/images/gaia/thumbnails/gaia_2.jpg" loading="lazy" width="800" height="592" alt="A fluffy cat sprawled out dramatically on a pillow." >}}  
+{{< lightbox-image lightbox-id="gaia" img-src="/images/gaia/gaia_3.png" alt="A fluffy cat sitting at the dinner table surrounded by food that absolutely is not for her." >}}
+{{< /preview >}}
 
-{{< lightbox-image link="/images/gaia/gaia_3.png" lightbox-id="gaia" img-src="/images/gaia/thumbnails/gaia_3.png" loading="lazy" width="800" height="1056" alt="A fluffy cat sitting at the dinner table surrounded by food that absolutely is not for her." >}}  
+{{< preview >}}
+{{< lightbox-image lightbox-id="gaia" img-src="/images/gaia/gaia_2.jpg" alt="A fluffy cat sprawled out dramatically on a pillow." >}}
 
-{{< lightbox-image link="/images/gaia/gaia_4.jpg" lightbox-id="gaia" img-src="/images/gaia/thumbnails/gaia_4.jpg" loading="lazy" width="800" height="556" alt="A fluffy cat walking outside in the yard in a harness, noble and pensive." >}}  
+{{< lightbox-image lightbox-id="gaia" img-src="/images/gaia/gaia_4.jpg" alt="A fluffy cat walking outside in the yard in a harness, noble and pensive." >}}
+{{< /preview >}}
 
-{{< lightbox-image link="/images/gaia/gaia_5.jpg" lightbox-id="gaia" img-src="/images/gaia/thumbnails/gaia_5.jpg" loading="lazy" width="1350" height="1800" alt="A fluffy cat sitting in the driver's seat of a car." >}}  
+{{< preview >}}
+{{< lightbox-image lightbox-id="gaia" img-src="/images/gaia/gaia_5.jpg" alt="A fluffy cat sitting in the driver's seat of a car." >}}
 
-{{< lightbox-image link="/images/gaia/gaia_6.jpg" lightbox-id="gaia" img-src="/images/gaia/thumbnails/gaia_6.jpg" loading="lazy" width="800" height="600" alt="A fluffy cat asleep on her cat tree." >}}  
+{{< lightbox-image lightbox-id="gaia" img-src="/images/gaia/gaia_11.jpg" alt="A fluffy cat napping amongst various plushies." >}}
+{{< /preview >}}
 
-{{< lightbox-image link="/images/gaia/gaia_7.jpg" lightbox-id="gaia" img-src="/images/gaia/thumbnails/gaia_7.jpg" loading="lazy" width="800" height="648" alt="A fluffy cat asleep on a laptop keyboard." >}}  
+{{< preview >}}
+{{< lightbox-image lightbox-id="gaia" img-src="/images/gaia/gaia_6.jpg" alt="A fluffy cat asleep on her cat tree." >}}
 
-{{< lightbox-image link="/images/gaia/gaia_8.jpg" lightbox-id="gaia" img-src="/images/gaia/thumbnails/gaia_8.jpg" loading="lazy" width="800" height="646" alt="A fluffy cat laying inside a packed suitcase." >}}  
+{{< lightbox-image lightbox-id="gaia" img-src="/images/gaia/gaia_9.jpg" alt="A fluffy cat on her back mid-yawn. She looks threatening." >}}
+{{< /preview >}}
 
-{{< lightbox-image link="/images/gaia/gaia_9.jpg" lightbox-id="gaia" img-src="/images/gaia/thumbnails/gaia_9.jpg" loading="lazy" width="800" height="1003" alt="A fluffy cat on her back mid-yawn. She looks threatening." >}}  
+{{< lightbox-image lightbox-id="gaia" img-src="/images/gaia/gaia_10.jpg" alt="A fluffy cat laying on her back under a table, seemingly caught off-guard." >}}
 
-{{< lightbox-image link="/images/gaia/gaia_10.jpg" lightbox-id="gaia" img-src="/images/gaia/thumbnails/gaia_10.jpg" loading="lazy" width="800" height="515" alt="A fluffy cat laying on her back under a table, seemingly caught off-guard." >}}  
+{{< preview >}}
+{{< lightbox-image lightbox-id="gaia" img-src="/images/gaia/gaia_7.jpg" alt="A fluffy cat asleep on a laptop keyboard." >}}
 
-{{< lightbox-image link="/images/gaia/gaia_11.jpg" lightbox-id="gaia" img-src="/images/gaia/thumbnails/gaia_11.jpg" loading="lazy" width="800" height="600" alt="A fluffy cat napping amongst various plushies." >}} 
+{{< lightbox-image lightbox-id="gaia" img-src="/images/gaia/gaia_8.jpg" alt="A fluffy cat laying inside a packed suitcase." >}}
+{{< /preview >}}
+
 {{< /large-scrollbox >}} 
 {{< /card-large >}}
 

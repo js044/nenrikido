@@ -29,23 +29,46 @@ Feel free to email me ([nenrikido@pm.me](mailto:nenrikido@pm.me)) with any quest
 {{< comments >}}
 {{< /card-mll >}}
 
+{{< card-mll filter="tumblr themes" >}}
+{{< lightbox-image lightbox-id="rainbow-tumblr" img-src="/images/code/tumblr-themes/rainbow-theme-1.gif" alt="A Tumblr theme preview. It has a pastel rainbow background with a Creamy Mami character as the sidebar icon. The theme switches through different color themes based on the flag stripe that is selected." >}} 
+
+{{< lightbox-image lightbox-id="rainbow-tumblr" img-src="/images/code/tumblr-themes/rainbow-theme-2.png" alt="Alternate Tumblr theme preview." >}}
+
+{{< box-small  title="Rainbow Tumblr Theme" >}}
+[live preview](preview/rainbow2) 
+> Finally converted the Rainbow Page Theme to a Tumblr theme. Happy pride!
+
+Features:
+*   500px posts
+*   Pride flag theme toggler
+*   Optional jukebox/badges boxes
+*   Custom audio player for posts
+*   Customizable title + title font size
+*   Support for additional pages
+*   User can add a link to any song for jukebox
+*   Optional link 4 + 5
+*   Optional background image or color
+*   Semi-transparent posts
+*   Custom permalink icon + favicon
+
+{{< /box-small >}}
+{{< gist js044 cd47bf7889fbc42e02759832d243605b >}}   
+
+{{< /card-mll >}}
 
 {{< card-mll filter="page themes" >}}
-
 {{< preview >}}
-{{< lightbox-image link="/images/code/page-themes/rainbow.gif" lightbox-id="rainbow" img-src="/images/code/page-themes/thumb/rainbow.gif" loading="lazy" width="375" height="192" alt="A theme preview. A retro style background with boxes overlaid. There is an 8 striped flag in the corner. As the user clicks each stripe, the color scheme of the box shadows, border, and text changes to match." >}}
+{{< lightbox-image lightbox-id="rainbow" img-src="/images/code/page-themes/rainbow.gif" alt="A theme preview. A retro style background with boxes overlaid. There is an 8 striped flag in the corner. As the user clicks each stripe, the color scheme of the box shadows, border, and text changes to match." >}}
 
-{{< lightbox-image link="/images/code/page-themes/rainbow-1.png" lightbox-id="rainbow" img-src="/images/code/page-themes/thumb/rainbow-1.png" loading="lazy" width="94" height="200" alt="A mobile preview of the theme." >}}
+{{< lightbox-image lightbox-id="rainbow" img-src="/images/code/page-themes/rainbow-1.png" alt="A mobile preview of the theme." >}}
 {{< /preview >}}
- 
 {{< preview >}}
-{{< lightbox-image link="/images/code/page-themes/rainbow-2.png" lightbox-id="rainbow" img-src="/images/code/page-themes/thumb/rainbow-2.png" loading="lazy" width="397" height="200" alt="An alternate theme preview. This one has a sky background with a rainbow and an icon of Michiru Kaioh from Sailor Moon." >}}
+{{< lightbox-image lightbox-id="rainbow" img-src="/images/code/page-themes/rainbow-2.png" alt="An alternate theme preview. This one has a sky background with a rainbow and an icon of Michiru Kaioh from Sailor Moon." >}}
 
-{{< lightbox-image link="/images/code/page-themes/rainbow-3.png" lightbox-id="rainbow" img-src="/images/code/page-themes/thumb/rainbow-3.png" loading="lazy" width="89" height="200" alt="A zoomed-in preview of the sidebar boxes." >}}
+{{< lightbox-image lightbox-id="rainbow" img-src="/images/code/page-themes/rainbow-3.png" alt="A zoomed-in preview of the sidebar boxes." >}}
 {{< /preview >}}
-
 {{< box-small  title="Rainbow Page Theme" >}}
-[live preview](preview/rainbow) 
+[live preview](preview/rainbow) / [tumblr post](https://negg.tumblr.com/post/719689620334477312/rainbow-page-theme)
 > made a theme for pride month based on the original 70s rainbow flag! you can click on stripes of the flag to swap color schemes.
 
 features:
@@ -57,22 +80,20 @@ features:
 *   ...and other cool stuff!
 
 {{< /box-small >}}
-
-{{< gist js044 213429dbb42e8c852d6747c24c6097ac >}}    
+{{< gist js044 213429dbb42e8c852d6747c24c6097ac >}}   
 {{< /card-mll >}}
 
+
 {{< card-mll filter="page themes" >}}
-
 {{< preview >}}
-{{< lightbox-image link="/images/code/page-themes/sakura.gif" lightbox-id="sakura" img-src="/images/code/page-themes/thumb/sakura.gif" loading="lazy" width="394" height="200" alt="A theme preview. It's a gif of a standalone page. It has a header of Sakura from Cardcaptor Sakura and a background image of cherry blossoms over a river. Two pixels are to the right and left of the header image. The gif shows someone clicking on the left pixel, which opens a pop-up box with more text." >}}
+{{< lightbox-image lightbox-id="sakura" img-src="/images/code/page-themes/sakura.gif" alt="A theme preview. It's a gif of a standalone page. It has a header of Sakura from Cardcaptor Sakura and a background image of cherry blossoms over a river. Two pixels are to the right and left of the header image. The gif shows someone clicking on the left pixel, which opens a pop-up box with more text." >}}
 
-{{< lightbox-image link="/images/code/page-themes/sakura-1.png" lightbox-id="sakura" img-src="/images/code/page-themes/thumb/sakura-1.png" loading="lazy" width="93" height="200" alt="A mobile preview of the theme. The pixels, rather than sitting besides the header image, rest beneath the main content." >}}
+{{< lightbox-image lightbox-id="sakura" img-src="/images/code/page-themes/sakura-1.png" alt="A mobile preview of the theme. The pixels, rather than sitting besides the header image, rest beneath the main content." >}}
 {{< /preview >}}
-
 {{< preview >}}
-{{< lightbox-image link="/images/code/page-themes/sakura-2.png" lightbox-id="sakura" img-src="/images/code/page-themes/thumb/sakura-2.png" loading="lazy" width="407" height="200" alt="An alternate theme preview, with brighter pinks and blues. The theme uses a different gif of Sakura." >}}
+{{< lightbox-image lightbox-id="sakura" img-src="/images/code/page-themes/sakura-2.png" alt="An alternate theme preview, with brighter pinks and blues. The theme uses a different gif of Sakura." >}}
 
-{{< lightbox-image link="/images/code/page-themes/sakura-3.png" lightbox-id="sakura" img-src="/images/code/page-themes/thumb/sakura-3.png" loading="lazy" width="93" height="200" alt="A mobile preview of the theme." >}}
+{{< lightbox-image lightbox-id="sakura" img-src="/images/code/page-themes/sakura-3.png" alt="A mobile preview of the theme." >}}
 {{< /preview >}}
 
 {{< box-small  title="Sakura Page Theme" >}}
@@ -93,15 +114,15 @@ features:
 {{< card-mll filter="page themes" >}}
 
 {{< preview >}}
-{{< lightbox-image link="/images/code/page-themes/sunflower-1.png" lightbox-id="sunflower" img-src="/images/code/page-themes/thumb/sunflower-1.png" loading="lazy" width="407" height="200" alt="A theme preview. It's a profile page with a background image of sunflowers. A foggy box with text is in the center. A PNG of a girl is sitting next to the box." >}}
+{{< lightbox-image lightbox-id="sunflower" img-src="/images/code/page-themes/sunflower-1.png" alt="A theme preview. It's a profile page with a background image of sunflowers. A foggy box with text is in the center. A PNG of a girl is sitting next to the box." >}} 
 
-{{< lightbox-image link="/images/code/page-themes/sunflower-2.png" lightbox-id="sunflower" img-src="/images/code/page-themes/thumb/sunflower-2.png" loading="lazy" width="94" height="200" alt="A mobile preview of the theme." >}}
+{{< lightbox-image lightbox-id="sunflower" img-src="/images/code/page-themes/sunflower-2.png" alt="A mobile preview of the theme." >}} 
 {{< /preview >}}
 
 {{< preview >}}
-{{< lightbox-image link="/images/code/page-themes/sunflower-3.jpeg" lightbox-id="sunflower" img-src="/images/code/page-themes/thumb/sunflower-3.jpeg" loading="lazy" width="393" height="200" alt="A theme preview. It's a profile page with a background image of a city road. On the left, there are storefronts with flowers and the background shows a distant mountainous forest. A PNG of an anime-styled girl stands next to the foggy text box. She is holding a green bag behind her, smiling, and wearing cat ears." >}}
+{{< lightbox-image lightbox-id="sunflower" img-src="/images/code/page-themes/sunflower-3.jpeg" alt="A theme preview. It's a profile page with a background image of a city road. On the left, there are storefronts with flowers and the background shows a distant mountainous forest. A PNG of an anime-styled girl stands next to the foggy text box. She is holding a green bag behind her, smiling, and wearing cat ears." >}} 
 
-{{< lightbox-image link="/images/code/page-themes/sunflower-4.png" lightbox-id="sunflower" img-src="/images/code/page-themes/thumb/sunflower-4.png" loading="lazy" width="94" height="200" alt="A mobile preview of the theme." >}}
+{{< lightbox-image lightbox-id="sunflower" img-src="/images/code/page-themes/sunflower-4.png" alt="A mobile preview of the theme." >}} 
 {{< /preview >}}
 {{< box-small  title="Sunflower Page Theme" >}}
 [live preview](preview/sunflower) / [tumblr post](https://negg.tumblr.com/post/716650921639198720/redesigned-recoded-the-sunflower-about-page)
@@ -119,7 +140,7 @@ features:
 {{< /card-mll >}}
 
 {{< card-mll filter="snippets" >}}
-{{< lightbox-image link="/images/code/snippets/preload.gif" lightbox-id="preloader" img-src="/images/code/snippets/thumb/preload.gif" loading="lazy" width="400" height="191" alt="A gif of a loading screen as the home page for Nenrikido loads." >}}
+{{< lightbox-image lightbox-id="preloader" img-src="/images/code/snippets/preload.gif" alt="A gif of a loading screen as the home page for Nenrikido loads." >}} 
 
 {{< box-small  title="Preloader" >}}
 [blog post + codepen](/blog/post/making-a-preloader/)   
@@ -129,9 +150,10 @@ features:
 {{< /card-mll >}}
 
 {{< card-mll filter="tumblr themes" >}}
-{{< lightbox-image link="/images/code/tumblr-themes/toothache-theme-1.jpg" lightbox-id="toothache" img-src="/images/code/tumblr-themes/thumb/toothache-theme-1.jpg" loading="lazy" width="700" height="401" alt="A theme preview. It's pink and minimal." >}}
+{{< lightbox-image lightbox-id="toothache" img-src="/images/code/tumblr-themes/toothache-theme-1.jpg" alt="A theme preview. It's pink and minimal." >}} 
 
-{{< lightbox-image link="/images/code/tumblr-themes/toothache-theme-2.jpg" lightbox-id="toothache" img-src="/images/code/tumblr-themes/thumb/toothache-theme-2.jpg" loading="lazy" width="700" height="401" alt="A blue theme with a cat icon on the sidebar."  >}}  
+{{< lightbox-image lightbox-id="toothache" img-src="/images/code/tumblr-themes/toothache-theme-2.jpg" alt="A blue theme with a cat icon on the sidebar." >}} 
+
 {{< box-small  title="Toothache Theme" >}}
 [live preview](preview/toothache) / [tumblr post](https://negg.tumblr.com/post/711094972280160256/toothache-theme-by-negg-re-release-u-may-or-may)
 > this is a re-release of my very [first theme](https://negg.tumblr.com/post/711094099488440320/negg-toothache-theme-by-negg-so-this-is-my) back in 2016...it's cleaned up & a bit more comprehensible.
@@ -148,12 +170,11 @@ features:
 {{< gist js044 1e97e4460014faddb27b71923f1e4f58 >}}                     
 {{< /card-mll >}}
 
-
 {{< card-mll filter="tumblr themes" >}}
 
-{{< lightbox-image link="/images/code/tumblr-themes/pudding-theme-1.jpg" lightbox-id="pudding" img-src="/images/code/tumblr-themes/thumb/pudding-theme-1.jpg" loading="lazy" width="700" height="401" alt="A yellow Tumblr blog theme. It's minimal and serene with a photo of flowers and a sleeping girl." >}}
+{{< lightbox-image lightbox-id="pudding" img-src="/images/code/tumblr-themes/pudding-theme-1.jpg" alt="A yellow Tumblr blog theme. It's minimal and serene with a photo of flowers and a sleeping girl." >}} 
 
-{{< lightbox-image link="/images/code/tumblr-themes/pudding-theme-2.jpg" lightbox-id="pudding" img-src="/images/code/tumblr-themes/thumb/pudding-theme-2.jpg" loading="lazy" width="700" height="401" alt="An alternate pink version of the theme that is left aligned rather than centered"  >}}  
+{{< lightbox-image lightbox-id="pudding" img-src="/images/code/tumblr-themes/pudding-theme-2.jpg" alt="An alternate pink version of the theme that is left aligned rather than centered." >}} 
 
 {{< box-small  title="Pudding Theme" >}}
 [live preview](preview/pudding) / [tumblr post](https://negg.tumblr.com/post/710997721242353664/pudding-theme-plain-times-edit-by-negg-i-3-the)

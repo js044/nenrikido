@@ -10,7 +10,7 @@
     <link rel='icon' type='image/x-icon' href='../../../images/icons/pink-favicon.svg' /> 
 
     
-    <link href="../../../css/main.min.8e2177288926336c463695e94ef49986c55782f3fec974015af7065a12f8f404.css" rel="stylesheet">
+    <link href="../../../css/main.min.e14f904cf22fc07a4118f72b52bb554326d00dc56903ad6da7dda7ed5db34138.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
     
@@ -75,7 +75,24 @@
 </div><div class="cardsBody">
                             <h2>Making a Webring: The Creation of JournalRing</h2>
                             <blockquote>January 13, 2024</blockquote> <p>Hello, all. In case you haven&rsquo;t heard yet, I made a <a href="../../../webrings/journalring">webring</a>! I&rsquo;ve been curious about making one for awhile, but I wasn&rsquo;t really sure what would interest people (who aren&rsquo;t me). After asking Hors about her opinion on Hobonichi planners after a long stint as a bullet journaller (alleged), it occurred to me this might be a fun topic to build a webring around. (Despite the fact I still haven&rsquo;t made my Nexus page that&rsquo;s dedicated to journals. Which is going to happen eventually. I swear!)</p>
-<a href="../../../images/blog/011324/journalring.gif" data-lightbox="journalring "> <img src="../../../images/blog/011324/journalring.gif" class="img-fluid" loading=""  width="" height="" alt="">  </a>
+
+
+
+  
+  
+  
+
+  
+    
+    
+    
+<a href="../../../images/blog/011324/journalring.gif" data-lightbox="journalring">
+<img src="../../../images/blog/011324/journalring_hu629ad5c2ccc8af768e16d480c7543115_3460737_0x420_resize_box_1.gif" class="img-fluid" loading="lazy" alt="">
+</a>
+    
+  
+
+
 <p>For anyone uninitiated, a webring is a list of people. This list can be loosely organized around whatever you want. Each member of this list puts a snippet of code on their site, which generates a forward and backwards button based on that member&rsquo;s position within the list. There&rsquo;s typically a link back to the webring home page, and sometimes also a &ldquo;Random&rdquo; button to find new sites on the list. Sounds simple enough, yeah?</p>
 <p>Kind of! There are a few considerations, including:</p>
 <ul>
@@ -140,7 +157,24 @@
 <h2 id="the-webring-widget">II. The webring widget</h2>
 <p>My original plan for JournalRing was to create a Hobonichi widget, a Leuchtturm/Moleskin widget, a Mead widget, a Traveler&rsquo;s notebook widget, and a spiral bound notebook widget. I even made little doodles of what they were going to look like. I started with the Hobonichi widget, promptly realized how difficult pixel art is, and very rapidly abandoned the thought. Instead, I ended up making different colors for the Hobonichi widget. A stylish compromise if I say so myself.</p>
 <p>To this end, I primarily used <a href="https://libresprite.github.io">Libresprite</a>, a free and open source fork of the better known <a href="https://www.aseprite.org/">Aseprite</a>.</p>
-<a href="../../../images/blog/011324/librespriteprev.png" data-lightbox="journalring "> <img src="../../../images/blog/011324/librespriteprev.png" class="img-fluid" loading=""  width="" height="" alt="">  </a>
+
+
+
+  
+  
+  
+
+  
+    
+    
+    
+<a href="../../../images/blog/011324/librespriteprev.png" data-lightbox="journalring">
+<img src="../../../images/blog/011324/librespriteprev_hu3a472033d981be1949bdadf9f2ac29ce_129050_0x420_resize_q75_h2_box_3.webp" class="img-fluid" loading="lazy" alt="">
+</a>
+    
+  
+
+
 <p>I&rsquo;ve been meaning to make a more in-depth post about Libresprite as part of my FOSS recommendations series. I used it to make my website button and found the experience overall very nice! I haven&rsquo;t used Aseprite for comparison, but I haven&rsquo;t found any features lacking in Libresprite that feel like a deal-breaker. That said, I&rsquo;m pretty much a pixel art n00b, as it were.</p>
 <p>Anyways, Libresprite has overlay layers, but I&rsquo;m so used to Clip Studio Paint&rsquo;s that I tossed in the pixels there for final processing. Not quite as FOSS, but what can I say. I&rsquo;m a creature of habit. I tweaked some of the colors to get different shades for the widgets. Once the widget colors were finalized, I made a forward and back button to match. I tried to get away with just using text arrows, but it didn&rsquo;t have the same pizzazz.</p>
 <p>Honestly, in retrospect, I wish I&rsquo;d made the journal widgets look more like stickers to match the journal thing I have going on. But I have even less experience making stickers than I do making pixel art, so maybe once I have a little more experience. If I ever do update the links to the widget icons in the code, it will end up updating on everyone&rsquo;s page, which is an unsettling amount of power. Theoretically, you could link it to whatever you wanted, even Sasuke doing a Fortnite dance.</p>
@@ -178,7 +212,24 @@
 <p>I thought, hey, wouldn&rsquo;t it be so cute to make a layout that emulates a journal?! With a highlighter, realistic pages, and journal tabs? So I nabbed a photo of the <a href="https://www.1101.com/store/techo/en/2024/pc/detail_cover/oc22_colorsdsoda/">Dreamy Soda case</a> from the Hobonichi Techo website and threw it into Photoshop to fix up. Then, I hunted down some graph paper to overlay on top of that picture, and voila!</p>
 <p>Well, sort of. I still had to do the actual coding part, and I hadn&rsquo;t thought all that far ahead. I just knew I really wanted to avoid using px with absolute positioning. I have a weird vendetta against px. Not very old-web of me, I know, but I wanted the journal container to behave more responsively, resizing to match the viewport at any size. This ended up being a pretty big challenge because what I fundamentally wanted was to mix responsive styling with non-responsive functioning and to break the zoom function, which was a bit&hellip;messy. The sloppy code is most noticeable with the stickers, which I will re-tool to be more code efficient someday. To make things mobile responsive, I just flipped everything 90 degrees to force a psuedo-landscape mode and called it a day (another good idea courtesy of Hors).</p>
 <p>I think it looks pretty good on most displays, except for whatever bizarre aspect ratio the Neocities screenshot tool uses to capture website updates. It looks like an atypical tablet-esque size? Whatever, it looks fine once I open it on most displays, which is good enough for me!</p>
-<a href="../../../images/blog/011324/homepage.png" data-lightbox="journalring "> <img src="../../../images/blog/011324/homepage.png" class="img-fluid" loading=""  width="" height="" alt="">  </a>
+
+
+
+  
+  
+  
+
+  
+    
+    
+    
+<a href="../../../images/blog/011324/homepage.png" data-lightbox="journalring">
+<img src="../../../images/blog/011324/homepage_hu9ea625bd85c5d9614ace352303a1b94c_1285875_0x420_resize_q75_h2_box_3.webp" class="img-fluid" loading="lazy" alt="">
+</a>
+    
+  
+
+
 <p>You can look at the SCSS folder <a href="https://github.com/js044/nenrikido/tree/main/assets/sass/webrings">on Github</a>. If that&rsquo;s too confusing, just know it can be broken down by the <a href="https://raw.githubusercontent.com/js044/nenrikido/main/assets/sass/webrings/journalring.scss">main SCSS</a>, and then the extra SCSS snippets which can be found <a href="https://github.com/js044/nenrikido/tree/main/assets/sass/webrings/journalring">here</a>. Fun fact: the body font has to use vw (view width) units to make any of this work.</p>
 <p>I initially set up my first spread with CSS page counters, but after implementing the journal tabs, I realized that they wouldn&rsquo;t count properly. Fundamentally, all the content on the JournalRing homepage is contained within one HTML file, specific sections for the left and right pages are just conditionally displayed or hidden depending on which tab is selected. Which confuses CSS counters. So I ended up just appending a page number to the headers with Javascript.</p>
 <p>I also wanted my &ldquo;Members&rdquo; list to resemble an address book, with pre-printed boxes to fill in. This was a little more complex than I expected because I separated the &ldquo;left&rdquo; and &ldquo;right&rdquo; pages (meaning that I had to define how many placeholder boxes should be there per page). Also, once there are more than 10 entries, there&rsquo;ll be previous and next buttons under the 10th entry, but I thought it&rsquo;d look strange to have them before then. Just generally a lot more JS logic than I&rsquo;d been anticipating!</p>
@@ -235,7 +286,7 @@
 
                 <ul style="font-style: italic;">
                     <li>OS: Nenrikido</li>
-                    <li>Version: 1.73</li>
+                    <li>Version: 1.75</li>
                     <li>Host: Neocities</li>
                     <li>Processor: Hugo</li>
                     <li>Since: 03-13-23</li>

@@ -51,6 +51,8 @@ draft: false
 
 <div id='ncring' style="background: none;"><script type="text/javascript" src="https://neocreatives.neocities.org/onionring-variables.js"></script><script type="text/javascript" src="https://neocreatives.neocities.org/onionring-widget.js"></script></div>
 
+<a href="https://lovesick.cafe/grrrl"> <img src="/images/buttons/mbag.png" alt="Blue girl."> </a>
+
 {{< /col >}}
 {{< /large-scrollbox >}}
 {{< /box-small >}}

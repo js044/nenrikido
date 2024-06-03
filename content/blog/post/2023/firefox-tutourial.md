@@ -3,7 +3,7 @@ title: "Firefox Tree Tabs Tu(tour)ial"
 date: 2023-07-02T00:34:17-06:00
 tags: tutorials
 summary: Welcome to my crib, Mozilla Firefox edition. With instructions on how to recreate it!
-thumbnail: /images/blog/070223/firefox.webp
+thumbnail: /images/blog/070223/firefox.gif
 draft: false
 ---
 
@@ -15,7 +15,7 @@ As for customization, you can directly edit the browser CSS to make it look howe
 
 Here's a demo of my current Firefox setup:
 
-{{< lightbox-image link="/images/blog/070223/firefox.webp" lightbox-id="ff" img-src="/images/blog/070223/firefox.webp" >}}
+{{< lightbox-image lightbox-id="ff" img-src="images/blog/070223/firefox.gif" alt="Firefox tutorial screenshot" >}}
 
 I've achieved this look with some CSS and a few add-ons. My setup features:
 - A collapsible sidebar (expands on hover)
@@ -38,7 +38,7 @@ If you're a tab addict who cares deeply about screen real estate, continue readi
 2. Head to the [website](https://color.firefox.com/).
 3. Select whatever theme you want. Or make your own. You can also use [mine](https://color.firefox.com/?theme=XQAAAAI0AQAAAAAAAABBqYhm849SCia2CaaEGccwS-xNKlhhT7FcjMwJkEgE5uIU5XaaD-dDbJMXbYZiL9mB2eGL-22JKioNeP3kvNUGuFv85O6OCkMLhqTiAoy9NAf0li2BqE7IH_5i9zdkfuV24Q3C7VoAKA0TvFqaSMgczr6T5EO2b9XMA1WbCYMMRQEwU00jlqBbM35zYK5Hq7odbTonreJyxRSKaDyzFUdABtPZVnYYbjQmlZ1tNwHmYR-LPEU_frmNaxCV9Y3sRkWYzc3p-Y3GgElyLPb75YSX_z2cpQA), a slightly modified version of a pre-existing theme. 
 
-{{< lightbox-image link="/images/blog/070223/ffcolor.webp" lightbox-id="ff" img-src="/images/blog/070223/ffcolor.webp" >}}
+{{< lightbox-image lightbox-id="ff" img-src="images/blog/070223/ffcolor.png" alt="Firefox tutorial screenshot" >}}
 
 ---
 
@@ -96,5 +96,5 @@ padding:0.5em;
 
 Congrats, you are me! If all has gone well, your browser should look very cool and sexy like so:
 
-{{< lightbox-image link="/images/blog/070223/newtab.webp" lightbox-id="ff" img-src="/images/blog/070223/newtab.webp" >}}
+{{< lightbox-image lightbox-id="ff" img-src="images/blog/070223/newtab.png" alt="Firefox tutorial screenshot" >}}
  

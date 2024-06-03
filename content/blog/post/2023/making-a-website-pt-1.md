@@ -4,7 +4,7 @@ date: 2023-03-23T03:22:37-06:00
 tags: tutorials
 summary: The blog got a bit of a makeover! Anyways, this is the first post in a series I've planned about building websites. It's aimed towards the absolute beginner, but hopefully, it'll still be interesting or useful for people with more experience.
 thumbnail: /images/blog/planning.jpg
-draft: false
+draft: true
 ---
 
 The blog got a bit of a makeover! Anyways, this is the first post in a series I've planned about building websites. It's aimed towards the absolute beginner, but hopefully, it'll still be interesting or useful for people with more experience.

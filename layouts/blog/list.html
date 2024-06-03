@@ -16,8 +16,14 @@
                 {{- partial "card-header.html" . -}}
                 <div class="cardsBody">
                     {{ if .Params.thumbnail }}
-                    <img class="thumbnail" src="{{ .Params.thumbnail }}" alt="Thumbnail Image">
+                    {{ $thumbnail := resources.Get .Params.thumbnail }}
+                    {{ if $thumbnail }}
+                        {{ $resizedThumbnail := $thumbnail.Resize "300x" }}
+                        <img class="thumbnail" src="{{ $resizedThumbnail.RelPermalink }}" alt="Thumbnail Image">
+                    {{ else }}
+                        <p>Error: Thumbnail image not found at {{ .Params.thumbnail }}</p>
                     {{ end }}
+                {{ end }}                
                     <h4>{{.Title}}</h4>
                     <p>{{.Date.Format "Jan 02, 2006"}}</p>
                     <blockquote>
