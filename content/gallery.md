@@ -244,7 +244,7 @@ draft: false
 {{< card-small filter="digil" id="senshi-tatsumaki" >}}
 {{< lightbox-image lightbox-id="tats" img-src="/images/gallery/tats.png" alt="Tatsumaki dressed as a sailor senshi, smiling brightly as she asserts her will to battle for justice.">}}
 
-{{< lightbox-image lightbox-id="tats" img-src="/images/gallery/tatsu2.png" alt="Senshi Tatsumaki with wide eyes, causing terror as she laughs and destroys those who oppose her.">}}
+{{< lightbox-image lightbox-id="tats" img-src="/images/gallery/tats2.png" alt="Senshi Tatsumaki with wide eyes, causing terror as she laughs and destroys those who oppose her.">}}
 ##### ***Sailor Senshi Tatsumaki***
 > Sep. 2021    
 > Clip Studio Paint  

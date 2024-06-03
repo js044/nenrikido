@@ -140,7 +140,7 @@ features:
 {{< /card-mll >}}
 
 {{< card-mll filter="snippets" >}}
-{{< lightbox-image lightbox-id="preloader" img-src="/images/code/snippets/preload.gif" alt="A gif of a loading screen as the home page for Nenrikido loads." >}} 
+{{< lightbox-image lightbox-id="preloader" img-src="/images/code/preload.gif" alt="A gif of a loading screen as the home page for Nenrikido loads." >}} 
 
 {{< box-small  title="Preloader" >}}
 [blog post + codepen](/blog/post/making-a-preloader/)   
