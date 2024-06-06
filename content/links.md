@@ -35,7 +35,7 @@ draft: false
 
 <div id='shoujosei-ring'>
 <script type="text/javascript" src="https://angeleyesprings.neocities.org/webring/onionring-variables.js"></script>
-<script type="text/javascript" src="https://angeleyesprings.neocities.org/webring/onionring-widget4.js"></script>
+<script type="text/javascript" src="https://angeleyesprings.neocities.org/webring/onionring-widget2.js"></script>
 </div>
 
 {{< /col >}}
