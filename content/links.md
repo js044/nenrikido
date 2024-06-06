@@ -4,7 +4,6 @@ draft: false
 ---
 
 {{< nav title="LINKS" id="links" >}}  
-{{< icons/hashtag >}} [find me](#find-me)  
 {{< icons/hashtag >}} [webrings](#webrings)  
 {{< icons/hashtag >}} [fanlistings](#fanlistings)  
 {{< icons/hashtag >}} [button wall](#button-wall)   
@@ -13,21 +12,6 @@ draft: false
 {{< /nav >}}
 
 {{< muuri >}}
-{{< card-large title="#FIND ME" id="find-me">}}
-{{< box-small >}}
-
-<img src="/images/pixels/13mo_nekjiru3.gif" alt="Two identical pixel cats smiling at each other and curling their paws." style="float: right; width: 230px;">
-
-{{< icons/email >}} [nenrikido@pm.me](mailto:@nenrikido@pm.me)  
-{{< icons/mug >}} [nenrikido_](https://ko-fi.com/nenrikido_)  
-{{< icons/tumblr >}} [nenrikido-art](https://nenrikido-art.tumblr.com/)  
-{{< icons/twitter >}} [nenrikido](https://x.com/nenrikido)  
-{{< icons/bluesky >}} [nenrikido](https://bsky.app/profile/nenrikido.bsky.social)  
-{{< icons/card >}} [neocities profile](https://neocities.org/site/nenrikido)  
-{{< icons/discord >}} ask me   
-
-{{< /box-small >}}
-{{< /card-large >}}
 
 {{< card-large title="#WEBRINGS" id="webrings">}}
 {{< box-small >}}
@@ -41,8 +25,6 @@ draft: false
 
 <div><script src="https://nuthead.neocities.org/ring/ring.js"></script> </div>
 
-<div><object id="melonland-surf-club" data="https://melonland.net/surf-badge.svg?fill=#3d03fc" type="image/svg+xml" style="width: 100px; height: 100px;"></object></div> 
-
 <div id='neossg'><script type="text/javascript" src="https://neossg.neocities.org/onionring-variables.js"></script><script type="text/javascript" src="https://neossg.neocities.org/onionring-widget.js"></script></div>
 
 <div id='safont'><script src="https://xandra.cc/safonts/webring.js"></script><ring-900 site="https://nenrikido.neocities.org/"></ring-900></div>
@@ -51,7 +33,10 @@ draft: false
 
 <div id='ncring' style="background: none;"><script type="text/javascript" src="https://neocreatives.neocities.org/onionring-variables.js"></script><script type="text/javascript" src="https://neocreatives.neocities.org/onionring-widget.js"></script></div>
 
-<a href="https://lovesick.cafe/grrrl"> <img src="/images/buttons/mbag.png" alt="Blue girl."> </a>
+<div id='shoujosei-ring'>
+<script type="text/javascript" src="https://angeleyesprings.neocities.org/webring/onionring-variables.js"></script>
+<script type="text/javascript" src="https://angeleyesprings.neocities.org/webring/onionring-widget4.js"></script>
+</div>
 
 {{< /col >}}
 {{< /large-scrollbox >}}
