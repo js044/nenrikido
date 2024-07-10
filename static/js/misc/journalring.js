@@ -120,12 +120,6 @@ window.membersData = [
         "description": "Descriptions of Shanghai, people, weather, and Chinese experimental music."
     },
     {
-        "name": "hibikimorada",
-        "websiteTitle": "tabatinga",
-        "url": "https://tabatinga.co/",
-        "description": "personal website with a blog and various creative stuff."
-    },
-    {
         "name": "Saki/Cora",
         "websiteTitle": "Wonworld",
         "url": "https://wonworld.neocities.org/",
@@ -368,8 +362,32 @@ window.membersData = [
     {
         "name": "haven",
         "websiteTitle": "clowdywings site",
-        "url": "https://galissia.neocities.org/",
+        "url": "https://clowdywings.neocities.org/",
         "description": "A personal website featuring various collections, writing, resources, and more. A constant wip."
+    },
+    {
+        "name": "Callie",
+        "websiteTitle": "Tectrix",
+        "url": "https://tectrix.neocities.org/",
+        "description": "My personal blogging/journaling website :)"
+    },
+    {
+        "name": "radiolights",
+        "websiteTitle": "radiolights.wav",
+        "url": "https://radiolights.neocities.org/",
+        "description": "a personal site where i can blog, do media reviews, and keep a log of my weekly shenanigans :)"
+    },
+    {
+        "name": "Leilukin",
+        "websiteTitle": "Leilukin's Hub",
+        "url": "https://leilukin.com/",
+        "description": "Personal website of an autistic non-binary lesbian dedicated to queerness and various interests."
+    },
+    {
+        "name": "StarryKnight",
+        "websiteTitle": "Starry's Grove",
+        "url": "https://starry-knight.neocities.org/",
+        "description": "A cozy green site to keep all the things I love and make. You'll find my artwork, my fave webcomics, plant facts, & more :)"
     },
 ];        
 
