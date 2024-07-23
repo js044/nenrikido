@@ -164,7 +164,7 @@ window.membersData = [
     {
         "name": "Chao",
         "websiteTitle": "dotdotdot",
-        "url": "https://chao.bouvardia.blue/",
+        "url": "https://cloudy.blue/",
         "description": "personal site/blog"
     },
     {
@@ -388,6 +388,24 @@ window.membersData = [
         "websiteTitle": "Starry's Grove",
         "url": "https://starry-knight.neocities.org/",
         "description": "A cozy green site to keep all the things I love and make. You'll find my artwork, my fave webcomics, plant facts, & more :)"
+    },
+    {
+        "name": "Tsubaki",
+        "websiteTitle": "Tsubaki's Room",
+        "url": "https://tsubakiroom.neocities.org/",
+        "description": "Cute website with a regularly updated diary (student life, books, mental health)!"
+    },
+    {
+        "name": "middlepot",
+        "websiteTitle": "middlepot.com",
+        "url": "https://middlepot.com/",
+        "description": "my safe corner on the internet, where i share my thoughts & updates about my life and all of my projects !"
+    },
+    {
+        "name": "Abygail",
+        "websiteTitle": "Abby's Notebook",
+        "url": "https://abbys-notebook.neocities.org/",
+        "description": "The website of a weird teenage girl!!"
     },
 ];        
 
