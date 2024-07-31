@@ -407,6 +407,24 @@ window.membersData = [
         "url": "https://abbys-notebook.neocities.org/",
         "description": "The website of a weird teenage girl!!"
     },
+    {
+        "name": "Aiko",
+        "websiteTitle": "Miniature Garden",
+        "url": "https://hako-aiko.haliya.net/",
+        "description": "Aiko's personal website consisting of creative work, blog, fandom interests, and anything else that comes to mind."
+    },
+    {
+        "name": "Frank",
+        "websiteTitle": "Whirlwind",
+        "url": "https://whirlwind.neocities.org/",
+        "description": "A personal site on a computer in the sky."
+    },
+    {
+        "name": "chloe",
+        "websiteTitle": "venus in foxfurs",
+        "url": "https://venusinfoxfurs.neocities.org/",
+        "description": "a personal blog with art, cooking, hobbies, and writing!"
+    },
 ];        
 
 class JournalRing extends HTMLElement {

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>site updates on NENRIKIDO</title>
+    <title>Site Updates on NENRIKIDO</title>
     <link>https://nenrikido.neocities.org/tags/site-updates/</link>
-    <description>Recent content in site updates on NENRIKIDO</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Site Updates on NENRIKIDO</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Dec 2023 20:14:19 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jul 2024 23:27:58 -0400</lastBuildDate>
     <atom:link href="https://nenrikido.neocities.org/tags/site-updates/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mega Site Update</title>
