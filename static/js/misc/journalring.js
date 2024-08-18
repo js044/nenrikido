@@ -425,6 +425,36 @@ window.membersData = [
         "url": "https://venusinfoxfurs.neocities.org/",
         "description": "a personal blog with art, cooking, hobbies, and writing!"
     },
+    {
+        "name": "vulpecula",
+        "websiteTitle": "steady as the stars",
+        "url": "https://vulpecula.neocities.org/",
+        "description": "personal site for blogging, media reviews, and discussing geocache adventures"
+    },
+    {
+        "name": "juki",
+        "websiteTitle": "juki",
+        "url": "https://leyworthy.neocities.org/",
+        "description": "I love making things in general! Whether it be art, creative writing, or website layouts. Feel free to come to my site for inspiration or to even nab some elements of it for yourself! While not a site explicitly about journalling, I'm a big lover of journalling in my personal life, and have been thinking about making posts about ideal planner/journal setups that worked for me as a student in high school, college, and as a working adult..."
+    },
+    {
+        "name": "kirsty",
+        "websiteTitle": "x-squishy-mushroom-x",
+        "url": "https://x-squishy-mushroom-x.neocities.org/",
+        "description": "emo y2k  inspired site filled with all things i love! <3"
+    },
+    {
+        "name": "tash",
+        "websiteTitle": "milk-tea",
+        "url": "https://milk-tea.neocities.org/",
+        "description": "tash's personal website ★"
+    },
+    {
+        "name": "amia",
+        "websiteTitle": "ferdvonvestra",
+        "url": "https://ferdvonvestra.neocities.org/",
+        "description": "general blog, personal & fan media"
+    },
 ];        
 
 class JournalRing extends HTMLElement {
