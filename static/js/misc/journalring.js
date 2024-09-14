@@ -455,6 +455,90 @@ window.membersData = [
         "url": "https://ferdvonvestra.neocities.org/",
         "description": "general blog, personal & fan media"
     },
+    {
+        "name": "cd",
+        "websiteTitle": "CDsverdict",
+        "url": "https://ferdvonvestra.neocities.org/",
+        "description": "personal website about things I'm interested in"
+    },
+    {
+        "name": "Melody",
+        "websiteTitle": "Melody Nomás",
+        "url": "https://melody-nomas.neocities.org/",
+        "description": "este sitio es mi carta de amor a las cosas que más amo: la lectura, el arte, la crítica y la divulgación."
+    },
+    {
+        "name": "Rango",
+        "websiteTitle": "Rango's Web Hell Hole",
+        "url": "https://wriorango.neocities.org/",
+        "description": "A personal website dedicated for experimenting with HTML/CSS programming, journalling, and gushing over my F/O."
+    },
+    {
+        "name": "lina",
+        "websiteTitle": "lina's home",
+        "url": "https://amalinalai.github.io/precipice/",
+        "description": "A personal site where I yap about things I love and experiment with css & html!"
+    },
+    {
+        "name": "Windigone",
+        "websiteTitle": "Windigone's whatevs",
+        "url": "https://windigone.nekoweb.org/",
+        "description": "Just a personal site where I kinda write about whatever I feel like at the time"
+    },
+    {
+        "name": "Winter",
+        "websiteTitle": "Starlit Marmalade",
+        "url": "https://starlitmarmalade.neocities.org/",
+        "description": "Personal site where I have fun and talk about the things I love(mostly otaku-related)"
+    },
+    {
+        "name": "William",
+        "websiteTitle": "sillywilly22",
+        "url": "https://sillywilly22.neocities.org/",
+        "description": "my personal website!!! I tried to make it as simple and epic as possible!"
+    },
+    {
+        "name": "chara",
+        "websiteTitle": "hunipyon",
+        "url": "https://hunipyon.neocities.org/",
+        "description": "my little corner of the internet. used as a personal site and a love letter to individuality"
+    },
+    {
+        "name": "Elyi",
+        "websiteTitle": "JELLO'S WORLD",
+        "url": "https://jello01000101.neocities.org/",
+        "description": "A personal blog where i can just talk about my interests"
+    },
+    {
+        "name": "natalie",
+        "websiteTitle": "planetary influence",
+        "url": "https://planetaryinfluence.neocities.org/",
+        "description": "A little corner for a goofy girl."
+    },
+    {
+        "name": "sony",
+        "websiteTitle": "Segaaa",
+        "url": "https://segaaa.neocities.org/",
+        "description": "a website all about sonic the hedgehog! The creator, Sony, is a nerd and will be loud about it."
+    },
+    {
+        "name": "HQ",
+        "websiteTitle": "PENTUMBRA",
+        "url": "https://pentumbra.neocities.org/",
+        "description": "A goofy, personal site used to show my art and other interests."
+    },
+    {
+        "name": "V",
+        "websiteTitle": "madeinv",
+        "url": "https://madeinv.love/",
+        "description": "Another personal site to do whatever with, To the best of my abilities."
+    },
+    {
+        "name": "pochitchi music",
+        "websiteTitle": "pochitchi music",
+        "url": "https://pochitchimusic.blogspot.com/",
+        "description": "a blog for j-idol music reviews"
+    },
 ];        
 
 class JournalRing extends HTMLElement {

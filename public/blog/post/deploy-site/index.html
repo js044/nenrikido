@@ -73,7 +73,7 @@
 </div><div class="cardsBody">
                             <h2>Deploying Your Site to Neocities</h2>
                             <blockquote>May 15, 2024</blockquote> <p>So, Neocities&hellip;isn&rsquo;t exactly equipped for heavy editing. The code editor is limited in its functionality and the file upload process is so simple that it actually becomes cumbersome. Its simplicity is one of its selling points, but trying to update your site can get very tedious, very fast, especially the more it grows.</p>
-<p>After a failed attempt at wrangling the native Neocities GUI and messing up my file structure, I decided I wanted to simply abstract it away. I found two primary ways to do so, but neither had a <em>ton</em> of documentation, and as someone who was still just getting started with web development, it took a bit of extra care to get everything working. I&rsquo;ll just be reiterating the instructions for both deployment methods with a bit of extra context and guidance for anyone who needs it.</p>
+<p>After a failed attempt at wrangling the native Neocities GUI and messing up my file structure, I decided I wanted to simply abstract it away. I found two primary ways to do so, but neither had a <em>ton</em> of documentation, and as someone who was still just getting started with web development, it took a bit of extra care to get everything working. I&rsquo;ll just be reiterating the instructions for both deployment methods with a little extra context and guidance for anyone who needs it.</p>
 <p>I&rsquo;m using a static site generator (Hugo), but the methods outlined here will work even if you aren&rsquo;t.</p>
 <hr>
 <h2 id="option-1-neocities-cli">OPTION 1: Neocities CLI</h2>
@@ -157,6 +157,7 @@
 </ul>
 <h3 id="notes-1">Notes</h3>
 <ul>
+<li>This will work on a private repository.</li>
 <li>The <code>cleanup</code> field can be set to true or false. Your choice determies whether you want to delete files on Neocities that aren&rsquo;t in your Github directory. It is set to false on default, but I set it to true because I have a tendency to change up my file structures, which leaves orphaned files on Neocities.
 <ul>
 <li>Coincidentally, this is a feature that Hugo has <a href="(https://github.com/gohugoio/hugo/issues/379)">no intention</a> of implementing, much to my chagrin.</li>
@@ -172,6 +173,7 @@
 <hr>
 <p>Hopefully, this was at least somewhat helpful. I&rsquo;m hardly an expert on GitHub, CLIs, or SSGs, so getting everything to work the way I wanted it to was (and still is!) often intimidating and unapproachable. I am the sort of person who needs lots of examples and hand-holding to feel confident in implementing something new (or, more typically, to mess it up over and over until I figure things out), so I thought it would make sense to write up the sort of guide I would have liked back then. Maybe then I wouldn&rsquo;t have tried to upload my entire root directory to Neocities with the CLI&hellip;</p>
 <p>Well, anyways. Apologies for the trickle of site updates. I am actually moving yet again, and there&rsquo;s so much to be done on this site that I often feel dizzy just thinking about it. Still, I plan to see it through to the very end. Hope you are all doing well.</p>
+<p><strong>UPDATE (08/20/24)</strong>: Something I&rsquo;ve noticed about these tools and figure should be documented is that the CLI is much better at explaining the cause of errors. The GitHub Action just returns an error with fetching the API, but the CLI is very specific about why your site update failed. It&rsquo;s how I discovered the (now fixed) <a href="https://github.com/neocities/neocities/issues/498">filename character bug</a>, in fact! So, I&rsquo;d argue the CLI feels more reliable, if clunkier and less convenient.</p>
 
                         </div>
                     </div>

@@ -8,7 +8,7 @@ draft: false
 
 So, Neocities...isn't exactly equipped for heavy editing. The code editor is limited in its functionality and the file upload process is so simple that it actually becomes cumbersome. Its simplicity is one of its selling points, but trying to update your site can get very tedious, very fast, especially the more it grows. 
 
-After a failed attempt at wrangling the native Neocities GUI and messing up my file structure, I decided I wanted to simply abstract it away. I found two primary ways to do so, but neither had a *ton* of documentation, and as someone who was still just getting started with web development, it took a bit of extra care to get everything working. I'll just be reiterating the instructions for both deployment methods with a bit of extra context and guidance for anyone who needs it.
+After a failed attempt at wrangling the native Neocities GUI and messing up my file structure, I decided I wanted to simply abstract it away. I found two primary ways to do so, but neither had a *ton* of documentation, and as someone who was still just getting started with web development, it took a bit of extra care to get everything working. I'll just be reiterating the instructions for both deployment methods with a little extra context and guidance for anyone who needs it.
 
 I'm using a static site generator (Hugo), but the methods outlined here will work even if you aren't.
 
@@ -51,6 +51,7 @@ These steps assume that you've already 1. **pushed your site to GitHub** and 2. 
 - Make sure your dist_dir is set to whatever directory you want published on Neocities and have at it!
 
 ### Notes 
+- This will work on a private repository.
 - The `cleanup` field can be set to true or false. Your choice determies whether you want to delete files on Neocities that aren't in your Github directory. It is set to false on default, but I set it to true because I have a tendency to change up my file structures, which leaves orphaned files on Neocities.
 	- Coincidentally, this is a feature that Hugo has [no intention]((https://github.com/gohugoio/hugo/issues/379)) of implementing, much to my chagrin.
 - I believe this method, similarly to the Neocities CLI, goes through your folders and files alphabetically. This has rather annoying consequences for the automatically (and entirely unconfigurable) profile activity updates. It used to be that the last page you edited was the one that showed up as a primary thumbnail, but now it seems to be the first. This change is [fairly recent](https://suboptimalism.neocities.org/writings/undocumented).
@@ -62,3 +63,5 @@ These steps assume that you've already 1. **pushed your site to GitHub** and 2. 
 Hopefully, this was at least somewhat helpful. I'm hardly an expert on GitHub, CLIs, or SSGs, so getting everything to work the way I wanted it to was (and still is!) often intimidating and unapproachable. I am the sort of person who needs lots of examples and hand-holding to feel confident in implementing something new (or, more typically, to mess it up over and over until I figure things out), so I thought it would make sense to write up the sort of guide I would have liked back then. Maybe then I wouldn't have tried to upload my entire root directory to Neocities with the CLI...
 
 Well, anyways. Apologies for the trickle of site updates. I am actually moving yet again, and there's so much to be done on this site that I often feel dizzy just thinking about it. Still, I plan to see it through to the very end. Hope you are all doing well. 
+
+**UPDATE (08/20/24)**: Something I've noticed about these tools and figure should be documented is that the CLI is much better at explaining the cause of errors. The GitHub Action just returns an error with fetching the API, but the CLI is very specific about why your site update failed. It's how I discovered the (now fixed) [filename character bug](https://github.com/neocities/neocities/issues/498), in fact! So, I'd argue the CLI feels more reliable, if clunkier and less convenient. 

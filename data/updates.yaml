@@ -1,4 +1,6 @@
 updates:
+- date: "2024-09-14"
+  description: "fixed the RSS feed (hopefully), tweaked microblog code, updated webring"
 - date: "2024-06-03"
   description: "new(ish) tumblr theme and some behind the scenes image optimization/management."
 - date: "2024-05-15"
