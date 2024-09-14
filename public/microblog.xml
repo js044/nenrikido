@@ -2,7 +2,7 @@
 <rss version="2.0">
 <channel>
 	<title>rio's feed</title>
-	<link>/microblog</link>
+	<link>https://nenrikido.neocities.org/microblog</link>
 	<description>이젠 정말 같이 살거나 같이 죽겠구나.</description>
 	<webMaster>rio <img src="/images/microblog/space1.gif" style="width:0.85em; height:0.85em;" /></webMaster>
 	<generator>@nenrikido</generator>
