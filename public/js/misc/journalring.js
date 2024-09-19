@@ -539,6 +539,18 @@ window.membersData = [
         "url": "https://pochitchimusic.blogspot.com/",
         "description": "a blog for j-idol music reviews"
     },
+    {
+        "name": "uzi/roxie",
+        "websiteTitle": "rockseize !!",
+        "url": "https://rockseize.neocities.org/",
+        "description": "A Self - Proclaimed Internet Angel's personal site and (alledgedly) Lovely Haven."
+    },
+    {
+        "name": "Kai",
+        "websiteTitle": "mossypawprints",
+        "url": "https://mossypawprints.neocities.org/",
+        "description": "My site is a personal space where I share my experiences, drawings, my dogs, and my interests, with a touch of fantasy. It’s still a work in progress, but a place for creativity and self-expression."
+    },
 ];        
 
 class JournalRing extends HTMLElement {

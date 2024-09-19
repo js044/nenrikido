@@ -41,13 +41,7 @@ function buildPage(xml) {
   var xmlDoc;
   var authorName, username, iconLink, rootLink, bioText;
   var container;
-  
-  function hidePagination() {
-    var paginationDiv = document.querySelector(".pagination");
-    if (paginationDiv) {
-      paginationDiv.classList.add('hidden'); // Add hidden class
-    }
-  }
+  var posts, i, postCount;
   
   xmlDoc = xml.responseXML;
   authorName = xmlDoc.getElementsByTagName("webMaster")[0].innerHTML;
@@ -56,9 +50,22 @@ function buildPage(xml) {
   rootLink = xmlDoc.getElementsByTagName("link")[0].innerHTML;
 
   // Initialize page on first load
+  // Header and subscribe button will not be removed
+  // when anchor is changed.
   if (firstLoad == 1) {
+    // Event listener to reload page when anchor/hash is changed
+    window.addEventListener('hashchange', function() {
+      firstLoad = 0;
+      posts = document.getElementsByClassName("post");
+      postCount = posts.length;
+      for (i = 0; i < postCount; i++) {
+        document.getElementById(MicroblogDivID).removeChild(posts[0]);
+      }
+      loadPosts(xmlDoc, authorName, username, iconLink, rootLink);
+    }, false);
+  
     bioText = xmlDoc.getElementsByTagName("description")[0].innerHTML;
-
+    
     // Create container if ID not supplied
     if (MicroblogDivID.length == 0) {
       MicroblogDivID = "container";
@@ -66,73 +73,40 @@ function buildPage(xml) {
       container.id = MicroblogDivID;
       document.body.appendChild(container);
     }
-
+      
     loadHeader(xmlDoc, authorName, username, iconLink, rootLink, bioText);
     if (DisplaySubscribe) loadSubscribe(RSSLink);
-
-    firstLoad = 0; // Mark first load as done to avoid loading static content again
   }
-
-  // Check for existing hash when the page loads
-  var anchor = window.location.hash.replace("#", '');
-  if (anchor.startsWith("post=")) {
-    var postId = anchor.split("=")[1];
-    loadSinglePost(xmlDoc, postId, authorName, username, iconLink, rootLink); // Load single post by ID
-  } else {
-    loadPosts(xmlDoc, authorName, username, iconLink, rootLink); // Load paginated posts
-  }
-
-  window.addEventListener('hashchange', function() {
-    var anchor = window.location.hash.replace("#", '');
-    var postContainer = document.getElementById(MicroblogDivID);
-    
-    // Clear all posts before loading new content
-    var posts = postContainer.getElementsByClassName("post");
-    while (posts.length > 0) {
-      postContainer.removeChild(posts[0]);
-    }
-  
-    if (anchor.startsWith("post=")) {
-      var postId = anchor.split("=")[1];
-      loadSinglePost(xmlDoc, postId, authorName, username, iconLink, rootLink); // Load single post by ID
-    } else {
-      loadPosts(xmlDoc, authorName, username, iconLink, rootLink); // Load paginated posts
-    }
-  }, false);
-  
+  loadPosts(xmlDoc, authorName, username, iconLink, rootLink);
+}
 
 function loadHeader(xmlDoc, authorName, username, iconLink, rootLink, bioText) {
-  var header = document.createElement("div");
-  header.id = "header"; // Assign a unique ID for styling purposes
-  header.className = "header"; // Add class to easily identify it later
-
-  var authorLink = document.createElement("a");
-  authorLink.href = rootLink;
+  var header, authorLink, icon, author, user, bio; 
   
-  var icon = document.createElement("img");
+  header = document.createElement("div");
+  header.id = "header";
+  authorLink = document.createElement("a");
+  authorLink.href = rootLink;
+  icon = document.createElement("img");
   icon.className = "profilePic";
   icon.src = iconLink;
   authorLink.appendChild(icon);
-
-  var author = document.createElement("h1");
+  author = document.createElement("h1");
   author.id = "name";
   author.innerHTML = authorName;
-
-  var user = document.createElement("p");
+  user = document.createElement("p");
   user.id = "username";
   user.innerHTML = username;
-
-  var bio = document.createElement("p");
+  bio = document.createElement("p");
   bio.id = "bio";
   bio.innerHTML = bioText;
-
+    
   header.appendChild(authorLink);
   header.appendChild(author);
   header.appendChild(user);
   header.appendChild(bio);
-
-  var microblogDiv = document.getElementById(MicroblogDivID);
-  microblogDiv.insertBefore(header, microblogDiv.firstChild);
+  
+  document.getElementById(MicroblogDivID).appendChild(header); 
 }
 
 function loadSubscribe(RSSLink) {
@@ -151,13 +125,6 @@ function loadSubscribe(RSSLink) {
 
 function loadPosts(xmlDoc, authorName, username, iconLink, rootLink) {
   var anchor = window.location.hash.replace("#", '');
-  var postContainer = document.getElementById(MicroblogDivID);
-  
-  // Clear all posts before loading new content
-  var posts = postContainer.getElementsByClassName("post");
-  while (posts.length > 0) {
-    postContainer.removeChild(posts[0]);
-  }
 
   if (anchor.startsWith("page=")) {
     var pageNum = parseInt(anchor.split("=")[1]);
@@ -166,22 +133,24 @@ function loadPosts(xmlDoc, authorName, username, iconLink, rootLink) {
     var end = Math.min(start + PostsPerPage, items.length);
 
     for (var i = start; i < end; i++) {
+      var guid = items[i].getElementsByTagName("guid")[0].innerHTML;
       loadSingle(items[i], authorName, username, iconLink, rootLink);
     }
 
     generatePageLinks(items.length, Math.ceil(items.length / PostsPerPage));
   } else {
-    // Load first page by default if no page is specified
     var items = xmlDoc.getElementsByTagName("item");
+    var totalPages = Math.ceil(items.length / PostsPerPage);
+
     var firstPageItems = Math.min(PostsPerPage, items.length);
-    
     for (var i = 0; i < firstPageItems; i++) {
       loadSingle(items[i], authorName, username, iconLink, rootLink);
     }
 
-    generatePageLinks(items.length, Math.ceil(items.length / PostsPerPage));
+    generatePageLinks(items.length, totalPages);
   }
 }
+
 
 function generatePageLinks(totalPosts, totalPages) {
   var paginationDiv = document.createElement("div");
@@ -204,26 +173,6 @@ function generatePageLinks(totalPosts, totalPages) {
   var microblogDiv = document.getElementById(MicroblogDivID);
   if (microblogDiv) {
     microblogDiv.appendChild(paginationDiv);
-  }
-}
-
-function loadSinglePost(xmlDoc, postId, authorName, username, iconLink, rootLink) {
-  var items = xmlDoc.getElementsByTagName("item");
-  var postContainer = document.getElementById(MicroblogDivID);
-  
-  // Clear all posts before loading the single post
-  var posts = postContainer.getElementsByClassName("post");
-  while (posts.length > 0) {
-    postContainer.removeChild(posts[0]);
-  }
-  
-  for (var i = 0; i < items.length; i++) {
-    var guid = items[i].getElementsByTagName("guid")[0].innerHTML;
-    
-    if (guid === postId) {
-      loadSingle(items[i], authorName, username, iconLink, rootLink);
-      break;
-    }
   }
 }
 
@@ -257,7 +206,7 @@ function loadSingle(rssItem, authorName, username, iconLink, rootLink) {
   author.innerHTML += "<span class='username'>" + username + "</span>";
 
   dateLink = document.createElement("a");
-  dateLink.href = "#post=" + post.id;
+  dateLink.href = "#" + post.id; // Use post ID as the href
   dateLink.className = "postDate";
 
   postDate = new Date(rssItem.getElementsByTagName("pubDate")[0].innerHTML);
@@ -390,5 +339,4 @@ function unreblogPost(guid) {
   post.getElementsByClassName("reblogButton")[0].setAttribute("onclick", "reblogPost(" + guid + ")");
   post.getElementsByClassName("reblogButton")[0].innerHTML = NoReblogSymbol;
   post.getElementsByClassName("reblogCount")[0].innerHTML = "0";
-}
 }
