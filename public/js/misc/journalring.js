@@ -551,6 +551,126 @@ window.membersData = [
         "url": "https://mossypawprints.neocities.org/",
         "description": "My site is a personal space where I share my experiences, drawings, my dogs, and my interests, with a touch of fantasy. It’s still a work in progress, but a place for creativity and self-expression."
     },
+    {
+        "name": "danya",
+        "websiteTitle": "catmothcrow cottage",
+        "url": "https://catmothcrow.neocities.org/",
+        "description": "the personal site of a witchy, thirty-something zinester"
+    },
+    {
+        "name": "Kiki",
+        "websiteTitle": "Twinkle Space",
+        "url": "https://twinkles.neocities.org/",
+        "description": "Website dedicated to sharing my art and bits of my life. Forever a work in progress."
+    },
+    {
+        "name": "breanna",
+        "websiteTitle": "breedotcom",
+        "url": "https://breedotcom.neocities.org/",
+        "description": "a personal website ^_^"
+    },
+    {
+        "name": "Ellie",
+        "websiteTitle": "Blopswebsite",
+        "url": "https://blopswebsite.neocities.org/",
+        "description": "Personal website with sharings of cool stuffs."
+    },
+    {
+        "name": "dee",
+        "websiteTitle": "joeysluna",
+        "url": "https://joeysluna.neocities.org/",
+        "description": "personal, writing, anime"
+    },
+    {
+        "name": "Dani",
+        "websiteTitle": "Latte Lavanda",
+        "url": "https://latte-lavanda.neocities.org/",
+        "description": "A personal website. A tiny garden where I can express my interests and the things I like."
+    },
+    {
+        "name": "will",
+        "websiteTitle": "jpg zone",
+        "url": "https://willdotjpg.gay/",
+        "description": "a personal site with a little bit of everything: shrines, playlists, templates, a blog, and more. :)"
+    },
+    {
+        "name": "jazonks",
+        "websiteTitle": "puppygrass",
+        "url": "https://puppygrass.neocities.org/",
+        "description": "random little personal site where I kinda just talk and keep logs about things"
+    },
+    {
+        "name": "Toby Elluin",
+        "websiteTitle": "scenemime's home",
+        "url": "https://scenemime.neocities.org/",
+        "description": "Personal online collecting and blogging"
+    },
+    {
+        "name": "Exavior",
+        "websiteTitle": "Nullafish-Tank",
+        "url": "https://nullafish-tank.neocities.org/",
+        "description": "Watch some crazy cat run around in circles and bump into stuff as he tries to learn how the hell coding works !!"
+    },
+    {
+        "name": "Flower",
+        "websiteTitle": "Introverted Loser",
+        "url": "https://introvertedloser.neocities.org/",
+        "description": "Introverted Loser is my decent, but cool website where I share my interests, art, and more."
+    }, 
+    {
+        "name": "onee-chan",
+        "websiteTitle": "onee-chan's library",
+        "url": "https://onee-chan.neocities.org/",
+        "description": "A newly created blog I've made on neocities (so there is still some under maintenance pages) where i post my fanfics and also my journals."
+    }, 
+    {
+        "name": "blythe",
+        "websiteTitle": "dreams of vinushka",
+        "url": "https://dreamsofvinushka.neocities.org/",
+        "description": "fun personal site to fill with all my interests"
+    }, 
+    {
+        "name": "Meep",
+        "websiteTitle": "Pine Island Projects",
+        "url": "https://pineisland.neocities.org/",
+        "description": "Meep's personal website and related projects"
+    }, 
+    {
+        "name": "kori",
+        "websiteTitle": "melankorin.net",
+        "url": "https://melankorin.net",
+        "description": "Ramblings of an eternally sleep-deprived graphic designer."
+    }, 
+    {
+        "name": "Skye",
+        "websiteTitle": "Skye Journey",
+        "url": "https://luvrksknskyejourney.org/",
+        "description": "The personal website of a unknown smol and young cybersecurity enthusiast, software development lover who likes messing around with codes and tech stuff!"
+    }, 
+    {
+        "name": "frandszk",
+        "websiteTitle": "FRANDSZK.HTML",
+        "url": "https://frandszk.neocities.org/",
+        "description": "personal site where i talk about/post fanart of old scifi novels and anime! i have an old travel journal up too"
+    }, 
+    {
+        "name": "ori",
+        "websiteTitle": "ori-dori-go-explori",
+        "url": "https://ori-dori-go-explori.neocities.org/",
+        "description": "A personal website for getting out of my shell and the small things in life."
+    }, 
+    {
+        "name": "electronica",
+        "websiteTitle": "electronica",
+        "url": "https://electronica.nekoweb.org/",
+        "description": "a personal blog full with nothing but metro and colour!"
+    },
+    {
+        "name": "Delphine",
+        "websiteTitle": "Delphinitely me",
+        "url": "https://delphinitely.me/",
+        "description": "My personal blog :)"
+    },
 ];        
 
 class JournalRing extends HTMLElement {
