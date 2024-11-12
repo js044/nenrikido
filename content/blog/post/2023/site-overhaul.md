@@ -24,19 +24,19 @@ you may also notice blog posts are different! that's actually what started this 
 
 moving the site to hugo was pretty agonizing at times, but i feel good about it. with the help of shortcodes and partials, i shrank my code to something much more manageable and legible. my gallery page went from 452 lines to 266 lines! the markup is shorter and much easier to understand. and markdown is just soo much easier to deal with than HTML. plus i finally finished moving (most of) my files off of dropbox and can rest assured they're easier to sort.
 
-before:
-{{< img-fluid img-src="/images/blog/before.png" >}}
+before:  
+{{< lightbox-image link="/images/blog/before.png" lightbox-id="ba" img-src="/images/blog/before.png" >}}
 
-after:
-{{< img-fluid img-src="/images/blog/after.png" >}}
+after:  
+{{< lightbox-image link="/images/blog/after.png" lightbox-id="ba" img-src="/images/blog/after.png" >}}
 
 another example, pulled from the links page.
 
-before:
-{{< img-fluid img-src="/images/blog/before-1.png" >}}
+before:  
+{{< lightbox-image link="/images/blog/before-1.png" lightbox-id="ba" img-src="/images/blog/before-1.png" >}}
 
-after:
-{{< img-fluid img-src="/images/blog/after-1.png" >}}
+after:  
+{{< lightbox-image link="/images/blog/after-1.png" lightbox-id="ba" img-src="/images/blog/after-1.png" >}}
 
 see what i mean...that's hugo baby...
 
