@@ -1,0 +1,288 @@
+{{ define "main" }}
+<style>
+
+.library-table-wrapper {
+      margin-top: 1rem;
+  }
+ .library-table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: auto; 
+  }
+  .library-table th,
+  .library-table td {
+      padding: 10px;
+      text-align: left;
+      min-width: 100px;
+  }
+  .library-table th {
+      top: 0;
+      z-index: 1;
+  }
+
+  .library-item.selected {
+    background: var(--secondary_muted);
+  }
+
+.library-table-wrapper {
+      max-height: 38.5rem;
+      overflow-y: auto;
+  }
+  #preview-container {
+    border: 1px solid var(--secondary_muted);
+      margin-top: 1rem;
+      width: 100%;      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     
+  }
+  #preview-container iframe {   
+    height: 40rem;
+    width: 100%;
+      padding: 0;
+      border: none;
+  }
+  #checkout-link {
+      margin-top: 0.5rem;
+      padding: 1rem;
+      text-align: right;
+  }
+  .sort-indicator {
+      margin-left: 5px;
+      cursor: pointer;
+  }
+  </style>
+  
+  <div class="wrapper">
+    <nav id="navAlt">
+        <div class="navWrapper"> 
+            <a class="navLink" href="/library">
+                <div id="library"></div>Library
+            </a>
+            <p><i class="fa-regular fa-circle-down"></i></p>
+            <p>Why don't you stay awhile?</p>
+        </div>
+        {{- partial "mini-music.html" . -}}
+        {{- partial "search-bar.html" . -}}
+    </nav>
+
+    <div class="grid">
+        <!-- Large card with File Explorer (Library Table) -->
+        <div class="item large">
+            <div class="cards">
+                {{- partial "card-header.html" . -}}
+                <div class="cardsBody">
+                    <h1>#{{.Title}} Bulletin</h1>
+                    <p style="font-style:italic;">Current Number of Library Entries: <span id="entry-count">{{ len site.Data.library }}</span></p>
+                    <p>A growing catalog of media I've collected. Click on an entry to open a preview.</p>
+                    <details>
+                        <summary style="font-weight:bold;">NOTES</summary>
+                        <ul>
+                            <li>In the spirit of maintaining a digital "library," items listed are free. All entries have a "Check out" link that allows you to download or view the content.</li>
+                            <ul>
+                                <li>Some links, specifically ones that are sourced from the Internet Archive's Open Library, may require you to have an account to access the content.</li>
+                                <li>Due to <a href="https://www.eff.org/cases/hachette-v-internet-archive">Hachette v. Internet Archive</a>, many Open Library entries are unavailable. Although the IA is appealing the court decision, in the meantime, I have started to look for different sourcing.</li>
+                            </ul>
+                            <li>Click on the arrows by each cell header to sort the data (ascending/descending).</li>
+                            <li>Something being in the library does not mean I endorse it.</li>
+                            <li>If a preview isn't loading, it's likely an essay whose host site doesn't allow embeds. You'll have to click the Check Out link to see it directly.</li>
+                            <li>Content is very, very loosely organized and incomplete.</li>
+                            <li>I have not specified content warnings for individual entries; please proceed with caution.</li>
+                            <li>Yes, I know multiple author support is broken. I will (probably) fix it eventually.</li>
+                        </ul>    
+                      </details>
+               
+                    <div class="library-table-wrapper">
+                        <table class="library-table">
+                            <thead>
+                                <tr>
+                                    <th class="title-header">Title <span class="sort-indicator" id="title-sort">↑</span></th>
+                                    <th class="author-header">Author <span class="sort-indicator" id="author-sort">↑</span></th>
+                                    <th class="year-header">Year <span class="sort-indicator" id="year-sort">↑</span></th>
+                                    <th class="category-header">Category <span class="sort-indicator" id="category-sort">↑</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {{ range site.Data.library }}
+                                <tr class="library-item" 
+                                    data-title="{{ .title }}" 
+                                    data-author="{{ .author }}" 
+                                    data-year="{{ .year }}" 
+                                    data-category="{{ .category }}" 
+                                    data-summary="{{ .summary }}" 
+                                    data-link="{{ .link }}">
+                                    <td>{{ .title }}</td>
+                                    <td>{{ .author }}</td>
+                                    <td>{{ .year }}</td>
+                                    <td>{{ .category }}</td>
+                                </tr>
+                                {{ end }}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Smallarge card with Preview -->
+        <div class="item smallarge">
+            <div class="cards">
+                {{- partial "card-header.html" . -}}
+                <div class="cardsBody">
+                    <h1>#Preview</h1>
+                    <div id="preview-container">
+                        <p>Select an item for preview.</p>
+                    </div>
+                    <div id="checkout-link"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const libraryItems = document.querySelectorAll(".library-item");
+    const previewContainer = document.getElementById("preview-container");
+    const checkoutLinkContainer = document.getElementById("checkout-link");
+
+      // Function to handle row selection and highlighting
+      libraryItems.forEach((item) => {
+        item.addEventListener("click", () => {
+            // Remove 'selected' class from all items
+            libraryItems.forEach(i => i.classList.remove("selected"));
+            // Add 'selected' class to the clicked item
+            item.classList.add("selected");
+
+             // Update the preview pane
+             const link = item.dataset.link;
+            const iframe = document.createElement("iframe");
+            iframe.src = link;
+            previewContainer.innerHTML = "";
+            previewContainer.appendChild(iframe);
+
+            // Update the "Check Out" link
+            checkoutLinkContainer.innerHTML = `<a href="${link}" target="_blank">Check out</a>`;
+        });
+    });
+    // Sorter Elements
+    const titleSort = document.getElementById("title-sort");
+    const authorSort = document.getElementById("author-sort");
+    const yearSort = document.getElementById("year-sort");
+    const categorySort = document.getElementById("category-sort");
+
+    let sortOrder = {
+        title: "asc",
+        author: "asc",
+        year: "asc",
+        category: "asc"
+    };
+
+    // Helper function to format "First Name Last Name" to "Last Name, First Name"
+    const formatAuthorName = (fullName) => {
+        const nameParts = fullName.split(" ");
+        const lastName = nameParts.pop(); // Assume the last word is the last name
+        const firstName = nameParts.join(" ");
+        return `${lastName}, ${firstName}`;
+    };
+
+    // Update the display of author names on page load
+    libraryItems.forEach(item => {
+        const fullName = item.dataset.author;
+        const formattedName = formatAuthorName(fullName);
+        item.querySelector("td:nth-child(2)").textContent = formattedName; // Update the Author column
+    });
+
+    // Function to update the sort indicator
+    const updateSortIndicators = (currentKey) => {
+        // Reset all indicators
+        [titleSort, authorSort, yearSort, categorySort].forEach(sortEl => {
+            sortEl.textContent = "↑";
+        });
+
+        // Set the current column's indicator based on sortOrder
+        const indicator = sortOrder[currentKey] === "asc" ? "↑" : "↓";
+        switch (currentKey) {
+            case "title":
+                titleSort.textContent = indicator;
+                break;
+            case "author":
+                authorSort.textContent = indicator;
+                break;
+            case "year":
+                yearSort.textContent = indicator;
+                break;
+            case "category":
+                categorySort.textContent = indicator;
+                break;
+        }
+    };
+
+    // Sorting function
+    const sortTable = (key, sortOrderKey) => {
+    const rows = Array.from(libraryItems);
+
+    const sortedRows = rows.sort((a, b) => {
+        let aKey = a.dataset[key] || ""; // Extract dataset value
+        let bKey = b.dataset[key] || ""; // Extract dataset value
+
+        if (key === "year") {
+            // Handle year column specifically
+            aKey = parseInt(aKey, 10) || 0; // Convert to number, default to 0
+            bKey = parseInt(bKey, 10) || 0; // Convert to number, default to 0
+            return sortOrder[sortOrderKey] === "asc" ? aKey - bKey : bKey - aKey;
+        }
+
+        if (key === "author") {
+            // Use formatted author names for sorting
+            aKey = formatAuthorName(a.dataset.author).toLowerCase();
+            bKey = formatAuthorName(b.dataset.author).toLowerCase();
+        }
+
+        // Fallback for other keys (e.g., title, category)
+        return sortOrder[sortOrderKey] === "asc"
+            ? aKey.localeCompare(bKey, undefined, { numeric: true })
+            : bKey.localeCompare(aKey, undefined, { numeric: true });
+    });
+
+    // Append sorted rows back to the table
+    const tbody = document.querySelector(".library-table tbody");
+    sortedRows.forEach(row => tbody.appendChild(row));
+
+    // Toggle sort order for the next click
+    sortOrder[sortOrderKey] = sortOrder[sortOrderKey] === "asc" ? "desc" : "asc";
+
+    // Update sorting indicators
+    updateSortIndicators(sortOrderKey);
+};
+
+
+    // Add sorting functionality to each column header
+    titleSort.addEventListener("click", () => sortTable("title", "title"));
+    authorSort.addEventListener("click", () => sortTable("author", "author"));
+    yearSort.addEventListener("click", () => sortTable("year", "year"));
+    categorySort.addEventListener("click", () => sortTable("category", "category"));
+
+    // Update the preview and "Check Out" link when a row is clicked
+    libraryItems.forEach((item) => {
+        item.addEventListener("click", () => {
+            libraryItems.forEach(i => i.classList.remove("selected"));
+            item.classList.add("selected");
+
+            const link = item.dataset.link;
+            const iframe = document.createElement("iframe");
+            iframe.src = link;
+            previewContainer.innerHTML = "";
+            previewContainer.appendChild(iframe);
+
+            checkoutLinkContainer.innerHTML = `<h4><a href="${link}" target="_blank">Check out <i class='fa fa-long-arrow-right'></i></a></h4>`;
+        });
+    });
+});
+
+</script>
+  
+
+{{ end }}

@@ -671,6 +671,96 @@ window.membersData = [
         "url": "https://delphinitely.me/",
         "description": "My personal blog :)"
     },
+    {
+        "name": "robotickyuu",
+        "websiteTitle": "Intergalactic Space Drainage",
+        "url": "https://robotickyuu.neocities.org/",
+        "description": "My small corner within the web where I share my personal interests and my other creative pursuits (the website also has it's own lore but anyways-)"
+    },
+    {
+        "name": "Digi",
+        "websiteTitle": "Rainboe",
+        "url": "https://rainboe.nekoweb.org/",
+        "description": "Personal site for lots of stuff!"
+    },
+    {
+        "name": "IT-Art",
+        "websiteTitle": "IT-Art's Website",
+        "url": "https://it-art.neocities.org/",
+        "description": "This is my personal website where I publish my blog, scrapbook, and photography"
+    },
+    {
+        "name": "Maddox",
+        "websiteTitle": "MADDOXXING",
+        "url": "https://maddoxxing.neocities.org/",
+        "description": "Personal website hosting a dedicated digital journal, fanfiction, and shrines related to my interests!"
+    },
+    {
+        "name": "WORM",
+        "websiteTitle": "worms and mooshrooms",
+        "url": "https://wormandmooshroom.neocities.org/",
+        "description": "this is my first website using neocities and i plan to use it as a general storage bin for artwork, ideas, and journal entries. i have never ran a website before, so wish me luck!"
+    },
+    {
+        "name": "Blue",
+        "websiteTitle": "Garden of eden",
+        "url": "https://overmore.neocities.org/",
+        "description": "Personal website dedicated to hobbies."
+    },
+    {
+        "name": "Ren",
+        "websiteTitle": "Floral Triptych",
+        "url": "https://floraltriptych.nekoweb.org/",
+        "description": "My personal meadow where I frolic and talk about anything that comes to mind"
+    },
+    {
+        "name": "bear",
+        "websiteTitle": "bear's junk journal",
+        "url": "https://bearsjunkjournal.neocities.org/",
+        "description": "a personal digital junk journal! will include interests, art, inspirations and all sorts of stuff :]"
+    },
+    {
+        "name": "zestpunk",
+        "websiteTitle": "ZESTPUNK'S LAIR",
+        "url": "https://zestpunk.art/",
+        "description": "My personal website and (eventual) portfolio! A place to dump every thought that pops into my head for posterity."
+    },
+    {
+        "name": "mino",
+        "websiteTitle": "minonii",
+        "url": "https://minonii.neocities.org/",
+        "description": "a page where i talk about basically anything i really like, and post my creative work. lots of kanade. she's me."
+    },
+    {
+        "name": "jonesangga",
+        "websiteTitle": "jonesangga's page",
+        "url": "https://jonesangga.codeberg.page/",
+        "description": "A simple personal site. Creative coding and math demo/visual."
+    },
+    {
+        "name": "Robin",
+        "websiteTitle": "Cherry Talk",
+        "url": "https://cherrymocha.neocities.org/",
+        "description": "Personal site to talk about my interests and share my thoughts"
+    },
+    {
+        "name": "coolguy17",
+        "websiteTitle": "thejesusof",
+        "url": "https://thejesusof.neocities.org/",
+        "description": "personal site for yapping and archiving art and whatnot :3 say hi!!"
+    },
+    {
+        "name": "avedo",
+        "websiteTitle": "avedo-storyhub",
+        "url": "https://avedo-storyhub.neocities.org/",
+        "description": "personal site for character storage and general silly posting!"
+    },
+    {
+        "name": "Finny",
+        "websiteTitle": "humanfinny",
+        "url": "https://humanfinny.neocities.org/",
+        "description": "A website for art, blogging, doodles, and pixels. I am a journal and notebook addict and need help... probably."
+    },
 ];        
 
 class JournalRing extends HTMLElement {

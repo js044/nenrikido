@@ -1,15 +1,19 @@
 {{ printf "<?xml version=\"1.0\" encoding=\"utf-8\"?>" | safeHTML }}
 <rss version="2.0">
     <channel>
-        <title>Nenrikido Updates</title>
-        <description>Pulled from the Updates section</description>
-        <link>{{ .Site.BaseURL }}</link>
+        <title>{{ .Site.Title | htmlEscape }}</title>
+        <description>{{ .Site.Params.description | htmlEscape }}</description>
+        <link>{{ .Site.BaseURL | htmlEscape }}</link>
+       <atom:link href="{{ .Permalink }}" rel="self" type="application/rss+xml" xmlns:atom="http://www.w3.org/2005/Atom" />
         {{ range .Site.Data.updates.updates }}
             <item>
-                <title>{{ .date }}</title>
-                <link>{{ .link | default "https://nenrikido.neocities.org/" }}</link>
-                <description>{{ .description }}</description>
-                <pubDate>{{ .date | time.Format "Mon, 02 Jan 2006 15:04:05 MST" }}</pubDate>
+               <title>{{ .description | plainify | default "No Title" }}</title>
+                <link>{{ .link | htmlEscape | default "https://nenrikido.neocities.org/" }}</link>
+                <guid isPermaLink="false">
+                {{ .link | default (print "https://nenrikido.neocities.org/" (.date | time.Format "20060102150405")) | htmlEscape }}
+                </guid>
+                <description>{{ .description | htmlEscape | default "No Description Provided" }}</description>
+                <pubDate>{{ .date | time.Format "Mon, 02 Jan 2006 15:04:05 GMT" }}</pubDate>
             </item>
         {{ end }}
     </channel>

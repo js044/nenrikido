@@ -217,7 +217,7 @@ table {
     color: var(--primary);
     background: var(--secondary_muted);
     border: 1px solid var(--primary);
-    font-size: 12pt;
+    font-size: var(--body-font-size);
     border-collapse: collapse;
 
     thead th,

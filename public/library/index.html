@@ -10,28 +10,77 @@
     <link rel='icon' type='image/x-icon' href='../images/icons/pink-favicon.svg' /> 
 
     
-    <link href="../css/main.min.e14f904cf22fc07a4118f72b52bb554326d00dc56903ad6da7dda7ed5db34138.css" rel="stylesheet">
+    <link href="../css/main.min.e82017acf1d47837e34aeae7160cbd8cee87ccf07777ebc9e2e85745f526f166.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="fab6651d-7739-4c92-8ab8-01b6b670711b"></script>
     
     <div id="preloader"></div><body>
-    <div class="wrapper"> 
+<style>
+
+.library-table-wrapper {
+      margin-top: 1rem;
+  }
+ .library-table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: auto; 
+  }
+  .library-table th,
+  .library-table td {
+      padding: 10px;
+      text-align: left;
+      min-width: 100px;
+  }
+  .library-table th {
+      top: 0;
+      z-index: 1;
+  }
+
+  .library-item.selected {
+    background: var(--secondary_muted);
+  }
+
+.library-table-wrapper {
+      max-height: 38.5rem;
+      overflow-y: auto;
+  }
+  #preview-container {
+    border: 1px solid var(--secondary_muted);
+      margin-top: 1rem;
+      width: 100%;      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     
+  }
+  #preview-container iframe {   
+    height: 40rem;
+    width: 100%;
+      padding: 0;
+      border: none;
+  }
+  #checkout-link {
+      margin-top: 0.5rem;
+      padding: 1rem;
+      text-align: right;
+  }
+  .sort-indicator {
+      margin-left: 5px;
+      cursor: pointer;
+  }
+  </style>
+  
+  <div class="wrapper">
     <nav id="navAlt">
- <div class="navWrapper">  
-    <a class="navLink" href="#"><div id="library"> </div> LIBRARY</a>
-    <p> <i class="fa-regular fa-circle-down"></i></p>
-    <p> <ul class="sort-btn">
-    <li class="sort00 active">Show all</li>
-    <li class="books">Books</li>
-<li class="essays">Essays</li>
-<li class="video">Video</li>
-<li class="audio">Audio</li>
-<li class="zines">Zines</li>
-<li class="poetry">Poetry</li>
-<li class="archives">Archives</li>
- </ul> 
- </p>
-</div>
+        <div class="navWrapper"> 
+            <a class="navLink" href="../library">
+                <div id="library"></div>Library
+            </a>
+            <p><i class="fa-regular fa-circle-down"></i></p>
+            <p>Why don't you stay awhile?</p>
+        </div>
         <div id='musicplayer'>
             <div id='musicpixel'> <img src="../images/pixels/music.gif" style="max-width: 40px;">
                 <div class='overlay'>
@@ -59,1627 +108,1205 @@
 
 <ul class="searchResults"></ul></nav>
 
-<div class="grid"> 
- <div class="item smallarge ">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h1>#Library Bulletin</h1>
-            <p> <p><em>Current Number of Library Entries</em>: 72</p>
-<p>This page is a collection of media that I have personally found interesting and/or useful. As such, it should not be treated as a neutral or unbiased selection.</p>
-<ul>
-<li>In the spirit of maintaining a digital &ldquo;library,&rdquo; items listed are free. All posts have a &ldquo;Check out&rdquo; link that allows you to download or view the content.
-<ul>
-<li><em>Note</em>: Some Internet Archive links require you to have an account to read books.</li>
-</ul>
-</li>
-<li>Something being in the library does not necessarily mean I endorse it wholesale. I disagree with several entries to varying extents. Think of these titles as &ldquo;food for thought&rdquo; rather than &ldquo;uncritical approval.&rdquo;</li>
-<li>Content is very, very loosely organized and incomplete. Expect the library to grow and undergo a variety of organizational changes.</li>
-<li>I have not specified content warnings for individual entries; please proceed with caution.</li>
-<li>This library is best perused with a warm beverage in hand, preferably while it&rsquo;s raining.</li>
-</ul>
-<p>If you have library recommendations, want to report broken links, or have any thoughts on the selection, feel free to leave a comment.</p>
-<div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
-<link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
-<script type="text/javascript" id="hcb">   if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24wVz3xOOc.ZF1mLS1sR.Mp0"+"&opts=16782&num=10&ts=1680596795074");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); </script>
- </p>
-        </div>
-    </div>
-</div>
-<div class="item smallarge books">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>The Chronology of Water</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Lidia Yuknavitch<br>
-                <em>Published:</em> April 1, 2011<br>
-                <em>Category:</em> Books<br>
-                <em>Length:</em> 312 pages<br>
-                <em>Genre(s):</em> LGBT, Memoir, Feminism</p>
-                </blockquote>
-            <p>"From the debris of her troubled early life, Lidia Yuknavitch weaves an astonishing tale of survival. A kind of memoir that is also a paean to the pursuit of beauty, self-expression, desire - for men and women - and the exhilaration of swimming, The Chronology of Water lays a life bare."</p>
-                <h4 align="right"><a href="https://archive.org/details/chronologyofwate0000yukn/mode/2up?view=theater" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge books">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>The Persistent Desire: A Femme-Butch Reader</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Joan Nestle<br>
-                <em>Published:</em> 1992<br>
-                <em>Category:</em> Books<br>
-                <em>Length:</em> 502 pages<br>
-                <em>Genre(s):</em> Feminism, Nonfiction, LGBT</p>
-                </blockquote>
-            <p>"In this &#39;canonical&#39; anthology of Butch-Femme identities, Joan Nestle traces 200 years of lesbian history, from letters to memoirs to short stories. Nestle surveys a decade of the attempt to reconstruct and understand the meaning and value of butch-femme relations for the contemporary lesbian, drawing on oral history, fiction, poetry, and fantasy."</p>
-                <h4 align="right"><a href="https://transreads.org/wp-content/uploads/2021/07/2021-07-18_60f48dbbdb063_ThePersistentDesireaFemme-ButchReaderbyJoanNestlez-lib.org_.pdf" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge essays">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>The Laugh of the Medusa</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Hélène Cixous<br>
-                <em>Published:</em> 1975<br>
-                <em>Category:</em> Essays<br>
-                <em>Length:</em> 20 pages<br>
-                <em>Genre(s):</em> Feminism, Politics, Nonfiction</p>
-                </blockquote>
-            <p>"In this essay, Cixous issues an ultimatum: that women can either read and choose to stay trapped in their own bodies by a language that does not allow them to express themselves, or they can use the body as a way to communicate. She describes a writing style, écriture féminine, that she says attempts to move outside of the conventional rules found in patriarchal systems."</p>
-                <h4 align="right"><a href="https://www2.csudh.edu/ccauthen/576F10/cixous.pdf" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge books">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Sister Outsider: Essays and Speeches</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Audre Lorde<br>
-                <em>Published:</em> 1984<br>
-                <em>Category:</em> Books<br>
-                <em>Length:</em> 190 pages<br>
-                <em>Genre(s):</em> Race, LGBT, Feminism, Politics</p>
-                </blockquote>
-            <p>"A collection of fifteen essays written between 1976 and 1984 gives clear voice to Audre Lorde&#39;s literary and philosophical personae. These essays explore and illuminate the roots of Lorde&#39;s intellectual development and her deep-seated and longstanding concerns about ways of increasing empowerment among minority women writers and the absolute necessity to explicate the concept of difference—difference according to sex, race, and economic status. The title Sister Outsider finds its source in her poetry collection The Black Unicorn (1978). These poems and the essays in Sister Outsider stress Lorde&#39;s oft-stated theme of continuity, particularly of the geographical and intellectual link between Dahomey, Africa, and her emerging self."</p>
-                <h4 align="right"><a href="https://archive.org/details/sisteroutsideres00lord/mode/2up?view=theater" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge books">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Necessary Illusions: Thought Control in Democratic Societies</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Noam Chomsky<br>
-                <em>Published:</em> 1989<br>
-                <em>Category:</em> Books<br>
-                <em>Length:</em> 432 pages<br>
-                <em>Genre(s):</em> Politics, Nonfiction, History</p>
-                </blockquote>
-            <p>"In his 1988 CBC Massey Lecture, Noam Chomsky inquires into the nature of the media in a political system where the population cannot be disciplined by force and thus must be subjected to more subtle forms of ideological control. Specific cases are illustrated in detail, using the U.S. media primarily but also media in other societies. Chomsky considers how the media might be democratized (as part of the general problem of developing more democratic institutions) in order to offer citizens broader and more meaningful participation in social and political life."</p>
-                <h4 align="right"><a href="https://znetwork.org/necessary-illusions/" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge books">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>The Second Sex</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Simone de Beauvoir<br>
-                <em>Published:</em> 1949 (2009 Translation)<br>
-                <em>Category:</em> Books<br>
-                <em>Length:</em> 746 pages<br>
-                <em>Genre(s):</em> Feminism, Nonfiction, Philosophy</p>
-                </blockquote>
-            <p>"Revolutionary and incendiary, &#39;The Second Sex&#39; is one of the earliest attempts to confront human history from a feminist perspective. It won de Beauvoir many admirers and just as many detractors. Today, many regard this massive and meticulously researched masterwork as not only as pillar of feminist thought but of twentieth-century philosophy in general."</p>
-                <h4 align="right"><a href="https://files.libcom.org/files/1949_simone-de-beauvoir-the-second-sex.pdf" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge books">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Stone Butch Blues</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Leslie Feinberg<br>
-                <em>Published:</em> March 1, 1993<br>
-                <em>Category:</em> Books<br>
-                <em>Length:</em> 308 pages<br>
-                <em>Genre(s):</em> LGBT, Historical fiction</p>
-                </blockquote>
-            <p>"Woman or man? This internationally acclaimed novel looks at the world through the eyes of Jess Goldberg, a masculine girl growing up in the &#39;Ozzie and Harriet&#39; McCarthy era and coming out as a young butch lesbian in the pre-Stonewall gay drag bars of a blue-collar town."</p>
-                <h4 align="right"><a href="http://www.lesliefeinberg.net/download/661/" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge essays">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Sex and Gender in Simone de Beauvoir&#39;s Second Sex</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Judith Butler<br>
-                <em>Published:</em> 1986<br>
-                <em>Category:</em> Essays<br>
-                <em>Length:</em> 15 pages<br>
-                <em>Genre(s):</em> Feminism, Nonfiction, Philosophy</p>
-                </blockquote>
-            <p>"Judith Butler addresses Simone de Beauvoir’s famous assertion that &#39;one is not born, but, rather, becomes a woman&#39;."</p>
-                <h4 align="right"><a href="https://blogs.law.columbia.edu/critique1313/files/2019/10/Butler-on-Beauvoir.pdf" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge essays">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Situated Knowledges: The Science Question in Feminism and the Privilege of Partial Perspective</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Donna Haraway<br>
-                <em>Published:</em> 1988<br>
-                <em>Category:</em> Essays<br>
-                <em>Length:</em> 25 pages<br>
-                <em>Genre(s):</em> Feminism, Philosophy</p>
-                </blockquote>
-            <p>"Haraway argues for a new understanding of &#39;objectivity&#39; using a feminist lens of analysis."</p>
-                <h4 align="right"><a href="https://philpapers.org/archive/harskt.pdf" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge essays">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>A Cyborg Manifesto</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Donna Haraway<br>
-                <em>Published:</em> 1985<br>
-                <em>Category:</em> Essays<br>
-                <em>Length:</em> 43 pages<br>
-                <em>Genre(s):</em> Feminism, Philosophy, Politics</p>
-                </blockquote>
-            <p>"Haraway’s ‘A Cyborg Manifesto’ is a key postmodern text and is widely taught in many disciplines as one of the first texts to embrace technology from a leftist and feminist perspective using the metaphor of the cyborg to champion socialist, postmodern, and anti-identitarian politics."</p>
-                <h4 align="right"><a href="https://theanarchistlibrary.org/library/donna-haraway-a-cyborg-manifesto" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge essays">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>&#39;I would rather be a cyborg than a goddess&#39;: Becoming-Intersectional in Assemblage Theory</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Jasbir Puar<br>
-                <em>Published:</em> October 2012<br>
-                <em>Category:</em> Essays<br>
-                <em>Length:</em> 6,634 words<br>
-                <em>Genre(s):</em> Feminism, Philosophy, Politics, Intersectionality</p>
-                </blockquote>
-            <p>"In what follows, I offer some preliminary thoughts on the limits and possibilities of intersectionality and assemblage and what might be gained by thinking them through and with each other. What are the strengths of each in the realms of theory, political organizing, legal structures, and method?"</p>
-                <h4 align="right"><a href="https://transversal.at/transversal/0811/puar/en" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge essays">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>The Unhappy Marriage of Marxism and Feminism: Towards a More Progressive Union</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Heidi I. Hartmann<br>
-                <em>Published:</em> 1979<br>
-                <em>Category:</em> Essays<br>
-                <em>Length:</em> 33 pages<br>
-                <em>Genre(s):</em> Feminism, Politics, Nonfiction</p>
-                </blockquote>
-            <p>"This paper argues that the relation between marxism and feminism has, in all the forms it has so far taken, been an unequal one. While both marxist method and feminist analysis are necessary to an understanding of capitalist societies, and of the position of women within them, in fact feminism has consistently been subordinated. The paper presents a challenge to both marxist and radical feminist work on the &#39;woman question&#39;, and argues that what it is necessary to analyse is the combination of patriarchy and capitalism. It is a paper which, we hope, should stimulate considerable debate."</p>
-                <h4 align="right"><a href="https://web.ics.purdue.edu/~hoganr/SOC%20602/Hartmann_1979" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge essays">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Performing Postcolonial Feminine Identity as Shaman: Building Narrative Bridges Between Two Worlds</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Soo Mi Lee<br>
-                <em>Published:</em> Fall 2015<br>
-                <em>Category:</em> Essays (Dissertation)<br>
-                <em>Length:</em> 109 pages<br>
-                <em>Genre(s):</em> Feminism, Religion, Culture</p>
-                </blockquote>
-            <p>"This dissertation examines the construction of women’s autobiographical voices within literature, particularly those produced for Japanese-reading audiences by Zainichi women. Zainichi typically refers to a specific group of “foreigners” residing in postwar Japan—Korean residents who can trace their diasporic roots to Japan’s colonial rule of Korea (1910-1945). Throughout postwar Japanese history, the Zainichi experience has been a complicated one, as it has been informed by racism in Japan as well as by Japan and Korea’s postwar relationship. My dissertation looks at literary arts produced by Zainichi women, with a special focus on the illocutionary power of autobiographical expression as a means to promote social change and equality in contemporary Japanese society."</p>
-                <h4 align="right"><a href="https://escholarship.org/content/qt1jp6k3wg/qt1jp6k3wg_noSplash_9128ecae1bfd559e3774a52be3234672.pdf?t=p6piqw" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge essays">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Feminist Criticism, &#39;The Yellow Wallpaper,&#39; and the Politics of Color in America</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Susan S. Lanser<br>
-                <em>Published:</em> 1989<br>
-                <em>Category:</em> Essays<br>
-                <em>Length:</em> 27 pages<br>
-                <em>Genre(s):</em> Literary analysis, Race, Feminism, Politics</p>
-                </blockquote>
-            <p>"Lanser examines the cultural legacy of &#39;The Yellow Wallpaper&#39; as a feminist text and relays a reading of the story as a manifestion of racial anxiety."</p>
-                <h4 align="right"><a href="https://biblioteca-alternativa.noblogs.org/files/2013/01/yellowwallpaperandpoliticsofcolor.pdf" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge books">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Ain&#39;t I a Woman: Black Women and Feminism</h2>
-            <blockquote>
-                <p><em>Author(s):</em> bell hooks<br>
-                <em>Published:</em> 1981<br>
-                <em>Category:</em> Books<br>
-                <em>Length:</em> 205 pages<br>
-                <em>Genre(s):</em> Race, Feminism, Politics</p>
-                </blockquote>
-            <p>"A groundbreaking work of feminist history and theory analyzing the complex relations between various forms of oppression. Ain&#39;t I a Woman examines the impact of sexism on black women during slavery, the historic devaluation of black womanhood, black male sexism, racism within the recent women&#39;s movement, and black women&#39;s involvement with feminism."</p>
-                <h4 align="right"><a href="https://archive.org/details/aintiwoman00bell/mode/2up?view=theater" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge essays">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>The Combahee River Collective Statement</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Combahee River Collective<br>
-                <em>Published:</em> 1977<br>
-                <em>Category:</em> Essays<br>
-                <em>Length:</em> 21 pages<br>
-                <em>Genre(s):</em> Race, Feminism, Politics</p>
-                </blockquote>
-            <p>"The Combahee River Collective Statement was issued in 1977. An essential piece of feminist theory and Black/womanist feminism."</p>
-                <h4 align="right"><a href="https://americanstudies.yale.edu/sites/default/files/files/Keyword%20Coalition_Readings.pdf" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge books">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Radical Feminist Therapy: Working in the Context of Violence</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Bonnie Burstow<br>
-                <em>Published:</em> October 8, 1992<br>
-                <em>Category:</em> Books<br>
-                <em>Length:</em> 320 pages<br>
-                <em>Genre(s):</em> Feminism, Psychiatry, Politics</p>
-                </blockquote>
-            <p>"With an emphasis on violence against women and on women&#39;s responses to it - such as depression, splitting and eating disturbances - this volume furthers the radicalization of feminist therapy. It serves as a comprehensive introduction for trainees and as an ongoing resource for social service workers and therapists."</p>
-                <h4 align="right"><a href="https://archive.org/details/radicalfeministt0000burs/page/n1/mode/2up?view=theater" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge essays">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>A Critique of Posttraumatic Stress Disorder and the DSM</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Bonnie Burstow<br>
-                <em>Published:</em> 2005<br>
-                <em>Category:</em> Essays<br>
-                <em>Length:</em> 17 pages<br>
-                <em>Genre(s):</em> Psychiatry, Politics</p>
-                </blockquote>
-            <p>"Posttraumatic stress disorder (PTSD) is one of the few DSM categories that was created and became widely accepted as a result of people other than psychiatrists wanting it. Even progressive practitioners tend to assume that it is essentially well constructed and benign. This article shows otherwise. The article fundamentally problematizes PTSD. It demonstrates that the category PTSD is confused, reductionist, contradictory, and arbitrary and that it pathologizes purposeful and valuable coping strategies commonly used by people who are traumatized. It demonstrates, in addition, that the category does not even serve the purpose for which progressive therapists have engaged with the diagnosis and that it cannot simply be &#39;corrected.&#39;"</p>
-                <h4 align="right"><a href="https://www.brown.uk.com/diagnosis/burstow.pdf" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge essays">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Who&#39;s Afraid of Amber Heard?</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Rayne Fisher-Quann<br>
-                <em>Published:</em> June 10, 2022<br>
-                <em>Category:</em> Essays<br>
-                <em>Length:</em> 4523 words<br>
-                <em>Genre(s):</em> Feminism, Politics</p>
-                </blockquote>
-            <p>"abuse, aesthetics, and assigning deviance to difficult women"</p>
-                <h4 align="right"><a href="https://internetprincess.substack.com/p/whos-afraid-of-amber-heard" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge essays">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Failure to Comply: Madness and/as Testimony</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Clementine Morrigan<br>
-                <em>Published:</em> 2017<br>
-                <em>Category:</em> Essays<br>
-                <em>Length:</em> 9,184 words<br>
-                <em>Genre(s):</em> Psychiatry, Politics</p>
-                </blockquote>
-            <p>"Self-harm, suicide attempts, disordered eating, addiction, and other forms of &#39;acting out&#39; are associated with the trauma of surviving violence. While these behaviours are pathologized as symptoms of mental illness, they can be understood, instead, as strategies of resistance against violence."</p>
-                <h4 align="right"><a href="https://cjds.uwaterloo.ca/index.php/cjds/article/view/366/599" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge books">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>The Protest Psychosis: How Schizophrenia Became a Black Disease</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Jonathan M. Metzl<br>
-                <em>Published:</em> 2010<br>
-                <em>Category:</em> Books<br>
-                <em>Length:</em> 246 pages<br>
-                <em>Genre(s):</em> Race, Politics, History, Psychiatry</p>
-                </blockquote>
-            <p>"The civil rights era is largely remembered as a time of sit-ins, boycotts, and riots. But a very different civil rights history evolved at the Ionia State Hospital for the Criminally Insane in Ionia, Michigan. In The Protest Psychosis, psychiatrist and cultural critic Jonathan Metzl tells the shocking story of how schizophrenia became the diagnostic term overwhelmingly applied to African American protesters at Ionia—for political reasons as well as clinical ones. Expertly sifting through a vast array of cultural documents, Metzl shows how associations between schizophrenia and blackness emerged during the tumultuous decades of the 1960s and 1970s—and he provides a cautionary tale of how anxieties about race continue to impact doctor-patient interactions in our seemingly postracial America."</p>
-                <h4 align="right"><a href="https://archive.org/details/protestpsychosis0000metz" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge books">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Assata: An Autobiography</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Assata Shakur<br>
-                <em>Published:</em> 1987<br>
-                <em>Category:</em> Books<br>
-                <em>Length:</em> 274 pages<br>
-                <em>Genre(s):</em> Politics, Memoir, Race</p>
-                </blockquote>
-            <p>"This intensely personal and political autobiography belies the fearsome image of JoAnne Chesimard long projected by the media and the state. With wit and candor, Assata Shakur recounts the experiences that led her to a life of activism and portrays the strengths, weaknesses, and eventual demise of Black and White revolutionary groups at the hand of government officials."</p>
-                <h4 align="right"><a href="https://archive.org/details/Assata/mode/2up?view=theater" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge books">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Are Prisons Obsolete?</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Angela Y. Davis<br>
-                <em>Published:</em> August 5, 2003<br>
-                <em>Category:</em> Books<br>
-                <em>Length:</em> 128 pages<br>
-                <em>Genre(s):</em> Politics, Race, Nonfiction</p>
-                </blockquote>
-            <p>"With her characteristic brilliance, grace and radical audacity, Angela Y. Davis has put the case for the latest abolition movement in American life: the abolition of the prison."</p>
-                <h4 align="right"><a href="https://theanarchistlibrary.org/mirror/a/ay/angela-y-davis-are-prisons-obsolete.pdf" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge essays">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>If Black English Isn&#39;t a Language, Then Tell Me, What Is?</h2>
-            <blockquote>
-                <p><em>Author(s):</em> James Baldwin<br>
-                <em>Published:</em> July 29, 1979<br>
-                <em>Category:</em> Essays<br>
-                <em>Length:</em> 1344 words<br>
-                <em>Genre(s):</em> Race, Politics</p>
-                </blockquote>
-            <p>"Language, incontestably, reveals the speaker. Language, also, far more dubiously, is meant to define the other - and, in this case, the other is refusing to be defined by a language that has never been able to recognize him."</p>
-                <h4 align="right"><a href="https://archive.nytimes.com/www.nytimes.com/books/98/03/29/specials/baldwin-english.html?source=post_page" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge books">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>We Will Shoot Back: Armed Resistance in the Mississippi Freedom Movement</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Akinyele Omowale Umoja<br>
-                <em>Published:</em> April 22, 2013<br>
-                <em>Category:</em> Books<br>
-                <em>Length:</em> 336 pages<br>
-                <em>Genre(s):</em> Race, Politics, History, Nonfiction</p>
-                </blockquote>
-            <p>"Ranging from Reconstruction to the Black Power period, this thoroughly and creatively researched book effectively challenges long-held beliefs about the Black Freedom Struggle. It should make it abundantly clear that the violence/nonviolence dichotomy is too simple to capture the thinking of Black Southerners about the forms of effective resistance."</p>
-                <h4 align="right"><a href="https://files.libcom.org/files/2022-12/Akinyele%20Omowale%20Umoja%20-%20We%20Will%20Shoot%20Back_%20Armed%20Resistance%20in%20the%20Mississippi%20Freedom%20Movement-NYU%20Press%20%282013%29.pdf" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge books">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Blackshirts and Reds: Rational Fascism and the Overthrow of Communism</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Michael Parenti<br>
-                <em>Published:</em> June 1, 1997<br>
-                <em>Category:</em> Books<br>
-                <em>Length:</em> 166 pages<br>
-                <em>Genre(s):</em> Politics, Nonfiction</p>
-                </blockquote>
-            <p>"Blackshirts &amp; Reds explores some of the big issues of our time: fascism, capitalism, communism, revolution, democracy, and ecology—terms often bandied about but seldom explored in the original and exciting way that has become Michael Parenti’s trademark."</p>
-                <h4 align="right"><a href="https://archive.org/details/michael-parenti-blackshirts-and-reds/mode/2up?view=theater" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge books">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Capital, Volume 1</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Karl Marx<br>
-                <em>Published:</em> September 14, 1867<br>
-                <em>Category:</em> Books<br>
-                <em>Length:</em> 1152 pages<br>
-                <em>Genre(s):</em> Politics, Economics, Philosophy, Nonfiction</p>
-                </blockquote>
-            <p>"Capital, one of Marx&#39;s major and most influential works, was the product of thirty years close study of the capitalist mode of production in England, the most advanced industrial society of his day. This new translation of Volume One, the only volume to be completed and edited by Marx himself, avoids some of the mistakes that have marred earlier versions and seeks to do justice to the literary qualities of the work. The introduction is by Ernest Mandel, author of Late Capitalism, one of the only comprehensive attempts to develop the theoretical legacy of Capital."</p>
-                <h4 align="right"><a href="https://www.marxists.org/archive/marx/works/download/pdf/Capital-Volume-I.pdf" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge books">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Counter-Revolutionary Violence: Bloodbaths in Fact and Propaganda</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Noam Chomsky, Edward S. Herman<br>
-                <em>Published:</em> 1973<br>
-                <em>Category:</em> Books<br>
-                <em>Length:</em> 76 pages<br>
-                <em>Genre(s):</em> Politics, International affairs</p>
-                </blockquote>
-            <p>"Chomsky and Herman offer a critique of United States foreign policy in Indochina, with significant focus on the Vietnam War."</p>
-                <h4 align="right"><a href="https://chomsky.info/counter-revolutionary-violence/" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge video">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Democracy Now!</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Amy Goodman, Juan Gonzalez<br>
-                <em>Published:</em> February 19, 1996 - present<br>
-                <em>Category:</em> Video<br>
-                <em>Length:</em> 5000&#43; episodes<br>
-                <em>Genre(s):</em> Politics, News, International affairs</p>
-                </blockquote>
-            <p>"Democracy Now! is a national, daily, independent, award-winning news program hosted by journalists Amy Goodman and Juan Gonzalez."</p>
-                <h4 align="right"><a href="https://archive.org/details/democracy_now_vid" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge essays">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Ideology and Ideological State Apparatuses</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Louis Althusser<br>
-                <em>Published:</em> June 1, 1970<br>
-                <em>Category:</em> Essays<br>
-                <em>Length:</em> 52 pages<br>
-                <em>Genre(s):</em> Politics, Philosophy, Nonfiction</p>
-                </blockquote>
-            <p>"Louis Althusser’s renowned short text ‘Ideology and Ideological State Apparatuses’ radically transformed the concept of the subject, the understanding of the state and even the very frameworks of cultural, political and literary theory."</p>
-                <h4 align="right"><a href="https://www.marxists.org/reference/archive/althusser/1970/ideology.htm" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge books">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Reform or Revolution?</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Rosa Luxemburg<br>
-                <em>Published:</em> 1900, 1908<br>
-                <em>Category:</em> Books<br>
-                <em>Length:</em> 122 pages<br>
-                <em>Genre(s):</em> Politics, Philosophy, Nonfiction</p>
-                </blockquote>
-            <p>"Why capitalism cannot overcome its internal contradictions and the working class cannot &#39;reform&#39; away exploitation and economic crises."</p>
-                <h4 align="right"><a href="https://www.marxists.org/archive/luxemburg/1900/reform-revolution/" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge books">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>The Communist Manifesto</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Karl Marx, Friedrich Engels<br>
-                <em>Published:</em> February 21, 1848<br>
-                <em>Category:</em> Books<br>
-                <em>Length:</em> 288 pages<br>
-                <em>Genre(s):</em> Politics, Philosophy, Nonfiction</p>
-                </blockquote>
-            <p>"Originally published on the eve of the 1848 European revolutions, The Communist Manifesto is a condensed and incisive account of the worldview Marx and Engels developed during their hectic intellectual and political collaboration. Formulating the principles of dialectical materialism, they believed that labor creates wealth, hence capitalism is exploitive and antithetical to freedom."</p>
-                <h4 align="right"><a href="https://www.marxists.org/archive/marx/works/1848/communist-manifesto/index.htm" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge books">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>The Principles of Communism</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Friedrich Engels<br>
-                <em>Published:</em> 1847<br>
-                <em>Category:</em> Books<br>
-                <em>Length:</em> 7780 words<br>
-                <em>Genre(s):</em> Politics, Philosophy, Nonfiction</p>
-                </blockquote>
-            <p>"Principles of Communism is a brief 1847 work written by Friedrich Engels, the co-founder of Marxism. It is structured as a catechism, containing 25 questions about communism for which answers are provided. In the text, Engels presents core ideas of Marxism such as historical materialism, class struggle, and proletarian revolution. Principles of Communism served as the draft version for the Communist Manifesto."</p>
-                <h4 align="right"><a href="https://www.marxists.org/archive/marx/works/1847/11/prin-com.htm" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge books">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>The State and Revolution</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Vladimir Lenin<br>
-                <em>Published:</em> 1917<br>
-                <em>Category:</em> Books<br>
-                <em>Length:</em> 116 pages<br>
-                <em>Genre(s):</em> Politics, Philosophy, Nonfiction</p>
-                </blockquote>
-            <p>"The State and Revolution (1917) is a book by Vladimir Lenin describing the role of the state in society, the necessity of proletarian revolution, and the theoretic inadequacies of social democracy in achieving revolution to establish the dictatorship of the proletariat."</p>
-                <h4 align="right"><a href="https://www.marxists.org/archive/lenin/works/1917/staterev/" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge books">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>The Motorcycle Diaries</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Ernesto Che Guevara<br>
-                <em>Published:</em> 1952<br>
-                <em>Category:</em> Books<br>
-                <em>Length:</em> 175 pages<br>
-                <em>Genre(s):</em> Memoir, Politics</p>
-                </blockquote>
-            <p>"The Motorcycle Diaries is Che Guevara&#39;s diary of his journey to discover the continent of Latin America while still a medical student, setting out in 1952 on a vintage Norton motorcycle together with his friend Alberto Granado, a biochemist. It captures, arguably as much as any book ever written, the exuberance and joy of one person&#39;s youthful belief in the possibilities of humankind tending towards justice, peace and happiness."</p>
-                <h4 align="right"><a href="https://archive.org/details/motorcyclediariescheguevara/mode/2up?view=theater" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge books">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>We Are Cuba!: How a Revolutionary People Have Survived in a Post-Soviet World</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Helen Yaffe<br>
-                <em>Published:</em> April 6, 2020<br>
-                <em>Category:</em> Books<br>
-                <em>Length:</em> 380 pages<br>
-                <em>Genre(s):</em> History, Politics, Nonfiction</p>
-                </blockquote>
-            <p>"In the aftermath of the fall of the Soviet Union, Cuba faced the start of a crisis that decimated its economy. Helen Yaffe examines the astonishing developments that took place during and beyond this period. Drawing on archival research and interviews with Cuban leaders, thinkers, and activists, this book tells for the first time the remarkable story of how Cuba survived while the rest of the Soviet bloc crumbled."</p>
-                <h4 align="right"><a href="https://valleysunderground.files.wordpress.com/2020/12/helen-yaffe-we-are-cuba_-how-a-revolutionary-people-have-survived-in-a-post-soviet-world-2019-yale-university-press-libgen.lc_.pdf" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge essays">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>American Imperialism in Hawai’i: How the United States Illegally Usurped a Sovereign Nation and Got Away With It</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Noelani Nasser<br>
-                <em>Published:</em> 2021<br>
-                <em>Category:</em> Essays<br>
-                <em>Length:</em> 37 pages<br>
-                <em>Genre(s):</em> Politics, International affairs</p>
-                </blockquote>
-            <p>"This paper will discuss historical events in Hawai’i from 1778 to the twenty-first century that demonstrate the atrocities and injustices of American imperialism that prevented the Native Hawaiians from profiting from the islands’ rich lands in a period of immense economic growth, stemming largely from agricultural developments."</p>
-                <h4 align="right"><a href="https://repository.uchastings.edu/cgi/viewcontent.cgi?article=2135&amp;context=hastings_constitutional_law_quaterly" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge books">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>The Palestine-Israel Conflict: A Basic Introduction</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Gregory Harms, Todd M. Ferry<br>
-                <em>Published:</em> 2005<br>
-                <em>Category:</em> Books<br>
-                <em>Length:</em> 288 pages<br>
-                <em>Genre(s):</em> Politics, History, Nonfiction</p>
-                </blockquote>
-            <p>"The Palestine-Israel conflict is the most notorious and ingrained conflict of the twentieth, and now twenty-first, century. Yet the way it is reported in the media is often confusing, leading many to assume the hostilities stretch back to an ancient period. This is the first book to provide a clear, accessible, and annotated introduction that covers the full history of the region, from Biblical times until today. Perfect for the general reader, as well as students, it offers a comprehensive yet lucid rendering of the conflict, setting it in its proper historical context. Harms and Ferry show how today&#39;s violence is very much a product of recent history, with its roots in the twentieth century. This balanced account is now fully up to date and makes a valuable resource for anyone who wants a clear guide to the conflict between Israel and the Palestinian territories, and its place in the history of Middle Eastern affairs."</p>
-                <h4 align="right"><a href="https://archive.org/details/palestineisraelc0000harm/mode/2up?view=theater" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge zines">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Build Your Own Solidarity Network</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Workers Solidarity Alliance<br>
-                <em>Published:</em> 2011<br>
-                <em>Category:</em> Zines<br>
-                <em>Length:</em> 24 pages<br>
-                <em>Genre(s):</em> Politics</p>
-                </blockquote>
-            <p>"A guide to building a successful solidarity network along the lines of the Seattle Solidarity Network, written by SeaSol organizers."</p>
-                <h4 align="right"><a href="https://files.libcom.org/files/seasol-pamphlet-expanded-US.pdf" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge archives">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Emelí Vélez de Vando Papers</h2>
-            <blockquote>
-                <p><em>Author(s):</em> n/a<br>
-                <em>Published:</em> 1919-1999<br>
-                <em>Category:</em> Archives<br>
-                <em>Length:</em> 35 images<br>
-                <em>Genre(s):</em> Politics, Feminism, History</p>
-                </blockquote>
-            <p>"This collection is valuable for examining the history of the independence movement, especially the history of the Nationalist Party, the Partido Independentista de Puerto Rico and Movimiento Pro Independencia. It is of particular importance for the insight it offers on the role of women in the independence movement and on women activists. The collection also contains significant information about political repression and the persecution of political activists in Puerto Rico. Like many other pro-independence sympathizers, Emelí Vélez de Vando was subjected to years of police surveillance. Among her papers is a voluminous carpeta, the secret file on her compiled by the police of Puerto Rico. In it are detailed accounts of all her activities, including her speeches at different forums and demonstrations. The collection consists primarily of letters, articles, photographs, police reports, audiotapes, programs and flyers."</p>
-                <h4 align="right"><a href="https://centroca.hunter.cuny.edu/Detail/collections/32" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge archives">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Juanita Arocho Papers</h2>
-            <blockquote>
-                <p><em>Author(s):</em> n/a<br>
-                <em>Published:</em> 1940 - 1994<br>
-                <em>Category:</em> Archives<br>
-                <em>Length:</em> 28 images<br>
-                <em>Genre(s):</em> Politics, History</p>
-                </blockquote>
-            <p>"The Juanita Arocho Papers provide insight into community organizing efforts in the Puerto Rican community of East (Spanish) Harlem, Puerto Rican independence movements, and the participation of Puerto Ricans in the Masonic Order."</p>
-                <h4 align="right"><a href="https://centroca.hunter.cuny.edu/Detail/collections/40" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge essays">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>The Marriage Debate</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Paula L. Ettelbrick, Thomas B. Stoddard<br>
-                <em>Published:</em> Fall 1989<br>
-                <em>Category:</em> Essays<br>
-                <em>Length:</em> 11 pages<br>
-                <em>Genre(s):</em> LGBT, Politics, Nonfiction</p>
-                </blockquote>
-            <p>"A debate regarding the efficacy of marriage equality in liberating queer people."</p>
-                <h4 align="right"><a href="https://againstequality.org/files/the_marriage_debate_Ettelbrick_1989.PDF" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge books">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Transgender Marxism</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Jules Joanne Gleeson (Editor), Elle O&#39;Rourke (Editor)<br>
-                <em>Published:</em> May 20, 2021<br>
-                <em>Category:</em> Books<br>
-                <em>Length:</em> 320 pages<br>
-                <em>Genre(s):</em> LGBT, Politics, Nonfiction</p>
-                </blockquote>
-            <p>"Transgender Marxism collects a set of reflections on the relations between gender and labour, showing how these linked phenomena structure antagonisms in particular social and historical situations. The collection contributes to Marxist Feminism and Social Reproduction Theory through both personal and analytic examinations of the particular social activity demanded of trans people around the world. The aim of the publication is not to provide an exhaustive overview of all trans thinkers using Marxist frameworks, but rather to provide a provocative and illuminating entry point to this mode of theorisation."</p>
-                <h4 align="right"><a href="https://transreads.org/wp-content/uploads/2021/07/2021-07-15_60f0b3d5edcb7_jules-joanne-gleeson-transgender-marxism-1.pdf" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge essays">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Vocational Awe and Librarianship: The Lies We Tell Ourselves</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Fobazi Ettarh<br>
-                <em>Published:</em> January 10, 2018<br>
-                <em>Category:</em> Essays<br>
-                <em>Length:</em> 8704 words<br>
-                <em>Genre(s):</em> Librarianship</p>
-                </blockquote>
-            <p>"Vocational awe describes the set of ideas, values, and assumptions librarians have about themselves and the profession that result in notions that libraries as institutions are inherently good, sacred notions, and therefore beyond critique. This Essays aims to describe the phenomenon and its effects on library philosophies and practices so that they may be recognized and deconstructed."</p>
-                <h4 align="right"><a href="https://www.inthelibrarywiththeleadpipe.org/2018/vocational-awe/" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge zines">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>A Rough Guide to Bicycle Maintenance</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Shelley Lynn Jackson<br>
-                <em>Published:</em> 2003<br>
-                <em>Category:</em> Zines<br>
-                <em>Length:</em> 7 pages<br>
-                <em>Genre(s):</em> DIY, Tutorials</p>
-                </blockquote>
-            <p>"A DIY guide to bicycle maintenance."</p>
-                <h4 align="right"><a href="https://cpezine.omeka.net/items/show/7" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge zines">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>D.I.Y. Hand Bookbinding Handbook</h2>
-            <blockquote>
-                <p><em>Author(s):</em> M. M. Rooney<br>
-                <em>Published:</em> 2006<br>
-                <em>Category:</em> Zines<br>
-                <em>Length:</em> 17 pages<br>
-                <em>Genre(s):</em> DIY, Tutorials</p>
-                </blockquote>
-            <p>"Illustrated guide on how to bind a book yourself."</p>
-                <h4 align="right"><a href="https://www.sherwoodforestzinelibrary.org/_files/ugd/8c0bf9_9e9a40012bfc4356b6b75cac6d182d6c.pdf" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge video">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Angel&#39;s Egg</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Mamoru Oshii<br>
-                <em>Published:</em> December 15, 1985<br>
-                <em>Category:</em> Video<br>
-                <em>Length:</em> 1 hr 11 min<br>
-                <em>Genre(s):</em> Anime, Film, Science Fantasy, Psychological</p>
-                </blockquote>
-            <p>"A mysterious young girl wanders a desolate, otherworldly landscape, carrying a large egg."</p>
-                <h4 align="right"><a href="https://www.youtube.com/watch?v=YopWyb75G7o" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge video">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Revolutionary Girl Utena</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Be-Papas, Nozomi Entertainment<br>
-                <em>Published:</em> April 2, 1997 – December 24, 1997<br>
-                <em>Category:</em> Video<br>
-                <em>Length:</em> 39 episodes<br>
-                <em>Genre(s):</em> Anime, LGBT, Series, Shoujo, Josei</p>
-                </blockquote>
-            <p>"A tomboyish schoolgirl finds herself forced into repeated duels for another girl who has a role in a world revolution."</p>
-                <h4 align="right"><a href="https://www.youtube.com/watch?v=6TQFlVcPyUA&amp;list=PLrrh84y760v-hDEulas0Tp_wiQy0FcjLl" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge video">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Sailor Moon</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Naoko Takeuchi, Toei Animation<br>
-                <em>Published:</em> March 7, 1992 – February 8, 1997<br>
-                <em>Category:</em> Video<br>
-                <em>Length:</em> 241 episodes<br>
-                <em>Genre(s):</em> Anime, Series, Shoujo</p>
-                </blockquote>
-            <p>"The series follows the adventures of a schoolgirl named Usagi Tsukino as she transforms into the eponymous character to search for a magical artifact, the Legendary Silver Crystal. She leads a group of comrades, the Sailor Guardians, as they battle against villains to prevent the theft of the Silver Crystal and the destruction of the Solar System."</p>
-                <h4 align="right"><a href="https://www.youtube.com/watch?v=7PYPSnKD058&amp;list=PLDDFkfLheQ9g-9QS1CgfAnP5kHwc--qYO" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge zines">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Lainzine #1</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Several<br>
-                <em>Published:</em> April 20, 2015<br>
-                <em>Category:</em> Zines<br>
-                <em>Length:</em> 35 pages<br>
-                <em>Genre(s):</em> Anime, Technology</p>
-                </blockquote>
-            <p>"A fanzine centered around Serial Experiments Lain."</p>
-                <h4 align="right"><a href="https://lainzine.org/all-releases/lainzine01.pdf" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge zines">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Lainzine #2</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Several<br>
-                <em>Published:</em> August 28, 2015<br>
-                <em>Category:</em> Zines<br>
-                <em>Length:</em> 36 pages<br>
-                <em>Genre(s):</em> Anime, Technology</p>
-                </blockquote>
-            <p>"Issue 2 of a fanzine centered around Serial Experiments Lain."</p>
-                <h4 align="right"><a href="https://lainzine.org/all-releases/lainzine02.pdf" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge zines">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Lainzine #3</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Several<br>
-                <em>Published:</em> May 2016<br>
-                <em>Category:</em> Zines<br>
-                <em>Length:</em> 52 pages<br>
-                <em>Genre(s):</em> Anime, Technology</p>
-                </blockquote>
-            <p>"Issue 3 of a fanzine centered around Serial Experiments Lain."</p>
-                <h4 align="right"><a href="https://lainzine.org/all-releases/lainzine03.pdf" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge audio">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>The Vinyl Box</h2>
-            <blockquote>
-                <p><em>Author(s):</em> n/a<br>
-                <em>Published:</em> Varied<br>
-                <em>Category:</em> Audio<br>
-                <em>Length:</em> 1,000&#43; albums<br>
-                <em>Genre(s):</em> Varied</p>
-                </blockquote>
-            <p>"A collection of vinyl recordings of any genre or year, as long they were released on vinyl discs."</p>
-                <h4 align="right"><a href="https://archive.org/details/the-vinyl-box?tab=collection" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge audio">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>CBS Radio Mystery Theater</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Himan Brown<br>
-                <em>Published:</em> 1974 - 1982<br>
-                <em>Category:</em> Audio<br>
-                <em>Length:</em> 1,399 episodes<br>
-                <em>Genre(s):</em> Radio</p>
-                </blockquote>
-            <p>"Radio Mystery Theater and Mystery Theater, sometimes abbreviated as CBSRMT) was a radio drama series created by Himan Brown that was broadcast on CBS Radio Network affiliates from 1974 to 1982, and later in the early 2000s was carried by the NPR satellite feed."</p>
-                <h4 align="right"><a href="https://archive.org/details/cbsrmt-74-02-08-33-conspiracy-to-defraud/CBSRMT&#43;74-01-06&#43;%281%29&#43;The&#43;Old&#43;Ones&#43;Are&#43;Hard&#43;to&#43;Kill.mp3" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge books">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>The Hour of the Star</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Clarice Lispector<br>
-                <em>Published:</em> February 17, 1992<br>
-                <em>Category:</em> Books<br>
-                <em>Length:</em> 96 pages<br>
-                <em>Genre(s):</em> Classics, Fiction</p>
-                </blockquote>
-            <p>"Narrated by the cosmopolitan Rodrigo S.M., this brief, strange, and haunting tale is the story of Macabéa, one of life&#39;s unfortunates. Living in the slums of Rio de Janeiro and eking out a poor living as a typist, Macabéa loves movies, Coca-Cola, and her rat of a boyfriend; she would like to be like Marilyn Monroe, but she is ugly, underfed, sickly, and unloved. Rodrigo recoils from her wretchedness, and yet he cannot avoid realization that for all her outward misery, Macabéa is inwardly free. She doesn&#39;t seem to know how unhappy she should be. Lispector employs her pathetic heroine against her urbane, empty narrator--edge of despair to edge of despair--and, working them like a pair of scissors, she cuts away the reader&#39;s preconceived notions about poverty, identity, love, and the art of fiction. In her last novel she takes readers close to the true mystery of life, and leaves us deep in Lispector territory indeed."</p>
-                <h4 align="right"><a href="https://archive.org/details/hourofst00lisp/mode/2up?view=theater" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge books">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Wuthering Heights</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Emily Brontë<br>
-                <em>Published:</em> December 1, 1847<br>
-                <em>Category:</em> Books<br>
-                <em>Length:</em> 464 pages<br>
-                <em>Genre(s):</em> Classics, Gothic, Romance, Historical fiction</p>
-                </blockquote>
-            <p>"At the centre of this novel is the passionate love between Catherine Earnshaw and Heathcliff - recounted with such emotional intensity that a plain tale of the Yorkshire moors acquires the depth and simplicity of ancient tragedy."</p>
-                <h4 align="right"><a href="https://www.gutenberg.org/ebooks/768" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge books">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Moby-Dick or, the Whale</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Herman Melville<br>
-                <em>Published:</em> October 18, 1851<br>
-                <em>Category:</em> Books<br>
-                <em>Length:</em> 654 pages<br>
-                <em>Genre(s):</em> Classics, Historical fiction</p>
-                </blockquote>
-            <p>"In part, Moby-Dick is the story of an eerily compelling madman pursuing an unholy war against a creature as vast and dangerous and unknowable as the sea itself. But more than just a novel of adventure, more than an encyclopaedia of whaling lore and legend, the book can be seen as part of its author&#39;s lifelong meditation on America. Written with wonderfully redemptive humour, Moby-Dick is also a profound inquiry into character, faith, and the nature of perception."</p>
-                <h4 align="right"><a href="https://www.gutenberg.org/ebooks/2701" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge books">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Metamorphosis</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Franz Kafka<br>
-                <em>Published:</em> 1915<br>
-                <em>Category:</em> Books<br>
-                <em>Length:</em> 201 pages<br>
-                <em>Genre(s):</em> Fiction, Classics</p>
-                </blockquote>
-            <p>"With it&#39;s startling, bizarre, yet surprisingly funny first opening, Kafka begins his masterpiece, The Metamorphosis. It is the story of a young man who, transformed overnight into a giant beetle-like insect, becomes an object of disgrace to his family, an outsider in his own home, a quintessentially alienated man. A harrowing—though absurdly comic—meditation on human feelings of inadequacy, guilt, and isolation, The Metamorphosis has taken its place as one of the most widely read and influential works of twentieth-century fiction."</p>
-                <h4 align="right"><a href="https://www.gutenberg.org/ebooks/5200" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge books">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Crime and Punishment</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Fyodor Dostoyevsky<br>
-                <em>Published:</em> 1866<br>
-                <em>Category:</em> Books<br>
-                <em>Length:</em> 671 pages<br>
-                <em>Genre(s):</em> Fiction, Classics</p>
-                </blockquote>
-            <p>"Raskolnikov, a destitute and desperate former student, wanders through the slums of St Petersburg and commits a random murder without remorse or regret. He imagines himself to be a great man, a Napoleon: acting for a higher purpose beyond conventional moral law. But as he embarks on a dangerous game of cat and mouse with a suspicious police investigator, Raskolnikov is pursued by the growing voice of his conscience and finds the noose of his own guilt tightening around his neck. Only Sonya, a downtrodden sex worker, can offer the chance of redemption."</p>
-                <h4 align="right"><a href="https://www.gutenberg.org/ebooks/2554" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge books">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Catch-22</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Joseph Heller<br>
-                <em>Published:</em> November 10, 1961<br>
-                <em>Category:</em> Books<br>
-                <em>Length:</em> 453 pages<br>
-                <em>Genre(s):</em> Classics, Historical fiction, War</p>
-                </blockquote>
-            <p>"Set in Italy during World War II, this is the story of the incomparable, malingering bombardier, Yossarian, a hero who is furious because thousands of people he has never met are trying to kill him. But his real problem is not the enemy—it is his own army, which keeps increasing the number of missions the men must fly to complete their service. Yet if Yossarian makes any attempt to excuse himself from the perilous missions he’s assigned, he’ll be in violation of Catch-22, a hilariously sinister bureaucratic rule: a man is considered insane if he willingly continues to fly dangerous combat missions, but if he makes a formal request to be removed from duty, he is proven sane and therefore ineligible to be relieved."</p>
-                <h4 align="right"><a href="https://archive.org/details/Catch22_201808/page/n5/mode/2up?view=theater" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge essays">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Shmita Means Total Destroy</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Fayer Collective<br>
-                <em>Published:</em> Winter 2022<br>
-                <em>Category:</em> Essays<br>
-                <em>Length:</em> 2885 words<br>
-                <em>Genre(s):</em> Environment, Politics</p>
-                </blockquote>
-            <p>"A manifesto from the threatened Atlanta forest."</p>
-                <h4 align="right"><a href="https://jewishcurrents.org/shmita-means-total-destroy" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge essays">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Faith, Family and Folk: Against the Trad Left</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Donald Parkinson<br>
-                <em>Published:</em> December 28, 2019<br>
-                <em>Category:</em> Essays<br>
-                <em>Length:</em> 6264 words<br>
-                <em>Genre(s):</em> Politics</p>
-                </blockquote>
-            <p>"Donald Parkinson takes issue with the calls for a &#39;socially conservative leftism&#39; that have increased in popularity since Jeremy Corbyn’s defeat in the UK election. "</p>
-                <h4 align="right"><a href="https://cosmonaut.blog/2019/12/28/faith-family-and-folk-against-the-trad-left/" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge essays">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Why Petroleum Did Not Save the Whales</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Richard York<br>
-                <em>Published:</em> 2017<br>
-                <em>Category:</em> Essays<br>
-                <em>Length:</em> 13 pages<br>
-                <em>Genre(s):</em> Environment, Politics, History</p>
-                </blockquote>
-            <p>"Ironically, even though fossil fuels provided substitutes for the main uses of whale oil, the rise of fossil fuel use in the nineteenth century served to increase the intensity of whaling. The connections between fossil fuels and whaling are an example of the unanticipated consequences that frequently come with technological change. I draw on political-economic theory to explain why fossil fuels served to escalate rather than eliminate whaling. The case of whaling highlights the limited potential for technological developments to help overcome environmental problems without concurrent political, economic, and social change that supports conservation."</p>
-                <h4 align="right"><a href="https://journals.sagepub.com/doi/pdf/10.1177/2378023117739217" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge essays">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>The Primal Pleasure and Brutal History of Sugar</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Ruby Tandoh<br>
-                <em>Published:</em> August 6, 2018<br>
-                <em>Category:</em> Essays<br>
-                <em>Length:</em> 4321 words<br>
-                <em>Genre(s):</em> History, Race, Politics</p>
-                </blockquote>
-            <p>"How a taste for sweetness, developed for survival, became a stand-in for everything good — and evil — about our culture"</p>
-                <h4 align="right"><a href="https://www.eater.com/2018/8/6/17631452/ruby-tandoh-sugar-history-kara-walker-will-cotton" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge books">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Afghanistan: Forging Civilizations along the Silk Road</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Joan Aruz, Elisabetta Valtz Fino<br>
-                <em>Published:</em> 2012<br>
-                <em>Category:</em> Books<br>
-                <em>Length:</em> 146 pages<br>
-                <em>Genre(s):</em> Art history</p>
-                </blockquote>
-            <p>"Afghanistan, standing at the crossroads of major trade routes, has a long and complex history. Its rich cultural heritage bears the imprint of many traditions, from Greece and Iran to the nomadic world of the Eurasian steppes and China. The essays in this volume concentrate on periods of great artistic development: the Bactrian Bronze Age and the eras following the conquests of Alexander the Great, with a special focus on the sites of Aï Khanum, Begram, and Tillya Tepe. These contributions— in response to the reappearance of the magnificent hidden treasures from Afghanistan and their exhibition— have shed new light on the significance of these works and have reinvigorated the discussion of the arts and culture of Central Asia."</p>
-                <h4 align="right"><a href="https://www.metmuseum.org/art/metpublications/Afghanistan_Forging_Civilizations_along_the_Silk_Road" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge essays">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>The Role of Cenotes in the Social History of Mexico&#39;s Yucatan Peninsula</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Paul George Munro, Maria de Lourdes Melo Zurita<br>
-                <em>Published:</em> November 2011<br>
-                <em>Category:</em> Essays<br>
-                <em>Length:</em> 30 pages<br>
-                <em>Genre(s):</em> History, Environment</p>
-                </blockquote>
-            <p>"Presented in this paper is an alternative perspective on the Peninsula&#39;s history, cast through an environmental historical lens that elicits nature&#39;s role as a historical actor."</p>
-                <h4 align="right"><a href="https://www.researchgate.net/publication/233711857_The_Role_of_Cenotes_in_the_Social_History_of_Mexico%27s_Yucatan_Peninsula" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge poetry">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>The Black Unicorn: Poems</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Audre Lorde<br>
-                <em>Published:</em> 1978<br>
-                <em>Category:</em> Poetry<br>
-                <em>Length:</em> 136 pages<br>
-                <em>Genre(s):</em> LGBT, Feminism, Race, Poetry</p>
-                </blockquote>
-            <p>"The Black Unicorn is a collection of poems by a woman who, Adrienne Rich writes, &#39;for the complexity of her vision, for her moral courage and the catalytic passion of her language, has already become, for many, an indispensable poet.&#39;"</p>
-                <h4 align="right"><a href="https://archive.org/details/blackunicornpoem00lord/page/n11/mode/2up" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge poetry">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Night Sky with Exit Wounds</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Ocean Vuong<br>
-                <em>Published:</em> April 5, 2016<br>
-                <em>Category:</em> Poetry<br>
-                <em>Length:</em> 89 pages<br>
-                <em>Genre(s):</em> LGBT, Poetry</p>
-                </blockquote>
-            <p>"Ocean Vuong&#39;s first full-length collection aims straight for the perennial &#39;big&#39;—and very human—subjects of romance, family, memory, grief, war, and melancholia. None of these he allows to overwhelm his spirit or his poems, which demonstrate, through breath and cadence and unrepentant enthrallment, that a gentle palm on a chest can calm the fiercest hungers."</p>
-                <h4 align="right"><a href="https://archive.org/details/nightskywithexit0000vuon?view=theater" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge books">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>The Vegetarian</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Han Kang<br>
-                <em>Published:</em> February 2, 2016<br>
-                <em>Category:</em> Books<br>
-                <em>Length:</em> 188 pages<br>
-                <em>Genre(s):</em> Fiction, Horror</p>
-                </blockquote>
-            <p>"Before the nightmare, Yeong-hye and her husband lived an ordinary life. But when splintering, blood-soaked images start haunting her thoughts, Yeong-hye decides to purge her mind and renounce eating meat. In a country where societal mores are strictly obeyed, Yeong-hye&#39;s decision to embrace a more “plant-like” existence is a shocking act of subversion. And as her passive rebellion manifests in ever more extreme and frightening forms, scandal, abuse, and estrangement begin to send Yeong-hye spiraling deep into the spaces of her fantasy. In a complete metamorphosis of both mind and body, her now dangerous endeavor will take Yeong-hye—impossibly, ecstatically, tragically—far from her once-known self altogether."</p>
-                <h4 align="right"><a href="https://archive.org/details/vegetariannovel0000hank_w5t7/mode/2up?view=theater" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge books">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Human Acts</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Han Kang<br>
-                <em>Published:</em> May 19, 2014<br>
-                <em>Category:</em> Books<br>
-                <em>Length:</em> 188 pages<br>
-                <em>Genre(s):</em> Historical fiction</p>
-                </blockquote>
-            <p>"An award-winning, controversial bestseller, Human Acts is a timeless, pointillist portrait of an historic event with reverberations still being felt today, by turns tracing the harsh reality of oppression and the resounding, extraordinary poetry of humanity."</p>
-                <h4 align="right"><a href="https://archive.org/details/humanactsnovel0000hank_v1a4/mode/2up?view=theater" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge books">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Pachinko</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Min Jin Lee<br>
-                <em>Published:</em> February 7, 2017<br>
-                <em>Category:</em> Books<br>
-                <em>Length:</em> 496 pages<br>
-                <em>Genre(s):</em> Historical fiction</p>
-                </blockquote>
-            <p>"In the early 1900s, teenaged Sunja, the adored daughter of a crippled fisherman, falls for a wealthy stranger at the seashore near her home in Korea. He promises her the world, but when she discovers she is pregnant — and that her lover is married — she refuses to be bought. Instead, she accepts an offer of marriage from a gentle, sickly minister passing through on his way to Japan. But her decision to abandon her home, and to reject her son&#39;s powerful father, sets off a dramatic saga that will echo down through the generations."</p>
-                <h4 align="right"><a href="https://archive.org/details/pachinko0000leem?view=theater" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
-        </div>
-    </div>
-</div>
-<div class="item smallarge books">
-    <div class="cards">
-        <div class="cardsHeader">
-    <div class="cardsControls">
-            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
-    </div>
-</div>
-        <div class="cardsBody">
-            <h2>Confessions</h2>
-            <blockquote>
-                <p><em>Author(s):</em> Kanae Minato<br>
-                <em>Published:</em> August 5, 2008<br>
-                <em>Category:</em> Books<br>
-                <em>Length:</em> 240 pages<br>
-                <em>Genre(s):</em> Fiction, Mystery, Horror</p>
-                </blockquote>
-            <p>"After calling off her engagement in wake of a tragic revelation, Yuko Moriguchi had nothing to live for except her only child, four-year-old Manami. Now, following an accident on the grounds of the middle school where she teaches, Yuko has given up and tendered her resignation. But first she has one last lecture to deliver. She tells a story that upends everything her students ever thought they knew about two of their peers, and sets in motion a maniacal plot for revenge."</p>
-                <h4 align="right"><a href="https://archive.org/details/confessionsnovel0000mina/mode/2up?view=theater" target="_blank" rel="noopener noreferrer"> CHECK OUT <i class='fa fa-long-arrow-right'></i></a></h4>
+    <div class="grid">
+        
+        <div class="item large">
+            <div class="cards"><div class="cardsHeader">
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div><div class="cardsBody">
+                    <h1>#Library Bulletin</h1>
+                    <p style="font-style:italic;">Current Number of Library Entries: <span id="entry-count">76</span></p>
+                    <p>A growing catalog of media I've collected. Click on an entry to open a preview.</p>
+                    <details>
+                        <summary style="font-weight:bold;">NOTES</summary>
+                        <ul>
+                            <li>In the spirit of maintaining a digital "library," items listed are free. All entries have a "Check out" link that allows you to download or view the content.</li>
+                            <ul>
+                                <li>Some links, specifically ones that are sourced from the Internet Archive's Open Library, may require you to have an account to access the content.</li>
+                                <li>Due to <a href="https://www.eff.org/cases/hachette-v-internet-archive">Hachette v. Internet Archive</a>, many Open Library entries are unavailable. Although the IA is appealing the court decision, in the meantime, I have started to look for different sourcing.</li>
+                            </ul>
+                            <li>Click on the arrows by each cell header to sort the data (ascending/descending).</li>
+                            <li>Something being in the library does not mean I endorse it.</li>
+                            <li>If a preview isn't loading, it's likely an essay whose host site doesn't allow embeds. You'll have to click the Check Out link to see it directly.</li>
+                            <li>Content is very, very loosely organized and incomplete.</li>
+                            <li>I have not specified content warnings for individual entries; please proceed with caution.</li>
+                            <li>Yes, I know multiple author support is broken. I will (probably) fix it eventually.</li>
+                        </ul>    
+                      </details>
+               
+                    <div class="library-table-wrapper">
+                        <table class="library-table">
+                            <thead>
+                                <tr>
+                                    <th class="title-header">Title <span class="sort-indicator" id="title-sort">↑</span></th>
+                                    <th class="author-header">Author <span class="sort-indicator" id="author-sort">↑</span></th>
+                                    <th class="year-header">Year <span class="sort-indicator" id="year-sort">↑</span></th>
+                                    <th class="category-header">Category <span class="sort-indicator" id="category-sort">↑</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                <tr class="library-item" 
+                                    data-title="Murder on the Orient Express" 
+                                    data-author="Agatha Christie" 
+                                    data-year="1934" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://archive.org/details/isbn_9780007659579/mode/2up?view=theater">
+                                    <td>Murder on the Orient Express</td>
+                                    <td>Agatha Christie</td>
+                                    <td>1934</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="The Mystery of the Blue Train" 
+                                    data-author="Agatha Christie" 
+                                    data-year="1928" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://www.gutenberg.org/cache/epub/72824/pg72824-images.html">
+                                    <td>The Mystery of the Blue Train</td>
+                                    <td>Agatha Christie</td>
+                                    <td>1928</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="The Hour of the Star" 
+                                    data-author="Clarice Lispector" 
+                                    data-year="1992" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://archive.org/details/hourofst00lisp/mode/2up?view=theater">
+                                    <td>The Hour of the Star</td>
+                                    <td>Clarice Lispector</td>
+                                    <td>1992</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="The Vegetarian" 
+                                    data-author="Han Kang" 
+                                    data-year="2007" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://archive.org/details/the-vegetarian-a-novel-pdfdrive/mode/2up?view=theater">
+                                    <td>The Vegetarian</td>
+                                    <td>Han Kang</td>
+                                    <td>2007</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Automate the Boring Stuff with Python" 
+                                    data-author="Al Sweigart" 
+                                    data-year="2019" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://automatetheboringstuff.com/2e/chapter0/">
+                                    <td>Automate the Boring Stuff with Python</td>
+                                    <td>Al Sweigart</td>
+                                    <td>2019</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Algorithms &#43; Data Structures = Programs" 
+                                    data-author="Niklaus Wirth" 
+                                    data-year="1976" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://archive.org/details/algorithmsdatast0000wirt/mode/2up?view=theater">
+                                    <td>Algorithms &#43; Data Structures = Programs</td>
+                                    <td>Niklaus Wirth</td>
+                                    <td>1976</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Code: The Hidden Language Of Computer Hardware And Software " 
+                                    data-author="Charles Petzoid" 
+                                    data-year="2000" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://archive.org/details/CharlesPetzoldCodeTheHiddenLanguageOfComputerHardwareAndSoftwareMicrosoftPress2000/mode/2up?view=theater">
+                                    <td>Code: The Hidden Language Of Computer Hardware And Software </td>
+                                    <td>Charles Petzoid</td>
+                                    <td>2000</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="The Vinyl Box - Collection of Vinyl Rips" 
+                                    data-author="Several" 
+                                    data-year="Unknown" 
+                                    data-category="Audio" 
+                                    data-summary="" 
+                                    data-link="https://archive.org/details/the-vinyl-box?tab=collection">
+                                    <td>The Vinyl Box - Collection of Vinyl Rips</td>
+                                    <td>Several</td>
+                                    <td>Unknown</td>
+                                    <td>Audio</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Akira" 
+                                    data-author="Katsuhiro Otomo" 
+                                    data-year="1988" 
+                                    data-category="Video" 
+                                    data-summary="" 
+                                    data-link="https://www.youtube.com/embed/g5b-yf-N134">
+                                    <td>Akira</td>
+                                    <td>Katsuhiro Otomo</td>
+                                    <td>1988</td>
+                                    <td>Video</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Angel&#39;s Egg" 
+                                    data-author="Mamoru Oshii" 
+                                    data-year="1985" 
+                                    data-category="Video" 
+                                    data-summary="" 
+                                    data-link="https://archive.org/embed/angels-egg-1985-blu-ray-1080p-jap-audio/Angel&#39;s&#43;Egg&#43;(1985)/Angel&#39;s&#43;Egg&#43;(1985&#43;BluRay&#43;-&#43;1080p&#43;JAP&#43;Audio).mkv">
+                                    <td>Angel&#39;s Egg</td>
+                                    <td>Mamoru Oshii</td>
+                                    <td>1985</td>
+                                    <td>Video</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="The Persistent Desire: A Femme-Butch Reader" 
+                                    data-author="Joan Nestle" 
+                                    data-year="1992" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://archive.org/details/persistentdesire00nest/mode/2up?view=theater">
+                                    <td>The Persistent Desire: A Femme-Butch Reader</td>
+                                    <td>Joan Nestle</td>
+                                    <td>1992</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="The Laugh of the Medusa" 
+                                    data-author="Hélène Cixous" 
+                                    data-year="1975" 
+                                    data-category="Essays" 
+                                    data-summary="" 
+                                    data-link="https://www2.csudh.edu/ccauthen/576F10/cixous.pdf">
+                                    <td>The Laugh of the Medusa</td>
+                                    <td>Hélène Cixous</td>
+                                    <td>1975</td>
+                                    <td>Essays</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Sister Outsider: Essays and Speeches" 
+                                    data-author="Audre Lorde" 
+                                    data-year="1984" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://archive.org/details/sisteroutsideres00lord/mode/2up?view=theater">
+                                    <td>Sister Outsider: Essays and Speeches</td>
+                                    <td>Audre Lorde</td>
+                                    <td>1984</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="The Second Sex" 
+                                    data-author="Simone de Beauvoir" 
+                                    data-year="1949" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://files.libcom.org/files/1949_simone-de-beauvoir-the-second-sex.pdf">
+                                    <td>The Second Sex</td>
+                                    <td>Simone de Beauvoir</td>
+                                    <td>1949</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Situated Knowledges: The Science Question in Feminism and the Privilege of Partial Perspective" 
+                                    data-author="Donna Haraway" 
+                                    data-year="1988" 
+                                    data-category="Essays" 
+                                    data-summary="" 
+                                    data-link="https://philpapers.org/archive/harskt.pdf">
+                                    <td>Situated Knowledges: The Science Question in Feminism and the Privilege of Partial Perspective</td>
+                                    <td>Donna Haraway</td>
+                                    <td>1988</td>
+                                    <td>Essays</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="A Cyborg Manifesto" 
+                                    data-author="Donna Haraway" 
+                                    data-year="1985" 
+                                    data-category="Essays" 
+                                    data-summary="" 
+                                    data-link="https://theanarchistlibrary.org/library/donna-haraway-a-cyborg-manifesto">
+                                    <td>A Cyborg Manifesto</td>
+                                    <td>Donna Haraway</td>
+                                    <td>1985</td>
+                                    <td>Essays</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="I would rather be a cyborg than a goddess: Becoming-Intersectional in Assemblage Theory" 
+                                    data-author="Jasbir Puar" 
+                                    data-year="2012" 
+                                    data-category="Essays" 
+                                    data-summary="" 
+                                    data-link="https://www.ualberta.ca/en/institute-intersectionality-studies/media-library/intersectionality-readings/puar-i-would-rather-be-a-cyborg-than-a-goddess.pdf">
+                                    <td>I would rather be a cyborg than a goddess: Becoming-Intersectional in Assemblage Theory</td>
+                                    <td>Jasbir Puar</td>
+                                    <td>2012</td>
+                                    <td>Essays</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="The Unhappy Marriage of Marxism and Feminism: Towards a More Progressive Union" 
+                                    data-author="Heidi I. Hartmann" 
+                                    data-year="1979" 
+                                    data-category="Essays" 
+                                    data-summary="" 
+                                    data-link="https://web.ics.purdue.edu/~hoganr/SOC%20602/Hartmann_1979">
+                                    <td>The Unhappy Marriage of Marxism and Feminism: Towards a More Progressive Union</td>
+                                    <td>Heidi I. Hartmann</td>
+                                    <td>1979</td>
+                                    <td>Essays</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Understanding Patriarchy" 
+                                    data-author="bell hooks" 
+                                    data-year="2004" 
+                                    data-category="Essays" 
+                                    data-summary="" 
+                                    data-link="https://theanarchistlibrary.org/library/bell-hooks-understanding-patriarchy">
+                                    <td>Understanding Patriarchy</td>
+                                    <td>bell hooks</td>
+                                    <td>2004</td>
+                                    <td>Essays</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Ain&#39;t I a Woman: Black Women and Feminism" 
+                                    data-author="bell hooks" 
+                                    data-year="1981" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://archive.org/details/ain-t-i-a-woman-black-women-and-feminism/mode/2up?view=theater">
+                                    <td>Ain&#39;t I a Woman: Black Women and Feminism</td>
+                                    <td>bell hooks</td>
+                                    <td>1981</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Performing Postcolonial Feminine Identity as Shaman: Building Narrative Bridges Between Two Worlds" 
+                                    data-author="Soo Mi Lee" 
+                                    data-year="2015" 
+                                    data-category="Essays" 
+                                    data-summary="" 
+                                    data-link="https://escholarship.org/content/qt1jp6k3wg/qt1jp6k3wg_noSplash_9128ecae1bfd559e3774a52be3234672.pdf?t=p6piqw">
+                                    <td>Performing Postcolonial Feminine Identity as Shaman: Building Narrative Bridges Between Two Worlds</td>
+                                    <td>Soo Mi Lee</td>
+                                    <td>2015</td>
+                                    <td>Essays</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Gwangju Diary: Beyond Death, Beyond the Darkness of the Age" 
+                                    data-author="Lee Jae-eui" 
+                                    data-year="1985" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://files.libcom.org/files/Gwangju%20diary%20resized-compressed.pdf">
+                                    <td>Gwangju Diary: Beyond Death, Beyond the Darkness of the Age</td>
+                                    <td>Lee Jae-eui</td>
+                                    <td>1985</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Feminist Criticism, &#39;The Yellow Wallpaper,&#39; and the Politics of Color in America" 
+                                    data-author="Susan S. Lanser" 
+                                    data-year="1989" 
+                                    data-category="Essays" 
+                                    data-summary="" 
+                                    data-link="https://biblioteca-alternativa.noblogs.org/files/2013/01/yellowwallpaperandpoliticsofcolor.pdf">
+                                    <td>Feminist Criticism, &#39;The Yellow Wallpaper,&#39; and the Politics of Color in America</td>
+                                    <td>Susan S. Lanser</td>
+                                    <td>1989</td>
+                                    <td>Essays</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Stone Butch Blues" 
+                                    data-author="Leslie Feinberg" 
+                                    data-year="1993" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://archive.org/details/StoneButchBlues/mode/2up?view=theater">
+                                    <td>Stone Butch Blues</td>
+                                    <td>Leslie Feinberg</td>
+                                    <td>1993</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="The Combahee River Collective Statement" 
+                                    data-author="Combahee River Collective" 
+                                    data-year="1977" 
+                                    data-category="Essays" 
+                                    data-summary="" 
+                                    data-link="https://americanstudies.yale.edu/sites/default/files/files/Keyword%20Coalition_Readings.pdf">
+                                    <td>The Combahee River Collective Statement</td>
+                                    <td>Combahee River Collective</td>
+                                    <td>1977</td>
+                                    <td>Essays</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Radical Feminist Therapy: Working in the context of violence" 
+                                    data-author="Bonnie Burstow" 
+                                    data-year="1992" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://archive.org/details/bonnie-burstow-radical-feminist-therapy-working-in-the-context-of-violence/mode/2up?view=theater">
+                                    <td>Radical Feminist Therapy: Working in the context of violence</td>
+                                    <td>Bonnie Burstow</td>
+                                    <td>1992</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="A Critique of Posttraumatic Stress Disorder and the DSM" 
+                                    data-author="Bonnie Burstow" 
+                                    data-year="2005" 
+                                    data-category="Essays" 
+                                    data-summary="" 
+                                    data-link="https://www.brown.uk.com/diagnosis/burstow.pdf">
+                                    <td>A Critique of Posttraumatic Stress Disorder and the DSM</td>
+                                    <td>Bonnie Burstow</td>
+                                    <td>2005</td>
+                                    <td>Essays</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Failure to Comply: Madness and/as Testimony" 
+                                    data-author="Clementine Morrigan" 
+                                    data-year="2005" 
+                                    data-category="Essays" 
+                                    data-summary="" 
+                                    data-link="https://cjds.uwaterloo.ca/index.php/cjds/article/view/366/599">
+                                    <td>Failure to Comply: Madness and/as Testimony</td>
+                                    <td>Clementine Morrigan</td>
+                                    <td>2005</td>
+                                    <td>Essays</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="The Protest Psychosis: How Schizophrenia Became a Black Disease" 
+                                    data-author="Jonathan M. Metzl" 
+                                    data-year="2010" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://archive.org/details/protestpsychosis0000metz/mode/2up?view=theater">
+                                    <td>The Protest Psychosis: How Schizophrenia Became a Black Disease</td>
+                                    <td>Jonathan M. Metzl</td>
+                                    <td>2010</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Assata: An Autobiography" 
+                                    data-author="Assata Shakur" 
+                                    data-year="1987" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://archive.org/details/Assata/mode/2up?view=theater">
+                                    <td>Assata: An Autobiography</td>
+                                    <td>Assata Shakur</td>
+                                    <td>1987</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Are Prisons Obsolete?" 
+                                    data-author="Angela Y. Davis" 
+                                    data-year="2003" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://theanarchistlibrary.org/mirror/a/ay/angela-y-davis-are-prisons-obsolete.pdf">
+                                    <td>Are Prisons Obsolete?</td>
+                                    <td>Angela Y. Davis</td>
+                                    <td>2003</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="If Black English Isn&#39;t a Language, Then Tell Me, What Is?" 
+                                    data-author="James Baldwin" 
+                                    data-year="1979" 
+                                    data-category="Essays" 
+                                    data-summary="" 
+                                    data-link="https://archive.nytimes.com/www.nytimes.com/books/98/03/29/specials/baldwin-english.html?source=post_page">
+                                    <td>If Black English Isn&#39;t a Language, Then Tell Me, What Is?</td>
+                                    <td>James Baldwin</td>
+                                    <td>1979</td>
+                                    <td>Essays</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="We Will Shoot Back: Armed Resistance in the Mississippi Freedom Movement" 
+                                    data-author="Akinyele Omowale Umoja" 
+                                    data-year="2013" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://files.libcom.org/files/2022-12/Akinyele%20Omowale%20Umoja%20-%20We%20Will%20Shoot%20Back_%20Armed%20Resistance%20in%20the%20Mississippi%20Freedom%20Movement-NYU%20Press%20(2013).pdf">
+                                    <td>We Will Shoot Back: Armed Resistance in the Mississippi Freedom Movement</td>
+                                    <td>Akinyele Omowale Umoja</td>
+                                    <td>2013</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Blackshirts and Reds: Rational Fascism and the Overthrow of Communism" 
+                                    data-author="Michael Parenti" 
+                                    data-year="1997" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://archive.nytimes.com/www.nytimes.com/books/98/03/29/specials/baldwin-english.html?source=post_page">
+                                    <td>Blackshirts and Reds: Rational Fascism and the Overthrow of Communism</td>
+                                    <td>Michael Parenti</td>
+                                    <td>1997</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Capital, Volume 1" 
+                                    data-author="Karl Marx" 
+                                    data-year="1876" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://archive.org/details/capitalvol1/mode/2up?view=theater">
+                                    <td>Capital, Volume 1</td>
+                                    <td>Karl Marx</td>
+                                    <td>1876</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="The Communist Manifesto" 
+                                    data-author="Karl Marx, Friedrich Engels" 
+                                    data-year="1847" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://archive.org/details/manifestoofcommu00marx_1/mode/2up?view=theater">
+                                    <td>The Communist Manifesto</td>
+                                    <td>Karl Marx, Friedrich Engels</td>
+                                    <td>1847</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="The State And Revolution" 
+                                    data-author="Vladimir Lenin" 
+                                    data-year="1917" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://archive.org/details/thestateandrevolutionbyv.i.lenin/mode/2up?view=theater">
+                                    <td>The State And Revolution</td>
+                                    <td>Vladimir Lenin</td>
+                                    <td>1917</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Necessary Illusions: Thought Control in Democratic Societies" 
+                                    data-author="Noam Chomsky" 
+                                    data-year="1989" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://archive.org/details/necessaryillusio0000choma/mode/2up?view=theater">
+                                    <td>Necessary Illusions: Thought Control in Democratic Societies</td>
+                                    <td>Noam Chomsky</td>
+                                    <td>1989</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="On Anarchism" 
+                                    data-author="Noam Chomsky" 
+                                    data-year="2005" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://theanarchistlibrary.org/library/noam-chomsky-on-anarchism">
+                                    <td>On Anarchism</td>
+                                    <td>Noam Chomsky</td>
+                                    <td>2005</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Counter-Revolutionary Violence: Bloodbaths in Fact and Propaganda" 
+                                    data-author="Noam Chomsky" 
+                                    data-year="1973" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://chomsky.info/counter-revolutionary-violence/">
+                                    <td>Counter-Revolutionary Violence: Bloodbaths in Fact and Propaganda</td>
+                                    <td>Noam Chomsky</td>
+                                    <td>1973</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Ideology and Ideological State Apparatuses" 
+                                    data-author="Louis Althusser" 
+                                    data-year="1970" 
+                                    data-category="Essays" 
+                                    data-summary="" 
+                                    data-link="https://www.csun.edu/~snk1966/Lous%20Althusser%20Ideology%20and%20Ideological%20State%20Apparatuses.pdf">
+                                    <td>Ideology and Ideological State Apparatuses</td>
+                                    <td>Louis Althusser</td>
+                                    <td>1970</td>
+                                    <td>Essays</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Reform or Revolution?" 
+                                    data-author="Rosa Luxemburg" 
+                                    data-year="1899" 
+                                    data-category="Essays" 
+                                    data-summary="" 
+                                    data-link="https://ycl.org.uk/wp-content/uploads/2021/11/C03-Reform-or-Revolution.pdf">
+                                    <td>Reform or Revolution?</td>
+                                    <td>Rosa Luxemburg</td>
+                                    <td>1899</td>
+                                    <td>Essays</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="The Motorcycle Diaries" 
+                                    data-author="Ernesto Che Guevara" 
+                                    data-year="1952" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://archive.org/details/motorcyclediariescheguevara/mode/2up?view=theater">
+                                    <td>The Motorcycle Diaries</td>
+                                    <td>Ernesto Che Guevara</td>
+                                    <td>1952</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="We Are Cuba!: How a Revolutionary People Have Survived in a Post-Soviet World" 
+                                    data-author="Helen Yaffe" 
+                                    data-year="2020" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://welshundergroundnetwork.cymru/wp-content/uploads/2020/12/helen-yaffe-we-are-cuba_-how-a-revolutionary-people-have-survived-in-a-post-soviet-world-2019-yale-university-press-libgen.lc_.pdf">
+                                    <td>We Are Cuba!: How a Revolutionary People Have Survived in a Post-Soviet World</td>
+                                    <td>Helen Yaffe</td>
+                                    <td>2020</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Emelí Vélez de Vando Papers" 
+                                    data-author="Unknown" 
+                                    data-year="1919 - 1999" 
+                                    data-category="Archives" 
+                                    data-summary="" 
+                                    data-link="https://centroca.hunter.cuny.edu/Detail/collections/32">
+                                    <td>Emelí Vélez de Vando Papers</td>
+                                    <td>Unknown</td>
+                                    <td>1919 - 1999</td>
+                                    <td>Archives</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Juanita Arocho Papers" 
+                                    data-author="Unknown" 
+                                    data-year="1940 - 1994" 
+                                    data-category="Archives" 
+                                    data-summary="" 
+                                    data-link="https://centroca.hunter.cuny.edu/Detail/collections/40">
+                                    <td>Juanita Arocho Papers</td>
+                                    <td>Unknown</td>
+                                    <td>1940 - 1994</td>
+                                    <td>Archives</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="American Imperialism in Hawai’i: How the United States Illegally Usurped a Sovereign Nation and Got Away With It" 
+                                    data-author="Noelani Nasser" 
+                                    data-year="2021" 
+                                    data-category="Essays" 
+                                    data-summary="" 
+                                    data-link="https://repository.uclawsf.edu/cgi/viewcontent.cgi?article=2135&amp;context=hastings_constitutional_law_quaterly">
+                                    <td>American Imperialism in Hawai’i: How the United States Illegally Usurped a Sovereign Nation and Got Away With It</td>
+                                    <td>Noelani Nasser</td>
+                                    <td>2021</td>
+                                    <td>Essays</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="The Palestine-Israel Conflict: A Basic Introduction" 
+                                    data-author="Gregory Harms, Todd M. Ferry" 
+                                    data-year="2005" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://archive.org/details/palestineisraelc0000harm/mode/2up?view=theater">
+                                    <td>The Palestine-Israel Conflict: A Basic Introduction</td>
+                                    <td>Gregory Harms, Todd M. Ferry</td>
+                                    <td>2005</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Democracy Now!" 
+                                    data-author="Amy Goodman" 
+                                    data-year="1996 - present" 
+                                    data-category="Video" 
+                                    data-summary="" 
+                                    data-link="https://archive.org/details/democracy_now_vid">
+                                    <td>Democracy Now!</td>
+                                    <td>Amy Goodman</td>
+                                    <td>1996 - present</td>
+                                    <td>Video</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Build Your Own Solidarity Network" 
+                                    data-author="Workers Solidarity Alliance" 
+                                    data-year="2011" 
+                                    data-category="Zines" 
+                                    data-summary="" 
+                                    data-link="https://files.libcom.org/files/seasol-pamphlet-expanded-US.pdf">
+                                    <td>Build Your Own Solidarity Network</td>
+                                    <td>Workers Solidarity Alliance</td>
+                                    <td>2011</td>
+                                    <td>Zines</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Vocational Awe and Librarianship: The Lies We Tell Ourselves" 
+                                    data-author="Fobazi Ettarh" 
+                                    data-year="2018" 
+                                    data-category="Essays" 
+                                    data-summary="" 
+                                    data-link="https://www.inthelibrarywiththeleadpipe.org/2018/vocational-awe/">
+                                    <td>Vocational Awe and Librarianship: The Lies We Tell Ourselves</td>
+                                    <td>Fobazi Ettarh</td>
+                                    <td>2018</td>
+                                    <td>Essays</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="The Primal Pleasure and Brutal History of Sugar" 
+                                    data-author="Ruby Tandoh" 
+                                    data-year="2018" 
+                                    data-category="Essays" 
+                                    data-summary="" 
+                                    data-link="https://www.eater.com/2018/8/6/17631452/ruby-tandoh-sugar-history-kara-walker-will-cotton">
+                                    <td>The Primal Pleasure and Brutal History of Sugar</td>
+                                    <td>Ruby Tandoh</td>
+                                    <td>2018</td>
+                                    <td>Essays</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Why Petroleum Did Not Save the Whales" 
+                                    data-author="Richard York" 
+                                    data-year="2017" 
+                                    data-category="Essays" 
+                                    data-summary="" 
+                                    data-link="https://journals.sagepub.com/doi/pdf/10.1177/2378023117739217">
+                                    <td>Why Petroleum Did Not Save the Whales</td>
+                                    <td>Richard York</td>
+                                    <td>2017</td>
+                                    <td>Essays</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Shmita Means Total Destroy" 
+                                    data-author="Fayer Collective" 
+                                    data-year="2022" 
+                                    data-category="Essays" 
+                                    data-summary="" 
+                                    data-link="https://jewishcurrents.org/shmita-means-total-destroy">
+                                    <td>Shmita Means Total Destroy</td>
+                                    <td>Fayer Collective</td>
+                                    <td>2022</td>
+                                    <td>Essays</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Afghanistan: Forging Civilizations along the Silk Road" 
+                                    data-author="Joan Aruz, Elisabetta Valtz Fino" 
+                                    data-year="2012" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://archive.org/details/afghanistan-forging-civilizations-along-the-silk-road/mode/2up?view=theater">
+                                    <td>Afghanistan: Forging Civilizations along the Silk Road</td>
+                                    <td>Joan Aruz, Elisabetta Valtz Fino</td>
+                                    <td>2012</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="The Elements of Style 4th Edition" 
+                                    data-author="Willian Strunk Jr., E.B. White" 
+                                    data-year="1999" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://ia804502.us.archive.org/5/items/pdfy-2_qp8jQ61OI6NHwa/Strunk%20%26%20White%20-%20The%20Elements%20of%20Style%2C%204th%20Edition.pdf">
+                                    <td>The Elements of Style 4th Edition</td>
+                                    <td>Willian Strunk Jr., E.B. White</td>
+                                    <td>1999</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Grimms’ Fairy Tales" 
+                                    data-author="Jacob and Wilhelm Grimm" 
+                                    data-year="1812" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://www.gutenberg.org/cache/epub/2591/pg2591-images.html">
+                                    <td>Grimms’ Fairy Tales</td>
+                                    <td>Jacob and Wilhelm Grimm</td>
+                                    <td>1812</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="The Black Unicorn" 
+                                    data-author="Audre Lorde" 
+                                    data-year="1978" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://archive.org/details/blackunicornpoem00lord/page/n7/mode/2up?view=theater">
+                                    <td>The Black Unicorn</td>
+                                    <td>Audre Lorde</td>
+                                    <td>1978</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Night Sky with Exit Wounds" 
+                                    data-author="Ocean Vuong" 
+                                    data-year="2016" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://archive.org/details/nightskywithexit0000vuon/mode/2up?view=theater">
+                                    <td>Night Sky with Exit Wounds</td>
+                                    <td>Ocean Vuong</td>
+                                    <td>2016</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Lainzine #1" 
+                                    data-author="Several" 
+                                    data-year="2015" 
+                                    data-category="Zines" 
+                                    data-summary="" 
+                                    data-link="https://lainzine.org/all-releases/lainzine01.pdf">
+                                    <td>Lainzine #1</td>
+                                    <td>Several</td>
+                                    <td>2015</td>
+                                    <td>Zines</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Lainzine #2" 
+                                    data-author="Several" 
+                                    data-year="2015" 
+                                    data-category="Zines" 
+                                    data-summary="" 
+                                    data-link="https://lainzine.org/all-releases/lainzine02.pdf">
+                                    <td>Lainzine #2</td>
+                                    <td>Several</td>
+                                    <td>2015</td>
+                                    <td>Zines</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Lainzine #3" 
+                                    data-author="Several" 
+                                    data-year="2016" 
+                                    data-category="Zines" 
+                                    data-summary="" 
+                                    data-link="https://lainzine.org/all-releases/lainzine03.pdf">
+                                    <td>Lainzine #3</td>
+                                    <td>Several</td>
+                                    <td>2016</td>
+                                    <td>Zines</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="A Rough Guide to Bicycle Maintenance" 
+                                    data-author="Shelley Lynn Jackson" 
+                                    data-year="2003" 
+                                    data-category="Zines" 
+                                    data-summary="" 
+                                    data-link="https://archive.org/details/a-rough-guide-to-bicycle-maintenance_202108/mode/2up?view=theater">
+                                    <td>A Rough Guide to Bicycle Maintenance</td>
+                                    <td>Shelley Lynn Jackson</td>
+                                    <td>2003</td>
+                                    <td>Zines</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Earth Alchemy: the art &amp; science of compost" 
+                                    data-author="K. Semilla" 
+                                    data-year="Unknown" 
+                                    data-category="Zines" 
+                                    data-summary="" 
+                                    data-link="https://www.sherwoodforestzinelibrary.org/_files/ugd/8c0bf9_648eaf806a8e49c08d5a49ecd32c805c.pdf">
+                                    <td>Earth Alchemy: the art &amp; science of compost</td>
+                                    <td>K. Semilla</td>
+                                    <td>Unknown</td>
+                                    <td>Zines</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Fingerprints" 
+                                    data-author="Andy Yang" 
+                                    data-year="Unknown" 
+                                    data-category="Zines" 
+                                    data-summary="" 
+                                    data-link="https://3584a435-0345-46ee-97d3-fb7bd0da023c.filesusr.com/ugd/47841f_e89042f6a24544f8826905dd448702e3.pdf">
+                                    <td>Fingerprints</td>
+                                    <td>Andy Yang</td>
+                                    <td>Unknown</td>
+                                    <td>Zines</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Green Scared?" 
+                                    data-author="Rolling Thunder" 
+                                    data-year="2008" 
+                                    data-category="Zines" 
+                                    data-summary="" 
+                                    data-link="https://files.sproutdistro.com/green-scared-screen.pdf">
+                                    <td>Green Scared?</td>
+                                    <td>Rolling Thunder</td>
+                                    <td>2008</td>
+                                    <td>Zines</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Turn Off Your Phone! And other basic digital security strategies" 
+                                    data-author="Unknown" 
+                                    data-year="2023" 
+                                    data-category="Zines" 
+                                    data-summary="" 
+                                    data-link="https://files.sproutdistro.com/Turn_Off_Your_Phone-screen.pdf">
+                                    <td>Turn Off Your Phone! And other basic digital security strategies</td>
+                                    <td>Unknown</td>
+                                    <td>2023</td>
+                                    <td>Zines</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Revolutionary Girl Utena" 
+                                    data-author="Nozomi Entertainment" 
+                                    data-year="1997" 
+                                    data-category="Video" 
+                                    data-summary="" 
+                                    data-link="https://www.youtube.com/embed/videoseries?si=e8w3it8nn96W7O2d&amp;amp;list=PLrrh84y760v-hDEulas0Tp_wiQy0FcjLl">
+                                    <td>Revolutionary Girl Utena</td>
+                                    <td>Nozomi Entertainment</td>
+                                    <td>1997</td>
+                                    <td>Video</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="CBS Radio Mystery Theater" 
+                                    data-author="Himan Brown" 
+                                    data-year="1974 - 1982" 
+                                    data-category="Audio" 
+                                    data-summary="" 
+                                    data-link="https://archive.org/details/cbsrmt-74-02-08-33-conspiracy-to-defraud/CBSRMT&#43;74-01-06&#43;(1)&#43;The&#43;Old&#43;Ones&#43;Are&#43;Hard&#43;to&#43;Kill.mp3">
+                                    <td>CBS Radio Mystery Theater</td>
+                                    <td>Himan Brown</td>
+                                    <td>1974 - 1982</td>
+                                    <td>Audio</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Wuthering Heights" 
+                                    data-author="Emily Brontë" 
+                                    data-year="1847" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://www.gutenberg.org/cache/epub/768/pg768-images.html">
+                                    <td>Wuthering Heights</td>
+                                    <td>Emily Brontë</td>
+                                    <td>1847</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Moby-Dick or, the Whale" 
+                                    data-author="Herman Melville" 
+                                    data-year="1851" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://www.gutenberg.org/cache/epub/2701/pg2701-images.html">
+                                    <td>Moby-Dick or, the Whale</td>
+                                    <td>Herman Melville</td>
+                                    <td>1851</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Metamorphosis" 
+                                    data-author="Franz Kafka" 
+                                    data-year="1915" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://www.gutenberg.org/cache/epub/5200/pg5200-images.html">
+                                    <td>Metamorphosis</td>
+                                    <td>Franz Kafka</td>
+                                    <td>1915</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Go Tell it on the Mountain" 
+                                    data-author="James Baldwin" 
+                                    data-year="2000" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://www.cardozohigh.com/ourpages/auto/2017/6/14/45811644/Go%20Tell%20it%20on%20the%20Mountain.pdf?rnd=1654529993146">
+                                    <td>Go Tell it on the Mountain</td>
+                                    <td>James Baldwin</td>
+                                    <td>2000</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="The Stranger" 
+                                    data-author="Albert Camus" 
+                                    data-year="1989" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://archive.org/details/the-stranger_202404/mode/2up?view=theater">
+                                    <td>The Stranger</td>
+                                    <td>Albert Camus</td>
+                                    <td>1989</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="Reincarnation" 
+                                    data-author="Takashi Shimizu" 
+                                    data-year="2005" 
+                                    data-category="Video" 
+                                    data-summary="" 
+                                    data-link="https://archive.org/embed/reincarnation-2005">
+                                    <td>Reincarnation</td>
+                                    <td>Takashi Shimizu</td>
+                                    <td>2005</td>
+                                    <td>Video</td>
+                                </tr>
+                                
+                                <tr class="library-item" 
+                                    data-title="The botanist&#39;s repository for new and rare plants: vol. 03 &amp; 04" 
+                                    data-author="Henry Cranke Andrews" 
+                                    data-year="1797" 
+                                    data-category="Books" 
+                                    data-summary="" 
+                                    data-link="https://gutenberg.org/cache/epub/72911/pg72911-images.html">
+                                    <td>The botanist&#39;s repository for new and rare plants: vol. 03 &amp; 04</td>
+                                    <td>Henry Cranke Andrews</td>
+                                    <td>1797</td>
+                                    <td>Books</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="item smallarge">
+            <div class="cards"><div class="cardsHeader">
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div><div class="cardsBody">
+                    <h1>#Preview</h1>
+                    <div id="preview-container">
+                        <p>Select an item for preview.</p>
+                    </div>
+                    <div id="checkout-link"></div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
-</div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const libraryItems = document.querySelectorAll(".library-item");
+    const previewContainer = document.getElementById("preview-container");
+    const checkoutLinkContainer = document.getElementById("checkout-link");
 
- 
-    </div><footer id="footer">
+      
+      libraryItems.forEach((item) => {
+        item.addEventListener("click", () => {
+            
+            libraryItems.forEach(i => i.classList.remove("selected"));
+            
+            item.classList.add("selected");
+
+             
+             const link = item.dataset.link;
+            const iframe = document.createElement("iframe");
+            iframe.src = link;
+            previewContainer.innerHTML = "";
+            previewContainer.appendChild(iframe);
+
+            
+            checkoutLinkContainer.innerHTML = `<a href="${link}" target="_blank">Check out</a>`;
+        });
+    });
+    
+    const titleSort = document.getElementById("title-sort");
+    const authorSort = document.getElementById("author-sort");
+    const yearSort = document.getElementById("year-sort");
+    const categorySort = document.getElementById("category-sort");
+
+    let sortOrder = {
+        title: "asc",
+        author: "asc",
+        year: "asc",
+        category: "asc"
+    };
+
+    
+    const formatAuthorName = (fullName) => {
+        const nameParts = fullName.split(" ");
+        const lastName = nameParts.pop(); 
+        const firstName = nameParts.join(" ");
+        return `${lastName}, ${firstName}`;
+    };
+
+    
+    libraryItems.forEach(item => {
+        const fullName = item.dataset.author;
+        const formattedName = formatAuthorName(fullName);
+        item.querySelector("td:nth-child(2)").textContent = formattedName; 
+    });
+
+    
+    const updateSortIndicators = (currentKey) => {
+        
+        [titleSort, authorSort, yearSort, categorySort].forEach(sortEl => {
+            sortEl.textContent = "↑";
+        });
+
+        
+        const indicator = sortOrder[currentKey] === "asc" ? "↑" : "↓";
+        switch (currentKey) {
+            case "title":
+                titleSort.textContent = indicator;
+                break;
+            case "author":
+                authorSort.textContent = indicator;
+                break;
+            case "year":
+                yearSort.textContent = indicator;
+                break;
+            case "category":
+                categorySort.textContent = indicator;
+                break;
+        }
+    };
+
+    
+    const sortTable = (key, sortOrderKey) => {
+    const rows = Array.from(libraryItems);
+
+    const sortedRows = rows.sort((a, b) => {
+        let aKey = a.dataset[key] || ""; 
+        let bKey = b.dataset[key] || ""; 
+
+        if (key === "year") {
+            
+            aKey = parseInt(aKey, 10) || 0; 
+            bKey = parseInt(bKey, 10) || 0; 
+            return sortOrder[sortOrderKey] === "asc" ? aKey - bKey : bKey - aKey;
+        }
+
+        if (key === "author") {
+            
+            aKey = formatAuthorName(a.dataset.author).toLowerCase();
+            bKey = formatAuthorName(b.dataset.author).toLowerCase();
+        }
+
+        
+        return sortOrder[sortOrderKey] === "asc"
+            ? aKey.localeCompare(bKey, undefined, { numeric: true })
+            : bKey.localeCompare(aKey, undefined, { numeric: true });
+    });
+
+    
+    const tbody = document.querySelector(".library-table tbody");
+    sortedRows.forEach(row => tbody.appendChild(row));
+
+    
+    sortOrder[sortOrderKey] = sortOrder[sortOrderKey] === "asc" ? "desc" : "asc";
+
+    
+    updateSortIndicators(sortOrderKey);
+};
+
+
+    
+    titleSort.addEventListener("click", () => sortTable("title", "title"));
+    authorSort.addEventListener("click", () => sortTable("author", "author"));
+    yearSort.addEventListener("click", () => sortTable("year", "year"));
+    categorySort.addEventListener("click", () => sortTable("category", "category"));
+
+    
+    libraryItems.forEach((item) => {
+        item.addEventListener("click", () => {
+            libraryItems.forEach(i => i.classList.remove("selected"));
+            item.classList.add("selected");
+
+            const link = item.dataset.link;
+            const iframe = document.createElement("iframe");
+            iframe.src = link;
+            previewContainer.innerHTML = "";
+            previewContainer.appendChild(iframe);
+
+            checkoutLinkContainer.innerHTML = `<h4><a href="${link}" target="_blank">Check out <i class='fa fa-long-arrow-right'></i></a></h4>`;
+        });
+    });
+});
+
+</script>
+  
+
+<footer id="footer">
     <ul>
         <li> <button id="footer-button">START</button> </li>
         <li> <a href="#" id="btn-back-to-top" onclick="call()"><i class="fa-solid fa-circle-chevron-up"></i></a></li>
@@ -1750,4 +1377,5 @@
   <script>
     twemoji.parse(document.body)
   </script></body>
+
 </html>

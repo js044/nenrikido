@@ -86,9 +86,9 @@ Read the rest of the blog [here](/blog).
 {{< card-medium title="#TO-DO" >}} 
 {{< scrollbox >}}
 *   ~~microblog pagination~~ ![](images/pixels/new.gif)
-*   ~~make webring~~ ![](images/pixels/new.gif)
+*   ~~retool library~~ ![](images/pixels/new.gif)
 *   open commissions
-*   add library genre drop-down
+*   fix microblog
 *   new nexus pages
 *   y2k f2u layout
 {{< /scrollbox >}}
