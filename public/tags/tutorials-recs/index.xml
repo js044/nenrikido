@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorials, Recs on NENRIKIDO</title>
+    <link>http://localhost:1313/tags/tutorials-recs/</link>
+    <description>Recent content in Tutorials, Recs on NENRIKIDO</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Dec 2024 15:53:50 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/tutorials-recs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Firefox Tree Tabs Tu(tour)ial</title>
+      <link>http://localhost:1313/blog/post/firefox-tutourial/</link>
+      <pubDate>Sun, 02 Jul 2023 00:34:17 -0600</pubDate>
+      <guid>http://localhost:1313/blog/post/firefox-tutourial/</guid>
+      <description>Welcome to my crib, Mozilla Firefox edition. With instructions on how to recreate it!</description>
+    </item>
+  </channel>
+</rss>

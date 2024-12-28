@@ -1,10 +1,17 @@
 ---
 title: "Firefox Tree Tabs Tu(tour)ial"
 date: 2023-07-02T00:34:17-06:00
-tags: tutorials
+tags: ['tutorials', 'recs']
 summary: Welcome to my crib, Mozilla Firefox edition. With instructions on how to recreate it!
 thumbnail: /images/blog/070223/firefox.gif
 draft: false
+---
+
+---
+
+#### UPDATE (12/28/24): 
+> Meant to update this post sooner, but a Firefox update broke some of the CSS styling in the original post (specifically, the hover functionality and the toolbar positioning). I've updated the Gist from Step 3 to fix it, but wanted to add this notice here in case anyone is revisiting the post. I probably won't keep up with these sorts of errors in the future (or will be slow to fix them) because I have since moved to [Zen Browser](https://zen-browser.app/), a Firefox fork that natively supports (almost) everything outlined in this post without having to use custom CSS. The only thing it does not support is nested tabs, which is on the roadmap for a future release.
+
 ---
 
 This is the first installment of my "FOSS recommendations" series (or something.) It started off as a single post, but I ended up having so much to say about each recommendation that I decided they'd be better off with their own dedicated posts.
