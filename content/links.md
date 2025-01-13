@@ -54,6 +54,9 @@ draft: false
 {{< fanlistings img-src="/images/buttons/deathnote.png" link="https://fan.enamour.nu/deathnote/">}} 
 {{< fanlistings img-src="/images/buttons/opm.gif" link="http://frshery.info/onepunch/">}} 
 {{< fanlistings img-src="/images/buttons/neopets.png" link="https://inkcaps.neocities.org/links/neopets/">}} 
+{{< fanlistings img-src="/images/buttons/sea.png" link="https://inspirationally.net/sea/">}} 
+{{< fanlistings img-src="/images/buttons/pen.png" link="https://fan.kalechips.net/pens/index.php">}} 
+{{< fanlistings img-src="/images/buttons/yumenikki.png" link="https://zanarkand.neocities.org/stardust/yume/">}} 
 {{< /col-sm >}}
 {{< /large-scrollbox >}}
 {{< /box-small >}}

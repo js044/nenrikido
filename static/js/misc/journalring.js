@@ -761,6 +761,54 @@ window.membersData = [
         "url": "https://humanfinny.neocities.org/",
         "description": "A website for art, blogging, doodles, and pixels. I am a journal and notebook addict and need help... probably."
     },
+    {
+        "name": "Florrie",
+        "websiteTitle": "Florrie's Garden",
+        "url": "https://florrie.ichi.city/",
+        "description": "A website Florrie's digital garden for notes about flowers, poetry, and tenderness."
+    },
+    {
+        "name": "Bailey / Jay",
+        "websiteTitle": "Lockheart Love",
+        "url": "https://lockheartlove.neocities.org/",
+        "description": "My internet brain dump, a corner of the internet that I get to decorate and enjoy!!"
+    },
+    {
+        "name": "rice",
+        "websiteTitle": "rice meat and bokchoy",
+        "url": "https://rice.place/",
+        "description": "the official rice meat and bokchoy website!"
+    },
+    {
+        "name": "Rin",
+        "websiteTitle": "Sunfish Dreamworld",
+        "url": "https://sunfishdreamworld.neocities.org/",
+        "description": "This cute little website is where I write about myself and the media that I'm interested in. Writing includes: weekly journal entries, prompts, my dreams, and reviews."
+    },
+    {
+        "name": "Carter",
+        "websiteTitle": "Lucky Goose",
+        "url": "https://lucky-goose.neocities.org/",
+        "description": "Personal site to collect things I love from across the indie web! Pixels, crafts, and cozy things :)"
+    },
+    {
+        "name": "Oizys",
+        "websiteTitle": "Chronicles of Miss Miseria",
+        "url": "https://oizyswrites.blogspot.com/",
+        "description": "A practising self-memoir, recorded as an inconsistent logbook."
+    },
+    {
+        "name": "Flow",
+        "websiteTitle": "Flowtyle's site",
+        "url": "https://flowtyle.neocities.org/",
+        "description": "personal website for me to talk about my interests including my blog mostly about games i play"
+    },
+    {
+        "name": "Cyrano",
+        "websiteTitle": "cyrano.house",
+        "url": "https://cyrano.house/",
+        "description": "A multi-faceted hub for my online presence."
+    },
 ];        
 
 class JournalRing extends HTMLElement {
