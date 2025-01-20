@@ -35,7 +35,7 @@ I used [this Unsplash photo](https://images.unsplash.com/photo-1492541853549-a99
 
 A few warnings about my CSS:
 
-* It's not perfect!. Dialog modals inherit translucence and I haven't figured out how to make them more opaque/legible yet.
+* It's not perfect. Dialog modals inherit translucence and I haven't figured out how to make them more opaque/legible yet.
 * The RGB colors are set to a palette that matches my background image and the hex codes I set in my Homarr colors settings (a primary color of #1c5e28 and a secondary color of #d6d385.)
 * Some of the gray font is a little hard to read. I haven't figured out which class to target yet. Maybe some other time.
 
