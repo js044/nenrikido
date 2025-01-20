@@ -7,13 +7,13 @@ thumbnail: /images/blog/012025/homarr.png
 draft: false
 ---
 
-This post was originally part of a different post (yet to be published), but it's gotten so unwieldy and long that I've decided to chop it up into smaller posts. Basically, I've recently started setting up a self-hosted home server with an Orange Pi Zero 3. I decided to look into dashboard applications, and after a bit of trial-and-error and lucky timing, landed on [Homarr](https://homarr.dev/). This post is just me showing off my Homarr setup (with details on how to recreate it) and briefly reviewing other options currently available.
+This post was originally part of a different post (yet to be published), but it's gotten so unwieldy and long that I've decided to chop it up into smaller posts. Basically, I've recently started setting up a home server with an Orange Pi Zero 3 to host a few applications with [Docker](https://docs.docker.com/get-started/docker-overview/). I decided to look into dashboard applications, and after a bit of trial-and-error and lucky timing, landed on [Homarr](https://homarr.dev/). This post is just me showing off my Homarr setup (with details on how to recreate it) and briefly reviewing other options currently available.
 
 My use case was a little bit different from what a lot of server dashboards try to be--I wanted standard dashboard functionality, but I also wanted a drop-in replacement for my internet startpage. I've been using [start.me](https://about.start.me/) for the last few years, which works nicely, but I'd prefer something that's all-in-one. This meant I needed a server dashboard that also supported RSS feed aggregation (for news feeds), widgets, and groupable bookmarks. The more customizable, the better.
 
-The long and short of it is that Homarr suits my specific needs best, although Dashy sounds just as good on paper. I actually almost moved on from Homarr because it was pretty clunky, but the next day I saw they were starting up a beta that would address some of the issues I was having. I switched over to the beta and loved it! As of just a few days ago, Homarr officially rolled this version out as a stable release. It's really a lot better, although it has a few idiosyncracies that might be useful to document here.
+The long and short of it is that Homarr suits my specific needs best, although Dashy sounds just as good on paper. I actually almost moved on from Homarr because it was pretty clunky, but the next day I saw they were starting up a beta that would address some of the issues I was having. I switched over to the beta and really enjoyed it. As of just a few days ago, Homarr officially rolled this version out as a stable release. It's really a lot better, although it has a few idiosyncracies that I thought would be useful to document here.
 
-Before we get to that though, here's a look at my Homarr setup!
+Before we get to that though, here's a look at my Homarr setup:
 
 {{< lightbox-image lightbox-id="homarr" img-src="images/blog/012025/homarr.png" alt="Homarr screenshot" >}}
 
