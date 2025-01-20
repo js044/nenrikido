@@ -2,11 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nenrikido.neocities.org/blog/post/deploy-site/</loc>
-    <lastmod>2024-11-24T16:20:32-05:00</lastmod>
+    <loc>https://nenrikido.neocities.org/blog/post/homarr/</loc>
+    <lastmod>2025-01-20T02:29:08-05:00</lastmod>
+  </url><url>
+    <loc>https://nenrikido.neocities.org/tags/recs/</loc>
+    <lastmod>2025-01-20T02:29:08-05:00</lastmod>
   </url><url>
     <loc>https://nenrikido.neocities.org/tags/</loc>
-    <lastmod>2024-12-28T15:58:01-05:00</lastmod>
+    <lastmod>2025-01-20T02:29:08-05:00</lastmod>
+  </url><url>
+    <loc>https://nenrikido.neocities.org/blog/post/deploy-site/</loc>
+    <lastmod>2024-11-24T16:20:32-05:00</lastmod>
   </url><url>
     <loc>https://nenrikido.neocities.org/tags/tutorials/</loc>
     <lastmod>2024-12-28T15:58:01-05:00</lastmod>
@@ -24,9 +30,6 @@
     <lastmod>2024-11-12T02:10:31-05:00</lastmod>
   </url><url>
     <loc>https://nenrikido.neocities.org/blog/post/firefox-tutourial/</loc>
-    <lastmod>2024-12-28T15:58:01-05:00</lastmod>
-  </url><url>
-    <loc>https://nenrikido.neocities.org/tags/recs/</loc>
     <lastmod>2024-12-28T15:58:01-05:00</lastmod>
   </url><url>
     <loc>https://nenrikido.neocities.org/tags/personal/</loc>
@@ -86,7 +89,7 @@
     <lastmod>2024-07-26T23:27:58-04:00</lastmod>
   </url><url>
     <loc>https://nenrikido.neocities.org/</loc>
-    <lastmod>2024-12-26T19:07:18-05:00</lastmod>
+    <lastmod>2025-01-20T02:33:47-05:00</lastmod>
   </url><url>
     <loc>https://nenrikido.neocities.org/nexus/</loc>
     <lastmod>2024-08-29T13:52:52-04:00</lastmod>

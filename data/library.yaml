@@ -34,11 +34,29 @@
   year: "1976"
   link: "https://archive.org/details/algorithmsdatast0000wirt/mode/2up?view=theater"
 
-- title: "Code: The Hidden Language Of Computer Hardware And Software "
+- title: "Code: The Hidden Language Of Computer Hardware And Software"
   author: "Charles Petzoid"
   category: "Books"
   year: "2000"
   link: "https://archive.org/details/CharlesPetzoldCodeTheHiddenLanguageOfComputerHardwareAndSoftwareMicrosoftPress2000/mode/2up?view=theater"  
+
+- title: "An Introduction to Statistical Learning with Applications in R"
+  author: "Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani"
+  category: "Books"
+  year: "2013"
+  link: "https://www.stat.berkeley.edu/~rabbee/s154/ISLR_First_Printing.pdf"  
+
+- title: "Support Vector Machines in R"
+  author: "Alexandros Karatzoglou, David Meyer, Kurt Hornik"
+  category: "Papers"
+  year: "2006"
+  link: "https://research.wu.ac.at/ws/portalfiles/portal/19843135/document.pdf"  
+
+- title: "A survey of cross-validation procedures for model selection"
+  author: "Sylvain Arlot, Alain Celisse"
+  category: "Papers"
+  year: "2010"
+  link: "https://hal.science/file/index/docid/407906/filename/preprintLilleArlotCelisse.pdf"  
 
 - title: "The Vinyl Box - Collection of Vinyl Rips"
   author: "Several"

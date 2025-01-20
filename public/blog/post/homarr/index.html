@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    
+    <title>Homarr and Other Self-hosted Dashboards</title>
+    <meta charset="utf-8">
+    <meta name="description"
+        content="A special world." />
+    <meta name="dc.relation" content="https://nenrikido.neocities.org/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='icon' type='image/x-icon' href='../../../images/icons/pink-favicon.svg' /> 
+
+    
+    <link href="../../../css/main.min.e82017acf1d47837e34aeae7160cbd8cee87ccf07777ebc9e2e85745f526f166.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="fab6651d-7739-4c92-8ab8-01b6b670711b"></script>
+    
+    <div id="preloader"></div><body>
+<div class="wrapper">
+    <nav id="navAlt">
+        <div class="navWrapper"> <a class="navLink" href="../../../blog">
+                <div id="blog"> </div>Blog
+            </a>
+            <p><i class="fa-regular fa-circle-down"></i></p>
+            <p><i class="fa-solid fa-hashtag"></i> <a href="#"> Homarr and Other Self-hosted Dashboards </a></p>
+            <p><i class="fa-solid fa-hashtag"></i> <a href="#comments"> Comments </a></p>
+        </div><div class="arrows">
+      
+            <a href="https://nenrikido.neocities.org/blog/post/deploy-site/"> <i class="fas fa-long-arrow-alt-left"> </i></a>
+            
+            
+                <a href="../../../blog/"><i class="fas fa-home"> 
+                </i></a>
+            
+            
+        </div>
+
+        <div id='musicplayer'>
+            <div id='musicpixel'> <img src="../../../images/pixels/music.gif" style="max-width: 40px;">
+                <div class='overlay'>
+                    <div class='playpause'><i class="fas fa-play"></i></div>
+                </div>
+            </div>
+            <div id='musictitle'> <span class='marquee'>wind chimes</span> </div>
+        </div> <audio id='musicsrc' loop src='https://dl.dropbox.com/scl/fi/207sozz1oxbnjuldcx9up/wind-chimes.mp3?rlkey=g80h8r4oygb24yl6r5ygayi9f&dl=0'></audio>
+
+
+<script>
+    document.querySelector('.playpause').addEventListener('click', playpause);
+    
+    function playpause() {
+      if (document.querySelector('.playpause').innerHTML == '<i class="fas fa-play"></i>') {
+        document.querySelector('#musicsrc').play();
+        document.querySelector('.playpause').innerHTML = '<i class="fas fa-pause"></i>';
+      } else {
+        document.querySelector('#musicsrc').pause();
+        document.querySelector('.playpause').innerHTML = '<i class="fas fa-play"></i>';
+      }
+    }
+</script>
+<form class="search"> <input type="text" class="searchTerm" placeholder="Search..."> <button aria-label="submit" type="submit" class="searchButton"> <i class="fa fa-search"></i> </button> </form>
+
+<ul class="searchResults"></ul></nav>
+
+    <main>
+        <article>
+            <div class="grid">
+                <div class="item large">
+                    <div class="cards"><div class="cardsHeader">
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div><div class="cardsBody">
+                            <h2>Homarr and Other Self-hosted Dashboards</h2>
+                            <blockquote>January 20, 2025</blockquote> <p>This post was originally part of a different post (yet to be published), but it&rsquo;s gotten so unwieldy and long that I&rsquo;ve decided to chop it up into smaller posts. Basically, I&rsquo;ve recently started setting up a self-hosted home server with an Orange Pi Zero 3. I decided to look into dashboard applications, and after a bit of trial-and-error and lucky timing, landed on <a href="https://homarr.dev/">Homarr</a>. This post is just me showing off my Homarr setup (with details on how to recreate it) and briefly reviewing other options currently available.</p>
+<p>My use case was a little bit different from what a lot of server dashboards try to be&ndash;I wanted standard dashboard functionality, but I also wanted a drop-in replacement for my internet startpage. I&rsquo;ve been using <a href="https://about.start.me/">start.me</a> for the last few years, which works nicely, but I&rsquo;d prefer something that&rsquo;s all-in-one. This meant I needed a server dashboard that also supported RSS feed aggregation (for news feeds), widgets, and groupable bookmarks. The more customizable, the better.</p>
+<p>The long and short of it is that Homarr suits my specific needs best, although Dashy sounds just as good on paper. I actually almost moved on from Homarr because it was pretty clunky, but the next day I saw they were starting up a beta that would address some of the issues I was having. I switched over to the beta and loved it! As of just a few days ago, Homarr officially rolled this version out as a stable release. It&rsquo;s really a lot better, although it has a few idiosyncracies that might be useful to document here.</p>
+<p>Before we get to that though, here&rsquo;s a look at my Homarr setup!</p>
+
+
+
+  
+  
+  
+
+  
+    
+    
+    
+<a href="../../../images/blog/012025/homarr.png" data-lightbox="homarr">
+<img src="../../../images/blog/012025/homarr_hu26d3ad550a7076d6f8fe1279b7ce49e1_1039253_0x420_resize_q75_h2_box_3.webp" class="img-fluid" loading="" alt="Homarr screenshot">
+</a>
+    
+  
+
+
+<p>I won&rsquo;t go over all of the installation instructions here. You can find step-by-step instructions on installing Homarr with Docker Compose on <a href="https://homarr.dev/docs/getting-started/installation/docker">Homarr's website</a>.</p>
+<p>A few random notes about Homarr that might be useful to someone testing it out:</p>
+<ul>
+<li>If you want to add bookmarks, you&rsquo;ll have to add them as apps. This isn&rsquo;t a very straightforward, but you can add /manage/apps to your URL to jump straight to the apps list. Here, you can add new ones.
+This is also how you add apps. You may notice that you can customize the icons. If you&rsquo;re using Simple Icons, you can add a hex code to the end of the link to change the SVG color. And as of the new release, you can upload your own icons! I couldn&rsquo;t find an all white version for Dashdot or Baikal, so I made white SVGs in Illustrator and used the Dropbox URL until this update allowed me to upload them directly. Here are the <a href="https://www.dropbox.com/scl/fi/c1f1s01kzg9bof71e7pti/baikal.svg?rlkey=a3xnijoqhcpxhbzofh3b4jfzc&amp;st=gjpjmx85&amp;dl=0">Baikal</a> and <a href="https://www.dropbox.com/scl/fi/fbjmylytuijcugty1lp7v/dashdot.svg?rlkey=yu0tdaap9uucvym381tn1dtyv&amp;st=eoilcue0&amp;dl=0">Dashdot</a> SVGs, in case anyone needs them.</li>
+<li>The iframes is a pretty cool feature! I chose this <a href="https://studywithme.io/aesthetic-pomodoro-timer/">Pomodoro timer</a> (I use a different background for each workspace in Zen browser), but you could get creative and try out lots of things. I&rsquo;d recommend looking into <a href="https://apption.co/">Notion embeds</a> for inspiration. They might not all work 1:1, but it&rsquo;s worth checking out. I think I might try out the <a href="https://flocus.com/virtual-cafe/">virtual cafe</a> as an iframe next.</li>
+<li>This is more of an edge case thing, but if you use Zen Browser, set Homarr to your new tab page, and notice your bookmarks not loading when you swap to different workspaces, make sure you actually log in. This should fix it.</li>
+<li>From what I can tell, Homarr is not mobile friendly. Not sure if I&rsquo;m just missing a setting, but I couldn&rsquo;t figure out a way to make it look nice. Maybe that&rsquo;s coming in a future update.</li>
+<li>I found the &ldquo;Dynamic category&rdquo; feature very buggy and unstable. I didn&rsquo;t really need it for my setup, so this wasn&rsquo;t a big deal for me, but if it matters to you, just know it&rsquo;s not really useable yet.</li>
+<li>If you attempt to modify your Homarr CSS, be sure to use the semantic Mantime class names instead of the names it automatically generates. You can find them with the developer tools. There isn&rsquo;t great documentation as to what each class name represents, and if I ever get to customizing Homarr some more, I might try my hand at it.</li>
+</ul>
+<p>I used <a href="https://images.unsplash.com/photo-1492541853549-a99003b3284b?q=80&amp;w=2070&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">this Unsplash photo</a> as my background and matched my Zen browser gradient to it, then customized my Homarr CSS to look how I wanted it to. Here&rsquo;s my CSS:</p>
+<script src="https://gist.github.com/js044/5589e0f5b961b54f2e6f55cfccb83c3e.js"></script>
+
+<p>A few warnings about my CSS:</p>
+<ul>
+<li>It&rsquo;s not perfect! Dialog modals inherit translucence and I haven&rsquo;t figured out how to make them more opaque/legible yet.</li>
+<li>The RGB colors are set to a palette that matches my background image and the hex codes I set in my Homarr colors settings (a primary color of #1c5e28 and a secondary color of #d6d385.)</li>
+<li>Some of the gray font is a little hard to read. I haven&rsquo;t figured out which class to target yet. Maybe some other time.</li>
+</ul>
+<p>And that&rsquo;s all there really is to it! I&rsquo;m really happy with Homarr. The drag and drop functionality is nice; it&rsquo;s flexible without being overwhelming, and it works decently well for the most part. I&rsquo;m satisfied with my layout for now, but I can already think of a lot of different iterations that&rsquo;d look nice and fit different themes.</p>
+<p>But just for posterity, let&rsquo;s go over Homarr&rsquo;s competition. If you think a self-hosted dashboard sounds neat, but you&rsquo;re not impressed with what Homarr has to offer, perhaps one of these would be a better fit. Here were my (super subjective) impressions:</p>
+<ul>
+<li><a href="https://gethomepage.dev/">Homepage</a>: Gorgeous. I wanted this to work out so badly, especially because it&rsquo;s so popular. But the lack of native RSS feeds is a deal breaker for me, and I also found some of the grid behavior a little frustrating. I know you can set up a <a href="https://gethomepage.dev/widgets/services/customapi/">custom API widget</a>, but I couldn&rsquo;t get this to work. Probably user error, but still. You have to edit a config file to get everything working, which was not a big deal for me, but be aware there isn&rsquo;t a WSIWYG editor.</li>
+<li><a href="https://heimdall.site/">Heimdall</a>: Another popular option, but it didn&rsquo;t resonate with me and wasn&rsquo;t feature-rich enough to support my use case. This is good as a no-frills server dashboard.</li>
+<li><a href="https://dashy.to/">Dashy</a>: It&rsquo;s extremely popular, and it&rsquo;s quite customizable. I like how browser bookmarks are handled. It also supports <a href="https://dashy.to/docs/widgets/#rss-feed">RSS feeds</a>, which is great. Performs build during each startup, which has led to complaints of server performance. But there are lots of nice Dashy setups; it seems well-suited to power users.</li>
+<li><a href="https://github.com/pawelmalak/flame">Flame</a>: If I just wanted bookmarks and links, I think I&rsquo;d choose Flame. It&rsquo;s so sleek and minimal. I love the look of the weather widget. It&rsquo;s also uncluttered and easy to find what you need.</li>
+<li><a href="https://homer-demo.netlify.app/">Homer</a>: Another popular dashboard choice. The aesthetics weren&rsquo;t to my personal tastes, but it looks quite polished and functional. It seems to have decent community support as well.</li>
+</ul>
+<p>I know this post is a little more niche than what I usually post about, but self-hosting is really fun and not prohibitively difficult, so I hope it becomes a more popular project. I&rsquo;ll elaborate on specific steps I took and ways to test out Docker applications even without dedicated hardware (hint: WSL 2) in the home server master post.</p>
+<p>If you self-host, do you use any of these dashboards? If you don&rsquo;t, would you?</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item large">
+                    <div class="cards"><div class="cardsHeader">
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div><div class="cardsBody">
+                            <div id="comments">
+<div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
+<link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+<script type="text/javascript" id="hcb">   if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24wVz3xOOc.ZF1mLS1sR.Mp0"+"&opts=16782&num=10&ts=1680596795074");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); </script>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+</div>
+<footer id="footer">
+    <ul>
+        <li> <button id="footer-button">START</button> </li>
+        <li> <a href="#" id="btn-back-to-top" onclick="call()"><i class="fa-solid fa-circle-chevron-up"></i></a></li>
+        <li>
+            <div id="clock" class="clock" onload="showTime()"></div>
+        </li>
+    </ul>
+</footer>
+
+<div id="start-menu" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h1>START MENU</h1> <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+
+            <div class="modal-bio">
+                <img class="modal-bio img" src="../../../images/icons/ke.jpg">
+                <p style="font-size:large; font-weight:bold;">NENRIKIDO</p>
+                <p align="center"><i class="fa-regular fa-map"></i> <a href="../../../sitemap">Sitemap</a></p>
+
+                <ul style="font-style: italic;">
+                    <li>OS: Nenrikido</li>
+                    <li>Version: 1.75</li>
+                    <li>Host: Neocities</li>
+                    <li>Processor: Hugo</li>
+                    <li>Since: 03-13-23</li>
+                </ul>
+            </div>
+            <div class="modal-list">  <a class="modal-menu " href="../../../">  <span>Home </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../about/">  <span>About </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../gallery/">  <span>Gallery </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../commissions/">  <span>Commissions </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../code/">  <span>Code </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../blog/">  <span>Blog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../links/">  <span>Links </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../microblog/">  <span>Microblog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../library/">  <span>Library </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../nexus/">  <span>Nexus </span> <i class="fa-solid fa-chevron-right"></i></a>  </div>
+
+        </div>
+        <div class="modal-footer"><div class="row centered">
+    <button id="pink" title="pink theme" class="theme-button" onclick="handleThemeButtonClick('pink', this)">💗</button>
+    <button id="blue" title="blue theme" class="theme-button" onclick="handleThemeButtonClick('blue', this)" >🫧</button> 
+    <button id="yellow" title="yellow theme" class="theme-button" onclick="handleThemeButtonClick('yellow', this)" >🪐</button> 
+    <button id="black" title="black theme" class="theme-button" onclick="handleThemeButtonClick('black', this)" >💤</button>
+    <button id="green" title="green theme" class="theme-button" onclick="handleThemeButtonClick('green', this)" >🌷</button>    
+</div></div>
+    </div>
+    <script>
+        function call() {
+            var body = $("html, body");
+            body.stop().animate({ scrollTop: 0 }, 500, 'swing', function () {
+            });
+        }</script>
+    <script type="text/javascript" src="../../../js/clock.js"></script>
+    <script defer type="text/javascript" src="../../../js/start.js"></script><script src="../../../js/theme.js" ></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
+<script defer src="../../../js/muuri-init.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@twemoji/api@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+<script defer src="../../../js/lightbox.js" ></script>
+<script defer src="../../../js/yt_lite.js" ></script>
+<script defer src="https://unpkg.com/lunr/lunr.js"></script>
+<script defer src="../../../js/search.js" ></script>
+<script>
+  var loader = document.getElementById("preloader");
+  window.addEventListener("load", function () {
+    loader.style.display = "none";
+  });
+  var s = document.getElementById("preloader").style;
+  s.opacity = 1;
+  (function fade() {
+    (s.opacity -= 0.1) < 0 ? (s.display = "none") : setTimeout(fade, 40);
+  })();
+  </script>
+  <script>
+    twemoji.parse(document.body)
+  </script></body>
+
+</html>

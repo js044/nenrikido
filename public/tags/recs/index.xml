@@ -6,8 +6,15 @@
     <description>Recent content in Recs on NENRIKIDO</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Dec 2024 15:58:01 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jan 2025 02:29:08 -0500</lastBuildDate>
     <atom:link href="https://nenrikido.neocities.org/tags/recs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Homarr and Other Self-hosted Dashboards</title>
+      <link>https://nenrikido.neocities.org/blog/post/homarr/</link>
+      <pubDate>Mon, 20 Jan 2025 02:13:06 -0500</pubDate>
+      <guid>https://nenrikido.neocities.org/blog/post/homarr/</guid>
+      <description>My Homarr customizations and CSS.</description>
+    </item>
     <item>
       <title>Firefox Tree Tabs Tu(tour)ial</title>
       <link>https://nenrikido.neocities.org/blog/post/firefox-tutourial/</link>

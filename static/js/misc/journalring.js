@@ -320,8 +320,8 @@ window.membersData = [
     {
         "name": "Azure",
         "websiteTitle": "MACAQUE",
-        "url": "https://macaque.moe/",
-        "description": "This shadowy site houses the shrines, essays, and soul of the webmaster, and features a mirror of his personal journal!"
+        "url": "https://ballonlea.net/",
+        "description": "This site, built along the trunks of towering trees, is home to the shrines, essays, and soul of the webmaster, while also featuring a mirror of his personal journal."
     },
     {
         "name": "sneerful",
@@ -808,6 +808,24 @@ window.membersData = [
         "websiteTitle": "cyrano.house",
         "url": "https://cyrano.house/",
         "description": "A multi-faceted hub for my online presence."
+    },
+    {
+        "name": "ZOID",
+        "websiteTitle": "winter year",
+        "url": "https://winteryear.neocities.org/",
+        "description": "personal blogging, image hoarding and coding site made by me ^_^"
+    },
+    {
+        "name": "leusyth",
+        "websiteTitle": "leusyth's webspace",
+        "url": "https://leusyth.neocities.org/",
+        "description": "personal art gallery!"
+    },
+    {
+        "name": "lorrin",
+        "websiteTitle": "lorrin's island",
+        "url": "https://lorrinsisland.neocities.org/",
+        "description": "cute stuff, fashion, virtual pets (tamagotchis and oddpets!), art, reading, diy, and so much more!"
     },
 ];        
 

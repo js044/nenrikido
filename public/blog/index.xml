@@ -8,6 +8,13 @@
     <language>en-us</language>
     <atom:link href="https://nenrikido.neocities.org/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Homarr and Other Self-hosted Dashboards</title>
+      <link>https://nenrikido.neocities.org/blog/post/homarr/</link>
+      <pubDate>Mon, 20 Jan 2025 02:13:06 -0500</pubDate>
+      <guid>https://nenrikido.neocities.org/blog/post/homarr/</guid>
+      <description>My Homarr customizations and CSS.</description>
+    </item>
+    <item>
       <title>Deploying Your Site to Neocities</title>
       <link>https://nenrikido.neocities.org/blog/post/deploy-site/</link>
       <pubDate>Wed, 15 May 2024 01:05:42 -0400</pubDate>

@@ -45,7 +45,7 @@ Which theme is your favorite?
 {{< /card-medium >}}
 
 {{< card-medium title="#TAMANOTCHI" >}} 
-<p align="center" style="height:85px;"><a href="http://tamanotchi.world/4251c" target="_blank" rel="noopener noreferrer"><img src="http://tamanotchi.world/i2/4251" alt="It's tamaNOTchi! Click to feed!"></a></p>
+<p align="center" style="height:85px;"><a href="http://tamanotchi.world/4448c" target="_blank" rel="noopener noreferrer"><img src="http://tamanotchi.world/i2/4448" alt="It's tamaNOTchi! Click to feed!"></a></p>
 {{< /card-medium >}}
 
 {{< card-medium title="#UPDATES" >}} 
