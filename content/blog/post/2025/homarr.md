@@ -21,8 +21,8 @@ I won't go over all of the installation instructions here. You can find step-by-
 
 A few random notes about Homarr that might be useful to someone testing it out:
 
-* If you want to add bookmarks, you'll have to add them as apps. This isn't a very straightforward, but you can add /manage/apps to your URL to jump straight to the apps list. Here, you can add new ones.
-This is also how you add apps. You may notice that you can customize the icons. If you're using Simple Icons, you can add a hex code to the end of the link to change the SVG color. And as of the new release, you can upload your own icons! I couldn't find an all white version for Dashdot or Baikal, so I made white SVGs in Illustrator and used the Dropbox URL until this update allowed me to upload them directly. Here are the [Baikal](https://www.dropbox.com/scl/fi/c1f1s01kzg9bof71e7pti/baikal.svg?rlkey=a3xnijoqhcpxhbzofh3b4jfzc&st=gjpjmx85&dl=0) and [Dashdot](https://www.dropbox.com/scl/fi/fbjmylytuijcugty1lp7v/dashdot.svg?rlkey=yu0tdaap9uucvym381tn1dtyv&st=eoilcue0&dl=0) SVGs, in case anyone needs them.
+* If you want to add bookmarks, you'll have to add them as apps. Creating apps isn't a very straightforward process, but you can add /manage/apps to your URL to jump straight to the apps list. Here, you can add new ones. Apps can be implemented as either, well...apps, or bookmark links. 
+* You may notice that you can customize the icons. If you're using Simple Icons, you can add a hex code to the end of the link to change the SVG color. And as of the new release, you can upload your own icons super simply. I couldn't find an all white version for Dashdot or Baikal, so I made white SVGs in Illustrator and used the Dropbox URL until this update allowed me to upload them directly. Here are the [Baikal](https://www.dropbox.com/scl/fi/c1f1s01kzg9bof71e7pti/baikal.svg?rlkey=a3xnijoqhcpxhbzofh3b4jfzc&st=gjpjmx85&dl=0) and [Dashdot](https://www.dropbox.com/scl/fi/fbjmylytuijcugty1lp7v/dashdot.svg?rlkey=yu0tdaap9uucvym381tn1dtyv&st=eoilcue0&dl=0) SVGs, in case anyone needs them.
 * The iframes is a pretty cool feature! I chose this [Pomodoro timer](https://studywithme.io/aesthetic-pomodoro-timer/) (I use a different background for each workspace in Zen browser), but you could get creative and try out lots of things. I'd recommend looking into [Notion embeds](https://apption.co/) for inspiration. They might not all work 1:1, but it's worth checking out. I think I might try out the [virtual cafe](https://flocus.com/virtual-cafe/) as an iframe next.
 * This is more of an edge case thing, but if you use Zen Browser, set Homarr to your new tab page, and notice your bookmarks not loading when you swap to different workspaces, make sure you actually log in. This should fix it.
 * From what I can tell, Homarr is not mobile friendly. Not sure if I'm just missing a setting, but I couldn't figure out a way to make it look nice. Maybe that's coming in a future update.
@@ -35,11 +35,11 @@ I used [this Unsplash photo](https://images.unsplash.com/photo-1492541853549-a99
 
 A few warnings about my CSS:
 
-* It's not perfect! Dialog modals inherit translucence and I haven't figured out how to make them more opaque/legible yet.
+* It's not perfect!. Dialog modals inherit translucence and I haven't figured out how to make them more opaque/legible yet.
 * The RGB colors are set to a palette that matches my background image and the hex codes I set in my Homarr colors settings (a primary color of #1c5e28 and a secondary color of #d6d385.)
 * Some of the gray font is a little hard to read. I haven't figured out which class to target yet. Maybe some other time.
 
-And that's all there really is to it! I'm really happy with Homarr. The drag and drop functionality is nice; it's flexible without being overwhelming, and it works decently well for the most part. I'm satisfied with my layout for now, but I can already think of a lot of different iterations that'd look nice and fit different themes. 
+And that's all there really is to it. I'm happy with Homarr. The drag and drop functionality is nice, it's flexible without being overwhelming, and despite its quirks, it's perfect for what I need. I'm satisfied with my layout for now, but I can already think of a lot of different iterations that'd look nice and fit different themes. 
 
 But just for posterity, let's go over Homarr's competition. If you think a self-hosted dashboard sounds neat, but you're not impressed with what Homarr has to offer, perhaps one of these would be a better fit. Here were my (super subjective) impressions:
 
