@@ -319,7 +319,7 @@ window.membersData = [
     },
     {
         "name": "Azure",
-        "websiteTitle": "MACAQUE",
+        "websiteTitle": "Ballonlea",
         "url": "https://ballonlea.net/",
         "description": "This site, built along the trunks of towering trees, is home to the shrines, essays, and soul of the webmaster, while also featuring a mirror of his personal journal."
     },
