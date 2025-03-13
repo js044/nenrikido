@@ -1079,7 +1079,7 @@ class JournalRing extends HTMLElement {
 
                 // Create and style icon
                 const iconLink = document.createElement('a');
-                iconLink.href = 'https://nenrikido.neocities.org/webrings/journalring/'; // Change this to your specific page
+                iconLink.href = 'https://nenrikido.neocities.org/webrings/journalring/'; 
                 const buttonImage = document.createElement('img');
                 buttonImage.src = this.getIconSrc(iconType);
                 buttonImage.classList.add('icon', `icon-${iconType}`);
