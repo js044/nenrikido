@@ -827,6 +827,180 @@ window.membersData = [
         "url": "https://lorrinsisland.neocities.org/",
         "description": "cute stuff, fashion, virtual pets (tamagotchis and oddpets!), art, reading, diy, and so much more!"
     },
+    {
+        "name": "blitz",
+        "websiteTitle": "MY CITY NOW!!!",
+        "url": "https://blitzesblu.casa/",
+        "description": "a site where i throw stuff up onto the internet for fun and whimsy"
+    },
+    {
+        "name": "Bibi",
+        "websiteTitle": "bibi's criinge comp",
+        "url": "https://honeyedcharlatan.neocities.org/",
+        "description": "my liittle corner of chaos"
+    },
+    {
+        "name": "Nyght",
+        "websiteTitle": "Nyght's Lounge",
+        "url": "https://nyght.nekoweb.org/",
+        "description": "Nyght's Lounge: you fall asleep transcending to the realm of this Ethereal Land, in the cozyness of a dream; introspect"
+    },
+    {
+        "name": "Alexis Jhon Gaspar",
+        "websiteTitle": "Alexis Gaming Reviews",
+        "url": "https://alexisgaming95.neocities.org/",
+        "description": "Making the unforeseeable future foreseeable. This is the official website of AGR, by Alexis himself!"
+    },
+    {
+        "name": "Nat",
+        "websiteTitle": "Batqualia",
+        "url": "https://batqualia.neocities.org/",
+        "description": "So far, batqualia is mostly a repo of book-ish content and some of my art, but I'm hoping to add in more blog and journal content in the future!"
+    },
+    {
+        "name": "moonpr1sm",
+        "websiteTitle": "MOONPR1SM",
+        "url": "https://moonpr1sm.com/",
+        "description": "personal website featuring art, music, random stuff <3"
+    },
+    {
+        "name": "piano",
+        "websiteTitle": "honeydew piano",
+        "url": "https://sweetest.cafe/",
+        "description": "A cozy, cafe/library-themed storage space for a coffee-addicted girl's rambles."
+    },
+    {
+        "name": "Saurmandal",
+        "websiteTitle": "saur",
+        "url": "https://saurmandal.nekoweb.org/",
+        "description": "Universal landing site for my online profile"
+    },
+    {
+        "name": "lucas",
+        "websiteTitle": "Upside Down Hourglass",
+        "url": "https://upsidedownhourglass.neocities.org/",
+        "description": "just a place for me to post about things i enjoy, i was getting tired of traditional social media and thought it would be a fun project :) i like music and anime mostly"
+    },
+    {
+        "name": "Arrow",
+        "websiteTitle": "kingdra.net",
+        "url": "https://kingdra.net",
+        "description": "The online portal of a writer, fan, website-maker, and enthusiast of many other things."
+    },
+    {
+        "name": "Lori",
+        "websiteTitle": "VelvetLori",
+        "url": "https://velvetlori.neocities.org/",
+        "description": "The mundane rambles of a part-time lolita"
+    },
+    {
+        "name": "Dahee Han",
+        "websiteTitle": "Laundry Room",
+        "url": "https://laundryroom.neocities.org/",
+        "description": "This is a space where I usually post my thoughts on the Internet and photography media. I'm also writing a dream diary with it. I'm going to post a real of my diary!"
+    },
+    {
+        "name": "Beki",
+        "websiteTitle": "Bekianee",
+        "url": "https://bekianee.nekoweb.org/",
+        "description": "An abadoned planet where an alien called Beki spends her time drawing, painting, and yapping about whatever she finds interesting."
+    },
+    {
+        "name": "Pearl",
+        "websiteTitle": "Angel Hotspot",
+        "url": "https://angelhotspot.neocities.org/",
+        "description": "Personal gallery of thoughts, arts, and things that are very dear to me ʚ♡ɞ"
+    },
+    {
+        "name": "Json",
+        "websiteTitle": "Wyrppad",
+        "url": "https://wyrppad.neocities.org/",
+        "description": "My personal website XPPc"
+    },
+    {
+        "name": "Erin",
+        "websiteTitle": "Strawberry Gashes",
+        "url": "https://strawberry-gashes.neocities.org/",
+        "description": "A cute, nostalgic little personal site"
+    },
+    {
+        "name": "Jade",
+        "websiteTitle": "enter the digital oasis...",
+        "url": "https://dreamlair.neocities.org/",
+        "description": "a capsule of my time as a y2k kid, music lover, and video game enthusiast. made with love."
+    },
+    {
+        "name": "inomi",
+        "websiteTitle": "Extension of You",
+        "url": "https://imbirowe.neocities.org/",
+        "description": "Im being silly in green html"
+    },
+    {
+        "name": "Nancy",
+        "websiteTitle": "landmine girls' peony atelier",
+        "url": "https://peony-atelier.j.pl/",
+        "description": "an online corner of a teenager in her mid 20s who is addicted to buying washi tapes, creating ocs and japanese stationary ^o^"
+    },
+    {
+        "name": "Stephen",
+        "websiteTitle": "Monchhichi",
+        "url": "https://monchhichi.neocities.org/",
+        "description": "personal webpage for me to make cute and add nonsense to!!"
+    },
+    {
+        "name": "Mousecky",
+        "websiteTitle": "MOUSELING",
+        "url": "https://mouseling.net/",
+        "description": "A webmouse with many hobbies. clothes, retro manga, a scarcely updated weblog..."
+    },
+    {
+        "name": "Bizette",
+        "websiteTitle": ".::+f r 3 a k z 0 n e+::.",
+        "url": "https://fr3akz0ne.com/",
+        "description": "The personal site of a shy jokester who sometimes does art."
+    },
+    {
+        "name": "kiwikytty",
+        "websiteTitle": "Gorekytti",
+        "url": "https://gorekytti.neocities.org/",
+        "description": "recently made pink and pretty site filled with pusheen, where i plan to post my art, game recommendations and translations :D"
+    },
+    {
+        "name": "Icarus Dean",
+        "websiteTitle": "ICHOR.system",
+        "url": "https://icarusdean.neocities.org/",
+        "description": "personal website of an angel boygirl who exists exclusively in cyberspace, a streamlined identity and place for self-idolatry."
+    },
+    {
+        "name": "Nifty",
+        "websiteTitle": "Wallflowering",
+        "url": "https://planthouse.neocities.org/",
+        "description": "Personal blog for ramblings and fandoms."
+    },
+    {
+        "name": "Luciana",
+        "websiteTitle": "I don't bite",
+        "url": "https://i-dont-bite.neocities.org/",
+        "description": "personal website meant for exhibiting my interests, blog, and just have fun coding :)"
+    },
+    {
+        "name": "ellekay",
+        "websiteTitle": "ellekay's digital journal",
+        "url": "https://ellekay.net/",
+        "description": "Personal site which features my blog, art and writing as well as collections of my fav things!"
+    },
+    {
+        "name": "Xyla",
+        "websiteTitle": "xylathemoth.neocities.org",
+        "url": "https://xylathemoth.neocities.org/",
+        "description": "A personal website about my hobbies and interests ^w^"
+    },
+    {
+        "name": "KariKinsun427",
+        "websiteTitle": "KariKinsun427",
+        "url": "https://karikinsun427.neocities.org/",
+        "description": "Personal website for blogging and art! :D"
+    },
 ];        
 
 class JournalRing extends HTMLElement {
