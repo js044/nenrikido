@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
     
-    <title>Site Overhaul</title>
+    <title>Two Years of Nenrikido</title>
     <meta charset="utf-8">
     <meta name="description"
         content="A special world." />
@@ -22,18 +22,16 @@
                 <div id="blog"> </div>Blog
             </a>
             <p><i class="fa-regular fa-circle-down"></i></p>
-            <p><i class="fa-solid fa-hashtag"></i> <a href="#"> Site Overhaul </a></p>
+            <p><i class="fa-solid fa-hashtag"></i> <a href="#"> Two Years of Nenrikido </a></p>
             <p><i class="fa-solid fa-hashtag"></i> <a href="#comments"> Comments </a></p>
         </div><div class="arrows">
       
-            <a href="https://nenrikido.neocities.org/blog/post/web-components/"> <i class="fas fa-long-arrow-alt-left"> </i></a>
+            <a href="https://nenrikido.neocities.org/blog/post/homarr/"> <i class="fas fa-long-arrow-alt-left"> </i></a>
             
             
                 <a href="../../../blog/"><i class="fas fa-home"> 
                 </i></a>
             
-            
-            <a href="https://nenrikido.neocities.org/blog/post/site-updates-2/"> <i class="fas fa-long-arrow-alt-right"> </i></a>
             
         </div>
 
@@ -74,121 +72,13 @@
             <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
     </div>
 </div><div class="cardsBody">
-                            <h2>Site Overhaul</h2>
-                            <blockquote>April 04, 2023</blockquote> <p>i started making this website around 3 weeks ago. if you told me then that within that time, i&rsquo;d write the site, then re-write it with web components, then re-write it again except with a static site generator, i&rsquo;d believe you. i have a near-pathological need for clear, simple, clean things. my closet is sorted by color and item type. i buy little desk dividers to keep my drawers tidy. the only icon on my desktop is the recycle bin.</p>
-<p>so yes, i have marie kondo&rsquo;d the site. this has happened before, so i probably should have anticipated it. i was already planning to make some changes, and then one thing just led to another.</p>
-<h4 id="hahahugoshortcode24s0hbhb-new-library"><i class="fa-regular fa-moon"></i> new library</h4>
-<p>i have broken up with a few frameworks for <a href="https://github.com/haltu/muuri">muuri</a>, an extremely versatile javascript library layout engine. seriously, it combines 3 (!!) frameworks i was using. AND enables the draggable windows. i&rsquo;m still pretty intimidated by muuri as it requires a bit more configuration than i&rsquo;m comfortable with yet, but i&rsquo;m working it out. big thanks to <a href="https://codepen.io/ugokuweb/pen/yLaxBNE">this codepen</a> for the gallery filter. anyways, look, drag and drop!
-
-
-
-  
-  
-  
-
-  
-    
-    
-    
-<a href="../../../images/blog/dragndrop.gif" data-lightbox="dragndrop">
-<img src="../../../images/blog/dragndrop_hu35f61ae4eb064fcc162614d39bd913ec_639803_0x420_resize_box_1.gif" class="img-fluid" loading="" alt="">
-</a>
-    
-  
-
-</p>
-<p>expect things to be buggy, especially on mobile. but what are you doing on mobile anyways&hellip;grow up! just kidding. i&rsquo;ll debug it eventually. probably.</p>
-<h4 id="hahahugoshortcode24s2hbhb-now-built-with-hugo"><i class="fa-regular fa-star"></i>  now built with hugo</h4>
-<p>you may also notice blog posts are different! that&rsquo;s actually what started this whole endeavor. i finally decided that hugo is famous for building blogs for a reason and i&rsquo;ve been wanting to learn more about <a href="https://gohugo.io/content-management/taxonomies/">taxonomies</a> anyways. (now blog posts have tags and this lowkey looks like a tumblr blog. can&rsquo;t help wandering home&hellip;)</p>
-<p>moving the site to hugo was pretty agonizing at times, but i feel good about it. with the help of shortcodes and partials, i shrank my code to something much more manageable and legible. my gallery page went from 452 lines to 266 lines! the markup is shorter and much easier to understand. and markdown is just soo much easier to deal with than HTML. plus i finally finished moving (most of) my files off of dropbox and can rest assured they&rsquo;re easier to sort.</p>
-<p>before:<br>
-
-
-
-  
-  
-  
-
-  
-    
-    
-    
-<a href="../../../images/blog/before.png" data-lightbox="ba">
-<img src="../../../images/blog/before_hud809d9931cb9a29c0d1054183febf1a4_29634_0x420_resize_q75_h2_box_3.webp" class="img-fluid" loading="" alt="">
-</a>
-    
-  
-
-</p>
-<p>after:<br>
-
-
-
-  
-  
-  
-
-  
-    
-    
-    
-<a href="../../../images/blog/after.png" data-lightbox="ba">
-<img src="../../../images/blog/after_hue2f85044a67517a703108ad86cb9f626_16084_0x420_resize_q75_h2_box_3.webp" class="img-fluid" loading="" alt="">
-</a>
-    
-  
-
-</p>
-<p>another example, pulled from the links page.</p>
-<p>before:<br>
-
-
-
-  
-  
-  
-
-  
-    
-    
-    
-<a href="../../../images/blog/before-1.png" data-lightbox="ba">
-<img src="../../../images/blog/before-1_hu8ba94659bb10101678801e9fb3a301c7_59182_0x420_resize_q75_h2_box_3.webp" class="img-fluid" loading="" alt="">
-</a>
-    
-  
-
-</p>
-<p>after:<br>
-
-
-
-  
-  
-  
-
-  
-    
-    
-    
-<a href="../../../images/blog/after-1.png" data-lightbox="ba">
-<img src="../../../images/blog/after-1_huacf4b4988d76da224b62348c907e5815_31503_0x420_resize_q75_h2_box_3.webp" class="img-fluid" loading="" alt="">
-</a>
-    
-  
-
-</p>
-<p>see what i mean&hellip;that&rsquo;s hugo baby&hellip;</p>
-<h4 id="hahahugoshortcode24s7hbhb-comment-sections--new-guestbook"><i class="fa-regular fa-sun"></i>  comment sections &amp; new guestbook</h4>
-<p>there are also now comment sections for blog posts!! i don&rsquo;t really know how they work since they&rsquo;re untested, but feel free to leave one? yeah. i also replaced the guestbook. i think the old guestbook service was cute and stuff, but it&rsquo;s (1) not responsive, (2) not very customizable, (3) has ads, (4) an external site, and (5) has poor security practices. so we&rsquo;ll see how that goes? yeah!</p>
-<h4 id="hahahugoshortcode24s8hbhb-new-content--rss-feed"><i class="fa-solid fa-music"></i> new content &amp; RSS feed</h4>
-<p>i added a few windows to the home page! it now has a blog feed (btw, the RSS feed has been <a href="../../../index.xml">updated</a>! old one is deprecated.) a few new links here and there, some formatting updates, the commissions page is slooowly in progress.</p>
-<h4 id="hahahugoshortcode24s9hbhb-closing"><i class="fa-solid fa-rainbow"></i> closing</h4>
-<p>anyways, it&rsquo;ll be good to get this over with for now. i get really fixated on tasks and it&rsquo;s hard to step away until it&rsquo;s over with. (although, i did find the time to <a href="https://www.cicadacreativemag.com/submit/">open submissions for cicada</a>. blinks slowly at you.) i&rsquo;ve been learning a ton about hugo and javascript lately and i think i want to pivot back to writing and drawing for a bit. oh, and i&rsquo;m still moving technically LMAO.</p>
-<p>hopefully the neocities <a href="https://neocities.org/cli">CLI tool</a> is actually easy to use and i don&rsquo;t die. i know Nothing about ruby. i might make a few tutorials in the future, but i guess i worry about giving bad information since i suspect there&rsquo;s still lots that i&rsquo;m doing wrong. still, whatever works, works, so you can expect Something. i&rsquo;ll get this site up on github soon enough. blegh. i&rsquo;m tired.</p>
-<p>ok talk to you later. here is a song for you.</p>
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/38OvTFIg5ZYRow2sA1jgKo?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-<p>EDIT: ok i&rsquo;m in hell why is the site so slow. it is so fast on my machine and yet so slow on the internet. science explain. gonna compress my images some more. also note to anyone who may need to be reminded: remember to push your PUBLIC folder to neocities not your project folder. it won&rsquo;t work and your heart will drop&hellip;trust me&hellip;</p>
+                            <h2>Two Years of Nenrikido</h2>
+                            <blockquote>March 13, 2025</blockquote> <p>It occured to me as I pushed some JournalRing updates at 2AM that today is the two year anniversary of Nenrikido. This blog post probably won&rsquo;t be published until <del>a few days</del> 3 months in the future, but I wanted to at least start a post on the subject. One of my blog posts that generated more discussion than I&rsquo;d expected was my <a href="../../../blog/post/neocities-reflection">two month Neocities reflection</a>, and re-reading it, well, I do still agree with the central premises.</p>
+<p>The only big caveat I&rsquo;d make now is that I think I was too hard on people who are possessive of their code. It is entirely unenforceable to prevent people from taking it, which makes it seem a bit futile to me, but if you set a boundary and someone crosses it, you are certainly well within your rights to be upset about it. Besides, although the old internet did feature a lot of collaborative code, there have always been people who don&rsquo;t like to share. And that&rsquo;s fair enough.</p>
+<p>But putting aside the critical lens of my initial post, I guess I wanted this post to reflect more on the things I like about Neocities, and about having my own website. For example, I love webrings! This is probably my favorite aspect of what is generally dubbed the &ldquo;smallweb.&rdquo; Managing JournalRing has exposed me to a lot of websites I probably would have never seen otherwise, and I do like the idea of loosely organizing around common interests and hobbies. I am always telling myself I should start another, but given how often I get behind on updating JournalRing, I might hold off awhile&hellip;</p>
+<p>At this point in my website&rsquo;s lifespan, I&rsquo;m mostly trying to make peace with the fact that I can&rsquo;t tend to it as attentively as I used to. When I started Nenrikido, I was aimlessly unemployed and completely at a loss of what to do with my life. I was two and half years out from my graduation from college and felt very trapped in my life. I had all the time in the world to pour into my website.</p>
+<p>My life looks completely different now&ndash;I&rsquo;ve moved three times since then (in fact, I just got done moving again two weeks ago!), am in the middle of applying to master&rsquo;s programs, started working again and am on schedule for a promotion this month, and have made many real life friends. I often feel frustrated that this hobby has fallen to a distant backburner because I have so much cued up in my head, but at the same time, I think there is something comforting about having this website here. It has seen me through a lot. The pressure to update and &ldquo;complete&rdquo; it is mostly self-inflicted. In reality, this website has asked nothing of me.</p>
+<p>I still do want to do more with this site&ndash;a lot more! But I have come to accept that it might take awhile, and it probably won&rsquo;t be as linear and clean as I want it to be. To anyone who has followed this website&rsquo;s growth over the years, thank you. I intend to keep Nenrikido alive for many years to come.</p>
 
                         </div>
                     </div>

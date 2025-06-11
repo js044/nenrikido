@@ -1001,6 +1001,216 @@ window.membersData = [
         "url": "https://karikinsun427.neocities.org/",
         "description": "Personal website for blogging and art! :D"
     },
+    {
+        "name": "Sunny",
+        "websiteTitle": "Sunny's Corner",
+        "url": "https://sunnypeach.neocities.org/",
+        "description": "Personal site with a personal journal, journals for books and movies, a photo gallery and whatever else I'm currently into hehe!"
+    },
+    {
+        "name": "bee",
+        "websiteTitle": "serenibee",
+        "url": "https://serenibee.neocities.org/",
+        "description": "a fun, cute site which touches on the whimsy of life and struggles of late teenage life."
+    },
+    {
+        "name": "star-specimen",
+        "websiteTitle": "star-specimen's page!",
+        "url": "https://star-specimen.neocities.org/",
+        "description": "My site is about the things I'm interested in like horror movies and critters. I also have a blog that I write in frequently."
+    },
+    {
+        "name": "Emil",
+        "websiteTitle": "seals.in.net",
+        "url": "https://seals.in.net/",
+        "description": "My awesome personal site!"
+    },
+    {
+        "name": "Kaiya",
+        "websiteTitle": "Chokoreto",
+        "url": "https://chokoreto.neocities.org/",
+        "description": "A little corner of the internet dedicated to me only, I share my art, aesthetics I enjoy and my experiences, specifically in the diary page ^^"
+    },
+    {
+        "name": "Epsilon",
+        "websiteTitle": "starry's hangout",
+        "url": "https://starry-faun.neocities.org/",
+        "description": "Epsilon's corner of the net where they keep a digital journal in the form of an html blog, as well as a few other fun things!"
+    },
+    {
+        "name": "Ren",
+        "websiteTitle": "ghosting pen",
+        "url": "https://ghostingpen.neocities.org/",
+        "description": "a personal website + blog full of journaling + writing resources!"
+    },
+    {
+        "name": "Icarus",
+        "websiteTitle": "The-Icarus-Archive",
+        "url": "https://the-icarus-archive.neocities.org/",
+        "description": "A small website that serves as a personal archive for me and my interests!"
+    },
+    {
+        "name": "bugpaw",
+        "websiteTitle": "Bunnyboy Blog",
+        "url": "https://bunnyboyblog.neocities.org/",
+        "description": "a personal website where is mainly for blogging some personal thoughts that will maybe have more stuff in the future"
+    },
+    {
+        "name": "Nova Galaxium",
+        "websiteTitle": "Nova's Corner",
+        "url": "https://pastel-skies.nekoweb.org/",
+        "description": "A personal website created to live out my dream of having one, and share my thoughts to the world without using a big platform."
+    },
+    {
+        "name": "Sam",
+        "websiteTitle": "digitaldoggi",
+        "url": "https://digitaldoggi.com/",
+        "description": "Personal website with art and blogs and silly things!!"
+    },
+    {
+        "name": "Kiki",
+        "websiteTitle": "Moonlit Blossom",
+        "url": "https://moonlit-blossom.lunarella.net/",
+        "description": "my personal website, equivalent of a digital diary & main home on the net :3"
+    },
+    {
+        "name": "mori",
+        "websiteTitle": "angelmori",
+        "url": "https://angelmori.neocities.org/",
+        "description": "personal mesh of essays, shrines, and media!"
+    },
+    {
+        "name": "dim",
+        "websiteTitle": "dim14",
+        "url": "https://dim14.neocities.org/",
+        "description": "personal website of a european psychologist who LOVES journaling and has tons of interests all over the map (sfw, somewhat mature)"
+    },
+    {
+        "name": "maddy",
+        "websiteTitle": "maddycha",
+        "url": "https://maddycha.com/",
+        "description": "my silly little personal site! a little space for me to yap about my interests & upload my art"
+    },
+    {
+        "name": "Arianna",
+        "websiteTitle": "Shinrin yoku",
+        "url": "https://shinrin-yoku.neocities.org/",
+        "description": "A journal and quiet nook dedicated to nature feelings, nostalgic finds, and slow living."
+    },
+    {
+        "name": "Giovanna",
+        "websiteTitle": "Gigi's Space",
+        "url": "https://giflorin.neocities.org/",
+        "description": "A place to share about my passions, such as blogging, reading, music, design, photography, formula 1 and others."
+    },
+    {
+        "name": "erin",
+        "websiteTitle": "halcalic",
+        "url": "https://halcalic.neocities.org/",
+        "description": "a personal site full of my interests! ^__^"
+    },
+    {
+        "name": "Ayou",
+        "websiteTitle": "Milkshake",
+        "url": "https://ayouchoco.glitch.me/",
+        "description": "My personal website, where I post random things I like and do."
+    },
+    {
+        "name": "LetsgoLeeLee",
+        "websiteTitle": "LetsgoLeeLee.hoshi",
+        "url": "https://letsgoleelee.neocities.org/",
+        "description": "A personal site where I show off my little hobbies and projects!"
+    },
+    {
+        "name": "ang",
+        "websiteTitle": "ang's corner",
+        "url": "https://angs-corner.nekoweb.org/",
+        "description": "ang's corner is a personal site where I post anything and everything! I wanted a place where to share updates about my life and VW Bus without using social media, as well as practice my web development and coding skills."
+    },
+    {
+        "name": "Rapi",
+        "websiteTitle": "Rapipi mental Ward",
+        "url": "https://rapi4831.neocities.org/",
+        "description": "This is a calming internet. My art and journal are posted here."
+    },
+    {
+        "name": "Foof",
+        "websiteTitle": "Foofoai",
+        "url": "https://foofoai.neocities.org/",
+        "description": "Personal webweb for my art and what I love."
+    },
+    {
+        "name": "daisy",
+        "websiteTitle": "daisy.site",
+        "url": "https://daisysite.neocities.org/",
+        "description": "just a little corner of the internet for me to try and figure out how coding works!"
+    },
+    {
+        "name": "sho",
+        "websiteTitle": "unilover",
+        "url": "https://unilover.neocities.org/",
+        "description": "a personal site dedicated to myself to update in my freetime!!"
+    },
+    {
+        "name": "alyssa",
+        "websiteTitle": "magenta's getaway",
+        "url": "https://darkmagenta.neocities.org/",
+        "description": "cozy site with journals and art"
+    },
+    {
+        "name": "blake earth",
+        "websiteTitle": "blakeearth",
+        "url": "https://blake.earth/",
+        "description": "A place for me to occasionally post thoughts and share a bunch of books I'm reading."
+    },
+    {
+        "name": "Nathan",
+        "websiteTitle": "Nathan's space",
+        "url": "https://nathanntan.neocities.org/",
+        "description": "A personal blog focused on sharing passions like videogames and reading, with a journal section! This website represents my safe space on the web and I hope it can be for you too! 💗"
+    },
+    {
+        "name": "Vivid",
+        "websiteTitle": "a very vivid site",
+        "url": "https://vividpolysquad.neocities.org/",
+        "description": "a personal website to share my interests !!!"
+    },
+    {
+        "name": "ninabina",
+        "websiteTitle": "ninasresources",
+        "url": "https://ninasresources.neocities.org/",
+        "description": "a personal site of mine for shrines, themed pages, and tons of other cool stuff!"
+    },
+    {
+        "name": "elise",
+        "websiteTitle": "sangria",
+        "url": "https://sangria.nekoweb.org/",
+        "description": "just a cute gothic lolita themed site where i can express myself <3"
+    },
+    {
+        "name": "Robin",
+        "websiteTitle": "eonsadrift",
+        "url": "https://eonsadrift.nekoweb.org/",
+        "description": "Personal website for all my shenanigans :3"
+    },
+    {
+        "name": "Lolla",
+        "websiteTitle": "Hello, Lolla",
+        "url": "https://hellololla.neocities.org/",
+        "description": "A blog, a place to display my photography and journal pages, personal collective and random selection of things I love."
+    },
+    {
+        "name": "Elsie",
+        "websiteTitle": "elswhere",
+        "url": "https://elswhere.neocities.org/",
+        "description": "just a small corner of the internet for me to do whatever I want"
+    },
+    {
+        "name": "Sofya",
+        "websiteTitle": "evdokimova's",
+        "url": "https://www.evdokimovas.com/",
+        "description": "personal website"
+    },
 ];        
 
 class JournalRing extends HTMLElement {
