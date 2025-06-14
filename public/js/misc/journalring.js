@@ -1104,7 +1104,7 @@ window.membersData = [
         "description": "A place to share about my passions, such as blogging, reading, music, design, photography, formula 1 and others."
     },
     {
-        "name": "erin",
+        "name": "Callie",
         "websiteTitle": "halcalic",
         "url": "https://halcalic.neocities.org/",
         "description": "a personal site full of my interests! ^__^"
