@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About on NENRIKIDO</title>
-    <link>http://localhost:1313/about/</link>
+    <link>https://nenrikido.neocities.org/about/</link>
     <description>Recent content in About on NENRIKIDO</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nenrikido.neocities.org/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Style Guide</title>
-      <link>http://localhost:1313/about/styleguide/</link>
+      <link>https://nenrikido.neocities.org/about/styleguide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/styleguide/</guid>
+      <guid>https://nenrikido.neocities.org/about/styleguide/</guid>
       <description>STYLE GUIDE&#xD;Based on the Poor Man&amp;rsquo;s styleguide. wind chimes #STYLE GUIDE&#xD;Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Heading 1 Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.&#xA;Heading 2 Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est.</description>
     </item>
   </channel>
