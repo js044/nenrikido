@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on NENRIKIDO</title>
-    <link>https://nenrikido.neocities.org/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on NENRIKIDO</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 11 Jun 2025 16:00:58 -0400</lastBuildDate>
-    <atom:link href="https://nenrikido.neocities.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Personal</title>
-      <link>https://nenrikido.neocities.org/tags/personal/</link>
+      <link>http://localhost:1313/tags/personal/</link>
       <pubDate>Thu, 13 Mar 2025 02:06:29 -0400</pubDate>
-      <guid>https://nenrikido.neocities.org/tags/personal/</guid>
+      <guid>http://localhost:1313/tags/personal/</guid>
       <description></description>
     </item>
     <item>
       <title>Recs</title>
-      <link>https://nenrikido.neocities.org/tags/recs/</link>
+      <link>http://localhost:1313/tags/recs/</link>
       <pubDate>Mon, 20 Jan 2025 02:13:06 -0500</pubDate>
-      <guid>https://nenrikido.neocities.org/tags/recs/</guid>
+      <guid>http://localhost:1313/tags/recs/</guid>
       <description></description>
     </item>
     <item>
       <title>Tutorials</title>
-      <link>https://nenrikido.neocities.org/tags/tutorials/</link>
+      <link>http://localhost:1313/tags/tutorials/</link>
       <pubDate>Wed, 15 May 2024 01:05:42 -0400</pubDate>
-      <guid>https://nenrikido.neocities.org/tags/tutorials/</guid>
+      <guid>http://localhost:1313/tags/tutorials/</guid>
       <description></description>
     </item>
     <item>
       <title>Site Updates</title>
-      <link>https://nenrikido.neocities.org/tags/site-updates/</link>
+      <link>http://localhost:1313/tags/site-updates/</link>
       <pubDate>Sun, 10 Dec 2023 20:14:19 -0400</pubDate>
-      <guid>https://nenrikido.neocities.org/tags/site-updates/</guid>
+      <guid>http://localhost:1313/tags/site-updates/</guid>
       <description></description>
     </item>
   </channel>

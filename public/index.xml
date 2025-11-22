@@ -3,8 +3,8 @@
     <channel>
         <title>NENRIKIDO</title>
         <description></description>
-        <link>https://nenrikido.neocities.org/</link>
-       <atom:link href="https://nenrikido.neocities.org/" rel="self" type="application/rss+xml" xmlns:atom="http://www.w3.org/2005/Atom" />
+        <link>http://localhost:1313/</link>
+       <atom:link href="http://localhost:1313/" rel="self" type="application/rss+xml" xmlns:atom="http://www.w3.org/2005/Atom" />
         
             <item>
                <title>new blog post and a journalring update.</title>

@@ -40,13 +40,7 @@ window.membersData = [
         "websiteTitle": "Arunyi",
         "url": "https://arunyi.art/",
         "description": "My personal website!"
-    },  
-    {
-        "name": "Yeger",
-        "websiteTitle": "Yeger",
-        "url": "https://yeger.neocities.org/",
-        "description": "Blog about my life, thoughts and passions (technology and languages)!"
-    },  
+    },   
     {
         "name": "Naila Moonsi",
         "websiteTitle": "starlit seas",
@@ -168,18 +162,6 @@ window.membersData = [
         "description": "personal site/blog"
     },
     {
-        "name": "Alia",
-        "websiteTitle": "Chaoticdreamz",
-        "url": "https://chaoticdreamz.neocities.org/",
-        "description": "A cutsey webpage to express myself, theres cursing and my blog is a major tw just a heads up!!"
-    },
-    {
-        "name": "corvidae",
-        "websiteTitle": "the flames of diaster",
-        "url": "https://crisis.city/",
-        "description": "a personal blog where i just kind of exist and fool around! i have a blog, art page, resources and graphics pages, and more!"
-    },
-    {
         "name": "sirui",
         "websiteTitle": "wise // cursed",
         "url": "https://melxncholyman.neocities.org/",
@@ -202,12 +184,6 @@ window.membersData = [
         "websiteTitle": "The Misadventures of Missy",
         "url": "https://missymjwrites.neocities.org/",
         "description": "A place where I put my writings and general creative-ness."
-    },
-    {
-        "name": "Kraehen",
-        "websiteTitle": "literaturesandbox",
-        "url": "https://updown.city/",
-        "description": "simple HTML personal website powered by JavaScript"
     },
     {
         "name": "Kiley",
@@ -284,7 +260,7 @@ window.membersData = [
     {
         "name": "niki",
         "websiteTitle": "cherie",
-        "url": "https://cherie.nekoweb.org/",
+        "url": "https://cherie.pink/",
         "description": "A personal website that acts also as an archive of my different interests & hobbies. A little space in the internet where it is always spring."
     },
     {
@@ -394,13 +370,7 @@ window.membersData = [
         "websiteTitle": "Tsubaki's Room",
         "url": "https://tsubakiroom.neocities.org/",
         "description": "Cute website with a regularly updated diary (student life, books, mental health)!"
-    },
-    {
-        "name": "middlepot",
-        "websiteTitle": "middlepot.com",
-        "url": "https://middlepot.com/",
-        "description": "my safe corner on the internet, where i share my thoughts & updates about my life and all of my projects !"
-    },
+    },    
     {
         "name": "Abygail",
         "websiteTitle": "Abby's Notebook",
@@ -418,13 +388,7 @@ window.membersData = [
         "websiteTitle": "Whirlwind",
         "url": "https://whirlwind.neocities.org/",
         "description": "A personal site on a computer in the sky."
-    },
-    {
-        "name": "chloe",
-        "websiteTitle": "venus in foxfurs",
-        "url": "https://venusinfoxfurs.neocities.org/",
-        "description": "a personal blog with art, cooking, hobbies, and writing!"
-    },
+    },    
     {
         "name": "vulpecula",
         "websiteTitle": "steady as the stars",
@@ -454,12 +418,6 @@ window.membersData = [
         "websiteTitle": "ferdvonvestra",
         "url": "https://ferdvonvestra.neocities.org/",
         "description": "general blog, personal & fan media"
-    },
-    {
-        "name": "cd",
-        "websiteTitle": "CDsverdict",
-        "url": "https://ferdvonvestra.neocities.org/",
-        "description": "personal website about things I'm interested in"
     },
     {
         "name": "Melody",
@@ -492,12 +450,6 @@ window.membersData = [
         "description": "Personal site where I have fun and talk about the things I love(mostly otaku-related)"
     },
     {
-        "name": "William",
-        "websiteTitle": "sillywilly22",
-        "url": "https://sillywilly22.neocities.org/",
-        "description": "my personal website!!! I tried to make it as simple and epic as possible!"
-    },
-    {
         "name": "chara",
         "websiteTitle": "hunipyon",
         "url": "https://hunipyon.neocities.org/",
@@ -516,33 +468,15 @@ window.membersData = [
         "description": "A little corner for a goofy girl."
     },
     {
-        "name": "sony",
-        "websiteTitle": "Segaaa",
-        "url": "https://segaaa.neocities.org/",
-        "description": "a website all about sonic the hedgehog! The creator, Sony, is a nerd and will be loud about it."
-    },
-    {
-        "name": "HQ",
-        "websiteTitle": "PENTUMBRA",
-        "url": "https://pentumbra.neocities.org/",
-        "description": "A goofy, personal site used to show my art and other interests."
-    },
-    {
         "name": "V",
         "websiteTitle": "madeinv",
         "url": "https://madeinv.love/",
         "description": "Another personal site to do whatever with, To the best of my abilities."
     },
     {
-        "name": "pochitchi music",
-        "websiteTitle": "pochitchi music",
-        "url": "https://pochitchimusic.blogspot.com/",
-        "description": "a blog for j-idol music reviews"
-    },
-    {
         "name": "uzi/roxie",
-        "websiteTitle": "rockseize !!",
-        "url": "https://rockseize.neocities.org/",
+        "websiteTitle": "weaven!!",
+        "url": "https://weaven.neocities.org/",
         "description": "A Self - Proclaimed Internet Angel's personal site and (alledgedly) Lovely Haven."
     },
     {
@@ -556,12 +490,6 @@ window.membersData = [
         "websiteTitle": "catmothcrow cottage",
         "url": "https://catmothcrow.neocities.org/",
         "description": "the personal site of a witchy, thirty-something zinester"
-    },
-    {
-        "name": "Kiki",
-        "websiteTitle": "Twinkle Space",
-        "url": "https://twinkles.neocities.org/",
-        "description": "Website dedicated to sharing my art and bits of my life. Forever a work in progress."
     },
     {
         "name": "breanna",
@@ -624,12 +552,6 @@ window.membersData = [
         "description": "A newly created blog I've made on neocities (so there is still some under maintenance pages) where i post my fanfics and also my journals."
     }, 
     {
-        "name": "blythe",
-        "websiteTitle": "dreams of vinushka",
-        "url": "https://dreamsofvinushka.neocities.org/",
-        "description": "fun personal site to fill with all my interests"
-    }, 
-    {
         "name": "Meep",
         "websiteTitle": "Pine Island Projects",
         "url": "https://pineisland.neocities.org/",
@@ -653,18 +575,6 @@ window.membersData = [
         "url": "https://frandszk.neocities.org/",
         "description": "personal site where i talk about/post fanart of old scifi novels and anime! i have an old travel journal up too"
     }, 
-    {
-        "name": "ori",
-        "websiteTitle": "ori-dori-go-explori",
-        "url": "https://ori-dori-go-explori.neocities.org/",
-        "description": "A personal website for getting out of my shell and the small things in life."
-    }, 
-    {
-        "name": "electronica",
-        "websiteTitle": "electronica",
-        "url": "https://electronica.nekoweb.org/",
-        "description": "a personal blog full with nothing but metro and colour!"
-    },
     {
         "name": "Delphine",
         "websiteTitle": "Delphinitely me",
@@ -720,12 +630,6 @@ window.membersData = [
         "description": "a personal digital junk journal! will include interests, art, inspirations and all sorts of stuff :]"
     },
     {
-        "name": "zestpunk",
-        "websiteTitle": "ZESTPUNK'S LAIR",
-        "url": "https://zestpunk.art/",
-        "description": "My personal website and (eventual) portfolio! A place to dump every thought that pops into my head for posterity."
-    },
-    {
         "name": "mino",
         "websiteTitle": "minonii",
         "url": "https://minonii.neocities.org/",
@@ -742,12 +646,6 @@ window.membersData = [
         "websiteTitle": "Cherry Talk",
         "url": "https://cherrymocha.neocities.org/",
         "description": "Personal site to talk about my interests and share my thoughts"
-    },
-    {
-        "name": "coolguy17",
-        "websiteTitle": "thejesusof",
-        "url": "https://thejesusof.neocities.org/",
-        "description": "personal site for yapping and archiving art and whatnot :3 say hi!!"
     },
     {
         "name": "avedo",
@@ -864,12 +762,6 @@ window.membersData = [
         "description": "personal website featuring art, music, random stuff <3"
     },
     {
-        "name": "piano",
-        "websiteTitle": "honeydew piano",
-        "url": "https://sweetest.cafe/",
-        "description": "A cozy, cafe/library-themed storage space for a coffee-addicted girl's rambles."
-    },
-    {
         "name": "Saurmandal",
         "websiteTitle": "saur",
         "url": "https://saurmandal.nekoweb.org/",
@@ -890,26 +782,14 @@ window.membersData = [
     {
         "name": "Lori",
         "websiteTitle": "VelvetLori",
-        "url": "https://velvetlori.neocities.org/",
+        "url": "https://velvetlori.cc/",
         "description": "The mundane rambles of a part-time lolita"
-    },
-    {
-        "name": "Dahee Han",
-        "websiteTitle": "Laundry Room",
-        "url": "https://laundryroom.neocities.org/",
-        "description": "This is a space where I usually post my thoughts on the Internet and photography media. I'm also writing a dream diary with it. I'm going to post a real of my diary!"
     },
     {
         "name": "Beki",
         "websiteTitle": "Bekianee",
-        "url": "https://bekianee.nekoweb.org/",
+        "url": "https://bekianee.art/",
         "description": "An abadoned planet where an alien called Beki spends her time drawing, painting, and yapping about whatever she finds interesting."
-    },
-    {
-        "name": "Pearl",
-        "websiteTitle": "Angel Hotspot",
-        "url": "https://angelhotspot.neocities.org/",
-        "description": "Personal gallery of thoughts, arts, and things that are very dear to me ʚ♡ɞ"
     },
     {
         "name": "Json",
@@ -922,12 +802,6 @@ window.membersData = [
         "websiteTitle": "Strawberry Gashes",
         "url": "https://strawberry-gashes.neocities.org/",
         "description": "A cute, nostalgic little personal site"
-    },
-    {
-        "name": "Jade",
-        "websiteTitle": "enter the digital oasis...",
-        "url": "https://dreamlair.neocities.org/",
-        "description": "a capsule of my time as a y2k kid, music lover, and video game enthusiast. made with love."
     },
     {
         "name": "inomi",
@@ -946,12 +820,6 @@ window.membersData = [
         "websiteTitle": "Monchhichi",
         "url": "https://monchhichi.neocities.org/",
         "description": "personal webpage for me to make cute and add nonsense to!!"
-    },
-    {
-        "name": "Mousecky",
-        "websiteTitle": "MOUSELING",
-        "url": "https://mouseling.net/",
-        "description": "A webmouse with many hobbies. clothes, retro manga, a scarcely updated weblog..."
     },
     {
         "name": "Bizette",
@@ -1008,12 +876,6 @@ window.membersData = [
         "description": "Personal site with a personal journal, journals for books and movies, a photo gallery and whatever else I'm currently into hehe!"
     },
     {
-        "name": "bee",
-        "websiteTitle": "serenibee",
-        "url": "https://serenibee.neocities.org/",
-        "description": "a fun, cute site which touches on the whimsy of life and struggles of late teenage life."
-    },
-    {
         "name": "star-specimen",
         "websiteTitle": "star-specimen's page!",
         "url": "https://star-specimen.neocities.org/",
@@ -1062,12 +924,6 @@ window.membersData = [
         "description": "A personal website created to live out my dream of having one, and share my thoughts to the world without using a big platform."
     },
     {
-        "name": "Sam",
-        "websiteTitle": "digitaldoggi",
-        "url": "https://digitaldoggi.com/",
-        "description": "Personal website with art and blogs and silly things!!"
-    },
-    {
         "name": "Kiki",
         "websiteTitle": "Moonlit Blossom",
         "url": "https://moonlit-blossom.lunarella.net/",
@@ -1102,12 +958,6 @@ window.membersData = [
         "websiteTitle": "Gigi's Space",
         "url": "https://giflorin.neocities.org/",
         "description": "A place to share about my passions, such as blogging, reading, music, design, photography, formula 1 and others."
-    },
-    {
-        "name": "Callie",
-        "websiteTitle": "halcalic",
-        "url": "https://halcalic.neocities.org/",
-        "description": "a personal site full of my interests! ^__^"
     },
     {
         "name": "Ayou",
@@ -1158,12 +1008,6 @@ window.membersData = [
         "description": "cozy site with journals and art"
     },
     {
-        "name": "blake earth",
-        "websiteTitle": "blakeearth",
-        "url": "https://blake.earth/",
-        "description": "A place for me to occasionally post thoughts and share a bunch of books I'm reading."
-    },
-    {
         "name": "Nathan",
         "websiteTitle": "Nathan's space",
         "url": "https://nathanntan.neocities.org/",
@@ -1184,7 +1028,7 @@ window.membersData = [
     {
         "name": "elise",
         "websiteTitle": "sangria",
-        "url": "https://sangria.nekoweb.org/",
+        "url": "https://haunting.rip/",
         "description": "just a cute gothic lolita themed site where i can express myself <3"
     },
     {
@@ -1211,6 +1055,378 @@ window.membersData = [
         "url": "https://www.evdokimovas.com/",
         "description": "personal website"
     },
+        {
+        "name": "Santana",
+        "websiteTitle": "Shore of Nihil",
+        "url": "https://exnihl.neocities.org/",
+        "description": "The landing zone for all my successful(?) coding attempts that also acts as a hub for all my personal work; art, writing, shrine, or otherwise."
+    },
+    {
+        "name": "Freya",
+        "websiteTitle": "freya's files",
+        "url": "https://freyas-files.nekoweb.org/",
+        "description": "every silly thing i've made, in one place"
+    },
+    {
+        "name": "Sakkie",
+        "websiteTitle": "Prismatic Pink",
+        "url": "https://prismatic.pink/",
+        "description": "Personal website in 2000s style, with pixel art and blog posts"
+    },
+    {
+        "name": "trash",
+        "websiteTitle": "atinytrashbag",
+        "url": "https://atinytrashbag.neocities.org/",
+        "description": "just a site for me to play around, teach myself how to code and talk art/writing :D"
+    },
+    {
+        "name": "Mary Seph",
+        "websiteTitle": "Mary Seph",
+        "url": "https://maryseph.github.io/",
+        "description": "a personal site for my creative endeavors such as writing, web dev, and crochet!"
+    },
+    {
+        "name": "Rinny",
+        "websiteTitle": "pokestitch",
+        "url": "https://pokestitch.nekoweb.org/",
+        "description": "a personal website about the things i love, including pokemon and cross-stitch"
+    },
+    {
+        "name": "bunni",
+        "websiteTitle": "bunnis diary",
+        "url": "https://bunnibrainzx.neocities.org/",
+        "description": "cute personal blog that includes art, neopets, guestbook and ect"
+    },
+    {
+        "name": "Rinara",
+        "websiteTitle": "Sunny Tea",
+        "url": "https://sunnytea.org/",
+        "description": "My personal website"
+    },
+    {
+        "name": "Penny",
+        "websiteTitle": "Penny Loves Pandas",
+        "url": "https://pennylovespandas.neocities.org/",
+        "description": "Home to my art and writing"
+    },
+    {
+        "name": "kkb",
+        "websiteTitle": "kkb's clubhouse",
+        "url": "https://kkb.ooo/",
+        "description": "my personal space on the web!! i blog here, i geek out about my favorite things, and best of all, i express myself creatively!! :3"
+    },
+    {
+        "name": "jnkyrd",
+        "websiteTitle": "JNKYRD",
+        "url": "https://jnkyrd.neocities.org/",
+        "description": "a personal website for me to do whatever i want, contains art, writings, graphics, pics, resources, and random stuff"
+    },
+    {
+        "name": "mia",
+        "websiteTitle": "inmybag",
+        "url": "https://inmybag.neocities.org/",
+        "description": "personal website where I put all things I enjoy. you can find pages from my junk journal, writings and my commonplace book ☆☆☆"
+    },
+    {
+        "name": "Jinx",
+        "websiteTitle": "Lapin Lunaire Games",
+        "url": "https://lapinlunaire-games.neocities.org/",
+        "description": "A softly-lit atelier. In the distance, a violin stirs the scent of fresh jasmine over drying ink."
+    },
+    {
+        "name": "Nana",
+        "websiteTitle": "digital kanojo",
+        "url": "https://digitalkanojo.neocities.org/",
+        "description": "A personal website for my interest in gaming, anime, and more!"
+    },
+    {
+        "name": "Nikki",
+        "websiteTitle": "qtbeans art",
+        "url": "https://qtbeans.neocities.org/",
+        "description": "My artwork, hobbies, and interests bundled into one space."
+    },
+    {
+        "name": "kadser",
+        "websiteTitle": "Kadser Corner",
+        "url": "https://kadser.nekoweb.org",
+        "description": "My personal little space on the internet. Sharing my love for cats, renaissance/vintage aesthetics and silly stories from my RL :)"
+    },
+    {
+        "name": "PIXIE",
+        "websiteTitle": "Pixie's Paradise",
+        "url": "https://p1xieparadis3.neocities.org/",
+        "description": "My little handcoded paradise"
+    },
+    {
+        "name": "qbozon",
+        "websiteTitle": "quinn bozon",
+        "url": "https://quinnbozon.nekoweb.org/",
+        "description": "a website dedicated to my love for science and literature! for anyone who loves flashy space-themed sites :))"
+    },
+    {
+        "name": "Dima",
+        "websiteTitle": "Sodarain",
+        "url": "https://sodarain.neocities.org/",
+        "description": "Personal website where I blog about my life and share stuff I have created (which ranges from drawings and poems to crochet and cross-stitch)."
+    },
+    {
+        "name": "Samuel",
+        "websiteTitle": "Sam's Solar System",
+        "url": "https://samsolarsystem.neocities.org/",
+        "description": "A personal site used to archive cool stuff from the internet like graphics and yourube videos and rambling about my interests"
+    },
+    {
+        "name": "mary cuntrarian",
+        "websiteTitle": "mary cuntrarian blog",
+        "url": "https://marycontrarian.neocities.org/blog/bloghome",
+        "description": "Dreamy stream of consciousness writing about whatever is currently twisting in my mind."
+    },
+    {
+        "name": "Nori",
+        "websiteTitle": "FRAMMYJAMMY",
+        "url": "https://frammyjammy.neocities.org/",
+        "description": "Portfolio and personal website of artist, musician, and writer, Nori Jammy."
+    },
+    {
+        "name": "gojo",
+        "websiteTitle": "justanotheranimeman",
+        "url": "https://animeman.us",
+        "description": "personal website for sharing my thoughts, writing, and my experiences in virtual reality."
+    },
+    {
+        "name": "emmy",
+        "websiteTitle": "persona 3 portable",
+        "url": "https://p3p.neocities.org/",
+        "description": "p3p is a love letter to 2000s - 2010s technology, gaming, and the internet that raised me!"
+    },
+    {
+        "name": "Sophie",
+        "websiteTitle": "Basophie",
+        "url": "https://basophie.neocities.org/",
+        "description": "A quiet corner for me to talk about whatever i want !"
+    },
+    {
+        "name": "lotus",
+        "websiteTitle": "lotus' internet corner",
+        "url": "https://lotusmoonstart.neocities.org/",
+        "description": "Lotus' personal website for blogging, video games, anime, books, and more!"
+    },
+    {
+        "name": "isobel",
+        "websiteTitle": "isobel's web",
+        "url": "https://isobelsweb.com/",
+        "description": "my personal site for expression and world building for my unreleased music"
+    },
+    {
+        "name": "Angel",
+        "websiteTitle": "rainfrog",
+        "url": "https://rainfrog.nekoweb.org/",
+        "description": "a personal site for my interests as well as things I make!"
+    },
+    {
+        "name": "Alistair",
+        "websiteTitle": "Alistair's Wonderland",
+        "url": "https://er0gutz.neocities.org/",
+        "description": "Skull-themed personal website and diary - full of artwork, poetry and other things :3"
+    },
+    {
+        "name": "Xavier",
+        "websiteTitle": "Xavier H.M.",
+        "url": "https://xavierhm.com",
+        "description": "The personal site of an artist, writer, blogger, webdev, and all-around cool dude."
+    },
+    {
+        "name": "minx",
+        "websiteTitle": "Minx's PC",
+        "url": "https://minx98.neocities.org/",
+        "description": "You've stumbled into my digital sleepover."
+    },
+    {
+        "name": "Marta",
+        "websiteTitle": "sonechka",
+        "url": "https://sonechka.bouvardia.blue/",
+        "description": "book reviews and a blog."
+    },
+    {
+        "name": "Luna",
+        "websiteTitle": "Luna's Room",
+        "url": "https://lunamilk.neocities.org/",
+        "description": "Blogging, Art, and my weird Interests."
+    },
+    {
+        "name": "Cleyson Mayrink",
+        "websiteTitle": "CleyBlog XP",
+        "url": "https://cleysonmayrink.neocities.org/",
+        "description": "Hi! I'm Cley, and I started a blog/diary website where I post about my life!"
+    },
+    {
+        "name": "Misti",
+        "websiteTitle": "Pinkcredible",
+        "url": "https://pinkcredible.space",
+        "description": "This tiny corner of the web is powered by friendship, pizza, and penguins."
+    },
+    {
+        "name": "bluepuffin",
+        "websiteTitle": "bluepuffin's blog",
+        "url": "https://www.bluepuffin.net/",
+        "description": "a personal blog with gizmos and new entries every friday"
+    },
+    {
+        "name": "Gabby",
+        "websiteTitle": "Prismaticbolt",
+        "url": "https://prismaticbolt.neocities.org/",
+        "description": "Personal website with a bright, colorful aesthetic."
+    },
+    {
+        "name": "NoctuAst",
+        "websiteTitle": "Aster's Hideout",
+        "url": "https://noctuast.neocities.org/",
+        "description": "just a personal site dedicated to sharing art and other fun stuff"
+    },
+    {
+        "name": "suda",
+        "websiteTitle": "ramen coppola's world",
+        "url": "https://ramencoppola.neocities.org/",
+        "description": "ramen's personal website, where she shares brainfarts and art."
+    },
+    {
+        "name": "Red",
+        "websiteTitle": "red night",
+        "url": "https://red-night.neocities.org/",
+        "description": "A barebones website to explore blogging, writing, and journaling."
+    },
+    {
+        "name": "amfmradio",
+        "websiteTitle": "amfmradio's art archive",
+        "url": "https://amfmradio.org/",
+        "description": "a website archiving all of the digital art i've made since 2020, plus some other extra stuff"
+    },
+    {
+        "name": "mitad punteo",
+        "websiteTitle": "cami",
+        "url": "https://mitadpunketo.nekoweb.org",
+        "description": "yapping about life or whatever i'm working on!! my site is a passion project about self expression and archival! :3"
+    },
+    {
+        "name": "Reaper",
+        "websiteTitle": "Reaper Man",
+        "url": "https://reaperman.neocities.org/",
+        "description": "a personal site for all of my art projects, passions, and hobbies!"
+    },
+    {
+        "name": "panko",
+        "websiteTitle": "moonlit.exposed",
+        "url": "https://moonlit.exposed",
+        "description": "my site is made from the crumbs my grandmother dropped across the kitchen floor."
+    },
+    {
+        "name": "Nikki",
+        "websiteTitle": "Pen Cap Chew",
+        "url": "https://pencapchew.blog",
+        "description": "Fanblog about Kurt Cobain and Nirvana"
+    },
+    {
+        "name": "Frankie",
+        "websiteTitle": "Cyanidefish",
+        "url": "https://cyanidefish.neocities.org/",
+        "description": "Incredibly Pink personal blog for me, my OCs and things I collect, also includes an art portfolio."
+    },
+    {
+        "name": "Belle",
+        "websiteTitle": "Torrent Empress",
+        "url": "https://torrentempress.neocities.org/",
+        "description": "Art + personal website with a lot of vampire love"
+    },
+    {
+        "name": "Flora",
+        "websiteTitle": "Floralchai",
+        "url": "https://floralchai.neocities.org/",
+        "description": "Contains my whimsical thoughts, photos, and journey I would share with the wide web"
+    },
+    {
+        "name": "cami",
+        "websiteTitle": "mitadpunketo",
+        "url": "https://mitadpunketo.nekoweb.org/",
+        "description": "an archive of thoughts, art, and photos [a work in progress]! I have 2 ongoing blogs: daily posts and an archive of thoughts"
+    },
+    {
+        "name": "Sammich",
+        "websiteTitle": "goth sammich",
+        "url": "https://goth-sammich.neocities.org/",
+        "description": "Just a goth/punk/witchy personal website where i post abt my interests :3"
+    },
+    {
+        "name": "Minnalow",
+        "websiteTitle": "Minnerva",
+        "url": "https://minnerva.neocities.org/",
+        "description": "A compilation of my many interests and cool personal projects I've done"
+    },
+    {
+        "name": "Hika",
+        "websiteTitle": "HK★TMK",
+        "url": "https://hikatamika.com/",
+        "description": "Personal site of an OC & Comic artist! Where I share my public art and thoughts with the web."
+    },
+    {
+        "name": "Sarah",
+        "websiteTitle": "OkaySeurat",
+        "url": "https://okayseurat.bearblog.dev/",
+        "description": "A personal blog about nothing in particular. I write about whatever is on my mind and whatever I need to get off my chest."
+    },
+    {
+        "name": "ppilotco",
+        "websiteTitle": "ppilotco.faith",
+        "url": "https://ppilotco.faith/",
+        "description": "digital scrapbook for dolls"
+    },
+    {
+        "name": "stelle",
+        "websiteTitle": "moeghost",
+        "url": "https://moeghosts.neocities.org",
+        "description": "pink, cutesy blog with graphics, plushies. gaming, and more!!"
+    },
+    {
+        "name": "marmar",
+        "websiteTitle": "maralados",
+        "url": "https://maralados.neocities.org/",
+        "description": "a personal website. blog. stuff i like. :)"
+    },
+    {
+        "name": "Strawbunnie",
+        "websiteTitle": "Strawbunnie cafe",
+        "url": "https://strawbunniesoda.neocities.org/",
+        "description": "A place for me to learn coding and make something cool!"
+    },
+    {
+        "name": "nisa",
+        "websiteTitle": "wooden deer",
+        "url": "https://thedeerishere.wordpress.com/",
+        "description": "my little personal corner. a place to go when i get overwhelmed by social media"
+    },
+    {
+        "name": "caesthoffe",
+        "websiteTitle": "the archives",
+        "url": "https://caesthoffe.neocities.org/",
+        "description": "jack of all trades, master of none"
+    },
+    {
+        "name": "poko",
+        "websiteTitle": "ceramic town!",
+        "url": "https://pokopon.nekoweb.org/",
+        "description": "my digital ceramic studio! currently the only place i show my work bc shy- but also adoptable pixels for you, my blog, & more to come!"
+    },
+    {
+        "name": "theadr",
+        "websiteTitle": "theadr's web",
+        "url": "https://theadr.net/",
+        "description": "Blog about my thoughts, likes, and life."
+    },
+    {
+        "name": "Chesca",
+        "websiteTitle": "It's Chesca",
+        "url": "https://chesca.neocities.org/",
+        "description": "The site is my little digital playground filled with colors, doodles, random obsessions, and whatever hobby I hyperfixiated on instead of studying."
+    }            
 ];        
 
 class JournalRing extends HTMLElement {

@@ -2,51 +2,51 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Code on NENRIKIDO</title>
-    <link>https://nenrikido.neocities.org/code/</link>
+    <link>http://localhost:1313/code/</link>
     <description>Recent content in Code on NENRIKIDO</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://nenrikido.neocities.org/code/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/code/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pudding</title>
-      <link>https://nenrikido.neocities.org/code/preview/pudding/</link>
+      <link>http://localhost:1313/code/preview/pudding/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nenrikido.neocities.org/code/preview/pudding/</guid>
+      <guid>http://localhost:1313/code/preview/pudding/</guid>
       <description></description>
     </item>
     <item>
       <title>Rainbow</title>
-      <link>https://nenrikido.neocities.org/code/preview/rainbow/</link>
+      <link>http://localhost:1313/code/preview/rainbow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nenrikido.neocities.org/code/preview/rainbow/</guid>
+      <guid>http://localhost:1313/code/preview/rainbow/</guid>
       <description></description>
     </item>
     <item>
       <title>Rainbow</title>
-      <link>https://nenrikido.neocities.org/code/preview/rainbow2/</link>
+      <link>http://localhost:1313/code/preview/rainbow2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nenrikido.neocities.org/code/preview/rainbow2/</guid>
+      <guid>http://localhost:1313/code/preview/rainbow2/</guid>
       <description></description>
     </item>
     <item>
       <title>Sakura</title>
-      <link>https://nenrikido.neocities.org/code/preview/sakura/</link>
+      <link>http://localhost:1313/code/preview/sakura/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nenrikido.neocities.org/code/preview/sakura/</guid>
+      <guid>http://localhost:1313/code/preview/sakura/</guid>
       <description></description>
     </item>
     <item>
       <title>Sunflower</title>
-      <link>https://nenrikido.neocities.org/code/preview/sunflower/</link>
+      <link>http://localhost:1313/code/preview/sunflower/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nenrikido.neocities.org/code/preview/sunflower/</guid>
+      <guid>http://localhost:1313/code/preview/sunflower/</guid>
       <description></description>
     </item>
     <item>
       <title>Toothache</title>
-      <link>https://nenrikido.neocities.org/code/preview/toothache/</link>
+      <link>http://localhost:1313/code/preview/toothache/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nenrikido.neocities.org/code/preview/toothache/</guid>
+      <guid>http://localhost:1313/code/preview/toothache/</guid>
       <description></description>
     </item>
   </channel>

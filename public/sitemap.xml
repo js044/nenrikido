@@ -2,126 +2,126 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nenrikido.neocities.org/tags/personal/</loc>
+    <loc>http://localhost:1313/tags/personal/</loc>
     <lastmod>2025-06-11T16:00:58-04:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-06-11T16:00:58-04:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/blog/post/two-years-of-nenrikido/</loc>
+    <loc>http://localhost:1313/blog/post/two-years-of-nenrikido/</loc>
     <lastmod>2025-06-11T16:00:58-04:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/blog/post/homarr/</loc>
+    <loc>http://localhost:1313/blog/post/homarr/</loc>
     <lastmod>2025-01-20T03:12:18-05:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/tags/recs/</loc>
+    <loc>http://localhost:1313/tags/recs/</loc>
     <lastmod>2025-01-20T03:12:18-05:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/blog/post/deploy-site/</loc>
+    <loc>http://localhost:1313/blog/post/deploy-site/</loc>
     <lastmod>2024-11-24T16:20:32-05:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/tags/tutorials/</loc>
+    <loc>http://localhost:1313/tags/tutorials/</loc>
     <lastmod>2024-12-28T15:58:01-05:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/blog/post/journalring/</loc>
+    <loc>http://localhost:1313/blog/post/journalring/</loc>
     <lastmod>2024-07-26T23:27:58-04:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/webrings/journalring/</loc>
+    <loc>http://localhost:1313/webrings/journalring/</loc>
     <lastmod>2024-07-26T23:27:58-04:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/blog/post/mega-site-update/</loc>
+    <loc>http://localhost:1313/blog/post/mega-site-update/</loc>
     <lastmod>2024-07-26T23:27:58-04:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/tags/site-updates/</loc>
+    <loc>http://localhost:1313/tags/site-updates/</loc>
     <lastmod>2024-11-12T02:10:31-05:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/blog/post/firefox-tutourial/</loc>
+    <loc>http://localhost:1313/blog/post/firefox-tutourial/</loc>
     <lastmod>2024-12-28T15:58:01-05:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/blog/post/yard-sale/</loc>
+    <loc>http://localhost:1313/blog/post/yard-sale/</loc>
     <lastmod>2024-07-26T23:27:58-04:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/blog/post/bye-bye-bootstrap/</loc>
+    <loc>http://localhost:1313/blog/post/bye-bye-bootstrap/</loc>
     <lastmod>2024-07-26T23:27:58-04:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/blog/post/neocities-reflection/</loc>
+    <loc>http://localhost:1313/blog/post/neocities-reflection/</loc>
     <lastmod>2024-07-26T23:27:58-04:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/blog/post/site-updates-3/</loc>
+    <loc>http://localhost:1313/blog/post/site-updates-3/</loc>
     <lastmod>2024-07-26T23:27:58-04:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/nexus/cole/</loc>
+    <loc>http://localhost:1313/nexus/cole/</loc>
     <lastmod>2024-07-26T23:27:58-04:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/blog/post/making-a-preloader/</loc>
+    <loc>http://localhost:1313/blog/post/making-a-preloader/</loc>
     <lastmod>2024-07-26T23:27:58-04:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/blog/post/site-updates-2/</loc>
+    <loc>http://localhost:1313/blog/post/site-updates-2/</loc>
     <lastmod>2024-07-26T23:27:58-04:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/blog/post/site-overhaul/</loc>
+    <loc>http://localhost:1313/blog/post/site-overhaul/</loc>
     <lastmod>2024-11-12T02:10:31-05:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/blog/post/web-components/</loc>
+    <loc>http://localhost:1313/blog/post/web-components/</loc>
     <lastmod>2024-07-26T23:27:58-04:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2024-11-12T02:04:22-05:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/blog/</loc>
+    <loc>http://localhost:1313/blog/</loc>
     <lastmod>2024-07-26T23:27:58-04:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://nenrikido.neocities.org/code/</loc>
+    <loc>http://localhost:1313/code/</loc>
     <lastmod>2024-07-26T23:27:58-04:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/commissions/</loc>
+    <loc>http://localhost:1313/commissions/</loc>
     <lastmod>2025-03-03T00:20:22-05:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/gallery/</loc>
+    <loc>http://localhost:1313/gallery/</loc>
     <lastmod>2024-07-26T23:27:58-04:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/library/</loc>
+    <loc>http://localhost:1313/library/</loc>
     <lastmod>2024-12-25T22:17:51-05:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/links/</loc>
+    <loc>http://localhost:1313/links/</loc>
     <lastmod>2025-01-12T20:52:44-05:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/microblog/</loc>
+    <loc>http://localhost:1313/microblog/</loc>
     <lastmod>2024-07-26T23:27:58-04:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-01-20T02:33:47-05:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/nexus/</loc>
+    <loc>http://localhost:1313/nexus/</loc>
     <lastmod>2024-08-29T13:52:52-04:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/code/preview/pudding/</loc>
+    <loc>http://localhost:1313/code/preview/pudding/</loc>
     <lastmod>2024-07-26T23:27:58-04:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/code/preview/rainbow/</loc>
+    <loc>http://localhost:1313/code/preview/rainbow/</loc>
     <lastmod>2024-07-26T23:27:58-04:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/code/preview/rainbow2/</loc>
+    <loc>http://localhost:1313/code/preview/rainbow2/</loc>
     <lastmod>2024-07-26T23:27:58-04:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/code/preview/sakura/</loc>
+    <loc>http://localhost:1313/code/preview/sakura/</loc>
     <lastmod>2024-07-26T23:27:58-04:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/sitemap/</loc>
+    <loc>http://localhost:1313/sitemap/</loc>
     <lastmod>2024-07-26T23:27:58-04:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/about/styleguide/</loc>
+    <loc>http://localhost:1313/about/styleguide/</loc>
     <lastmod>2024-07-26T23:27:58-04:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/code/preview/sunflower/</loc>
+    <loc>http://localhost:1313/code/preview/sunflower/</loc>
     <lastmod>2024-07-26T23:27:58-04:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/code/preview/toothache/</loc>
+    <loc>http://localhost:1313/code/preview/toothache/</loc>
     <lastmod>2024-07-26T23:27:58-04:00</lastmod>
   </url><url>
-    <loc>https://nenrikido.neocities.org/webrings/</loc>
+    <loc>http://localhost:1313/webrings/</loc>
     <lastmod>2024-07-26T23:27:58-04:00</lastmod>
   </url>
 </urlset>
