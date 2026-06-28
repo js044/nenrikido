@@ -806,7 +806,7 @@ window.membersData = [
     {
         "name": "Ren",
         "websiteTitle": "ghosting pen",
-        "url": "https://ghostingpen.neocities.org/",
+        "url": "https://ghostingpen.net/",
         "description": "a personal website + blog full of journaling + writing resources!"
     },
     {
