@@ -2,107 +2,107 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on NENRIKIDO</title>
-    <link>http://localhost:1313/blog/</link>
+    <link>https://nenrikido.neocities.org/blog/</link>
     <description>Recent content in Blog on NENRIKIDO</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nenrikido.neocities.org/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Two Years of Nenrikido</title>
-      <link>http://localhost:1313/blog/post/two-years-of-nenrikido/</link>
+      <link>https://nenrikido.neocities.org/blog/post/two-years-of-nenrikido/</link>
       <pubDate>Thu, 13 Mar 2025 02:06:29 -0400</pubDate>
-      <guid>http://localhost:1313/blog/post/two-years-of-nenrikido/</guid>
+      <guid>https://nenrikido.neocities.org/blog/post/two-years-of-nenrikido/</guid>
       <description>Time flies, doesn&amp;rsquo;t it?</description>
     </item>
     <item>
       <title>Homarr and Other Self-hosted Dashboards</title>
-      <link>http://localhost:1313/blog/post/homarr/</link>
+      <link>https://nenrikido.neocities.org/blog/post/homarr/</link>
       <pubDate>Mon, 20 Jan 2025 02:13:06 -0500</pubDate>
-      <guid>http://localhost:1313/blog/post/homarr/</guid>
+      <guid>https://nenrikido.neocities.org/blog/post/homarr/</guid>
       <description>My Homarr customizations and CSS.</description>
     </item>
     <item>
       <title>Deploying Your Site to Neocities</title>
-      <link>http://localhost:1313/blog/post/deploy-site/</link>
+      <link>https://nenrikido.neocities.org/blog/post/deploy-site/</link>
       <pubDate>Wed, 15 May 2024 01:05:42 -0400</pubDate>
-      <guid>http://localhost:1313/blog/post/deploy-site/</guid>
+      <guid>https://nenrikido.neocities.org/blog/post/deploy-site/</guid>
       <description>Two main ways to upload your site to Neocities without relying on the native GUI.</description>
     </item>
     <item>
       <title>Making a Webring: The Creation of JournalRing</title>
-      <link>http://localhost:1313/blog/post/journalring/</link>
+      <link>https://nenrikido.neocities.org/blog/post/journalring/</link>
       <pubDate>Sat, 13 Jan 2024 20:02:44 -0400</pubDate>
-      <guid>http://localhost:1313/blog/post/journalring/</guid>
+      <guid>https://nenrikido.neocities.org/blog/post/journalring/</guid>
       <description>I made a webring and so can you! Tips, tricks, and mistakes.</description>
     </item>
     <item>
       <title>Mega Site Update</title>
-      <link>http://localhost:1313/blog/post/mega-site-update/</link>
+      <link>https://nenrikido.neocities.org/blog/post/mega-site-update/</link>
       <pubDate>Sun, 10 Dec 2023 20:14:19 -0400</pubDate>
-      <guid>http://localhost:1313/blog/post/mega-site-update/</guid>
+      <guid>https://nenrikido.neocities.org/blog/post/mega-site-update/</guid>
       <description>Brand new fonts, search finally works, new blog tag filter, site got SASS&amp;rsquo;ed, microblog bug is squashed, and more!</description>
     </item>
     <item>
       <title>Firefox Tree Tabs Tu(tour)ial</title>
-      <link>http://localhost:1313/blog/post/firefox-tutourial/</link>
+      <link>https://nenrikido.neocities.org/blog/post/firefox-tutourial/</link>
       <pubDate>Sun, 02 Jul 2023 00:34:17 -0600</pubDate>
-      <guid>http://localhost:1313/blog/post/firefox-tutourial/</guid>
+      <guid>https://nenrikido.neocities.org/blog/post/firefox-tutourial/</guid>
       <description>Welcome to my crib, Mozilla Firefox edition. With instructions on how to recreate it!</description>
     </item>
     <item>
       <title>Yard Sale</title>
-      <link>http://localhost:1313/blog/post/yard-sale/</link>
+      <link>https://nenrikido.neocities.org/blog/post/yard-sale/</link>
       <pubDate>Sat, 17 Jun 2023 21:24:01 -0600</pubDate>
-      <guid>http://localhost:1313/blog/post/yard-sale/</guid>
+      <guid>https://nenrikido.neocities.org/blog/post/yard-sale/</guid>
       <description>A diary entry. Featuring Hot Topic fashion and a sandwich.</description>
     </item>
     <item>
       <title>Bye-bye Bootstrap</title>
-      <link>http://localhost:1313/blog/post/bye-bye-bootstrap/</link>
+      <link>https://nenrikido.neocities.org/blog/post/bye-bye-bootstrap/</link>
       <pubDate>Sun, 28 May 2023 18:42:10 -0600</pubDate>
-      <guid>http://localhost:1313/blog/post/bye-bye-bootstrap/</guid>
+      <guid>https://nenrikido.neocities.org/blog/post/bye-bye-bootstrap/</guid>
       <description>Bootstrap gets the boot, my hair gets a trim, and the site gets a map.</description>
     </item>
     <item>
       <title>2 months later: A Neocities Reflection</title>
-      <link>http://localhost:1313/blog/post/neocities-reflection/</link>
+      <link>https://nenrikido.neocities.org/blog/post/neocities-reflection/</link>
       <pubDate>Sun, 21 May 2023 21:50:10 -0600</pubDate>
-      <guid>http://localhost:1313/blog/post/neocities-reflection/</guid>
+      <guid>https://nenrikido.neocities.org/blog/post/neocities-reflection/</guid>
       <description>Some observations about the community aspect of Neocities and online communities in general.</description>
     </item>
     <item>
       <title>Site Updates</title>
-      <link>http://localhost:1313/blog/post/site-updates-3/</link>
+      <link>https://nenrikido.neocities.org/blog/post/site-updates-3/</link>
       <pubDate>Tue, 18 Apr 2023 02:29:14 -0600</pubDate>
-      <guid>http://localhost:1313/blog/post/site-updates-3/</guid>
+      <guid>https://nenrikido.neocities.org/blog/post/site-updates-3/</guid>
       <description>new library with 61 current entries! (and a shrines page!)</description>
     </item>
     <item>
       <title>Making a Preloader</title>
-      <link>http://localhost:1313/blog/post/making-a-preloader/</link>
+      <link>https://nenrikido.neocities.org/blog/post/making-a-preloader/</link>
       <pubDate>Wed, 05 Apr 2023 01:38:00 -0600</pubDate>
-      <guid>http://localhost:1313/blog/post/making-a-preloader/</guid>
+      <guid>https://nenrikido.neocities.org/blog/post/making-a-preloader/</guid>
       <description>How to make a simple full-page loading screen for your site.</description>
     </item>
     <item>
       <title>Site Updates ...Continued!</title>
-      <link>http://localhost:1313/blog/post/site-updates-2/</link>
+      <link>https://nenrikido.neocities.org/blog/post/site-updates-2/</link>
       <pubDate>Tue, 04 Apr 2023 20:41:23 -0600</pubDate>
-      <guid>http://localhost:1313/blog/post/site-updates-2/</guid>
+      <guid>https://nenrikido.neocities.org/blog/post/site-updates-2/</guid>
       <description>is the site running any faster? it should be running faster.</description>
     </item>
     <item>
       <title>Site Overhaul</title>
-      <link>http://localhost:1313/blog/post/site-overhaul/</link>
+      <link>https://nenrikido.neocities.org/blog/post/site-overhaul/</link>
       <pubDate>Tue, 04 Apr 2023 02:28:14 -0600</pubDate>
-      <guid>http://localhost:1313/blog/post/site-overhaul/</guid>
+      <guid>https://nenrikido.neocities.org/blog/post/site-overhaul/</guid>
       <description>lots and lots and lots of new things.</description>
     </item>
     <item>
       <title>Reusable HTML Snippets: Web Components</title>
-      <link>http://localhost:1313/blog/post/web-components/</link>
+      <link>https://nenrikido.neocities.org/blog/post/web-components/</link>
       <pubDate>Tue, 28 Mar 2023 02:32:33 -0600</pubDate>
-      <guid>http://localhost:1313/blog/post/web-components/</guid>
+      <guid>https://nenrikido.neocities.org/blog/post/web-components/</guid>
       <description>A small tutorial on using Javascript to reuse HTML snippets.</description>
     </item>
   </channel>

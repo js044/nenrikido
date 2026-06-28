@@ -31,3 +31,8 @@ input#hcb_submit {
     border-left: 1px solid !important;
     padding-left: 5px !important;
 }
+
+#comments_list {
+    overflow: scroll;
+    max-height: 400px;
+}

@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tutorials on NENRIKIDO</title>
-    <link>http://localhost:1313/tags/tutorials/</link>
+    <link>https://nenrikido.neocities.org/tags/tutorials/</link>
     <description>Recent content in Tutorials on NENRIKIDO</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 28 Dec 2024 15:58:01 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nenrikido.neocities.org/tags/tutorials/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Deploying Your Site to Neocities</title>
-      <link>http://localhost:1313/blog/post/deploy-site/</link>
+      <link>https://nenrikido.neocities.org/blog/post/deploy-site/</link>
       <pubDate>Wed, 15 May 2024 01:05:42 -0400</pubDate>
-      <guid>http://localhost:1313/blog/post/deploy-site/</guid>
+      <guid>https://nenrikido.neocities.org/blog/post/deploy-site/</guid>
       <description>Two main ways to upload your site to Neocities without relying on the native GUI.</description>
     </item>
     <item>
       <title>Making a Webring: The Creation of JournalRing</title>
-      <link>http://localhost:1313/blog/post/journalring/</link>
+      <link>https://nenrikido.neocities.org/blog/post/journalring/</link>
       <pubDate>Sat, 13 Jan 2024 20:02:44 -0400</pubDate>
-      <guid>http://localhost:1313/blog/post/journalring/</guid>
+      <guid>https://nenrikido.neocities.org/blog/post/journalring/</guid>
       <description>I made a webring and so can you! Tips, tricks, and mistakes.</description>
     </item>
     <item>
       <title>Firefox Tree Tabs Tu(tour)ial</title>
-      <link>http://localhost:1313/blog/post/firefox-tutourial/</link>
+      <link>https://nenrikido.neocities.org/blog/post/firefox-tutourial/</link>
       <pubDate>Sun, 02 Jul 2023 00:34:17 -0600</pubDate>
-      <guid>http://localhost:1313/blog/post/firefox-tutourial/</guid>
+      <guid>https://nenrikido.neocities.org/blog/post/firefox-tutourial/</guid>
       <description>Welcome to my crib, Mozilla Firefox edition. With instructions on how to recreate it!</description>
     </item>
     <item>
       <title>Making a Preloader</title>
-      <link>http://localhost:1313/blog/post/making-a-preloader/</link>
+      <link>https://nenrikido.neocities.org/blog/post/making-a-preloader/</link>
       <pubDate>Wed, 05 Apr 2023 01:38:00 -0600</pubDate>
-      <guid>http://localhost:1313/blog/post/making-a-preloader/</guid>
+      <guid>https://nenrikido.neocities.org/blog/post/making-a-preloader/</guid>
       <description>How to make a simple full-page loading screen for your site.</description>
     </item>
     <item>
       <title>Reusable HTML Snippets: Web Components</title>
-      <link>http://localhost:1313/blog/post/web-components/</link>
+      <link>https://nenrikido.neocities.org/blog/post/web-components/</link>
       <pubDate>Tue, 28 Mar 2023 02:32:33 -0600</pubDate>
-      <guid>http://localhost:1313/blog/post/web-components/</guid>
+      <guid>https://nenrikido.neocities.org/blog/post/web-components/</guid>
       <description>A small tutorial on using Javascript to reuse HTML snippets.</description>
     </item>
   </channel>

@@ -29,9 +29,9 @@ layout: single
 {{< stats stat="ENNEAGRAM: 5w4" >}}
 {{< /stats-box >}}
 {{< box >}} 
-Hello, and welcome to Nenrikido, my online bedroom. I mostly dabble in digital art and web development, but I'm a big fan of making things in general. I also love horror games, reading, spicy noodles, and fish trivia. I currently work at a library. Feel free to reach out about any of these topics; I love [email](mailto:@nenrikido@pm.me).
+Welcome to Nenrikido, my online bedroom. I have lots of hobbies, mostly in the realm of tinkering (ask me about my home server). I'm also a lifelong, unrepentant weeb. Aside from that, I like reading, spicy noodles, and fish trivia. I work at a university. Feel free to reach out [via email](mailto:@nenrikido@pm.me) about any of these topics.
 
-I made this site both to host my creative projects and also to function as its own creative project. Expect the site to be updated ~~haphazardly~~ sporadically and with great passion. You can find the Github repo [here](https://github.com/js044/nenrikido/).
+I made this site to aggregate and host my creative projects, and also to function as its own creative project. Expect the site to be updated ~~haphazardly~~ sporadically and with great passion. You can find the Github repo [here](https://github.com/js044/nenrikido/).
 {{< /box >}}
  
 {{< /card-large >}}
@@ -40,7 +40,7 @@ I made this site both to host my creative projects and also to function as its o
 {{< large-scrollbox >}}
 {{< row >}}
 {{< blocks >}}
-{{< box-small title="ANIME & MANGA" >}}
+{{< box-small title="ANIME & MANGA:" >}}
 
 *SERIES*  
 {{< icons/heart >}} Mob Psycho 100  
@@ -154,40 +154,48 @@ Check out the [library](/library) for more!
 {{< /large-scrollbox >}}
 {{< /card-large >}}
 
-{{< card-large title="#MY CAT" id="gaia" >}}
+{{< card-large title="#MY CAT" id="nutmeg" >}}
 {{< large-scrollbox >}}
-{{< lightbox-image lightbox-id="gaia" img-src="/images/gaia/gaia.png" alt="A fluffy Tortoiseshell cat sitting by a laptop that was used to tweet about her moments prior. She is crouched under a bed. The tweet is one of her sitting on top of the bed." >}}
-
 {{< preview >}}
-{{< lightbox-image lightbox-id="gaia" img-src="/images/gaia/gaia_1.jpg" alt="A fluffy Tortoiseshell cat flopped on her back." >}}
+{{< lightbox-image lightbox-id="nutmeg" img-src="/images/nutmeg/nutmeg_03.jpg" alt="A calico sprawled on a laptop." >}}
 
-{{< lightbox-image lightbox-id="gaia" img-src="/images/gaia/gaia_3.png" alt="A fluffy cat sitting at the dinner table surrounded by food that absolutely is not for her." >}}
+{{< lightbox-image lightbox-id="nutmeg" img-src="/images/nutmeg/nutmeg_05.jpg" alt="A cat consuming a lickable treat." >}}
 {{< /preview >}}
 
 {{< preview >}}
-{{< lightbox-image lightbox-id="gaia" img-src="/images/gaia/gaia_2.jpg" alt="A fluffy cat sprawled out dramatically on a pillow." >}}
+{{< lightbox-image lightbox-id="nutmeg" img-src="/images/nutmeg/nutmeg_01.jpg" alt="A calico with her eyes closed." >}}
 
-{{< lightbox-image lightbox-id="gaia" img-src="/images/gaia/gaia_4.jpg" alt="A fluffy cat walking outside in the yard in a harness, noble and pensive." >}}
+{{< lightbox-image lightbox-id="nutmeg" img-src="/images/nutmeg/nutmeg_08.png" alt="A cat hiding behind couch cushions." >}}
 {{< /preview >}}
 
 {{< preview >}}
-{{< lightbox-image lightbox-id="gaia" img-src="/images/gaia/gaia_5.jpg" alt="A fluffy cat sitting in the driver's seat of a car." >}}
+{{< lightbox-image lightbox-id="nutmeg" img-src="/images/nutmeg/nutmeg_06.png" alt="A calico cat curled up asleep on a hand." >}}
 
-{{< lightbox-image lightbox-id="gaia" img-src="/images/gaia/gaia_11.jpg" alt="A fluffy cat napping amongst various plushies." >}}
+{{< lightbox-image lightbox-id="nutmeg" img-src="/images/nutmeg/nutmeg_10.jpg" alt="A calico cat biting a hand." >}}
 {{< /preview >}}
 
 {{< preview >}}
-{{< lightbox-image lightbox-id="gaia" img-src="/images/gaia/gaia_6.jpg" alt="A fluffy cat asleep on her cat tree." >}}
+{{< lightbox-image lightbox-id="nutmeg" img-src="/images/nutmeg/nutmeg_12.jpg" alt="A calico cat hiding in a rug" >}}
 
-{{< lightbox-image lightbox-id="gaia" img-src="/images/gaia/gaia_9.jpg" alt="A fluffy cat on her back mid-yawn. She looks threatening." >}}
+{{< lightbox-image lightbox-id="nutmeg" img-src="/images/nutmeg/nutmeg_02.jpg" alt="A cat standing outside on a stone." >}}
 {{< /preview >}}
 
-{{< lightbox-image lightbox-id="gaia" img-src="/images/gaia/gaia_10.jpg" alt="A fluffy cat laying on her back under a table, seemingly caught off-guard." >}}
+{{< preview >}}
+{{< lightbox-image lightbox-id="nutmeg" img-src="/images/nutmeg/nutmeg_07.png" alt="A fluffy cat napping amongst various plushies." >}}
+
+{{< lightbox-image lightbox-id="nutmeg" img-src="/images/nutmeg/nutmeg_00.jpg" alt="A cat in a bag." >}}
+{{< /preview >}}
 
 {{< preview >}}
-{{< lightbox-image lightbox-id="gaia" img-src="/images/gaia/gaia_7.jpg" alt="A fluffy cat asleep on a laptop keyboard." >}}
+{{< lightbox-image lightbox-id="nutmeg" img-src="/images/nutmeg/nutmeg_04.jpg" alt="A calico cat obscured by flowers on a table." >}}
 
-{{< lightbox-image lightbox-id="gaia" img-src="/images/gaia/gaia_8.jpg" alt="A fluffy cat laying inside a packed suitcase." >}}
+{{< lightbox-image lightbox-id="nutmeg" img-src="/images/nutmeg/nutmeg_13.jpg" alt="A calico cat laying on the couch." >}}
+{{< /preview >}}
+
+{{< preview >}}
+{{< lightbox-image lightbox-id="nutmeg" img-src="/images/nutmeg/nutmeg_15.jpg" alt="A calico cat biting an office chair." >}}
+
+{{< lightbox-image lightbox-id="nutmeg" img-src="/images/nutmeg/nutmeg_14.jpg" alt="A calico cat in a trash can." >}}
 {{< /preview >}}
 
 {{< /large-scrollbox >}} 

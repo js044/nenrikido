@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Recs on NENRIKIDO</title>
-    <link>http://localhost:1313/tags/recs/</link>
+    <link>https://nenrikido.neocities.org/tags/recs/</link>
     <description>Recent content in Recs on NENRIKIDO</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 20 Jan 2025 03:12:18 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/recs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nenrikido.neocities.org/tags/recs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Homarr and Other Self-hosted Dashboards</title>
-      <link>http://localhost:1313/blog/post/homarr/</link>
+      <link>https://nenrikido.neocities.org/blog/post/homarr/</link>
       <pubDate>Mon, 20 Jan 2025 02:13:06 -0500</pubDate>
-      <guid>http://localhost:1313/blog/post/homarr/</guid>
+      <guid>https://nenrikido.neocities.org/blog/post/homarr/</guid>
       <description>My Homarr customizations and CSS.</description>
     </item>
     <item>
       <title>Firefox Tree Tabs Tu(tour)ial</title>
-      <link>http://localhost:1313/blog/post/firefox-tutourial/</link>
+      <link>https://nenrikido.neocities.org/blog/post/firefox-tutourial/</link>
       <pubDate>Sun, 02 Jul 2023 00:34:17 -0600</pubDate>
-      <guid>http://localhost:1313/blog/post/firefox-tutourial/</guid>
+      <guid>https://nenrikido.neocities.org/blog/post/firefox-tutourial/</guid>
       <description>Welcome to my crib, Mozilla Firefox edition. With instructions on how to recreate it!</description>
     </item>
   </channel>

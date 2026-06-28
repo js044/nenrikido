@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Site Updates on NENRIKIDO</title>
-    <link>http://localhost:1313/tags/site-updates/</link>
+    <link>https://nenrikido.neocities.org/tags/site-updates/</link>
     <description>Recent content in Site Updates on NENRIKIDO</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 12 Nov 2024 02:10:31 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/site-updates/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nenrikido.neocities.org/tags/site-updates/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mega Site Update</title>
-      <link>http://localhost:1313/blog/post/mega-site-update/</link>
+      <link>https://nenrikido.neocities.org/blog/post/mega-site-update/</link>
       <pubDate>Sun, 10 Dec 2023 20:14:19 -0400</pubDate>
-      <guid>http://localhost:1313/blog/post/mega-site-update/</guid>
+      <guid>https://nenrikido.neocities.org/blog/post/mega-site-update/</guid>
       <description>Brand new fonts, search finally works, new blog tag filter, site got SASS&amp;rsquo;ed, microblog bug is squashed, and more!</description>
     </item>
     <item>
       <title>Bye-bye Bootstrap</title>
-      <link>http://localhost:1313/blog/post/bye-bye-bootstrap/</link>
+      <link>https://nenrikido.neocities.org/blog/post/bye-bye-bootstrap/</link>
       <pubDate>Sun, 28 May 2023 18:42:10 -0600</pubDate>
-      <guid>http://localhost:1313/blog/post/bye-bye-bootstrap/</guid>
+      <guid>https://nenrikido.neocities.org/blog/post/bye-bye-bootstrap/</guid>
       <description>Bootstrap gets the boot, my hair gets a trim, and the site gets a map.</description>
     </item>
     <item>
       <title>Site Updates</title>
-      <link>http://localhost:1313/blog/post/site-updates-3/</link>
+      <link>https://nenrikido.neocities.org/blog/post/site-updates-3/</link>
       <pubDate>Tue, 18 Apr 2023 02:29:14 -0600</pubDate>
-      <guid>http://localhost:1313/blog/post/site-updates-3/</guid>
+      <guid>https://nenrikido.neocities.org/blog/post/site-updates-3/</guid>
       <description>new library with 61 current entries! (and a shrines page!)</description>
     </item>
     <item>
       <title>Site Updates ...Continued!</title>
-      <link>http://localhost:1313/blog/post/site-updates-2/</link>
+      <link>https://nenrikido.neocities.org/blog/post/site-updates-2/</link>
       <pubDate>Tue, 04 Apr 2023 20:41:23 -0600</pubDate>
-      <guid>http://localhost:1313/blog/post/site-updates-2/</guid>
+      <guid>https://nenrikido.neocities.org/blog/post/site-updates-2/</guid>
       <description>is the site running any faster? it should be running faster.</description>
     </item>
     <item>
       <title>Site Overhaul</title>
-      <link>http://localhost:1313/blog/post/site-overhaul/</link>
+      <link>https://nenrikido.neocities.org/blog/post/site-overhaul/</link>
       <pubDate>Tue, 04 Apr 2023 02:28:14 -0600</pubDate>
-      <guid>http://localhost:1313/blog/post/site-overhaul/</guid>
+      <guid>https://nenrikido.neocities.org/blog/post/site-overhaul/</guid>
       <description>lots and lots and lots of new things.</description>
     </item>
   </channel>
