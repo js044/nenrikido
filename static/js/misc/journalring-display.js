@@ -1,16 +1,17 @@
-
 function checkDeadLinks(data) {
-  data.forEach(member => {
-    fetch(`https://api.allorigins.win/get?url=${member.url}`, { method: 'HEAD' })
-      .then(response => {
-        if (!response.ok) {
+  data.forEach((member, index) => {
+    setTimeout(() => {
+      fetch(`https://corsfix.com/?url=${encodeURIComponent(member.url)}`)
+        .then(response => {
+          if (!response.ok || !response.url.includes(new URL(member.url).hostname)) {
+            handleDeadLink(member.url);
+          }
+        })
+        .catch(error => {
+          console.error('Error checking link:', error.message);
           handleDeadLink(member.url);
-        }
-      })
-      .catch(error => {
-        console.error('Error checking link:', error.message);
-        handleDeadLink(member.url);
-      });
+        });
+    }, index * 300); // 300ms between each request
   });
 }
 
@@ -26,7 +27,7 @@ let leftPageNumber = 1; // Initialize the left page number
 let rightPageNumber = 2; // Initialize the right page number
 let currentPage = parseInt(localStorage.getItem('currentPage')) || 1;
 // Add members to Members list from JSON
-const data = window.membersData;
+const data = [...window.membersData].reverse();
 const pageSize = 10; // Number of items per page
 const totalEntries = data.length; // Total entries from JSON
 
@@ -86,22 +87,22 @@ if (lastTab) {
 }
 
 
-   // Update the HTML element to display the member count with a span
-   const memberCountElement = document.querySelector('#memberCount');
-   if (memberCountElement) {
-     memberCountElement.innerHTML = `Member count: <span class="written highlight">${totalEntries}</span>`;
-   }
+// Update the HTML element to display the member count with a span
+const memberCountElement = document.querySelector('#memberCount');
+if (memberCountElement) {
+  memberCountElement.innerHTML = `Member count: <span class="written highlight">${totalEntries}</span>`;
+}
 
-   // Create boxes on members page
+// Create boxes on members page
 function createMemberBox(member) {
   const memberBox = document.createElement('div');
   memberBox.classList.add('member-box');
 
   function getFieldValue(field) {
     const fieldValue = member[field];
-    
+
     switch (field) {
-      case 'name':            
+      case 'name':
         return fieldValue ? `<span class="highlight">Name:</span> ${fieldValue}` : 'Name'; // Default placeholder text
       case 'url':
         if (fieldValue) {
@@ -126,88 +127,95 @@ function createMemberBox(member) {
 
 
 function displayMembersForPage(page) {
-    // Function to display members for a specific page
-    const startIndex = (page - 1) * pageSize;
-    const endIndex = Math.min(startIndex + pageSize, totalEntries);
-    const membersToDisplay = data.slice(startIndex, endIndex);
+  // Function to display members for a specific page
+  const startIndex = (page - 1) * pageSize;
+  const endIndex = Math.min(startIndex + pageSize, totalEntries);
+  const membersToDisplay = data.slice(startIndex, endIndex);
 
-    leftMembersContainer.innerHTML = '';
-    rightMembersContainer.innerHTML = '';
+  leftMembersContainer.innerHTML = '';
+  rightMembersContainer.innerHTML = '';
 
-    let leftCount = 0;
-    let rightCount = 0;
+  let leftCount = 0;
+  let rightCount = 0;
 
-    membersToDisplay.forEach((member, index) => {
-      const memberBox = createMemberBox(member);
-      if (leftCount < 5) {
-        leftMembersContainer.appendChild(memberBox);
-        leftCount++;
-      } else if (rightCount < 5) {
-        rightMembersContainer.appendChild(memberBox);
-        rightCount++;
-      }
-    });
-
-    // Add empty placeholder boxes if needed
-    const remainingEmptyBoxes = 10 - membersToDisplay.length;
-    for (let i = 0; i < remainingEmptyBoxes; i++) {
-      const emptyMemberBox = createMemberBox({});
-      if (leftCount < 5) {
-        leftMembersContainer.appendChild(emptyMemberBox);
-        leftCount++;
-      } else if (rightCount < 5) {
-        rightMembersContainer.appendChild(emptyMemberBox);
-        rightCount++;
-      }
+  membersToDisplay.forEach((member, index) => {
+    const memberBox = createMemberBox(member);
+    if (leftCount < 5) {
+      leftMembersContainer.appendChild(memberBox);
+      leftCount++;
+    } else if (rightCount < 5) {
+      rightMembersContainer.appendChild(memberBox);
+      rightCount++;
     }
+  });
+
+  // add empty placeholder boxes 
+  const remainingEmptyBoxes = 10 - membersToDisplay.length;
+  for (let i = 0; i < remainingEmptyBoxes; i++) {
+    const emptyMemberBox = createMemberBox({});
+    if (leftCount < 5) {
+      leftMembersContainer.appendChild(emptyMemberBox);
+      leftCount++;
+    } else if (rightCount < 5) {
+      rightMembersContainer.appendChild(emptyMemberBox);
+      rightCount++;
+    }
+  }
+  updatePageNumbers();
+}
+
+const leftMembersContainer = document.querySelector('.left-page .members-page');
+const rightMembersContainer = document.querySelector('.right-page .members-page');
+
+// displaying the first page
+displayMembersForPage(currentPage);
+
+// nav event listeners
+const totalPages = Math.ceil(totalEntries / pageSize);
+const prevButton = document.getElementById('prevButton');
+const nextButton = document.getElementById('nextButton');
+
+updateButtonVisibility(); // set initial button visibility
+prevButton.addEventListener('click', () => {
+  if (currentPage > 1) {
+    currentPage--;
+    displayMembersForPage(currentPage);
+    updateButtonVisibility();
+    updatePageIndicator();
     updatePageNumbers();
   }
+});
 
-  const leftMembersContainer = document.querySelector('.left-page .members-page');
-  const rightMembersContainer = document.querySelector('.right-page .members-page');
+nextButton.addEventListener('click', () => {
+  if (currentPage < totalPages) {
+    currentPage++;
+    displayMembersForPage(currentPage);
+    updateButtonVisibility();
+    updatePageNumbers();
+    updatePageIndicator();
+  }
+});
 
-  // Initial setup for displaying the first page
-  displayMembersForPage(currentPage);
-  
-  // Navigation event listeners
-  const totalPages = Math.ceil(totalEntries / pageSize);
-  const prevButton = document.getElementById('prevButton');
-  const nextButton = document.getElementById('nextButton');
-  
-  updateButtonVisibility(); // Call this function to set initial button visibility
-  prevButton.addEventListener('click', () => {
-    if (currentPage > 1) {
-      currentPage--;
-      displayMembersForPage(currentPage);
-      updateButtonVisibility();
-      updatePageNumbers();
-    }
-  });
-  
-  nextButton.addEventListener('click', () => {
-    if (currentPage < totalPages) {
-      currentPage++;
-      displayMembersForPage(currentPage);
-      updateButtonVisibility();
-      updatePageNumbers();
-    }
-  });
-  
-  
-  function updateButtonVisibility() {
-    if (currentPage === 1) {
-      prevButton.style.display = 'none';
-    } else {
-      prevButton.style.display = 'block';
-    }
-  
-    if (currentPage === totalPages) {
-      nextButton.style.display = 'none';
-    } else {
-      nextButton.style.display = 'block';
-    }
 
-    // Store the current page in localStorage
-    localStorage.setItem('currentPage', currentPage);
+function updateButtonVisibility() {
+  if (currentPage === 1) {
+    prevButton.style.display = 'none';
+  } else {
+    prevButton.style.display = 'block';
+  }
+
+  if (currentPage === totalPages) {
+    nextButton.style.display = 'none';
+  } else {
+    nextButton.style.display = 'block';
+  }
+
+  function updatePageIndicator() {
+    document.getElementById('pageIndicator').textContent = `Page ${currentPage} of ${totalPages}`;
   }
   
+  updatePageIndicator();
+
+  // Store the current page in localStorage
+  localStorage.setItem('currentPage', currentPage);
+}

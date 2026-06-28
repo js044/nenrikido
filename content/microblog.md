@@ -1,5 +1,8 @@
 ---
 title: "Microblog"
 draft: false
-layout: microblog
+outputs: [html, rss]
+type: page
+layout: "microblog"
 ---
+

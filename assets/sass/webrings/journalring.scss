@@ -51,23 +51,26 @@ body {
 }
 
 ::-webkit-scrollbar {
-	width: 8px;
-	height: 8px;
-	position: fixed;
-	right: 12px;
-	z-index: 1;
-	&-track {
-		box-shadow: 0;
-		border-radius: 0px;
-	}
-	&-thumb {
+  width: 8px;
+  height: 8px;
+  position: fixed;
+  right: 12px;
+  z-index: 1;
+
+  &-track {
+    box-shadow: 0;
+    border-radius: 0px;
+  }
+
+  &-thumb {
     border: 1px solid $linkColor;
-		background:  $highlightColor;
-		border-radius: 0px;
-	}
+    background: $highlightColor;
+    border-radius: 0px;
+  }
 }
+
 .post ::-webkit-scrollbar-track {
-	border-left: 0px solid  $highlightColor;
+  border-left: 0px solid $highlightColor;
 }
 
 
@@ -86,8 +89,8 @@ body {
   justify-content: center;
   background: url('/images/webrings/journalring/hobonichi.png') center / contain no-repeat;
 
-  @media screen and (max-width: 768px) {   
-    transform: rotate(-90deg); 
+  @media screen and (max-width: 768px) {
+    transform: rotate(-90deg);
     transform-origin: left top;
     width: 100vh;
     height: 100vw;
@@ -95,7 +98,7 @@ body {
     position: absolute;
     top: 100%;
     left: 0;
-    
+
   }
 
 
@@ -103,28 +106,29 @@ body {
     margin-top: 3.75%;
     display: flex;
     width: calc(100vh - 3.5vw);
-    height: 65%;  
+    height: 65%;
 
-    @media screen and (max-width: 768px) {   
+    @media screen and (max-width: 768px) {
       width: calc(45vh - 3.5vh);
-      height: 100%;      
+      height: 100%;
     }
+
     @media only screen and (min-device-width : 768px) and (max-device-width : 1180px) {
       font-size: $tabletFontSize;
       margin-top: 6%;
       width: calc(100vh - 8vw);
     }
-  
+
 
     .left-page,
     .right-page {
       flex: 1;
       position: relative;
 
-      @media screen and (max-width: 768px) {   
+      @media screen and (max-width: 768px) {
         font-size: $mobileFontSize;
       }
-    
+
 
       .page-header {
         border: 1px solid;
@@ -156,10 +160,11 @@ body {
         margin: 0 1.5em;
         padding: 0 1em;
         border-left: 1px solid;
-        max-height: 52vh;        
+        max-height: 52vh;
         overflow: auto;
         font-family: $bodyFont;
-        @media screen and (max-width: 768px) {         
+
+        @media screen and (max-width: 768px) {
           max-height: 53vw;
         }
 
@@ -170,12 +175,13 @@ body {
         flex-direction: column;
         gap: 1em;
         font-size: 0.82vw;
-        width: 88%;        
+        width: 88%;
         overflow: auto;
         max-height: 54vh;
         margin-left: 1em;
         font-family: $headerFont;
-        @media screen and (max-width: 768px) {   
+
+        @media screen and (max-width: 768px) {
           font-size: $mobileFontSize;
           max-height: 53vw;
         }
@@ -223,13 +229,15 @@ body {
         background-color: $boxColor;
         border: 1px solid;
         font-size: 0.9vw;
-        @media screen and (max-width: 768px) {   
+
+        @media screen and (max-width: 768px) {
           font-size: $mobileFontSize;
         }
+
         @media only screen and (min-device-width : 768px) and (max-device-width : 1180px) {
           font-size: $tabletFontSize;
         }
-      
+
         ul {
           list-style-type: "\2661";
 
@@ -281,24 +289,24 @@ body {
           }
 
           &.active {
-            transform: translateY(0.75em);            
+            transform: translateY(0.75em);
           }
         }
       }
-
-
     }
-
   }
+}
 
-
+#pageIndicator {
+  font-size: 0.9em;
+  margin: 0.5em;
 }
 
 .navbuttons {
   margin: 0.5em 1.75em 0.5em 1em;
   display: flex;
-  justify-content: flex-end;  
-  
+  justify-content: flex-end;
+
   button {
     cursor: pointer;
     font-family: $headerFont;
@@ -307,8 +315,9 @@ body {
     border: 1px solid;
     padding: 0.3em;
     margin: 0 0.25em;
+
     &:hover {
-        background-color: $highlightColor;
-      }
+      background-color: $highlightColor;
+    }
   }
 }

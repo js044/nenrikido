@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+	<title>NENRIKIDO</title>
+	<link>http://localhost:1313/microblog/</link>
+	<description>이젠 정말 같이 살거나 같이 죽겠구나.</description>
+	<webMaster>rio</webMaster>
+	<generator>@nenrikido</generator>
+	<image>
+		<url>/images/microblog/754447.jpg</url>
+		<link>http://localhost:1313/</link>
+	</image>
+
+</channel>
+</rss>

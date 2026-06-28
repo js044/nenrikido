@@ -35,11 +35,6 @@ Which theme is your favorite?
 <div id="aList"> <p style="text-decoration:underline;"> <i class="fa-solid fa-music"></i> PLAYLIST</p></div>
 {{< /card-medium >}}
 
-{{< card-medium title="#COUNTERS" >}} 
-<p align="center"> all visits: <script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=38931944&main=1"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=38931944&main=1" /></noscript> </p>
-<p align="center"> current viewers: <script language="javascript" type="text/javascript" src="//counter1.fc2.com/views.php?id=38931944&main=1"></script><noscript><img src="//counter1.fc2.com/counter_now.php?id=38931944&main=1" /></noscript> </p>
-{{< /card-medium >}}
-
 {{< card-medium title="#MICROBLOG" >}} 
 <div id="microblog_recent"></div>
 {{< /card-medium >}}
@@ -85,10 +80,9 @@ Read the rest of the blog [here](/blog).
 
 {{< card-medium title="#TO-DO" >}} 
 {{< scrollbox >}}
-*   ~~microblog pagination~~ ![](images/pixels/new.gif)
-*   ~~retool library~~ ![](images/pixels/new.gif)
 *   open commissions
-*   fix microblog
+*   ~~fix microblog~~ ![](images/pixels/new.gif)
+*   ~~fix journalring pagination~~ ![](images/pixels/new.gif)
 *   new nexus pages
 *   y2k f2u layout
 {{< /scrollbox >}}

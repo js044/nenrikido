@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-US">
     
-    <title>Making a Webring: The Creation of JournalRing</title>
+    <script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><title>Making a Webring: The Creation of JournalRing</title>
     <meta charset="utf-8">
     <meta name="description"
         content="A special world." />
-    <meta name="dc.relation" content="https://nenrikido.neocities.org/" />
+    <meta name="dc.relation" content="http://localhost:1313/" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='icon' type='image/x-icon' href='../../../images/icons/pink-favicon.svg' /> 
 
     
-    <link href="../../../css/main.min.e82017acf1d47837e34aeae7160cbd8cee87ccf07777ebc9e2e85745f526f166.css" rel="stylesheet">
+    <link href="../../../css/main.min.85373aee37bbb692d84d21101db10b9e3f4253491852c5ccfe2ba48b5bebdee1.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
     <script defer src="https://cloud.umami.is/script.js" data-website-id="fab6651d-7739-4c92-8ab8-01b6b670711b"></script>
@@ -26,14 +26,14 @@
             <p><i class="fa-solid fa-hashtag"></i> <a href="#comments"> Comments </a></p>
         </div><div class="arrows">
       
-            <a href="https://nenrikido.neocities.org/blog/post/mega-site-update/"> <i class="fas fa-long-arrow-alt-left"> </i></a>
+            <a href="http://localhost:1313/blog/post/mega-site-update/"> <i class="fas fa-long-arrow-alt-left"> </i></a>
             
             
                 <a href="../../../blog/"><i class="fas fa-home"> 
                 </i></a>
             
             
-            <a href="https://nenrikido.neocities.org/blog/post/deploy-site/"> <i class="fas fa-long-arrow-alt-right"> </i></a>
+            <a href="http://localhost:1313/blog/post/deploy-site/"> <i class="fas fa-long-arrow-alt-right"> </i></a>
             
         </div>
 
@@ -88,7 +88,7 @@
     
     
 <a href="../../../images/blog/011324/journalring.gif" data-lightbox="journalring">
-<img src="../../../images/blog/011324/journalring_hu629ad5c2ccc8af768e16d480c7543115_3460737_0x420_resize_box_1.gif" class="img-fluid" loading="" alt="">
+<img src="../../../images/blog/011324/journalring_hu_b8ee83a748a76c40.gif" class="img-fluid" loading="" alt="">
 </a>
     
   
@@ -119,7 +119,6 @@
 </ol>
 <p>This resulted in <a href="https://gist.github.com/js044/893901d8a723bc43a938b7abd136ce9e">nenring</a> (embedded below), which consists of two JS files &ndash; one to create the webring widget and store the membership information (nenring-config.js), and one to display the webring&rsquo;s information (nenring-admin.js). In other words, one is for webring members, and one is for the admin. The admin will have to host both scripts, but only one of them is something webring members will reference within their take-home code. These files are blank, but I haven&rsquo;t tested out these blank config files myself. If you want to see how I&rsquo;ve actually implemented my JS, the notable files are in <a href="https://github.com/js044/nenrikido/tree/main/static/js/misc">this folder</a>.</p>
 <script src="https://gist.github.com/js044/893901d8a723bc43a938b7abd136ce9e.js"></script>
-
 <p>As for how it actually works: A person signs up for my webring with a form. I am emailed when this happens so I can respond quickly. After checking their application and approving them, I add their information to the config.js file. I push this update, which then makes it so the widget will show up on their site. Then, I email them to inform them they&rsquo;re approved. The admin.js file automatically adds their entry to my &ldquo;Members&rdquo; list and updates the Member count. If they ever delete their site, the console log will notify me so they can be removed.</p>
 <p>I&rsquo;ve written a bit about <a href="../../../post/web-components/">web components</a> in the past. Even though I ended up ditching my web components in favor of a static site generator after all, I still really enjoyed the idea of using web components for something like this. It just felt right&ndash;semantic, simple, easy to implement. The take-home code starts with some variation of <code>&lt;journal-ring icon=&quot;COLOR&quot;&gt;&lt;/journal-ring&gt;</code> and then includes a link to the script. It does not get cleaner, in my opinion!</p>
 <p>A few things to note:</p>
@@ -170,7 +169,7 @@
     
     
 <a href="../../../images/blog/011324/ls.png" data-lightbox="journalring">
-<img src="../../../images/blog/011324/ls_hu3a472033d981be1949bdadf9f2ac29ce_129050_0x420_resize_q75_h2_box_3.webp" class="img-fluid" loading="" alt="JournalRing widget in Libresprite.">
+<img src="../../../images/blog/011324/ls_hu_d89ac571668b2737.webp" class="img-fluid" loading="" alt="JournalRing widget in Libresprite.">
 </a>
     
   
@@ -225,7 +224,7 @@
     
     
 <a href="../../../images/blog/011324/home.png" data-lightbox="journalring">
-<img src="../../../images/blog/011324/home_hu9ea625bd85c5d9614ace352303a1b94c_1285875_0x420_resize_q75_h2_box_3.webp" class="img-fluid" loading="" alt="JournalRing homepage.">
+<img src="../../../images/blog/011324/home_hu_5075af5eddefabca.webp" class="img-fluid" loading="" alt="JournalRing homepage.">
 </a>
     
   
@@ -287,7 +286,7 @@
 
                 <ul style="font-style: italic;">
                     <li>OS: Nenrikido</li>
-                    <li>Version: 1.75</li>
+                    <li>Version: 1.8</li>
                     <li>Host: Neocities</li>
                     <li>Processor: Hugo</li>
                     <li>Since: 03-13-23</li>

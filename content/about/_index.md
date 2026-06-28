@@ -43,23 +43,16 @@ I made this site both to host my creative projects and also to function as its o
 {{< box-small title="ANIME & MANGA" >}}
 
 *SERIES*  
-{{< icons/heart >}} Sailor Moon  
-{{< icons/heart >}} Azumanga Daioh  
-{{< icons/heart >}} Lucky Star  
-{{< icons/heart >}} Serial Experiments Lain  
-{{< icons/heart >}} Revolutionary Girl Utena  
-{{< icons/heart >}} Yu Yu Hakusho  
 {{< icons/heart >}} Mob Psycho 100  
-{{< icons/heart >}} One Punch Man  
-{{< icons/heart >}} Tokyo Ghoul  
+{{< icons/heart >}} The Summer Hikaru Died   
+{{< icons/heart >}} Witch Hat Atelier   
+{{< icons/heart >}} Sailor Moon  
+{{< icons/heart >}} Yu Yu Hakusho  
 
 *MOVIES*  
-{{< icons/heart >}} Perfect Blue  
 {{< icons/heart >}} Akira  
-{{< icons/heart >}} Angel's Egg  
-{{< icons/heart >}} Spirited Away  
-{{< icons/heart >}} Princess Mononoke    
-{{< icons/heart >}} Ghost in the Shell  
+{{< icons/heart >}} Angel's Egg   
+{{< icons/heart >}} Unico in the Island of Magic   
 
 {{< /box-small >}} 
 
@@ -72,19 +65,18 @@ I made this site both to host my creative projects and also to function as its o
 {{< icons/star >}} The Cat Lady  
 {{< icons/star >}} Forest of Drizzling Rain  
 {{< icons/star >}} Angels of Death  
-{{< icons/star >}} The Path  
 
 *RPGS*  
 {{< icons/star >}} Tomba! 2  
 {{< icons/star >}} Stardew Valley  
 {{< icons/star >}} Animal Crossing  
-{{< icons/star >}} Pokemon  
 
 {{< /box-small >}}  
  
 {{< box-small title="BOOKS:" >}} 
 Check out the [library](/library) for more!
 
+{{< icons/moon >}} We Have Always Lived in the Castle - Shirley Jackson  
 {{< icons/moon >}} The Vegetarian - Han Kang  
 {{< icons/moon >}} Fingersmith - Sarah Waters    
 {{< icons/moon >}} The Hour of the Star - Clarice Lispector  
@@ -98,15 +90,15 @@ Check out the [library](/library) for more!
 
 {{< box-small title="HOBBIES:" >}} 
 {{< icons/rainbow >}} Front end web development  
+{{< icons/rainbow >}} Self-hosting  
 {{< icons/rainbow >}} Digital illustration  
-{{< icons/rainbow >}} Resin art  
-{{< icons/rainbow >}} Polymer clay art  
+{{< icons/rainbow >}} Resin & polymer clay art  
 {{< icons/rainbow >}} Fishkeeping  
 {{< icons/rainbow >}} Knitting  & crochet  
 {{< icons/rainbow >}} Cooking  
 {{< icons/rainbow >}} Fountain pens  & stationery  
 {{< icons/rainbow >}} 3D printing & digfab  
-{{< icons/rainbow >}} Writing    
+{{< icons/rainbow >}} Writing   
 {{< /box-small >}} 
 
 {{< box-small title="MUSIC:" >}} 
@@ -117,7 +109,6 @@ Check out the [library](/library) for more!
 
 *JAPANESE*  
 {{< icons/music >}} Soutaiseiriron (相対性理論)  
-{{< icons/music >}} DAOKO (だをこ)  
 {{< icons/music >}} TK from 凛として時雨  
 {{< icons/music >}} Moe and Ghosts  
 
@@ -128,11 +119,10 @@ Check out the [library](/library) for more!
 {{< /box-small >}}
 
 {{< box-small title="SHOWS:" >}} 
-{{< icons/sun >}} Mr. Robot  
 {{< icons/sun >}} Hannibal  
 {{< icons/sun >}} Killing Eve  
-{{< icons/sun >}} House MD  
-{{< icons/sun >}} Grey's Anatomy :(  
+{{< icons/sun >}} The L Word  
+{{< icons/sun >}} Mr. Robot  
 {{< /box-small >}} 
 
 {{< box-small title="MOVIES:" >}} 

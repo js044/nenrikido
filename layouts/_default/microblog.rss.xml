@@ -1,0 +1,22 @@
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\"?>" | safeHTML }}
+<rss version="2.0">
+<channel>
+  <title>{{ .Site.Params.microblogAuthor | htmlEscape }}</title>
+  <description>{{ .Site.Params.microblogDescription | htmlEscape }}</description>
+  <link>{{ .Site.Params.microblogBaseURL }}</link>
+  <webMaster>{{ .Site.Params.microblogAuthor | htmlEscape }}</webMaster>
+  <generator>{{ .Site.Params.microblogUsername | htmlEscape }}</generator>
+  <image>
+    <url>{{ .Site.Params.microblogIcon }}</url>
+    <link>{{ .Site.Params.microblogBaseURL }}</link>
+  </image>
+  {{ range .Site.Data.microblog.posts }}
+  <item>
+    <guid>{{ .guid }}</guid>
+    <title>{{ .title | safeHTML }}</title>
+    <pubDate>{{ .date | time.Format "Mon, 02 Jan 2006 15:04:05 GMT" }}</pubDate>
+    <description>{{ printf "<![CDATA[" | safeHTML }}{{ with .images }}{{ range . }}<img src="{{ . }}" loading="lazy" /> {{ end }}{{ end }}{{ .html | default "" | safeHTML }}{{ printf "]]>" | safeHTML }}</description>
+  </item>
+  {{ end }}
+</channel>
+</rss>

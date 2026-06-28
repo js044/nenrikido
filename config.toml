@@ -9,21 +9,29 @@ date = [ "date", "publishDate", "lastmod" ]
 lastmod = [ "lastmod", ":fileModTime", ":default" ]
 sectionPagesMenu = "main"
 
-  [build]
-    writeStats = true
-  [build.processing.css]
-  enable = true
-  filetype = "scss"
+[build]
+writeStats = true
+
+[build.processing.css]
+enable = true
+filetype = "scss"
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
-  page = ["HTML"]
+home = [ "HTML", "RSS", "JSON" ]
+page = [ "HTML" ]
 
 [markup.goldmark.renderer]
 unsafe = true
 
+[params]
+microblogAuthor = "rio"
+microblogUsername = "@nenrikido"
+microblogIcon = "/images/microblog/754447.jpg"
+microblogDescription = "이젠 정말 같이 살거나 같이 죽겠구나."
+microblogBaseURL = "https://nenrikido.neocities.org/microblog"
+
 [permalinks]
-blog = "/blog/post/:filename/"
+blog = "/blog/post/:contentbasename/"
 
 [[menu.main]]
 name = "Home"

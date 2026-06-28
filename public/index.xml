@@ -1,470 +1,214 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0">
-    <channel>
-        <title>NENRIKIDO</title>
-        <description></description>
-        <link>https://nenrikido.neocities.org/</link>
-       <atom:link href="https://nenrikido.neocities.org/" rel="self" type="application/rss+xml" xmlns:atom="http://www.w3.org/2005/Atom" />
-        
-            <item>
-               <title>new blog post and a journalring update.</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20250611000000
-                </guid>
-                <description>new blog post and a journalring update.</description>
-                <pubDate>Wed, 11 Jun 2025 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>pretty big journalring update despite my flu. please clap!</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20250313000000
-                </guid>
-                <description>pretty big journalring update despite my flu. please clap!</description>
-                <pubDate>Thu, 13 Mar 2025 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>new blog post, added a few things to the library, and a journalring update</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20250120000000
-                </guid>
-                <description>new blog post, added a few things to the library, and a journalring update</description>
-                <pubDate>Mon, 20 Jan 2025 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>retooled the library! it&#39;s a christmas miracle! also fixed what i broke last time i tried to fix this RSS feed. added umami analytics, too. aaand i updated the webring.</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20241226000000
-                </guid>
-                <description>retooled the library! it&amp;#39;s a christmas miracle! also fixed what i broke last time i tried to fix this RSS feed. added umami analytics, too. aaand i updated the webring.</description>
-                <pubDate>Thu, 26 Dec 2024 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>fixed the RSS feed (hopefully), tweaked microblog code, updated webring</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20240914000000
-                </guid>
-                <description>fixed the RSS feed (hopefully), tweaked microblog code, updated webring</description>
-                <pubDate>Sat, 14 Sep 2024 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>new(ish) tumblr theme and some behind the scenes image optimization/management.</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20240603000000
-                </guid>
-                <description>new(ish) tumblr theme and some behind the scenes image optimization/management.</description>
-                <pubDate>Mon, 03 Jun 2024 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>new blog post and some light about page edits.</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20240515000000
-                </guid>
-                <description>new blog post and some light about page edits.</description>
-                <pubDate>Wed, 15 May 2024 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>added a lightbox to the microblog and sooyoung&#39;d it, fixed the twemoji issues, etc.</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20240328000000
-                </guid>
-                <description>added a lightbox to the microblog and sooyoung&amp;#39;d it, fixed the twemoji issues, etc.</description>
-                <pubDate>Thu, 28 Mar 2024 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>joined a neopets weblisting and updated the webring again. 32 members strong!</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20240223000000
-                </guid>
-                <description>joined a neopets weblisting and updated the webring again. 32 members strong!</description>
-                <pubDate>Fri, 23 Feb 2024 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>cleaned up the button wall/outbound links section a bit, nothing major.</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20240206000000
-                </guid>
-                <description>cleaned up the button wall/outbound links section a bit, nothing major.</description>
-                <pubDate>Tue, 06 Feb 2024 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>small changes. updated my hugo assets pipeline and fixed a clock error, added the neocreatives webring, reformatted my updates section.</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20240117000000
-                </guid>
-                <description>small changes. updated my hugo assets pipeline and fixed a clock error, added the neocreatives webring, reformatted my updates section.</description>
-                <pubDate>Wed, 17 Jan 2024 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>new blog post about how to make a webring</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20240114000000
-                </guid>
-                <description>new blog post about how to make a &amp;lt;a href=&amp;#39;https://nenrikido.neocities.org/blog/post/journalring/&amp;#39;&amp;gt;webring&amp;lt;/a&amp;gt;</description>
-                <pubDate>Sun, 14 Jan 2024 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>added some favicon switching functionality to my theme and revamped the index.xml file quite a bit!</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20240109000000
-                </guid>
-                <description>added some favicon switching functionality to my theme and revamped the index.xml file quite a bit!</description>
-                <pubDate>Tue, 09 Jan 2024 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>surprise!! i made a webring. hopefully it&#39;s not broken. blog post upcoming! happy new year!!</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20240102000000
-                </guid>
-                <description>surprise!! i made a &amp;lt;a href=&amp;#39;https://nenrikido.neocities.org/webrings/journalring&amp;#39;&amp;gt;webring&amp;lt;/a&amp;gt;. hopefully it&amp;#39;s not broken. blog post upcoming! happy new year!!</description>
-                <pubDate>Tue, 02 Jan 2024 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>new theme, thanks mima! there&#39;s also a new poll to go along with it, the last was capped at 400 votes...</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20231223000000
-                </guid>
-                <description>new theme, thanks mima! there&amp;#39;s also a new poll to go along with it, the last was capped at 400 votes...</description>
-                <pubDate>Sat, 23 Dec 2023 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>too many to list!! check out the blog!!</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20231211000000
-                </guid>
-                <description>too many to list!! check out the blog!!</description>
-                <pubDate>Mon, 11 Dec 2023 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>new blog post and a theme poll.</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20230702000000
-                </guid>
-                <description>new blog post and a theme poll.</description>
-                <pubDate>Sun, 02 Jul 2023 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>added a few new fanlistings...most are still pending but wooo</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20230621000000
-                </guid>
-                <description>added a few new fanlistings...most are still pending but wooo</description>
-                <pubDate>Wed, 21 Jun 2023 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>changed up a lot of CSS (ctrl &#43; f5 if anything is weird), tweaked a few scripts, made a new blog post, joined the surf club webring and added the widget, separated fanlistings, etc.</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20230617000000
-                </guid>
-                <description>changed up a lot of CSS (ctrl &#43; f5 if anything is weird), tweaked a few scripts, made a new blog post, joined the surf club webring and added the widget, separated fanlistings, etc.</description>
-                <pubDate>Sat, 17 Jun 2023 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>made a style guide after i saw 10kph do it. also added a few buttons to the links page.</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20230610000000
-                </guid>
-                <description>made a &amp;lt;a href=&amp;#39;https://nenrikido.neocities.org/about/styleguide&amp;#39;&amp;gt;style guide&amp;lt;/a&amp;gt; after i saw &amp;lt;a href=&amp;#39;https://10kph.neocities.org/&amp;#39;&amp;gt;10kph&amp;lt;/a&amp;gt; do it. also added a few buttons to the &amp;lt;a href=&amp;#39;https://nenrikido.neocities.org/links&amp;#39;&amp;gt;links&amp;lt;/a&amp;gt; page.</description>
-                <pubDate>Sat, 10 Jun 2023 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>happy pride! made a theme to celebrate. updated a few pages and messed w/ some site css also.</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20230609000000
-                </guid>
-                <description>happy pride! made a &amp;lt;a href=&amp;#39;https://nenrikido.neocities.org/code/preview/rainbow&amp;#39;&amp;gt;theme&amp;lt;/a&amp;gt; to celebrate. updated a few pages and messed w/ some site css also.</description>
-                <pubDate>Fri, 09 Jun 2023 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>no more bootstrap! new sitemap! new start menu! new blog post!</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20230528000000
-                </guid>
-                <description>no more bootstrap! new &amp;lt;a href=&amp;#39;https://nenrikido.neocities.org/sitemap&amp;#39;&amp;gt;sitemap&amp;lt;/a&amp;gt;! new start menu! new &amp;lt;a href=&amp;#39;https://nenrikido.neocities.org/blog&amp;#39;&amp;gt;blog&amp;lt;/a&amp;gt; post!</description>
-                <pubDate>Sun, 28 May 2023 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>new blog post &amp; now there&#39;s a microblog feed on the index page. thank you hors</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20230521000000
-                </guid>
-                <description>new &amp;lt;a href=&amp;#39;https://nenrikido.neocities.org/blog&amp;#39;&amp;gt;blog&amp;lt;/a&amp;gt; post &amp;amp; now there&amp;#39;s a microblog feed on the index page. thank you hors</description>
-                <pubDate>Sun, 21 May 2023 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>lots &amp; lots of changes, some big and some small. there&#39;s also a new page theme up! and now there are theme previews!</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20230506000000
-                </guid>
-                <description>lots &amp;amp; lots of changes, some big and some small. there&amp;#39;s also a new page theme up! and now there are theme previews!</description>
-                <pubDate>Sat, 06 May 2023 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>new page theme is up on the code page! i think it&#39;s cute.</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20230501000000
-                </guid>
-                <description>new page theme is up on the &amp;lt;a href=&amp;#39;https://nenrikido.neocities.org/code&amp;#39;&amp;gt;code&amp;lt;/a&amp;gt; page! i think it&amp;#39;s cute.</description>
-                <pubDate>Mon, 01 May 2023 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>site&#39;s finally up on github and there&#39;s a microblog now! elon could never</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20230421000000
-                </guid>
-                <description>site&amp;#39;s finally up on &amp;lt;a href=&amp;#39;https://github.com/js044/nenrikido&amp;#39;&amp;gt;github&amp;lt;/a&amp;gt; and there&amp;#39;s a &amp;lt;a href=&amp;#39;https://nenrikido.neocities.org/microblog&amp;#39;&amp;gt;microblog&amp;lt;/a&amp;gt; now! elon could never</description>
-                <pubDate>Fri, 21 Apr 2023 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>added a tamanotchi and a lunar tracker to the home page &amp; added a weblisting, added some sites to the button wall</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20230420000000
-                </guid>
-                <description>added a tamanotchi and a lunar tracker to the home page &amp;amp; added a weblisting, added some sites to the button wall</description>
-                <pubDate>Thu, 20 Apr 2023 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>added two new webrings!</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20230419000000
-                </guid>
-                <description>added two new webrings!</description>
-                <pubDate>Wed, 19 Apr 2023 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>there is now a digital library and an actual shrines page! also some font changes. check today&#39;s blog post for details.</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20230418000000
-                </guid>
-                <description>there is now a digital &amp;lt;a href=&amp;#39;https://nenrikido.neocities.org/library&amp;#39;&amp;gt;library&amp;lt;/a&amp;gt; and an actual &amp;lt;a href=&amp;#39;https://nenrikido.neocities.org/shrines&amp;#39;&amp;gt;shrines&amp;lt;/a&amp;gt; page! also some font changes. check today&amp;#39;s &amp;lt;a href=&amp;#39;https://nenrikido.neocities.org/blog&amp;#39;&amp;gt;blog&amp;lt;/a&amp;gt; post for details.</description>
-                <pubDate>Tue, 18 Apr 2023 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>debugged the theme even more and fixed the gallery filter! also new blog post.</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20230411000000
-                </guid>
-                <description>debugged the theme even more and fixed the gallery filter! also new blog post.</description>
-                <pubDate>Tue, 11 Apr 2023 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>debugged the theme some. shouldn&#39;t be irregular gaps anymore!</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20230408000000
-                </guid>
-                <description>debugged the theme some. shouldn&amp;#39;t be irregular gaps anymore!</description>
-                <pubDate>Sat, 08 Apr 2023 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>(shaking the table) cole shrine?!</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20230407000000
-                </guid>
-                <description>(shaking the table) &amp;lt;a href=&amp;#39;https://nenrikido.neocities.org/nexus/cole&amp;#39;&amp;gt;cole shrine&amp;lt;/a&amp;gt;?!</description>
-                <pubDate>Fri, 07 Apr 2023 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>more optimization...theme should be speedier?! working out some bugs still.</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20230406000000
-                </guid>
-                <description>more optimization...theme should be speedier?! working out some bugs still.</description>
-                <pubDate>Thu, 06 Apr 2023 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>optimized the site quite a bit, debugged mobile displays, and posted a tutorial about preloaders. u can read more on the blog</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20230405000000
-                </guid>
-                <description>optimized the site quite a bit, debugged mobile displays, and posted a tutorial about preloaders. u can read more on the &amp;lt;a href=&amp;#39;https://nenrikido.neocities.org/blog&amp;#39;&amp;gt;blog&amp;lt;/a&amp;gt;</description>
-                <pubDate>Wed, 05 Apr 2023 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>so many...check blog for details. TLDR rebuilt the site w hugo &amp; changed up the layout.</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20230404000000
-                </guid>
-                <description>so many...check &amp;lt;a href=&amp;#39;https://nenrikido.neocities.org/blog&amp;#39;&amp;gt;blog&amp;lt;/a&amp;gt; for details. TLDR rebuilt the site w hugo &amp;amp; changed up the layout.</description>
-                <pubDate>Tue, 04 Apr 2023 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>rolled back windows bc it was buggy. will fix when i have time</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20230331000000
-                </guid>
-                <description>rolled back windows bc it was buggy. will fix when i have time</description>
-                <pubDate>Fri, 31 Mar 2023 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>index page windows are draggable now! thinking about perhaps setting this site up on an SSG soon and documenting the process...</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20230330000000
-                </guid>
-                <description>index page windows are draggable now! thinking about perhaps setting this site up on an SSG soon and documenting the process...</description>
-                <pubDate>Thu, 30 Mar 2023 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>added a few things to the code page, posted a new tutorial blog post, and added some credits</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20230328000000
-                </guid>
-                <description>added a few things to the &amp;lt;a href=&amp;#39;https://nenrikido.neocities.org/code&amp;#39;&amp;gt;code&amp;lt;/a&amp;gt; page, posted a new tutorial &amp;lt;a href=&amp;#39;https://nenrikido.neocities.org/blog&amp;#39;&amp;gt;blog&amp;lt;/a&amp;gt; post, and added some credits</description>
-                <pubDate>Tue, 28 Mar 2023 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>new blog post</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20230327000000
-                </guid>
-                <description>new &amp;lt;a href=&amp;#39;https://nenrikido.neocities.org/blog&amp;#39;&amp;gt;blog&amp;lt;/a&amp;gt; post</description>
-                <pubDate>Mon, 27 Mar 2023 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>made an RSS feed &amp; switched around some homepage windows. yayy</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20230325000000
-                </guid>
-                <description>made an &amp;lt;a href=&amp;#39;https://nenrikido.neocities.org/index.xml&amp;#39;&amp;gt;RSS feed&amp;lt;/a&amp;gt; &amp;amp; switched around some homepage windows. yayy</description>
-                <pubDate>Sat, 25 Mar 2023 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>new blog post &amp; added a webring to my links page! if anything looks weird, it&#39;s probably a cache issue—sorry about that.</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20230323000000
-                </guid>
-                <description>new &amp;lt;a href=&amp;#39;https://nenrikido.neocities.org/blog&amp;#39;&amp;gt;blog&amp;lt;/a&amp;gt; post &amp;amp; added a webring to my &amp;lt;a href=&amp;#39;https://nenrikido.neocities.org/links&amp;#39;&amp;gt;links&amp;lt;/a&amp;gt; page! if anything looks weird, it&amp;#39;s probably a cache issue—sorry about that.</description>
-                <pubDate>Thu, 23 Mar 2023 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>swapped some pixels, debugged mobile displays, general housekeeping, etc.</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20230321000000
-                </guid>
-                <description>swapped some pixels, debugged mobile displays, general housekeeping, etc.</description>
-                <pubDate>Tue, 21 Mar 2023 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>working on web components to reduce some HTML clutter 😵‍💫 1.2k lines of code deleted so far...</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20230320000000
-                </guid>
-                <description>working on &amp;lt;a href=&amp;#39;https://www.freecodecamp.org/news/reusable-html-components-how-to-reuse-a-header-and-footer-on-a-website/&amp;#39;&amp;gt;web components&amp;lt;/a&amp;gt; to reduce some HTML clutter 😵‍💫 1.2k lines of code deleted so far...</description>
-                <pubDate>Mon, 20 Mar 2023 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>the gallery is up now! AND the blog! it even has a post! wow!</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20230317000000
-                </guid>
-                <description>the &amp;lt;a href=&amp;#39;https://nenrikido.neocities.org/gallery&amp;#39;&amp;gt;gallery&amp;lt;/a&amp;gt; is up now! AND the &amp;lt;a href=&amp;#39;https://nenrikido.neocities.org/blog&amp;#39;&amp;gt;blog&amp;lt;/a&amp;gt;! it even has a post! wow!</description>
-                <pubDate>Fri, 17 Mar 2023 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>added a links page &amp; an about page, made a button, etc.</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20230316000000
-                </guid>
-                <description>added a &amp;lt;a href=&amp;#39;https://nenrikido.neocities.org/links&amp;#39;&amp;gt;links page&amp;lt;/a&amp;gt; &amp;amp; an  &amp;lt;a href=&amp;#39;https://nenrikido.neocities.org/about&amp;#39;&amp;gt;about page&amp;lt;/a&amp;gt;, made a button, etc.</description>
-                <pubDate>Thu, 16 Mar 2023 00:00:00 GMT</pubDate>
-            </item>
-        
-            <item>
-               <title>it&#39;s alive!</title>
-                <link>https://nenrikido.neocities.org/</link>
-                <guid isPermaLink="false">
-                https://nenrikido.neocities.org/20230313000000
-                </guid>
-                <description>it&amp;#39;s alive!</description>
-                <pubDate>Mon, 13 Mar 2023 00:00:00 GMT</pubDate>
-            </item>
-        
-    </channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NENRIKIDO</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on NENRIKIDO</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Two Years of Nenrikido</title>
+      <link>http://localhost:1313/blog/post/two-years-of-nenrikido/</link>
+      <pubDate>Thu, 13 Mar 2025 02:06:29 -0400</pubDate>
+      <guid>http://localhost:1313/blog/post/two-years-of-nenrikido/</guid>
+      <description>Time flies, doesn&amp;rsquo;t it?</description>
+    </item>
+    <item>
+      <title>Homarr and Other Self-hosted Dashboards</title>
+      <link>http://localhost:1313/blog/post/homarr/</link>
+      <pubDate>Mon, 20 Jan 2025 02:13:06 -0500</pubDate>
+      <guid>http://localhost:1313/blog/post/homarr/</guid>
+      <description>My Homarr customizations and CSS.</description>
+    </item>
+    <item>
+      <title>Deploying Your Site to Neocities</title>
+      <link>http://localhost:1313/blog/post/deploy-site/</link>
+      <pubDate>Wed, 15 May 2024 01:05:42 -0400</pubDate>
+      <guid>http://localhost:1313/blog/post/deploy-site/</guid>
+      <description>Two main ways to upload your site to Neocities without relying on the native GUI.</description>
+    </item>
+    <item>
+      <title>Making a Webring: The Creation of JournalRing</title>
+      <link>http://localhost:1313/blog/post/journalring/</link>
+      <pubDate>Sat, 13 Jan 2024 20:02:44 -0400</pubDate>
+      <guid>http://localhost:1313/blog/post/journalring/</guid>
+      <description>I made a webring and so can you! Tips, tricks, and mistakes.</description>
+    </item>
+    <item>
+      <title>JournalRing</title>
+      <link>http://localhost:1313/webrings/journalring/</link>
+      <pubDate>Mon, 01 Jan 2024 03:51:21 -0600</pubDate>
+      <guid>http://localhost:1313/webrings/journalring/</guid>
+      <description>A webring for people who like to journal.</description>
+    </item>
+    <item>
+      <title>Mega Site Update</title>
+      <link>http://localhost:1313/blog/post/mega-site-update/</link>
+      <pubDate>Sun, 10 Dec 2023 20:14:19 -0400</pubDate>
+      <guid>http://localhost:1313/blog/post/mega-site-update/</guid>
+      <description>Brand new fonts, search finally works, new blog tag filter, site got SASS&amp;rsquo;ed, microblog bug is squashed, and more!</description>
+    </item>
+    <item>
+      <title>Firefox Tree Tabs Tu(tour)ial</title>
+      <link>http://localhost:1313/blog/post/firefox-tutourial/</link>
+      <pubDate>Sun, 02 Jul 2023 00:34:17 -0600</pubDate>
+      <guid>http://localhost:1313/blog/post/firefox-tutourial/</guid>
+      <description>Welcome to my crib, Mozilla Firefox edition. With instructions on how to recreate it!</description>
+    </item>
+    <item>
+      <title>Yard Sale</title>
+      <link>http://localhost:1313/blog/post/yard-sale/</link>
+      <pubDate>Sat, 17 Jun 2023 21:24:01 -0600</pubDate>
+      <guid>http://localhost:1313/blog/post/yard-sale/</guid>
+      <description>A diary entry. Featuring Hot Topic fashion and a sandwich.</description>
+    </item>
+    <item>
+      <title>Bye-bye Bootstrap</title>
+      <link>http://localhost:1313/blog/post/bye-bye-bootstrap/</link>
+      <pubDate>Sun, 28 May 2023 18:42:10 -0600</pubDate>
+      <guid>http://localhost:1313/blog/post/bye-bye-bootstrap/</guid>
+      <description>Bootstrap gets the boot, my hair gets a trim, and the site gets a map.</description>
+    </item>
+    <item>
+      <title>2 months later: A Neocities Reflection</title>
+      <link>http://localhost:1313/blog/post/neocities-reflection/</link>
+      <pubDate>Sun, 21 May 2023 21:50:10 -0600</pubDate>
+      <guid>http://localhost:1313/blog/post/neocities-reflection/</guid>
+      <description>Some observations about the community aspect of Neocities and online communities in general.</description>
+    </item>
+    <item>
+      <title>Site Updates</title>
+      <link>http://localhost:1313/blog/post/site-updates-3/</link>
+      <pubDate>Tue, 18 Apr 2023 02:29:14 -0600</pubDate>
+      <guid>http://localhost:1313/blog/post/site-updates-3/</guid>
+      <description>new library with 61 current entries! (and a shrines page!)</description>
+    </item>
+    <item>
+      <title>Cole (small and kittified)</title>
+      <link>http://localhost:1313/nexus/cole/</link>
+      <pubDate>Fri, 07 Apr 2023 03:01:53 -0600</pubDate>
+      <guid>http://localhost:1313/nexus/cole/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Making a Preloader</title>
+      <link>http://localhost:1313/blog/post/making-a-preloader/</link>
+      <pubDate>Wed, 05 Apr 2023 01:38:00 -0600</pubDate>
+      <guid>http://localhost:1313/blog/post/making-a-preloader/</guid>
+      <description>How to make a simple full-page loading screen for your site.</description>
+    </item>
+    <item>
+      <title>Site Updates ...Continued!</title>
+      <link>http://localhost:1313/blog/post/site-updates-2/</link>
+      <pubDate>Tue, 04 Apr 2023 20:41:23 -0600</pubDate>
+      <guid>http://localhost:1313/blog/post/site-updates-2/</guid>
+      <description>is the site running any faster? it should be running faster.</description>
+    </item>
+    <item>
+      <title>Site Overhaul</title>
+      <link>http://localhost:1313/blog/post/site-overhaul/</link>
+      <pubDate>Tue, 04 Apr 2023 02:28:14 -0600</pubDate>
+      <guid>http://localhost:1313/blog/post/site-overhaul/</guid>
+      <description>lots and lots and lots of new things.</description>
+    </item>
+    <item>
+      <title>Reusable HTML Snippets: Web Components</title>
+      <link>http://localhost:1313/blog/post/web-components/</link>
+      <pubDate>Tue, 28 Mar 2023 02:32:33 -0600</pubDate>
+      <guid>http://localhost:1313/blog/post/web-components/</guid>
+      <description>A small tutorial on using Javascript to reuse HTML snippets.</description>
+    </item>
+    <item>
+      <title>Commissions</title>
+      <link>http://localhost:1313/commissions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/commissions/</guid>
+      <description>&lt;nav id=&#34;navAlt&#34;&gt;&#xD;&#xA; &lt;div class=&#34;navWrapper&#34;&gt;  &#xD;&#xA;    &lt;a class=&#34;navLink&#34; href=&#34;#&#34;&gt;&lt;div id=&#34;commissions&#34;&gt; &lt;/div&gt; COMMISSIONS&lt;/a&gt;&#xD;&#xA;    &lt;p&gt; &lt;i class=&#34;fa-regular fa-circle-down&#34;&gt;&lt;/i&gt;&lt;/p&gt;&#xD;&#xA;    &lt;p&gt; &lt;i class=&#34;fa-solid fa-hashtag&#34;&gt;&lt;/i&gt; &lt;a href=&#34;#status&#34;&gt;status&lt;/a&gt;&lt;br&gt;&#xA;&lt;i class=&#34;fa-solid fa-hashtag&#34;&gt;&lt;/i&gt; &lt;a href=&#34;#pricing&#34;&gt;pricing&lt;/a&gt;&lt;br&gt;&#xA;&lt;i class=&#34;fa-solid fa-hashtag&#34;&gt;&lt;/i&gt; &lt;a href=&#34;#terms&#34;&gt;terms&lt;/a&gt;&lt;br&gt;&#xA;&lt;i class=&#34;fa-solid fa-hashtag&#34;&gt;&lt;/i&gt; &lt;a href=&#34;#kofi&#34;&gt;ko-fi&lt;/a&gt; &lt;/p&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;        &lt;div id=&#39;musicplayer&#39;&gt;&#xD;&#xA;            &lt;div id=&#39;musicpixel&#39;&gt; &lt;img src=&#34;./images/pixels/music.gif&#34; style=&#34;max-width: 40px;&#34;&gt;&#xD;&#xA;                &lt;div class=&#39;overlay&#39;&gt;&#xD;&#xA;                    &lt;div class=&#39;playpause&#39;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt;&lt;/div&gt;&#xD;&#xA;                &lt;/div&gt;&#xD;&#xA;            &lt;/div&gt;&#xD;&#xA;            &lt;div id=&#39;musictitle&#39;&gt; &lt;span class=&#39;marquee&#39;&gt;wind chimes&lt;/span&gt; &lt;/div&gt;&#xD;&#xA;        &lt;/div&gt; &lt;audio id=&#39;musicsrc&#39; loop src=&#39;https://dl.dropbox.com/scl/fi/207sozz1oxbnjuldcx9up/wind-chimes.mp3?rlkey=g80h8r4oygb24yl6r5ygayi9f&amp;dl=0&#39;&gt;&lt;/audio&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;script&gt;&#xD;&#xA;    document.querySelector(&#39;.playpause&#39;).addEventListener(&#39;click&#39;, playpause);&#xD;&#xA;    &#xD;&#xA;    function playpause() {&#xD;&#xA;      if (document.querySelector(&#39;.playpause&#39;).innerHTML == &#39;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt;&#39;) {&#xD;&#xA;        document.querySelector(&#39;#musicsrc&#39;).play();&#xD;&#xA;        document.querySelector(&#39;.playpause&#39;).innerHTML = &#39;&lt;i class=&#34;fas fa-pause&#34;&gt;&lt;/i&gt;&#39;;&#xD;&#xA;      } else {&#xD;&#xA;        document.querySelector(&#39;#musicsrc&#39;).pause();&#xD;&#xA;        document.querySelector(&#39;.playpause&#39;).innerHTML = &#39;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt;&#39;;&#xD;&#xA;      }&#xD;&#xA;    }&#xD;&#xA;&lt;/script&gt;&#xD;&#xA;&lt;form class=&#34;search&#34;&gt; &lt;input type=&#34;text&#34; class=&#34;searchTerm&#34; placeholder=&#34;Search...&#34;&gt; &lt;button aria-label=&#34;submit&#34; type=&#34;submit&#34; class=&#34;searchButton&#34;&gt; &lt;i class=&#34;fa fa-search&#34;&gt;&lt;/i&gt; &lt;/button&gt; &lt;/form&gt;&#xD;&#xA;&#xD;&#xA;&lt;ul class=&#34;searchResults&#34;&gt;&lt;/ul&gt;&lt;/nav&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;grid&#34;&gt; &#xD;&#xA; &lt;div class=&#34;item large &#34;&gt;&#xD;&#xA;    &lt;div class=&#34;cards&#34;&gt;&#xD;&#xA;        &lt;div class=&#34;cardsHeader&#34;&gt;&#xD;&#xA;    &lt;div class=&#34;cardsControls&#34;&gt;&#xD;&#xA;            &lt;div&gt; &lt;i class=&#34;fa-solid fa-arrows-up-down-left-right&#34;&gt;&lt;/i&gt;&lt;/div&gt;&#xD;&#xA;            &lt;div&gt; &lt;i class=&#34;fa-solid fa-window-minimize&#34;&gt;&lt;/i&gt; &lt;i class=&#34;fa-regular fa-window-restore&#34;&gt;&lt;/i&gt; &lt;i class=&#34;fa-solid fa-xmark&#34;&gt;&lt;/i&gt;&lt;/div&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;        &lt;div class=&#34;cardsBody&#34;&gt;&#xD;&#xA;            &lt;h1 id=&#34;status&#34;&gt;#COMMISSION STATUS&lt;/h1&gt;&#xD;&#xA;            &lt;p&gt; Commissions are currently &lt;strong&gt;closed&lt;/strong&gt;. &lt;/p&gt;&#xD;&#xA;        &lt;/div&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div class=&#34;item large &#34;&gt;&#xD;&#xA;    &lt;div class=&#34;cards&#34;&gt;&#xD;&#xA;        &lt;div class=&#34;cardsHeader&#34;&gt;&#xD;&#xA;    &lt;div class=&#34;cardsControls&#34;&gt;&#xD;&#xA;            &lt;div&gt; &lt;i class=&#34;fa-solid fa-arrows-up-down-left-right&#34;&gt;&lt;/i&gt;&lt;/div&gt;&#xD;&#xA;            &lt;div&gt; &lt;i class=&#34;fa-solid fa-window-minimize&#34;&gt;&lt;/i&gt; &lt;i class=&#34;fa-regular fa-window-restore&#34;&gt;&lt;/i&gt; &lt;i class=&#34;fa-solid fa-xmark&#34;&gt;&lt;/i&gt;&lt;/div&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;        &lt;div class=&#34;cardsBody&#34;&gt;&#xD;&#xA;            &lt;h1 id=&#34;pricing&#34;&gt;#PRICING&lt;/h1&gt;&#xD;&#xA;            &lt;p&gt; WIP &lt;/p&gt;&#xD;&#xA;        &lt;/div&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div class=&#34;item large &#34;&gt;&#xD;&#xA;    &lt;div class=&#34;cards&#34;&gt;&#xD;&#xA;        &lt;div class=&#34;cardsHeader&#34;&gt;&#xD;&#xA;    &lt;div class=&#34;cardsControls&#34;&gt;&#xD;&#xA;            &lt;div&gt; &lt;i class=&#34;fa-solid fa-arrows-up-down-left-right&#34;&gt;&lt;/i&gt;&lt;/div&gt;&#xD;&#xA;            &lt;div&gt; &lt;i class=&#34;fa-solid fa-window-minimize&#34;&gt;&lt;/i&gt; &lt;i class=&#34;fa-regular fa-window-restore&#34;&gt;&lt;/i&gt; &lt;i class=&#34;fa-solid fa-xmark&#34;&gt;&lt;/i&gt;&lt;/div&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;        &lt;div class=&#34;cardsBody&#34;&gt;&#xD;&#xA;            &lt;h1 id=&#34;terms&#34;&gt;#TERMS&lt;/h1&gt;&#xD;&#xA;            &lt;p&gt; WIP &lt;/p&gt;&#xD;&#xA;        &lt;/div&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&#xD;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Gallery</title>
+      <link>http://localhost:1313/gallery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/</guid>
+      <description>&lt;nav id=&#34;navAlt&#34;&gt;&#xD;&#xA; &lt;div class=&#34;navWrapper&#34;&gt;  &#xD;&#xA;    &lt;a class=&#34;navLink&#34; href=&#34;#&#34;&gt;&lt;div id=&#34;gallery&#34;&gt; &lt;/div&gt; GALLERY&lt;/a&gt;&#xD;&#xA;    &lt;p&gt; &lt;i class=&#34;fa-regular fa-circle-down&#34;&gt;&lt;/i&gt;&lt;/p&gt;&#xD;&#xA;    &lt;p&gt; &lt;ul class=&#34;sort-btn&#34;&gt;&#xD;&#xA;    &lt;li class=&#34;sort00 active&#34;&gt;Show all&lt;/li&gt;&#xD;&#xA;    &lt;li class=&#34;digil&#34;&gt;Digital illustration&lt;/li&gt;&#xD;&#xA;&lt;li class=&#34;grdesign&#34;&gt;Graphic design&lt;/li&gt;&#xD;&#xA;&lt;li class=&#34;objects&#34;&gt;Objects&lt;/li&gt;&#xD;&#xA;&lt;li class=&#34;painting&#34;&gt;Paintings&lt;/li&gt;&#xD;&#xA;&lt;li class=&#34;photos&#34;&gt;Photos&lt;/li&gt;&#xD;&#xA; &lt;/ul&gt; &#xD;&#xA; &lt;/p&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;        &lt;div id=&#39;musicplayer&#39;&gt;&#xD;&#xA;            &lt;div id=&#39;musicpixel&#39;&gt; &lt;img src=&#34;./images/pixels/music.gif&#34; style=&#34;max-width: 40px;&#34;&gt;&#xD;&#xA;                &lt;div class=&#39;overlay&#39;&gt;&#xD;&#xA;                    &lt;div class=&#39;playpause&#39;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt;&lt;/div&gt;&#xD;&#xA;                &lt;/div&gt;&#xD;&#xA;            &lt;/div&gt;&#xD;&#xA;            &lt;div id=&#39;musictitle&#39;&gt; &lt;span class=&#39;marquee&#39;&gt;wind chimes&lt;/span&gt; &lt;/div&gt;&#xD;&#xA;        &lt;/div&gt; &lt;audio id=&#39;musicsrc&#39; loop src=&#39;https://dl.dropbox.com/scl/fi/207sozz1oxbnjuldcx9up/wind-chimes.mp3?rlkey=g80h8r4oygb24yl6r5ygayi9f&amp;dl=0&#39;&gt;&lt;/audio&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;script&gt;&#xD;&#xA;    document.querySelector(&#39;.playpause&#39;).addEventListener(&#39;click&#39;, playpause);&#xD;&#xA;    &#xD;&#xA;    function playpause() {&#xD;&#xA;      if (document.querySelector(&#39;.playpause&#39;).innerHTML == &#39;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt;&#39;) {&#xD;&#xA;        document.querySelector(&#39;#musicsrc&#39;).play();&#xD;&#xA;        document.querySelector(&#39;.playpause&#39;).innerHTML = &#39;&lt;i class=&#34;fas fa-pause&#34;&gt;&lt;/i&gt;&#39;;&#xD;&#xA;      } else {&#xD;&#xA;        document.querySelector(&#39;#musicsrc&#39;).pause();&#xD;&#xA;        document.querySelector(&#39;.playpause&#39;).innerHTML = &#39;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt;&#39;;&#xD;&#xA;      }&#xD;&#xA;    }&#xD;&#xA;&lt;/script&gt;&#xD;&#xA;&lt;form class=&#34;search&#34;&gt; &lt;input type=&#34;text&#34; class=&#34;searchTerm&#34; placeholder=&#34;Search...&#34;&gt; &lt;button aria-label=&#34;submit&#34; type=&#34;submit&#34; class=&#34;searchButton&#34;&gt; &lt;i class=&#34;fa fa-search&#34;&gt;&lt;/i&gt; &lt;/button&gt; &lt;/form&gt;&#xD;&#xA;&#xD;&#xA;&lt;ul class=&#34;searchResults&#34;&gt;&lt;/ul&gt;&lt;/nav&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;grid&#34;&gt; &#xD;&#xA; &lt;div class=&#34;item small digil&#34;&gt;&#xD;&#xA;    &lt;div class=&#34;cards&#34;&gt;&#xD;&#xA;        &lt;div class=&#34;cardsHeader&#34;&gt;&#xD;&#xA;    &lt;div class=&#34;cardsControls&#34;&gt;&#xD;&#xA;            &lt;div&gt; &lt;i class=&#34;fa-solid fa-arrows-up-down-left-right&#34;&gt;&lt;/i&gt;&lt;/div&gt;&#xD;&#xA;            &lt;div&gt; &lt;i class=&#34;fa-solid fa-window-minimize&#34;&gt;&lt;/i&gt; &lt;i class=&#34;fa-regular fa-window-restore&#34;&gt;&lt;/i&gt; &lt;i class=&#34;fa-solid fa-xmark&#34;&gt;&lt;/i&gt;&lt;/div&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;        &lt;div class=&#34;cardsBody&#34;&gt;&#xD;&#xA;            &lt;h1 id=&#34;chibi&#34;&gt;&lt;/h1&gt;&#xD;&#xA;            &lt;p&gt; &lt;a href=&#34;./images/gallery/chibi.png&#34; data-lightbox=&#34;chibi&#34;&gt;&#xD;&#xA;&lt;img src=&#34;./images/gallery/chibi_hu_725b82696dd858ec.webp&#34; class=&#34;img-fluid&#34; loading=&#34;&#34; alt=&#34;A chibi girl surrounded by stars.&#34;&gt;&#xD;&#xA;&lt;/a&gt;&#xD;&#xA;&lt;h5 id=&#34;starry-girl&#34;&gt;&lt;em&gt;&lt;strong&gt;Starry Girl&lt;/strong&gt;&lt;/em&gt;&lt;/h5&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Dec. 2023&lt;br&gt;&#xA;Clip Studio Paint&lt;/p&gt;&#xA;&lt;/blockquote&gt; &lt;/p&gt;&#xD;&#xA;        &lt;/div&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div class=&#34;item small digil&#34;&gt;&#xD;&#xA;    &lt;div class=&#34;cards&#34;&gt;&#xD;&#xA;        &lt;div class=&#34;cardsHeader&#34;&gt;&#xD;&#xA;    &lt;div class=&#34;cardsControls&#34;&gt;&#xD;&#xA;            &lt;div&gt; &lt;i class=&#34;fa-solid fa-arrows-up-down-left-right&#34;&gt;&lt;/i&gt;&lt;/div&gt;&#xD;&#xA;            &lt;div&gt; &lt;i class=&#34;fa-solid fa-window-minimize&#34;&gt;&lt;/i&gt; &lt;i class=&#34;fa-regular fa-window-restore&#34;&gt;&lt;/i&gt; &lt;i class=&#34;fa-solid fa-xmark&#34;&gt;&lt;/i&gt;&lt;/div&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;        &lt;div class=&#34;cardsBody&#34;&gt;&#xD;&#xA;            &lt;h1 id=&#34;yiseul1&#34;&gt;&lt;/h1&gt;&#xD;&#xA;            &lt;p&gt; &lt;a href=&#34;./images/gallery/ys_1.png&#34; data-lightbox=&#34;yiseulref&#34;&gt;&#xD;&#xA;&lt;img src=&#34;./images/gallery/ys_1_hu_f473ec379f16a96f.webp&#34; class=&#34;img-fluid&#34; loading=&#34;&#34; alt=&#34;A woman standing in a heavy coat on the left. There is text exposition explaining her history as a mudang who had her heart eaten by a kumiho. On the right there are two images. One is of her shoulders-up, looking at the viewer, ostensibly naked. The other is of her staring forward.&#34;&gt;&#xD;&#xA;&lt;/a&gt;&#xD;&#xA;&lt;a href=&#34;./images/gallery/ys_2.png&#34; data-lightbox=&#34;yiseulref&#34;&gt;&#xD;&#xA;&lt;img src=&#34;./images/gallery/ys_2_hu_60ebe33ad069274a.webp&#34; class=&#34;img-fluid&#34; loading=&#34;&#34; alt=&#34;Yiseul standing in her work uniform. She wears dark long sleeves and pants with a modified jeogori top.&#34;&gt;&#xD;&#xA;&lt;/a&gt;&#xD;&#xA;&lt;h5 id=&#34;yiseul-references&#34;&gt;&lt;em&gt;&lt;strong&gt;Yiseul References&lt;/strong&gt;&lt;/em&gt;&lt;/h5&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Jan. 2023&lt;br&gt;&#xA;Clip Studio Paint&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Library</title>
+      <link>http://localhost:1313/library/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/library/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Links</title>
+      <link>http://localhost:1313/links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/links/</guid>
+      <description>&lt;nav id=&#34;navAlt&#34;&gt;&#xD;&#xA; &lt;div class=&#34;navWrapper&#34;&gt;  &#xD;&#xA;    &lt;a class=&#34;navLink&#34; href=&#34;#&#34;&gt;&lt;div id=&#34;links&#34;&gt; &lt;/div&gt; LINKS&lt;/a&gt;&#xD;&#xA;    &lt;p&gt; &lt;i class=&#34;fa-regular fa-circle-down&#34;&gt;&lt;/i&gt;&lt;/p&gt;&#xD;&#xA;    &lt;p&gt; &lt;i class=&#34;fa-solid fa-hashtag&#34;&gt;&lt;/i&gt; &lt;a href=&#34;#webrings&#34;&gt;webrings&lt;/a&gt;&lt;br&gt;&#xA;&lt;i class=&#34;fa-solid fa-hashtag&#34;&gt;&lt;/i&gt; &lt;a href=&#34;#fanlistings&#34;&gt;fanlistings&lt;/a&gt;&lt;br&gt;&#xA;&lt;i class=&#34;fa-solid fa-hashtag&#34;&gt;&lt;/i&gt; &lt;a href=&#34;#button-wall&#34;&gt;button wall&lt;/a&gt;&lt;br&gt;&#xA;&lt;i class=&#34;fa-solid fa-hashtag&#34;&gt;&lt;/i&gt; &lt;a href=&#34;#credits&#34;&gt;credits&lt;/a&gt;&lt;br&gt;&#xA;&lt;i class=&#34;fa-solid fa-hashtag&#34;&gt;&lt;/i&gt; &lt;a href=&#34;#resources&#34;&gt;resources&lt;/a&gt; &lt;/p&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;        &lt;div id=&#39;musicplayer&#39;&gt;&#xD;&#xA;            &lt;div id=&#39;musicpixel&#39;&gt; &lt;img src=&#34;./images/pixels/music.gif&#34; style=&#34;max-width: 40px;&#34;&gt;&#xD;&#xA;                &lt;div class=&#39;overlay&#39;&gt;&#xD;&#xA;                    &lt;div class=&#39;playpause&#39;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt;&lt;/div&gt;&#xD;&#xA;                &lt;/div&gt;&#xD;&#xA;            &lt;/div&gt;&#xD;&#xA;            &lt;div id=&#39;musictitle&#39;&gt; &lt;span class=&#39;marquee&#39;&gt;wind chimes&lt;/span&gt; &lt;/div&gt;&#xD;&#xA;        &lt;/div&gt; &lt;audio id=&#39;musicsrc&#39; loop src=&#39;https://dl.dropbox.com/scl/fi/207sozz1oxbnjuldcx9up/wind-chimes.mp3?rlkey=g80h8r4oygb24yl6r5ygayi9f&amp;dl=0&#39;&gt;&lt;/audio&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;script&gt;&#xD;&#xA;    document.querySelector(&#39;.playpause&#39;).addEventListener(&#39;click&#39;, playpause);&#xD;&#xA;    &#xD;&#xA;    function playpause() {&#xD;&#xA;      if (document.querySelector(&#39;.playpause&#39;).innerHTML == &#39;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt;&#39;) {&#xD;&#xA;        document.querySelector(&#39;#musicsrc&#39;).play();&#xD;&#xA;        document.querySelector(&#39;.playpause&#39;).innerHTML = &#39;&lt;i class=&#34;fas fa-pause&#34;&gt;&lt;/i&gt;&#39;;&#xD;&#xA;      } else {&#xD;&#xA;        document.querySelector(&#39;#musicsrc&#39;).pause();&#xD;&#xA;        document.querySelector(&#39;.playpause&#39;).innerHTML = &#39;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt;&#39;;&#xD;&#xA;      }&#xD;&#xA;    }&#xD;&#xA;&lt;/script&gt;&#xD;&#xA;&lt;form class=&#34;search&#34;&gt; &lt;input type=&#34;text&#34; class=&#34;searchTerm&#34; placeholder=&#34;Search...&#34;&gt; &lt;button aria-label=&#34;submit&#34; type=&#34;submit&#34; class=&#34;searchButton&#34;&gt; &lt;i class=&#34;fa fa-search&#34;&gt;&lt;/i&gt; &lt;/button&gt; &lt;/form&gt;&#xD;&#xA;&#xD;&#xA;&lt;ul class=&#34;searchResults&#34;&gt;&lt;/ul&gt;&lt;/nav&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;grid&#34;&gt; &#xD;&#xA; &lt;div class=&#34;item large &#34;&gt;&#xD;&#xA;    &lt;div class=&#34;cards&#34;&gt;&#xD;&#xA;        &lt;div class=&#34;cardsHeader&#34;&gt;&#xD;&#xA;    &lt;div class=&#34;cardsControls&#34;&gt;&#xD;&#xA;            &lt;div&gt; &lt;i class=&#34;fa-solid fa-arrows-up-down-left-right&#34;&gt;&lt;/i&gt;&lt;/div&gt;&#xD;&#xA;            &lt;div&gt; &lt;i class=&#34;fa-solid fa-window-minimize&#34;&gt;&lt;/i&gt; &lt;i class=&#34;fa-regular fa-window-restore&#34;&gt;&lt;/i&gt; &lt;i class=&#34;fa-solid fa-xmark&#34;&gt;&lt;/i&gt;&lt;/div&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;        &lt;div class=&#34;cardsBody&#34;&gt;&#xD;&#xA;            &lt;h1 id=&#34;webrings&#34;&gt;#WEBRINGS&lt;/h1&gt;&#xD;&#xA;            &lt;p&gt; &lt;div class=&#34;box-small&#34;&gt;&#xD;&#xA;        &lt;h5&gt;&lt;/h5&gt;&#xD;&#xA;        &lt;p&gt; &lt;div class=&#34;large-scrollbox&#34;&gt;&lt;div class=&#34;columns&#34;&gt;&lt;div id=&#39;RPGMaker&#39;&gt;&#xD;&#xA;&lt;script type=&#34;text/javascript&#34; src=&#34;https://mal.ophanimkei.com/onionring-variables.js&#34;&gt;&lt;/script&gt;&#xD;&#xA;&lt;script type=&#34;text/javascript&#34; src=&#34;https://mal.ophanimkei.com/onionring-widget.js&#34;&gt;&lt;/script&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div&gt;&lt;script src=&#34;https://nuthead.neocities.org/ring/ring.js&#34;&gt;&lt;/script&gt; &lt;/div&gt;&#xD;&#xA;&lt;div id=&#39;neossg&#39;&gt;&lt;script type=&#34;text/javascript&#34; src=&#34;https://neossg.neocities.org/onionring-variables.js&#34;&gt;&lt;/script&gt;&lt;script type=&#34;text/javascript&#34; src=&#34;https://neossg.neocities.org/onionring-widget.js&#34;&gt;&lt;/script&gt;&lt;/div&gt;&#xD;&#xA;&lt;div id=&#39;safont&#39;&gt;&lt;script src=&#34;https://xandra.cc/safonts/webring.js&#34;&gt;&lt;/script&gt;&lt;ring-900 site=&#34;https://nenrikido.neocities.org/&#34;&gt;&lt;/ring-900&gt;&lt;/div&gt;&#xD;&#xA;&lt;p&gt;&lt;journal-ring icon=&#34;lavender&#34;&gt;&lt;/journal-ring&gt; &lt;script async src=&#34;https://cdn.jsdelivr.net/gh/js044/nenrikido@main/static/js/misc/journalring.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;&#xA;&lt;div id=&#39;ncring&#39; style=&#34;background: none;&#34;&gt;&lt;script type=&#34;text/javascript&#34; src=&#34;https://neocreatives.neocities.org/onionring-variables.js&#34;&gt;&lt;/script&gt;&lt;script type=&#34;text/javascript&#34; src=&#34;https://neocreatives.neocities.org/onionring-widget.js&#34;&gt;&lt;/script&gt;&lt;/div&gt;&#xD;&#xA;&lt;div id=&#39;shoujosei-ring&#39;&gt;&#xD;&#xA;&lt;script type=&#34;text/javascript&#34; src=&#34;https://angeleyesprings.neocities.org/webring/onionring-variables.js&#34;&gt;&lt;/script&gt;&#xD;&#xA;&lt;script type=&#34;text/javascript&#34; src=&#34;https://angeleyesprings.neocities.org/webring/onionring-widget2.js&#34;&gt;&lt;/script&gt;&#xD;&#xA;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt; &lt;/p&gt;&#xD;&#xA;        &lt;/div&gt;&#xD;&#xA; &lt;/p&gt;&#xD;&#xA;        &lt;/div&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div class=&#34;item large &#34;&gt;&#xD;&#xA;    &lt;div class=&#34;cards&#34;&gt;&#xD;&#xA;        &lt;div class=&#34;cardsHeader&#34;&gt;&#xD;&#xA;    &lt;div class=&#34;cardsControls&#34;&gt;&#xD;&#xA;            &lt;div&gt; &lt;i class=&#34;fa-solid fa-arrows-up-down-left-right&#34;&gt;&lt;/i&gt;&lt;/div&gt;&#xD;&#xA;            &lt;div&gt; &lt;i class=&#34;fa-solid fa-window-minimize&#34;&gt;&lt;/i&gt; &lt;i class=&#34;fa-regular fa-window-restore&#34;&gt;&lt;/i&gt; &lt;i class=&#34;fa-solid fa-xmark&#34;&gt;&lt;/i&gt;&lt;/div&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;        &lt;div class=&#34;cardsBody&#34;&gt;&#xD;&#xA;            &lt;h1 id=&#34;fanlistings&#34;&gt;#FANLISTINGS&lt;/h1&gt;&#xD;&#xA;            &lt;p&gt; &lt;div class=&#34;box-small&#34;&gt;&#xD;&#xA;        &lt;h5&gt;&lt;/h5&gt;&#xD;&#xA;        &lt;p&gt; &lt;div class=&#34;large-scrollbox&#34;&gt;&lt;div class=&#34;columns small&#34;&gt;&lt;div&gt;&lt;a href=&#34;https://akiba.flirt-wind.net/azumanga&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt; &lt;img src=&#34;./images/buttons/azumanga.png&#34; width=&#34;50&#34; height=&#34;50&#34; alt=&#34;Tiny website button&#34;&gt; &lt;/a&gt; &#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div&gt;&lt;a href=&#34;https://www.moon-prism.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt; &lt;img src=&#34;./images/buttons/bssm.gif&#34; width=&#34;50&#34; height=&#34;50&#34; alt=&#34;Tiny website button&#34;&gt; &lt;/a&gt; &#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div&gt;&lt;a href=&#34;https://anthy.net/love/index.php&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt; &lt;img src=&#34;./images/buttons/ua5.png&#34; width=&#34;50&#34; height=&#34;50&#34; alt=&#34;Tiny website button&#34;&gt; &lt;/a&gt; &#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div&gt;&lt;a href=&#34;http://lain.angelic-trust.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt; &lt;img src=&#34;./images/buttons/lain.jpg&#34; width=&#34;50&#34; height=&#34;50&#34; alt=&#34;Tiny website button&#34;&gt; &lt;/a&gt; &#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div&gt;&lt;a href=&#34;https://fan.enamour.nu/deathnote/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt; &lt;img src=&#34;./images/buttons/deathnote.png&#34; width=&#34;50&#34; height=&#34;50&#34; alt=&#34;Tiny website button&#34;&gt; &lt;/a&gt; &#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div&gt;&lt;a href=&#34;http://frshery.info/onepunch/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt; &lt;img src=&#34;./images/buttons/opm.gif&#34; width=&#34;50&#34; height=&#34;50&#34; alt=&#34;Tiny website button&#34;&gt; &lt;/a&gt; &#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div&gt;&lt;a href=&#34;https://inkcaps.neocities.org/links/neopets/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt; &lt;img src=&#34;./images/buttons/neopets.png&#34; width=&#34;50&#34; height=&#34;50&#34; alt=&#34;Tiny website button&#34;&gt; &lt;/a&gt; &#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div&gt;&lt;a href=&#34;https://inspirationally.net/sea/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt; &lt;img src=&#34;./images/buttons/sea.png&#34; width=&#34;50&#34; height=&#34;50&#34; alt=&#34;Tiny website button&#34;&gt; &lt;/a&gt; &#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div&gt;&lt;a href=&#34;https://fan.kalechips.net/pens/index.php&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt; &lt;img src=&#34;./images/buttons/pen.png&#34; width=&#34;50&#34; height=&#34;50&#34; alt=&#34;Tiny website button&#34;&gt; &lt;/a&gt; &#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div&gt;&lt;a href=&#34;https://zanarkand.neocities.org/stardust/yume/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt; &lt;img src=&#34;./images/buttons/yumenikki.png&#34; width=&#34;50&#34; height=&#34;50&#34; alt=&#34;Tiny website button&#34;&gt; &lt;/a&gt; &#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA; &lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Microblog</title>
+      <link>http://localhost:1313/microblog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/microblog/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pudding</title>
+      <link>http://localhost:1313/code/preview/pudding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/code/preview/pudding/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rainbow</title>
+      <link>http://localhost:1313/code/preview/rainbow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/code/preview/rainbow/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rainbow</title>
+      <link>http://localhost:1313/code/preview/rainbow2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/code/preview/rainbow2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sakura</title>
+      <link>http://localhost:1313/code/preview/sakura/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/code/preview/sakura/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sitemap</title>
+      <link>http://localhost:1313/sitemap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sitemap/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Style Guide</title>
+      <link>http://localhost:1313/about/styleguide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/styleguide/</guid>
+      <description>&lt;nav id=&#34;navAlt&#34;&gt;&#xD;&#xA; &lt;div class=&#34;navWrapper&#34;&gt;  &#xD;&#xA;    &lt;a class=&#34;navLink&#34; href=&#34;#&#34;&gt;&lt;div id=&#34;about&#34;&gt; &lt;/div&gt; STYLE GUIDE&lt;/a&gt;&#xD;&#xA;    &lt;p&gt; &lt;i class=&#34;fa-regular fa-circle-down&#34;&gt;&lt;/i&gt;&lt;/p&gt;&#xD;&#xA;    &lt;p&gt; Based on the &lt;a href=&#34;https://poormansstyleguide.com/&#34;&gt;Poor Man&amp;rsquo;s styleguide.&lt;/a&gt; &lt;/p&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;        &lt;div id=&#39;musicplayer&#39;&gt;&#xD;&#xA;            &lt;div id=&#39;musicpixel&#39;&gt; &lt;img src=&#34;./images/pixels/music.gif&#34; style=&#34;max-width: 40px;&#34;&gt;&#xD;&#xA;                &lt;div class=&#39;overlay&#39;&gt;&#xD;&#xA;                    &lt;div class=&#39;playpause&#39;&gt;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt;&lt;/div&gt;&#xD;&#xA;                &lt;/div&gt;&#xD;&#xA;            &lt;/div&gt;&#xD;&#xA;            &lt;div id=&#39;musictitle&#39;&gt; &lt;span class=&#39;marquee&#39;&gt;wind chimes&lt;/span&gt; &lt;/div&gt;&#xD;&#xA;        &lt;/div&gt; &lt;audio id=&#39;musicsrc&#39; loop src=&#39;https://dl.dropbox.com/scl/fi/207sozz1oxbnjuldcx9up/wind-chimes.mp3?rlkey=g80h8r4oygb24yl6r5ygayi9f&amp;dl=0&#39;&gt;&lt;/audio&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;script&gt;&#xD;&#xA;    document.querySelector(&#39;.playpause&#39;).addEventListener(&#39;click&#39;, playpause);&#xD;&#xA;    &#xD;&#xA;    function playpause() {&#xD;&#xA;      if (document.querySelector(&#39;.playpause&#39;).innerHTML == &#39;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt;&#39;) {&#xD;&#xA;        document.querySelector(&#39;#musicsrc&#39;).play();&#xD;&#xA;        document.querySelector(&#39;.playpause&#39;).innerHTML = &#39;&lt;i class=&#34;fas fa-pause&#34;&gt;&lt;/i&gt;&#39;;&#xD;&#xA;      } else {&#xD;&#xA;        document.querySelector(&#39;#musicsrc&#39;).pause();&#xD;&#xA;        document.querySelector(&#39;.playpause&#39;).innerHTML = &#39;&lt;i class=&#34;fas fa-play&#34;&gt;&lt;/i&gt;&#39;;&#xD;&#xA;      }&#xD;&#xA;    }&#xD;&#xA;&lt;/script&gt;&#xD;&#xA;&lt;form class=&#34;search&#34;&gt; &lt;input type=&#34;text&#34; class=&#34;searchTerm&#34; placeholder=&#34;Search...&#34;&gt; &lt;button aria-label=&#34;submit&#34; type=&#34;submit&#34; class=&#34;searchButton&#34;&gt; &lt;i class=&#34;fa fa-search&#34;&gt;&lt;/i&gt; &lt;/button&gt; &lt;/form&gt;&#xD;&#xA;&#xD;&#xA;&lt;ul class=&#34;searchResults&#34;&gt;&lt;/ul&gt;&lt;/nav&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;grid&#34;&gt; &#xD;&#xA; &lt;div class=&#34;item large &#34;&gt;&#xD;&#xA;    &lt;div class=&#34;cards&#34;&gt;&#xD;&#xA;        &lt;div class=&#34;cardsHeader&#34;&gt;&#xD;&#xA;    &lt;div class=&#34;cardsControls&#34;&gt;&#xD;&#xA;            &lt;div&gt; &lt;i class=&#34;fa-solid fa-arrows-up-down-left-right&#34;&gt;&lt;/i&gt;&lt;/div&gt;&#xD;&#xA;            &lt;div&gt; &lt;i class=&#34;fa-solid fa-window-minimize&#34;&gt;&lt;/i&gt; &lt;i class=&#34;fa-regular fa-window-restore&#34;&gt;&lt;/i&gt; &lt;i class=&#34;fa-solid fa-xmark&#34;&gt;&lt;/i&gt;&lt;/div&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;        &lt;div class=&#34;cardsBody&#34;&gt;&#xD;&#xA;            &lt;h1 id=&#34;&#34;&gt;#STYLE GUIDE&lt;/h1&gt;&#xD;&#xA;            &lt;p&gt; &lt;h1 id=&#34;heading-1&#34;&gt;Heading 1&lt;/h1&gt;&#xA;&lt;h2 id=&#34;heading-2&#34;&gt;Heading 2&lt;/h2&gt;&#xA;&lt;h3 id=&#34;heading-3&#34;&gt;Heading 3&lt;/h3&gt;&#xA;&lt;h4 id=&#34;heading-4&#34;&gt;Heading 4&lt;/h4&gt;&#xA;&lt;h5 id=&#34;heading-5&#34;&gt;Heading 5&lt;/h5&gt;&#xA;&lt;h6 id=&#34;heading-6&#34;&gt;Heading 6&lt;/h6&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;heading-1-1&#34;&gt;Heading 1&lt;/h1&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sunflower</title>
+      <link>http://localhost:1313/code/preview/sunflower/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/code/preview/sunflower/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Toothache</title>
+      <link>http://localhost:1313/code/preview/toothache/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/code/preview/toothache/</guid>
+      <description></description>
+    </item>
+  </channel>
 </rss>

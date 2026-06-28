@@ -1,4 +1,6 @@
 updates:
+- date: "2026-06-27"
+  description: "lots of very belated spring cleaning and general updates. behind-the-scenes microblog fixes, journalring updates, about page edits, index page widget shifting, etc."
 - date: "2025-06-11"
   description: "new blog post and a journalring update."
 - date: "2025-03-13"
