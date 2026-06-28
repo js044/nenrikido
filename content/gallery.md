@@ -39,14 +39,14 @@ draft: false
 {{< /card-small >}}
 
 {{< card-small filter="objects" id="star-moon-earrings" >}}
-{{< lightbox-image lightbox-id="earrings" img-src="/images/gallery/earrings...png" alt="Two sets of glittery earrings. One pair is a yellow star and blue moon. The other pair is a blue moon and yellow star." >}}
+{{< lightbox-image lightbox-id="earrings" img-src="/images/gallery/earrings.png" alt="Two sets of glittery earrings. One pair is a yellow star and blue moon. The other pair is a blue moon and yellow star." >}}
 ##### ***Star & Moon Earrings***
 > Dec. 2022  
 > UV Resin
 {{< /card-small >}}
 
 {{< card-small filter="digil" id="cole" >}}
-{{< lightbox-image lightbox-id="cole" img-src="/images/gallery/oomf...png" alt="A man sitting. 3 cats are perched on him. He is wearing a hat with fox ears." >}}
+{{< lightbox-image lightbox-id="cole" img-src="/images/gallery/oomf.png" alt="A man sitting. 3 cats are perched on him. He is wearing a hat with fox ears." >}}
 ##### ***Cole birthday gift***
 > Feb. 2023  
 > Clip Studio Paint  
