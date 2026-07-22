@@ -62,7 +62,7 @@ window.membersData = [
     {
         "name": "anbimichi",
         "websiteTitle": "Lunari Clouds",
-        "url": "https://anbimichi.neocities.org/",
+        "url": "https://anbimichi.nekoweb.org/",
         "description": "My bedroom/scrapbook in the clouds, oreos"
     },
     {
