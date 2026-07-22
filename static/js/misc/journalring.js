@@ -1,5 +1,95 @@
 window.membersData = [
     {
+        "name": "Krystal",
+        "websiteTitle": "Monyda",
+        "url": "https://monyda.com/",
+        "description": "Personal | Blog | Writings | Art"
+    },
+    {
+        "name": "N",
+        "websiteTitle": "working title",
+        "url": "https://nothalfasleep.neocities.org/",
+        "description": "It's basically just a personal website where I note down things I like, lists, photos, anything really. My main theme as well has things to do with journaling - Like a scrapbooking theme!"
+    },
+    {
+        "name": "sepewaa",
+        "websiteTitle": "sepewaa's house",
+        "url": "https://sepelathons.neocities.org/",
+        "description": "my little house!! i like writing and documenting interests, experiences from daily life, and my creative process. my favourite notebook is my midori md and I like using my kaweco special 0.5 to draw lo-fi storyboarding on it!"
+    },
+    {
+        "name": "Kat",
+        "websiteTitle": "Katrina Evans' Art",
+        "url": "https://www.katrinaevans.art/",
+        "description": "Art site/personal site"
+    },
+    {
+        "name": "Christine",
+        "websiteTitle": "somniloquence",
+        "url": "https://somniloquence.neocities.org/",
+        "description": "my eepy corner. a diary, a dream journal, and other such things."
+    }, 
+    {
+        "name": "mike",
+        "websiteTitle": "michel's",
+        "url": "https://intestellars.neocities.org/",
+        "description": "a personal website where i have the freedom to make as many web pages i want :-)"
+    }, 
+    {
+        "name": "Chezter",
+        "websiteTitle": "cheztervv",
+        "url": "https://cheztervargas.xyz/",
+        "description": "A tech portfolio with a blog filled with creative non-fiction and personal essays. Not corporate. Just writing whatever."
+    }, 
+    {
+        "name": "Blanki",
+        "websiteTitle": "E0NBREAK",
+        "url": "https://e0nbreak.neocities.org/",
+        "description": "E0NBREAK is the personal creative website of the digital artist of the same username. The website holds various things from silly one-off projects to dedicated pages to the creator's ongoing story project Bewilthred. Rumors say many silly things are in store..."
+    }, 
+    {
+        "name": "Star",
+        "websiteTitle": "cloverstar",
+        "url": "https://cloverstar.neocities.org/",
+        "description": "a personal website where I post my drawings and talk about things I like"
+    },    
+    {
+        "name": "eren ฅ⁠^⁠•⁠ﻌ⁠•⁠^⁠ฅ",
+        "websiteTitle": "mashumaro!",
+        "url": "https://mashumaro.nekoweb.org/",
+        "description": "internet angel!!!!!!! 🙏"
+    },
+    {
+        "name": "anbimichi",
+        "websiteTitle": "Lunari Clouds",
+        "url": "https://anbimichi.neocities.org/",
+        "description": "My bedroom/scrapbook in the clouds, oreos"
+    },
+    {
+        "name": "spectralid",
+        "websiteTitle": "ryuuseigun (流星群)",
+        "url": "https://hightide3ra.neocities.org/",
+        "description": "a snowy, starry little corner of cyberspace."
+    },
+    {
+        "name": "Sandra",
+        "websiteTitle": "Digital Garden",
+        "url": "https://morbidbones.neocities.org/",
+        "description": "A personal website for myself to post blog entries, my interests, etc."
+    },
+    {
+        "name": "Lunabelle",
+        "websiteTitle": "Lunabelle's",
+        "url": "https://lunabelle.neocities.org/home",
+        "description": "a personol website"
+    },
+    {
+        "name": "evy",
+        "websiteTitle": "Daydream Diary",
+        "url": "https://daydream-diary.neocities.org/",
+        "description": "Personal website where I share my thoughts on movies, books, games, and the old web in the form of blog posts."
+    },
+    {
         "name": "Emmet",
         "websiteTitle": "WONDERWRLD",
         "url": "https://emmetwonder.neocities.org/",
@@ -1280,7 +1370,7 @@ window.membersData = [
     {
         "name": "tash",
         "websiteTitle": "milk-tea",
-        "url": "https://milk-tea.email/",
+        "url": "https://www.milk-tea.email/",
         "description": "tash's personal website ★"
     },
     {

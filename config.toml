@@ -32,6 +32,10 @@ microblogBaseURL = "https://nenrikido.neocities.org/microblog"
 
 [permalinks]
 blog = "/blog/post/:contentbasename/"
+tags = "/blog/tags/:slug/"
+
+[taxonomies]
+tag = "tags"
 
 [[menu.main]]
 name = "Home"

@@ -1,4 +1,6 @@
 updates:
+- date: "2026-07-22"
+  description: "journalring roster update + rule tweak. blog tag pages fixed and updated."
 - date: "2026-06-27"
   description: "lots of very belated spring cleaning and general updates. behind-the-scenes microblog fixes, journalring updates, about page edits, index page widget shifting, etc."
 - date: "2025-06-11"

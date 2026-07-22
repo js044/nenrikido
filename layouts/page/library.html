@@ -69,7 +69,6 @@
     </nav>
 
     <div class="grid">
-        <!-- Large card with File Explorer (Library Table) -->
         <div class="item large">
             <div class="cards">
                 {{- partial "card-header.html" . -}}
@@ -127,7 +126,6 @@
             </div>
         </div>
 
-        <!-- Smallarge card with Preview -->
         <div class="item smallarge">
             <div class="cards">
                 {{- partial "card-header.html" . -}}
@@ -149,26 +147,26 @@ document.addEventListener("DOMContentLoaded", function () {
     const previewContainer = document.getElementById("preview-container");
     const checkoutLinkContainer = document.getElementById("checkout-link");
 
-      // Function to handle row selection and highlighting
+      // function for row selection and highlighting
       libraryItems.forEach((item) => {
         item.addEventListener("click", () => {
-            // Remove 'selected' class from all items
+            // remove selected class from all items
             libraryItems.forEach(i => i.classList.remove("selected"));
-            // Add 'selected' class to the clicked item
+            // add selected class to clicked item
             item.classList.add("selected");
 
-             // Update the preview pane
+             // update preview pane
              const link = item.dataset.link;
             const iframe = document.createElement("iframe");
             iframe.src = link;
             previewContainer.innerHTML = "";
             previewContainer.appendChild(iframe);
 
-            // Update the "Check Out" link
+            // update checkout link
             checkoutLinkContainer.innerHTML = `<a href="${link}" target="_blank">Check out</a>`;
         });
     });
-    // Sorter Elements
+    // sorters
     const titleSort = document.getElementById("title-sort");
     const authorSort = document.getElementById("author-sort");
     const yearSort = document.getElementById("year-sort");
@@ -181,29 +179,29 @@ document.addEventListener("DOMContentLoaded", function () {
         category: "asc"
     };
 
-    // Helper function to format "First Name Last Name" to "Last Name, First Name"
+    // helper function to format first name last name -> last name, first name
     const formatAuthorName = (fullName) => {
         const nameParts = fullName.split(" ");
-        const lastName = nameParts.pop(); // Assume the last word is the last name
+        const lastName = nameParts.pop(); // assume last word is last name
         const firstName = nameParts.join(" ");
         return `${lastName}, ${firstName}`;
     };
 
-    // Update the display of author names on page load
+    // update display of author names on page load
     libraryItems.forEach(item => {
         const fullName = item.dataset.author;
         const formattedName = formatAuthorName(fullName);
-        item.querySelector("td:nth-child(2)").textContent = formattedName; // Update the Author column
+        item.querySelector("td:nth-child(2)").textContent = formattedName; // update author column
     });
 
-    // Function to update the sort indicator
+    // function to update sort indicator
     const updateSortIndicators = (currentKey) => {
-        // Reset all indicators
+        // reset all indicators
         [titleSort, authorSort, yearSort, categorySort].forEach(sortEl => {
             sortEl.textContent = "↑";
         });
 
-        // Set the current column's indicator based on sortOrder
+        // set current column's indicator based on sortOrder
         const indicator = sortOrder[currentKey] === "asc" ? "↑" : "↓";
         switch (currentKey) {
             case "title":
@@ -221,52 +219,51 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 
-    // Sorting function
+    // sorting function
     const sortTable = (key, sortOrderKey) => {
     const rows = Array.from(libraryItems);
 
     const sortedRows = rows.sort((a, b) => {
-        let aKey = a.dataset[key] || ""; // Extract dataset value
-        let bKey = b.dataset[key] || ""; // Extract dataset value
+        let aKey = a.dataset[key] || ""; // extract dataset value
+        let bKey = b.dataset[key] || ""; // extract dataset value
 
         if (key === "year") {
-            // Handle year column specifically
-            aKey = parseInt(aKey, 10) || 0; // Convert to number, default to 0
-            bKey = parseInt(bKey, 10) || 0; // Convert to number, default to 0
+            // handle year column specifically
+            aKey = parseInt(aKey, 10) || 0; // convert to number, default to 0
+            bKey = parseInt(bKey, 10) || 0; // convert to number, default to 0
             return sortOrder[sortOrderKey] === "asc" ? aKey - bKey : bKey - aKey;
         }
 
         if (key === "author") {
-            // Use formatted author names for sorting
+            // use formatted author names for sorting
             aKey = formatAuthorName(a.dataset.author).toLowerCase();
             bKey = formatAuthorName(b.dataset.author).toLowerCase();
         }
 
-        // Fallback for other keys (e.g., title, category)
+        // fallback for other keys
         return sortOrder[sortOrderKey] === "asc"
             ? aKey.localeCompare(bKey, undefined, { numeric: true })
             : bKey.localeCompare(aKey, undefined, { numeric: true });
     });
 
-    // Append sorted rows back to the table
+    // append sorted rows back to table
     const tbody = document.querySelector(".library-table tbody");
     sortedRows.forEach(row => tbody.appendChild(row));
 
-    // Toggle sort order for the next click
+    // toggle sort order for next click
     sortOrder[sortOrderKey] = sortOrder[sortOrderKey] === "asc" ? "desc" : "asc";
 
-    // Update sorting indicators
+    // update sorting indicators
     updateSortIndicators(sortOrderKey);
 };
 
-
-    // Add sorting functionality to each column header
+    // add sorting functionality to each column header
     titleSort.addEventListener("click", () => sortTable("title", "title"));
     authorSort.addEventListener("click", () => sortTable("author", "author"));
     yearSort.addEventListener("click", () => sortTable("year", "year"));
     categorySort.addEventListener("click", () => sortTable("category", "category"));
 
-    // Update the preview and "Check Out" link when a row is clicked
+    // update the preview and check out link when a row is clicked
     libraryItems.forEach((item) => {
         item.addEventListener("click", () => {
             libraryItems.forEach(i => i.classList.remove("selected"));

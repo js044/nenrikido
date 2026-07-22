@@ -40,19 +40,21 @@ I made this site to aggregate and host my creative projects, and also to functio
 {{< large-scrollbox >}}
 {{< row >}}
 {{< blocks >}}
-{{< box-small title="ANIME & MANGA:" >}}
+{{< box-small title="ANIME, MANGA, ETC:" >}}
 
-*SERIES*  
+*ANIME & MANGA*  
 {{< icons/heart >}} Mob Psycho 100  
 {{< icons/heart >}} The Summer Hikaru Died   
 {{< icons/heart >}} Witch Hat Atelier   
 {{< icons/heart >}} Sailor Moon  
 {{< icons/heart >}} Yu Yu Hakusho  
 
-*MOVIES*  
-{{< icons/heart >}} Akira  
-{{< icons/heart >}} Angel's Egg   
-{{< icons/heart >}} Unico in the Island of Magic   
+*WEBCOMICS*  
+{{< icons/heart >}} One Punch Man  
+{{< icons/heart >}} I Love Amy  
+
+*WEBNOVELS*  
+{{< icons/heart >}} Omniscient Reader's Viewpoint  
 
 {{< /box-small >}} 
 
@@ -61,15 +63,19 @@ I made this site to aggregate and host my creative projects, and also to functio
 *HORROR*  
 {{< icons/star >}} Yume Nikki (& fangames)  
 {{< icons/star >}} Silent Hill  (my favorite is 2)  
-{{< icons/star >}} Ib  
 {{< icons/star >}} The Cat Lady  
-{{< icons/star >}} Forest of Drizzling Rain  
 {{< icons/star >}} Angels of Death  
 
 *RPGS*  
 {{< icons/star >}} Tomba! 2  
+{{< icons/star >}} Persona 3  
+
+*LIFE SIMS*  
 {{< icons/star >}} Stardew Valley  
 {{< icons/star >}} Animal Crossing  
+
+*GACHA*  
+{{< icons/star >}} Path to Nowhere  
 
 {{< /box-small >}}  
  
@@ -123,12 +129,13 @@ Check out the [library](/library) for more!
 {{< icons/sun >}} Killing Eve  
 {{< icons/sun >}} The L Word  
 {{< icons/sun >}} Mr. Robot  
+{{< icons/sun >}} It's Always Sunny in Philadelphia    
 {{< /box-small >}} 
 
 {{< box-small title="MOVIES:" >}} 
 {{< icons/sun >}} The Handmaiden  
 {{< icons/sun >}} Heathers   
-{{< icons/sun >}} Battle Royale  
+
 {{< /box-small >}} 
 {{< /blocks >}}
 {{< /row >}}

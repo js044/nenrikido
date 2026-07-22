@@ -7,6 +7,8 @@ thumbnail: /images/blog/preload.gif
 draft: false
 ---
 
+> Update 6/30/26: I received several reports of infinitely loading spinners. Finally took a look at it, and I suspect this was due to the preloader requiring every single resource to load before fading. My attempted fix is to force it to fade after 8 seconds even if all resources haven't loaded in. Let me know if this works for you!
+
 I recently decided it might improve user experience to get a loading screen instead of watching the grid unceremoniously disentangle itself. A few experiments later, and here we are.
 
 {{< lightbox-image link="/images/blog/preload.gif" lightbox-id="preload" img-src="/images/blog/preload.gif" width="800" height="381" alt="A gif of a brief blue loading screen before the website loads.">}}  

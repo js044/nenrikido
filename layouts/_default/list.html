@@ -6,7 +6,7 @@
 <body>
     <div class="wrapper">
         {{- block "main" . }}{{- end }}
-        <div class="grid">                 
+        <div class="grid">
             {{.Content}}
             {{ range .Pages }}
             <div class="item medium">
@@ -33,3 +33,54 @@
 </body>
 
 </html>
+
+<!-- Preloader HTML. Insert this this div before your main content. -->
+<div id="preloader"></div>
+
+<style>
+    /* Preloader CSS. Change the background color by swapping out #fff in the background property. You can also find more preloader icons here: https://samherbert.net/svg-loaders/  */
+    #preloader {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        display: flex;
+        position: fixed;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        background: #fff url("https://samherbert.net/svg-loaders/svg-loaders/spinning-circles.svg") no-repeat center;
+        z-index: 9999;
+    }
+</style>
+
+<script>
+
+
+    var loader = document.getElementById("preloader");
+
+    function hideLoader() {
+        if (!loader) return;
+        fadeOut();
+    }
+
+    function fadeOut() {
+        var op = 1;
+        var fade = setInterval(function () {
+            op -= 0.1;
+            if (op <= 0) {
+                clearInterval(fade);
+                loader.style.display = "none";
+            } else {
+                loader.style.opacity = op;
+            }
+        }, 40);
+    }
+
+    // Hide once everything has loaded
+    window.addEventListener("load", hideLoader);
+
+    // Force-hide after 8 seconds even if it can't load
+    setTimeout(hideLoader, 8000);
+
+
+</script>

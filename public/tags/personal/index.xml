@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Personal on NENRIKIDO</title>
-    <link>https://nenrikido.neocities.org/tags/personal/</link>
+    <link>http://localhost:1313/tags/personal/</link>
     <description>Recent content in Personal on NENRIKIDO</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 11 Jun 2025 16:00:58 -0400</lastBuildDate>
-    <atom:link href="https://nenrikido.neocities.org/tags/personal/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/personal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Two Years of Nenrikido</title>
-      <link>https://nenrikido.neocities.org/blog/post/two-years-of-nenrikido/</link>
+      <link>http://localhost:1313/blog/post/two-years-of-nenrikido/</link>
       <pubDate>Thu, 13 Mar 2025 02:06:29 -0400</pubDate>
-      <guid>https://nenrikido.neocities.org/blog/post/two-years-of-nenrikido/</guid>
+      <guid>http://localhost:1313/blog/post/two-years-of-nenrikido/</guid>
       <description>Time flies, doesn&amp;rsquo;t it?</description>
     </item>
     <item>
       <title>Yard Sale</title>
-      <link>https://nenrikido.neocities.org/blog/post/yard-sale/</link>
+      <link>http://localhost:1313/blog/post/yard-sale/</link>
       <pubDate>Sat, 17 Jun 2023 21:24:01 -0600</pubDate>
-      <guid>https://nenrikido.neocities.org/blog/post/yard-sale/</guid>
+      <guid>http://localhost:1313/blog/post/yard-sale/</guid>
       <description>A diary entry. Featuring Hot Topic fashion and a sandwich.</description>
     </item>
     <item>
       <title>2 months later: A Neocities Reflection</title>
-      <link>https://nenrikido.neocities.org/blog/post/neocities-reflection/</link>
+      <link>http://localhost:1313/blog/post/neocities-reflection/</link>
       <pubDate>Sun, 21 May 2023 21:50:10 -0600</pubDate>
-      <guid>https://nenrikido.neocities.org/blog/post/neocities-reflection/</guid>
+      <guid>http://localhost:1313/blog/post/neocities-reflection/</guid>
       <description>Some observations about the community aspect of Neocities and online communities in general.</description>
     </item>
   </channel>
