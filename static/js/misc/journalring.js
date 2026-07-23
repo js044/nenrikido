@@ -37,9 +37,9 @@ window.membersData = [
     }, 
     {
         "name": "Chezter",
-        "websiteTitle": "cheztervv",
-        "url": "https://cheztervargas.xyz/",
-        "description": "A tech portfolio with a blog filled with creative non-fiction and personal essays. Not corporate. Just writing whatever."
+        "websiteTitle": "Chezter’s Records",
+        "url": "https://cheztervargas.com/",
+        "description": "Musings on everyday life, personal growth, and whatever happens to be on my mind. Written to remember, reflect, and share."
     }, 
     {
         "name": "Blanki",
