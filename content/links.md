@@ -27,7 +27,8 @@ draft: false
 
 <div id='neossg'><script type="text/javascript" src="https://neossg.neocities.org/onionring-variables.js"></script><script type="text/javascript" src="https://neossg.neocities.org/onionring-widget.js"></script></div>
 
-<div id='safont'><script src="https://xandra.cc/safonts/webring.js"></script><ring-900 site="https://nenrikido.neocities.org/"></ring-900></div>
+<script src="https://safonts.club/webring.js"></script>
+<ring-900></ring-900>
 
 <journal-ring icon="lavender"></journal-ring> <script async src="https://cdn.jsdelivr.net/gh/js044/nenrikido@main/static/js/misc/journalring.js"></script>
 
