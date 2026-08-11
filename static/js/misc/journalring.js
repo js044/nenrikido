@@ -44,7 +44,7 @@ window.membersData = [
     {
         "name": "Blanki",
         "websiteTitle": "E0NBREAK",
-        "url": "https://e0nbreak.neocities.org/",
+        "url": "https://e0nbreak.com/",
         "description": "E0NBREAK is the personal creative website of the digital artist of the same username. The website holds various things from silly one-off projects to dedicated pages to the creator's ongoing story project Bewilthred. Rumors say many silly things are in store..."
     }, 
     {
