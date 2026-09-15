@@ -1,4 +1,10 @@
 posts:
+- guid: 41
+  date: "2026-09-15T02:42:31Z"
+  title: "RIP"
+  images:
+    - /images/microblog/rip.png
+
 - guid: 40
   date: "2026-06-27T22:51:19.872Z"
   title: "i can't stop watching zombie stage. mizisua you will always be famous"
