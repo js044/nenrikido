@@ -1,4 +1,10 @@
 posts:
+- guid: 42
+  date: "2026-09-17T02:42:31Z"
+  title: "false alarm"
+  images:
+    - /images/microblog/odin_2_mini.png
+
 - guid: 41
   date: "2026-09-15T02:42:31Z"
   title: "RIP"
