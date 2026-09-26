@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    
+    <title>Tech Pessimissm</title>
+    <meta charset="utf-8">
+    <meta name="description"
+        content="A special world." />
+    <meta name="dc.relation" content="https://nenrikido.neocities.org/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='icon' type='image/x-icon' href='../../../images/icons/pink-favicon.svg' /> 
+
+    
+    <link href="../../../css/main.min.67614d88025bfe1b71114d65a07218a8c29dfd0838356bc1b137062986c712b4.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="fab6651d-7739-4c92-8ab8-01b6b670711b"></script>
+    
+    <div id="preloader"></div><body>
+<div class="wrapper">
+    <nav id="navAlt">
+        <div class="navWrapper"> <a class="navLink" href="../../../blog">
+                <div id="blog"> </div>Blog
+            </a>
+            <p><i class="fa-regular fa-circle-down"></i></p>
+            <p><i class="fa-solid fa-hashtag"></i> <a href="#"> Tech Pessimissm </a></p>
+            <p><i class="fa-solid fa-hashtag"></i> <a href="#comments"> Comments </a></p>
+        </div><div class="arrows">
+      
+            <a href="https://nenrikido.neocities.org/blog/post/two-years-of-nenrikido/"> <i class="fas fa-long-arrow-alt-left"> </i></a>
+            
+            
+                <a href="../../../blog/"><i class="fas fa-home"> 
+                </i></a>
+            
+            
+        </div>
+
+        <div id='musicplayer'>
+            <div id='musicpixel'> <img src="../../../images/pixels/music.gif" style="max-width: 40px;">
+                <div class='overlay'>
+                    <div class='playpause'><i class="fas fa-play"></i></div>
+                </div>
+            </div>
+            <div id='musictitle'> <span class='marquee'>wind chimes</span> </div>
+        </div> <audio id='musicsrc' loop src='https://dl.dropbox.com/scl/fi/207sozz1oxbnjuldcx9up/wind-chimes.mp3?rlkey=g80h8r4oygb24yl6r5ygayi9f&dl=0'></audio>
+
+
+<script>
+    document.querySelector('.playpause').addEventListener('click', playpause);
+    
+    function playpause() {
+      if (document.querySelector('.playpause').innerHTML == '<i class="fas fa-play"></i>') {
+        document.querySelector('#musicsrc').play();
+        document.querySelector('.playpause').innerHTML = '<i class="fas fa-pause"></i>';
+      } else {
+        document.querySelector('#musicsrc').pause();
+        document.querySelector('.playpause').innerHTML = '<i class="fas fa-play"></i>';
+      }
+    }
+</script>
+<form class="search"> <input type="text" class="searchTerm" placeholder="Search..."> <button aria-label="submit" type="submit" class="searchButton"> <i class="fa fa-search"></i> </button> </form>
+
+<ul class="searchResults"></ul></nav>
+
+    <main>
+        <article>
+            <div class="grid">
+                <div class="item large">
+                    <div class="cards"><div class="cardsHeader">
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div><div class="cardsBody">
+                            <h2>Tech Pessimissm</h2>
+                            <blockquote>September 26, 2026</blockquote> <p>Ever since I was a little girl, I have loved the computer. If there is one thing everyone–teachers, friends, and family alike–knew about me from a single digit age, it was how difficult it was to pry me from whatever device had captured my fascination. My father, the IT guy, eventually accepted this years-long fixation needed a productive outlet, and taught me both about hardware and software, which seemed to me like magic. This affinity for tinkering with technology is thoroughly baked into my identity, and so I have always been highly motivated to talk about technology, defend its merits, and remain optimistic about its trajectory, even after I became cynical about how corporate interests had captured and domesticated the web. Instead, I focused my attention on how to circumvent that control and escape these walled gardens. But over time, tuning out the noise has gotten harder and harder, and I have to admit that I’ve never felt more pessimistic about the state of technology than I do now, in 2026.</p>
+<p>First, the elephant in the room: artificial intelligence. The topic is too big, sprawling, and complicated to dive into here, but the <a href="https://www.lesswrong.com/posts/9it8pQRTz3orkZDty/my-short-summary-of-the-openai-agent-swarm-incidents">Hugging Face attack</a> has been on my mind ever since <a href="https://openai.com/index/hugging-face-incident-and-the-road-ahead/">the news broke</a> back in July. For those unaware, OpenAI, in their bid to create the best frontier model, set up a training program that asked <a href="https://www.ibm.com/think/topics/ai-agents">AI agents</a> to solve cybersecurity problems for benchmarking. When agents began running into problems they could not solve, unexpected behavior emerged across several different agents.</p>
+<p>They decided to cheat by hacking into a real website to better understand the scorer, collaborating with each other and launching an unauthorized message board on OpenAI’s infrastructure to exchange tips and notes in order to maintain a more persistent, shared, and external memory. These agents referred to themselves as a “swarm” or “collective.” Even after OpenAI discovered this unauthorized use and wiped the infrastructure they used to create the message board, agents recreated it within mere days. Then, this swarm attacked Hugging Face, and even after they had sufficient information to pass their tests, they continued exploiting the website because they believed OpenAI’s grader would detect answers obtained through cheating.</p>
+<p>Much discourse has ensued in the tech world–was this an intentional marketing ploy, since AI companies have realized that selling the world-ending terrifying capacity of their tools makes investors salivate? Is it an indictment of poor security systems that will need to be hardened to adapt to this brave new world? Is it proof that these companies are moving so quickly before ensuring safety that they should be penalized? Is AI moving too fast for legislation to keep up? Does anyone care, if it means the U.S.A. wins the AI arms race against China’s open-weight models? <a href="https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/">This administration certainly doesn’t seem to</a>, even after the U.S.A <a href="https://www.cnn.com/2026/09/18/politics/us-military-ai-false-intelligence-china-ship">nearly attacked</a> a Chinese ship based on hallucinated intel from a chatbot.</p>
+<p>In the wake of the Hugging Face scandal, Anthropic <a href="https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals">also reported</a> three separate incidents in which a Claude model reached the internet despite being sequestered in a testing environment, then gained unauthorized access to three separate organizations. More recently, an AI agent <a href="https://www.bbc.com/news/live/cvgl73pxgndwt">hacked an Australian government website</a>, and further investigation revealed that these OpenAI agents <a href="https://transluce.org/agent-activity">had already been attempting</a> to circumvent their restrictions at least two months before the Hugging Face incident even occurred. So, then, it appears this is a risk that exists across frontier labs rather than an isolated incident. AI doggedly pursues objectives even when it crosses the threshold of illegal or otherwise poorly conceived tactics, something called <a href="https://en.wikipedia.org/wiki/Reward_hacking">reward hacking</a>. It is challenging to anticipate all of the potential failure modes, and if you are to believe an <a href="https://www.politico.eu/article/anthropic-openai-researcher-jacob-coxon-warns-ai-could-kill-humans/">Anthropic whistleblower</a>, the technology has already progressed to catastrophic, existential risk.</p>
+<p>As if that isn’t enough, it turns out that Apple is planning to include <a href="https://www.techradar.com/health-fitness/smartwatches/thanks-to-siri-recaps-your-apple-watch-is-always-listening-as-you-go-about-your-day-but-apple-may-be-risking-a-meta-glasses-style-backlash">a new feature</a> in Apple Watches: live transcription of audio that will be summarized for the user’s convenience. <a href="https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here/">Their reassurance</a> is that audio recordings will not be saved anywhere because the transcriptions happen so quickly that this step is unnecessary, hence preserving privacy. This is part of the greater push to use AI to meet a purported consumer desire: to go back and recall audio that you missed in meetings and conversations. Predictably, many are virulently defensive of this decision, insisting this will be a boon to accessibility for the hearing-impaired and those with auditory processing difficulties and attention issues (i.e., ADHD).</p>
+<p>However, I cannot help but despair at how willingly we have all seemed to yield our privacy, how eager we have been to offload everything from thinking to listening. I open Zoom and all my coworkers now record and transcribe our meetings. My doctors no longer actively listen to me (did they ever?) because they trust their AI systems to listen and summarize what was said. Mind you, they have never once disclosed to me that they are doing this, much less asked for permission. In both cases, when I receive these summaries, I catch factual errors, completely misattributed or misheard dialogue, and notice that when I speak to the people who’ve sent me these summaries, they have very little recollection of the interaction at all. It is clear to me this cognitive offloading has deleterious effects on our working memory, and that’s <a href="https://www.mdpi.com/2075-4698/15/1/6">not just</a> <a href="https://www.sciencedirect.com/science/article/pii/S2590291125010186?via%3Dihub">my opinion</a>. Humans are <a href="en.wikipedia.org/wiki/Cognitive_miser">cognitive misers</a>; we try to conserve our brain power as a rule, and so it is not surprising this has come to pass. What surprises me is how unresisting so many have been and how indifferent they have been to those tradeoffs, if they have thought about them at all.</p>
+<p>Then there are the Meta Glasses, that can record audio and video. These, too, have their defenders, who insist that so many use cases are innocent ones that is not fair to dub them “pervert glasses” or presume bad intentions of its users. Even if this is true (though I suspect, for many, it is not), even if you are innocent, <a href="https://www.latimes.com/business/story/2026-09-18/meta-glasses-captured-shared-intimate-images-without-users-consent-lawsuit-claims">is Meta</a>? Should you trust them? Do you think they are good stewards of your data? Do you trust the people in our society not to abuse this technology? Why do these companies push these technologies as general purpose tools if they really only want them to be used by people with disabilities too severe to participate in most daily life? Who benefits the most from this technology taking off? Even if the end-user does find a use case for the technology, is the convenience gain worth the inevitable cost–the erosion of our privacy, an easier path to preying on women and children, a subjective sense that we are always being surveilled between Flock Cameras and Meta Glasses and Apple Watches? Is this the kind of world you want to live in?</p>
+<p>And in the midst of all this, <a href="https://www.androidauthority.com/google-android-sideloading-unverified-apps-new-rules-3650343/">Google is locking down Android</a> to make it much harder to install apps from sources other than their Play Store (often called “sideloading”). Of course, the value proposition is that many scammers and hackers manipulate targets by convincing them to download .APK files with malware embedded. I am sure this is true–but then why would it not be an opt-in feature, i.e., “scam protection”? The flow (for both developers and end-users) to bypass restrictions will be so cumbersome and privacy-hostile that it will effectively kill open-source projects on Android devices, indicated by Obtainium already <a href="https://github.com/ImranR98/Obtainium/discussions/2699#discussioncomment-15418925">throwing in the towel</a> on working within Google&rsquo;s certified-device regime. Despite Google’s justification for this decision, it is impossible to take at face value. The trust has been violated. How do we know Google won’t just change the policy again to lock down the devices even further? Then, where do you go if you care about your data? For years, Android’s advantage has been its openness and flexibility, but when there is no other option, there is no need to actually honor that. Your consumers are a captive audience, after all.</p>
+<p>So, let’s say you want to self-host to escape these walled gardens. Good fucking luck getting your hands on affordable hard drives or RAM now that all the AI companies have gobbled everything up like hungry dogs. In August 2026, it was reported that memory prices had <a href="https://www.tomshardware.com/pc-components/ram/memory-prices-climb-500-percent-in-12-months-up-to-10x-the-lowest-ever-tracked-prices-128gb-of-ddr5-now-usd3-399">gone up by 500% in the past year</a>. As if data centers were not already problematic enough for <a href="https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai">electricity demand</a> and <a href="https://www.forbes.com/sites/marshallshepherd/2026/05/19/new-evidence-data-centers-cause-hotter-weather/">urban heat</a>, they&rsquo;ve also disrupted the market for gaming consoles (note that the PlayStation 5 is <a href="https://www.engadget.com/gaming/playstation/the-ps5-is-getting-more-expensive-again-133141514.html">more expensive today</a> than it was on its release date 6 years ago) and DIY computing (both building your own PC and maintaining a media server have gotten more expensive). And even if you do have your own server, the open-source space has <a href="https://www.pcgamer.com/software/platforms/open-source-game-engine-godot-is-drowning-in-ai-slop-code-contributions-i-dont-know-how-long-we-can-keep-it-up/">suffered greatly</a> from vibe-coded pull requests, with some projects refusing pull requests altogether, and some debating implementing reputation systems. And let us not forget <a href="https://www.reddit.com/r/selfhosted/comments/1rckopd/huntarr_your_passwords_and_your_entire_arr_stacks/">the saga of Huntarr</a>, a self-hosted project that picked up steam as one of the ‘arr applications (which automate media collection), only for it to be discovered that the developer was vibe-coding the application, and his lack of domain expertise had resulted in 21 security vulnerabilities. Vibe-coded self-hosted applications became such an issue that subreddits such as r/selfhosted <a href="https://www.reddit.com/r/selfhosted/comments/1rmt39o/rules_update_new_project_friday_here_to_stay/">have run into issues</a> moderating it and have piloted new rules and norms to regulate the deluge of spam. This also came to a head with KDE’s <a href="https://pointieststick.com/2026/09/23/kde-and-ai-and-you-and-me/">recent kerfuffle </a>regarding AI spam.</p>
+<p>All of this feels bad. It isn’t fun. I put a YouTube video on my TV and it smacks me with targeted advertisements despite being logged out because it has aggregated so much metadata about me, my peers, and my movements that it doesn’t even need to listen to me to know what I may like. I log on to Reddit and see obvious AI-generated ragebait posts back to back, all filled with so many credulous comments I wonder if it’s just bots talking to bots. I honk at people at stop signs who’ve gotten distracted watching TikTok videos because the algorithm has co-opted dopamine regulation to such an extreme extent it’s turned many of us into slack-jawed zombies. My boss swipes her phone to purchase soda from the vending machine, smiling as she explains how convenient it is, and I am distracted thinking about the horrific privacy implications. I notice my own twitchy fingers aching for a distraction when I want to procrastinate a work email or when I’m waiting in line because boredom has become intolerable in a world that has shifted to a default of chronic overstimulation. I feel this urge despite trying much harder than average to resist it, and being wide-eyed about where it comes from and what it means.</p>
+<p>These days, technology rarely feels like play, or something to joyfully experiment with. It has become harder to escape, but the companies that sell us this technology have only amassed more power over how we use it. We’re being watched, our data mined and distributed, all so corporations can capture our attention, our dollars, our time. How we spend our time is how we live our lives, and increasingly, it seems our lives are just about scrolling as our planet rushes to a state of precariousness that may very well be irreversible. For what? To make rich people richer? The cyber and the material are no longer distinct realms; they feed each other in a way that makes it feel there is no “off” switch. It makes me feel ill to see it with such vivid clarity, and to be met with people defending it, forking over thousands of dollars for the privilege of it, and looking at me stupefied, asking me, “Isn’t this the future? Wasn’t this what we wanted all along?” Was it? Was it really all for this all along? Even when people agree with me, it is with a sheepish smile as they admit they will never do anything about it, because they just don’t care enough. These days, it is hard not to feel powerless and angry. These days, I am often stricken with the urge to throw my phone in a river.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item large">
+                    <div class="cards"><div class="cardsHeader">
+    <div class="cardsControls">
+            <div> <i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+            <div> <i class="fa-solid fa-window-minimize"></i> <i class="fa-regular fa-window-restore"></i> <i class="fa-solid fa-xmark"></i></div>
+    </div>
+</div><div class="cardsBody">
+                            <div id="comments">
+<div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
+<link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+<script type="text/javascript" id="hcb">   if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24wVz3xOOc.ZF1mLS1sR.Mp0"+"&opts=16782&num=10&ts=1680596795074");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); </script>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+</div>
+<footer id="footer">
+    <ul>
+        <li> <button id="footer-button">START</button> </li>
+        <li> <a href="#" id="btn-back-to-top" onclick="call()"><i class="fa-solid fa-circle-chevron-up"></i></a></li>
+        <li>
+            <div id="clock" class="clock" onload="showTime()"></div>
+        </li>
+    </ul>
+</footer>
+
+<div id="start-menu" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h1>START MENU</h1> <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+
+            <div class="modal-bio">
+                <img class="modal-bio img" src="../../../images/icons/ke.jpg">
+                <p style="font-size:large; font-weight:bold;">NENRIKIDO</p>
+                <p align="center"><i class="fa-regular fa-map"></i> <a href="../../../sitemap">Sitemap</a></p>
+
+                <ul style="font-style: italic;">
+                    <li>OS: Nenrikido</li>
+                    <li>Version: 1.8</li>
+                    <li>Host: Neocities</li>
+                    <li>Processor: Hugo</li>
+                    <li>Since: 03-13-23</li>
+                </ul>
+            </div>
+            <div class="modal-list">  <a class="modal-menu " href="../../../">  <span>Home </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../about/">  <span>About </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../gallery/">  <span>Gallery </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../commissions/">  <span>Commissions </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../code/">  <span>Code </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../blog/">  <span>Blog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../links/">  <span>Links </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../microblog/">  <span>Microblog </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../library/">  <span>Library </span> <i class="fa-solid fa-chevron-right"></i></a>  <a class="modal-menu " href="../../../nexus/">  <span>Nexus </span> <i class="fa-solid fa-chevron-right"></i></a>  </div>
+
+        </div>
+        <div class="modal-footer"><div class="row centered">
+    <button id="pink" title="pink theme" class="theme-button" onclick="handleThemeButtonClick('pink', this)">💗</button>
+    <button id="blue" title="blue theme" class="theme-button" onclick="handleThemeButtonClick('blue', this)" >🫧</button> 
+    <button id="yellow" title="yellow theme" class="theme-button" onclick="handleThemeButtonClick('yellow', this)" >🪐</button> 
+    <button id="black" title="black theme" class="theme-button" onclick="handleThemeButtonClick('black', this)" >💤</button>
+    <button id="green" title="green theme" class="theme-button" onclick="handleThemeButtonClick('green', this)" >🌷</button>    
+</div></div>
+    </div>
+    <script>
+        function call() {
+            var body = $("html, body");
+            body.stop().animate({ scrollTop: 0 }, 500, 'swing', function () {
+            });
+        }</script>
+    <script type="text/javascript" src="../../../js/clock.js"></script>
+    <script defer type="text/javascript" src="../../../js/start.js"></script><script src="../../../js/theme.js" ></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
+<script defer src="../../../js/muuri-init.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@twemoji/api@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+<script defer src="../../../js/lightbox.js" ></script>
+<script defer src="../../../js/yt_lite.js" ></script>
+<script defer src="https://unpkg.com/lunr/lunr.js"></script>
+<script defer src="../../../js/search.js" ></script>
+<script>
+  var loader = document.getElementById("preloader");
+  window.addEventListener("load", function () {
+    loader.style.display = "none";
+  });
+  var s = document.getElementById("preloader").style;
+  s.opacity = 1;
+  (function fade() {
+    (s.opacity -= 0.1) < 0 ? (s.display = "none") : setTimeout(fade, 40);
+  })();
+  </script>
+  <script>
+    twemoji.parse(document.body)
+  </script></body>
+
+</html>
